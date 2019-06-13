@@ -1,0 +1,50 @@
+{
+  "authorDailyContributionsMap": {
+    "Jeffry Lum": [
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-05-16",
+        "commitResults": [
+          {
+            "hash": "3fdd0cc64198db32688dfd2b6d488faccdcc6695",
+            "message": "Migrate to JDK11+",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 23,
+        "deletions": 16,
+        "date": "2019-05-23",
+        "commitResults": [
+          {
+            "hash": "fa07d774719697fc7d1d4ec562b3cbcd0adf46dd",
+            "message": "Add checkstyle support",
+            "insertions": 23,
+            "deletions": 16
+          }
+        ]
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "Jeffry Lum": 13
+  },
+  "authorFileFormatContributionMap": {
+    "Jeffry Lum": {
+      "java": 11,
+      "js": 0,
+      "css": 0,
+      "adoc": 2,
+      "fxml": 0
+    }
+  },
+  "authorContributionVariance": {
+    "Jeffry Lum": 124.44628
+  },
+  "authorDisplayNameMap": {
+    "Jeffry Lum": "Jeffry Lum"
+  }
+}

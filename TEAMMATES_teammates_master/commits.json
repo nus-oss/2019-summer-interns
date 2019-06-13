@@ -2,6 +2,19 @@
   "authorDailyContributionsMap": {
     "erjillsison": [
       {
+        "insertions": 10,
+        "deletions": 2,
+        "date": "2019-06-01",
+        "commitResults": [
+          {
+            "hash": "08f6d8541022ddaf17ace15a6c97a196965b5a47",
+            "message": "[#9707] Add New Feedback Session: Default selected course ID in the form is incorrect (#9710)",
+            "insertions": 10,
+            "deletions": 2
+          }
+        ]
+      },
+      {
         "insertions": 4,
         "deletions": 4,
         "date": "2019-06-03",
@@ -15,14 +28,14 @@
         ]
       },
       {
-        "insertions": 23,
-        "deletions": 5,
+        "insertions": 120,
+        "deletions": 6,
         "date": "2019-06-06",
         "commitResults": [
           {
             "hash": "1302ea06ea723385d310e4d844bab669cd931859",
             "message": "[#9510] Instructor: Course Page Component: Implement sorting for table headers (#9741)",
-            "insertions": 18,
+            "insertions": 114,
             "deletions": 3
           },
           {
@@ -30,6 +43,12 @@
             "message": "[#9657] Improve look of dropdown options in team contribution question  (#9699)",
             "insertions": 5,
             "deletions": 2
+          },
+          {
+            "hash": "2999868d97d357472742ff61032d1ab2db57ecee",
+            "message": "[#9662] Instructor: Course Page: Some navbar buttons are not responsive after snackbar is shown (#9712)",
+            "insertions": 1,
+            "deletions": 1
           }
         ]
       },
@@ -60,71 +79,78 @@
         ]
       }
     ],
-    "Pengyuz": [],
-    "crizyli": []
+    "Pengyuz": [
+      {
+        "insertions": 1,
+        "deletions": 0,
+        "date": "2019-06-01",
+        "commitResults": [
+          {
+            "hash": "d94f72bb18196cc27859319ed8a23dd7345aed35",
+            "message": "[#9703] Instructor: enroll students: Remove incorrect message after enrolling students to a new course (#9708)",
+            "insertions": 1,
+            "deletions": 0
+          }
+        ]
+      }
+    ],
+    "crizyli": [
+      {
+        "insertions": 5,
+        "deletions": 1,
+        "date": "2019-06-11",
+        "commitResults": [
+          {
+            "hash": "c8a2a187daca8612aea7032712b0a8cdcb74ee2f",
+            "message": "[#9704] Student: Upload/Edit Photo: Confusing error message shown when uploading empty photo (#9709)",
+            "insertions": 5,
+            "deletions": 1
+          }
+        ]
+      }
+    ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 226,
-    "Pengyuz": 0,
-    "crizyli": 0
+    "erjillsison": 331,
+    "Pengyuz": 1,
+    "crizyli": 5
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 27,
       "java": 199,
       "js": 0,
-      "json": 0,
-      "jsp": 0,
+      "scss": 3,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 27,
+      "ts": 102
     },
     "Pengyuz": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 0,
       "java": 0,
       "js": 0,
-      "json": 0,
-      "jsp": 0,
+      "scss": 0,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 0,
+      "ts": 1
     },
     "crizyli": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 0,
       "java": 0,
       "js": 0,
-      "json": 0,
-      "jsp": 0,
+      "scss": 0,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 0,
+      "ts": 5
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 888.0459,
-    "Pengyuz": 0.0,
-    "crizyli": 0.0
+    "erjillsison": 1291.9833,
+    "Pengyuz": 0.030273438,
+    "crizyli": 1.0898438
   },
   "authorDisplayNameMap": {
     "erjillsison": "erjillsison",

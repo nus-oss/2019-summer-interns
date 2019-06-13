@@ -2,16 +2,10 @@
   "authorDailyContributionsMap": {
     "Ronak Lakhotia": [
       {
-        "insertions": 6,
-        "deletions": 3,
+        "insertions": 2,
+        "deletions": 0,
         "date": "2019-05-29",
         "commitResults": [
-          {
-            "hash": "66753728302cd2b48c2b144dac53f96d32c404d5",
-            "message": "Integrate Travis and add CI support (#77)",
-            "insertions": 4,
-            "deletions": 3
-          },
           {
             "hash": "329c3f9060221e827f33924d78f57112de5657f9",
             "message": "Update travis build status (#80)",
@@ -23,27 +17,33 @@
     ],
     "ptvrajsk": [
       {
-        "insertions": 2,
-        "deletions": 2,
+        "insertions": 72,
+        "deletions": 23,
         "date": "2019-05-15",
         "commitResults": [
           {
-            "hash": "96c5174bb3eedf0eb2168473c1e0b99e579433f1",
-            "message": "Angular/cdk Update",
-            "insertions": 1,
-            "deletions": 1
+            "hash": "391c416abad691067fbf05a87bcea5d0a123d3c6",
+            "message": "Added Menu Bar \u0026 Shortcut functionalities.",
+            "insertions": 65,
+            "deletions": 3
           },
           {
             "hash": "d08b1d80c70fd862f45e09199136048034ef12a5",
             "message": "Fixed Build Bug",
-            "insertions": 1,
-            "deletions": 1
+            "insertions": 7,
+            "deletions": 13
+          },
+          {
+            "hash": "8107c3dc3b949a96584062c7ce6c62ff61e76279",
+            "message": "Text-To-Speech Menu Removal",
+            "insertions": 0,
+            "deletions": 7
           }
         ]
       },
       {
-        "insertions": 10,
-        "deletions": 9,
+        "insertions": 12,
+        "deletions": 11,
         "date": "2019-05-16",
         "commitResults": [
           {
@@ -55,34 +55,40 @@
           {
             "hash": "df96c2bba290af895bbee4e41196a5afe52dfa6c",
             "message": "Squashed Bug in Row Click",
-            "insertions": 8,
-            "deletions": 8
+            "insertions": 9,
+            "deletions": 9
+          },
+          {
+            "hash": "9de5657856ec7b484122c6baf99a689ef3200568",
+            "message": "Discard Unexpected Change in File",
+            "insertions": 1,
+            "deletions": 1
           }
         ]
       },
       {
-        "insertions": 8,
+        "insertions": 5,
         "deletions": 5,
         "date": "2019-05-17",
         "commitResults": [
           {
             "hash": "d1427101417e115a3b5b49861c6374de4ce89f26",
             "message": "Search bar widths increased (#60)",
-            "insertions": 8,
+            "insertions": 5,
             "deletions": 5
           }
         ]
       },
       {
-        "insertions": 9,
-        "deletions": 0,
+        "insertions": 78,
+        "deletions": 6,
         "date": "2019-05-20",
         "commitResults": [
           {
             "hash": "bea3f019153d02e71b890dab19477205807e79f4",
             "message": "Replaced Pop-up dialog with Material Dialog.",
-            "insertions": 9,
-            "deletions": 0
+            "insertions": 78,
+            "deletions": 6
           }
         ]
       },
@@ -106,36 +112,116 @@
         ]
       },
       {
-        "insertions": 15,
-        "deletions": 3,
-        "date": "2019-05-28",
+        "insertions": 24,
+        "deletions": 13,
+        "date": "2019-05-22",
         "commitResults": [
           {
-            "hash": "d7ba1d404435012cc2ac52367a3a8f41d8a0f978",
-            "message": "Duplicate Issue Dropdown Text Fix (#65)",
-            "insertions": 15,
-            "deletions": 3
+            "hash": "2bbc31137edf632db085191e384dfb6bf4c80c5d",
+            "message": "Style Fixes",
+            "insertions": 24,
+            "deletions": 13
           }
         ]
       },
       {
-        "insertions": 1,
-        "deletions": 0,
-        "date": "2019-05-30",
+        "insertions": 18,
+        "deletions": 1,
+        "date": "2019-05-24",
         "commitResults": [
           {
-            "hash": "0cbfd1a8ce5535ae8ae4f8caf8c1c7eaa5a42623",
-            "message": "Working CSVImport and Parser",
+            "hash": "eafbe056a14cacb4f624f7c1fe293d2040bb1829",
+            "message": "Codestyle Fixes",
+            "insertions": 3,
+            "deletions": 0
+          },
+          {
+            "hash": "5c8d5c09cb531c67ad6aa957c65180dcd9d8bc57",
+            "message": "Commented Out Auto-Dev tool Open Line",
             "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "b9786bfa3150b80fe0201e1035de4d682fa7648f",
+            "message": "DevTools enabled in DevMode",
+            "insertions": 14,
             "deletions": 0
           }
         ]
       },
       {
-        "insertions": 4,
-        "deletions": 6,
+        "insertions": 134,
+        "deletions": 24,
+        "date": "2019-05-28",
+        "commitResults": [
+          {
+            "hash": "7ac8d8470603ca88d5081eebab69c4699e9edb29",
+            "message": "State Save",
+            "insertions": 4,
+            "deletions": 1
+          },
+          {
+            "hash": "d7ba1d404435012cc2ac52367a3a8f41d8a0f978",
+            "message": "Duplicate Issue Dropdown Text Fix (#65)",
+            "insertions": 57,
+            "deletions": 14
+          },
+          {
+            "hash": "e763dc2a73347cd2837c612432fdca0d57da378e",
+            "message": "Manual Parsing Working",
+            "insertions": 73,
+            "deletions": 9
+          }
+        ]
+      },
+      {
+        "insertions": 299,
+        "deletions": 147,
+        "date": "2019-05-30",
+        "commitResults": [
+          {
+            "hash": "0cbfd1a8ce5535ae8ae4f8caf8c1c7eaa5a42623",
+            "message": "Working CSVImport and Parser",
+            "insertions": 225,
+            "deletions": 74
+          },
+          {
+            "hash": "95711b69cb615c36e295e2f6fcfe719a31cfd50c",
+            "message": "Code cleanup and Working CSV Import",
+            "insertions": 62,
+            "deletions": 61
+          },
+          {
+            "hash": "d4a0bf6c11b47c34e5486ed3d3088d963276a7ed",
+            "message": "Remove Unused Imports",
+            "insertions": 11,
+            "deletions": 11
+          },
+          {
+            "hash": "392a26545e3fad95c6dd5c1ea103600fdc237ef8",
+            "message": "Naming Convention Change",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 48,
+        "deletions": 65,
         "date": "2019-05-31",
         "commitResults": [
+          {
+            "hash": "6b1077fded95815afb2734bfe5c6c90f56df7c63",
+            "message": "Restructure CSV Data",
+            "insertions": 13,
+            "deletions": 31
+          },
+          {
+            "hash": "0d8b00cdd2d83119f73e11b0cdd7b1499d470c87",
+            "message": "Admin No Longer Requires a Team",
+            "insertions": 31,
+            "deletions": 28
+          },
           {
             "hash": "def19cdf0d31a7c084e92344bc45ee44a31de906",
             "message": "README.md Updated to Reflect use of data.csv",
@@ -143,83 +229,151 @@
             "deletions": 6
           }
         ]
+      },
+      {
+        "insertions": 6,
+        "deletions": 18,
+        "date": "2019-06-04",
+        "commitResults": [
+          {
+            "hash": "f8d88f8c4ffa885f874e59ab0de232fb01e1d6fa",
+            "message": "Codestyle Fixes",
+            "insertions": 6,
+            "deletions": 18
+          }
+        ]
+      },
+      {
+        "insertions": 15,
+        "deletions": 12,
+        "date": "2019-06-07",
+        "commitResults": [
+          {
+            "hash": "0dc13f4c34a13ce3ba87e13e9a66c216a703f483",
+            "message": "Style Fix",
+            "insertions": 15,
+            "deletions": 12
+          }
+        ]
       }
     ],
     "Kevin Chin": [
       {
-        "insertions": 58,
-        "deletions": 48,
+        "insertions": 45,
+        "deletions": 38,
         "date": "2019-05-15",
         "commitResults": [
           {
             "hash": "27afb3d3ff44ecfa45e7cae17ba0cb9ed91dd88d",
             "message": "update new issue page ui",
-            "insertions": 58,
-            "deletions": 48
+            "insertions": 45,
+            "deletions": 38
           }
         ]
       },
       {
-        "insertions": 41,
-        "deletions": 24,
+        "insertions": 79,
+        "deletions": 29,
         "date": "2019-05-16",
         "commitResults": [
           {
             "hash": "6dc38153023f9a6a94e34b51de7321be2a17fdd3",
             "message": "Add label colors to labels in table and issue",
-            "insertions": 41,
-            "deletions": 24
+            "insertions": 77,
+            "deletions": 27
+          },
+          {
+            "hash": "54ea14aba286b2190be14dad09cb2bb4af13b8ab",
+            "message": "remove hardcoded login details",
+            "insertions": 2,
+            "deletions": 2
           }
         ]
       },
       {
-        "insertions": 39,
-        "deletions": 13,
+        "insertions": 44,
+        "deletions": 14,
         "date": "2019-05-17",
         "commitResults": [
           {
-            "hash": "4ff410069fa3f0e24786ab488d313a967ca8eb6d",
-            "message": "Change button position when editing issue",
-            "insertions": 19,
-            "deletions": 6
+            "hash": "b1a15f0768335573c3346b3dfb1a295a3975e206",
+            "message": "Add org/repo string to Window title",
+            "insertions": 20,
+            "deletions": 2
           },
           {
-            "hash": "0245008f7faa970916881091a3708dd9bd3ab085",
-            "message": "adjust the header text margin to align with Edit btn",
-            "insertions": 1,
-            "deletions": 1
+            "hash": "4ff410069fa3f0e24786ab488d313a967ca8eb6d",
+            "message": "Change button position when editing issue",
+            "insertions": 4,
+            "deletions": 6
           },
           {
             "hash": "e5580cc6de5beadc9879d48a4d807c37b5723b75",
             "message": "change btn position for edit comment",
-            "insertions": 19,
+            "insertions": 4,
             "deletions": 6
+          },
+          {
+            "hash": "146b86b369b238827880d8c60b24fc9a7d96edde",
+            "message": "Add github api to get labels",
+            "insertions": 16,
+            "deletions": 0
           }
         ]
       },
       {
-        "insertions": 3,
-        "deletions": 3,
+        "insertions": 98,
+        "deletions": 15,
         "date": "2019-05-21",
         "commitResults": [
           {
+            "hash": "5716e9a7118499d83804f502309f7ef947a2febe",
+            "message": "add strokes to label text",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
             "hash": "d2805f8b194ab168eb0676e442acb6ff5cd171ed",
             "message": "add label color to dropdown in phase 1 edit issue",
-            "insertions": 3,
-            "deletions": 3
+            "insertions": 16,
+            "deletions": 15
+          },
+          {
+            "hash": "a9a8ce292b6e1d489c8b89cd378fa26305f96031",
+            "message": "add label model and service",
+            "insertions": 76,
+            "deletions": 0
           }
         ]
       },
       {
-        "insertions": 46,
-        "deletions": 31,
+        "insertions": 185,
+        "deletions": 88,
         "date": "2019-05-22",
         "commitResults": [
           {
+            "hash": "f57312090bdb6d3f5a7d94914d084628949ebbce",
+            "message": "add comments and make label service more readable",
+            "insertions": 23,
+            "deletions": 13
+          },
+          {
             "hash": "9e9b3f7e8a699fec8bfbcde8778f488d1df3bd5e",
             "message": "add label color for phase 2 and 3",
-            "insertions": 46,
-            "deletions": 30
+            "insertions": 149,
+            "deletions": 68
+          },
+          {
+            "hash": "7e0ef1f7a2dbb1c2bdd548ee433ad14427868d1f",
+            "message": "add sorting for severity label in drop down",
+            "insertions": 11,
+            "deletions": 4
+          },
+          {
+            "hash": "c2af2c390db8c1ee201aa0d4e4d6702bf34cfaac",
+            "message": "remove hardcoded login credentials",
+            "insertions": 2,
+            "deletions": 2
           },
           {
             "hash": "2f7eafa36e93437b1842fae83638e5205cc024cf",
@@ -230,66 +384,359 @@
         ]
       },
       {
-        "insertions": 8,
-        "deletions": 3,
+        "insertions": 144,
+        "deletions": 20,
         "date": "2019-05-23",
         "commitResults": [
           {
             "hash": "8fe3247a71ca9d7c13704d8362b50d54791ecef3",
             "message": "add sync button and sync for phase 1",
-            "insertions": 4,
-            "deletions": 1
+            "insertions": 54,
+            "deletions": 11
           },
           {
             "hash": "27878315d4f9f2b2fbbedbb5ace580299e7e23bc",
             "message": "add tooltip for button",
             "insertions": 4,
             "deletions": 2
+          },
+          {
+            "hash": "a1f825414d0464dd4872f56159db009e1a63e136",
+            "message": "add sync button for phase 2",
+            "insertions": 86,
+            "deletions": 7
           }
         ]
       },
       {
-        "insertions": 3,
-        "deletions": 3,
+        "insertions": 142,
+        "deletions": 18,
         "date": "2019-05-24",
         "commitResults": [
+          {
+            "hash": "2fe82a2cf8dfbe54ff86dd26641e4d5a55672b9f",
+            "message": "add sync button for phase 3",
+            "insertions": 28,
+            "deletions": 2
+          },
+          {
+            "hash": "206ba37f47e0ff6f9eff8440aed2b97160417499",
+            "message": "add sync button to edit issues/comment in all phases",
+            "insertions": 86,
+            "deletions": 12
+          },
           {
             "hash": "65c8b181a129a4e658bfa93fb14f003390f4fc85",
             "message": "change sync button style",
             "insertions": 3,
             "deletions": 3
+          },
+          {
+            "hash": "e5ef4f808e23a4cf81c824985736b43ec66d0991",
+            "message": "add documentation for label service",
+            "insertions": 25,
+            "deletions": 1
           }
         ]
       },
       {
-        "insertions": 30,
-        "deletions": 22,
-        "date": "2019-05-30",
+        "insertions": 101,
+        "deletions": 107,
+        "date": "2019-05-27",
         "commitResults": [
           {
-            "hash": "b5fb7dd069956f3c9dbe2e7ef0683d30e60e0dba",
-            "message": "renaming to naming convention",
+            "hash": "7d75333e0e16bdcd066b8ab4dfe6ca37e81a9121",
+            "message": "add try/catch to setLabelStyle, and make the code more readable",
+            "insertions": 18,
+            "deletions": 10
+          },
+          {
+            "hash": "af892966554d21281dcfef4c14e02a9ea06a421c",
+            "message": "remove LabelService in provider since it is already specified in the service",
             "insertions": 1,
             "deletions": 1
           },
           {
-            "hash": "b5bccedcea4b81ea47b03f77f8c4d2b652edfc0c",
-            "message": "remove 3 attribute in issue and change to use getColorOfLabel method instead",
-            "insertions": 29,
-            "deletions": 21
+            "hash": "2478b2570030374416f166d5306f5b3b9119afbe",
+            "message": "declare implementing OnDestroy",
+            "insertions": 16,
+            "deletions": 16
+          },
+          {
+            "hash": "15eede2792e7d953efaa18c2cb306204aad4b8a5",
+            "message": "removed the nested if condition",
+            "insertions": 8,
+            "deletions": 24
+          },
+          {
+            "hash": "e4ac13820cbab69c72bda9c274b1e4672fd06656",
+            "message": "move the getAllLabels method to be in loadIssue",
+            "insertions": 16,
+            "deletions": 20
+          },
+          {
+            "hash": "c61d8d77299fcf540853eae0132448014ac53187",
+            "message": "fix bug where there are duplicate labels",
+            "insertions": 20,
+            "deletions": 25
+          },
+          {
+            "hash": "38bb8074bb07c5c39ac44dc8c011b030cd7a164a",
+            "message": "remove error code",
+            "insertions": 1,
+            "deletions": 3
+          },
+          {
+            "hash": "7960f2909a27df1407dcd8c4bf64b20889c636de",
+            "message": "add error handling for label service",
+            "insertions": 11,
+            "deletions": 6
+          },
+          {
+            "hash": "ab54b99e4ac0282987138b4c552da6d42564a8d3",
+            "message": "add github api to get events for repository",
+            "insertions": 10,
+            "deletions": 2
           }
         ]
       },
       {
-        "insertions": 5,
-        "deletions": 5,
+        "insertions": 115,
+        "deletions": 39,
+        "date": "2019-05-28",
+        "commitResults": [
+          {
+            "hash": "a3ae4f4212b04597114e6716ec1c6855e99fa48c",
+            "message": "move the label service to auth service instead of data table",
+            "insertions": 17,
+            "deletions": 19
+          },
+          {
+            "hash": "49b194d3773bd7a9cfafdef75e3d2d5a48c03c16",
+            "message": "change the setLabelStyle to use string literals",
+            "insertions": 1,
+            "deletions": 3
+          },
+          {
+            "hash": "7d8abbb80f4b7aea465078dded2631b44d5018aa",
+            "message": "move try/catch to label service subscription",
+            "insertions": 6,
+            "deletions": 5
+          },
+          {
+            "hash": "6ccb128b4e4c5a2abf69cb145918e236a9a2babf",
+            "message": "add githubevent service",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "b365ab275c2e3724b353c49a739e403f9ad7ca8b",
+            "message": "add check for last modified before reload",
+            "insertions": 84,
+            "deletions": 3
+          },
+          {
+            "hash": "b1617a6fa1c39b6a1624cd6affa23968e4b7e27b",
+            "message": "change the error handling for subscription",
+            "insertions": 5,
+            "deletions": 7
+          }
+        ]
+      },
+      {
+        "insertions": 38,
+        "deletions": 37,
+        "date": "2019-05-29",
+        "commitResults": [
+          {
+            "hash": "4e7e9267d06acbe4b8b3f0790551312e5a7c1dbe",
+            "message": "move getAllLabels into the startAuthentication pipe",
+            "insertions": 8,
+            "deletions": 10
+          },
+          {
+            "hash": "d660f1454d80269b7cb80febe89f0a5d90b75c14",
+            "message": "move githubevent service to startAuthentication pipe",
+            "insertions": 30,
+            "deletions": 26
+          },
+          {
+            "hash": "001abd23bce7049f69295bcf115914ed8ff8897e",
+            "message": "remove unnecessary code",
+            "insertions": 0,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 155,
+        "deletions": 152,
+        "date": "2019-05-30",
+        "commitResults": [
+          {
+            "hash": "1bd11ce6b84b08ad0c830bed64c845e31f424e38",
+            "message": "made changes to label service",
+            "insertions": 40,
+            "deletions": 31
+          },
+          {
+            "hash": "25af5c61bf533a2287ea7d03384d9759ad62b004",
+            "message": "abstract the method for getting selected label\u0027s color",
+            "insertions": 19,
+            "deletions": 26
+          },
+          {
+            "hash": "6b4d21accdb8bdd257ab7343161358c34a2f9f87",
+            "message": "add comment for new method",
+            "insertions": 6,
+            "deletions": 0
+          },
+          {
+            "hash": "b5fb7dd069956f3c9dbe2e7ef0683d30e60e0dba",
+            "message": "renaming to naming convention",
+            "insertions": 14,
+            "deletions": 14
+          },
+          {
+            "hash": "7382af6edc0e0cfc2ef173a7c12706901310dccd",
+            "message": "removed testing code",
+            "insertions": 4,
+            "deletions": 9
+          },
+          {
+            "hash": "3d7cae019cebb7f455606a6f378c5e0d5e0aba95",
+            "message": "change get color method to use mapping",
+            "insertions": 33,
+            "deletions": 21
+          },
+          {
+            "hash": "b5bccedcea4b81ea47b03f77f8c4d2b652edfc0c",
+            "message": "remove 3 attribute in issue and change to use getColorOfLabel method instead",
+            "insertions": 32,
+            "deletions": 44
+          },
+          {
+            "hash": "b201eace36ae1fe144dfcd7b7f522c541e4118db",
+            "message": "made some changes to documentation and imports",
+            "insertions": 7,
+            "deletions": 7
+          }
+        ]
+      },
+      {
+        "insertions": 210,
+        "deletions": 385,
+        "date": "2019-05-31",
+        "commitResults": [
+          {
+            "hash": "ca24239e38afaf35abfcff5ea56508b8c40e204d",
+            "message": "fix import spacing",
+            "insertions": 91,
+            "deletions": 100
+          },
+          {
+            "hash": "0d0f712c0f0f0257f777f2c30f7f47ada86c06d5",
+            "message": "edit comment for setLabelStyle",
+            "insertions": 4,
+            "deletions": 3
+          },
+          {
+            "hash": "b0a8367a5ae00f6ef027fc077f5222e994fe38a8",
+            "message": "rename variable",
+            "insertions": 8,
+            "deletions": 7
+          },
+          {
+            "hash": "c9fd205c080f818cb3efeb7b3dc6bd80b1c64e69",
+            "message": "fix import spacing",
+            "insertions": 27,
+            "deletions": 27
+          },
+          {
+            "hash": "f77c0d823d0fcd84498ae369cb47a4e382597b27",
+            "message": "removed unused import",
+            "insertions": 8,
+            "deletions": 9
+          },
+          {
+            "hash": "800705d2819a53b427b6f47c2690df8802898121",
+            "message": "add comment to githubevent service",
+            "insertions": 9,
+            "deletions": 0
+          },
+          {
+            "hash": "f2e2f02cd25ac6615d4fbbfd841029a52865a865",
+            "message": "remove the code for reloading page",
+            "insertions": 33,
+            "deletions": 150
+          },
+          {
+            "hash": "fdb5dbbd205a219fc8a84db9656b3fa0b774604b",
+            "message": "remove changes to code",
+            "insertions": 30,
+            "deletions": 89
+          }
+        ]
+      },
+      {
+        "insertions": 70,
+        "deletions": 37,
+        "date": "2019-06-03",
+        "commitResults": [
+          {
+            "hash": "3b84212131e4399912ea72068fa2ca997e12eb86",
+            "message": "change issues object to BehaviorSubject",
+            "insertions": 28,
+            "deletions": 25
+          },
+          {
+            "hash": "4ad49f3b2946e24cba942a451b8c8f3331f70028",
+            "message": "add onDestroy to unsubscribe getIssues",
+            "insertions": 36,
+            "deletions": 12
+          },
+          {
+            "hash": "22ba39aad4de97b2aba473c2f18256850d995880",
+            "message": "fix isIssueLoading",
+            "insertions": 6,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 32,
+        "deletions": 34,
         "date": "2019-06-04",
         "commitResults": [
           {
+            "hash": "c6bcb2d3f35a0675a7ac9f0019a96e6648b508ca",
+            "message": "fix bug where color does not change when label is changed in github",
+            "insertions": 7,
+            "deletions": 2
+          },
+          {
+            "hash": "575df883427ecb227925cba3043d36ec5cc83ded",
+            "message": "clean up code",
+            "insertions": 12,
+            "deletions": 9
+          },
+          {
             "hash": "f11df76d857507bb37d91ab978d0e632a5f6e197",
             "message": "change the variable name to reload",
-            "insertions": 3,
-            "deletions": 2
+            "insertions": 7,
+            "deletions": 6
+          },
+          {
+            "hash": "0af0624529667d03ef2fb0d2def4586ed04b6ef7",
+            "message": "remove unused code",
+            "insertions": 0,
+            "deletions": 8
+          },
+          {
+            "hash": "e60d1e2a323d95fb100de308f34663279be6cae5",
+            "message": "update githubevent service comment",
+            "insertions": 4,
+            "deletions": 6
           },
           {
             "hash": "3449b8e4963d873aa207034cf4751c3bc9bc2e93",
@@ -300,15 +747,97 @@
         ]
       },
       {
-        "insertions": 1,
-        "deletions": 1,
+        "insertions": 48,
+        "deletions": 55,
         "date": "2019-06-06",
         "commitResults": [
+          {
+            "hash": "68fa7dd2d966c4555c576c5335b0f1bdedafaeb6",
+            "message": "change this.issues in issue service",
+            "insertions": 9,
+            "deletions": 5
+          },
+          {
+            "hash": "8833512fbc1bc06a0f05757149758c9103e0e404",
+            "message": "revert changes to this.issues and let issue component use this.issues$",
+            "insertions": 21,
+            "deletions": 32
+          },
+          {
+            "hash": "1b4cf57ff526f5297c4adca7dbdb7d4338611b79",
+            "message": "remove unnecessary code",
+            "insertions": 2,
+            "deletions": 2
+          },
           {
             "hash": "9f271e727bd817ed9bd2d4160d444a564537df77",
             "message": "remove unwanted changes",
             "insertions": 1,
             "deletions": 1
+          },
+          {
+            "hash": "0758250f30d3dde37f217d185551754689318517",
+            "message": "fix import spacing",
+            "insertions": 15,
+            "deletions": 15
+          }
+        ]
+      },
+      {
+        "insertions": 24,
+        "deletions": 24,
+        "date": "2019-06-07",
+        "commitResults": [
+          {
+            "hash": "a7e41ec89bdb1150c8f8c63808f33cc373e557ba",
+            "message": "move the subscribe to the header component",
+            "insertions": 5,
+            "deletions": 5
+          },
+          {
+            "hash": "7a757316563c54a359a77e3a81b3955e226bd04e",
+            "message": "change reload method to use flatMap and pipe",
+            "insertions": 19,
+            "deletions": 19
+          }
+        ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-06-10",
+        "commitResults": [
+          {
+            "hash": "84f490b486813062e40bc54a342d9a5b8d1452ff",
+            "message": "change the return for reloadPage",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 3,
+        "deletions": 3,
+        "date": "2019-06-11",
+        "commitResults": [
+          {
+            "hash": "4a5ca043d6acad0e2390d852205af5f2b5f1f3f7",
+            "message": "change labelService from private to public",
+            "insertions": 3,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 14,
+        "deletions": 13,
+        "date": "2019-06-13",
+        "commitResults": [
+          {
+            "hash": "4508bb2438b644f92611e1fa4bdc1d280bcf1b8a",
+            "message": "change the authentication to allow tester\u0027s own repo (#79)",
+            "insertions": 14,
+            "deletions": 13
           }
         ]
       }
@@ -328,41 +857,72 @@
         ]
       },
       {
-        "insertions": 2,
-        "deletions": 2,
+        "insertions": 4,
+        "deletions": 4,
         "date": "2019-05-15",
         "commitResults": [
           {
             "hash": "ed586e6a961990766c508f4f5d376d529ee21416",
             "message": "Rename org",
-            "insertions": 2,
-            "deletions": 2
+            "insertions": 4,
+            "deletions": 4
           }
         ]
       },
       {
-        "insertions": 4,
-        "deletions": 2,
+        "insertions": 13,
+        "deletions": 6,
         "date": "2019-05-17",
         "commitResults": [
           {
             "hash": "feeac115c39d12821d169a2597777fada56843ff",
             "message": "Fix admin not being edit issue description in phase 2",
-            "insertions": 4,
-            "deletions": 2
+            "insertions": 13,
+            "deletions": 6
           }
         ]
       },
       {
-        "insertions": 39,
-        "deletions": 43,
+        "insertions": 285,
+        "deletions": 559,
         "date": "2019-05-20",
         "commitResults": [
           {
             "hash": "4cb412f49c2e4081263cae1b8af5c4419a1a2b75",
             "message": "Decouple issue from comment",
-            "insertions": 39,
-            "deletions": 43
+            "insertions": 258,
+            "deletions": 382
+          },
+          {
+            "hash": "fd5b87069519c2194e4593d578ba56867a4b1be6",
+            "message": "Clean up issue service",
+            "insertions": 22,
+            "deletions": 172
+          },
+          {
+            "hash": "33e48fd366cca0bb059aca6d574686758d2d76e4",
+            "message": "Account for Duplicate value in phase 3",
+            "insertions": 5,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 58,
+        "deletions": 33,
+        "date": "2019-05-21",
+        "commitResults": [
+          {
+            "hash": "13948343dfb6e67173aa373018113d6b72fcb010",
+            "message": "Edit regexExp to confirm to style",
+            "insertions": 5,
+            "deletions": 4
+          },
+          {
+            "hash": "32914ed0e81e62dd565484248e88bfb96405b5e3",
+            "message": "Add comments",
+            "insertions": 53,
+            "deletions": 29
           }
         ]
       }
@@ -390,105 +950,70 @@
     ]
   },
   "authorFinalContributionMap": {
-    "Ronak Lakhotia": 6,
-    "ptvrajsk": 50,
-    "Kevin Chin": 138,
-    "Koh Jun Wei": 70,
+    "Ronak Lakhotia": 31,
+    "ptvrajsk": 432,
+    "Kevin Chin": 535,
+    "Koh Jun Wei": 533,
     "Damith C. Rajapakse": 1
   },
   "authorFileFormatContributionMap": {
     "Ronak Lakhotia": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 0,
       "java": 0,
       "js": 0,
-      "json": 4,
-      "jsp": 0,
+      "scss": 0,
       "md": 2,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 0,
+      "ts": 29
     },
     "ptvrajsk": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 11,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 34,
       "java": 0,
       "js": 0,
-      "json": 1,
-      "jsp": 0,
+      "scss": 0,
       "md": 4,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 34,
+      "ts": 394
     },
     "Kevin Chin": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 42,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 95,
       "java": 0,
       "js": 0,
-      "json": 1,
-      "jsp": 0,
+      "scss": 0,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 95,
+      "ts": 440
     },
     "Koh Jun Wei": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 69,
       "java": 0,
       "js": 0,
-      "json": 0,
-      "jsp": 0,
+      "scss": 0,
       "md": 1,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 69,
+      "ts": 463
     },
     "Damith C. Rajapakse": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 0,
       "java": 0,
       "js": 0,
-      "json": 0,
-      "jsp": 0,
+      "scss": 0,
       "md": 1,
       "py": 0,
       "tag": 0,
-      "txt": 0,
-      "xml": 0
+      "html": 0,
+      "ts": 0
     }
   },
   "authorContributionVariance": {
-    "Ronak Lakhotia": 3.1104004,
-    "ptvrajsk": 33.881607,
-    "Kevin Chin": 844.1699,
-    "Koh Jun Wei": 257.06247,
-    "Damith C. Rajapakse": 0.6144004
+    "Ronak Lakhotia": 0.12109375,
+    "ptvrajsk": 6949.922,
+    "Kevin Chin": 15348.206,
+    "Koh Jun Wei": 21625.16,
+    "Damith C. Rajapakse": 0.484375
   },
   "authorDisplayNameMap": {
     "Ronak Lakhotia": "Ronak Lakhotia",

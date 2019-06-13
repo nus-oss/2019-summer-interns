@@ -1,0 +1,95 @@
+{
+  "authorDailyContributionsMap": {
+    "Paul Tan": [
+      {
+        "insertions": 152,
+        "deletions": 166,
+        "date": "2019-05-29",
+        "commitResults": [
+          {
+            "hash": "1f66697bf135caa9f128c056ba6f21fb2c067113",
+            "message": "Import the original AB-3 LearningOutcomes",
+            "insertions": 151,
+            "deletions": 165
+          },
+          {
+            "hash": "f86269199fb7313182492f144309186e8b317e5d",
+            "message": "DeveloperGuide: remove all references to `BrowserPanel`",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 9,
+        "deletions": 12,
+        "date": "2019-06-11",
+        "commitResults": [
+          {
+            "hash": "8e49110ad3858e2289859eceea43805bd40a9fd3",
+            "message": "LO-Interfaces: update to match the current codebase",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "9f9e651fcc3f0300f073b25b38a8e4a19379ffc4",
+            "message": "LO-CouplingCohesion: update to match the current codebase",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "b8950fb50236d367907ecf8949cee79fdc354992",
+            "message": "LO-DIP: update to match the current codebase",
+            "insertions": 6,
+            "deletions": 9
+          }
+        ]
+      }
+    ],
+    "WANG CHAO": [
+      {
+        "insertions": 7,
+        "deletions": 7,
+        "date": "2019-05-14",
+        "commitResults": [
+          {
+            "hash": "d4ea3b6f8cbbcffe34f0b80df46934d48e9e566f",
+            "message": "Fix improper usage of `an`",
+            "insertions": 7,
+            "deletions": 7
+          }
+        ]
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "Paul Tan": 150,
+    "WANG CHAO": 3
+  },
+  "authorFileFormatContributionMap": {
+    "Paul Tan": {
+      "java": 0,
+      "js": 0,
+      "css": 0,
+      "adoc": 150,
+      "fxml": 0,
+      "gradle": 0
+    },
+    "WANG CHAO": {
+      "java": 3,
+      "js": 0,
+      "css": 0,
+      "adoc": 0,
+      "fxml": 0,
+      "gradle": 0
+    }
+  },
+  "authorContributionVariance": {
+    "Paul Tan": 3257.8093,
+    "WANG CHAO": 6.3155518
+  },
+  "authorDisplayNameMap": {
+    "Paul Tan": "Paul Tan",
+    "WANG CHAO": "WANG CHAO"
+  }
+}

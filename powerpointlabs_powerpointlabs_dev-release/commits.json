@@ -1,0 +1,105 @@
+{
+  "authorDailyContributionsMap": {
+    "LiXiaowei": [
+      {
+        "insertions": 17,
+        "deletions": 17,
+        "date": "2019-06-03",
+        "commitResults": [
+          {
+            "hash": "0ee2f254057f373ea1c64d65ebdf8c92b6a4b430",
+            "message": "Refactor and add code for handling trigger type and click number (#1920)",
+            "insertions": 17,
+            "deletions": 17
+          }
+        ]
+      }
+    ],
+    "yuhongherald": [
+      {
+        "insertions": 79,
+        "deletions": 201,
+        "date": "2019-05-19",
+        "commitResults": [
+          {
+            "hash": "e1d915e19ac54fc969af07491213b13cfd3592ba",
+            "message": "#1861 highly duplicated code for image icon creation (#1908)",
+            "insertions": 79,
+            "deletions": 201
+          }
+        ]
+      },
+      {
+        "insertions": 181,
+        "deletions": 589,
+        "date": "2019-05-23",
+        "commitResults": [
+          {
+            "hash": "e3fefa1e4fe3b9efee93de627e01ab0aad627942",
+            "message": "#1905 Using directive should follow OSS generics coding standard (#1907)",
+            "insertions": 181,
+            "deletions": 589
+          }
+        ]
+      },
+      {
+        "insertions": 6,
+        "deletions": 6,
+        "date": "2019-05-25",
+        "commitResults": [
+          {
+            "hash": "7d28ae4154b43e2f31c95d8592e4555b4f561c0c",
+            "message": "#1900 cannot pick color colorslab (#1910)",
+            "insertions": 6,
+            "deletions": 6
+          }
+        ]
+      },
+      {
+        "insertions": 253,
+        "deletions": 3,
+        "date": "2019-06-12",
+        "commitResults": [
+          {
+            "hash": "8794eb93761c1cf21035ed8799a245e7ddc9f0d0",
+            "message": "#1745 Limit the maximum number of open labs panes (#1914)",
+            "insertions": 252,
+            "deletions": 2
+          },
+          {
+            "hash": "4cbf5a079de3e908de86b7f03b4d6db84b1cec53",
+            "message": "#1922 E-learning settings voice ranking disappears (#1923)",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "LiXiaowei": 18,
+    "yuhongherald": 494
+  },
+  "authorFileFormatContributionMap": {
+    "LiXiaowei": {
+      "html": 0,
+      "js": 0,
+      "css": 0,
+      "cs": 18
+    },
+    "yuhongherald": {
+      "html": 0,
+      "js": 0,
+      "css": 0,
+      "cs": 494
+    }
+  },
+  "authorContributionVariance": {
+    "LiXiaowei": 36.0874,
+    "yuhongherald": 21965.932
+  },
+  "authorDisplayNameMap": {
+    "LiXiaowei": "LiXiaowei",
+    "yuhongherald": "yuhongherald"
+  }
+}

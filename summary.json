@@ -1,24 +1,87 @@
 {
   "repoSenseVersion": "0d3ba8a7da",
-  "reportGeneratedTime": "Thu Jun 13 07:34:48 2019 UTC",
+  "reportGeneratedTime": "Thu Jun 13 08:09:54 2019 UTC",
   "repos": [
     {
       "location": {
-        "location": "https://github.com/reposense/RepoSense.git",
-        "repoName": "RepoSense",
-        "organization": "reposense"
+        "location": "https://github.com/markbind/markbind.git",
+        "repoName": "markbind",
+        "organization": "markbind"
       },
       "branch": "master",
-      "displayName": "reposense_RepoSense_master"
+      "displayName": "markbind_markbind_master"
     },
     {
       "location": {
-        "location": "https://github.com/MarkBind/markbind.git",
-        "repoName": "markbind",
-        "organization": "MarkBind"
+        "location": "https://github.com/markbind/vue-strap.git",
+        "repoName": "vue-strap",
+        "organization": "markbind"
       },
       "branch": "master",
-      "displayName": "MarkBind_markbind_master"
+      "displayName": "markbind_vue-strap_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/powerpointlabs/powerpointlabs.git",
+        "repoName": "powerpointlabs",
+        "organization": "powerpointlabs"
+      },
+      "branch": "dev-release",
+      "displayName": "powerpointlabs_powerpointlabs_dev-release"
+    },
+    {
+      "location": {
+        "location": "https://github.com/powerpointlabs/PowerPointLabs-Website.git",
+        "repoName": "PowerPointLabs-Website",
+        "organization": "powerpointlabs"
+      },
+      "branch": "master",
+      "displayName": "powerpointlabs_PowerPointLabs-Website_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/reposense/reposense.git",
+        "repoName": "reposense",
+        "organization": "reposense"
+      },
+      "branch": "master",
+      "displayName": "reposense_reposense_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level4.git",
+        "repoName": "addressbook-level4",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level4_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level35.git",
+        "repoName": "addressbook-level35",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level35_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level2.git",
+        "repoName": "addressbook-level2",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level2_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/se-edu/addressbook-level1.git",
+        "repoName": "addressbook-level1",
+        "organization": "se-edu"
+      },
+      "branch": "master",
+      "displayName": "se-edu_addressbook-level1_master"
     },
     {
       "location": {
@@ -28,24 +91,6 @@
       },
       "branch": "master",
       "displayName": "TEAMMATES_teammates_master"
-    },
-    {
-      "location": {
-        "location": "https://github.com/MarkBind/vue-strap.git",
-        "repoName": "vue-strap",
-        "organization": "MarkBind"
-      },
-      "branch": "master",
-      "displayName": "MarkBind_vue-strap_master"
-    },
-    {
-      "location": {
-        "location": "https://github.com/powerpointlabs/powerpointlabs.git",
-        "repoName": "powerpointlabs",
-        "organization": "powerpointlabs"
-      },
-      "branch": "master",
-      "displayName": "powerpointlabs_powerpointlabs_master"
     },
     {
       "location": {
