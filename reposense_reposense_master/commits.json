@@ -41,11 +41,11 @@
         ]
       }
     ],
-    "\"": []
+    "jamessspanggg": []
   },
   "authorFinalContributionMap": {
     "jylee-git": 14,
-    "\"": 0
+    "jamessspanggg": 0
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -59,7 +59,7 @@
       "gradle": 0,
       "pug": 3
     },
-    "\"": {
+    "jamessspanggg": {
       "java": 0,
       "js": 0,
       "scss": 0,
@@ -73,10 +73,10 @@
   },
   "authorContributionVariance": {
     "jylee-git": 5.969754,
-    "\"": 0.0
+    "jamessspanggg": 0.0
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
-    "\"": "\""
+    "jamessspanggg": "James"
   }
 }
