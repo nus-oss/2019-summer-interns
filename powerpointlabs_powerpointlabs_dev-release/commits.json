@@ -1,20 +1,5 @@
 {
   "authorDailyContributionsMap": {
-    "LiXiaowei": [
-      {
-        "insertions": 17,
-        "deletions": 17,
-        "date": "2019-06-03",
-        "commitResults": [
-          {
-            "hash": "0ee2f254057f373ea1c64d65ebdf8c92b6a4b430",
-            "message": "Refactor and add code for handling trigger type and click number (#1920)",
-            "insertions": 17,
-            "deletions": 17
-          }
-        ]
-      }
-    ],
     "yuhongherald": [
       {
         "insertions": 79,
@@ -77,16 +62,9 @@
     ]
   },
   "authorFinalContributionMap": {
-    "LiXiaowei": 18,
     "yuhongherald": 494
   },
   "authorFileFormatContributionMap": {
-    "LiXiaowei": {
-      "html": 0,
-      "js": 0,
-      "css": 0,
-      "cs": 18
-    },
     "yuhongherald": {
       "html": 0,
       "js": 0,
@@ -95,11 +73,9 @@
     }
   },
   "authorContributionVariance": {
-    "LiXiaowei": 36.0874,
     "yuhongherald": 21965.932
   },
   "authorDisplayNameMap": {
-    "LiXiaowei": "LiXiaowei",
-    "yuhongherald": "yuhongherald"
+    "yuhongherald": "Herald"
   }
 }

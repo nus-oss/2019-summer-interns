@@ -1,7 +1,46 @@
 {
   "authorDailyContributionsMap": {
-    "Chng Zhi Xuan": [],
-    "alyip98": [
+    "openorclose": [
+      {
+        "insertions": 23,
+        "deletions": 47,
+        "date": "2019-05-27",
+        "commitResults": [
+          {
+            "hash": "282556db72955c69aef24fbf6ca82062239e1ae8",
+            "message": "Cache panel contents after first load (#105)",
+            "insertions": 12,
+            "deletions": 17
+          },
+          {
+            "hash": "adf8b4d250c2a7a7ba4c476310e3db6d20377579",
+            "message": "Refactor setting of Panel#isCached",
+            "insertions": 8,
+            "deletions": 6
+          },
+          {
+            "hash": "726aa5ff2972748b52777a4eb07cfcffba3bc1d5",
+            "message": "Prevent double-fetching of panel with src and expanded",
+            "insertions": 3,
+            "deletions": 24
+          }
+        ]
+      },
+      {
+        "insertions": 8,
+        "deletions": 1,
+        "date": "2019-06-03",
+        "commitResults": [
+          {
+            "hash": "c2180ab48b8c6b8c47238768ff11ee9451efea66",
+            "message": "Add attribute to allow vertical centering of panels (#108)",
+            "insertions": 8,
+            "deletions": 1
+          }
+        ]
+      }
+    ],
+    "alyip99": [
       {
         "insertions": 8,
         "deletions": 1,
@@ -41,103 +80,23 @@
           }
         ]
       }
-    ],
-    "Open O. Close": [
-      {
-        "insertions": 12,
-        "deletions": 17,
-        "date": "2019-05-27",
-        "commitResults": [
-          {
-            "hash": "282556db72955c69aef24fbf6ca82062239e1ae8",
-            "message": "Cache panel contents after first load (#105)",
-            "insertions": 12,
-            "deletions": 17
-          }
-        ]
-      },
-      {
-        "insertions": 8,
-        "deletions": 1,
-        "date": "2019-06-03",
-        "commitResults": [
-          {
-            "hash": "c2180ab48b8c6b8c47238768ff11ee9451efea66",
-            "message": "Add attribute to allow vertical centering of panels (#108)",
-            "insertions": 8,
-            "deletions": 1
-          }
-        ]
-      }
-    ],
-    "Chng-Zhi-Xuan": [
-      {
-        "insertions": 130,
-        "deletions": 200,
-        "date": "2019-05-27",
-        "commitResults": [
-          {
-            "hash": "ba9f17e356bf28fe14ffefe61c0652f4ef0e9edb",
-            "message": "Update dist",
-            "insertions": 130,
-            "deletions": 200
-          }
-        ]
-      },
-      {
-        "insertions": 300,
-        "deletions": 34,
-        "date": "2019-06-04",
-        "commitResults": [
-          {
-            "hash": "bc56e01f9410f76a89b323692b5d6db50562dc5f",
-            "message": "Update dist",
-            "insertions": 300,
-            "deletions": 34
-          }
-        ]
-      }
-    ],
-    "Open Close": [
-      {
-        "insertions": 11,
-        "deletions": 30,
-        "date": "2019-05-27",
-        "commitResults": [
-          {
-            "hash": "adf8b4d250c2a7a7ba4c476310e3db6d20377579",
-            "message": "Refactor setting of Panel#isCached",
-            "insertions": 8,
-            "deletions": 6
-          },
-          {
-            "hash": "726aa5ff2972748b52777a4eb07cfcffba3bc1d5",
-            "message": "Prevent double-fetching of panel with src and expanded",
-            "insertions": 3,
-            "deletions": 24
-          }
-        ]
-      }
     ]
   },
   "authorFinalContributionMap": {
-    "Chng Zhi Xuan": 0,
-    "alyip98": 143,
-    "Open O. Close": 11,
-    "Chng-Zhi-Xuan": 370,
-    "Open Close": 11
+    "openorclose": 22,
+    "alyip99": 143
   },
   "authorFileFormatContributionMap": {
-    "Chng Zhi Xuan": {
+    "openorclose": {
       "java": 0,
       "js": 0,
       "css": 0,
       "json": 0,
       "md": 0,
       "py": 0,
-      "vue": 0
+      "vue": 22
     },
-    "alyip98": {
+    "alyip99": {
       "java": 0,
       "js": 2,
       "css": 0,
@@ -145,47 +104,14 @@
       "md": 0,
       "py": 0,
       "vue": 141
-    },
-    "Open O. Close": {
-      "java": 0,
-      "js": 0,
-      "css": 0,
-      "json": 0,
-      "md": 0,
-      "py": 0,
-      "vue": 11
-    },
-    "Chng-Zhi-Xuan": {
-      "java": 0,
-      "js": 370,
-      "css": 0,
-      "json": 0,
-      "md": 0,
-      "py": 0,
-      "vue": 0
-    },
-    "Open Close": {
-      "java": 0,
-      "js": 0,
-      "css": 0,
-      "json": 0,
-      "md": 0,
-      "py": 0,
-      "vue": 11
     }
   },
   "authorContributionVariance": {
-    "Chng Zhi Xuan": 0.0,
-    "alyip98": 560.7956,
-    "Open O. Close": 29.128883,
-    "Chng-Zhi-Xuan": 6858.65,
-    "Open Close": 54.165573
+    "openorclose": 159.09895,
+    "alyip99": 560.7956
   },
   "authorDisplayNameMap": {
-    "Chng Zhi Xuan": "Chng Zhi Xuan",
-    "alyip98": "alyip98",
-    "Open O. Close": "Open O. Close",
-    "Chng-Zhi-Xuan": "Chng-Zhi-Xuan",
-    "Open Close": "Open Close"
+    "openorclose": "Daryl",
+    "alyip99": "Alfred"
   }
 }

@@ -1,7 +1,23 @@
 {
-  "authorDailyContributionsMap": {},
-  "authorFinalContributionMap": {},
-  "authorFileFormatContributionMap": {},
-  "authorContributionVariance": {},
-  "authorDisplayNameMap": {}
+  "authorDailyContributionsMap": {
+    "yuhongherald": []
+  },
+  "authorFinalContributionMap": {
+    "yuhongherald": 0
+  },
+  "authorFileFormatContributionMap": {
+    "yuhongherald": {
+      "html": 0,
+      "js": 0,
+      "css": 0,
+      "cs": 0,
+      "md": 0
+    }
+  },
+  "authorContributionVariance": {
+    "yuhongherald": 0.0
+  },
+  "authorDisplayNameMap": {
+    "yuhongherald": "Herald"
+  }
 }

@@ -1,37 +1,13 @@
 {
   "authorDailyContributionsMap": {
-    "Paul Tan": [],
-    "WANG CHAO": [
-      {
-        "insertions": 7,
-        "deletions": 7,
-        "date": "2019-05-14",
-        "commitResults": [
-          {
-            "hash": "d4ea3b6f8cbbcffe34f0b80df46934d48e9e566f",
-            "message": "Fix improper usage of `an`",
-            "insertions": 7,
-            "deletions": 7
-          }
-        ]
-      }
-    ]
+    "Jeffry Lum": []
   },
   "authorFinalContributionMap": {
-    "Paul Tan": 0,
-    "WANG CHAO": 7
+    "Jeffry Lum": 0
   },
   "authorFileFormatContributionMap": {
-    "Paul Tan": {
+    "Jeffry Lum": {
       "java": 0,
-      "js": 0,
-      "css": 0,
-      "adoc": 0,
-      "fxml": 0,
-      "gradle": 0
-    },
-    "WANG CHAO": {
-      "java": 7,
       "js": 0,
       "css": 0,
       "adoc": 0,
@@ -40,11 +16,9 @@
     }
   },
   "authorContributionVariance": {
-    "Paul Tan": 0.0,
-    "WANG CHAO": 49.0
+    "Jeffry Lum": 0.0
   },
   "authorDisplayNameMap": {
-    "Paul Tan": "Paul Tan",
-    "WANG CHAO": "WANG CHAO"
+    "Jeffry Lum": "Jeffry"
   }
 }

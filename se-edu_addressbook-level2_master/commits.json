@@ -1,20 +1,5 @@
 {
   "authorDailyContributionsMap": {
-    "Sanket110297": [
-      {
-        "insertions": 47,
-        "deletions": 44,
-        "date": "2019-05-16",
-        "commitResults": [
-          {
-            "hash": "26282f19a227729d66b7d70b2ae1e40fa8c5303b",
-            "message": "Move inner/nested classes to the bottom of the file",
-            "insertions": 47,
-            "deletions": 44
-          }
-        ]
-      }
-    ],
     "Jeffry Lum": [
       {
         "insertions": 2,
@@ -58,17 +43,9 @@
     ]
   },
   "authorFinalContributionMap": {
-    "Sanket110297": 47,
     "Jeffry Lum": 134
   },
   "authorFileFormatContributionMap": {
-    "Sanket110297": {
-      "java": 47,
-      "js": 0,
-      "css": 0,
-      "adoc": 0,
-      "fxml": 0
-    },
     "Jeffry Lum": {
       "java": 125,
       "js": 0,
@@ -78,11 +55,9 @@
     }
   },
   "authorContributionVariance": {
-    "Sanket110297": 266.83228,
     "Jeffry Lum": 1232.5067
   },
   "authorDisplayNameMap": {
-    "Sanket110297": "Sanket110297",
-    "Jeffry Lum": "Jeffry Lum"
+    "Jeffry Lum": "Jeffry"
   }
 }

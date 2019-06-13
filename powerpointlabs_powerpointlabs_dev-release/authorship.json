@@ -45092,7 +45092,7 @@
       {
         "lineNumber": 309,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "                ExplanationItem expItem \u003d CreateExpItemFromDictionary(explanationItems.First());"
       },
@@ -45232,7 +45232,7 @@
       {
         "lineNumber": 329,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "                ExplanationItem expItem \u003d CreateExpItemFromDictionary(explanationItems.First());"
       },
@@ -48683,105 +48683,105 @@
       {
         "lineNumber": 822,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "        private ExplanationItem CreateExpItemFromDictionary(Dictionary\u003cstring, string\u003e expItemDic)"
       },
       {
         "lineNumber": 823,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "        {"
       },
       {
         "lineNumber": 824,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "            ExplanationItem expItem \u003d new ExplanationItem(expItemDic[ELearningLabText.CaptionTextIdentifier],"
       },
       {
         "lineNumber": 825,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "                                    expItemDic[ELearningLabText.CalloutTextIdentifier], expItemDic[ELearningLabText.VoiceLabel],"
       },
       {
         "lineNumber": 826,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "                                    expItemDic[ELearningLabText.CalloutIdentifier] \u003d\u003d \"Y\", expItemDic[ELearningLabText.CaptionIdentifier] \u003d\u003d \"Y\","
       },
       {
         "lineNumber": 827,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "                                    expItemDic[ELearningLabText.AudioIdentifier] \u003d\u003d \"Y\", tagNo: Convert.ToInt32(expItemDic[ELearningLabText.TagNoIdentifier]));"
       },
       {
         "lineNumber": 828,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "            expItem.ClickNo \u003d Convert.ToInt32(expItemDic[ELearningLabText.ClickNumIdentifier]);"
       },
       {
         "lineNumber": 829,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "            expItem.TriggerIndex \u003d expItemDic[ELearningLabText.TriggerOnClick] \u003d\u003d \"Y\" ? (int)TriggerType.OnClick : (int)TriggerType.WithPrevious;"
       },
       {
         "lineNumber": 830,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "            if (expItem.IsDummyItem)"
       },
       {
         "lineNumber": 831,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "            {"
       },
       {
         "lineNumber": 832,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "                expItem.tagNo \u003d SelfExplanationTagService.GenerateUniqueTag();"
       },
       {
         "lineNumber": 833,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "            }"
       },
       {
         "lineNumber": 834,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "            return expItem;"
       },
       {
         "lineNumber": 835,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "        }"
       },
       {
         "lineNumber": 836,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": ""
       },
@@ -48808,8 +48808,7 @@
       }
     ],
     "authorContributionMap": {
-      "LiXiaowei": 17,
-      "-": 818,
+      "-": 835,
       "yuhongherald": 4
     }
   },
@@ -135593,7 +135592,7 @@
       {
         "lineNumber": 11,
         "author": {
-          "gitId": "LiXiaowei"
+          "gitId": "-"
         },
         "content": "    // AbstractItemFactory _customItemFactory;"
       },
@@ -135837,8 +135836,7 @@
       }
     ],
     "authorContributionMap": {
-      "LiXiaowei": 1,
-      "-": 40,
+      "-": 41,
       "yuhongherald": 4
     }
   },
