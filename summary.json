@@ -1,6 +1,6 @@
 {
-  "repoSenseVersion": "v1.9",
-  "reportGeneratedTime": "Thu Jun 13 05:24:18 2019 UTC",
+  "repoSenseVersion": "0d3ba8a7da",
+  "reportGeneratedTime": "Thu Jun 13 05:37:03 2019 UTC",
   "repos": [
     {
       "location": {
@@ -10,8 +10,53 @@
       },
       "branch": "master",
       "displayName": "reposense_RepoSense_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/MarkBind/markbind.git",
+        "repoName": "markbind",
+        "organization": "MarkBind"
+      },
+      "branch": "master",
+      "displayName": "MarkBind_markbind_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/TEAMMATES/teammates.git",
+        "repoName": "teammates",
+        "organization": "TEAMMATES"
+      },
+      "branch": "master",
+      "displayName": "TEAMMATES_teammates_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/MarkBind/vue-strap.git",
+        "repoName": "vue-strap",
+        "organization": "MarkBind"
+      },
+      "branch": "master",
+      "displayName": "MarkBind_vue-strap_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/powerpointlabs/powerpointlabs.git",
+        "repoName": "powerpointlabs",
+        "organization": "powerpointlabs"
+      },
+      "branch": "master",
+      "displayName": "powerpointlabs_powerpointlabs_master"
+    },
+    {
+      "location": {
+        "location": "https://github.com/CATcher-org/CATcher.git",
+        "repoName": "CATcher",
+        "organization": "CATcher-org"
+      },
+      "branch": "master",
+      "displayName": "CATcher-org_CATcher_master"
     }
   ],
-  "sinceDate": "2018-05-03",
-  "untilDate": "2019-06-10"
+  "sinceDate": "2019-05-13",
+  "untilDate": "2019-06-13"
 }

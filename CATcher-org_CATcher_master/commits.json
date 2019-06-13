@@ -1,0 +1,500 @@
+{
+  "authorDailyContributionsMap": {
+    "Ronak Lakhotia": [
+      {
+        "insertions": 6,
+        "deletions": 3,
+        "date": "2019-05-29",
+        "commitResults": [
+          {
+            "hash": "66753728302cd2b48c2b144dac53f96d32c404d5",
+            "message": "Integrate Travis and add CI support (#77)",
+            "insertions": 4,
+            "deletions": 3
+          },
+          {
+            "hash": "329c3f9060221e827f33924d78f57112de5657f9",
+            "message": "Update travis build status (#80)",
+            "insertions": 2,
+            "deletions": 0
+          }
+        ]
+      }
+    ],
+    "ptvrajsk": [
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-05-15",
+        "commitResults": [
+          {
+            "hash": "96c5174bb3eedf0eb2168473c1e0b99e579433f1",
+            "message": "Angular/cdk Update",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "d08b1d80c70fd862f45e09199136048034ef12a5",
+            "message": "Fixed Build Bug",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 10,
+        "deletions": 9,
+        "date": "2019-05-16",
+        "commitResults": [
+          {
+            "hash": "e1c6fd115a423bf12e571d21002a33f4db0ef626",
+            "message": "Base href Comment",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "df96c2bba290af895bbee4e41196a5afe52dfa6c",
+            "message": "Squashed Bug in Row Click",
+            "insertions": 8,
+            "deletions": 8
+          }
+        ]
+      },
+      {
+        "insertions": 8,
+        "deletions": 5,
+        "date": "2019-05-17",
+        "commitResults": [
+          {
+            "hash": "d1427101417e115a3b5b49861c6374de4ce89f26",
+            "message": "Search bar widths increased (#60)",
+            "insertions": 8,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 9,
+        "deletions": 0,
+        "date": "2019-05-20",
+        "commitResults": [
+          {
+            "hash": "bea3f019153d02e71b890dab19477205807e79f4",
+            "message": "Replaced Pop-up dialog with Material Dialog.",
+            "insertions": 9,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 4,
+        "deletions": 4,
+        "date": "2019-05-21",
+        "commitResults": [
+          {
+            "hash": "507096abb7848083f3a1a578a89dcbc2f5386df1",
+            "message": "Added Propoagtion stop for Delete Button Phase 1",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "9f2fbcc339e8f8ea0f8a3f9be6985788dfc66b11",
+            "message": "Minor UI Tweak Duplicated Issues -\u003e Duplicates",
+            "insertions": 3,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 15,
+        "deletions": 3,
+        "date": "2019-05-28",
+        "commitResults": [
+          {
+            "hash": "d7ba1d404435012cc2ac52367a3a8f41d8a0f978",
+            "message": "Duplicate Issue Dropdown Text Fix (#65)",
+            "insertions": 15,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 0,
+        "date": "2019-05-30",
+        "commitResults": [
+          {
+            "hash": "0cbfd1a8ce5535ae8ae4f8caf8c1c7eaa5a42623",
+            "message": "Working CSVImport and Parser",
+            "insertions": 1,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 4,
+        "deletions": 6,
+        "date": "2019-05-31",
+        "commitResults": [
+          {
+            "hash": "def19cdf0d31a7c084e92344bc45ee44a31de906",
+            "message": "README.md Updated to Reflect use of data.csv",
+            "insertions": 4,
+            "deletions": 6
+          }
+        ]
+      }
+    ],
+    "Kevin Chin": [
+      {
+        "insertions": 58,
+        "deletions": 48,
+        "date": "2019-05-15",
+        "commitResults": [
+          {
+            "hash": "27afb3d3ff44ecfa45e7cae17ba0cb9ed91dd88d",
+            "message": "update new issue page ui",
+            "insertions": 58,
+            "deletions": 48
+          }
+        ]
+      },
+      {
+        "insertions": 41,
+        "deletions": 24,
+        "date": "2019-05-16",
+        "commitResults": [
+          {
+            "hash": "6dc38153023f9a6a94e34b51de7321be2a17fdd3",
+            "message": "Add label colors to labels in table and issue",
+            "insertions": 41,
+            "deletions": 24
+          }
+        ]
+      },
+      {
+        "insertions": 39,
+        "deletions": 13,
+        "date": "2019-05-17",
+        "commitResults": [
+          {
+            "hash": "4ff410069fa3f0e24786ab488d313a967ca8eb6d",
+            "message": "Change button position when editing issue",
+            "insertions": 19,
+            "deletions": 6
+          },
+          {
+            "hash": "0245008f7faa970916881091a3708dd9bd3ab085",
+            "message": "adjust the header text margin to align with Edit btn",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "e5580cc6de5beadc9879d48a4d807c37b5723b75",
+            "message": "change btn position for edit comment",
+            "insertions": 19,
+            "deletions": 6
+          }
+        ]
+      },
+      {
+        "insertions": 3,
+        "deletions": 3,
+        "date": "2019-05-21",
+        "commitResults": [
+          {
+            "hash": "d2805f8b194ab168eb0676e442acb6ff5cd171ed",
+            "message": "add label color to dropdown in phase 1 edit issue",
+            "insertions": 3,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 46,
+        "deletions": 31,
+        "date": "2019-05-22",
+        "commitResults": [
+          {
+            "hash": "9e9b3f7e8a699fec8bfbcde8778f488d1df3bd5e",
+            "message": "add label color for phase 2 and 3",
+            "insertions": 46,
+            "deletions": 30
+          },
+          {
+            "hash": "2f7eafa36e93437b1842fae83638e5205cc024cf",
+            "message": "remove code for testing",
+            "insertions": 0,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 8,
+        "deletions": 3,
+        "date": "2019-05-23",
+        "commitResults": [
+          {
+            "hash": "8fe3247a71ca9d7c13704d8362b50d54791ecef3",
+            "message": "add sync button and sync for phase 1",
+            "insertions": 4,
+            "deletions": 1
+          },
+          {
+            "hash": "27878315d4f9f2b2fbbedbb5ace580299e7e23bc",
+            "message": "add tooltip for button",
+            "insertions": 4,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 3,
+        "deletions": 3,
+        "date": "2019-05-24",
+        "commitResults": [
+          {
+            "hash": "65c8b181a129a4e658bfa93fb14f003390f4fc85",
+            "message": "change sync button style",
+            "insertions": 3,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 30,
+        "deletions": 22,
+        "date": "2019-05-30",
+        "commitResults": [
+          {
+            "hash": "b5fb7dd069956f3c9dbe2e7ef0683d30e60e0dba",
+            "message": "renaming to naming convention",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "b5bccedcea4b81ea47b03f77f8c4d2b652edfc0c",
+            "message": "remove 3 attribute in issue and change to use getColorOfLabel method instead",
+            "insertions": 29,
+            "deletions": 21
+          }
+        ]
+      },
+      {
+        "insertions": 5,
+        "deletions": 5,
+        "date": "2019-06-04",
+        "commitResults": [
+          {
+            "hash": "f11df76d857507bb37d91ab978d0e632a5f6e197",
+            "message": "change the variable name to reload",
+            "insertions": 3,
+            "deletions": 2
+          },
+          {
+            "hash": "3449b8e4963d873aa207034cf4751c3bc9bc2e93",
+            "message": "make header button style consistent",
+            "insertions": 2,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-06-06",
+        "commitResults": [
+          {
+            "hash": "9f271e727bd817ed9bd2d4160d444a564537df77",
+            "message": "remove unwanted changes",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      }
+    ],
+    "Koh Jun Wei": [
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-05-13",
+        "commitResults": [
+          {
+            "hash": "cc2ccb275457c45ccc28e7f6d70e50338f931d0b",
+            "message": "Config for dev",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-05-15",
+        "commitResults": [
+          {
+            "hash": "ed586e6a961990766c508f4f5d376d529ee21416",
+            "message": "Rename org",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 4,
+        "deletions": 2,
+        "date": "2019-05-17",
+        "commitResults": [
+          {
+            "hash": "feeac115c39d12821d169a2597777fada56843ff",
+            "message": "Fix admin not being edit issue description in phase 2",
+            "insertions": 4,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 39,
+        "deletions": 43,
+        "date": "2019-05-20",
+        "commitResults": [
+          {
+            "hash": "4cb412f49c2e4081263cae1b8af5c4419a1a2b75",
+            "message": "Decouple issue from comment",
+            "insertions": 39,
+            "deletions": 43
+          }
+        ]
+      }
+    ],
+    "Damith C. Rajapakse": [
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-05-15",
+        "commitResults": [
+          {
+            "hash": "b2ca90886c9c5a6e14a4d3262d36e3dfa3665efa",
+            "message": "README.md: update opening statement to include CAT",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "c093f923e153843f010d0e5f90a92badaf8fcb42",
+            "message": "README.md: fix typo",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "Ronak Lakhotia": 6,
+    "ptvrajsk": 50,
+    "Kevin Chin": 138,
+    "Koh Jun Wei": 70,
+    "Damith C. Rajapakse": 1
+  },
+  "authorFileFormatContributionMap": {
+    "Ronak Lakhotia": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 4,
+      "jsp": 0,
+      "md": 2,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "ptvrajsk": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 11,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 34,
+      "java": 0,
+      "js": 0,
+      "json": 1,
+      "jsp": 0,
+      "md": 4,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Kevin Chin": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 42,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 95,
+      "java": 0,
+      "js": 0,
+      "json": 1,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Koh Jun Wei": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 69,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 1,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Damith C. Rajapakse": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 1,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    }
+  },
+  "authorContributionVariance": {
+    "Ronak Lakhotia": 3.1104004,
+    "ptvrajsk": 33.881607,
+    "Kevin Chin": 844.1699,
+    "Koh Jun Wei": 257.06247,
+    "Damith C. Rajapakse": 0.6144004
+  },
+  "authorDisplayNameMap": {
+    "Ronak Lakhotia": "Ronak Lakhotia",
+    "ptvrajsk": "ptvrajsk",
+    "Kevin Chin": "Kevin Chin",
+    "Koh Jun Wei": "Koh Jun Wei",
+    "Damith C. Rajapakse": "Damith C. Rajapakse"
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "authorDailyContributionsMap": {
+    "Pengyuz": [],
+    "erjillsison": [
+      {
+        "insertions": 4,
+        "deletions": 4,
+        "date": "2019-06-03",
+        "commitResults": [
+          {
+            "hash": "96e1a43ad563e8b9637e7be4519a3ac70619acaf",
+            "message": "[#9706] UI: Headers: Inconsistent colour scheme for headers across different pages (#9711)",
+            "insertions": 4,
+            "deletions": 4
+          }
+        ]
+      },
+      {
+        "insertions": 23,
+        "deletions": 5,
+        "date": "2019-06-06",
+        "commitResults": [
+          {
+            "hash": "1302ea06ea723385d310e4d844bab669cd931859",
+            "message": "[#9510] Instructor: Course Page Component: Implement sorting for table headers (#9741)",
+            "insertions": 18,
+            "deletions": 3
+          },
+          {
+            "hash": "9a160d39db86a28323e729bf5534232eec68a817",
+            "message": "[#9657] Improve look of dropdown options in team contribution question  (#9699)",
+            "insertions": 5,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 76,
+        "deletions": 43,
+        "date": "2019-06-12",
+        "commitResults": [
+          {
+            "hash": "002061c6b41248664b11953c411cb251408e1629",
+            "message": "[#9734] Logic fix publish feedback session() method signature (#9735)",
+            "insertions": 76,
+            "deletions": 43
+          }
+        ]
+      },
+      {
+        "insertions": 123,
+        "deletions": 3,
+        "date": "2019-06-13",
+        "commitResults": [
+          {
+            "hash": "ad2d071317e2b1c70139daf43148219cf859f0db",
+            "message": "[#9595] Add tests for DELETE /session (#9723)",
+            "insertions": 123,
+            "deletions": 3
+          }
+        ]
+      }
+    ],
+    "Ronak Lakhotia": [
+      {
+        "insertions": 8,
+        "deletions": 8,
+        "date": "2019-05-26",
+        "commitResults": [
+          {
+            "hash": "a49c676224611d7a83baf87711e41a5f1002b70b",
+            "message": "[#9382] Make model change events unidirectional in question types (#9660)",
+            "insertions": 8,
+            "deletions": 8
+          }
+        ]
+      }
+    ],
+    "Xiao Pu": [
+      {
+        "insertions": 598,
+        "deletions": 598,
+        "date": "2019-05-27",
+        "commitResults": [
+          {
+            "hash": "5eff2f4d0819f8910f95f8da04ca2d60b1eb0bb4",
+            "message": "[#9718] Update timezone database to 2019a (#9719)",
+            "insertions": 598,
+            "deletions": 598
+          }
+        ]
+      },
+      {
+        "insertions": 149,
+        "deletions": 193,
+        "date": "2019-06-07",
+        "commitResults": [
+          {
+            "hash": "4346f6f3d5ef8bf9570ab088a9835709f13ca99f",
+            "message": "[#9737] ArchitectureTest not failing even with violations (#9738)",
+            "insertions": 149,
+            "deletions": 193
+          }
+        ]
+      }
+    ],
+    "crizyli": [],
+    "Rahul Rajesh": [
+      {
+        "insertions": 54,
+        "deletions": 773,
+        "date": "2019-05-31",
+        "commitResults": [
+          {
+            "hash": "77f4fa5d32e5ee843d715b57263a19f520a7b406",
+            "message": "[#9595] Migrate INSTRUCTOR_STUDENTS and INSTRUCTOR_STUDENTS_COURSES to new APIs (#9668)",
+            "insertions": 54,
+            "deletions": 773
+          }
+        ]
+      }
+    ],
+    "Adam Lindberg": [],
+    "ariendy": [
+      {
+        "insertions": 81,
+        "deletions": 82,
+        "date": "2019-05-16",
+        "commitResults": [
+          {
+            "hash": "18040a23ac6a5db5c0a251a7a0d7bfb19db468fb",
+            "message": "[#9554] standardise recycle bins for sessions courses (#9566)",
+            "insertions": 81,
+            "deletions": 82
+          }
+        ]
+      }
+    ],
+    "RonMosenzon": [
+      {
+        "insertions": 0,
+        "deletions": 3,
+        "date": "2019-06-06",
+        "commitResults": [
+          {
+            "hash": "7d4230ef80d37bae5ae2ef6f0c0f40562624c734",
+            "message": "[#9720] Resolve console warning raised by TinyMCE (#9739)",
+            "insertions": 0,
+            "deletions": 3
+          }
+        ]
+      }
+    ]
+  },
+  "authorFinalContributionMap": {
+    "Pengyuz": 0,
+    "erjillsison": 226,
+    "Ronak Lakhotia": 8,
+    "Xiao Pu": 391,
+    "crizyli": 0,
+    "Rahul Rajesh": 44,
+    "Adam Lindberg": 0,
+    "ariendy": 34,
+    "RonMosenzon": 0
+  },
+  "authorFileFormatContributionMap": {
+    "Pengyuz": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "erjillsison": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 27,
+      "java": 199,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Ronak Lakhotia": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 8,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Xiao Pu": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 146,
+      "js": 0,
+      "json": 245,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "crizyli": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Rahul Rajesh": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 44,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Adam Lindberg": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "ariendy": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 34,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "RonMosenzon": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    }
+  },
+  "authorContributionVariance": {
+    "Pengyuz": 0.0,
+    "erjillsison": 888.0459,
+    "Ronak Lakhotia": 7.75,
+    "Xiao Pu": 46045.617,
+    "crizyli": 0.0,
+    "Rahul Rajesh": 20704.871,
+    "Adam Lindberg": 0.0,
+    "ariendy": 804.3341,
+    "RonMosenzon": 0.27246094
+  },
+  "authorDisplayNameMap": {
+    "Pengyuz": "Pengyuz",
+    "erjillsison": "erjillsison",
+    "Ronak Lakhotia": "Ronak Lakhotia",
+    "Xiao Pu": "Xiao Pu",
+    "crizyli": "crizyli",
+    "Rahul Rajesh": "Rahul Rajesh",
+    "Adam Lindberg": "Adam Lindberg",
+    "ariendy": "ariendy",
+    "RonMosenzon": "RonMosenzon"
+  }
+}

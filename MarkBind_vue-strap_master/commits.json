@@ -1,0 +1,158 @@
+{
+  "authorDailyContributionsMap": {
+    "Chng Zhi Xuan": [],
+    "alyip98": [
+      {
+        "insertions": 2,
+        "deletions": 0,
+        "date": "2019-06-04",
+        "commitResults": [
+          {
+            "hash": "814c8526ba990e8422cf0cb652a9ee3bdde944e9",
+            "message": "Add thumbnails feature (#107)",
+            "insertions": 2,
+            "deletions": 0
+          }
+        ]
+      }
+    ],
+    "Open O. Close": [],
+    "Chng-Zhi-Xuan": [
+      {
+        "insertions": 130,
+        "deletions": 200,
+        "date": "2019-05-27",
+        "commitResults": [
+          {
+            "hash": "ba9f17e356bf28fe14ffefe61c0652f4ef0e9edb",
+            "message": "Update dist",
+            "insertions": 130,
+            "deletions": 200
+          }
+        ]
+      },
+      {
+        "insertions": 300,
+        "deletions": 34,
+        "date": "2019-06-04",
+        "commitResults": [
+          {
+            "hash": "bc56e01f9410f76a89b323692b5d6db50562dc5f",
+            "message": "Update dist",
+            "insertions": 300,
+            "deletions": 34
+          }
+        ]
+      }
+    ],
+    "Open Close": []
+  },
+  "authorFinalContributionMap": {
+    "Chng Zhi Xuan": 0,
+    "alyip98": 2,
+    "Open O. Close": 0,
+    "Chng-Zhi-Xuan": 370,
+    "Open Close": 0
+  },
+  "authorFileFormatContributionMap": {
+    "Chng Zhi Xuan": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "alyip98": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 2,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Open O. Close": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Chng-Zhi-Xuan": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 370,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    },
+    "Open Close": {
+      "adoc": 0,
+      "cs": 0,
+      "css": 0,
+      "fxml": 0,
+      "gradle": 0,
+      "html": 0,
+      "java": 0,
+      "js": 0,
+      "json": 0,
+      "jsp": 0,
+      "md": 0,
+      "py": 0,
+      "tag": 0,
+      "txt": 0,
+      "xml": 0
+    }
+  },
+  "authorContributionVariance": {
+    "Chng Zhi Xuan": 0.0,
+    "alyip98": 0.1663516,
+    "Open O. Close": 0.0,
+    "Chng-Zhi-Xuan": 8751.593,
+    "Open Close": 0.0
+  },
+  "authorDisplayNameMap": {
+    "Chng Zhi Xuan": "Chng Zhi Xuan",
+    "alyip98": "alyip98",
+    "Open O. Close": "Open O. Close",
+    "Chng-Zhi-Xuan": "Chng-Zhi-Xuan",
+    "Open Close": "Open Close"
+  }
+}
