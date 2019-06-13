@@ -1,6 +1,5 @@
 {
   "authorDailyContributionsMap": {
-    "Pengyuz": [],
     "erjillsison": [
       {
         "insertions": 4,
@@ -61,126 +60,15 @@
         ]
       }
     ],
-    "Ronak Lakhotia": [
-      {
-        "insertions": 8,
-        "deletions": 8,
-        "date": "2019-05-26",
-        "commitResults": [
-          {
-            "hash": "a49c676224611d7a83baf87711e41a5f1002b70b",
-            "message": "[#9382] Make model change events unidirectional in question types (#9660)",
-            "insertions": 8,
-            "deletions": 8
-          }
-        ]
-      }
-    ],
-    "Xiao Pu": [
-      {
-        "insertions": 598,
-        "deletions": 598,
-        "date": "2019-05-27",
-        "commitResults": [
-          {
-            "hash": "5eff2f4d0819f8910f95f8da04ca2d60b1eb0bb4",
-            "message": "[#9718] Update timezone database to 2019a (#9719)",
-            "insertions": 598,
-            "deletions": 598
-          }
-        ]
-      },
-      {
-        "insertions": 149,
-        "deletions": 193,
-        "date": "2019-06-07",
-        "commitResults": [
-          {
-            "hash": "4346f6f3d5ef8bf9570ab088a9835709f13ca99f",
-            "message": "[#9737] ArchitectureTest not failing even with violations (#9738)",
-            "insertions": 149,
-            "deletions": 193
-          }
-        ]
-      }
-    ],
-    "crizyli": [],
-    "Rahul Rajesh": [
-      {
-        "insertions": 54,
-        "deletions": 773,
-        "date": "2019-05-31",
-        "commitResults": [
-          {
-            "hash": "77f4fa5d32e5ee843d715b57263a19f520a7b406",
-            "message": "[#9595] Migrate INSTRUCTOR_STUDENTS and INSTRUCTOR_STUDENTS_COURSES to new APIs (#9668)",
-            "insertions": 54,
-            "deletions": 773
-          }
-        ]
-      }
-    ],
-    "Adam Lindberg": [],
-    "ariendy": [
-      {
-        "insertions": 81,
-        "deletions": 82,
-        "date": "2019-05-16",
-        "commitResults": [
-          {
-            "hash": "18040a23ac6a5db5c0a251a7a0d7bfb19db468fb",
-            "message": "[#9554] standardise recycle bins for sessions courses (#9566)",
-            "insertions": 81,
-            "deletions": 82
-          }
-        ]
-      }
-    ],
-    "RonMosenzon": [
-      {
-        "insertions": 0,
-        "deletions": 3,
-        "date": "2019-06-06",
-        "commitResults": [
-          {
-            "hash": "7d4230ef80d37bae5ae2ef6f0c0f40562624c734",
-            "message": "[#9720] Resolve console warning raised by TinyMCE (#9739)",
-            "insertions": 0,
-            "deletions": 3
-          }
-        ]
-      }
-    ]
+    "Pengyuz": [],
+    "crizyli": []
   },
   "authorFinalContributionMap": {
-    "Pengyuz": 0,
     "erjillsison": 226,
-    "Ronak Lakhotia": 8,
-    "Xiao Pu": 391,
-    "crizyli": 0,
-    "Rahul Rajesh": 44,
-    "Adam Lindberg": 0,
-    "ariendy": 34,
-    "RonMosenzon": 0
+    "Pengyuz": 0,
+    "crizyli": 0
   },
   "authorFileFormatContributionMap": {
-    "Pengyuz": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 0,
-      "java": 0,
-      "js": 0,
-      "json": 0,
-      "jsp": 0,
-      "md": 0,
-      "py": 0,
-      "tag": 0,
-      "txt": 0,
-      "xml": 0
-    },
     "erjillsison": {
       "adoc": 0,
       "cs": 0,
@@ -198,33 +86,16 @@
       "txt": 0,
       "xml": 0
     },
-    "Ronak Lakhotia": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 8,
-      "java": 0,
-      "js": 0,
-      "json": 0,
-      "jsp": 0,
-      "md": 0,
-      "py": 0,
-      "tag": 0,
-      "txt": 0,
-      "xml": 0
-    },
-    "Xiao Pu": {
+    "Pengyuz": {
       "adoc": 0,
       "cs": 0,
       "css": 0,
       "fxml": 0,
       "gradle": 0,
       "html": 0,
-      "java": 146,
+      "java": 0,
       "js": 0,
-      "json": 245,
+      "json": 0,
       "jsp": 0,
       "md": 0,
       "py": 0,
@@ -248,96 +119,16 @@
       "tag": 0,
       "txt": 0,
       "xml": 0
-    },
-    "Rahul Rajesh": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 44,
-      "java": 0,
-      "js": 0,
-      "json": 0,
-      "jsp": 0,
-      "md": 0,
-      "py": 0,
-      "tag": 0,
-      "txt": 0,
-      "xml": 0
-    },
-    "Adam Lindberg": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 0,
-      "java": 0,
-      "js": 0,
-      "json": 0,
-      "jsp": 0,
-      "md": 0,
-      "py": 0,
-      "tag": 0,
-      "txt": 0,
-      "xml": 0
-    },
-    "ariendy": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 34,
-      "java": 0,
-      "js": 0,
-      "json": 0,
-      "jsp": 0,
-      "md": 0,
-      "py": 0,
-      "tag": 0,
-      "txt": 0,
-      "xml": 0
-    },
-    "RonMosenzon": {
-      "adoc": 0,
-      "cs": 0,
-      "css": 0,
-      "fxml": 0,
-      "gradle": 0,
-      "html": 0,
-      "java": 0,
-      "js": 0,
-      "json": 0,
-      "jsp": 0,
-      "md": 0,
-      "py": 0,
-      "tag": 0,
-      "txt": 0,
-      "xml": 0
     }
   },
   "authorContributionVariance": {
-    "Pengyuz": 0.0,
     "erjillsison": 888.0459,
-    "Ronak Lakhotia": 7.75,
-    "Xiao Pu": 46045.617,
-    "crizyli": 0.0,
-    "Rahul Rajesh": 20704.871,
-    "Adam Lindberg": 0.0,
-    "ariendy": 804.3341,
-    "RonMosenzon": 0.27246094
+    "Pengyuz": 0.0,
+    "crizyli": 0.0
   },
   "authorDisplayNameMap": {
-    "Pengyuz": "Pengyuz",
     "erjillsison": "erjillsison",
-    "Ronak Lakhotia": "Ronak Lakhotia",
-    "Xiao Pu": "Xiao Pu",
-    "crizyli": "crizyli",
-    "Rahul Rajesh": "Rahul Rajesh",
-    "Adam Lindberg": "Adam Lindberg",
-    "ariendy": "ariendy",
-    "RonMosenzon": "RonMosenzon"
+    "Pengyuz": "Pengyuz",
+    "crizyli": "crizyli"
   }
 }
