@@ -1,134 +1,6 @@
 {
   "authorDailyContributionsMap": {
-    "WANG CHAO": [
-      {
-        "insertions": 14,
-        "deletions": 2,
-        "date": "2019-06-05",
-        "commitResults": [
-          {
-            "hash": "0742863af6084ace43a3db97c0bd5d644e99b5d8",
-            "message": " [#678] Report: use development version of vue.js (#679)",
-            "insertions": 14,
-            "deletions": 2
-          }
-        ]
-      }
-    ],
-    "James Pang": [
-      {
-        "insertions": 2,
-        "deletions": 2,
-        "date": "2019-05-17",
-        "commitResults": [
-          {
-            "hash": "adb48f4e903be700b33b953457ca5b69df4908e8",
-            "message": "[#652] ChartView: fix url directing to wrong repository (#655)",
-            "insertions": 2,
-            "deletions": 2
-          }
-        ]
-      },
-      {
-        "insertions": 2,
-        "deletions": 2,
-        "date": "2019-05-31",
-        "commitResults": [
-          {
-            "hash": "3bbe5fccfc04aeb2742d814fef4fb8f534f3b55e",
-            "message": "[#672] Toolbar: set \u0027commit\u0027 as default for granularity (#684)",
-            "insertions": 1,
-            "deletions": 1
-          },
-          {
-            "hash": "3bf07fd69586874cf3238e9b28ea025b96f7ba97",
-            "message": "[#699] Report: standardize the author\u0027s name display (#701)",
-            "insertions": 1,
-            "deletions": 1
-          }
-        ]
-      },
-      {
-        "insertions": 32,
-        "deletions": 2,
-        "date": "2019-06-03",
-        "commitResults": [
-          {
-            "hash": "7c0750c510003722f72ad363cb50ce759aa6735a",
-            "message": "[#635] CodeView: add line number to code (#669)",
-            "insertions": 32,
-            "deletions": 2
-          }
-        ]
-      },
-      {
-        "insertions": 38,
-        "deletions": 17,
-        "date": "2019-06-05",
-        "commitResults": [
-          {
-            "hash": "ad1e0265a549888e25fc4b94759cca4bea575785",
-            "message": "[#702] Fix url directing to the wrong branch (#704)",
-            "insertions": 18,
-            "deletions": 10
-          },
-          {
-            "hash": "afa5be94ea35410ed126c2958024696a62d4fa2e",
-            "message": "[#664] Toolbar: expand width for `breakdown by file format` (#685)",
-            "insertions": 6,
-            "deletions": 5
-          },
-          {
-            "hash": "eb9c7460a0e7672bff50c5e0708cb1ff0ed5b329",
-            "message": "[#663] ChartView: add total contribution of group (#697)",
-            "insertions": 14,
-            "deletions": 2
-          }
-        ]
-      },
-      {
-        "insertions": 36,
-        "deletions": 42,
-        "date": "2019-06-10",
-        "commitResults": [
-          {
-            "hash": "f96222a79167a55bb30fc9ced940b8660ef72425",
-            "message": "[#647] Toolbar: rename values in `sort group by` (#668)",
-            "insertions": 36,
-            "deletions": 42
-          }
-        ]
-      },
-      {
-        "insertions": 34,
-        "deletions": 24,
-        "date": "2019-06-11",
-        "commitResults": [
-          {
-            "hash": "0d3ba8a7da3f4c97014ece0805bef0d1e40799b9",
-            "message": "[#660] ChartView: remove ramp slices not within date range (#670)",
-            "insertions": 34,
-            "deletions": 24
-          }
-        ]
-      }
-    ],
-    "Metta Ong": [
-      {
-        "insertions": 371,
-        "deletions": 98,
-        "date": "2019-05-30",
-        "commitResults": [
-          {
-            "hash": "a6b3cac11da8860c30eacafef8f3a488e9fc31f7",
-            "message": "Report: Add zoom in feature for ramp charts (#573)",
-            "insertions": 371,
-            "deletions": 98
-          }
-        ]
-      }
-    ],
-    "Lee Jin Yao": [
+    "jylee-git": [
       {
         "insertions": 1,
         "deletions": 1,
@@ -169,80 +41,14 @@
         ]
       }
     ],
-    "Yong Hao TENG": [
-      {
-        "insertions": 18,
-        "deletions": 3,
-        "date": "2019-06-10",
-        "commitResults": [
-          {
-            "hash": "3c6a148c07376ce2d2dc2a72b07588213cd574c2",
-            "message": "[#606] Enable use of deploy key for publishing (#732)",
-            "insertions": 18,
-            "deletions": 3
-          }
-        ]
-      }
-    ],
-    "Ming Yi": [
-      {
-        "insertions": 76,
-        "deletions": 6,
-        "date": "2019-05-16",
-        "commitResults": [
-          {
-            "hash": "49c46a4d746d212ce113813cc6fa630a18d55b74",
-            "message": "[#643] Fix GitBranch failure due to empty repos (#644)",
-            "insertions": 76,
-            "deletions": 6
-          }
-        ]
-      }
-    ]
+    "\"": []
   },
   "authorFinalContributionMap": {
-    "WANG CHAO": 15,
-    "James Pang": 129,
-    "Metta Ong": 359,
-    "Lee Jin Yao": 14,
-    "Yong Hao TENG": 18,
-    "Ming Yi": 75
+    "jylee-git": 14,
+    "\"": 0
   },
   "authorFileFormatContributionMap": {
-    "WANG CHAO": {
-      "java": 0,
-      "js": 0,
-      "scss": 1,
-      "json": 0,
-      "md": 13,
-      "py": 0,
-      "jade": 0,
-      "gradle": 0,
-      "pug": 1
-    },
-    "James Pang": {
-      "java": 0,
-      "js": 74,
-      "scss": 33,
-      "json": 0,
-      "md": 0,
-      "py": 0,
-      "jade": 0,
-      "gradle": 0,
-      "pug": 22
-    },
-    "Metta Ong": {
-      "java": 0,
-      "js": 228,
-      "scss": 41,
-      "json": 4,
-      "md": 7,
-      "py": 0,
-      "jade": 0,
-      "gradle": 0,
-      "pug": 79
-    },
-    "Lee Jin Yao": {
+    "jylee-git": {
       "java": 0,
       "js": 11,
       "scss": 0,
@@ -253,19 +59,8 @@
       "gradle": 0,
       "pug": 3
     },
-    "Yong Hao TENG": {
+    "\"": {
       "java": 0,
-      "js": 0,
-      "scss": 0,
-      "json": 0,
-      "md": 18,
-      "py": 0,
-      "jade": 0,
-      "gradle": 0,
-      "pug": 0
-    },
-    "Ming Yi": {
-      "java": 75,
       "js": 0,
       "scss": 0,
       "json": 0,
@@ -277,19 +72,11 @@
     }
   },
   "authorContributionVariance": {
-    "WANG CHAO": 8.248887,
-    "James Pang": 395.04556,
-    "Metta Ong": 7087.6343,
-    "Lee Jin Yao": 4.6988883,
-    "Yong Hao TENG": 14.209998,
-    "Ming Yi": 216.66231
+    "jylee-git": 5.969754,
+    "\"": 0.0
   },
   "authorDisplayNameMap": {
-    "WANG CHAO": "WANG CHAO",
-    "James Pang": "James Pang",
-    "Metta Ong": "Metta Ong",
-    "Lee Jin Yao": "Lee Jin Yao",
-    "Yong Hao TENG": "Yong Hao TENG",
-    "Ming Yi": "Ming Yi"
+    "jylee-git": "Jin Yao",
+    "\"": "\""
   }
 }
