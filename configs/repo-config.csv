@@ -1,7 +1,7 @@
 Repository's Location,Branch,File Formats,Ignore Glob List,Ignore standalone config,Ignore Commit List
-https://github.com/reposense/RepoSense.git,master,,,,
-https://github.com/MarkBind/markbind.git,master,,,,
-https://github.com/TEAMMATES/teammates.git,master,,,,
-https://github.com/MarkBind/vue-strap.git,master,,,,
-https://github.com/powerpointlabs/powerpointlabs.git,master,,,,
-https://github.com/CATcher-org/CATcher.git,master,,,,
+https://github.com/reposense/RepoSense.git,master,,,yes,
+https://github.com/MarkBind/markbind.git,master,,,yes,
+https://github.com/TEAMMATES/teammates.git,master,,,yes,
+https://github.com/MarkBind/vue-strap.git,master,,,yes,
+https://github.com/powerpointlabs/powerpointlabs.git,master,,,yes,
+https://github.com/CATcher-org/CATcher.git,master,,,yes,
