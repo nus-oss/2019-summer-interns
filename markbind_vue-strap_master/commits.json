@@ -40,7 +40,7 @@
         ]
       }
     ],
-    "alyip99": [
+    "alyip98": [
       {
         "insertions": 8,
         "deletions": 1,
@@ -84,7 +84,7 @@
   },
   "authorFinalContributionMap": {
     "openorclose": 22,
-    "alyip99": 143
+    "alyip98": 143
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
@@ -96,7 +96,7 @@
       "py": 0,
       "vue": 22
     },
-    "alyip99": {
+    "alyip98": {
       "java": 0,
       "js": 2,
       "css": 0,
@@ -108,10 +108,10 @@
   },
   "authorContributionVariance": {
     "openorclose": 159.09895,
-    "alyip99": 560.7956
+    "alyip98": 560.7956
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",
-    "alyip99": "Alfred"
+    "alyip98": "Alfred"
   }
 }

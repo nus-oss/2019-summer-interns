@@ -4405,916 +4405,916 @@
       {
         "lineNumber": 1,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "\u003ctemplate\u003e"
       },
       {
         "lineNumber": 2,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  \u003cdiv :class\u003d\"[\u0027thumb-wrapper\u0027, {\u0027thumb-circle\u0027: circle}, addClass]\" :style\u003d\"[getBorder, getFontSize, getFontColor, getBgColor]\"\u003e"
       },
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    \u003cimg ref\u003d\"pic\" @load.once\u003d\"computeImgSize\" :src\u003d\"src\" class\u003d\"thumb-image\" :width\u003d\"computedWidth\" :height\u003d\"computedHeight\" :alt\u003d\"alt\" v-if\u003d\"hasSrc\"\u003e"
       },
       {
         "lineNumber": 4,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    \u003cslot\u003e\u003c/slot\u003e"
       },
       {
         "lineNumber": 5,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  \u003c/div\u003e"
       },
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "\u003c/template\u003e"
       },
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "\u003cscript\u003e"
       },
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  const DEFAULT_SIZE \u003d 100;"
       },
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 11,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  export default {"
       },
       {
         "lineNumber": 12,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    props: {"
       },
       {
         "lineNumber": 13,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      circle: {"
       },
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: Boolean,"
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: false"
       },
       {
         "lineNumber": 16,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      addClass: {"
       },
       {
         "lineNumber": 18,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 19,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      alt: {"
       },
       {
         "lineNumber": 22,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 23,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 24,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      background: {"
       },
       {
         "lineNumber": 26,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 27,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 28,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      border: {"
       },
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 32,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 33,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      fontColor: {"
       },
       {
         "lineNumber": 34,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 35,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      fontSize: {"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 39,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 41,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      size: {"
       },
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 44,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      src: {"
       },
       {
         "lineNumber": 46,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      text: {"
       },
       {
         "lineNumber": 49,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: String,"
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: \u0027\u0027"
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 52,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    computed: {"
       },
       {
         "lineNumber": 54,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      getBorder() {"
       },
       {
         "lineNumber": 55,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        // Default is no border"
       },
       {
         "lineNumber": 56,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        return this.border \u003d\u003d\u003d \u0027\u0027 ? {} : {border: this.border};"
       },
       {
         "lineNumber": 57,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 58,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      getFontSize() {"
       },
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        const defaultSize \u003d this.size/2;"
       },
       {
         "lineNumber": 60,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        const definedSize \u003d this.fontSize;"
       },
       {
         "lineNumber": 61,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        return {\u0027font-size\u0027: ((definedSize \u003d\u003d\u003d undefined || definedSize \u003d\u003d\u003d \u0027\u0027) ? defaultSize : definedSize) + \u0027px\u0027};"
       },
       {
         "lineNumber": 63,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      getFontColor() {"
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        // Default is no setting (inherit)"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        return this.fontColor \u003d\u003d\u003d \u0027\u0027 ? {} : {\u0027color\u0027: this.fontColor};"
       },
       {
         "lineNumber": 67,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 68,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      getBgColor() {"
       },
       {
         "lineNumber": 69,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        // Default is no setting (inherit)"
       },
       {
         "lineNumber": 70,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        return this.background \u003d\u003d\u003d \u0027\u0027 ? {} : {\u0027background\u0027: this.background};"
       },
       {
         "lineNumber": 71,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
         "lineNumber": 72,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      hasSrc() {"
       },
       {
         "lineNumber": 73,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        // Returns true if src is defined and is not an empty string"
       },
       {
         "lineNumber": 74,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        return this.src !\u003d\u003d undefined \u0026\u0026 this.src !\u003d\u003d \u0027\u0027;"
       },
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      }"
       },
       {
         "lineNumber": 76,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
         "lineNumber": 77,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    data () {"
       },
       {
         "lineNumber": 78,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      return {"
       },
       {
         "lineNumber": 79,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        computedWidth:\u0027\u0027,"
       },
       {
         "lineNumber": 80,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        computedHeight:\u0027\u0027"
       },
       {
         "lineNumber": 81,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      }"
       },
       {
         "lineNumber": 82,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
         "lineNumber": 83,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    mounted() {"
       },
       {
         "lineNumber": 84,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      this.size \u003d this.size || DEFAULT_SIZE;"
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      let wrapperElement \u003d this.$el;"
       },
       {
         "lineNumber": 86,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      wrapperElement.style.width \u003d this.size + \u0027px\u0027;"
       },
       {
         "lineNumber": 87,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      wrapperElement.style.height \u003d this.size + \u0027px\u0027;"
       },
       {
         "lineNumber": 88,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      wrapperElement.style.lineHeight \u003d this.size + \u0027px\u0027;"
       },
       {
         "lineNumber": 89,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    methods: {"
       },
       {
         "lineNumber": 91,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      computeImgSize() {"
       },
       {
         "lineNumber": 92,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        // Scale the img within such that the cropped image is the required size"
       },
       {
         "lineNumber": 93,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        const renderedImg \u003d this.$refs.pic;"
       },
       {
         "lineNumber": 94,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        const imgHeight \u003d renderedImg.naturalHeight;"
       },
       {
         "lineNumber": 95,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        const imgWidth \u003d renderedImg.naturalWidth;"
       },
       {
         "lineNumber": 96,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        const imgSize \u003d Math.min(imgHeight, imgWidth);"
       },
       {
         "lineNumber": 97,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        const expansionFactor \u003d this.size/imgSize;"
       },
       {
         "lineNumber": 98,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 99,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        this.computedWidth \u003d imgWidth * expansionFactor;"
       },
       {
         "lineNumber": 100,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        this.computedHeight \u003d imgHeight * expansionFactor;"
       },
       {
         "lineNumber": 101,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      }"
       },
       {
         "lineNumber": 102,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    }"
       },
       {
         "lineNumber": 103,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  }"
       },
       {
         "lineNumber": 104,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "\u003c/script\u003e"
       },
       {
         "lineNumber": 105,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 106,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 107,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "\u003cstyle\u003e"
       },
       {
         "lineNumber": 108,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  .thumb-wrapper {"
       },
       {
         "lineNumber": 109,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    display: inline-block;"
       },
       {
         "lineNumber": 110,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    overflow: hidden;"
       },
       {
         "lineNumber": 111,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    position: relative;"
       },
       {
         "lineNumber": 112,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    text-align: center;"
       },
       {
         "lineNumber": 113,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    vertical-align: middle;"
       },
       {
         "lineNumber": 114,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  }"
       },
       {
         "lineNumber": 115,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 116,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  .thumb-circle {"
       },
       {
         "lineNumber": 117,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    border-radius: 50%;"
       },
       {
         "lineNumber": 118,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    -moz-border-radius: 50%;"
       },
       {
         "lineNumber": 119,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    -webkit-border-radius: 50%;"
       },
       {
         "lineNumber": 120,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  }"
       },
       {
         "lineNumber": 121,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": ""
       },
       {
         "lineNumber": 122,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  .thumb-image {"
       },
       {
         "lineNumber": 123,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    left: 50%;"
       },
       {
         "lineNumber": 124,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    position: absolute;"
       },
       {
         "lineNumber": 125,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    top: 50%;"
       },
       {
         "lineNumber": 126,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    transform: translate(-50%,-50%);"
       },
       {
         "lineNumber": 127,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    -ms-transform: translate(-50%,-50%);"
       },
       {
         "lineNumber": 128,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    -webkit-transform: translate(-50%,-50%);"
       },
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  }"
       },
       {
         "lineNumber": 130,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "\u003c/style\u003e"
       }
     ],
     "authorContributionMap": {
-      "alyip99": 130
+      "alyip98": 130
     }
   },
   {
@@ -5330,7 +5330,7 @@
       {
         "lineNumber": 2,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    \u003cdiv class\u003d\"alert container\" :class\u003d\"[boxStyle, addClass, {\u0027alert-dismissible\u0027: dismissible}]\" :style\u003d\"customStyle\"\u003e"
       },
@@ -5379,21 +5379,21 @@
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        \u003cbutton type\u003d\"button\" class\u003d\"close\" data-dismiss\u003d\"alert\" aria-label\u003d\"Close\" v-if\u003d\"dismissible\"\u003e"
       },
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "          \u003cspan aria-hidden\u003d\"true\"\u003e\u0026times;\u003c/span\u003e"
       },
       {
         "lineNumber": 11,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        \u003c/button\u003e"
       },
@@ -5449,28 +5449,28 @@
       {
         "lineNumber": 19,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      dismissible: {"
       },
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        type: Boolean,"
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "        default: false"
       },
       {
         "lineNumber": 22,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "      },"
       },
@@ -6316,7 +6316,7 @@
       }
     ],
     "authorContributionMap": {
-      "alyip99": 8,
+      "alyip98": 8,
       "-": 134
     }
   },
@@ -6347,7 +6347,7 @@
       {
         "lineNumber": 4,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    --\u003e\u003ctransition :name\u003d\"effect\"\u003e"
       },
@@ -6410,14 +6410,14 @@
       {
         "lineNumber": 13,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "    \u003c/transition\u003e\u003c!--"
       },
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  --\u003e\u003c/span\u003e"
       },
@@ -6808,7 +6808,7 @@
       }
     ],
     "authorContributionMap": {
-      "alyip99": 3,
+      "alyip98": 3,
       "-": 66
     }
   },
@@ -6916,7 +6916,7 @@
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "import thumbnail from \u0027./Thumbnail.vue\u0027"
       },
@@ -7063,7 +7063,7 @@
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "alyip99"
+          "gitId": "alyip98"
         },
         "content": "  thumbnail,"
       },
@@ -7293,7 +7293,7 @@
       }
     ],
     "authorContributionMap": {
-      "alyip99": 2,
+      "alyip98": 2,
       "-": 66
     }
   }
