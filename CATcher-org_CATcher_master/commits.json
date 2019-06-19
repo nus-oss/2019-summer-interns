@@ -97,10 +97,16 @@
         ]
       },
       {
-        "insertions": 24,
-        "deletions": 13,
+        "insertions": 132,
+        "deletions": 16,
         "date": "2019-05-22",
         "commitResults": [
+          {
+            "hash": "66a53b386eb33431d8f4e88c4a255fa4ad1d0c8e",
+            "message": "Profiles Select Menu Working",
+            "insertions": 108,
+            "deletions": 3
+          },
           {
             "hash": "2bbc31137edf632db085191e384dfb6bf4c80c5d",
             "message": "Style Fixes",
@@ -110,10 +116,35 @@
         ]
       },
       {
-        "insertions": 18,
-        "deletions": 1,
+        "insertions": 221,
+        "deletions": 76,
+        "date": "2019-05-23",
+        "commitResults": [
+          {
+            "hash": "3e6f2bc613cfd6f5a573186e4d56a1f2a854cd5d",
+            "message": "Profiles Selector",
+            "insertions": 78,
+            "deletions": 46
+          },
+          {
+            "hash": "c35e6fa18ab14a5023c7a9943657869227a4772a",
+            "message": "Working profiles.json reading and data validation.",
+            "insertions": 143,
+            "deletions": 30
+          }
+        ]
+      },
+      {
+        "insertions": 19,
+        "deletions": 2,
         "date": "2019-05-24",
         "commitResults": [
+          {
+            "hash": "aea84a71603e0f2bdd58f85a91c44378d4e861af",
+            "message": "CodeStyle Changes",
+            "insertions": 1,
+            "deletions": 1
+          },
           {
             "hash": "eafbe056a14cacb4f624f7c1fe293d2040bb1829",
             "message": "Codestyle Fixes",
@@ -160,8 +191,8 @@
         ]
       },
       {
-        "insertions": 299,
-        "deletions": 147,
+        "insertions": 311,
+        "deletions": 156,
         "date": "2019-05-30",
         "commitResults": [
           {
@@ -169,6 +200,18 @@
             "message": "Working CSVImport and Parser",
             "insertions": 225,
             "deletions": 74
+          },
+          {
+            "hash": "c025f0528bb47616f52793000d799768a1e35c51",
+            "message": "Fixed Console ValueChangeAfterCheck Error",
+            "insertions": 12,
+            "deletions": 8
+          },
+          {
+            "hash": "ecfb3bc322b23dcc09e02fd229149f5e47912af8",
+            "message": "Removed Unecessary ConsoleLog",
+            "insertions": 0,
+            "deletions": 1
           },
           {
             "hash": "95711b69cb615c36e295e2f6fcfe719a31cfd50c",
@@ -191,8 +234,8 @@
         ]
       },
       {
-        "insertions": 48,
-        "deletions": 65,
+        "insertions": 54,
+        "deletions": 74,
         "date": "2019-05-31",
         "commitResults": [
           {
@@ -208,6 +251,12 @@
             "deletions": 28
           },
           {
+            "hash": "acb7990d55d936488e60965b4ef98d9d686b0ab6",
+            "message": "Style Fixes",
+            "insertions": 6,
+            "deletions": 9
+          },
+          {
             "hash": "def19cdf0d31a7c084e92344bc45ee44a31de906",
             "message": "README.md Updated to Reflect use of data.csv",
             "insertions": 4,
@@ -216,15 +265,46 @@
         ]
       },
       {
-        "insertions": 6,
-        "deletions": 18,
+        "insertions": 35,
+        "deletions": 74,
         "date": "2019-06-04",
         "commitResults": [
+          {
+            "hash": "c3a22d6b26c481acf31f21b8c6f210076dde58f0",
+            "message": "Working Directory Isolation",
+            "insertions": 9,
+            "deletions": 0
+          },
+          {
+            "hash": "5985bdb7494760a6790d25d0ad4de1a1021aa1be",
+            "message": "Fully working Profiles.json Import",
+            "insertions": 18,
+            "deletions": 50
+          },
+          {
+            "hash": "8f284d23a61d6db37894514f9ea11b5646758a17",
+            "message": "Code Style Cleanup",
+            "insertions": 2,
+            "deletions": 6
+          },
           {
             "hash": "f8d88f8c4ffa885f874e59ab0de232fb01e1d6fa",
             "message": "Codestyle Fixes",
             "insertions": 6,
             "deletions": 18
+          }
+        ]
+      },
+      {
+        "insertions": 18,
+        "deletions": 23,
+        "date": "2019-06-06",
+        "commitResults": [
+          {
+            "hash": "b74cfeb8792ed1632e95b61f505f8ee030793864",
+            "message": "Codestyle Fixes",
+            "insertions": 18,
+            "deletions": 23
           }
         ]
       },
@@ -238,6 +318,64 @@
             "message": "Style Fix",
             "insertions": 15,
             "deletions": 12
+          }
+        ]
+      },
+      {
+        "insertions": 30,
+        "deletions": 12,
+        "date": "2019-06-10",
+        "commitResults": [
+          {
+            "hash": "d9bb7ed145f0bed92c9f766892d96bdc57d42d55",
+            "message": "State Save. To Test on Windows",
+            "insertions": 30,
+            "deletions": 12
+          }
+        ]
+      },
+      {
+        "insertions": 3,
+        "deletions": 5,
+        "date": "2019-06-11",
+        "commitResults": [
+          {
+            "hash": "44af1f179e1e454f34f0c254147ea3d0342b8d01",
+            "message": "Codestyle Cleanup",
+            "insertions": 3,
+            "deletions": 5
+          }
+        ]
+      },
+      {
+        "insertions": 88,
+        "deletions": 18,
+        "date": "2019-06-12",
+        "commitResults": [
+          {
+            "hash": "3e748e65b30f9bff450ec8b2b5d4a610c229aec6",
+            "message": "Working Profiles Selector",
+            "insertions": 88,
+            "deletions": 18
+          }
+        ]
+      },
+      {
+        "insertions": 23,
+        "deletions": 21,
+        "date": "2019-06-14",
+        "commitResults": [
+          {
+            "hash": "9c46cfcbf1c98ce043f67f2bfc5a6c83b6bf1017",
+            "message": "Minor Bug Fix \u0026 Feature",
+            "insertions": 22,
+            "deletions": 20
+          },
+          {
+            "hash": "40eeea0fc0a8d0e85e7de7001a36a798e959e119",
+            "message": "Minor Bug Fix",
+            "insertions": 1,
+            "deletions": 1
           }
         ]
       }
@@ -916,12 +1054,31 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 84,
+        "deletions": 35,
+        "date": "2019-06-18",
+        "commitResults": [
+          {
+            "hash": "d533bc88ec7bffa193d465417e7c02fe66c90813",
+            "message": "fix bug for view in browser button",
+            "insertions": 7,
+            "deletions": 3
+          },
+          {
+            "hash": "b6a439163ed86b0e661a1fdf66bc164705c71bc5",
+            "message": "Add a \"View in Browser\" button to the table (#86)",
+            "insertions": 77,
+            "deletions": 32
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 432,
-    "KevinCJH": 601
+    "ptvrajsk": 739,
+    "KevinCJH": 673
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -931,8 +1088,8 @@
       "md": 4,
       "py": 0,
       "tag": 0,
-      "html": 34,
-      "ts": 394
+      "html": 58,
+      "ts": 677
     },
     "KevinCJH": {
       "java": 0,
@@ -941,13 +1098,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 99,
-      "ts": 502
+      "html": 147,
+      "ts": 526
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 6949.922,
-    "KevinCJH": 14619.155
+    "ptvrajsk": 8835.799,
+    "KevinCJH": 13492.887
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

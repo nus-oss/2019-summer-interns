@@ -137,12 +137,38 @@
             "deletions": 24
           }
         ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 0,
+        "date": "2019-06-15",
+        "commitResults": [
+          {
+            "hash": "27152fb10573899b79fe93ffc2e211329ce9a4fc",
+            "message": "[#712] ChartView: fix misalignment of chart title (#715)",
+            "insertions": 2,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 10,
+        "date": "2019-06-16",
+        "commitResults": [
+          {
+            "hash": "5a405e1be35dc5ae8ccf832dd5caf27a94f699d4",
+            "message": "[#689] v_summary.js: remove unused remnants code (#733)",
+            "insertions": 0,
+            "deletions": 10
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 14,
-    "jamessspanggg": 129
+    "jamessspanggg": 131
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -159,7 +185,7 @@
     "jamessspanggg": {
       "java": 0,
       "js": 74,
-      "scss": 33,
+      "scss": 35,
       "json": 0,
       "md": 0,
       "py": 0,
@@ -169,8 +195,8 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 4.6988883,
-    "jamessspanggg": 395.04556
+    "jylee-git": 4.076734,
+    "jamessspanggg": 344.2857
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

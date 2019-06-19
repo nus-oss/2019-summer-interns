@@ -107,13 +107,32 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 102,
+        "deletions": 10,
+        "date": "2019-06-19",
+        "commitResults": [
+          {
+            "hash": "a8e239ccbdd1bd22f863c737ac8d6e4507235d21",
+            "message": "[#9537] Instructor Help Page: Tooltips should link to specific sections in the help page (#9696)",
+            "insertions": 12,
+            "deletions": 8
+          },
+          {
+            "hash": "eb10022b534a916324395b5790cd57334a43f2ca",
+            "message": "[#9595] Add tests for DELETE /session/publish (#9727)",
+            "insertions": 90,
+            "deletions": 2
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "erjillsison": 331,
     "Pengyuz": 1,
-    "crizyli": 5
+    "crizyli": 107
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
@@ -137,20 +156,20 @@
       "ts": 1
     },
     "crizyli": {
-      "java": 0,
+      "java": 90,
       "js": 0,
       "scss": 0,
       "md": 0,
       "py": 0,
       "tag": 0,
       "html": 0,
-      "ts": 5
+      "ts": 17
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 1291.9833,
-    "Pengyuz": 0.030273438,
-    "crizyli": 1.0898438
+    "erjillsison": 1107.8375,
+    "Pengyuz": 0.025623279,
+    "crizyli": 321.40997
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",
