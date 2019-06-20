@@ -77,6 +77,19 @@
             "deletions": 3
           }
         ]
+      },
+      {
+        "insertions": 89,
+        "deletions": 47,
+        "date": "2019-06-19",
+        "commitResults": [
+          {
+            "hash": "a4f1c93074428fbfce77ab74026e4b22132d6e83",
+            "message": "[#9714] Student List: \"Send Invite\" button under Action(s) header is missing (#9777)",
+            "insertions": 89,
+            "deletions": 47
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -89,6 +102,19 @@
             "hash": "d94f72bb18196cc27859319ed8a23dd7345aed35",
             "message": "[#9703] Instructor: enroll students: Remove incorrect message after enrolling students to a new course (#9708)",
             "insertions": 1,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 4,
+        "deletions": 0,
+        "date": "2019-06-19",
+        "commitResults": [
+          {
+            "hash": "7e9068a9344f59606faf290b908dc12dd4e616d5",
+            "message": "[#9757] Feedback Session Edit: Fix assigned weights not shown after clicking \u0027Choices are weighted\u0027 checkbox (#9759)",
+            "insertions": 4,
             "deletions": 0
           }
         ]
@@ -109,7 +135,7 @@
         ]
       },
       {
-        "insertions": 102,
+        "insertions": 104,
         "deletions": 10,
         "date": "2019-06-19",
         "commitResults": [
@@ -124,15 +150,21 @@
             "message": "[#9595] Add tests for DELETE /session/publish (#9727)",
             "insertions": 90,
             "deletions": 2
+          },
+          {
+            "hash": "3d135f591c715b5367f19775929021e1e443a699",
+            "message": "[#9771] Instructor search page: Tooltip not shown for the info icon (#9772)",
+            "insertions": 2,
+            "deletions": 0
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 331,
-    "Pengyuz": 1,
-    "crizyli": 107
+    "erjillsison": 420,
+    "Pengyuz": 5,
+    "crizyli": 109
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
@@ -142,8 +174,8 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 27,
-      "ts": 102
+      "html": 29,
+      "ts": 189
     },
     "Pengyuz": {
       "java": 0,
@@ -153,7 +185,7 @@
       "py": 0,
       "tag": 0,
       "html": 0,
-      "ts": 1
+      "ts": 5
     },
     "crizyli": {
       "java": 90,
@@ -163,13 +195,13 @@
       "py": 0,
       "tag": 0,
       "html": 0,
-      "ts": 17
+      "ts": 19
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 1107.8375,
-    "Pengyuz": 0.025623279,
-    "crizyli": 321.40997
+    "erjillsison": 1508.1143,
+    "Pengyuz": 0.4300554,
+    "crizyli": 332.97504
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",
