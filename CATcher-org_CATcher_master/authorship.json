@@ -6262,39 +6262,889 @@
     }
   },
   {
+    "path": "src/app/core/models/issue.model.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {Team} from \u0027./team.model\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export interface Issue {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  readonly id: number;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  readonly created_at: string;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  title: string;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  type: string;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  severity: string;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  description?: string;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  responseTag?: string;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  assignees?: string[];"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  duplicated?: boolean;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  duplicateOf?: number;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  status?: string;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  teamAssigned?: Team;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  todoList?: string[];"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  teamResponse?: string;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  tutorResponse?: string;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export interface Issues {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  [id: number]: Issue;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * The types of labels in Issue must follow the format of `Type`.`Value`."
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Where `Type` represent the type of the label. (e.g. severity, type, response)"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * And `Value` represent the value that is associated to the `Type` (e.g. for severity Type, it could be Low, Medium, High)"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const LABELS \u003d [\u0027severity\u0027, \u0027type\u0027, \u0027response\u0027, \u0027duplicate\u0027, \u0027status\u0027];"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const labelsToAttributeMapping \u003d {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027severity\u0027: \u0027severity\u0027,"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027type\u0027: \u0027type\u0027,"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027response\u0027: \u0027responseTag\u0027,"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027status\u0027: \u0027status\u0027,"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const SEVERITY_ORDER \u003d { Low: 0, Medium: 1, High: 2 };"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const ISSUE_TYPE_ORDER \u003d { DocumentationBug: 0, FunctionalityBug: 1 };"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export enum STATUS {"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Incomplete \u003d \u0027Incomplete\u0027,"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Done \u003d \u0027Done\u0027,"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export enum SEVERITY {"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Low \u003d \u0027Low\u0027,"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Medium \u003d \u0027Medium\u0027,"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  High \u003d \u0027High\u0027,"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export enum TYPE {"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  DocumentationBug \u003d \u0027DocumentationBug\u0027,"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FunctionalityBug \u003d \u0027FunctionalityBug\u0027,"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export enum RESPONSE {"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Accepted \u003d \u0027Accepted\u0027,"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Rejected \u003d \u0027Rejected\u0027,"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  IssueUnclear \u003d \u0027IssueUnclear\u0027,"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  CannotReproduce \u003d \u0027CannotReproduce\u0027,"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const ISSUE_LABELS \u003d {"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  severity: Object.keys(SEVERITY),"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  type: Object.keys(TYPE),"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  response: Object.keys(RESPONSE),"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const IssuesFilter \u003d {"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  phase1: {"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Student: \u0027FILTER_BY_CREATOR\u0027,"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Tutor: \u0027NO_FILTER\u0027,"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Admin: \u0027NO_FILTER\u0027,"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  phase2: {"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Student: \u0027FILTER_BY_TEAM\u0027,"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Tutor: \u0027FILTER_BY_TEAM_ASSIGNED\u0027,"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Admin: \u0027NO_FILTER\u0027,"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  phase3: {"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Student: \u0027NO_ACCESS\u0027,"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Tutor: \u0027FILTER_BY_TEAM_ASSIGNED\u0027,"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Admin: \u0027NO_FILTER\u0027,"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export enum RespondType {"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  teamResponse \u003d \u0027teamResponse\u0027,"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  tutorResponse \u003d \u0027tutorResponse\u0027,"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const phase2DescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State the duplicated issue \u0027 +"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027here, if any)\\\\s+(?\u003cdescription\u003e[\\\\s\\\\S]*?)(?\u003d# Team\\\u0027s Response|## State the duplicated issue here, if any|$)\u0027, \u0027gi\u0027);"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const phase3DescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State the duplicated issue \u0027 +"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027here, if any|## Proposed Assignees|# Tutor\\\u0027s Response|## Tutor to check)\\\\s+(?\u003cdescription\u003e[\\\\s\\\\S]*?)(?\u003d# Team\\\u0027s Response|\u0027 +"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0027## State the duplicated issue here, if any|## Proposed Assignees|# Tutor\\\u0027s Response|## Tutor to check|$)\u0027, \u0027gi\u0027);"
+      }
+    ],
+    "authorContributionMap": {
+      "ptvrajsk": 1,
+      "-": 98
+    }
+  },
+  {
     "path": "src/app/core/models/label.model.ts",
     "lines": [
       {
         "lineNumber": 1,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "export interface Label {"
+        "content": "export class Label {"
       },
       {
         "lineNumber": 2,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    labelValue: string;"
+        "content": ""
       },
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    labelColor: string;"
+        "content": "  labelCategory: string;"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "KevinCJH"
         },
+        "content": "  labelValue: string;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  labelColor: string;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  constructor(labelCategory: string, labelValue: string, labelColor: string) {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.labelValue \u003d labelValue;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.labelColor \u003d labelColor;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.labelCategory \u003d labelCategory;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
         "content": "  }"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Returns the name of the label with the format of"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * \u0027category\u0027.\u0027value\u0027 (e.g. severity.Low)"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  public getFormattedName(): string {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return this.labelCategory + \u0027.\u0027 + this.labelValue;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  public equals(label: Label) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return this.labelValue \u003d\u003d\u003d label.labelValue"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        \u0026\u0026 this.labelColor \u003d\u003d\u003d label.labelColor \u0026\u0026 this.labelCategory \u003d\u003d\u003d label.labelCategory;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "}"
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 4
+      "ptvrajsk": 22,
+      "KevinCJH": 3
     }
   },
   {
@@ -6730,9 +7580,9 @@
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return this.labelService.getAllLabels(userResponse);"
+        "content": "        return this.labelService.synchronizeRemoteLabels(userResponse);"
       },
       {
         "lineNumber": 63,
@@ -6960,7 +7810,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 20,
+      "ptvrajsk": 1,
+      "KevinCJH": 19,
       "-": 74
     }
   },
@@ -9373,198 +10224,198 @@
       {
         "lineNumber": 103,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  closeIssue(id: number): Observable\u003c{}\u003e {"
+        "content": "  /**"
       },
       {
         "lineNumber": 104,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, number: id, state: \u0027closed\u0027})).pipe("
+        "content": "   * Creates a label in the current repository."
       },
       {
         "lineNumber": 105,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      map(response \u003d\u003e {"
+        "content": "   * @param formattedLabelName - name of new label."
       },
       {
         "lineNumber": 106,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": "   * @param labelColor - colour of new label."
       },
       {
         "lineNumber": 107,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      })"
+        "content": "   */"
       },
       {
         "lineNumber": 108,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "  createLabel(formattedLabelName: string, labelColor: string): void {"
       },
       {
         "lineNumber": 109,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    octokit.issues.createLabel({owner: ORG_NAME, repo: REPO, name: formattedLabelName, color: labelColor});"
       },
       {
         "lineNumber": 110,
         "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  createIssue(title: string, description: string, labels: string[]): Observable\u003c{}\u003e {"
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    return from(octokit.issues.create({owner: ORG_NAME, repo: REPO, title: title, body: description, labels: labels})).pipe("
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      map(response \u003d\u003e {"
-      },
-      {
-        "lineNumber": 114,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        return response[\u0027data\u0027];"
-      },
-      {
-        "lineNumber": 115,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      })"
-      },
-      {
-        "lineNumber": 116,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    );"
-      },
-      {
-        "lineNumber": 117,
-        "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 118,
+        "lineNumber": 111,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Updates a label\u0027s information in the current repository."
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param labelName - name of existing label"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param labelColor - new color to be assigned to existing label."
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  updateLabel(labelName: string, labelColor: string): void {"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    octokit.issues.updateLabel({owner: ORG_NAME, repo: REPO, current_name: labelName, color: labelColor});"
+      },
+      {
         "lineNumber": 119,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  createIssueComment(comment: IssueComment): Observable\u003c{}\u003e {"
+        "content": "  }"
       },
       {
         "lineNumber": 120,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.issues.createComment({owner: ORG_NAME, repo: REPO, number: comment.id,"
+        "content": ""
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "      body: comment.description})).pipe("
+        "content": "  closeIssue(id: number): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": "      map(response \u003d\u003e {"
+        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, number: id, state: \u0027closed\u0027})).pipe("
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "      })"
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "    );"
+        "content": "      })"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    );"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "  updateIssue(id: number, title: string, description: string, labels: string[], assignees?: string[]): Observable\u003c{}\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, number: id, title: title, body: description, labels: labels,"
+        "content": "  createIssue(title: string, description: string, labels: string[]): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "      assignees: assignees})).pipe("
+        "content": "    return from(octokit.issues.create({owner: ORG_NAME, repo: REPO, title: title, body: description, labels: labels})).pipe("
       },
       {
         "lineNumber": 131,
@@ -9613,21 +10464,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  updateIssueComment(issueComment: IssueComment): Observable\u003c{}\u003e {"
+        "content": "  createIssueComment(comment: IssueComment): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "    return from(octokit.issues.updateComment({owner: ORG_NAME, repo: REPO, comment_id: issueComment.id,"
+        "content": "    return from(octokit.issues.createComment({owner: ORG_NAME, repo: REPO, number: comment.id,"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "      body: issueComment.description})).pipe("
+        "content": "      body: comment.description})).pipe("
       },
       {
         "lineNumber": 140,
@@ -9676,486 +10527,612 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  uploadFile(filename: string, base64String: string): Observable\u003cany\u003e {"
+        "content": "  updateIssue(id: number, title: string, description: string, labels: string[], assignees?: string[]): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "    return from(octokit.repos.createFile({owner: ORG_NAME, repo: REPO, path: `files/${filename}`,"
+        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, number: id, title: title, body: description, labels: labels,"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "      message: \u0027upload file\u0027, content: base64String}));"
+        "content": "      assignees: assignees})).pipe("
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "  getRepo(orgName: string, repoName: string) {"
+        "content": "      })"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": "    return from(octokit.repos.get({owner: orgName, repo: repoName})).pipe("
+        "content": "    );"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "      map(response \u003d\u003e {"
+        "content": "  }"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": ""
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "      })"
+        "content": "  updateIssueComment(issueComment: IssueComment): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": "    );"
+        "content": "    return from(octokit.issues.updateComment({owner: ORG_NAME, repo: REPO, comment_id: issueComment.id,"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      body: issueComment.description})).pipe("
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 159,
         "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  fetchEventsForRepo() {"
-      },
-      {
-        "lineNumber": 160,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    return from(octokit.issues.listEventsForRepo({owner: ORG_NAME, repo: REPO})).pipe("
-      },
-      {
-        "lineNumber": 161,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      map(response \u003d\u003e {"
-      },
-      {
-        "lineNumber": 162,
-        "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "        return response[\u0027data\u0027];"
       },
       {
-        "lineNumber": 163,
+        "lineNumber": 160,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "      })"
       },
       {
-        "lineNumber": 164,
+        "lineNumber": 161,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "    );"
       },
       {
-        "lineNumber": 165,
+        "lineNumber": 162,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 166,
+        "lineNumber": 163,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  uploadFile(filename: string, base64String: string): Observable\u003cany\u003e {"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return from(octokit.repos.createFile({owner: ORG_NAME, repo: REPO, path: `files/${filename}`,"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      message: \u0027upload file\u0027, content: base64String}));"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": "  fetchDataFile(): Observable\u003c{}\u003e {"
-      },
-      {
-        "lineNumber": 168,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    // roles information"
-      },
-      {
-        "lineNumber": 169,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    return forkJoin("
-      },
-      {
-        "lineNumber": 170,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027data.csv\u0027}))"
-      },
-      {
-        "lineNumber": 171,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "        .pipe(map(rawData \u003d\u003e atob(rawData[\u0027data\u0027][\u0027content\u0027])))"
-      },
-      {
-        "lineNumber": 172,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    ).pipe("
-      },
-      {
-        "lineNumber": 173,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "      map(([data]) \u003d\u003e {"
-      },
-      {
-        "lineNumber": 174,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "        return {data};"
-      },
-      {
-        "lineNumber": 175,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "      })"
-      },
-      {
-        "lineNumber": 176,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    );"
-      },
-      {
-        "lineNumber": 177,
-        "author": {
-          "gitId": "-"
-        },
         "content": "  }"
       },
       {
-        "lineNumber": 178,
+        "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 179,
+        "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": "  private getNumberOfIssuePages(filter?: {}): Observable\u003cnumber\u003e {"
+        "content": "  getRepo(orgName: string, repoName: string) {"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return from(octokit.repos.get({owner: orgName, repo: repoName})).pipe("
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      map(response \u003d\u003e {"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return response[\u0027data\u0027];"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      })"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    );"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  fetchEventsForRepo() {"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    return from(octokit.issues.listEventsForRepo({owner: ORG_NAME, repo: REPO})).pipe("
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 180,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "    return from(octokit.issues.listForRepo({...filter, owner: ORG_NAME, repo: REPO, sort: \u0027created\u0027,"
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 181,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      direction: \u0027desc\u0027, per_page: 100, page: 1})).pipe("
+        "content": "      })"
       },
       {
         "lineNumber": 182,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      map((response) \u003d\u003e {"
+        "content": "    );"
       },
       {
         "lineNumber": 183,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        if (!response[\u0027headers\u0027].link) {"
+        "content": "  }"
       },
       {
         "lineNumber": 184,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "          return 1;"
+        "content": ""
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "  fetchDataFile(): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 186,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        const paginatedData \u003d githubPaginatorParser(response[\u0027headers\u0027].link);"
+        "content": "    // roles information"
       },
       {
         "lineNumber": 187,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return +paginatedData[\u0027last\u0027] || 1;"
+        "content": "    return forkJoin("
       },
       {
         "lineNumber": 188,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      })"
+        "content": "      from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027data.csv\u0027}))"
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "        .pipe(map(rawData \u003d\u003e atob(rawData[\u0027data\u0027][\u0027content\u0027])))"
       },
       {
         "lineNumber": 190,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    ).pipe("
       },
       {
         "lineNumber": 191,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      map(([data]) \u003d\u003e {"
       },
       {
         "lineNumber": 192,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  private getNumberOfCommentPages(issueId: number): Observable\u003cnumber\u003e {"
+        "content": "        return {data};"
       },
       {
         "lineNumber": 193,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.issues.listComments({owner: ORG_NAME, repo: REPO, number: issueId, per_page: 1, page: 1})).pipe("
+        "content": "      })"
       },
       {
         "lineNumber": 194,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      map((response) \u003d\u003e {"
+        "content": "    );"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (!response[\u0027headers\u0027].link) {"
+        "content": "  }"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "-"
         },
-        "content": "          return 1;"
+        "content": ""
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "  private getNumberOfIssuePages(filter?: {}): Observable\u003cnumber\u003e {"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "-"
         },
-        "content": "        const paginatedData \u003d githubPaginatorParser(response[\u0027headers\u0027].link);"
+        "content": "    return from(octokit.issues.listForRepo({...filter, owner: ORG_NAME, repo: REPO, sort: \u0027created\u0027,"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "-"
         },
-        "content": "        return +paginatedData[\u0027last\u0027] || 1;"
+        "content": "      direction: \u0027desc\u0027, per_page: 100, page: 1})).pipe("
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "-"
         },
-        "content": "      })"
+        "content": "      map((response) \u003d\u003e {"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "-"
         },
-        "content": "    );"
+        "content": "        if (!response[\u0027headers\u0027].link) {"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "          return 1;"
       },
       {
         "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        const paginatedData \u003d githubPaginatorParser(response[\u0027headers\u0027].link);"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return +paginatedData[\u0027last\u0027] || 1;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      })"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    );"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  private getNumberOfCommentPages(issueId: number): Observable\u003cnumber\u003e {"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return from(octokit.issues.listComments({owner: ORG_NAME, repo: REPO, number: issueId, per_page: 1, page: 1})).pipe("
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      map((response) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (!response[\u0027headers\u0027].link) {"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return 1;"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        const paginatedData \u003d githubPaginatorParser(response[\u0027headers\u0027].link);"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return +paginatedData[\u0027last\u0027] || 1;"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      })"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    );"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 221,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 204,
+        "lineNumber": 222,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  getRepoURL(): string {"
       },
       {
-        "lineNumber": 205,
+        "lineNumber": 223,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    return ORG_NAME.concat(\u0027/\u0027).concat(REPO);"
       },
       {
-        "lineNumber": 206,
+        "lineNumber": 224,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 207,
+        "lineNumber": 225,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 208,
+        "lineNumber": 226,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  viewIssueInBrowser(id: number) {"
       },
       {
-        "lineNumber": 209,
+        "lineNumber": 227,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    if (id) {"
       },
       {
-        "lineNumber": 210,
+        "lineNumber": 228,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      shell.openExternal(\u0027https://github.com/\u0027.concat(this.getRepoURL()).concat(\u0027/issues/\u0027).concat(String(id)));"
       },
       {
-        "lineNumber": 211,
+        "lineNumber": 229,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    } else {"
       },
       {
-        "lineNumber": 212,
+        "lineNumber": 230,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      this.errorHandlingService.handleGeneralError(\u0027Unable to open this issue in Browser\u0027);"
       },
       {
-        "lineNumber": 213,
+        "lineNumber": 231,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 214,
+        "lineNumber": 232,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 215,
+        "lineNumber": 233,
         "author": {
           "gitId": "-"
         },
@@ -10163,7 +11140,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 8,
+      "ptvrajsk": 26,
       "KevinCJH": 29,
       "-": 178
     }
@@ -13861,1060 +14838,1508 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "import { SEVERITY_ORDER } from \u0027../../core/models/issue.model\u0027;"
+        "content": "import { User } from \u0027../models/user.model\u0027;"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "import { User } from \u0027../models/user.model\u0027;"
+        "content": ""
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "/* The threshold to decide if color is dark or light."
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "@Injectable({"
+        "content": "A higher threshold value will result in more colors determined to be \"dark\"."
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  providedIn: \u0027root\u0027"
+        "content": "W3C recommendation is 0.179, but 0.184 is chosen so that some colors (like bright red)"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "})"
+        "content": "are considered dark (Github too consider them dark) */"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "export class LabelService {"
+        "content": "const COLOR_DARKNESS_THRESHOLD \u003d 0.184;"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private severityLabels: Label[];"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private typeLabels: Label[];"
+        "content": "const COLOR_DARK_TEXT  \u003d \u0027000000\u0027; // Dark color for text with light background"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private responseLabels: Label[];"
+        "content": "const COLOR_LIGHT_TEXT  \u003d \u0027FFFFFF\u0027; // Light color for text with dark background"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private labelColorMap: Map\u003cstring, string\u003e;"
+        "content": ""
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "@Injectable({"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  providedIn: \u0027root\u0027"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  constructor(private githubService: GithubService) {"
+        "content": "})"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.severityLabels \u003d new Array();"
+        "content": "export class LabelService {"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.typeLabels \u003d new Array();"
+        "content": ""
       },
       {
         "lineNumber": 22,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.responseLabels \u003d new Array();"
+        "content": "  private readonly REQUIRED_LABELS \u003d {"
       },
       {
         "lineNumber": 23,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.labelColorMap \u003d new Map();"
+        "content": "    severity: {"
       },
       {
         "lineNumber": 24,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      Low: new Label(\u0027severity\u0027, \u0027Low\u0027, \u0027ffb3b3\u0027),"
       },
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      Medium: new Label(\u0027severity\u0027, \u0027Medium\u0027, \u0027ff6666\u0027),"
       },
       {
         "lineNumber": 26,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "      High: new Label(\u0027severity\u0027, \u0027High\u0027, \u0027b30000\u0027)"
       },
       {
         "lineNumber": 27,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * Calls the Github service api to get all labels from the repository and"
+        "content": "    },"
       },
       {
         "lineNumber": 28,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * store it in a list of arrays in this label service"
+        "content": "    type: {"
       },
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "      DocumentationBug: new Label(\u0027type\u0027, \u0027DocumentationBug\u0027, \u0027ccb3ff\u0027),"
       },
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  getAllLabels(userResponse: User): Observable\u003cUser\u003e {"
+        "content": "      FunctionalityBug: new Label(\u0027type\u0027, \u0027FunctionalityBug\u0027, \u0027661aff\u0027)"
       },
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      return this.githubService.fetchAllLabels().pipe("
+        "content": "    },"
       },
       {
         "lineNumber": 32,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        map((response) \u003d\u003e {"
+        "content": "    response: {"
       },
       {
         "lineNumber": 33,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "          this.populateLabelLists(response);"
+        "content": "      Accepted: new Label(\u0027response\u0027, \u0027Accepted\u0027, \u002780ffcc\u0027),"
       },
       {
         "lineNumber": 34,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "          return userResponse;"
+        "content": "      Rejected: new Label(\u0027response\u0027, \u0027Rejected\u0027, \u0027ff80b3\u0027),"
       },
       {
         "lineNumber": 35,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        })"
+        "content": "      IssueUnclear: new Label(\u0027response\u0027, \u0027IssueUnclear\u0027, \u0027ffcc80\u0027),"
       },
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      );"
+        "content": "      CannotReproduce: new Label(\u0027response\u0027, \u0027CannotReproduce\u0027, \u0027bfbfbf\u0027)"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    },"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    status: {"
       },
       {
         "lineNumber": 39,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "      Done: new Label(\u0027status\u0027, \u0027Done\u0027, \u0027b3ecff\u0027),"
       },
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * Returns all the labels of a certain type (e.g severity)"
+        "content": "      Incomplete: new Label(\u0027status\u0027, \u0027Incomplete\u0027, \u00271ac6ff\u0027)"
       },
       {
         "lineNumber": 41,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * @param attributeName: the type of the label"
+        "content": "    }"
       },
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * @return an array of label of that type"
+        "content": "  };"
       },
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  getLabelList(attributeName: string): Label[] {"
+        "content": "  private severityLabels: Label[] \u003d Object.values(this.REQUIRED_LABELS.severity);"
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    switch (attributeName) {"
+        "content": "  private typeLabels: Label[] \u003d Object.values(this.REQUIRED_LABELS.type);"
       },
       {
         "lineNumber": 46,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      case \u0027severity\u0027:"
+        "content": "  private responseLabels: Label[] \u003d Object.values(this.REQUIRED_LABELS.response);"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return this.severityLabels;"
+        "content": "  private statusLabels: Label[] \u003d Object.values(this.REQUIRED_LABELS.status);"
       },
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      case \u0027type\u0027:"
+        "content": "  private labelArrays \u003d {"
       },
       {
         "lineNumber": 49,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return this.typeLabels;"
+        "content": "    severity: this.severityLabels,"
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      case \u0027responseTag\u0027:"
+        "content": "    type: this.typeLabels,"
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      case \u0027response\u0027:"
+        "content": "    response: this.responseLabels,"
       },
       {
         "lineNumber": 52,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return this.responseLabels;"
+        "content": "    status: this.statusLabels"
       },
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "  };"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  constructor(private githubService: GithubService) {"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * Returns the color of the label using the label-color mapping"
+        "content": ""
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * @param labelValue: the label\u0027s value (e.g Low / Medium / High)"
+        "content": "  /**"
       },
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * @return a string with the color code of the label, or white color if"
+        "content": "   * Synchronizes the labels in github with those required by the application."
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * no labelValue was provided or no such mapping was found"
+        "content": "   */"
       },
       {
         "lineNumber": 61,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "  synchronizeRemoteLabels(userResponse: User): Observable\u003cUser\u003e {"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  getColorOfLabel(labelValue: string): string {"
+        "content": "      return this.githubService.fetchAllLabels().pipe("
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const color \u003d this.labelColorMap.get(labelValue);"
+        "content": "        map((response) \u003d\u003e {"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "          this.ensureRepoHasRequiredLabels(this.parseLabelData(response), this.getRequiredLabelsAsArray());"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    if (color \u003d\u003d\u003d undefined || labelValue \u003d\u003d\u003d \u0027\u0027) {"
+        "content": "          return userResponse;"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      return \u0027ffffff\u0027;"
+        "content": "        })"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      );"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return color;"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  /**"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "   * Returns all the labels of a certain type (e.g severity)"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  /**"
+        "content": "   * @param attributeName: the type of the label"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * Stores the json data from Github api into the list of arrays in this service"
+        "content": "   * @return an array of label of that type"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * @param labels: the json data of the label"
+        "content": "   */"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   */"
+        "content": "  getLabelList(attributeName: string): Label[] {"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private populateLabelLists(labels: Array\u003c{}\u003e): void {"
+        "content": "    switch (attributeName) {"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "      case \u0027severity\u0027:"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    for (const label of labels) {"
+        "content": "        return this.severityLabels;"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      // Get the name and color of each label and store them into the service\u0027s array list"
+        "content": "      case \u0027type\u0027:"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      const labelName \u003d String(label[\u0027name\u0027]).split(\u0027.\u0027);"
+        "content": "        return this.typeLabels;"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      const labelType \u003d labelName[0];"
+        "content": "      case \u0027responseTag\u0027:"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      const labelValue \u003d labelName[1];"
+        "content": "      case \u0027response\u0027:"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      const labelColor \u003d String(label[\u0027color\u0027]);"
+        "content": "        return this.responseLabels;"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      // Check for duplicate labels"
+        "content": "  }"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      if (this.labelColorMap.has(labelValue)) {"
+        "content": ""
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        continue;"
+        "content": "  /**"
       },
       {
         "lineNumber": 88,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      }"
+        "content": "   * Returns the color of the label by searching a list of"
       },
       {
         "lineNumber": 89,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "   * all available labels."
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      this.labelColorMap.set(labelValue, labelColor);"
+        "content": "   * @param labelValue: the label\u0027s value (e.g Low / Medium / High / ...)"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      const labelList \u003d this.getLabelList(labelType);"
+        "content": "   */"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  getColorOfLabel(labelValue: string): string {"
       },
       {
         "lineNumber": 93,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      if (labelList !\u003d\u003d undefined) {"
+        "content": "    // TODO: Rewrite function - labelValue insufficient to differentiate between labels. Should use `labelCategory.labelValue` format."
       },
       {
         "lineNumber": 94,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        labelList.push({labelValue: labelValue, labelColor: labelColor});"
+        "content": "    const WHITE_COLOR \u003d \u0027ffffff\u0027;"
       },
       {
         "lineNumber": 95,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      }"
+        "content": "    if (labelValue \u003d\u003d\u003d \u0027\u0027) {"
       },
       {
         "lineNumber": 96,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      return WHITE_COLOR;"
       },
       {
         "lineNumber": 97,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
         "content": "    }"
       },
       {
         "lineNumber": 98,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    // Sort the severity labels from Low to High"
+        "content": ""
       },
       {
         "lineNumber": 99,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.severityLabels.sort((a, b) \u003d\u003e {"
+        "content": "    const existingLabel \u003d this.getRequiredLabelsAsArray().find(label \u003d\u003e label.labelValue \u003d\u003d\u003d labelValue);"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      return SEVERITY_ORDER[a.labelValue] - SEVERITY_ORDER[b.labelValue];"
+        "content": ""
       },
       {
         "lineNumber": 101,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    });"
+        "content": "    if (existingLabel \u003d\u003d\u003d undefined || existingLabel.labelColor \u003d\u003d\u003d undefined) {"
       },
       {
         "lineNumber": 102,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      return WHITE_COLOR;"
       },
       {
         "lineNumber": 103,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    } else {"
       },
       {
         "lineNumber": 104,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      return existingLabel.labelColor;"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  reset(): void {"
+        "content": "    }"
       },
       {
         "lineNumber": 106,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.severityLabels.length \u003d 0;"
+        "content": "  }"
       },
       {
         "lineNumber": 107,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.typeLabels.length \u003d 0;"
+        "content": ""
       },
       {
         "lineNumber": 108,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.responseLabels.length \u003d 0;"
+        "content": "  private getRequiredLabelsAsArray(): Label[] {"
       },
       {
         "lineNumber": 109,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.labelColorMap.clear();"
+        "content": "    let requiredLabels: Label[] \u003d [];"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 111,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    for (const category of Object.keys(this.labelArrays)) {"
       },
       {
         "lineNumber": 112,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "      requiredLabels \u003d requiredLabels.concat(this.labelArrays[category]);"
       },
       {
         "lineNumber": 113,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * Converts the (color) hex value into RGB format"
+        "content": "    }"
       },
       {
         "lineNumber": 114,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * @param hex: the hex value"
+        "content": ""
       },
       {
         "lineNumber": 115,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "    return requiredLabels;"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  hexToRgb(hex: string) {"
+        "content": "  }"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const rgbResult \u003d /^#?([a-f\\d]{2})([a-f\\d]{2})([a-f\\d]{2})$/i.exec(hex);"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return rgbResult ? {"
+        "content": "  /**"
       },
       {
         "lineNumber": 119,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      r: parseInt(rgbResult[1], 16),"
+        "content": "   * Ensures that the repo has the required labels."
       },
       {
         "lineNumber": 120,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      g: parseInt(rgbResult[2], 16),"
+        "content": "   * Compares the actual labels in the repo with the required labels. If an required label is missing,"
       },
       {
         "lineNumber": 121,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      b: parseInt(rgbResult[3], 16)"
+        "content": "   * it is added to the repo. If the required label exists but the label color is not as expected,"
       },
       {
         "lineNumber": 122,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    } : null;"
+        "content": "   * the color is updated. Does not delete actual labels that do not match required labels."
       },
       {
         "lineNumber": 123,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "   * i.e., the repo might have more labels than the required labels after this operation."
       },
       {
         "lineNumber": 124,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "   * @param actualLabels: labels in the repo."
       },
       {
         "lineNumber": 125,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "   * @param requiredLabels: required labels."
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * Returns a css style for the label to use"
+        "content": "   */"
       },
       {
         "lineNumber": 127,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * @param color: the color of the label"
+        "content": "  private ensureRepoHasRequiredLabels(actualLabels: Label[], requiredLabels: Label[]): void {"
       },
       {
         "lineNumber": 128,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * @return the style with background-color in rgb"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   * @throws exception if input is an invalid color code"
+        "content": "    requiredLabels.forEach(label \u003d\u003e {"
       },
       {
         "lineNumber": 130,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": ""
       },
       {
         "lineNumber": 131,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  setLabelStyle(color: string) {"
+        "content": "      // Finds for a label that has the same name as a required label."
       },
       {
         "lineNumber": 132,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    let r: string;"
+        "content": "      const nameMatchedLabels: Label[] \u003d actualLabels.filter(remoteLabel \u003d\u003e"
       },
       {
         "lineNumber": 133,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    let g: string;"
+        "content": "          remoteLabel.getFormattedName() \u003d\u003d\u003d label.getFormattedName());"
       },
       {
         "lineNumber": 134,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    let b: string;"
+        "content": ""
       },
       {
         "lineNumber": 135,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    const white \u003d \u0027255\u0027;"
+        "content": "      if (nameMatchedLabels.length \u003d\u003d\u003d 0) {"
       },
       {
         "lineNumber": 136,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "        // Create new Label (Could not find a label with the same name \u0026 category)"
       },
       {
         "lineNumber": 137,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    try {"
+        "content": "        this.githubService.createLabel(label.getFormattedName(), label.labelColor);"
       },
       {
         "lineNumber": 138,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      r \u003d this.hexToRgb(\u0027#\u0027.concat(color)).r.toString();"
+        "content": "      } else if (nameMatchedLabels.length \u003d\u003d\u003d 1) {"
       },
       {
         "lineNumber": 139,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      g \u003d this.hexToRgb(\u0027#\u0027.concat(color)).g.toString();"
+        "content": "        if (nameMatchedLabels[0].equals(label)) {"
       },
       {
         "lineNumber": 140,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      b \u003d this.hexToRgb(\u0027#\u0027.concat(color)).b.toString();"
+        "content": "          // the label exists exactly as expected -\u003e do nothing"
       },
       {
         "lineNumber": 141,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    } catch (e) {"
+        "content": "        } else {"
       },
       {
         "lineNumber": 142,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      // Set rgb to white color if hexToRgb returns null"
+        "content": "          // the label exists but the color does not match"
       },
       {
         "lineNumber": 143,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      r \u003d white;"
+        "content": "          this.githubService.updateLabel(label.getFormattedName(), label.labelColor);"
       },
       {
         "lineNumber": 144,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      g \u003d white;"
+        "content": "        }"
       },
       {
         "lineNumber": 145,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      b \u003d white;"
+        "content": "      } else {"
       },
       {
         "lineNumber": 146,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "        throw new Error(\u0027Unexpected error: the repo has multiple labels with the same name \u0027 + label.getFormattedName());"
       },
       {
         "lineNumber": 147,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      }"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const styles \u003d {"
+        "content": ""
       },
       {
         "lineNumber": 149,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      \u0027background-color\u0027 : `rgb(${r}, ${g}, ${b}, 0.55)`,"
+        "content": "    });"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      \u0027border-radius\u0027 : \u00273px\u0027,"
+        "content": "  }"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      \u0027padding\u0027 : \u00273px\u0027,"
+        "content": ""
       },
       {
         "lineNumber": 152,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    };"
+        "content": "  /**"
       },
       {
         "lineNumber": 153,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Parses label information and returns an array of Label objects."
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param labels - Label Information from API."
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  parseLabelData(labels: Array\u003c{}\u003e): Label[] {"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    const labelData: Label[] \u003d [];"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    for (const label of labels) {"
+      },
+      {
+        "lineNumber": 159,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 154,
+        "lineNumber": 160,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      const labelName: string[] \u003d String(label[\u0027name\u0027]).split(\u0027.\u0027);"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      const labelCategory: string \u003d labelName[0];"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      const labelValue: string \u003d labelName[1];"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      const labelColor: string \u003d String(label[\u0027color\u0027]);"
+      },
+      {
+        "lineNumber": 164,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return styles;"
+        "content": ""
       },
       {
-        "lineNumber": 155,
+        "lineNumber": 165,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      labelData.push(new Label(labelCategory, labelValue, labelColor));"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return labelData;"
+      },
+      {
+        "lineNumber": 168,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 156,
+        "lineNumber": 169,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 157,
+        "lineNumber": 170,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  reset(): void {"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.severityLabels.length \u003d 0;"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.typeLabels.length \u003d 0;"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.responseLabels.length \u003d 0;"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   /**"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   * Returns true if the given color is considered \"dark\""
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   * The color is considered \"dark\" if its luminance is less than COLOR_DARKNESS_THRESHOLD"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   * @param inputColor: the color"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  isDarkColor(inputColor: string): boolean {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const COLOR \u003d (inputColor.charAt(0) \u003d\u003d\u003d \u0027#\u0027) ? inputColor.substring(1, 7) : inputColor;"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const R \u003d parseInt(COLOR.substring(0, 2), 16);"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const G \u003d parseInt(COLOR.substring(2, 4), 16);"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const B \u003d parseInt(COLOR.substring(4, 6), 16);"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const RGB \u003d [R / 255, G / 255, B / 255];"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const LINEAR_RGB \u003d RGB.map((col) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      if (col \u003c\u003d 0.03928) {"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        return col / 12.92;"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      return Math.pow((col + 0.055) / 1.055, 2.4);"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    // Calculate the luminance of the color"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const LUMINANCE \u003d (0.2126 * LINEAR_RGB[0]) + (0.7152 * LINEAR_RGB[1]) + (0.0722 * LINEAR_RGB[2]);"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    // The color is \"dark\" if the luminance is lower than the threshold"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    return LUMINANCE \u003c COLOR_DARKNESS_THRESHOLD;"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   * Returns a css style for the label to use"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   * @param color: the color of the label"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   * @return the style with background-color in rgb"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   * @throws exception if input is an invalid color code"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  setLabelStyle(color: string) {"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    let textColor: string;"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    textColor \u003d this.isDarkColor(color) ? COLOR_LIGHT_TEXT : COLOR_DARK_TEXT;"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    const styles \u003d {"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u0027background-color\u0027 : `#${color}`,"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u0027border-radius\u0027 : \u00273px\u0027,"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u0027padding\u0027 : \u00273px\u0027,"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u0027color\u0027 : `#${textColor}`,"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u0027font-weight\u0027 : \u0027410\u0027,"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    return styles;"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 221,
         "author": {
           "gitId": "KevinCJH"
         },
@@ -14922,7 +16347,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 157
+      "ptvrajsk": 100,
+      "KevinCJH": 121
     }
   },
   {

@@ -378,6 +378,19 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 145,
+        "deletions": 51,
+        "date": "2019-06-21",
+        "commitResults": [
+          {
+            "hash": "54c91e20a72d3085088e63a33f47f936ca3785ea",
+            "message": "Labels Setup (#88)",
+            "insertions": 145,
+            "deletions": 51
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1056,8 +1069,8 @@
         ]
       },
       {
-        "insertions": 84,
-        "deletions": 35,
+        "insertions": 107,
+        "deletions": 60,
         "date": "2019-06-18",
         "commitResults": [
           {
@@ -1071,14 +1084,89 @@
             "message": "Add a \"View in Browser\" button to the table (#86)",
             "insertions": 77,
             "deletions": 32
+          },
+          {
+            "hash": "abb2dcae12afe01f5408054b08f9eb94680a4f0f",
+            "message": "Make the label text color dynamic",
+            "insertions": 23,
+            "deletions": 25
+          }
+        ]
+      },
+      {
+        "insertions": 50,
+        "deletions": 39,
+        "date": "2019-06-19",
+        "commitResults": [
+          {
+            "hash": "c21d64ab6816c39f2e7b6f17eab8efb30ada6b37",
+            "message": "make threshold a constant",
+            "insertions": 11,
+            "deletions": 8
+          },
+          {
+            "hash": "0cbe9fa34920a1c2ceaa13ad6842959522b27699",
+            "message": "update comment",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "f01f3915ea9aa4974a6110de8a97ca0388ffc812",
+            "message": "extract out an utility function to determine if color is dark",
+            "insertions": 19,
+            "deletions": 12
+          },
+          {
+            "hash": "67c1e185d34374c9f34674327b66467f3c96647c",
+            "message": "update comment",
+            "insertions": 8,
+            "deletions": 13
+          },
+          {
+            "hash": "ef8b1805aa3281498dd5eedc69537ab59200ea2c",
+            "message": "change constant name",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "36601aec492be04ba869b5c95bf7285b4d1774d4",
+            "message": "update comment for threshold",
+            "insertions": 9,
+            "deletions": 4
+          }
+        ]
+      },
+      {
+        "insertions": 12,
+        "deletions": 12,
+        "date": "2019-06-20",
+        "commitResults": [
+          {
+            "hash": "1f13c7b37c2fd492d41fbe9360720e14bfdac8b2",
+            "message": "update constant name",
+            "insertions": 12,
+            "deletions": 12
+          }
+        ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-06-21",
+        "commitResults": [
+          {
+            "hash": "256054c5f37eb20d81456e17c7248efa030e7155",
+            "message": "remove unnecessary brackets",
+            "insertions": 2,
+            "deletions": 2
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 739,
-    "KevinCJH": 673
+    "ptvrajsk": 881,
+    "KevinCJH": 635
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1089,7 +1177,7 @@
       "py": 0,
       "tag": 0,
       "html": 58,
-      "ts": 677
+      "ts": 819
     },
     "KevinCJH": {
       "java": 0,
@@ -1099,12 +1187,12 @@
       "py": 0,
       "tag": 0,
       "html": 147,
-      "ts": 526
+      "ts": 488
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 8835.799,
-    "KevinCJH": 13492.887
+    "ptvrajsk": 8831.711,
+    "KevinCJH": 12863.522
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
