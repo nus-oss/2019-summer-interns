@@ -7752,14 +7752,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Drawing.Point mousePos \u003d System.Windows.Forms.Control.MousePosition;"
+        "content": "            // Force the magnifier to update"
       },
       {
         "lineNumber": 624,
         "author": {
           "gitId": "-"
         },
-        "content": "            IntPtr deviceContext \u003d PPExtraEventHelper.Native.GetDC(IntPtr.Zero);"
+        "content": "            magnifier.Show();"
       },
       {
         "lineNumber": 625,
@@ -7773,1610 +7773,1610 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            Color pickedColor \u003d System.Drawing.ColorTranslator.FromWin32(PPExtraEventHelper.Native.GetPixel(deviceContext, mousePos.X, mousePos.Y));"
+        "content": "            System.Drawing.Point mousePos \u003d System.Windows.Forms.Control.MousePosition;"
       },
       {
         "lineNumber": 627,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            IntPtr deviceContext \u003d PPExtraEventHelper.Native.GetDC(IntPtr.Zero);"
       },
       {
         "lineNumber": 628,
         "author": {
           "gitId": "-"
         },
-        "content": "            // If button has not been held long enough to register as a drag, then don\u0027t pick a color."
+        "content": ""
       },
       {
         "lineNumber": 629,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (timer1Ticks \u003c CLICK_THRESHOLD)"
+        "content": "            Color pickedColor \u003d System.Drawing.ColorTranslator.FromWin32(PPExtraEventHelper.Native.GetPixel(deviceContext, mousePos.X, mousePos.Y));"
       },
       {
         "lineNumber": 630,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": ""
       },
       {
         "lineNumber": 631,
         "author": {
           "gitId": "-"
         },
-        "content": "                return;"
+        "content": "            // If button has not been held long enough to register as a drag, then don\u0027t pick a color."
       },
       {
         "lineNumber": 632,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (timer1Ticks \u003c CLICK_THRESHOLD)"
       },
       {
         "lineNumber": 633,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            {"
       },
       {
         "lineNumber": 634,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (_eyedropperMode \u003d\u003d MODE.MAIN)"
+        "content": "                return;"
       },
       {
         "lineNumber": 635,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            }"
       },
       {
         "lineNumber": 636,
         "author": {
           "gitId": "-"
         },
-        "content": "                ColorMainColorRect(pickedColor);"
+        "content": ""
       },
       {
         "lineNumber": 637,
         "author": {
           "gitId": "-"
         },
-        "content": "                _currentEyedroppedColor \u003d pickedColor;"
+        "content": "            if (_eyedropperMode \u003d\u003d MODE.MAIN)"
       },
       {
         "lineNumber": 638,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            {"
       },
       {
         "lineNumber": 639,
         "author": {
           "gitId": "-"
         },
-        "content": "            else"
+        "content": "                ColorMainColorRect(pickedColor);"
       },
       {
         "lineNumber": 640,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "                _currentEyedroppedColor \u003d pickedColor;"
       },
       {
         "lineNumber": 641,
         "author": {
           "gitId": "-"
         },
-        "content": "                ColorSelectedShapesWithColor(pickedColor, _eyedropperMode);"
+        "content": "            }"
       },
       {
         "lineNumber": 642,
         "author": {
           "gitId": "-"
         },
-        "content": "                _currentSelectedColor \u003d pickedColor;"
+        "content": "            else"
       },
       {
         "lineNumber": 643,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            {"
       },
       {
         "lineNumber": 644,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                ColorSelectedShapesWithColor(pickedColor, _eyedropperMode);"
       },
       {
         "lineNumber": 645,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                _currentSelectedColor \u003d pickedColor;"
       },
       {
         "lineNumber": 646,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 647,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Handles the end of eye dropper mode."
+        "content": "        }"
       },
       {
         "lineNumber": 648,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 649,
         "author": {
           "gitId": "-"
         },
-        "content": "        void LeftMouseButtonUpEventHandler()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 650,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Handles the end of eye dropper mode."
       },
       {
         "lineNumber": 651,
         "author": {
           "gitId": "-"
         },
-        "content": "            PPExtraEventHelper.PPMouse.LeftButtonUp -\u003d LeftMouseButtonUpEventHandler;"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 652,
         "author": {
           "gitId": "-"
         },
-        "content": "            magnifier.Hide();"
+        "content": "        void LeftMouseButtonUpEventHandler()"
       },
       {
         "lineNumber": 653,
         "author": {
           "gitId": "-"
         },
-        "content": "            eyeDropperTimer.Stop();"
+        "content": "        {"
       },
       {
         "lineNumber": 654,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            PPExtraEventHelper.PPMouse.LeftButtonUp -\u003d LeftMouseButtonUpEventHandler;"
       },
       {
         "lineNumber": 655,
         "author": {
           "gitId": "-"
         },
-        "content": "            // Only change the actual datasource selectedColor at the end of eyedropping."
+        "content": "            magnifier.Hide();"
       },
       {
         "lineNumber": 656,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (_eyedropperMode \u003d\u003d MODE.MAIN)"
+        "content": "            eyeDropperTimer.Stop();"
       },
       {
         "lineNumber": 657,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": ""
       },
       {
         "lineNumber": 658,
         "author": {
           "gitId": "-"
         },
-        "content": "                selectedColorRectangle.Opacity \u003d 1;"
+        "content": "            // Only change the actual datasource selectedColor at the end of eyedropping."
       },
       {
         "lineNumber": 659,
         "author": {
-          "gitId": "yuhongherald"
+          "gitId": "-"
         },
-        "content": "                if (timer1Ticks \u003e\u003d CLICK_THRESHOLD)"
+        "content": "            if (_eyedropperMode \u003d\u003d MODE.MAIN)"
       },
       {
         "lineNumber": 660,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "            {"
       },
       {
         "lineNumber": 661,
         "author": {
           "gitId": "-"
         },
-        "content": "                    dataSource.SelectedColor \u003d _currentEyedroppedColor;"
+        "content": "                selectedColorRectangle.Opacity \u003d 1;"
       },
       {
         "lineNumber": 662,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                }"
-      },
-      {
-        "lineNumber": 663,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            }"
-      },
-      {
-        "lineNumber": 664,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 665,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            // Update recent colors if color has been used"
-      },
-      {
-        "lineNumber": 666,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            if (_eyedropperMode \u003d\u003d MODE.FILL || _eyedropperMode \u003d\u003d MODE.FONT || _eyedropperMode \u003d\u003d MODE.LINE)"
-      },
-      {
-        "lineNumber": 667,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            {"
-      },
-      {
-        "lineNumber": 668,
         "author": {
           "gitId": "yuhongherald"
         },
         "content": "                if (timer1Ticks \u003e\u003d CLICK_THRESHOLD)"
       },
       {
-        "lineNumber": 669,
+        "lineNumber": 663,
         "author": {
           "gitId": "-"
         },
         "content": "                {"
+      },
+      {
+        "lineNumber": 664,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    dataSource.SelectedColor \u003d _currentEyedroppedColor;"
+      },
+      {
+        "lineNumber": 665,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 666,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 667,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 668,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // Update recent colors if color has been used"
+      },
+      {
+        "lineNumber": 669,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            if (_eyedropperMode \u003d\u003d MODE.FILL || _eyedropperMode \u003d\u003d MODE.FONT || _eyedropperMode \u003d\u003d MODE.LINE)"
       },
       {
         "lineNumber": 670,
         "author": {
           "gitId": "-"
         },
-        "content": "                    dataSource.AddColorToRecentColors(_currentSelectedColor);"
+        "content": "            {"
       },
       {
         "lineNumber": 671,
         "author": {
-          "gitId": "-"
+          "gitId": "yuhongherald"
         },
-        "content": "                }"
+        "content": "                if (timer1Ticks \u003e\u003d CLICK_THRESHOLD)"
       },
       {
         "lineNumber": 672,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                {"
       },
       {
         "lineNumber": 673,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                    dataSource.AddColorToRecentColors(_currentSelectedColor);"
       },
       {
         "lineNumber": 674,
         "author": {
           "gitId": "-"
         },
-        "content": "            _isEyedropperMode \u003d false;"
+        "content": "                }"
       },
       {
         "lineNumber": 675,
         "author": {
           "gitId": "-"
         },
-        "content": "            _eyedropperMode \u003d MODE.NONE;"
+        "content": "            }"
       },
       {
         "lineNumber": 676,
         "author": {
           "gitId": "-"
         },
-        "content": "            Mouse.OverrideCursor \u003d null;"
+        "content": ""
       },
       {
         "lineNumber": 677,
         "author": {
           "gitId": "-"
         },
-        "content": "            Mouse.Capture(null);"
+        "content": "            _isEyedropperMode \u003d false;"
       },
       {
         "lineNumber": 678,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            _eyedropperMode \u003d MODE.NONE;"
       },
       {
         "lineNumber": 679,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (timer1Ticks \u003c CLICK_THRESHOLD)"
+        "content": "            Mouse.OverrideCursor \u003d null;"
       },
       {
         "lineNumber": 680,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            Mouse.Capture(null);"
       },
       {
         "lineNumber": 681,
         "author": {
           "gitId": "-"
         },
-        "content": "                Dispatcher.CurrentDispatcher.BeginInvoke(DispatcherPriority.Loaded, new Action(delegate"
+        "content": ""
       },
       {
         "lineNumber": 682,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "            if (timer1Ticks \u003c CLICK_THRESHOLD)"
       },
       {
         "lineNumber": 683,
         "author": {
           "gitId": "-"
         },
-        "content": "                    MessageBox.Show(\"To use this button, click and drag to desired color.\", ColorsLabText.ErrorDialogTitle);"
+        "content": "            {"
       },
       {
         "lineNumber": 684,
         "author": {
           "gitId": "-"
         },
-        "content": "                }));"
+        "content": "                Dispatcher.CurrentDispatcher.BeginInvoke(DispatcherPriority.Loaded, new Action(delegate"
       },
       {
         "lineNumber": 685,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                {"
       },
       {
         "lineNumber": 686,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                    MessageBox.Show(\"To use this button, click and drag to desired color.\", ColorsLabText.ErrorDialogTitle);"
       },
       {
         "lineNumber": 687,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                }));"
       },
       {
         "lineNumber": 688,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void EyeDropperButton_PreviewMouseDown(object sender, MouseButtonEventArgs e)"
+        "content": "            }"
       },
       {
         "lineNumber": 689,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        }"
       },
       {
         "lineNumber": 690,
         "author": {
           "gitId": "-"
         },
-        "content": "            CaptureMouse();"
+        "content": ""
       },
       {
         "lineNumber": 691,
         "author": {
           "gitId": "-"
         },
-        "content": "            SetEyedropperMode(((Button)sender).Name);"
+        "content": "        private void EyeDropperButton_PreviewMouseDown(object sender, MouseButtonEventArgs e)"
       },
       {
         "lineNumber": 692,
         "author": {
           "gitId": "-"
         },
-        "content": "            BeginEyedropping();"
+        "content": "        {"
       },
       {
         "lineNumber": 693,
         "author": {
           "gitId": "-"
         },
-        "content": "            this.GetApplication().StartNewUndoEntry();"
+        "content": "            CaptureMouse();"
       },
       {
         "lineNumber": 694,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            SetEyedropperMode(((Button)sender).Name);"
       },
       {
         "lineNumber": 695,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            BeginEyedropping();"
       },
       {
         "lineNumber": 696,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": "            this.GetApplication().StartNewUndoEntry();"
       },
       {
         "lineNumber": 697,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 698,
         "author": {
           "gitId": "-"
         },
-        "content": "        #region Favourite Colors Button Handlers"
+        "content": ""
       },
       {
         "lineNumber": 699,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        #endregion"
       },
       {
         "lineNumber": 700,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 701,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Saves the current favorite panel as a custom favorite file."
+        "content": "        #region Favourite Colors Button Handlers"
       },
       {
         "lineNumber": 702,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 703,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 704,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
+        "content": "        /// Saves the current favorite panel as a custom favorite file."
       },
       {
         "lineNumber": 705,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void SaveColorButton_Click(object sender, EventArgs e)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 706,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 707,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Forms.SaveFileDialog saveFileDialog \u003d new System.Windows.Forms.SaveFileDialog();"
+        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 708,
         "author": {
           "gitId": "-"
         },
-        "content": "            saveFileDialog.DefaultExt \u003d \"thm\";"
+        "content": "        private void SaveColorButton_Click(object sender, EventArgs e)"
       },
       {
         "lineNumber": 709,
         "author": {
           "gitId": "-"
         },
-        "content": "            saveFileDialog.Filter \u003d \"PPTLabsFavorites|*.thm\";"
+        "content": "        {"
       },
       {
         "lineNumber": 710,
         "author": {
           "gitId": "-"
         },
-        "content": "            saveFileDialog.Title \u003d \"Save Favorite\";"
+        "content": "            System.Windows.Forms.SaveFileDialog saveFileDialog \u003d new System.Windows.Forms.SaveFileDialog();"
       },
       {
         "lineNumber": 711,
         "author": {
           "gitId": "-"
         },
-        "content": "            "
+        "content": "            saveFileDialog.DefaultExt \u003d \"thm\";"
       },
       {
         "lineNumber": 712,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Forms.DialogResult result \u003d saveFileDialog.ShowDialog();"
+        "content": "            saveFileDialog.Filter \u003d \"PPTLabsFavorites|*.thm\";"
       },
       {
         "lineNumber": 713,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            saveFileDialog.Title \u003d \"Save Favorite\";"
       },
       {
         "lineNumber": 714,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (result \u003d\u003d System.Windows.Forms.DialogResult.OK \u0026\u0026"
+        "content": "            "
       },
       {
         "lineNumber": 715,
         "author": {
           "gitId": "-"
         },
-        "content": "                dataSource.SaveFavoriteColorsInFile(saveFileDialog.FileName))"
+        "content": "            System.Windows.Forms.DialogResult result \u003d saveFileDialog.ShowDialog();"
       },
       {
         "lineNumber": 716,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": ""
       },
       {
         "lineNumber": 717,
         "author": {
           "gitId": "-"
         },
-        "content": "                SaveDefaultColorPaneFavoriteColors();"
+        "content": "            if (result \u003d\u003d System.Windows.Forms.DialogResult.OK \u0026\u0026"
       },
       {
         "lineNumber": 718,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                dataSource.SaveFavoriteColorsInFile(saveFileDialog.FileName))"
       },
       {
         "lineNumber": 719,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            {"
       },
       {
         "lineNumber": 720,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                SaveDefaultColorPaneFavoriteColors();"
       },
       {
         "lineNumber": 721,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 722,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Loads a favorite panel from an existing favorite file."
+        "content": "        }"
       },
       {
         "lineNumber": 723,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 724,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 725,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
+        "content": "        /// Loads a favorite panel from an existing favorite file."
       },
       {
         "lineNumber": 726,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void LoadColorButton_Click(object sender, EventArgs e)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 727,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 728,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Forms.OpenFileDialog openFileDialog \u003d new System.Windows.Forms.OpenFileDialog();"
+        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 729,
         "author": {
           "gitId": "-"
         },
-        "content": "            openFileDialog.DefaultExt \u003d \"thm\";"
+        "content": "        private void LoadColorButton_Click(object sender, EventArgs e)"
       },
       {
         "lineNumber": 730,
         "author": {
           "gitId": "-"
         },
-        "content": "            openFileDialog.Filter \u003d \"PPTLabsFavorite|*.thm\";"
+        "content": "        {"
       },
       {
         "lineNumber": 731,
         "author": {
           "gitId": "-"
         },
-        "content": "            openFileDialog.Title \u003d \"Load Favorite\";"
+        "content": "            System.Windows.Forms.OpenFileDialog openFileDialog \u003d new System.Windows.Forms.OpenFileDialog();"
       },
       {
         "lineNumber": 732,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            openFileDialog.DefaultExt \u003d \"thm\";"
       },
       {
         "lineNumber": 733,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Forms.DialogResult result \u003d openFileDialog.ShowDialog();"
+        "content": "            openFileDialog.Filter \u003d \"PPTLabsFavorite|*.thm\";"
       },
       {
         "lineNumber": 734,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            openFileDialog.Title \u003d \"Load Favorite\";"
       },
       {
         "lineNumber": 735,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (result \u003d\u003d System.Windows.Forms.DialogResult.OK \u0026\u0026"
+        "content": ""
       },
       {
         "lineNumber": 736,
         "author": {
           "gitId": "-"
         },
-        "content": "                dataSource.LoadFavoriteColorsFromFile(openFileDialog.FileName))"
+        "content": "            System.Windows.Forms.DialogResult result \u003d openFileDialog.ShowDialog();"
       },
       {
         "lineNumber": 737,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": ""
       },
       {
         "lineNumber": 738,
         "author": {
           "gitId": "-"
         },
-        "content": "                SaveDefaultColorPaneFavoriteColors();"
+        "content": "            if (result \u003d\u003d System.Windows.Forms.DialogResult.OK \u0026\u0026"
       },
       {
         "lineNumber": 739,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                dataSource.LoadFavoriteColorsFromFile(openFileDialog.FileName))"
       },
       {
         "lineNumber": 740,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            {"
       },
       {
         "lineNumber": 741,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                SaveDefaultColorPaneFavoriteColors();"
       },
       {
         "lineNumber": 742,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 743,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Reset to the last loaded favorite panel."
+        "content": "        }"
       },
       {
         "lineNumber": 744,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 745,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 746,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
+        "content": "        /// Reset to the last loaded favorite panel."
       },
       {
         "lineNumber": 747,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ReloadColorButton_Click(object sender, EventArgs e)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 748,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 749,
         "author": {
           "gitId": "-"
         },
-        "content": "            ResetFavoritePanel();"
+        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 750,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        private void ReloadColorButton_Click(object sender, EventArgs e)"
       },
       {
         "lineNumber": 751,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        {"
       },
       {
         "lineNumber": 752,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            ResetFavoritePanel();"
       },
       {
         "lineNumber": 753,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Clears the current favorite panel, i.e. set all favourite colors to white."
+        "content": "        }"
       },
       {
         "lineNumber": 754,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 755,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 756,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
+        "content": "        /// Clears the current favorite panel, i.e. set all favourite colors to white."
       },
       {
         "lineNumber": 757,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ClearColorButton_Click(object sender, RoutedEventArgs e)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 758,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"sender\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 759,
         "author": {
           "gitId": "-"
         },
-        "content": "            EmptyFavoritePanel();"
+        "content": "        /// \u003cparam name\u003d\"e\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 760,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        private void ClearColorButton_Click(object sender, RoutedEventArgs e)"
       },
       {
         "lineNumber": 761,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        {"
       },
       {
         "lineNumber": 762,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": "            EmptyFavoritePanel();"
       },
       {
         "lineNumber": 763,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 764,
         "author": {
           "gitId": "-"
         },
-        "content": "        #region Context Menu Handlers"
+        "content": ""
       },
       {
         "lineNumber": 765,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        #endregion"
       },
       {
         "lineNumber": 766,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void Color_Information_Click(object sender, RoutedEventArgs e)"
+        "content": ""
       },
       {
         "lineNumber": 767,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        #region Context Menu Handlers"
       },
       {
         "lineNumber": 768,
         "author": {
           "gitId": "-"
         },
-        "content": "            MenuItem menuItem \u003d sender as MenuItem;"
+        "content": ""
       },
       {
         "lineNumber": 769,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (menuItem \u003d\u003d null)"
+        "content": "        private void Color_Information_Click(object sender, RoutedEventArgs e)"
       },
       {
         "lineNumber": 770,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        {"
       },
       {
         "lineNumber": 771,
         "author": {
           "gitId": "-"
         },
-        "content": "                return;"
+        "content": "            MenuItem menuItem \u003d sender as MenuItem;"
       },
       {
         "lineNumber": 772,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (menuItem \u003d\u003d null)"
       },
       {
         "lineNumber": 773,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Shapes.Rectangle rect \u003d ((ContextMenu)(menuItem.Parent)).PlacementTarget as System.Windows.Shapes.Rectangle;"
+        "content": "            {"
       },
       {
         "lineNumber": 774,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Media.Color color \u003d ((SolidColorBrush)rect.Fill).Color;"
+        "content": "                return;"
       },
       {
         "lineNumber": 775,
         "author": {
           "gitId": "-"
         },
-        "content": "            Color selectedColor \u003d Color.FromArgb(color.A, color.R, color.G, color.B);"
+        "content": "            }"
       },
       {
         "lineNumber": 776,
         "author": {
           "gitId": "-"
         },
-        "content": "            ColorInformationDialog dialog \u003d new ColorInformationDialog(selectedColor);"
+        "content": "            System.Windows.Shapes.Rectangle rect \u003d ((ContextMenu)(menuItem.Parent)).PlacementTarget as System.Windows.Shapes.Rectangle;"
       },
       {
         "lineNumber": 777,
         "author": {
           "gitId": "-"
         },
-        "content": "            dialog.Show();"
+        "content": "            System.Windows.Media.Color color \u003d ((SolidColorBrush)rect.Fill).Color;"
       },
       {
         "lineNumber": 778,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            Color selectedColor \u003d Color.FromArgb(color.A, color.R, color.G, color.B);"
       },
       {
         "lineNumber": 779,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            ColorInformationDialog dialog \u003d new ColorInformationDialog(selectedColor);"
       },
       {
         "lineNumber": 780,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void Set_Main_Color_Click(object sender, RoutedEventArgs e)"
+        "content": "            dialog.Show();"
       },
       {
         "lineNumber": 781,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        }"
       },
       {
         "lineNumber": 782,
         "author": {
           "gitId": "-"
         },
-        "content": "            MenuItem menuItem \u003d sender as MenuItem;"
+        "content": ""
       },
       {
         "lineNumber": 783,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (menuItem \u003d\u003d null)"
+        "content": "        private void Set_Main_Color_Click(object sender, RoutedEventArgs e)"
       },
       {
         "lineNumber": 784,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        {"
       },
       {
         "lineNumber": 785,
         "author": {
           "gitId": "-"
         },
-        "content": "                return;"
+        "content": "            MenuItem menuItem \u003d sender as MenuItem;"
       },
       {
         "lineNumber": 786,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (menuItem \u003d\u003d null)"
       },
       {
         "lineNumber": 787,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Shapes.Rectangle rect \u003d ((ContextMenu)(menuItem.Parent)).PlacementTarget as System.Windows.Shapes.Rectangle;"
+        "content": "            {"
       },
       {
         "lineNumber": 788,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Media.Color color \u003d ((SolidColorBrush)rect.Fill).Color;"
+        "content": "                return;"
       },
       {
         "lineNumber": 789,
         "author": {
           "gitId": "-"
         },
-        "content": "            Color selectedColor \u003d Color.FromArgb(color.A, color.R, color.G, color.B);"
+        "content": "            }"
       },
       {
         "lineNumber": 790,
         "author": {
           "gitId": "-"
         },
-        "content": "            dataSource.SelectedColor \u003d new HSLColor(selectedColor);"
+        "content": "            System.Windows.Shapes.Rectangle rect \u003d ((ContextMenu)(menuItem.Parent)).PlacementTarget as System.Windows.Shapes.Rectangle;"
       },
       {
         "lineNumber": 791,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            System.Windows.Media.Color color \u003d ((SolidColorBrush)rect.Fill).Color;"
       },
       {
         "lineNumber": 792,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            Color selectedColor \u003d Color.FromArgb(color.A, color.R, color.G, color.B);"
       },
       {
         "lineNumber": 793,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void Add_Favorite_Click(object sender, RoutedEventArgs e)"
+        "content": "            dataSource.SelectedColor \u003d new HSLColor(selectedColor);"
       },
       {
         "lineNumber": 794,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        }"
       },
       {
         "lineNumber": 795,
         "author": {
           "gitId": "-"
         },
-        "content": "            MenuItem menuItem \u003d sender as MenuItem;"
+        "content": ""
       },
       {
         "lineNumber": 796,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (menuItem \u003d\u003d null)"
+        "content": "        private void Add_Favorite_Click(object sender, RoutedEventArgs e)"
       },
       {
         "lineNumber": 797,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        {"
       },
       {
         "lineNumber": 798,
         "author": {
           "gitId": "-"
         },
-        "content": "                return;"
+        "content": "            MenuItem menuItem \u003d sender as MenuItem;"
       },
       {
         "lineNumber": 799,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (menuItem \u003d\u003d null)"
       },
       {
         "lineNumber": 800,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Shapes.Rectangle rect \u003d ((ContextMenu)(menuItem.Parent)).PlacementTarget as System.Windows.Shapes.Rectangle;"
+        "content": "            {"
       },
       {
         "lineNumber": 801,
         "author": {
           "gitId": "-"
         },
-        "content": "            System.Windows.Media.Color color \u003d ((SolidColorBrush)rect.Fill).Color;"
+        "content": "                return;"
       },
       {
         "lineNumber": 802,
         "author": {
           "gitId": "-"
         },
-        "content": "            HSLColor clickedColor \u003d Color.FromArgb(color.A, color.R, color.G, color.B);"
+        "content": "            }"
       },
       {
         "lineNumber": 803,
         "author": {
           "gitId": "-"
         },
-        "content": "            dataSource.AddColorToFavorites(clickedColor);"
+        "content": "            System.Windows.Shapes.Rectangle rect \u003d ((ContextMenu)(menuItem.Parent)).PlacementTarget as System.Windows.Shapes.Rectangle;"
       },
       {
         "lineNumber": 804,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            System.Windows.Media.Color color \u003d ((SolidColorBrush)rect.Fill).Color;"
       },
       {
         "lineNumber": 805,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            HSLColor clickedColor \u003d Color.FromArgb(color.A, color.R, color.G, color.B);"
       },
       {
         "lineNumber": 806,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": "            dataSource.AddColorToFavorites(clickedColor);"
       },
       {
         "lineNumber": 807,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 808,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": ""
       },
       {
         "lineNumber": 809,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        #endregion"
       },
       {
         "lineNumber": 810,
         "author": {
           "gitId": "-"
         },
-        "content": "        #region Helpers"
+        "content": ""
       },
       {
         "lineNumber": 811,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        #endregion"
       },
       {
         "lineNumber": 812,
         "author": {
           "gitId": "-"
         },
-        "content": "        #region Apply Colors (Text, Fill, Line)"
+        "content": ""
       },
       {
         "lineNumber": 813,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        #region Helpers"
       },
       {
         "lineNumber": 814,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 815,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Color selected shapes with selected color, in the given mode."
+        "content": "        #region Apply Colors (Text, Fill, Line)"
       },
       {
         "lineNumber": 816,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 817,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"selectedColor\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 818,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"colorMode\"\u003e\u003c/param\u003e"
+        "content": "        /// Color selected shapes with selected color, in the given mode."
       },
       {
         "lineNumber": 819,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ColorSelectedShapesWithColor(HSLColor selectedColor, MODE colorMode)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 820,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"selectedColor\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 821,
         "author": {
           "gitId": "-"
         },
-        "content": "            SelectShapes();"
+        "content": "        /// \u003cparam name\u003d\"colorMode\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 822,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (_selectedShapes !\u003d null"
+        "content": "        private void ColorSelectedShapesWithColor(HSLColor selectedColor, MODE colorMode)"
       },
       {
         "lineNumber": 823,
         "author": {
           "gitId": "-"
         },
-        "content": "                \u0026\u0026 this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
+        "content": "        {"
       },
       {
         "lineNumber": 824,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            SelectShapes();"
       },
       {
         "lineNumber": 825,
         "author": {
           "gitId": "-"
         },
-        "content": "                foreach (PowerPoint.Shape s in _selectedShapes)"
+        "content": "            if (_selectedShapes !\u003d null"
       },
       {
         "lineNumber": 826,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                \u0026\u0026 this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
       },
       {
         "lineNumber": 827,
         "author": {
           "gitId": "-"
         },
-        "content": "                    try"
+        "content": "            {"
       },
       {
         "lineNumber": 828,
         "author": {
           "gitId": "-"
         },
-        "content": "                    {"
+        "content": "                foreach (PowerPoint.Shape s in _selectedShapes)"
       },
       {
         "lineNumber": 829,
         "author": {
           "gitId": "-"
         },
-        "content": "                        Byte r \u003d ((Color)selectedColor).R;"
+        "content": "                {"
       },
       {
         "lineNumber": 830,
         "author": {
           "gitId": "-"
         },
-        "content": "                        Byte g \u003d ((Color)selectedColor).G;"
+        "content": "                    try"
       },
       {
         "lineNumber": 831,
         "author": {
           "gitId": "-"
         },
-        "content": "                        Byte b \u003d ((Color)selectedColor).B;"
+        "content": "                    {"
       },
       {
         "lineNumber": 832,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                        Byte r \u003d ((Color)selectedColor).R;"
       },
       {
         "lineNumber": 833,
         "author": {
           "gitId": "-"
         },
-        "content": "                        int rgb \u003d (b \u003c\u003c 16) | (g \u003c\u003c 8) | (r);"
+        "content": "                        Byte g \u003d ((Color)selectedColor).G;"
       },
       {
         "lineNumber": 834,
         "author": {
           "gitId": "-"
         },
-        "content": "                        ColorShapeWithColor(s, rgb, colorMode);"
+        "content": "                        Byte b \u003d ((Color)selectedColor).B;"
       },
       {
         "lineNumber": 835,
         "author": {
           "gitId": "-"
         },
-        "content": "                    }"
+        "content": ""
       },
       {
         "lineNumber": 836,
         "author": {
           "gitId": "-"
         },
-        "content": "                    catch (Exception)"
+        "content": "                        int rgb \u003d (b \u003c\u003c 16) | (g \u003c\u003c 8) | (r);"
       },
       {
         "lineNumber": 837,
         "author": {
           "gitId": "-"
         },
-        "content": "                    {"
+        "content": "                        ColorShapeWithColor(s, rgb, colorMode);"
       },
       {
         "lineNumber": 838,
         "author": {
           "gitId": "-"
         },
-        "content": "                        RecreateCorruptedShape(s);"
+        "content": "                    }"
       },
       {
         "lineNumber": 839,
         "author": {
           "gitId": "-"
         },
-        "content": "                    }"
+        "content": "                    catch (Exception)"
       },
       {
         "lineNumber": 840,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                    {"
       },
       {
         "lineNumber": 841,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                        RecreateCorruptedShape(s);"
       },
       {
         "lineNumber": 842,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (_selectedText !\u003d null"
+        "content": "                    }"
       },
       {
         "lineNumber": 843,
         "author": {
           "gitId": "-"
         },
-        "content": "                \u0026\u0026 this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
+        "content": "                }"
       },
       {
         "lineNumber": 844,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            }"
       },
       {
         "lineNumber": 845,
         "author": {
           "gitId": "-"
         },
-        "content": "                try"
+        "content": "            if (_selectedText !\u003d null"
       },
       {
         "lineNumber": 846,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                \u0026\u0026 this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
       },
       {
         "lineNumber": 847,
         "author": {
           "gitId": "-"
         },
-        "content": "                    Byte r \u003d ((Color)selectedColor).R;"
+        "content": "            {"
       },
       {
         "lineNumber": 848,
         "author": {
           "gitId": "-"
         },
-        "content": "                    Byte g \u003d ((Color)selectedColor).G;"
+        "content": "                try"
       },
       {
         "lineNumber": 849,
         "author": {
           "gitId": "-"
         },
-        "content": "                    Byte b \u003d ((Color)selectedColor).B;"
+        "content": "                {"
       },
       {
         "lineNumber": 850,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                    Byte r \u003d ((Color)selectedColor).R;"
       },
       {
         "lineNumber": 851,
         "author": {
           "gitId": "-"
         },
-        "content": "                    int rgb \u003d (b \u003c\u003c 16) | (g \u003c\u003c 8) | (r);"
+        "content": "                    Byte g \u003d ((Color)selectedColor).G;"
       },
       {
         "lineNumber": 852,
         "author": {
           "gitId": "-"
         },
-        "content": "                    ColorTextWithColor(_selectedText, rgb, colorMode);"
+        "content": "                    Byte b \u003d ((Color)selectedColor).B;"
       },
       {
         "lineNumber": 853,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": ""
       },
       {
         "lineNumber": 854,
         "author": {
           "gitId": "-"
         },
-        "content": "                catch (Exception)"
+        "content": "                    int rgb \u003d (b \u003c\u003c 16) | (g \u003c\u003c 8) | (r);"
       },
       {
         "lineNumber": 855,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                    ColorTextWithColor(_selectedText, rgb, colorMode);"
       },
       {
         "lineNumber": 856,
@@ -9390,539 +9390,539 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                catch (Exception)"
       },
       {
         "lineNumber": 858,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                {"
       },
       {
         "lineNumber": 859,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                }"
       },
       {
         "lineNumber": 860,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 861,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Retrieves selected shapes or text."
+        "content": "        }"
       },
       {
         "lineNumber": 862,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 863,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void SelectShapes()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 864,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Retrieves selected shapes or text."
       },
       {
         "lineNumber": 865,
         "author": {
           "gitId": "-"
         },
-        "content": "            try"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 866,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        private void SelectShapes()"
       },
       {
         "lineNumber": 867,
         "author": {
           "gitId": "-"
         },
-        "content": "                PowerPoint.Selection selection \u003d this.GetCurrentSelection();"
+        "content": "        {"
       },
       {
         "lineNumber": 868,
         "author": {
           "gitId": "-"
         },
-        "content": "                if (selection \u003d\u003d null)"
+        "content": "            try"
       },
       {
         "lineNumber": 869,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "            {"
       },
       {
         "lineNumber": 870,
         "author": {
           "gitId": "-"
         },
-        "content": "                    return;"
+        "content": "                PowerPoint.Selection selection \u003d this.GetCurrentSelection();"
       },
       {
         "lineNumber": 871,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                if (selection \u003d\u003d null)"
       },
       {
         "lineNumber": 872,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                {"
       },
       {
         "lineNumber": 873,
         "author": {
           "gitId": "-"
         },
-        "content": "                if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes \u0026\u0026"
+        "content": "                    return;"
       },
       {
         "lineNumber": 874,
         "author": {
           "gitId": "-"
         },
-        "content": "                    selection.HasChildShapeRange)"
+        "content": "                }"
       },
       {
         "lineNumber": 875,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": ""
       },
       {
         "lineNumber": 876,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _selectedShapes \u003d selection.ChildShapeRange;"
+        "content": "                if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes \u0026\u0026"
       },
       {
         "lineNumber": 877,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                    selection.HasChildShapeRange)"
       },
       {
         "lineNumber": 878,
         "author": {
           "gitId": "-"
         },
-        "content": "                else if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
+        "content": "                {"
       },
       {
         "lineNumber": 879,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                    _selectedShapes \u003d selection.ChildShapeRange;"
       },
       {
         "lineNumber": 880,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _selectedShapes \u003d selection.ShapeRange;"
+        "content": "                }"
       },
       {
         "lineNumber": 881,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                else if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
       },
       {
         "lineNumber": 882,
         "author": {
           "gitId": "-"
         },
-        "content": "                else if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
+        "content": "                {"
       },
       {
         "lineNumber": 883,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                    _selectedShapes \u003d selection.ShapeRange;"
       },
       {
         "lineNumber": 884,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _selectedText \u003d selection.TextRange;"
+        "content": "                }"
       },
       {
         "lineNumber": 885,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                else if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
       },
       {
         "lineNumber": 886,
         "author": {
           "gitId": "-"
         },
-        "content": "                else"
+        "content": "                {"
       },
       {
         "lineNumber": 887,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                    _selectedText \u003d selection.TextRange;"
       },
       {
         "lineNumber": 888,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _selectedShapes \u003d null;"
+        "content": "                }"
       },
       {
         "lineNumber": 889,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _selectedText \u003d null;"
+        "content": "                else"
       },
       {
         "lineNumber": 890,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                {"
       },
       {
         "lineNumber": 891,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                    _selectedShapes \u003d null;"
       },
       {
         "lineNumber": 892,
         "author": {
           "gitId": "-"
         },
-        "content": "            catch (Exception)"
+        "content": "                    _selectedText \u003d null;"
       },
       {
         "lineNumber": 893,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "                }"
       },
       {
         "lineNumber": 894,
         "author": {
           "gitId": "-"
         },
-        "content": "                _selectedShapes \u003d null;"
+        "content": "            }"
       },
       {
         "lineNumber": 895,
         "author": {
           "gitId": "-"
         },
-        "content": "                _selectedText \u003d null;"
+        "content": "            catch (Exception)"
       },
       {
         "lineNumber": 896,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            {"
       },
       {
         "lineNumber": 897,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                _selectedShapes \u003d null;"
       },
       {
         "lineNumber": 898,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                _selectedText \u003d null;"
       },
       {
         "lineNumber": 899,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 900,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Colors specified text range with given color."
+        "content": "        }"
       },
       {
         "lineNumber": 901,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 902,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"text\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 903,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"rgb\"\u003e\u003c/param\u003e"
+        "content": "        /// Colors specified text range with given color."
       },
       {
         "lineNumber": 904,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 905,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ColorTextWithColor(PowerPoint.TextRange text, int rgb, MODE mode)"
+        "content": "        /// \u003cparam name\u003d\"text\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 906,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"rgb\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 907,
         "author": {
           "gitId": "-"
         },
-        "content": "            PowerPoint.TextFrame frame \u003d text.Parent as PowerPoint.TextFrame;"
+        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 908,
         "author": {
           "gitId": "-"
         },
-        "content": "            PowerPoint.Shape selectedShape \u003d frame.Parent as PowerPoint.Shape;"
+        "content": "        private void ColorTextWithColor(PowerPoint.TextRange text, int rgb, MODE mode)"
       },
       {
         "lineNumber": 909,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (mode !\u003d MODE.NONE)"
+        "content": "        {"
       },
       {
         "lineNumber": 910,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            PowerPoint.TextFrame frame \u003d text.Parent as PowerPoint.TextFrame;"
       },
       {
         "lineNumber": 911,
         "author": {
           "gitId": "-"
         },
-        "content": "                ColorShapeWithColor(selectedShape, rgb, mode);"
+        "content": "            PowerPoint.Shape selectedShape \u003d frame.Parent as PowerPoint.Shape;"
       },
       {
         "lineNumber": 912,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (mode !\u003d MODE.NONE)"
       },
       {
         "lineNumber": 913,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            {"
       },
       {
         "lineNumber": 914,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                ColorShapeWithColor(selectedShape, rgb, mode);"
       },
       {
         "lineNumber": 915,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 916,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Colors specified shape with color, in the given mode."
+        "content": "        }"
       },
       {
         "lineNumber": 917,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 918,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"s\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 919,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"rgb\"\u003e\u003c/param\u003e"
+        "content": "        /// Colors specified shape with color, in the given mode."
       },
       {
         "lineNumber": 920,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 921,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ColorShapeWithColor(PowerPoint.Shape s, int rgb, MODE mode)"
+        "content": "        /// \u003cparam name\u003d\"s\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 922,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"rgb\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 923,
         "author": {
           "gitId": "-"
         },
-        "content": "            switch (mode)"
+        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 924,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        private void ColorShapeWithColor(PowerPoint.Shape s, int rgb, MODE mode)"
       },
       {
         "lineNumber": 925,
         "author": {
           "gitId": "-"
         },
-        "content": "                case MODE.FILL:"
+        "content": "        {"
       },
       {
         "lineNumber": 926,
         "author": {
           "gitId": "-"
         },
-        "content": "                    s.Fill.ForeColor.RGB \u003d rgb;"
+        "content": "            switch (mode)"
       },
       {
         "lineNumber": 927,
         "author": {
           "gitId": "-"
         },
-        "content": "                    break;"
+        "content": "            {"
       },
       {
         "lineNumber": 928,
         "author": {
           "gitId": "-"
         },
-        "content": "                case MODE.LINE:"
+        "content": "                case MODE.FILL:"
       },
       {
         "lineNumber": 929,
         "author": {
           "gitId": "-"
         },
-        "content": "                    s.Line.ForeColor.RGB \u003d rgb;"
+        "content": "                    s.Fill.ForeColor.RGB \u003d rgb;"
       },
       {
         "lineNumber": 930,
         "author": {
           "gitId": "-"
         },
-        "content": "                    s.Line.Visible \u003d MsoTriState.msoTrue;"
+        "content": "                    break;"
       },
       {
         "lineNumber": 931,
         "author": {
           "gitId": "-"
         },
-        "content": "                    break;"
+        "content": "                case MODE.LINE:"
       },
       {
         "lineNumber": 932,
         "author": {
           "gitId": "-"
         },
-        "content": "                case MODE.FONT:"
+        "content": "                    s.Line.ForeColor.RGB \u003d rgb;"
       },
       {
         "lineNumber": 933,
         "author": {
           "gitId": "-"
         },
-        "content": "                    ColorShapeFontWithColor(s, rgb);"
+        "content": "                    s.Line.Visible \u003d MsoTriState.msoTrue;"
       },
       {
         "lineNumber": 934,
@@ -9936,609 +9936,609 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                case MODE.FONT:"
       },
       {
         "lineNumber": 936,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                    ColorShapeFontWithColor(s, rgb);"
       },
       {
         "lineNumber": 937,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                    break;"
       },
       {
         "lineNumber": 938,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 939,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Colors specified shape with color."
+        "content": "        }"
       },
       {
         "lineNumber": 940,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 941,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"s\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 942,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"rgb\"\u003e\u003c/param\u003e"
+        "content": "        /// Colors specified shape with color."
       },
       {
         "lineNumber": 943,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ColorShapeFontWithColor(PowerPoint.Shape s, int rgb)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 944,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"s\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 945,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (s.HasTextFrame \u003d\u003d MsoTriState.msoTrue)"
+        "content": "        /// \u003cparam name\u003d\"rgb\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 946,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        private void ColorShapeFontWithColor(PowerPoint.Shape s, int rgb)"
       },
       {
         "lineNumber": 947,
         "author": {
           "gitId": "-"
         },
-        "content": "                PowerPoint.Selection selection \u003d this.GetCurrentSelection();"
+        "content": "        {"
       },
       {
         "lineNumber": 948,
         "author": {
           "gitId": "-"
         },
-        "content": "                if (selection \u003d\u003d null)"
+        "content": "            if (s.HasTextFrame \u003d\u003d MsoTriState.msoTrue)"
       },
       {
         "lineNumber": 949,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "            {"
       },
       {
         "lineNumber": 950,
         "author": {
           "gitId": "-"
         },
-        "content": "                    return;"
+        "content": "                PowerPoint.Selection selection \u003d this.GetCurrentSelection();"
       },
       {
         "lineNumber": 951,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                if (selection \u003d\u003d null)"
       },
       {
         "lineNumber": 952,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                {"
       },
       {
         "lineNumber": 953,
         "author": {
           "gitId": "-"
         },
-        "content": "                if (selection.ShapeRange.HasTextFrame \u003d\u003d MsoTriState.msoTrue)"
+        "content": "                    return;"
       },
       {
         "lineNumber": 954,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                }"
       },
       {
         "lineNumber": 955,
         "author": {
           "gitId": "-"
         },
-        "content": "                    if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
+        "content": ""
       },
       {
         "lineNumber": 956,
         "author": {
           "gitId": "-"
         },
-        "content": "                    {"
+        "content": "                if (selection.ShapeRange.HasTextFrame \u003d\u003d MsoTriState.msoTrue)"
       },
       {
         "lineNumber": 957,
         "author": {
           "gitId": "-"
         },
-        "content": "                        PowerPoint.TextRange selectedText \u003d selection.TextRange.TrimText();"
+        "content": "                {"
       },
       {
         "lineNumber": 958,
         "author": {
           "gitId": "-"
         },
-        "content": "                        if (selectedText.Text !\u003d \"\" \u0026\u0026 selectedText !\u003d null)"
+        "content": "                    if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
       },
       {
         "lineNumber": 959,
         "author": {
           "gitId": "-"
         },
-        "content": "                        {"
+        "content": "                    {"
       },
       {
         "lineNumber": 960,
         "author": {
           "gitId": "-"
         },
-        "content": "                            selectedText.Font.Color.RGB \u003d rgb;"
+        "content": "                        PowerPoint.TextRange selectedText \u003d selection.TextRange.TrimText();"
       },
       {
         "lineNumber": 961,
         "author": {
           "gitId": "-"
         },
-        "content": "                        }"
+        "content": "                        if (selectedText.Text !\u003d \"\" \u0026\u0026 selectedText !\u003d null)"
       },
       {
         "lineNumber": 962,
         "author": {
           "gitId": "-"
         },
-        "content": "                        else"
+        "content": "                        {"
       },
       {
         "lineNumber": 963,
         "author": {
           "gitId": "-"
         },
-        "content": "                        {"
+        "content": "                            selectedText.Font.Color.RGB \u003d rgb;"
       },
       {
         "lineNumber": 964,
         "author": {
           "gitId": "-"
         },
-        "content": "                            s.TextFrame.TextRange.TrimText().Font.Color.RGB \u003d rgb;"
+        "content": "                        }"
       },
       {
         "lineNumber": 965,
         "author": {
           "gitId": "-"
         },
-        "content": "                        }"
+        "content": "                        else"
       },
       {
         "lineNumber": 966,
         "author": {
           "gitId": "-"
         },
-        "content": "                    }"
+        "content": "                        {"
       },
       {
         "lineNumber": 967,
         "author": {
           "gitId": "-"
         },
-        "content": "                    else if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
+        "content": "                            s.TextFrame.TextRange.TrimText().Font.Color.RGB \u003d rgb;"
       },
       {
         "lineNumber": 968,
         "author": {
           "gitId": "-"
         },
-        "content": "                    {"
+        "content": "                        }"
       },
       {
         "lineNumber": 969,
         "author": {
           "gitId": "-"
         },
-        "content": "                        s.TextFrame.TextRange.TrimText().Font.Color.RGB \u003d rgb;"
+        "content": "                    }"
       },
       {
         "lineNumber": 970,
         "author": {
           "gitId": "-"
         },
-        "content": "                    }"
+        "content": "                    else if (selection.Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
       },
       {
         "lineNumber": 971,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                    {"
       },
       {
         "lineNumber": 972,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                        s.TextFrame.TextRange.TrimText().Font.Color.RGB \u003d rgb;"
       },
       {
         "lineNumber": 973,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                    }"
       },
       {
         "lineNumber": 974,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                }"
       },
       {
         "lineNumber": 975,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 976,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Recreates any specified corrupted shape."
+        "content": "        }"
       },
       {
         "lineNumber": 977,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 978,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"s\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 979,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void RecreateCorruptedShape(PowerPoint.Shape s)"
+        "content": "        /// Recreates any specified corrupted shape."
       },
       {
         "lineNumber": 980,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 981,
         "author": {
           "gitId": "-"
         },
-        "content": "            s.Copy();"
+        "content": "        /// \u003cparam name\u003d\"s\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 982,
         "author": {
           "gitId": "-"
         },
-        "content": "            PowerPoint.Shape newShape \u003d this.GetCurrentSlide().Shapes.Paste()[1];"
+        "content": "        private void RecreateCorruptedShape(PowerPoint.Shape s)"
       },
       {
         "lineNumber": 983,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        {"
       },
       {
         "lineNumber": 984,
         "author": {
           "gitId": "-"
         },
-        "content": "            newShape.Select();"
+        "content": "            s.Copy();"
       },
       {
         "lineNumber": 985,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            PowerPoint.Shape newShape \u003d this.GetCurrentSlide().Shapes.Paste()[1];"
       },
       {
         "lineNumber": 986,
         "author": {
           "gitId": "-"
         },
-        "content": "            newShape.Name \u003d s.Name;"
+        "content": ""
       },
       {
         "lineNumber": 987,
         "author": {
           "gitId": "-"
         },
-        "content": "            newShape.Left \u003d s.Left;"
+        "content": "            newShape.Select();"
       },
       {
         "lineNumber": 988,
         "author": {
           "gitId": "-"
         },
-        "content": "            newShape.Top \u003d s.Top;"
+        "content": ""
       },
       {
         "lineNumber": 989,
         "author": {
           "gitId": "-"
         },
-        "content": "            while (newShape.ZOrderPosition \u003e s.ZOrderPosition)"
+        "content": "            newShape.Name \u003d s.Name;"
       },
       {
         "lineNumber": 990,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            newShape.Left \u003d s.Left;"
       },
       {
         "lineNumber": 991,
         "author": {
           "gitId": "-"
         },
-        "content": "                newShape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd.msoSendBackward);"
+        "content": "            newShape.Top \u003d s.Top;"
       },
       {
         "lineNumber": 992,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            while (newShape.ZOrderPosition \u003e s.ZOrderPosition)"
       },
       {
         "lineNumber": 993,
         "author": {
           "gitId": "-"
         },
-        "content": "            s.Delete();"
+        "content": "            {"
       },
       {
         "lineNumber": 994,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                newShape.ZOrder(Microsoft.Office.Core.MsoZOrderCmd.msoSendBackward);"
       },
       {
         "lineNumber": 995,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 996,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            s.Delete();"
       },
       {
         "lineNumber": 997,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Retrieves color of the selected shape(s)."
+        "content": "        }"
       },
       {
         "lineNumber": 998,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 999,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1000,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003creturns\u003e\u003c/returns\u003e"
+        "content": "        /// Retrieves color of the selected shape(s)."
       },
       {
         "lineNumber": 1001,
         "author": {
           "gitId": "-"
         },
-        "content": "        private Color GetSelectedShapeColor(MODE mode)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1002,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1003,
         "author": {
           "gitId": "-"
         },
-        "content": "            SelectShapes();"
+        "content": "        /// \u003creturns\u003e\u003c/returns\u003e"
       },
       {
         "lineNumber": 1004,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (_selectedShapes \u003d\u003d null \u0026\u0026 _selectedText \u003d\u003d null)"
+        "content": "        private Color GetSelectedShapeColor(MODE mode)"
       },
       {
         "lineNumber": 1005,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        {"
       },
       {
         "lineNumber": 1006,
         "author": {
           "gitId": "-"
         },
-        "content": "                return dataSource.SelectedColor;"
+        "content": "            SelectShapes();"
       },
       {
         "lineNumber": 1007,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (_selectedShapes \u003d\u003d null \u0026\u0026 _selectedText \u003d\u003d null)"
       },
       {
         "lineNumber": 1008,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            {"
       },
       {
         "lineNumber": 1009,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
+        "content": "                return dataSource.SelectedColor;"
       },
       {
         "lineNumber": 1010,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            }"
       },
       {
         "lineNumber": 1011,
         "author": {
           "gitId": "-"
         },
-        "content": "                return GetSelectedShapeColor(_selectedShapes, mode);"
+        "content": ""
       },
       {
         "lineNumber": 1012,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
       },
       {
         "lineNumber": 1013,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
+        "content": "            {"
       },
       {
         "lineNumber": 1014,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "                return GetSelectedShapeColor(_selectedShapes, mode);"
       },
       {
         "lineNumber": 1015,
         "author": {
           "gitId": "-"
         },
-        "content": "                PowerPoint.TextFrame frame \u003d _selectedText.Parent as PowerPoint.TextFrame;"
+        "content": "            }"
       },
       {
         "lineNumber": 1016,
         "author": {
           "gitId": "-"
         },
-        "content": "                PowerPoint.Shape selectedShape \u003d frame.Parent as PowerPoint.Shape;"
+        "content": "            if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
       },
       {
         "lineNumber": 1017,
         "author": {
           "gitId": "-"
         },
-        "content": "                return GetSelectedShapeColor(selectedShape, mode);"
+        "content": "            {"
       },
       {
         "lineNumber": 1018,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                PowerPoint.TextFrame frame \u003d _selectedText.Parent as PowerPoint.TextFrame;"
       },
       {
         "lineNumber": 1019,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                PowerPoint.Shape selectedShape \u003d frame.Parent as PowerPoint.Shape;"
       },
       {
         "lineNumber": 1020,
         "author": {
           "gitId": "-"
         },
-        "content": "            return dataSource.SelectedColor;"
+        "content": "                return GetSelectedShapeColor(selectedShape, mode);"
       },
       {
         "lineNumber": 1021,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            }"
       },
       {
         "lineNumber": 1022,
@@ -10552,616 +10552,616 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            return dataSource.SelectedColor;"
       },
       {
         "lineNumber": 1024,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Retrieves color of the selected shapeRange, "
+        "content": "        }"
       },
       {
         "lineNumber": 1025,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// returning Black if shapeRange contains shapes with different colors."
+        "content": ""
       },
       {
         "lineNumber": 1026,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1027,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"selectedShapes\"\u003e\u003c/param\u003e"
+        "content": "        /// Retrieves color of the selected shapeRange, "
       },
       {
         "lineNumber": 1028,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
+        "content": "        /// returning Black if shapeRange contains shapes with different colors."
       },
       {
         "lineNumber": 1029,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003creturns\u003e\u003c/returns\u003e"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1030,
         "author": {
           "gitId": "-"
         },
-        "content": "        private Color GetSelectedShapeColor(PowerPoint.ShapeRange selectedShapes, MODE mode)"
+        "content": "        /// \u003cparam name\u003d\"selectedShapes\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1031,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1032,
         "author": {
           "gitId": "-"
         },
-        "content": "            Color colorToReturn \u003d Color.Empty;"
+        "content": "        /// \u003creturns\u003e\u003c/returns\u003e"
       },
       {
         "lineNumber": 1033,
         "author": {
           "gitId": "-"
         },
-        "content": "            foreach (object selectedShape in selectedShapes)"
+        "content": "        private Color GetSelectedShapeColor(PowerPoint.ShapeRange selectedShapes, MODE mode)"
       },
       {
         "lineNumber": 1034,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        {"
       },
       {
         "lineNumber": 1035,
         "author": {
           "gitId": "-"
         },
-        "content": "                Color color \u003d GetSelectedShapeColor(selectedShape as PowerPoint.Shape, mode);"
+        "content": "            Color colorToReturn \u003d Color.Empty;"
       },
       {
         "lineNumber": 1036,
         "author": {
           "gitId": "-"
         },
-        "content": "                if (colorToReturn.Equals(Color.Empty))"
+        "content": "            foreach (object selectedShape in selectedShapes)"
       },
       {
         "lineNumber": 1037,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "            {"
       },
       {
         "lineNumber": 1038,
         "author": {
           "gitId": "-"
         },
-        "content": "                    colorToReturn \u003d color;"
+        "content": "                Color color \u003d GetSelectedShapeColor(selectedShape as PowerPoint.Shape, mode);"
       },
       {
         "lineNumber": 1039,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                if (colorToReturn.Equals(Color.Empty))"
       },
       {
         "lineNumber": 1040,
         "author": {
           "gitId": "-"
         },
-        "content": "                else if (!colorToReturn.Equals(color))"
+        "content": "                {"
       },
       {
         "lineNumber": 1041,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "                    colorToReturn \u003d color;"
       },
       {
         "lineNumber": 1042,
         "author": {
           "gitId": "-"
         },
-        "content": "                    return Color.Black;"
+        "content": "                }"
       },
       {
         "lineNumber": 1043,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                else if (!colorToReturn.Equals(color))"
       },
       {
         "lineNumber": 1044,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                {"
       },
       {
         "lineNumber": 1045,
         "author": {
           "gitId": "-"
         },
-        "content": "            return colorToReturn;"
+        "content": "                    return Color.Black;"
       },
       {
         "lineNumber": 1046,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                }"
       },
       {
         "lineNumber": 1047,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 1048,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            return colorToReturn;"
       },
       {
         "lineNumber": 1049,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Retrieves color of the selected shape."
+        "content": "        }"
       },
       {
         "lineNumber": 1050,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1051,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"selectedShape\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1052,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
+        "content": "        /// Retrieves color of the selected shape."
       },
       {
         "lineNumber": 1053,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003creturns\u003e\u003c/returns\u003e"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1054,
         "author": {
           "gitId": "-"
         },
-        "content": "        private Color GetSelectedShapeColor(PowerPoint.Shape selectedShape, MODE mode)"
+        "content": "        /// \u003cparam name\u003d\"selectedShape\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1055,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"mode\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1056,
         "author": {
           "gitId": "-"
         },
-        "content": "            switch (mode)"
+        "content": "        /// \u003creturns\u003e\u003c/returns\u003e"
       },
       {
         "lineNumber": 1057,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        private Color GetSelectedShapeColor(PowerPoint.Shape selectedShape, MODE mode)"
       },
       {
         "lineNumber": 1058,
         "author": {
           "gitId": "-"
         },
-        "content": "                case MODE.FILL:"
+        "content": "        {"
       },
       {
         "lineNumber": 1059,
         "author": {
           "gitId": "-"
         },
-        "content": "                    return Color.FromArgb(ColorHelper.ReverseRGBToArgb(selectedShape.Fill.ForeColor.RGB));"
+        "content": "            switch (mode)"
       },
       {
         "lineNumber": 1060,
         "author": {
           "gitId": "-"
         },
-        "content": "                case MODE.LINE:"
+        "content": "            {"
       },
       {
         "lineNumber": 1061,
         "author": {
           "gitId": "-"
         },
-        "content": "                    return Color.FromArgb(ColorHelper.ReverseRGBToArgb(selectedShape.Line.ForeColor.RGB));"
+        "content": "                case MODE.FILL:"
       },
       {
         "lineNumber": 1062,
         "author": {
           "gitId": "-"
         },
-        "content": "                case MODE.FONT:"
+        "content": "                    return Color.FromArgb(ColorHelper.ReverseRGBToArgb(selectedShape.Fill.ForeColor.RGB));"
       },
       {
         "lineNumber": 1063,
         "author": {
           "gitId": "-"
         },
-        "content": "                    if (selectedShape.HasTextFrame \u003d\u003d MsoTriState.msoTrue"
+        "content": "                case MODE.LINE:"
       },
       {
         "lineNumber": 1064,
         "author": {
           "gitId": "-"
         },
-        "content": "                        \u0026\u0026 this.GetApplication().ActiveWindow.Selection.ShapeRange.HasTextFrame"
+        "content": "                    return Color.FromArgb(ColorHelper.ReverseRGBToArgb(selectedShape.Line.ForeColor.RGB));"
       },
       {
         "lineNumber": 1065,
         "author": {
           "gitId": "-"
         },
-        "content": "                        \u003d\u003d MsoTriState.msoTrue)"
+        "content": "                case MODE.FONT:"
       },
       {
         "lineNumber": 1066,
         "author": {
           "gitId": "-"
         },
-        "content": "                    {"
+        "content": "                    if (selectedShape.HasTextFrame \u003d\u003d MsoTriState.msoTrue"
       },
       {
         "lineNumber": 1067,
         "author": {
           "gitId": "-"
         },
-        "content": "                        if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
+        "content": "                        \u0026\u0026 this.GetApplication().ActiveWindow.Selection.ShapeRange.HasTextFrame"
       },
       {
         "lineNumber": 1068,
         "author": {
           "gitId": "-"
         },
-        "content": "                        {"
+        "content": "                        \u003d\u003d MsoTriState.msoTrue)"
       },
       {
         "lineNumber": 1069,
         "author": {
           "gitId": "-"
         },
-        "content": "                            PowerPoint.TextRange selectedText"
+        "content": "                    {"
       },
       {
         "lineNumber": 1070,
         "author": {
           "gitId": "-"
         },
-        "content": "                                \u003d this.GetApplication().ActiveWindow.Selection.TextRange.TrimText();"
+        "content": "                        if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionText)"
       },
       {
         "lineNumber": 1071,
         "author": {
           "gitId": "-"
         },
-        "content": "                            if (selectedText !\u003d null \u0026\u0026 selectedText.Text !\u003d \"\")"
+        "content": "                        {"
       },
       {
         "lineNumber": 1072,
         "author": {
           "gitId": "-"
         },
-        "content": "                            {"
+        "content": "                            PowerPoint.TextRange selectedText"
       },
       {
         "lineNumber": 1073,
         "author": {
           "gitId": "-"
         },
-        "content": "                                return Color.FromArgb(ColorHelper.ReverseRGBToArgb(selectedText.Font.Color.RGB));"
+        "content": "                                \u003d this.GetApplication().ActiveWindow.Selection.TextRange.TrimText();"
       },
       {
         "lineNumber": 1074,
         "author": {
           "gitId": "-"
         },
-        "content": "                            }"
+        "content": "                            if (selectedText !\u003d null \u0026\u0026 selectedText.Text !\u003d \"\")"
       },
       {
         "lineNumber": 1075,
         "author": {
           "gitId": "-"
         },
-        "content": "                            else"
+        "content": "                            {"
       },
       {
         "lineNumber": 1076,
         "author": {
           "gitId": "-"
         },
-        "content": "                            {"
+        "content": "                                return Color.FromArgb(ColorHelper.ReverseRGBToArgb(selectedText.Font.Color.RGB));"
       },
       {
         "lineNumber": 1077,
         "author": {
           "gitId": "-"
         },
-        "content": "                                return"
+        "content": "                            }"
       },
       {
         "lineNumber": 1078,
         "author": {
           "gitId": "-"
         },
-        "content": "                                Color.FromArgb("
+        "content": "                            else"
       },
       {
         "lineNumber": 1079,
         "author": {
           "gitId": "-"
         },
-        "content": "                                    ColorHelper.ReverseRGBToArgb(selectedShape.TextFrame.TextRange.Font.Color.RGB));"
+        "content": "                            {"
       },
       {
         "lineNumber": 1080,
         "author": {
           "gitId": "-"
         },
-        "content": "                            }"
+        "content": "                                return"
       },
       {
         "lineNumber": 1081,
         "author": {
           "gitId": "-"
         },
-        "content": "                        }"
+        "content": "                                Color.FromArgb("
       },
       {
         "lineNumber": 1082,
         "author": {
           "gitId": "-"
         },
-        "content": "                        else if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
+        "content": "                                    ColorHelper.ReverseRGBToArgb(selectedShape.TextFrame.TextRange.Font.Color.RGB));"
       },
       {
         "lineNumber": 1083,
         "author": {
           "gitId": "-"
         },
-        "content": "                        {"
+        "content": "                            }"
       },
       {
         "lineNumber": 1084,
         "author": {
           "gitId": "-"
         },
-        "content": "                            return"
+        "content": "                        }"
       },
       {
         "lineNumber": 1085,
         "author": {
           "gitId": "-"
         },
-        "content": "                                Color.FromArgb("
+        "content": "                        else if (this.GetCurrentSelection().Type \u003d\u003d PowerPoint.PpSelectionType.ppSelectionShapes)"
       },
       {
         "lineNumber": 1086,
         "author": {
           "gitId": "-"
         },
-        "content": "                                    ColorHelper.ReverseRGBToArgb(selectedShape.TextFrame.TextRange.Font.Color.RGB));"
+        "content": "                        {"
       },
       {
         "lineNumber": 1087,
         "author": {
           "gitId": "-"
         },
-        "content": "                        }"
+        "content": "                            return"
       },
       {
         "lineNumber": 1088,
         "author": {
           "gitId": "-"
         },
-        "content": "                    }"
+        "content": "                                Color.FromArgb("
       },
       {
         "lineNumber": 1089,
         "author": {
           "gitId": "-"
         },
-        "content": "                    break;"
+        "content": "                                    ColorHelper.ReverseRGBToArgb(selectedShape.TextFrame.TextRange.Font.Color.RGB));"
       },
       {
         "lineNumber": 1090,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                        }"
       },
       {
         "lineNumber": 1091,
         "author": {
           "gitId": "-"
         },
-        "content": "            return dataSource.SelectedColor;"
+        "content": "                    }"
       },
       {
         "lineNumber": 1092,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                    break;"
       },
       {
         "lineNumber": 1093,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 1094,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": "            return dataSource.SelectedColor;"
       },
       {
         "lineNumber": 1095,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 1096,
         "author": {
           "gitId": "-"
         },
-        "content": "        #region Eye Dropper"
+        "content": ""
       },
       {
         "lineNumber": 1097,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        #endregion"
       },
       {
         "lineNumber": 1098,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1099,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Sets the eyedropper mode given the name of the rectangle."
+        "content": "        #region Eye Dropper"
       },
       {
         "lineNumber": 1100,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1101,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"rectName\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1102,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void SetEyedropperMode(string rectName)"
+        "content": "        /// Sets the eyedropper mode given the name of the rectangle."
       },
       {
         "lineNumber": 1103,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1104,
         "author": {
           "gitId": "-"
         },
-        "content": "            switch (rectName)"
+        "content": "        /// \u003cparam name\u003d\"rectName\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1105,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        private void SetEyedropperMode(string rectName)"
       },
       {
         "lineNumber": 1106,
         "author": {
           "gitId": "-"
         },
-        "content": "                case \"applyTextColorButton\":"
+        "content": "        {"
       },
       {
         "lineNumber": 1107,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _eyedropperMode \u003d MODE.FONT;"
+        "content": "            switch (rectName)"
       },
       {
         "lineNumber": 1108,
         "author": {
           "gitId": "-"
         },
-        "content": "                    break;"
+        "content": "            {"
       },
       {
         "lineNumber": 1109,
         "author": {
           "gitId": "-"
         },
-        "content": "                case \"applyLineColorButton\":"
+        "content": "                case \"applyTextColorButton\":"
       },
       {
         "lineNumber": 1110,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _eyedropperMode \u003d MODE.LINE;"
+        "content": "                    _eyedropperMode \u003d MODE.FONT;"
       },
       {
         "lineNumber": 1111,
@@ -11175,14 +11175,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "                case \"applyFillColorButton\":"
+        "content": "                case \"applyLineColorButton\":"
       },
       {
         "lineNumber": 1113,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _eyedropperMode \u003d MODE.FILL;"
+        "content": "                    _eyedropperMode \u003d MODE.LINE;"
       },
       {
         "lineNumber": 1114,
@@ -11196,14 +11196,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "                case \"eyeDropperButton\":"
+        "content": "                case \"applyFillColorButton\":"
       },
       {
         "lineNumber": 1116,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _eyedropperMode \u003d MODE.MAIN;"
+        "content": "                    _eyedropperMode \u003d MODE.FILL;"
       },
       {
         "lineNumber": 1117,
@@ -11217,14 +11217,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "                default:"
+        "content": "                case \"eyeDropperButton\":"
       },
       {
         "lineNumber": 1119,
         "author": {
           "gitId": "-"
         },
-        "content": "                    _eyedropperMode \u003d MODE.NONE;"
+        "content": "                    _eyedropperMode \u003d MODE.MAIN;"
       },
       {
         "lineNumber": 1120,
@@ -11238,847 +11238,847 @@
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                default:"
       },
       {
         "lineNumber": 1122,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                    _eyedropperMode \u003d MODE.NONE;"
       },
       {
         "lineNumber": 1123,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                    break;"
       },
       {
         "lineNumber": 1124,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 1125,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Show magnifier and begin eye dropping."
+        "content": "        }"
       },
       {
         "lineNumber": 1126,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1127,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void BeginEyedropping()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1128,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Show magnifier and begin eye dropping."
       },
       {
         "lineNumber": 1129,
         "author": {
           "gitId": "-"
         },
-        "content": "            _isEyedropperMode \u003d true;"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1130,
         "author": {
           "gitId": "-"
         },
-        "content": "            timer1Ticks \u003d 0;"
+        "content": "        private void BeginEyedropping()"
       },
       {
         "lineNumber": 1131,
         "author": {
           "gitId": "-"
         },
-        "content": "            eyeDropperTimer.Start();"
+        "content": "        {"
       },
       {
         "lineNumber": 1132,
         "author": {
           "gitId": "-"
         },
-        "content": "            Mouse.OverrideCursor \u003d eyeDropperCursor;"
+        "content": "            _isEyedropperMode \u003d true;"
       },
       {
         "lineNumber": 1133,
         "author": {
           "gitId": "-"
         },
-        "content": "            PPExtraEventHelper.PPMouse.LeftButtonUp +\u003d LeftMouseButtonUpEventHandler;"
+        "content": "            timer1Ticks \u003d 0;"
       },
       {
         "lineNumber": 1134,
         "author": {
           "gitId": "-"
         },
-        "content": "            magnifier.Show();"
+        "content": "            eyeDropperTimer.Start();"
       },
       {
         "lineNumber": 1135,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            Mouse.OverrideCursor \u003d eyeDropperCursor;"
       },
       {
         "lineNumber": 1136,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (_eyedropperMode \u003d\u003d MODE.MAIN)"
+        "content": "            PPExtraEventHelper.PPMouse.LeftButtonUp +\u003d LeftMouseButtonUpEventHandler;"
       },
       {
         "lineNumber": 1137,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "            magnifier.Show();"
       },
       {
         "lineNumber": 1138,
         "author": {
           "gitId": "-"
         },
-        "content": "                eyeDropperPreviewRectangle.Fill \u003d selectedColorRectangle.Fill;"
+        "content": ""
       },
       {
         "lineNumber": 1139,
         "author": {
           "gitId": "-"
         },
-        "content": "                selectedColorRectangle.Opacity \u003d 0;"
+        "content": "            if (_eyedropperMode \u003d\u003d MODE.MAIN)"
       },
       {
         "lineNumber": 1140,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            {"
       },
       {
         "lineNumber": 1141,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                eyeDropperPreviewRectangle.Fill \u003d selectedColorRectangle.Fill;"
       },
       {
         "lineNumber": 1142,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                selectedColorRectangle.Opacity \u003d 0;"
       },
       {
         "lineNumber": 1143,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ColorMainColorRect(Color color)"
+        "content": "            }"
       },
       {
         "lineNumber": 1144,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        }"
       },
       {
         "lineNumber": 1145,
         "author": {
           "gitId": "-"
         },
-        "content": "            eyeDropperPreviewRectangle.Fill \u003d "
+        "content": ""
       },
       {
         "lineNumber": 1146,
         "author": {
           "gitId": "-"
         },
-        "content": "                new SolidColorBrush(System.Windows.Media.Color.FromArgb(color.A, color.R, color.G, color.B));"
+        "content": "        private void ColorMainColorRect(Color color)"
       },
       {
         "lineNumber": 1147,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        {"
       },
       {
         "lineNumber": 1148,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            eyeDropperPreviewRectangle.Fill \u003d "
       },
       {
         "lineNumber": 1149,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": "                new SolidColorBrush(System.Windows.Media.Color.FromArgb(color.A, color.R, color.G, color.B));"
       },
       {
         "lineNumber": 1150,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 1151,
         "author": {
           "gitId": "-"
         },
-        "content": "        #region Favourite Colors"
+        "content": ""
       },
       {
         "lineNumber": 1152,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        #endregion"
       },
       {
         "lineNumber": 1153,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1154,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Load default panel from default file, or clear the panel if unsuccessful."
+        "content": "        #region Favourite Colors"
       },
       {
         "lineNumber": 1155,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1156,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void LoadDefaultFavoritePanel()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1157,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Load default panel from default file, or clear the panel if unsuccessful."
       },
       {
         "lineNumber": 1158,
         "author": {
           "gitId": "-"
         },
-        "content": "            bool isSuccessful \u003d dataSource.LoadFavoriteColorsFromFile(_defaultFavoriteColorDirectory);"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1159,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (!isSuccessful)"
+        "content": "        private void LoadDefaultFavoritePanel()"
       },
       {
         "lineNumber": 1160,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        {"
       },
       {
         "lineNumber": 1161,
         "author": {
           "gitId": "-"
         },
-        "content": "                EmptyFavoritePanel();"
+        "content": "            bool isSuccessful \u003d dataSource.LoadFavoriteColorsFromFile(_defaultFavoriteColorDirectory);"
       },
       {
         "lineNumber": 1162,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (!isSuccessful)"
       },
       {
         "lineNumber": 1163,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            {"
       },
       {
         "lineNumber": 1164,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                EmptyFavoritePanel();"
       },
       {
         "lineNumber": 1165,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 1166,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Reset panel to the last loaded favorite panel."
+        "content": "        }"
       },
       {
         "lineNumber": 1167,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1168,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void ResetFavoritePanel()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1169,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Reset panel to the last loaded favorite panel."
       },
       {
         "lineNumber": 1170,
         "author": {
           "gitId": "-"
         },
-        "content": "            try"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1171,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        private void ResetFavoritePanel()"
       },
       {
         "lineNumber": 1172,
         "author": {
           "gitId": "-"
         },
-        "content": "                LoadDefaultFavoritePanel();"
+        "content": "        {"
       },
       {
         "lineNumber": 1173,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            try"
       },
       {
         "lineNumber": 1174,
         "author": {
           "gitId": "-"
         },
-        "content": "            catch (Exception e)"
+        "content": "            {"
       },
       {
         "lineNumber": 1175,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "                LoadDefaultFavoritePanel();"
       },
       {
         "lineNumber": 1176,
         "author": {
           "gitId": "-"
         },
-        "content": "                ErrorDialogBox.ShowDialog(\"Favorite Panel Reset Failed\", e.Message, e);"
+        "content": "            }"
       },
       {
         "lineNumber": 1177,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            catch (Exception e)"
       },
       {
         "lineNumber": 1178,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            {"
       },
       {
         "lineNumber": 1179,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                ErrorDialogBox.ShowDialog(\"Favorite Panel Reset Failed\", e.Message, e);"
       },
       {
         "lineNumber": 1180,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 1181,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Clear the panel to all white color."
+        "content": "        }"
       },
       {
         "lineNumber": 1182,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1183,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void EmptyFavoritePanel()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1184,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Clear the panel to all white color."
       },
       {
         "lineNumber": 1185,
         "author": {
           "gitId": "-"
         },
-        "content": "            try"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1186,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        private void EmptyFavoritePanel()"
       },
       {
         "lineNumber": 1187,
         "author": {
           "gitId": "-"
         },
-        "content": "                if (this.GetCurrentSlide() !\u003d null)"
+        "content": "        {"
       },
       {
         "lineNumber": 1188,
         "author": {
           "gitId": "-"
         },
-        "content": "                {"
+        "content": "            try"
       },
       {
         "lineNumber": 1189,
         "author": {
           "gitId": "-"
         },
-        "content": "                    dataSource.ClearFavoriteColors();"
+        "content": "            {"
       },
       {
         "lineNumber": 1190,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                if (this.GetCurrentSlide() !\u003d null)"
       },
       {
         "lineNumber": 1191,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                {"
       },
       {
         "lineNumber": 1192,
         "author": {
           "gitId": "-"
         },
-        "content": "            catch (Exception e)"
+        "content": "                    dataSource.ClearFavoriteColors();"
       },
       {
         "lineNumber": 1193,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "                }"
       },
       {
         "lineNumber": 1194,
         "author": {
           "gitId": "-"
         },
-        "content": "                ErrorDialogBox.ShowDialog(\"Favorite Panel Reset Failed\", e.Message, e);"
+        "content": "            }"
       },
       {
         "lineNumber": 1195,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            catch (Exception e)"
       },
       {
         "lineNumber": 1196,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            {"
       },
       {
         "lineNumber": 1197,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                ErrorDialogBox.ShowDialog(\"Favorite Panel Reset Failed\", e.Message, e);"
       },
       {
         "lineNumber": 1198,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            }"
       },
       {
         "lineNumber": 1199,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Set the color rect given the name of the rect, and the color to set."
+        "content": "        }"
       },
       {
         "lineNumber": 1200,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1201,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"name\"\u003e\u003c/param\u003e"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1202,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003cparam name\u003d\"color\"\u003e\u003c/param\u003e"
+        "content": "        /// Set the color rect given the name of the rect, and the color to set."
       },
       {
         "lineNumber": 1203,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void SetFavoriteColorRectangle(int column, Color color)"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1204,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// \u003cparam name\u003d\"name\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1205,
         "author": {
           "gitId": "-"
         },
-        "content": "            dataSource.SetFavoriteColor(column, color);"
+        "content": "        /// \u003cparam name\u003d\"color\"\u003e\u003c/param\u003e"
       },
       {
         "lineNumber": 1206,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        private void SetFavoriteColorRectangle(int column, Color color)"
       },
       {
         "lineNumber": 1207,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        {"
       },
       {
         "lineNumber": 1208,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            dataSource.SetFavoriteColor(column, color);"
       },
       {
         "lineNumber": 1209,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Save current panel as default favorite color."
+        "content": "        }"
       },
       {
         "lineNumber": 1210,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1211,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void SaveDefaultColorPaneFavoriteColors()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1212,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Save current panel as default favorite color."
       },
       {
         "lineNumber": 1213,
         "author": {
           "gitId": "-"
         },
-        "content": "            dataSource.SaveFavoriteColorsInFile(_defaultFavoriteColorDirectory);"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1214,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        private void SaveDefaultColorPaneFavoriteColors()"
       },
       {
         "lineNumber": 1215,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        {"
       },
       {
         "lineNumber": 1216,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": "            dataSource.SaveFavoriteColorsInFile(_defaultFavoriteColorDirectory);"
       },
       {
         "lineNumber": 1217,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 1218,
         "author": {
           "gitId": "-"
         },
-        "content": "        #region Recent Colors"
+        "content": ""
       },
       {
         "lineNumber": 1219,
         "author": {
           "gitId": "-"
         },
-        "content": "        "
+        "content": "        #endregion"
       },
       {
         "lineNumber": 1220,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1221,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Save current recent colors panel to file."
+        "content": "        #region Recent Colors"
       },
       {
         "lineNumber": 1222,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": "        "
       },
       {
         "lineNumber": 1223,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void SaveColorPaneRecentColors()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1224,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Save current recent colors panel to file."
       },
       {
         "lineNumber": 1225,
         "author": {
           "gitId": "-"
         },
-        "content": "            dataSource.SaveRecentColorsInFile(_defaultRecentColorDirectory);"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1226,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        private void SaveColorPaneRecentColors()"
       },
       {
         "lineNumber": 1227,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        {"
       },
       {
         "lineNumber": 1228,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003csummary\u003e"
+        "content": "            dataSource.SaveRecentColorsInFile(_defaultRecentColorDirectory);"
       },
       {
         "lineNumber": 1229,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// Load recent panel from file, or clear the panel if unsuccessful."
+        "content": "        }"
       },
       {
         "lineNumber": 1230,
         "author": {
           "gitId": "-"
         },
-        "content": "        /// \u003c/summary\u003e"
+        "content": ""
       },
       {
         "lineNumber": 1231,
         "author": {
           "gitId": "-"
         },
-        "content": "        private void LoadRecentColorsPanel()"
+        "content": "        /// \u003csummary\u003e"
       },
       {
         "lineNumber": 1232,
         "author": {
           "gitId": "-"
         },
-        "content": "        {"
+        "content": "        /// Load recent panel from file, or clear the panel if unsuccessful."
       },
       {
         "lineNumber": 1233,
         "author": {
           "gitId": "-"
         },
-        "content": "            bool isSuccessful \u003d dataSource.LoadRecentColorsFromFile(_defaultRecentColorDirectory);"
+        "content": "        /// \u003c/summary\u003e"
       },
       {
         "lineNumber": 1234,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (!isSuccessful)"
+        "content": "        private void LoadRecentColorsPanel()"
       },
       {
         "lineNumber": 1235,
         "author": {
           "gitId": "-"
         },
-        "content": "            {"
+        "content": "        {"
       },
       {
         "lineNumber": 1236,
         "author": {
           "gitId": "-"
         },
-        "content": "                EmptyRecentColorsPanel();"
+        "content": "            bool isSuccessful \u003d dataSource.LoadRecentColorsFromFile(_defaultRecentColorDirectory);"
       },
       {
         "lineNumber": 1237,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            if (!isSuccessful)"
       },
       {
         "lineNumber": 1238,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "            {"
       },
       {
         "lineNumber": 1239,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                EmptyRecentColorsPanel();"
       },
       {
         "lineNumber": 1240,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 1241,
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": "        }"
       },
       {
         "lineNumber": 1242,
@@ -12092,17 +12092,38 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        #endregion"
+        "content": ""
       },
       {
         "lineNumber": 1244,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "        #endregion"
       },
       {
         "lineNumber": 1245,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 1246,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        #endregion"
+      },
+      {
+        "lineNumber": 1247,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 1248,
         "author": {
           "gitId": "-"
         },
@@ -12110,7 +12131,7 @@
       }
     ],
     "authorContributionMap": {
-      "-": 1220,
+      "-": 1223,
       "yuhongherald": 25
     }
   },

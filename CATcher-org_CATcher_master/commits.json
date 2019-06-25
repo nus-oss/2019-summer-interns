@@ -391,6 +391,25 @@
             "deletions": 51
           }
         ]
+      },
+      {
+        "insertions": 20,
+        "deletions": 25,
+        "date": "2019-06-24",
+        "commitResults": [
+          {
+            "hash": "fbc998cf40c8a2b7e6e9cafd8b20080229cb4145",
+            "message": "Removed Reset Function (#98)",
+            "insertions": 0,
+            "deletions": 7
+          },
+          {
+            "hash": "8142f31fe6c17d40bdcde3f7d1fb753ff6fcce8b",
+            "message": "Fix Profiles Bug (#96)",
+            "insertions": 20,
+            "deletions": 18
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1165,8 +1184,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 881,
-    "KevinCJH": 635
+    "ptvrajsk": 883,
+    "KevinCJH": 628
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1177,7 +1196,7 @@
       "py": 0,
       "tag": 0,
       "html": 58,
-      "ts": 819
+      "ts": 821
     },
     "KevinCJH": {
       "java": 0,
@@ -1187,12 +1206,12 @@
       "py": 0,
       "tag": 0,
       "html": 147,
-      "ts": 488
+      "ts": 481
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 8831.711,
-    "KevinCJH": 12863.522
+    "ptvrajsk": 8327.8125,
+    "KevinCJH": 12388.461
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

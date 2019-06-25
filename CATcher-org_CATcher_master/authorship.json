@@ -3116,14 +3116,14 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  onProfilesMissing(profilesDetails: {}): void {"
+        "content": "  onProfilesMissing(profilesDetails: {isDirectoryMessageVisible: boolean, fileName: string, fileDirectory: string}): void {"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profileLocationPrompt \u003d profilesDetails[\u0027visible\u0027]"
+        "content": "    this.profileLocationPrompt \u003d profilesDetails.isDirectoryMessageVisible"
       },
       {
         "lineNumber": 55,
@@ -3137,28 +3137,28 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        .concat(profilesDetails[\u0027fileName\u0027])"
+        "content": "          .concat(profilesDetails[\u0027fileName\u0027])"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        .concat(\u0027 file found in \u0027)"
+        "content": "          .concat(\u0027 file found in \u0027)"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        .concat(profilesDetails[\u0027fileDirectory\u0027])"
+        "content": "          .concat(profilesDetails[\u0027fileDirectory\u0027])"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        .concat(\u0027 .\u0027)"
+        "content": "          .concat(\u0027 .\u0027)"
       },
       {
         "lineNumber": 60,
@@ -4806,21 +4806,21 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    \u0027visible\u0027: false,"
+        "content": "    isDirectoryMessageVisible: false,"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    \u0027fileName\u0027: null,"
+        "content": "    fileName: null,"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    \u0027fileDirectory\u0027: null"
+        "content": "    fileDirectory: null"
       },
       {
         "lineNumber": 65,
@@ -5100,395 +5100,409 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Informing Parent Component (Auth) of file selection"
+        "content": "    const isFileExists: boolean \u003d this.userProfileFileExists(this.filePath);"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profilesData.fileName \u003d this.PROFILES_FILE_NAME;"
+        "content": "    // Informing Parent Component (Auth) of file selection"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profilesData.fileDirectory \u003d this.filePath.split(this.PROFILES_FILE_NAME)[0];"
+        "content": "    this.profilesData.fileName \u003d this.PROFILES_FILE_NAME;"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profilesData.visible \u003d !this.userProfileFileExists(this.filePath);"
+        "content": "    this.profilesData.fileDirectory \u003d this.filePath.split(this.PROFILES_FILE_NAME)[0];"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profileDataEmitter.emit(this.profilesData);"
+        "content": "    this.profilesData.isDirectoryMessageVisible \u003d !isFileExists;"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.profileDataEmitter.emit(this.profilesData);"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    try {"
+        "content": ""
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.profiles \u003d JSON.parse(this.fs.readFileSync(this.filePath))[\u0027profiles\u0027];"
+        "content": "    if (isFileExists) {"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.assertProfilesValidity(this.profiles);"
+        "content": "      try {"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    } catch (e) {"
+        "content": "        this.profiles \u003d JSON.parse(this.fs.readFileSync(this.filePath))[\u0027profiles\u0027];"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      console.log(e);"
+        "content": "        this.assertProfilesValidity(this.profiles);"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      setTimeout(() \u003d\u003e {"
+        "content": "      } catch (e) {"
       },
       {
         "lineNumber": 116,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "          this.profiles \u003d undefined;"
+        "content": "        console.log(e);"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "          this.openErrorDialog();"
+        "content": "        setTimeout(() \u003d\u003e {"
       },
       {
         "lineNumber": 118,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "          this.selectProfile(this.blankProfile);"
+        "content": "          this.profiles \u003d undefined;"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      });"
+        "content": "          this.openErrorDialog();"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "        });"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      }"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Set default profile if exists."
+        "content": "    }"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.selectedProfile \u003d this.profiles \u003d\u003d\u003d undefined ? this.blankProfile : this.profiles[0];"
+        "content": ""
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.selectProfile(this.selectedProfile);"
+        "content": "    // Set default profile if exists."
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    this.selectedProfile \u003d this.profiles \u003d\u003d\u003d undefined ? this.blankProfile : this.profiles[0];"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.selectProfile(this.selectedProfile);"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Makes Error dialog visible to the user."
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "  /**"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  openErrorDialog(): void {"
+        "content": "   * Makes Error dialog visible to the user."
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.errorDialog.open(JsonParseErrorDialogComponent);"
+        "content": "   */"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "  openErrorDialog(): void {"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.errorDialog.open(JsonParseErrorDialogComponent);"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Verifies that every profile is correctly defined in the array of profiles."
+        "content": ""
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param profiles - Array of profiles sourced from profiles.json"
+        "content": "  /**"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "   * Verifies that every profile is correctly defined in the array of profiles."
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  assertProfilesValidity(profiles: Profile[]): void {"
+        "content": "   * @param profiles - Array of profiles sourced from profiles.json"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (profiles \u003d\u003d\u003d undefined"
+        "content": "   */"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        || profiles.filter(profile \u003d\u003e (profile.profileName \u003d\u003d\u003d undefined || profile.encodedText \u003d\u003d\u003d undefined)).length !\u003d\u003d 0) {"
+        "content": "  assertProfilesValidity(profiles: Profile[]): void {"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      throw new Error();"
+        "content": "    if (profiles \u003d\u003d\u003d undefined"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "        || profiles.filter(profile \u003d\u003e (profile.profileName \u003d\u003d\u003d undefined || profile.encodedText \u003d\u003d\u003d undefined)).length !\u003d\u003d 0) {"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      throw new Error();"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Returns true if the file indicated by the filePath exists."
+        "content": ""
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param filePath - Path of file to check."
+        "content": "  /**"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "   * Returns true if the file indicated by the filePath exists."
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  userProfileFileExists(filePath: string): boolean {"
+        "content": "   * @param filePath - Path of file to check."
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return this.fs.existsSync(filePath);"
+        "content": "   */"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "  userProfileFileExists(filePath: string): boolean {"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    return this.fs.existsSync(filePath);"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Sends the selected profile information to listening component."
+        "content": ""
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param profile - Profile selected by user."
+        "content": "  /**"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "   * Sends the selected profile information to listening component."
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  selectProfile(profile: Profile): void {"
+        "content": "   * @param profile - Profile selected by user."
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.selectedProfileEmitter.emit(profile);"
+        "content": "   */"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "  selectProfile(profile: Profile): void {"
       },
       {
         "lineNumber": 160,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.selectedProfileEmitter.emit(profile);"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 162,
         "author": {
           "gitId": "ptvrajsk"
         },
@@ -5496,7 +5510,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 159,
+      "ptvrajsk": 161,
       "-": 1
     }
   },
@@ -7694,115 +7708,108 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.labelService.reset();"
+        "content": "    this.titleService.setTitle(\u0027CATcher\u0027);"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.titleService.setTitle(\u0027CATcher\u0027);"
+        "content": "    this.issueService.setIssueTeamFilter(\u0027All Teams\u0027);"
       },
       {
         "lineNumber": 80,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "    this.issueService.setIssueTeamFilter(\u0027All Teams\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    this.changeAuthState(AuthState.NotAuthenticated);"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.changeAuthState(AuthState.NotAuthenticated);"
+        "content": "    this.ngZone.run(() \u003d\u003e this.router.navigate([\u0027\u0027]));"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.ngZone.run(() \u003d\u003e this.router.navigate([\u0027\u0027]));"
+        "content": "  }"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  isAuthenticated(): boolean {"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "  isAuthenticated(): boolean {"
+        "content": "    return !!(this.authStateSource.getValue() \u003d\u003d\u003d AuthState.Authenticated);"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "    return !!(this.authStateSource.getValue() \u003d\u003d\u003d AuthState.Authenticated);"
+        "content": "  }"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  changeAuthState(newAuthState: AuthState) {"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "  changeAuthState(newAuthState: AuthState) {"
+        "content": "    this.authStateSource.next(newAuthState);"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.authStateSource.next(newAuthState);"
-      },
-      {
-        "lineNumber": 92,
-        "author": {
-          "gitId": "-"
-        },
         "content": "  }"
       },
       {
-        "lineNumber": 93,
+        "lineNumber": 92,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 94,
+        "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
@@ -7811,7 +7818,7 @@
     ],
     "authorContributionMap": {
       "ptvrajsk": 1,
-      "KevinCJH": 19,
+      "KevinCJH": 18,
       "-": 74
     }
   },
@@ -15986,360 +15993,318 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  reset(): void {"
+        "content": "   /**"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.severityLabels.length \u003d 0;"
+        "content": "   * Returns true if the given color is considered \"dark\""
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.typeLabels.length \u003d 0;"
+        "content": "   * The color is considered \"dark\" if its luminance is less than COLOR_DARKNESS_THRESHOLD"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.responseLabels.length \u003d 0;"
+        "content": "   * @param inputColor: the color"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "   */"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  isDarkColor(inputColor: string): boolean {"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   /**"
+        "content": "    const COLOR \u003d (inputColor.charAt(0) \u003d\u003d\u003d \u0027#\u0027) ? inputColor.substring(1, 7) : inputColor;"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * Returns true if the given color is considered \"dark\""
+        "content": "    const R \u003d parseInt(COLOR.substring(0, 2), 16);"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * The color is considered \"dark\" if its luminance is less than COLOR_DARKNESS_THRESHOLD"
+        "content": "    const G \u003d parseInt(COLOR.substring(2, 4), 16);"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * @param inputColor: the color"
+        "content": "    const B \u003d parseInt(COLOR.substring(4, 6), 16);"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   */"
+        "content": "    const RGB \u003d [R / 255, G / 255, B / 255];"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  isDarkColor(inputColor: string): boolean {"
+        "content": "    const LINEAR_RGB \u003d RGB.map((col) \u003d\u003e {"
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const COLOR \u003d (inputColor.charAt(0) \u003d\u003d\u003d \u0027#\u0027) ? inputColor.substring(1, 7) : inputColor;"
+        "content": "      if (col \u003c\u003d 0.03928) {"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const R \u003d parseInt(COLOR.substring(0, 2), 16);"
+        "content": "        return col / 12.92;"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const G \u003d parseInt(COLOR.substring(2, 4), 16);"
+        "content": "      }"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const B \u003d parseInt(COLOR.substring(4, 6), 16);"
+        "content": "      return Math.pow((col + 0.055) / 1.055, 2.4);"
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const RGB \u003d [R / 255, G / 255, B / 255];"
+        "content": "    });"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const LINEAR_RGB \u003d RGB.map((col) \u003d\u003e {"
+        "content": "    // Calculate the luminance of the color"
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      if (col \u003c\u003d 0.03928) {"
+        "content": "    const LUMINANCE \u003d (0.2126 * LINEAR_RGB[0]) + (0.7152 * LINEAR_RGB[1]) + (0.0722 * LINEAR_RGB[2]);"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        return col / 12.92;"
+        "content": "    // The color is \"dark\" if the luminance is lower than the threshold"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      }"
+        "content": "    return LUMINANCE \u003c COLOR_DARKNESS_THRESHOLD;"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      return Math.pow((col + 0.055) / 1.055, 2.4);"
+        "content": "  }"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    });"
+        "content": ""
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // Calculate the luminance of the color"
+        "content": "  /**"
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const LUMINANCE \u003d (0.2126 * LINEAR_RGB[0]) + (0.7152 * LINEAR_RGB[1]) + (0.0722 * LINEAR_RGB[2]);"
+        "content": "   * Returns a css style for the label to use"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // The color is \"dark\" if the luminance is lower than the threshold"
+        "content": "   * @param color: the color of the label"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return LUMINANCE \u003c COLOR_DARKNESS_THRESHOLD;"
+        "content": "   * @return the style with background-color in rgb"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "   * @throws exception if input is an invalid color code"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "   */"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  /**"
+        "content": "  setLabelStyle(color: string) {"
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * Returns a css style for the label to use"
+        "content": "    let textColor: string;"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * @param color: the color of the label"
+        "content": ""
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * @return the style with background-color in rgb"
+        "content": "    textColor \u003d this.isDarkColor(color) ? COLOR_LIGHT_TEXT : COLOR_DARK_TEXT;"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * @throws exception if input is an invalid color code"
+        "content": ""
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   */"
+        "content": "    const styles \u003d {"
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  setLabelStyle(color: string) {"
+        "content": "      \u0027background-color\u0027 : `#${color}`,"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    let textColor: string;"
+        "content": "      \u0027border-radius\u0027 : \u00273px\u0027,"
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "      \u0027padding\u0027 : \u00273px\u0027,"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    textColor \u003d this.isDarkColor(color) ? COLOR_LIGHT_TEXT : COLOR_DARK_TEXT;"
+        "content": "      \u0027color\u0027 : `#${textColor}`,"
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "      \u0027font-weight\u0027 : \u0027410\u0027,"
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const styles \u003d {"
+        "content": "    };"
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      \u0027background-color\u0027 : `#${color}`,"
+        "content": ""
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      \u0027border-radius\u0027 : \u00273px\u0027,"
+        "content": "    return styles;"
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      \u0027padding\u0027 : \u00273px\u0027,"
+        "content": "  }"
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      \u0027color\u0027 : `#${textColor}`,"
+        "content": ""
       },
       {
         "lineNumber": 215,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      \u0027font-weight\u0027 : \u0027410\u0027,"
-      },
-      {
-        "lineNumber": 216,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    };"
-      },
-      {
-        "lineNumber": 217,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 218,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    return styles;"
-      },
-      {
-        "lineNumber": 219,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 220,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 221,
         "author": {
           "gitId": "KevinCJH"
         },
@@ -16348,7 +16313,7 @@
     ],
     "authorContributionMap": {
       "ptvrajsk": 100,
-      "KevinCJH": 121
+      "KevinCJH": 115
     }
   },
   {
