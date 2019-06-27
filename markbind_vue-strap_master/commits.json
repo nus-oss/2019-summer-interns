@@ -38,6 +38,25 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 31,
+        "deletions": 7,
+        "date": "2019-06-24",
+        "commitResults": [
+          {
+            "hash": "8383f4326fd7d11a98722d9bb46f3ac13488c3ed",
+            "message": "Delay popover close when trigger is hover",
+            "insertions": 26,
+            "deletions": 2
+          },
+          {
+            "hash": "f57e1a51f146a8c81dc7a1719cba02bdd89c2058",
+            "message": "Removed redundant click handlers",
+            "insertions": 5,
+            "deletions": 5
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -83,18 +102,18 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 22,
+    "openorclose": 53,
     "alyip98": 143
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
       "java": 0,
-      "js": 0,
+      "js": 26,
       "css": 0,
       "json": 0,
       "md": 0,
       "py": 0,
-      "vue": 22
+      "vue": 27
     },
     "alyip98": {
       "java": 0,
@@ -107,8 +126,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 159.09895,
-    "alyip98": 560.7956
+    "openorclose": 142.01506,
+    "alyip98": 396.3858
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",

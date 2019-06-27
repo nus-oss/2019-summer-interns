@@ -39,6 +39,19 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 24,
+        "deletions": 14,
+        "date": "2019-06-26",
+        "commitResults": [
+          {
+            "hash": "cfbe4a0042ba5e71b8f71390fb7ab76dcb3acf51",
+            "message": "[#681,#756] UG: update in accordance to change in Toolbar (#696)",
+            "insertions": 24,
+            "deletions": 14
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -163,12 +176,31 @@
             "deletions": 10
           }
         ]
+      },
+      {
+        "insertions": 36,
+        "deletions": 22,
+        "date": "2019-06-26",
+        "commitResults": [
+          {
+            "hash": "194bd125a57a63f2e764a348b7549f9bba18213e",
+            "message": "[#645] CodeView: improve UI of sort bar (#716)",
+            "insertions": 28,
+            "deletions": 19
+          },
+          {
+            "hash": "5ad348098a9baa2effea7646bf0463da8cae5dd2",
+            "message": "[#720] Set command-click to activate zoom-in feature for macOS devices (#730)",
+            "insertions": 8,
+            "deletions": 3
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 14,
-    "jamessspanggg": 131
+    "jylee-git": 35,
+    "jamessspanggg": 167
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -176,7 +208,7 @@
       "js": 11,
       "scss": 0,
       "json": 0,
-      "md": 0,
+      "md": 21,
       "py": 0,
       "jade": 0,
       "gradle": 0,
@@ -184,19 +216,19 @@
     },
     "jamessspanggg": {
       "java": 0,
-      "js": 74,
-      "scss": 35,
+      "js": 81,
+      "scss": 47,
       "json": 0,
-      "md": 0,
+      "md": 1,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 22
+      "pug": 38
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 4.076734,
-    "jamessspanggg": 344.2857
+    "jylee-git": 33.884445,
+    "jamessspanggg": 335.30673
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

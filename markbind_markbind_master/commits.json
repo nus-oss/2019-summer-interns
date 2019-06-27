@@ -44,6 +44,25 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 39,
+        "deletions": 22,
+        "date": "2019-06-24",
+        "commitResults": [
+          {
+            "hash": "7abe96670bc678aa9ac64c12160e9896cc7fd16d",
+            "message": "Add center attribute to userGuide/components#modal",
+            "insertions": 23,
+            "deletions": 1
+          },
+          {
+            "hash": "2ee1592e42bdeb4c4f93c096602dae899dfb4e75",
+            "message": "Update userGuide modal example to show actual code",
+            "insertions": 16,
+            "deletions": 21
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -153,12 +172,25 @@
             "deletions": 36
           }
         ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 0,
+        "date": "2019-06-26",
+        "commitResults": [
+          {
+            "hash": "2bbc68c3915ef9885b90dd90b26d31b150c867dc",
+            "message": "Document header.md in page layouts (#893)",
+            "insertions": 2,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 41,
-    "alyip98": 426
+    "openorclose": 69,
+    "alyip98": 428
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
@@ -168,7 +200,7 @@
       "json": 0,
       "md": 0,
       "mbd": 0,
-      "mbdf": 0,
+      "mbdf": 28,
       "njk": 0,
       "py": 0,
       "yml": 0
@@ -180,15 +212,15 @@
       "json": 84,
       "md": 174,
       "mbd": 24,
-      "mbdf": 67,
+      "mbdf": 69,
       "njk": 0,
       "py": 0,
       "yml": 0
     }
   },
   "authorContributionVariance": {
-    "openorclose": 326.09747,
-    "alyip98": 3920.4893
+    "openorclose": 287.68054,
+    "alyip98": 2633.1785
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",

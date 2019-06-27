@@ -3291,6 +3291,1263 @@
     }
   },
   {
+    "path": "docs/userGuide/syntax/modals.mbdf",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "## Modals"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**Modals are to be used together with the [Trigger](#trigger) component for activation.**"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cinclude src\u003d\"outputBox.md\" boilerplate \u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cspan id\u003d\"code\"\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```html"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "More about \u003ctrigger for\u003d\"modal:loremipsum\"\u003etrigger\u003c/trigger\u003e."
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "\u003cmodal title\u003d\"**Modal title** :rocket:\" id\u003d\"modal:loremipsum\"\u003e"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cbr\u003e"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "This is the same \u003ctrigger for\u003d\"modal:loremipsum\"\u003etrigger\u003c/trigger\u003e as last one."
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "\u003ctrigger for\u003d\"modal:centered\"\u003eThis is a trigger for a centered modal\u003c/trigger\u003e."
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "\u003cmodal title\u003d\"**Centered** :rocket:\" id\u003d\"modal:centered\" center\u003e"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  Centered"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "\u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cspan id\u003d\"output\"\u003e"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  More about \u003ctrigger for\u003d\"modal:loremipsum\"\u003etrigger\u003c/trigger\u003e."
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  \u003cmodal title\u003d\"**Modal title** :rocket:\" id\u003d\"modal:loremipsum\"\u003e"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cbr\u003e"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  This is the same \u003ctrigger for\u003d\"modal:loremipsum\"\u003etrigger\u003c/trigger\u003e as last one."
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  \u003ctrigger for\u003d\"modal:centered\"\u003eThis is a trigger for a centered modal\u003c/trigger\u003e."
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  \u003cmodal title\u003d\"**Centered** :rocket:\" id\u003d\"modal:centered\" center\u003e"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    Centered"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "  \u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/include\u003e"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cpanel header\u003d\"More about triggers\"\u003e"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cinclude src\u003d\"extra/triggers.mbdf\" /\u003e"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/panel\u003e\u003cp/\u003e"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "****Options****"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Name | type | Default | Description"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "--- | --- | --- | ---"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "title | `String` | `\u0027\u0027` | Title of the Modal component."
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "ok-text | `String` | `\u0027\u0027` | Text for the OK button."
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "effect | `String` | `zoom` | Supports: `zoom`, `fade`."
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "id | `String` | | Used by [Trigger](#trigger) to activate the Modal by id."
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "width | `Number`, `String`, or `null` | `null` | Passing a `Number` will be translated to pixels.\u003cbr\u003e`String` can be passed [CSS units](https://www.w3schools.com/cssref/css_units.asp), ( e.g. \u002750in\u0027 or \u002730vw\u0027 ).\u003cbr\u003e`null` will default to Bootstrap\u0027s responsive sizing."
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "large | `Boolean` | `false` | Creates a [large Modal](https://getbootstrap.com/docs/4.0/components/modal/#optional-sizes)."
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "small | `Boolean` | `false` | Creates a [small Modal](https://getbootstrap.com/docs/4.0/components/modal/#optional-sizes)."
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "center | `Boolean` | `false` | Vertically centers the modal (in addition to the horizontal centering by default)."
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "backdrop | `Boolean` | `true` | Enables closing the Modal by clicking on the backdrop."
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cspan id\u003d\"short\" class\u003d\"d-none\"\u003e"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```html"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "Click \u003ctrigger trigger\u003d\"click\" for\u003d\"modal:unused\"\u003ehere\u003c/trigger\u003e to open a modal."
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "\u003cmodal title\u003d\"Modal title\" id\u003d\"modal:unused\"\u003e"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Modal content"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cspan id\u003d\"examples\" class\u003d\"d-none\"\u003e"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "Hover \u003ctrigger large for\u003d\"modal:unused\"\u003ehere\u003c/trigger\u003e to open a modal."
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "\u003cmodal title\u003d\"Modal title\" ok-text\u003d\"OK\" id\u003d\"modal:unused\"\u003e"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Modal content"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/span\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "openorclose": 28,
+      "-": 52
+    }
+  },
+  {
+    "path": "docs/userGuide/syntax/pageLayouts.mbdf",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "## Page Layouts"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**A _layout_ is a set of page-tweaks that can be applied to a page (or group of pages) in one go.**"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "A layout consists of the following files:"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "alyip98"
+        },
+        "content": "1. A header (filename: `header.md`)"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. A footer (filename: `footer.md`)"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Tweaks to the `\u003chead\u003e` (`head.md`)"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. A site navigation menu (`navigation.md`)"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Custom styles (`styles.css`)"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "1. Custom scripts (`scripts.js`)"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "A layout is represented by a sub-directory in the `_markbind/layouts/` containing the files listed above. The name of the layout is same as the name of the sub-directory."
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "To apply the layout, specify it as an attribute named `layout` in the `\u003cfrontmatter\u003e` of each page, or in the `site.json`."
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"indented\"\u003e"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "{{ icon_example }} Suppose you have a layout named `chapterLayout`."
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003croot\u003e/_markbind/layouts/"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                  └── chapterLayout/"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "alyip98"
+        },
+        "content": "                        ├── header.md"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        ├── footer.md"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        ├── head.md"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        ├── navigation.md"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        ├── styles.css"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        └── scripts.js"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "You can apply it to the `chapter.md` by setting its `\u003cfrontmatter\u003e` as follows:"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```html"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cfrontmatter\u003e"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  layout: chapterLayout"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/frontmatter\u003e"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "You can apply it to all `chapter.md` files by adding this entry to the `site.json`."
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```json"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "{"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \"glob\": \"**/chapter.md\","
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \"layout\": \"chapterLayout\""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "The layout specified in the `site.json` overrides the one specified in the `\u003cfrontmatter\u003e`."
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Any files specified in `\u003cfrontmatter\u003e` overrides the corresponding file in the layout applied."
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"indented\"\u003e"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "{{ icon_example }} Suppose a file has the following:"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```html"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cfrontmatter\u003e"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  layout: chapterLayout"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  head: myHead.md"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/frontmatter\u003e"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "In this case `myHead.md` will override the `chapterLayout/head.md`."
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**The layout named `default` (if any) is automatically applied to every single page.** When you `init` a MarkBind site, MarkBind also generates an empty `default` layout."
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#### Attaching event listeners in `scripts.js`"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "You can include custom JavaScript in `scripts.js`. \u003d\u003dHowever, DOM manipulations such as attaching event listeners may be overridden after MarkBind setup.\u003d\u003d To ensure that such changes take effect, include your code in a function that is passed to `afterSetup()` in `scripts.js`. Functions passed to `afterSetup()` will then be called after MarkBind setup is complete."
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"indented\"\u003e"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "{{ icon_example }} Suppose a page has the following:"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```html"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cspan id\u003d\"alert\"\u003eClick here!\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "To show a JavaScript alert when `\u003cspan id\u003d\"alert\"\u003e`{.html} is clicked, we attach an event listener to it in a function passed to `afterSetup()` in `scripts.js`:"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```js"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "afterSetup(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  document.getElementById(\"alert\").addEventListener(\"click\",  () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    window.alert(\"You have just clicked the span!\");"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  });"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "});"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cspan id\u003d\"short\" class\u003d\"d-none\"\u003e"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```html"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cfrontmatter\u003e"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  layout: chapterLayout"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/frontmatter\u003e"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/span\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "alyip98": 2,
+      "-": 95
+    }
+  },
+  {
     "path": "docs/userGuide/syntax/thumbnails.mbdf",
     "lines": [
       {
