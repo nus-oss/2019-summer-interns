@@ -22084,7 +22084,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "            \u003cmat-icon\u003eredo\u003c/mat-icon\u003e"
+        "content": "            \u003cmat-icon\u003echeck_circle\u003c/mat-icon\u003e"
       },
       {
         "lineNumber": 83,
@@ -23468,7 +23468,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "            \u003cmat-icon\u003eundo\u003c/mat-icon\u003e "
+        "content": "            \u003cmat-icon\u003ecancel\u003c/mat-icon\u003e "
       },
       {
         "lineNumber": 115,

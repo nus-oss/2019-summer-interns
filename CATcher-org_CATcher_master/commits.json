@@ -1180,6 +1180,19 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-06-27",
+        "commitResults": [
+          {
+            "hash": "2328258d3d456b3b443c5462ec7508be210742ea",
+            "message": "change icon for mark for pending and responded (#114)",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
       }
     ]
   },
@@ -1210,8 +1223,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 8327.8125,
-    "KevinCJH": 12388.461
+    "ptvrajsk": 7924.207,
+    "KevinCJH": 11912.008
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

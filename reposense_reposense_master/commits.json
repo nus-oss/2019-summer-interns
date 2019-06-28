@@ -52,6 +52,19 @@
             "deletions": 14
           }
         ]
+      },
+      {
+        "insertions": 9,
+        "deletions": 6,
+        "date": "2019-06-27",
+        "commitResults": [
+          {
+            "hash": "1bc01e990391b800818820f4102e5d39958ce3a0",
+            "message": "[#721] Report: remove usage of spread operator (#766)",
+            "insertions": 9,
+            "deletions": 6
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -195,17 +208,30 @@
             "deletions": 3
           }
         ]
+      },
+      {
+        "insertions": 35,
+        "deletions": 10,
+        "date": "2019-06-27",
+        "commitResults": [
+          {
+            "hash": "8591328fbf84af35f2943756ae3f2a6fed8f67ef",
+            "message": "[#666] CodeView: load un-authored code only when toggled (#740)",
+            "insertions": 35,
+            "deletions": 10
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 35,
-    "jamessspanggg": 167
+    "jylee-git": 44,
+    "jamessspanggg": 199
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
       "java": 0,
-      "js": 11,
+      "js": 20,
       "scss": 0,
       "json": 0,
       "md": 21,
@@ -216,19 +242,19 @@
     },
     "jamessspanggg": {
       "java": 0,
-      "js": 81,
-      "scss": 47,
+      "js": 99,
+      "scss": 48,
       "json": 0,
       "md": 1,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 38
+      "pug": 51
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 33.884445,
-    "jamessspanggg": 335.30673
+    "jylee-git": 37.15879,
+    "jamessspanggg": 359.15875
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

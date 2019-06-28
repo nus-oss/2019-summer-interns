@@ -63,6 +63,31 @@
             "deletions": 21
           }
         ]
+      },
+      {
+        "insertions": 508,
+        "deletions": 1,
+        "date": "2019-06-28",
+        "commitResults": [
+          {
+            "hash": "2cfdea612c3f176afbd528e8c3eb8cf1a2f9fe65",
+            "message": "Implement footnotes via extended markdown syntax",
+            "insertions": 409,
+            "deletions": 1
+          },
+          {
+            "hash": "0a44e245f4f9043d0a39694413aa873908de5e72",
+            "message": "Add userGuide for footnotes",
+            "insertions": 61,
+            "deletions": 0
+          },
+          {
+            "hash": "0c612344b56d2c7aaba2c268109f1cd9b58b4074",
+            "message": "Add tests for footnotes",
+            "insertions": 38,
+            "deletions": 0
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -189,18 +214,18 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 69,
+    "openorclose": 577,
     "alyip98": 428
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
       "java": 0,
-      "js": 41,
-      "css": 0,
-      "json": 0,
-      "md": 0,
+      "js": 444,
+      "css": 24,
+      "json": 1,
+      "md": 21,
       "mbd": 0,
-      "mbdf": 28,
+      "mbdf": 87,
       "njk": 0,
       "py": 0,
       "yml": 0
@@ -219,8 +244,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 287.68054,
-    "alyip98": 2633.1785
+    "openorclose": 5594.572,
+    "alyip98": 2529.1362
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",
