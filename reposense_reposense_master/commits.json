@@ -221,12 +221,25 @@
             "deletions": 10
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-06-28",
+        "commitResults": [
+          {
+            "hash": "d09194c65d9016c56dfc11d341b91cde5c0d1503",
+            "message": "[#741] Fix view code icon not opening CodeView (#744)",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 44,
-    "jamessspanggg": 199
+    "jamessspanggg": 200
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -242,7 +255,7 @@
     },
     "jamessspanggg": {
       "java": 0,
-      "js": 99,
+      "js": 100,
       "scss": 48,
       "json": 0,
       "md": 1,
@@ -253,8 +266,8 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 37.15879,
-    "jamessspanggg": 359.15875
+    "jylee-git": 36.419193,
+    "jamessspanggg": 352.1621
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

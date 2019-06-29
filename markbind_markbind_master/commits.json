@@ -210,12 +210,43 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 277,
+        "deletions": 4,
+        "date": "2019-06-28",
+        "commitResults": [
+          {
+            "hash": "f72166af3a68f93b4efcdd44a19119e2679c321b",
+            "message": "Add PlantUML feature",
+            "insertions": 112,
+            "deletions": 1
+          },
+          {
+            "hash": "0a76639431f5a3976163293ca92188f79c3bfc2d",
+            "message": "Docs: Document PlantUML feature",
+            "insertions": 121,
+            "deletions": 2
+          },
+          {
+            "hash": "a0b3c0c930eb5d8bbb5ba7c649f86190886f1946",
+            "message": "Test: Add tests for PlantUML",
+            "insertions": 43,
+            "deletions": 0
+          },
+          {
+            "hash": "c89acd3647574518add16a566739e31695dcac2c",
+            "message": "Insert navbar temp styles after layout header",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "openorclose": 577,
-    "alyip98": 428
+    "alyip98": 657
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
@@ -232,10 +263,10 @@
     },
     "alyip98": {
       "java": 0,
-      "js": 77,
+      "js": 142,
       "css": 0,
-      "json": 84,
-      "md": 174,
+      "json": 105,
+      "md": 317,
       "mbd": 24,
       "mbdf": 69,
       "njk": 0,
@@ -245,7 +276,7 @@
   },
   "authorContributionVariance": {
     "openorclose": 5594.572,
-    "alyip98": 2529.1362
+    "alyip98": 4012.8784
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",

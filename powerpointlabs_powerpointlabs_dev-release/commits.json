@@ -84,22 +84,35 @@
             "deletions": 116
           }
         ]
+      },
+      {
+        "insertions": 13,
+        "deletions": 9,
+        "date": "2019-06-28",
+        "commitResults": [
+          {
+            "hash": "91b2c04516dba40a9a4a30cfaeedc6fab6a8021c",
+            "message": "change actionprotection to flushundohistory (#1942)",
+            "insertions": 13,
+            "deletions": 9
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 532
+    "yuhongherald": 545
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 532
+      "cs": 545
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 15963.945
+    "yuhongherald": 15627.08
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
