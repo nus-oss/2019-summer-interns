@@ -2703,10 +2703,31 @@
           "gitId": "-"
         },
         "content": "**A:** It is possible you may have some file names with [special characters](https://docs.microsoft.com/en-us/windows/desktop/FileIO/naming-a-file#naming-conventions) in them, which is disallowed in Windows OS. As such, *RepoSense* is unable to fully clone your repository, thus failing the analysis."
+      },
+      {
+        "lineNumber": 387,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 388,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "#### Q: Why are some files not captured by RepoSense?"
+      },
+      {
+        "lineNumber": 389,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "**A:** The files may be [binary files](https://en.wikipedia.org/wiki/Binary_file). RepoSense does not analyze binary files. Common binary files include images (`.jpg`, `.png`), applications (`.exe`), zip files (`.zip`, `.rar`) and certain document types (`.docx`, `.pptx`)."
       }
     ],
     "authorContributionMap": {
-      "jylee-git": 21,
+      "jylee-git": 24,
       "jamessspanggg": 1,
       "-": 364
     }
@@ -4474,16 +4495,16 @@
       {
         "lineNumber": 252,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                template(v-for\u003d\"format in Object.keys(getExistingLinesObj)\", v-bind:key\u003d\"format\")"
+        "content": "                template(v-for\u003d\"format in Object.keys(getExistingLinesObj)\")"
       },
       {
         "lineNumber": 253,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                  label"
+        "content": "                  label(v-bind:key\u003d\"format\")"
       },
       {
         "lineNumber": 254,
@@ -4740,8 +4761,8 @@
     ],
     "authorContributionMap": {
       "jylee-git": 3,
-      "jamessspanggg": 40,
-      "-": 246
+      "jamessspanggg": 42,
+      "-": 244
     }
   },
   {
@@ -18353,6 +18374,5742 @@
     ],
     "authorContributionMap": {
       "jamessspanggg": 9
+    }
+  },
+  {
+    "path": "src/main/java/reposense/authorship/FileInfoExtractor.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package reposense.authorship;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.BufferedReader;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.FileReader;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Path;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Paths;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.ArrayList;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Comparator;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import java.util.HashSet;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import java.util.Set;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Level;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Logger;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.regex.Matcher;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.regex.Pattern;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.stream.Collectors;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.authorship.model.FileInfo;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.authorship.model.LineInfo;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.git.GitCheckout;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.git.GitDiff;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.git.GitRevList;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.git.exception.CommitNotFoundException;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.model.Format;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.model.RepoConfiguration;"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.system.LogsManager;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import reposense.util.FileUtil;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Extracts out all the relevant {@code FileInfo} from the repository."
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class FileInfoExtractor {"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Logger logger \u003d LogsManager.getLogger(FileInfoExtractor.class);"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String MESSAGE_START_EXTRACTING_FILE_INFO \u003d \"Extracting relevant file info from %s (%s)...\";"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String DIFF_FILE_CHUNK_SEPARATOR \u003d \"\\ndiff --git a/.*\\n\";"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String LINE_CHUNKS_SEPARATOR \u003d \"\\n@@ \";"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String LINE_INSERTED_SYMBOL \u003d \"+\";"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String STARTING_LINE_NUMBER_GROUP_NAME \u003d \"startingLineNumber\";"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String FILE_CHANGED_GROUP_NAME \u003d \"filePath\";"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String FILE_DELETED_SYMBOL \u003d \"/dev/null\";"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String MATCH_GROUP_FAIL_MESSAGE_FORMAT \u003d \"Failed to match the %s group for:\\n%s\";"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static final String BINARY_FILE_LINE_DIFF_RESULT \u003d \"-\\t-\\t\";"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final int LINE_CHANGED_HEADER_INDEX \u003d 0;"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Pattern STARTING_LINE_NUMBER_PATTERN \u003d Pattern.compile("
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \"-(\\\\d)+(,)?(\\\\d)* \\\\+(?\u003cstartingLineNumber\u003e\\\\d+)(,)?(\\\\d)* @@\");"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Pattern FILE_CHANGED_PATTERN \u003d Pattern.compile(\"\\n(\\\\+){3} b?/(?\u003cfilePath\u003e.*)\\n\");"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Extracts a list of relevant files given in {@code config}."
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static List\u003cFileInfo\u003e extractFileInfos(RepoConfiguration config) {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        logger.info(String.format(MESSAGE_START_EXTRACTING_FILE_INFO, config.getLocation(), config.getBranch()));"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e fileInfos \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // checks out to the latest commit of the date range to ensure the FileInfo generated correspond to the"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // git blame file analyze output"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            GitCheckout.checkoutDate(config.getRepoRoot(), config.getBranch(), config.getUntilDate());"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } catch (CommitNotFoundException cnfe) {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            return fileInfos;"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String lastCommitHash \u003d GitRevList.getCommitHashBeforeDate("
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                config.getRepoRoot(), config.getBranch(), config.getSinceDate());"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (!lastCommitHash.isEmpty()) {"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            fileInfos \u003d getEditedFileInfos(config, lastCommitHash);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            getAllFileInfo(config, fileInfos);"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        fileInfos.sort(Comparator.comparing(FileInfo::getPath));"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return fileInfos;"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Generates a list of relevant {@code FileInfo} for all files that were edited in between the current"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * commit and the {@code lastCommitHash} commit, marks each {@code LineInfo} for each {@code FileInfo} on"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * whether they have been inserted within the commit range or not, and returns it."
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static List\u003cFileInfo\u003e getEditedFileInfos(RepoConfiguration config, String lastCommitHash) {"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e fileInfos \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String fullDiffResult \u003d GitDiff.diffCommit(config.getRepoRoot(), lastCommitHash);"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // no diff between the 2 commits, return an empty list"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (fullDiffResult.isEmpty()) {"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            return fileInfos;"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String[] fileDiffResultList \u003d fullDiffResult.split(DIFF_FILE_CHUNK_SEPARATOR);"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        Set\u003cPath\u003e nonBinaryFilesSet \u003d getNonBinaryFilesList(config);"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        for (String fileDiffResult : fileDiffResultList) {"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Matcher filePathMatcher \u003d FILE_CHANGED_PATTERN.matcher(fileDiffResult);"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // diff result does not have the markers to indicate that file has any line changes, skip it"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            if (!filePathMatcher.find()) {"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                continue;"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            String filePath \u003d filePathMatcher.group(FILE_CHANGED_GROUP_NAME);"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // file is deleted, skip it as well"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            if (filePath.equals(FILE_DELETED_SYMBOL)) {"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                continue;"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            if (!isValidAndNonBinaryFile(filePath, nonBinaryFilesSet)) {"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                continue;"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            if (Format.isInsideWhiteList(filePath, config.getFormats())) {"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                FileInfo currentFileInfo \u003d generateFileInfo(config.getRepoRoot(), filePath);"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                setLinesToTrack(currentFileInfo, fileDiffResult);"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                fileInfos.add(currentFileInfo);"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return fileInfos;"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * Returns a {@code Set} of non-binary files for the repo {@code repoConfig}."
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    public static Set\u003cPath\u003e getNonBinaryFilesList(RepoConfiguration repoConfig) {"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        List\u003cString\u003e modifiedFileList \u003d GitDiff.getModifiedFilesList(Paths.get(repoConfig.getRepoRoot()));"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        // Gets rid of binary files and files with invalid directory name."
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        return modifiedFileList.stream()"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                .filter(file -\u003e !file.startsWith(BINARY_FILE_LINE_DIFF_RESULT))"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                .map(rawNonBinaryFile -\u003e rawNonBinaryFile.split(\"\\t\")[2])"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                .filter(FileUtil::isValidPath)"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                .map(filteredFile -\u003e Paths.get(filteredFile))"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                .collect(Collectors.toCollection(HashSet::new));"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Analyzes the {@code fileDiffResult} and marks each {@code LineInfo} in {@code FileInfo} on whether they were"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * inserted in between the commit range."
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static void setLinesToTrack(FileInfo fileInfo, String fileDiffResult) {"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String[] linesChangedChunk \u003d fileDiffResult.split(LINE_CHUNKS_SEPARATOR);"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cLineInfo\u003e lineInfos \u003d fileInfo.getLines();"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        int fileLinePointer \u003d 0;"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // skips the header, index starts from 1"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        for (int sectionIndex \u003d 1; sectionIndex \u003c linesChangedChunk.length; sectionIndex++) {"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            String linesChangedInSection \u003d linesChangedChunk[sectionIndex];"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            String[] linesChanged \u003d linesChangedInSection.split(\"\\n\");"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            int startingLineNumber \u003d getStartingLineNumber(linesChanged[LINE_CHANGED_HEADER_INDEX]);"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // mark all untouched lines between sections as untracked"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            while (fileLinePointer \u003c startingLineNumber - 1) {"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                lineInfos.get(fileLinePointer++).setTracked(false);"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // skips the header, index starts from 1"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            for (int lineIndex \u003d 1; lineIndex \u003c linesChanged.length; lineIndex++) {"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                String lineChanged \u003d linesChanged[lineIndex];"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                // set line added to be tracked"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                if (lineChanged.startsWith(LINE_INSERTED_SYMBOL)) {"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    lineInfos.get(fileLinePointer++).setTracked(true);"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // set all remaining lines in file that were untouched to be untracked"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        while (fileLinePointer \u003c lineInfos.size()) {"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            lineInfos.get(fileLinePointer++).setTracked(false);"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Traverses each file from the repo root directory, generates the {@code FileInfo} for each relevant file found"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * based on {@code config} and inserts it into {@code fileInfos}."
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static void getAllFileInfo(RepoConfiguration config, List\u003cFileInfo\u003e fileInfos) {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        Set\u003cPath\u003e nonBinaryFilesList \u003d getNonBinaryFilesList(config);"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        for (Path relativePath : nonBinaryFilesList) {"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            if (Format.isInsideWhiteList(relativePath.toString(), config.getFormats())) {"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                fileInfos.add(generateFileInfo(config.getRepoRoot(), relativePath.toString()));"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Generates and returns a {@code FileInfo} with a list of {@code LineInfo} for each line content in the"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * {@code relativePath} file."
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static FileInfo generateFileInfo(String repoRoot, String relativePath) {"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FileInfo fileInfo \u003d new FileInfo(relativePath);"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Path path \u003d Paths.get(repoRoot, fileInfo.getPath());"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try (BufferedReader br \u003d new BufferedReader(new FileReader(path.toFile()))) {"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            String line;"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            int lineNum \u003d 1;"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            while ((line \u003d br.readLine()) !\u003d null) {"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                fileInfo.addLine(new LineInfo(lineNum++, line));"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } catch (IOException ioe) {"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            logger.log(Level.SEVERE, ioe.getMessage(), ioe);"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return fileInfo;"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns the starting line changed number, within the file diff result, by matching the pattern inside"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * {@code linesChanged}."
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static int getStartingLineNumber(String linesChanged) {"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Matcher chunkHeaderMatcher \u003d STARTING_LINE_NUMBER_PATTERN.matcher(linesChanged);"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (!chunkHeaderMatcher.find()) {"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            logger.severe(String.format(MATCH_GROUP_FAIL_MESSAGE_FORMAT, \"line changed\", linesChanged));"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            throw new AssertionError(\"Should not have error matching line number pattern inside chunk header!\");"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return Integer.parseInt(chunkHeaderMatcher.group(STARTING_LINE_NUMBER_GROUP_NAME));"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * Returns true if {@code filePath} is valid and the file is not in binary."
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static boolean isValidAndNonBinaryFile(String filePath, Set\u003cPath\u003e nonBinaryFilesSet) {"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        return FileUtil.isValidPath(filePath) \u0026\u0026 nonBinaryFilesSet.contains(Paths.get(filePath));"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "jylee-git": 37,
+      "-": 194
+    }
+  },
+  {
+    "path": "src/main/java/reposense/git/GitDiff.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package reposense.git;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import static reposense.system.CommandRunner.runCommand;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Path;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Paths;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import java.util.Arrays;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Contains git diff related functionalities."
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Git diff is responsible for obtaining the changes between commits, commit and working tree, etc."
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class GitDiff {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static final String EMPTY_TREE_HASH \u003d \"4b825dc642cb6eb9a060e54bf8d69288fbee4904\";"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static final String CHECKED_OUT_COMMIT_REFERENCE \u003d \"HEAD\";"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns the git diff result of the current commit compared to {@code lastCommitHash}, without any context."
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static String diffCommit(String root, String lastCommitHash) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Path rootPath \u003d Paths.get(root);"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return runCommand(rootPath, \"git diff -U0 \" + lastCommitHash);"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * Returns a list of committed files with the corresponding number of lines added and deleted in the repo"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * {@code repoRoot}."
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    public static List\u003cString\u003e getModifiedFilesList(Path repoRoot) {"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        String diffCommand \u003d String.format(\"git diff --numstat %s %s\", EMPTY_TREE_HASH, CHECKED_OUT_COMMIT_REFERENCE);"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        String diffResult \u003d runCommand(repoRoot.toAbsolutePath(), diffCommand);"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        return Arrays.asList(diffResult.split(\"\\n\"));"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "jylee-git": 14,
+      "-": 21
+    }
+  },
+  {
+    "path": "src/main/java/reposense/git/GitUtil.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package reposense.git;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import static reposense.util.StringsUtil.addQuote;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.File;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.FileSystem;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.FileSystems;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.PathMatcher;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Paths;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.text.DateFormat;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.text.SimpleDateFormat;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Date;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Level;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Logger;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.model.Author;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.model.Format;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.system.LogsManager;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.util.StringsUtil;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Contains Git related utilities."
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "class GitUtil {"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    static final DateFormat GIT_LOG_SINCE_DATE_FORMAT \u003d new SimpleDateFormat(\"yyyy-MM-dd\u0027T\u002700:00:00+08:00\");"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    static final DateFormat GIT_LOG_UNTIL_DATE_FORMAT \u003d new SimpleDateFormat(\"yyyy-MM-dd\u0027T\u002723:59:59+08:00\");"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Logger logger \u003d LogsManager.getLogger(GitUtil.class);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    // ignore check against email"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String AUTHOR_NAME_PATTERN \u003d \"^%s \u003c.*\u003e$\";"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    // ignore check against author name"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String AUTHOR_EMAIL_PATTERN \u003d \"^.* \u003c\\\\(.*+\\\\)\\\\?%s\u003e$\";"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String OR_OPERATOR_PATTERN \u003d \"\\\\|\";"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns the {@code String} command to specify the date range of commits to analyze for `git` commands."
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    static String convertToGitDateRangeArgs(Date sinceDate, Date untilDate) {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String gitDateRangeArgs \u003d \"\";"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (sinceDate !\u003d null) {"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            gitDateRangeArgs +\u003d \" --since\u003d\" + addQuote(GIT_LOG_SINCE_DATE_FORMAT.format(sinceDate));"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (untilDate !\u003d null) {"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            gitDateRangeArgs +\u003d \" --until\u003d\" + addQuote(GIT_LOG_UNTIL_DATE_FORMAT.format(untilDate));"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return gitDateRangeArgs;"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns the {@code String} command to specify the authors to analyze for `git log` command."
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    static String convertToFilterAuthorArgs(Author author) {"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        StringBuilder filterAuthorArgsBuilder \u003d new StringBuilder(\" --author\u003d\\\"\");"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // git author names and emails may contain regex meta-characters, so we need to escape those"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        author.getAuthorAliases().stream()"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .map(authorAlias -\u003e String.format(AUTHOR_NAME_PATTERN,"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        StringsUtil.replaceSpecialSymbols(authorAlias, \".\")) + OR_OPERATOR_PATTERN)"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .forEach(filterAuthorArgsBuilder::append);"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        author.getEmails().stream()"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .map(email -\u003e String.format(AUTHOR_EMAIL_PATTERN,"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        StringsUtil.replaceSpecialSymbols(email, \".\")) + OR_OPERATOR_PATTERN)"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .forEach(filterAuthorArgsBuilder::append);"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        filterAuthorArgsBuilder.append("
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                String.format(AUTHOR_NAME_PATTERN,"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        StringsUtil.replaceSpecialSymbols(author.getGitId(), \".\"))).append(\"\\\"\");"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return filterAuthorArgsBuilder.toString();"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns the {@code String} command to specify the file formats to analyze for `git` commands."
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    static String convertToGitFormatsArgs(List\u003cFormat\u003e formats) {"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        StringBuilder gitFormatsArgsBuilder \u003d new StringBuilder();"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        final String cmdFormat \u003d \" -- \" + addQuote(\"*.%s\");"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        formats.stream()"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .map(format -\u003e String.format(cmdFormat, format.toString()))"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .forEach(gitFormatsArgsBuilder::append);"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return gitFormatsArgsBuilder.toString();"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns the {@code String} command to specify the globs to exclude for `git log` command."
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Also checks that every glob in {@code ignoreGlobList} only targets files within the given repository"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * {@code root}."
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static String convertToGitExcludeGlobArgs(File root, List\u003cString\u003e ignoreGlobList) {"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        StringBuilder gitExcludeGlobArgsBuilder \u003d new StringBuilder();"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        final String cmdFormat \u003d \" \" + addQuote(\":(exclude)%s\");"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        ignoreGlobList.stream()"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                .filter(item -\u003e isValidIgnoreGlob(root, item))"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .map(ignoreGlob -\u003e String.format(cmdFormat, ignoreGlob))"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .forEach(gitExcludeGlobArgsBuilder::append);"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return gitExcludeGlobArgsBuilder.toString();"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * Returns true if the {@code ignoreGlob} is inside the current repository."
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * Produces log messages when the invalid {@code ignoreGlob} is skipped."
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static boolean isValidIgnoreGlob(File repoRoot, String ignoreGlob) {"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        String validPath \u003d ignoreGlob;"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FileSystem fileSystem \u003d FileSystems.getDefault();"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        if (ignoreGlob.isEmpty()) {"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        } else if (ignoreGlob.startsWith(\"/\") || ignoreGlob.startsWith(\"\\\\\")) {"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // Ignore globs cannot start with a slash"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            logger.log(Level.WARNING, ignoreGlob + \" cannot start with / or \\\\.\");"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        } else if (ignoreGlob.contains(\"/*\") || ignoreGlob.contains(\"\\\\*\")) {"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // contains directories"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            validPath \u003d ignoreGlob.substring(0, ignoreGlob.indexOf(\"/*\"));"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        } else if (ignoreGlob.contains(\"*\")) {"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // no directories"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            return true;"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            String fileGlobPath \u003d \"glob:\" + repoRoot.getCanonicalPath().replaceAll(\"\\\\\\\\+\", \"\\\\/\") + \"/**\";"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            PathMatcher pathMatcher \u003d fileSystem.getPathMatcher(fileGlobPath);"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            validPath \u003d new File(repoRoot, validPath).getCanonicalPath();"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            if (pathMatcher.matches(Paths.get(validPath))) {"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                return true;"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } catch (IOException ioe) {"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            logger.log(Level.WARNING, ioe.getMessage(), ioe);"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        logger.log(Level.WARNING, ignoreGlob + \" will be skipped as this glob points to the outside of \""
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                + \"the repository.\");"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return false;"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "jylee-git": 13,
+      "-": 130
+    }
+  },
+  {
+    "path": "src/main/java/reposense/util/FileUtil.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package reposense.util;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.File;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.FileNotFoundException;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.FileOutputStream;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.IOException;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.InputStream;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.OutputStream;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.io.PrintWriter;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.ByteBuffer;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Files;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import java.nio.file.InvalidPathException;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Path;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Paths;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Arrays;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Set;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Level;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Logger;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.stream.Collectors;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.zip.ZipEntry;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.zip.ZipInputStream;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.zip.ZipOutputStream;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import com.google.gson.Gson;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import com.google.gson.GsonBuilder;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.system.LogsManager;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Contains file processing related functionalities."
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class FileUtil {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static final String REPOS_ADDRESS \u003d \"repos\";"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    // zip file which contains all the specified file types"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static final String ZIP_FILE \u003d \"archive.zip\";"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Logger logger \u003d LogsManager.getLogger(FileUtil.class);"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String GITHUB_API_DATE_FORMAT \u003d \"yyyy-MM-dd\";"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final ByteBuffer buffer \u003d ByteBuffer.allocate(1 \u003c\u003c 11); // 2KB"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static final String MESSAGE_INVALID_FILE_PATH \u003d \"\\\"%s\\\" is an invalid file path. Skipping this directory.\";"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Writes the JSON file representing the {@code object} at the given {@code path}."
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void writeJsonFile(Object object, String path) {"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Gson gson \u003d new GsonBuilder()"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .setDateFormat(GITHUB_API_DATE_FORMAT)"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .setPrettyPrinting()"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .create();"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        String result \u003d gson.toJson(object);"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try (PrintWriter out \u003d new PrintWriter(path)) {"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            out.print(result);"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            out.print(\"\\n\");"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } catch (FileNotFoundException e) {"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            logger.log(Level.SEVERE, e.getMessage(), e);"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Deletes the {@code root} directory."
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * @throws IOException if the root path does not exist."
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void deleteDirectory(String root) throws IOException {"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        File rootDirectory \u003d Paths.get(root).toFile();"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (rootDirectory.exists()) {"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            for (File file : rootDirectory.listFiles()) {"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                if (file.isDirectory()) {"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    deleteDirectory(file.toString());"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                } else {"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    file.delete();"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            rootDirectory.delete();"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            if (rootDirectory.exists()) {"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                throw new IOException(String.format(\"Fail to delete directory %s\", rootDirectory));"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Zips all the files of {@code fileTypes} contained in {@code sourceAndOutputPath} directory into the same folder."
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void zip(Path sourceAndOutputPath, String... fileTypes) {"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FileUtil.zip(sourceAndOutputPath, sourceAndOutputPath, fileTypes);"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Zips all the {@code fileTypes} files contained in the {@code sourcePath} and its subdirectories."
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Creates the zipped {@code ZIP_FILE} file in the {@code outputPath}."
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void zip(Path sourcePath, Path outputPath, String... fileTypes) {"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try ("
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                FileOutputStream fos \u003d new FileOutputStream(outputPath + File.separator + ZIP_FILE);"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                ZipOutputStream zos \u003d new ZipOutputStream(fos)"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        ) {"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Set\u003cPath\u003e allFiles \u003d getFilePaths(sourcePath, fileTypes);"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            for (Path path : allFiles) {"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                String filePath \u003d sourcePath.relativize(path.toAbsolutePath()).toString();"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                String zipEntry \u003d Files.isDirectory(path) ? filePath + File.separator : filePath;"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                zos.putNextEntry(new ZipEntry(zipEntry.replace(\"\\\\\", \"/\")));"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                if (Files.isRegularFile(path)) {"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    try (InputStream is \u003d Files.newInputStream(path)) {"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        int length;"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        while ((length \u003d is.read(buffer.array())) \u003e 0) {"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                            zos.write(buffer.array(), 0, length);"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        }"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                zos.closeEntry();"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } catch (IOException ioe) {"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            logger.log(Level.SEVERE, ioe.getMessage(), ioe);"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Unzips the contents of the {@code zipSourcePath} into {@code outputPath}."
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * @throws IOException if {@code zipSourcePath} is an invalid path."
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void unzip(Path zipSourcePath, Path outputPath) throws IOException {"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try (InputStream is \u003d Files.newInputStream(zipSourcePath)) {"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            unzip(is, outputPath);"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Unzips the contents of the {@code is} into {@code outputPath}."
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * @throws IOException if {@code is} refers to an invalid path."
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void unzip(InputStream is, Path outputPath) throws IOException {"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        try (ZipInputStream zis \u003d new ZipInputStream(is)) {"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            ZipEntry entry;"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Files.createDirectories(outputPath);"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            while ((entry \u003d zis.getNextEntry()) !\u003d null) {"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                Path path \u003d Paths.get(outputPath.toString(), entry.getName());"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                // create the directories of the zip directory"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                if (entry.isDirectory()) {"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    Files.createDirectories(path.toAbsolutePath());"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    zis.closeEntry();"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    continue;"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                if (!Files.exists(path.getParent())) {"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    Files.createDirectories(path.getParent());"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                try (OutputStream output \u003d Files.newOutputStream(path)) {"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    int length;"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    while ((length \u003d zis.read(buffer.array())) \u003e 0) {"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                        output.write(buffer.array(), 0, length);"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                    }"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                }"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                zis.closeEntry();"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Copies the template files from {@code sourcePath} to the {@code outputPath}."
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * @throws IOException if {@code is} refers to an invalid path."
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void copyTemplate(InputStream is, String outputPath) throws IOException {"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FileUtil.unzip(is, Paths.get(outputPath));"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Creates the {@code dest} directory if it does not exist."
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static void createDirectory(Path dest) throws IOException {"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Files.createDirectories(dest);"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * Returns true if {@code path} is a valid path."
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     * Produces log messages when the invalid file path is skipped."
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    public static boolean isValidPath(String path) {"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        try {"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            Paths.get(path);"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        } catch (InvalidPathException ipe) {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            logger.log(Level.WARNING, String.format(MESSAGE_INVALID_FILE_PATH, path));"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            return false;"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        return true;"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns a list of {@code Path} of {@code fileTypes} contained in the given {@code directoryPath} directory."
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static Set\u003cPath\u003e getFilePaths(Path directoryPath, String... fileTypes) throws IOException {"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return Files.walk(directoryPath)"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .filter(p -\u003e FileUtil.isFileTypeInPath(p, fileTypes) || Files.isDirectory(p))"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                .collect(Collectors.toSet());"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns true if the {@code path} contains one of the {@code fileTypes} extension."
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static boolean isFileTypeInPath(Path path, String... fileTypes) {"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return Arrays.stream(fileTypes).anyMatch(path.toString()::endsWith);"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static String attachJsPrefix(String original, String prefix) {"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return \"var \" + prefix + \" \u003d \" + original;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "jylee-git": 17,
+      "-": 190
+    }
+  },
+  {
+    "path": "src/test/java/reposense/authorship/FileInfoExtractorTest.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package reposense.authorship;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Path;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.nio.file.Paths;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import java.util.Arrays;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Calendar;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Date;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.List;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import java.util.Set;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import org.junit.Assert;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import org.junit.Test;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.authorship.model.FileInfo;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.git.GitCheckout;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.model.Author;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "import reposense.model.Format;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.template.GitTestTemplate;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.util.SystemUtil;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import reposense.util.TestUtil;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class FileInfoExtractorTest extends GitTestTemplate {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Path TEST_DATA_FOLDER \u003d Paths.get(\"src\", \"test\", \"resources\", \"FileInfoExtractorTest\");"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Path FILE_WITH_SPECIAL_CHARACTER \u003d TEST_DATA_FOLDER.resolve(\"fileWithSpecialCharacters.txt\");"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Path FILE_WITHOUT_SPECIAL_CHARACTER \u003d TEST_DATA_FOLDER"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            .resolve(\"fileWithoutSpecialCharacters.txt\");"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String WINDOWS_ILLEGAL_FILE_NAME_BRANCH \u003d \"windows-illegal-filename\";"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String EDITED_FILE_INFO_BRANCH \u003d \"getEditedFileInfos-test\";"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String DIRECTORY_WITH_VALID_WHITELISTED_NAME_BRANCH \u003d \"directory-with-valid-whitelisted-name\";"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String BRANCH_WITH_VALID_WHITELISTED_FILE_NAME_BRANCH \u003d"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            \"535-FileInfoExtractorTest-branchWithValidWhitelistedFileName.txt\";"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    private static final String BRANCH_WITH_BINARY_FILES \u003d"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            \"728-FileInfoExtractorTest-getNonBinaryFilesList_directoryWithBinaryFiles_success\";"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String FEBRUARY_EIGHT_COMMIT_HASH \u003d \"768015345e70f06add2a8b7d1f901dc07bf70582\";"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String OCTOBER_SEVENTH_COMMIT_HASH \u003d \"b28dfac5bd449825c1a372e58485833b35fdbd50\";"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void extractFileInfosTest() {"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        config.getAuthorEmailsAndAliasesMap().put(MAIN_AUTHOR_NAME, new Author(MAIN_AUTHOR_NAME));"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        config.getAuthorEmailsAndAliasesMap().put(FAKE_AUTHOR_NAME, new Author(FAKE_AUTHOR_NAME));"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        GitCheckout.checkout(config.getRepoRoot(), TEST_COMMIT_HASH);"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.extractFileInfos(config);"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertEquals(6, files.size());"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"README.md\"), files));"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"annotationTest.java\"), files));"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"blameTest.java\"), files));"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"newPos/movedFile.java\"), files));"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"inMasterBranch.java\"), files));"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"newFile.java\"), files));"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void extractFileInfos_sinceDateFebrauaryNineToLatestCommit_success() {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Date date \u003d TestUtil.getDate(2018, Calendar.FEBRUARY, 9);"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        config.setSinceDate(date);"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.extractFileInfos(config);"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertEquals(4, files.size());"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // files edited within commit range"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"README.md\"), files));"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"newPos/movedFile.java\"), files));"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"annotationTest.java\"), files));"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // files not edited within commit range"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertFalse(isFileExistence(Paths.get(\"inMasterBranch.java\"), files));"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertFalse(isFileExistence(Paths.get(\"blameTest.java\"), files));"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertFalse(isFileExistence(Paths.get(\"newFile.java\"), files));"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void extractFileInfos_windowsIllegalFileNameBranch_success() {"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        GitCheckout.checkout(config.getRepoRoot(), WINDOWS_ILLEGAL_FILE_NAME_BRANCH);"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.extractFileInfos(config);"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (SystemUtil.isWindows()) {"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Assert.assertEquals(6, files.size());"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Assert.assertEquals(7, files.size());"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Assert.assertTrue(isFileExistence(Paths.get(\"windows:Illegal?Characters!File(Name).java\"), files));"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void extractFileInfos_directoryWithValidWhitelistedName_success() {"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        GitCheckout.checkout(config.getRepoRoot(), DIRECTORY_WITH_VALID_WHITELISTED_NAME_BRANCH);"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.extractFileInfos(config);"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertEquals(7, files.size());"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\".gradle/anything.txt\"), files));"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void extractFileInfos_branchWithValidWhitelistedFileName_success() {"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        GitCheckout.checkout(config.getRepoRoot(), BRANCH_WITH_VALID_WHITELISTED_FILE_NAME_BRANCH);"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.extractFileInfos(config);"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"whitelisted-format.txt\"), files));"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void extractFileInfos_sinceDateAfterLatestCommit_emptyResult() {"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Date date \u003d TestUtil.getDate(2050, 12, 31);"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        config.setSinceDate(date);"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.extractFileInfos(config);"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(files.isEmpty());"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void extractFileInfos_untilDateBeforeFirstCommit_emptyResult() {"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Date date \u003d TestUtil.getDate(2015, 12, 31);"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        config.setUntilDate(date);"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.extractFileInfos(config);"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(files.isEmpty());"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void getEditedFileInfos_editFileInfoBranchSinceFebrauryEight_success() {"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        GitCheckout.checkout(config.getRepoRoot(), EDITED_FILE_INFO_BRANCH);"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.getEditedFileInfos(config, FEBRUARY_EIGHT_COMMIT_HASH);"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertEquals(3, files.size());"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"README.md\"), files));"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"annotationTest.java\"), files));"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertTrue(isFileExistence(Paths.get(\"newPos/movedFile.java\"), files));"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // file renamed without changing content, not included"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertFalse(isFileExistence(Paths.get(\"renamedFile.java\"), files));"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void getEditedFileInfos_editFileInfoBranchSinceFirstCommit_success() {"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        GitCheckout.checkout(config.getRepoRoot(), EDITED_FILE_INFO_BRANCH);"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.getEditedFileInfos(config, FIRST_COMMIT_HASH);"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertEquals(5, files.size());"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        // empty file created, not included"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertFalse(isFileExistence(Paths.get(\"inMasterBranch.java\"), files));"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void getEditedFileInfos_windowsIllegalFileNameBranchSinceOctoberFifteen_success() {"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        GitCheckout.checkout(config.getRepoRoot(), WINDOWS_ILLEGAL_FILE_NAME_BRANCH);"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cFileInfo\u003e files \u003d FileInfoExtractor.getEditedFileInfos(config, OCTOBER_SEVENTH_COMMIT_HASH);"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (SystemUtil.isWindows()) {"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Assert.assertTrue(files.isEmpty());"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Assert.assertEquals(1, files.size());"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            Assert.assertTrue(isFileExistence(Paths.get(\"windows:Illegal?Characters!File(Name).java\"), files));"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void generateFileInfo_fileWithSpecialCharacters_correctFileInfoGenerated() {"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FileInfo fileInfo \u003d FileInfoExtractor.generateFileInfo(\".\", FILE_WITH_SPECIAL_CHARACTER.toString());"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertEquals(5, fileInfo.getLines().size());"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void generateFileInfo_fileWithoutSpecialCharacters_correctFileInfoGenerated() {"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FileInfo fileInfo \u003d FileInfoExtractor.generateFileInfo(\".\", FILE_WITHOUT_SPECIAL_CHARACTER.toString());"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        Assert.assertEquals(5, fileInfo.getLines().size());"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    public void getNonBinaryFilesList_directoryWithBinaryFiles_success() {"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        List\u003cString\u003e nonBinaryFilesList \u003d Arrays.asList("
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                \"binaryFileTest/nonBinaryFile.txt\", \"My Documents/wordToHtml.htm\", \"My Pictures/notPngPicture.png\","
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                \"My Documents/wordToHtml_files/colorschememapping.xml\", \"My Documents/wordToHtml_files/filelist.xml\","
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                \"My Documents/notPdfDocument.pdf\");"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        List\u003cString\u003e binaryFilesList \u003d Arrays.asList("
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                \"binaryFileTest/binaryFile.txt\", \"My Documents/word.docx\", \"My Documents/pdfDocument.pdf\","
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                \"My Documents/wordToHtml_files/themedata.thmx\", \"My Pictures/pngPicture.png\");"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        List\u003cFormat\u003e testfileFormats \u003d Format.convertStringsToFormats("
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "                Arrays.asList(\"txt\", \"htm\", \"xml\", \"pdf\", \"thmx\"));"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        config.setFormats(testfileFormats);"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        GitCheckout.checkoutBranch(config.getRepoRoot(), BRANCH_WITH_BINARY_FILES);"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        Set\u003cPath\u003e files \u003d FileInfoExtractor.getNonBinaryFilesList(config);"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        Assert.assertEquals(6, files.size());"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        // Non binary files should be captured"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        nonBinaryFilesList.forEach(nonBinFile -\u003e Assert.assertTrue(files.contains(Paths.get(nonBinFile))));"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        // Binary files should be ignored"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        binaryFilesList.forEach(binFile -\u003e Assert.assertFalse(files.contains(Paths.get(binFile))));"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private boolean isFileExistence(Path filePath, List\u003cFileInfo\u003e files) {"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return files.stream().anyMatch(file -\u003e Paths.get(file.getPath()).equals(filePath));"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "jylee-git": 28,
+      "-": 169
     }
   }
 ]

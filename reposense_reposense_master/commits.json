@@ -65,6 +65,19 @@
             "deletions": 6
           }
         ]
+      },
+      {
+        "insertions": 115,
+        "deletions": 47,
+        "date": "2019-06-29",
+        "commitResults": [
+          {
+            "hash": "2a83c22b1cdb5975aac1699ce9662acc605f3d40",
+            "message": "[#711] Analysis: ignore binary files (#728)",
+            "insertions": 115,
+            "deletions": 47
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -234,20 +247,33 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-06-29",
+        "commitResults": [
+          {
+            "hash": "63ca0a11c8351729866d181a152742b2333c987d",
+            "message": "[#680] Vue: fix error message in development mode (#742)",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 44,
-    "jamessspanggg": 200
+    "jylee-git": 156,
+    "jamessspanggg": 202
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 0,
+      "java": 109,
       "js": 20,
       "scss": 0,
       "json": 0,
-      "md": 21,
+      "md": 24,
       "py": 0,
       "jade": 0,
       "gradle": 0,
@@ -262,12 +288,12 @@
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 51
+      "pug": 53
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 36.419193,
-    "jamessspanggg": 352.1621
+    "jylee-git": 560.9427,
+    "jamessspanggg": 345.06772
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
