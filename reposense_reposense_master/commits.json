@@ -78,6 +78,19 @@
             "deletions": 47
           }
         ]
+      },
+      {
+        "insertions": 175,
+        "deletions": 76,
+        "date": "2019-06-30",
+        "commitResults": [
+          {
+            "hash": "ed5c1cf95679951b1e858c6469f3906e7b4f044f",
+            "message": "[#683,#688] Limit range of commits to one month if \"since date\" is not specified (#690)",
+            "insertions": 175,
+            "deletions": 76
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -264,16 +277,16 @@
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 156,
+    "jylee-git": 331,
     "jamessspanggg": 202
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 109,
+      "java": 278,
       "js": 20,
       "scss": 0,
       "json": 0,
-      "md": 24,
+      "md": 30,
       "py": 0,
       "jade": 0,
       "gradle": 0,
@@ -292,8 +305,8 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 560.9427,
-    "jamessspanggg": 345.06772
+    "jylee-git": 1760.5405,
+    "jamessspanggg": 339.11285
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
