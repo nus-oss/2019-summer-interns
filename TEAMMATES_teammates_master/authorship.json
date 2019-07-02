@@ -75836,6 +75836,862 @@
     }
   },
   {
+    "path": "src/test/java/teammates/test/cases/webapi/PublishFeedbackSessionActionTest.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package teammates.test.cases.webapi;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "import org.apache.http.HttpStatus;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import org.testng.annotations.Test;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "import teammates.common.datatransfer.attributes.CourseAttributes;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "import teammates.common.datatransfer.attributes.FeedbackSessionAttributes;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import teammates.common.util.Const;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "import teammates.ui.webapi.action.JsonResult;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import teammates.ui.webapi.action.PublishFeedbackSessionAction;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "import teammates.ui.webapi.output.FeedbackSessionData;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "import teammates.ui.webapi.output.FeedbackSessionPublishStatus;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "import teammates.ui.webapi.output.MessageOutput;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * SUT: {@link PublishFeedbackSessionAction}."
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class PublishFeedbackSessionActionTest extends BaseActionTest\u003cPublishFeedbackSessionAction\u003e {"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected String getActionUri() {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return Const.ResourceURIs.SESSION_PUBLISH;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected String getRequestMethod() {"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return POST;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected void testExecute() throws Exception {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        ______TS(\"Typical case\");"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        CourseAttributes course \u003d typicalBundle.courses.get(\"typicalCourse1\");"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        FeedbackSessionAttributes session \u003d typicalBundle.feedbackSessions.get(\"session1InCourse1\");"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        String[] params \u003d {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.COURSE_ID, course.getId(),"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_SESSION_NAME, session.getFeedbackSessionName(),"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        PublishFeedbackSessionAction publishFeedbackSessionAction \u003d getAction(params);"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        JsonResult result \u003d getJsonResult(publishFeedbackSessionAction);"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        FeedbackSessionData feedbackSessionData \u003d (FeedbackSessionData) result.getOutput();"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(feedbackSessionData.getFeedbackSessionName(), session.getFeedbackSessionName());"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(FeedbackSessionPublishStatus.PUBLISHED, feedbackSessionData.getPublishStatus());"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertTrue(logic.getFeedbackSession(session.getFeedbackSessionName(), course.getId()).isPublished());"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        ______TS(\"Failure case: Session is already published\");"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        // Attempt to publish the same session again."
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertTrue(logic.getFeedbackSession(session.getFeedbackSessionName(), course.getId()).isPublished());"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        result \u003d getJsonResult(getAction(params));"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        MessageOutput output \u003d (MessageOutput) result.getOutput();"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(\"Error publishing feedback session: Session has already been published.\", output.getMessage());"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(HttpStatus.SC_BAD_REQUEST, result.getStatusCode());"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    public void testExecute_invalidRequests_shouldFail() {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        ______TS(\"non existent session name\");"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        CourseAttributes course \u003d typicalBundle.courses.get(\"typicalCourse1\");"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        FeedbackSessionAttributes session \u003d typicalBundle.feedbackSessions.get(\"session1InCourse1\");"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        String randomSessionName \u003d \"randomName\";"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertNotNull(logic.getFeedbackSession(session.getFeedbackSessionName(), course.getId()));"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        String[] params \u003d {"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.COURSE_ID, course.getId(),"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_SESSION_NAME, randomSessionName,"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertNull(logic.getFeedbackSession(randomSessionName, course.getId()));"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        PublishFeedbackSessionAction publishFeedbackSessionAction \u003d getAction(params);"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        JsonResult result \u003d getJsonResult(publishFeedbackSessionAction);"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        MessageOutput output \u003d (MessageOutput) result.getOutput();"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(String.format(\"Trying to update a non-existent feedback session: %s/%s\","
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                course.getId(), randomSessionName), output.getMessage());"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(HttpStatus.SC_INTERNAL_SERVER_ERROR, result.getStatusCode());"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        ______TS(\"non existent course id\");"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        String randomCourseId \u003d \"randomCourseId\";"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        params \u003d new String[] {"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.COURSE_ID, randomCourseId,"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_SESSION_NAME, session.getFeedbackSessionName(),"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertNull(logic.getFeedbackSession(session.getFeedbackSessionName(), randomCourseId));"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        publishFeedbackSessionAction \u003d getAction(params);"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        result \u003d getJsonResult(publishFeedbackSessionAction);"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        output \u003d (MessageOutput) result.getOutput();"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(String.format(\"Trying to update a non-existent feedback session: %s/%s\","
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                randomCourseId, session.getFeedbackSessionName()), output.getMessage());"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        assertEquals(HttpStatus.SC_INTERNAL_SERVER_ERROR, result.getStatusCode());"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected void testAccessControl() throws Exception {"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        CourseAttributes course \u003d typicalBundle.courses.get(\"typicalCourse1\");"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        FeedbackSessionAttributes session \u003d typicalBundle.feedbackSessions.get(\"session1InCourse1\");"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        String[] submissionParams \u003d {"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.COURSE_ID, course.getId(),"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_SESSION_NAME, session.getFeedbackSessionName(),"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        verifyOnlyInstructorsOfTheSameCourseCanAccess(submissionParams);"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        verifyInaccessibleWithoutModifyCoursePrivilege(submissionParams);"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "erjillsison": 89,
+      "-": 32
+    }
+  },
+  {
     "path": "src/test/java/teammates/test/cases/webapi/UnublishFeedbackSessionActionTest.java",
     "lines": [
       {
@@ -80467,6 +81323,654 @@
     "authorContributionMap": {
       "Pengyuz": 6,
       "-": 111
+    }
+  },
+  {
+    "path": "src/web/app/components/question-types/question-edit-answer-form/num-scale-question-edit-answer-form.component.html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"row\"\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"col-5\"\u003e"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cinput type\u003d\"number\" class\u003d\"form-control\" min\u003d\"{{ questionDetails.minScale }}\" max\u003d\"{{ questionDetails.maxScale }}\" step\u003d\"{{ questionDetails.step }}\""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "           [ngModel]\u003d\"responseDetails.answer \u003d\u003d NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED ? \u0027\u0027 : responseDetails.answer\" (ngModelChange)\u003d\"triggerResponseDetailsChange(\u0027answer\u0027, $event)\" [disabled]\u003d\"isDisabled\"\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    Possible Acceptable Values are: {{ possibleValues }}"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003cdiv\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cp *ngIf\u003d\"!isValidPossibleValue(responseDetails.answer) \u0026\u0026 responseDetails.answer !\u003d NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED\" style\u003d\"margin-left: 1em;\" class\u003d\"text-danger\"\u003eThe scale entered is not a possible value.\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cp *ngIf\u003d\"responseDetails.answer \u003d\u003d NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED\" style\u003d\"margin-left: 1em; color: blue;\"\u003ePlease enter a scale number.\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "crizyli": 4,
+      "-": 9
+    }
+  },
+  {
+    "path": "src/web/app/components/question-types/question-edit-answer-form/num-scale-question-edit-answer-form.component.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import { Component } from \u0027@angular/core\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackNumericalScaleQuestionDetails,"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackNumericalScaleResponseDetails,"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "} from \u0027../../../../types/api-output\u0027;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  DEFAULT_NUMSCALE_QUESTION_DETAILS,"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  DEFAULT_NUMSCALE_RESPONSE_DETAILS,"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "} from \u0027../../../../types/default-question-structs\u0027;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import { NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED } from \u0027../../../../types/feedback-response-details\u0027;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import { QuestionEditAnswerFormComponent } from \u0027./question-edit-answer-form\u0027;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * The numerical scale question submission form for a recipient."
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@Component({"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  selector: \u0027tm-num-scale-question-edit-answer-form\u0027,"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  templateUrl: \u0027./num-scale-question-edit-answer-form.component.html\u0027,"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  styleUrls: [\u0027./num-scale-question-edit-answer-form.component.scss\u0027],"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "})"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export class NumScaleQuestionEditAnswerFormComponent"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    extends QuestionEditAnswerFormComponent\u003cFeedbackNumericalScaleQuestionDetails,"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FeedbackNumericalScaleResponseDetails\u003e {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  readonly NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED: number \u003d NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED;"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  constructor() {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    super(DEFAULT_NUMSCALE_QUESTION_DETAILS(), DEFAULT_NUMSCALE_RESPONSE_DETAILS());"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  get numberOfPossibleValues(): number {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    const minValue: number \u003d this.questionDetails.minScale;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    const maxValue: number \u003d this.questionDetails.maxScale;"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    const increment: number \u003d this.questionDetails.step;"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    const num: number \u003d (maxValue - minValue) / increment + 1;"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return Math.floor(parseFloat(num.toFixed(3)));"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  get possibleValues(): string {"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (this.numberOfPossibleValues \u003e 6) {"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return `[${this.questionDetails.minScale},"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "           ${(Math.round((this.questionDetails.minScale + this.questionDetails.step) * 1000) / 1000).toString()},"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "           ${(Math.round((this.questionDetails.minScale + 2 * this.questionDetails.step) * 1000) / 1000).toString()},"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "           ...,"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "           ${(Math.round((this.questionDetails.maxScale - 2 * this.questionDetails.step) * 1000) / 1000).toString()},"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "           ${(Math.round((this.questionDetails.maxScale - this.questionDetails.step) * 1000) / 1000).toString()},"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "           ${this.questionDetails.maxScale}]`;"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    let possibleValuesString: string \u003d `[${this.questionDetails.minScale.toString()}`;"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    let currentValue: number \u003d this.questionDetails.minScale + this.questionDetails.step;"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    while (this.questionDetails.maxScale - currentValue \u003e\u003d -1e-9) {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      possibleValuesString +\u003d `, ${(Math.round(currentValue * 1000) / 1000).toString()}`;"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      currentValue +\u003d this.questionDetails.step;"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return `${possibleValuesString}]`;"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "   * Checks if the answer value is a valid value in question possible values."
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  isValidPossibleValue(value: number): boolean {"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    const minValue: number \u003d this.questionDetails.minScale;"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    const maxValue: number \u003d this.questionDetails.maxScale;"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    const increment: number \u003d this.questionDetails.step;"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    if (isNaN(value)) {"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "      return false;"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    return value \u003e\u003d minValue \u0026\u0026 value \u003c\u003d maxValue \u0026\u0026 (value - minValue) % increment \u003d\u003d\u003d 0;"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "crizyli": 15,
+      "-": 62
     }
   },
   {
@@ -126224,6 +127728,1884 @@
     "authorContributionMap": {
       "crizyli": 55,
       "-": 122
+    }
+  },
+  {
+    "path": "src/web/types/default-question-structs.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackConstantSumDistributePointsType,"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackConstantSumQuestionDetails,"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackConstantSumResponseDetails,"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackContributionQuestionDetails,"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackContributionResponseDetails,"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackMcqQuestionDetails,"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackMcqResponseDetails,"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackMsqQuestionDetails,"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackMsqResponseDetails,"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackNumericalScaleQuestionDetails,"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackNumericalScaleResponseDetails,"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackParticipantType,"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackQuestionType,"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackRankOptionsQuestionDetails,"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackRankOptionsResponseDetails,"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackRankRecipientsQuestionDetails,"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackRankRecipientsResponseDetails,"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackRubricQuestionDetails,"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackRubricResponseDetails,"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackTextQuestionDetails,"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  FeedbackTextResponseDetails,"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "} from \u0027./api-output\u0027;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "import { CONTRIBUTION_POINT_NOT_SUBMITTED, NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED } from \u0027./feedback-response-details\u0027;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default text question details."
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_TEXT_QUESTION_DETAILS: () \u003d\u003e FeedbackTextQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackTextQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        recommendedLength: 0,"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.TEXT,"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default text question response details."
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_TEXT_RESPONSE_DETAILS: () \u003d\u003e FeedbackTextResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackTextResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answer: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.TEXT,"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default contribution question details."
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_CONTRIBUTION_QUESTION_DETAILS: () \u003d\u003e FeedbackContributionQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackContributionQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        isNotSureAllowed: true,"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.CONTRIB,"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default contribution question response details."
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_CONTRIBUTION_RESPONSE_DETAILS: () \u003d\u003e FeedbackContributionResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackContributionResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answer: CONTRIBUTION_POINT_NOT_SUBMITTED,"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.CONTRIB,"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default constant sum question details."
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_CONSTSUM_QUESTION_DETAILS: () \u003d\u003e FeedbackConstantSumQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackConstantSumQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        numOfConstSumOptions: 0,"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        constSumOptions: [\u0027\u0027, \u0027\u0027],"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        distributeToRecipients: false,"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        pointsPerOption: false,"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        forceUnevenDistribution: false,"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        distributePointsFor: FeedbackConstantSumDistributePointsType.NONE,"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        points: 100,"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.CONSTSUM,"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default constant sum question response details."
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_CONSTSUM_RESPONSE_DETAILS: () \u003d\u003e FeedbackConstantSumResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackConstantSumResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answers: [],"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.CONSTSUM,"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default numerical scale question details."
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_NUMSCALE_QUESTION_DETAILS: () \u003d\u003e FeedbackNumericalScaleQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackNumericalScaleQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        minScale: 1,"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        maxScale: 5,"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        step: 0.5,"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.NUMSCALE,"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default numerical scale question response details."
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_NUMSCALE_RESPONSE_DETAILS: () \u003d\u003e FeedbackNumericalScaleResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackNumericalScaleResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "        answer: NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED,"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.NUMSCALE,"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default MCQ question details."
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_MCQ_QUESTION_DETAILS: () \u003d\u003e FeedbackMcqQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackMcqQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        hasAssignedWeights: false,"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        mcqWeights: [],"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        mcqOtherWeight: 0,"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        numOfMcqChoices: 0,"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        mcqChoices: [],"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        otherEnabled: false,"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        generateOptionsFor: FeedbackParticipantType.NONE,"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.MCQ,"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default MCQ question response details."
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_MCQ_RESPONSE_DETAILS: () \u003d\u003e FeedbackMcqResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackMcqResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answer: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        isOther: false,"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        otherFieldContent: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.MCQ,"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default MSQ question details."
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_MSQ_QUESTION_DETAILS: () \u003d\u003e FeedbackMsqQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackMsqQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        msqChoices: [],"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        otherEnabled: false,"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        generateOptionsFor: FeedbackParticipantType.NONE,"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        maxSelectableChoices: Number.MIN_VALUE,"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        minSelectableChoices: Number.MIN_VALUE,"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        hasAssignedWeights: false,"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        msqWeights: [],"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        msqOtherWeight: 0,"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.MSQ,"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default MSQ question response details."
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_MSQ_RESPONSE_DETAILS: () \u003d\u003e FeedbackMsqResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackMsqResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answers: [],"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        isOther: false,"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        otherFieldContent: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.MSQ,"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default rubric question details."
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_RUBRIC_QUESTION_DETAILS: () \u003d\u003e FeedbackRubricQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackRubricQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        hasAssignedWeights: false,"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        numOfRubricChoices: 0,"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        rubricChoices: [],"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        numOfRubricSubQuestions: 0,"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        rubricSubQuestions: [],"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        rubricWeightsForEachCell: [],"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        rubricDescriptions: [],"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.RUBRIC,"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default rubric question response details."
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_RUBRIC_RESPONSE_DETAILS: () \u003d\u003e FeedbackRubricResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackRubricResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answer: [],"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.RUBRIC,"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default rank options question details."
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_RANK_OPTIONS_QUESTION_DETAILS: () \u003d\u003e FeedbackRankOptionsQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackRankOptionsQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        minOptionsToBeRanked: Number.MIN_VALUE,"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        maxOptionsToBeRanked: Number.MIN_VALUE,"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        areDuplicatesAllowed: false,"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        options: [],"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.RANK_OPTIONS,"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default rank options question response details."
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_RANK_OPTIONS_RESPONSE_DETAILS: () \u003d\u003e FeedbackRankOptionsResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackRankOptionsResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answers: [],"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.RANK_OPTIONS,"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default rank recipients question details."
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_RANK_RECIPIENTS_QUESTION_DETAILS: () \u003d\u003e FeedbackRankRecipientsQuestionDetails \u003d"
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackRankRecipientsQuestionDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        minOptionsToBeRanked: Number.MIN_VALUE,"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        maxOptionsToBeRanked: Number.MIN_VALUE,"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        areDuplicatesAllowed: false,"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.RANK_RECIPIENTS,"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionText: \u0027\u0027,"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Structure for default rank recipients question response details."
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export const DEFAULT_RANK_RECIPIENTS_RESPONSE_DETAILS: () \u003d\u003e FeedbackRankRecipientsResponseDetails \u003d"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    (): FeedbackRankRecipientsResponseDetails \u003d\u003e {"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return {"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        answer: 0,"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        questionType: FeedbackQuestionType.RANK_RECIPIENTS,"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    };"
+      }
+    ],
+    "authorContributionMap": {
+      "crizyli": 2,
+      "-": 265
     }
   }
 ]

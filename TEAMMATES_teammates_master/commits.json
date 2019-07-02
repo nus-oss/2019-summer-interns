@@ -103,6 +103,19 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 89,
+        "deletions": 3,
+        "date": "2019-07-02",
+        "commitResults": [
+          {
+            "hash": "2c03b28774e374004ef13a8a08d542f8fc07a4d4",
+            "message": "[#9595] Add tests for POST /session/publish (#9726)",
+            "insertions": 89,
+            "deletions": 3
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -210,17 +223,30 @@
             "deletions": 573
           }
         ]
+      },
+      {
+        "insertions": 21,
+        "deletions": 2,
+        "date": "2019-07-02",
+        "commitResults": [
+          {
+            "hash": "d2e1c33963f8f1ee511b27819192e9fcdd41d90c",
+            "message": "[#9654] Error messages not shown on entering invalid answers on submission page (#9717)",
+            "insertions": 21,
+            "deletions": 2
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 421,
+    "erjillsison": 510,
     "Pengyuz": 70,
-    "crizyli": 808
+    "crizyli": 829
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
-      "java": 199,
+      "java": 288,
       "js": 0,
       "scss": 3,
       "md": 0,
@@ -246,14 +272,14 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 72,
-      "ts": 496
+      "html": 76,
+      "ts": 513
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 1409.649,
-    "Pengyuz": 69.31231,
-    "crizyli": 40091.316
+    "erjillsison": 1284.7725,
+    "Pengyuz": 56.24913,
+    "crizyli": 32403.424
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",

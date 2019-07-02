@@ -99,8 +99,8 @@
         ]
       },
       {
-        "insertions": 24,
-        "deletions": 13,
+        "insertions": 103,
+        "deletions": 28,
         "date": "2019-07-01",
         "commitResults": [
           {
@@ -108,24 +108,30 @@
             "message": "#1900 colors lab eyedropper timer not updating (#1940)",
             "insertions": 24,
             "deletions": 13
+          },
+          {
+            "hash": "fb6e3331344c190fa41de5e07e8d7348032fb3ca",
+            "message": "#1854 create tooltip stack instead of cascade (#1943)",
+            "insertions": 79,
+            "deletions": 15
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 562
+    "yuhongherald": 631
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 562
+      "cs": 631
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 14732.668
+    "yuhongherald": 14924.249
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
