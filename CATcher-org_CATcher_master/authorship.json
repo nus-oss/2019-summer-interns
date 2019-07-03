@@ -30592,21 +30592,21 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          [disabled]\u003d\"value.labelValue \u003d\u003d\u003d this.issue[attributeName]\"  [ngStyle]\u003d\"this.labelService.setLabelStyle(value.labelColor)\""
+        "content": "          [disabled]\u003d\"value.labelValue \u003d\u003d\u003d this.issue[attributeName]\"\u003e"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          \u003e"
+        "content": "        \u003cmat-icon [ngStyle]\u003d\"{\u0027color\u0027: \u0027#\u0027 + value.labelColor, \u0027font-size\u0027 : \u00271.8em\u0027}\"\u003estop\u003c/mat-icon\u003e"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    \u003cspan\u003e {{value.labelValue}}\u003c/span\u003e"
+        "content": "        \u003cspan\u003e {{value.labelValue}}\u003c/span\u003e"
       },
       {
         "lineNumber": 11,

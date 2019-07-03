@@ -1193,6 +1193,19 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 3,
+        "deletions": 3,
+        "date": "2019-07-01",
+        "commitResults": [
+          {
+            "hash": "43bc8481ef309d83499be929a085d45d72498af1",
+            "message": "add mat icon for menu item",
+            "insertions": 3,
+            "deletions": 3
+          }
+        ]
       }
     ]
   },
@@ -1223,8 +1236,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 7924.207,
-    "KevinCJH": 11912.008
+    "ptvrajsk": 7437.4404,
+    "KevinCJH": 11307.354
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
