@@ -91,6 +91,19 @@
             "deletions": 76
           }
         ]
+      },
+      {
+        "insertions": 13,
+        "deletions": 7,
+        "date": "2019-07-03",
+        "commitResults": [
+          {
+            "hash": "8ac91e8b6e083128429d2b6a2dddefe6eede9832",
+            "message": "[#781] Fix broken program when reserved character is used without escaping (#782)",
+            "insertions": 13,
+            "deletions": 7
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -273,16 +286,29 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 38,
+        "deletions": 11,
+        "date": "2019-07-03",
+        "commitResults": [
+          {
+            "hash": "651df45df4d9a91cf5557aabc030c309e93f20de",
+            "message": "[#770] Add placeholder for repositories with no author found (#777)",
+            "insertions": 38,
+            "deletions": 11
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 331,
-    "jamessspanggg": 202
+    "jylee-git": 337,
+    "jamessspanggg": 240
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 278,
+      "java": 284,
       "js": 20,
       "scss": 0,
       "json": 0,
@@ -293,7 +319,7 @@
       "pug": 3
     },
     "jamessspanggg": {
-      "java": 0,
+      "java": 38,
       "js": 100,
       "scss": 48,
       "json": 0,
@@ -305,8 +331,8 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 1760.5405,
-    "jamessspanggg": 339.11285
+    "jylee-git": 1664.6667,
+    "jamessspanggg": 354.84134
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

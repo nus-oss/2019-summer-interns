@@ -1182,6 +1182,19 @@
         ]
       },
       {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-06-26",
+        "commitResults": [
+          {
+            "hash": "d5086e1c870a6ca0c3c6669a30eb65284f75f691",
+            "message": "set assignee font size",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
         "insertions": 2,
         "deletions": 2,
         "date": "2019-06-27",
@@ -1195,15 +1208,46 @@
         ]
       },
       {
-        "insertions": 3,
-        "deletions": 3,
+        "insertions": 29,
+        "deletions": 10,
         "date": "2019-07-01",
         "commitResults": [
+          {
+            "hash": "59d44f4c9bfd9c9ed0652d0c0f92c59b8bed65e3",
+            "message": "set min width for column",
+            "insertions": 4,
+            "deletions": 4
+          },
+          {
+            "hash": "f7d4a2619a297ae0abe09d630e3bde1652e8b7fb",
+            "message": "change the title for label",
+            "insertions": 20,
+            "deletions": 1
+          },
           {
             "hash": "43bc8481ef309d83499be929a085d45d72498af1",
             "message": "add mat icon for menu item",
             "insertions": 3,
             "deletions": 3
+          },
+          {
+            "hash": "76394d523aeddf499cd8eb21e19f5992534dc0e3",
+            "message": "add min width to phase 1 issue",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 12,
+        "deletions": 12,
+        "date": "2019-07-02",
+        "commitResults": [
+          {
+            "hash": "1ac45b2f6a54f9f94e2c8f52c1aff6c4a752853e",
+            "message": "move style to global css",
+            "insertions": 12,
+            "deletions": 12
           }
         ]
       }
@@ -1211,7 +1255,7 @@
   },
   "authorFinalContributionMap": {
     "ptvrajsk": 883,
-    "KevinCJH": 628
+    "KevinCJH": 649
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1231,13 +1275,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 147,
-      "ts": 481
+      "html": 149,
+      "ts": 500
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 7437.4404,
-    "KevinCJH": 11307.354
+    "ptvrajsk": 7324.146,
+    "KevinCJH": 11058.508
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

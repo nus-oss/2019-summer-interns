@@ -116,6 +116,38 @@
             "deletions": 3
           }
         ]
+      },
+      {
+        "insertions": 51,
+        "deletions": 6,
+        "date": "2019-07-03",
+        "commitResults": [
+          {
+            "hash": "861d8f5484a43375e5496b1db52128e42c813e29",
+            "message": "[#9382] Add tests for error-report component (#9744)",
+            "insertions": 49,
+            "deletions": 0
+          },
+          {
+            "hash": "c7a0f227397b51131ce04589a9a1ec33a54196dd",
+            "message": "[#9806] Submission page: Fix typo/grammatically incorrect error message (#9812)",
+            "insertions": 2,
+            "deletions": 6
+          }
+        ]
+      },
+      {
+        "insertions": 307,
+        "deletions": 117,
+        "date": "2019-07-04",
+        "commitResults": [
+          {
+            "hash": "0d9a983cd9ea2f0f902cc58f5b208181337049b2",
+            "message": "[#9510] Instructor: Student List Component: Implement sorting for table headers (#9715)",
+            "insertions": 307,
+            "deletions": 117
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -249,24 +281,43 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 75,
+        "deletions": 3,
+        "date": "2019-07-03",
+        "commitResults": [
+          {
+            "hash": "e8e4fc85fc0638e5b2beb28381bb9ace78eedd1c",
+            "message": "[#9382] Add tests for copy-session-modal component (#9745)",
+            "insertions": 73,
+            "deletions": 1
+          },
+          {
+            "hash": "2de0e312d914e253519c5c6603e4dd8ab6061494",
+            "message": "[#9801] Admin Account Details page: Remove account from course not work (#9802)",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 510,
+    "erjillsison": 780,
     "Pengyuz": 301,
-    "crizyli": 829
+    "crizyli": 903
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
       "java": 288,
       "js": 0,
-      "scss": 3,
+      "scss": 7,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 30,
-      "ts": 189
+      "html": 65,
+      "ts": 420
     },
     "Pengyuz": {
       "java": 231,
@@ -285,14 +336,14 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 76,
-      "ts": 513
+      "html": 78,
+      "ts": 585
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 1284.7725,
-    "Pengyuz": 1095.3495,
-    "crizyli": 32403.424
+    "erjillsison": 4399.9375,
+    "Pengyuz": 1055.3486,
+    "crizyli": 31242.27
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",
