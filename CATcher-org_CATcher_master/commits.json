@@ -1250,12 +1250,25 @@
             "deletions": 12
           }
         ]
+      },
+      {
+        "insertions": 4,
+        "deletions": 4,
+        "date": "2019-07-04",
+        "commitResults": [
+          {
+            "hash": "c65ea77ad30073c04b301558b644c9cacea8afb2",
+            "message": "change bold-name to strong tag (#120)",
+            "insertions": 4,
+            "deletions": 4
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "ptvrajsk": 883,
-    "KevinCJH": 649
+    "KevinCJH": 652
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1275,13 +1288,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 149,
+      "html": 152,
       "ts": 500
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 7324.146,
-    "KevinCJH": 11058.508
+    "ptvrajsk": 7106.8296,
+    "KevinCJH": 10775.283
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

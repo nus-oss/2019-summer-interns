@@ -8301,359 +8301,359 @@
       {
         "lineNumber": 466,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "        .code{"
+        "content": "        .segment{"
       },
       {
         "lineNumber": 467,
         "author": {
           "gitId": "-"
         },
-        "content": "            padding-left:1rem;"
+        "content": "            border-left:0.25rem solid mui-color(\u0027green\u0027);"
       },
       {
         "lineNumber": 468,
         "author": {
           "gitId": "-"
         },
-        "content": "            border-left:0.25rem solid mui-color(\u0027green\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 469,
         "author": {
           "gitId": "-"
         },
-        "content": "            background-color:mui-color(\u0027green\u0027, \u002750\u0027);"
+        "content": "            .code{"
       },
       {
         "lineNumber": 470,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "                padding-left:1rem;"
       },
       {
         "lineNumber": 471,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                background-color:mui-color(\u0027green\u0027, \u002750\u0027);"
       },
       {
         "lineNumber": 472,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "        .line-number{"
+        "content": "            }"
       },
       {
         "lineNumber": 473,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "            color:mui-color(\u0027grey\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 474,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            float:left;"
+        "content": "            .line-number{"
       },
       {
         "lineNumber": 475,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            width:2rem;"
+        "content": "                color:mui-color(\u0027grey\u0027);"
       },
       {
         "lineNumber": 476,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            // Not allowing user to select text"
+        "content": "                float:left;"
       },
       {
         "lineNumber": 477,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            -webkit-touch-callout:none; /* iOS Safari */"
+        "content": "                width:2rem;"
       },
       {
         "lineNumber": 478,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            -webkit-user-select:none; /* Safari */"
+        "content": "                // Not allowing user to select text"
       },
       {
         "lineNumber": 479,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            -khtml-user-select:none; /* Konqueror HTML */"
+        "content": "                -webkit-touch-callout:none; /* iOS Safari */"
       },
       {
         "lineNumber": 480,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            -moz-user-select:none; /* Firefox */"
+        "content": "                -webkit-user-select:none; /* Safari */"
       },
       {
         "lineNumber": 481,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            -ms-user-select:none; /* Internet Explorer/Edge */"
+        "content": "                -khtml-user-select:none; /* Konqueror HTML */"
       },
       {
         "lineNumber": 482,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            user-select:none; /* Non-prefixed version, currently supported by Chrome and Opera */"
+        "content": "                -moz-user-select:none; /* Firefox */"
       },
       {
         "lineNumber": 483,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "                -ms-user-select:none; /* Internet Explorer/Edge */"
       },
       {
         "lineNumber": 484,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            .hljs-number{"
+        "content": "                user-select:none; /* Non-prefixed version, currently supported by Chrome and Opera */"
       },
       {
         "lineNumber": 485,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "                color:mui-color(\u0027grey\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 486,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            }"
+        "content": "                .hljs-number{"
       },
       {
         "lineNumber": 487,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "                    color:mui-color(\u0027grey\u0027);"
       },
       {
         "lineNumber": 488,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "            .hljs-comment{"
+        "content": "                }"
       },
       {
         "lineNumber": 489,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "                color:mui-color(\u0027grey\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 490,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "            }"
+        "content": "                .hljs-comment{"
       },
       {
         "lineNumber": 491,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "        }"
+        "content": "                    color:mui-color(\u0027grey\u0027);"
       },
       {
         "lineNumber": 492,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "                }"
       },
       {
         "lineNumber": 493,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "        .line-content{"
+        "content": "            }"
       },
       {
         "lineNumber": 494,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "            padding-left:2rem;"
+        "content": ""
       },
       {
         "lineNumber": 495,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "        }"
+        "content": "            .line-content{"
       },
       {
         "lineNumber": 496,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "                padding-left:2rem;"
       },
       {
         "lineNumber": 497,
         "author": {
           "gitId": "-"
         },
-        "content": "        .untouched{"
+        "content": "            }"
       },
       {
         "lineNumber": 498,
         "author": {
           "gitId": "-"
         },
-        "content": "            $grey:mui-color(\u0027grey\u0027, \u0027400\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 499,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "            \u0026.untouched{"
       },
       {
         "lineNumber": 500,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u0026.active{"
+        "content": "                $grey:mui-color(\u0027grey\u0027, \u0027400\u0027);"
       },
       {
         "lineNumber": 501,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                .code{"
+        "content": "                border-left:0.25rem solid $grey;"
       },
       {
         "lineNumber": 502,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    display:inherit;"
+        "content": "                height:20px; /* height of a single line of code */"
       },
       {
         "lineNumber": 503,
         "author": {
           "gitId": "-"
         },
-        "content": "                    background-color:mui-color(\u0027white\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 504,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": "                \u0026.active{"
       },
       {
         "lineNumber": 505,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "                    height:100%;"
       },
       {
         "lineNumber": 506,
         "author": {
           "gitId": "-"
         },
-        "content": "                .closer{"
+        "content": ""
       },
       {
         "lineNumber": 507,
         "author": {
           "gitId": "-"
         },
-        "content": "                    .icon{"
+        "content": "                    .code{"
       },
       {
         "lineNumber": 508,
         "author": {
           "gitId": "-"
         },
-        "content": "                        background-color:mui-color(\u0027black\u0027);"
+        "content": "                        display:inherit;"
       },
       {
         "lineNumber": 509,
         "author": {
           "gitId": "-"
         },
-        "content": "                    }"
+        "content": "                        background-color:mui-color(\u0027white\u0027);"
       },
       {
         "lineNumber": 510,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                    }"
       },
       {
         "lineNumber": 511,
         "author": {
           "gitId": "-"
         },
-        "content": "                    .tooltiptext{"
+        "content": ""
       },
       {
         "lineNumber": 512,
         "author": {
           "gitId": "-"
         },
-        "content": "                        \u0026--open{ display:inline-block; }"
+        "content": "                    .closer{"
       },
       {
         "lineNumber": 513,
         "author": {
           "gitId": "-"
         },
-        "content": "                        \u0026--close{ display:none; }"
+        "content": "                        .icon{"
       },
       {
         "lineNumber": 514,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    }"
+        "content": "                            \u0026.open{"
       },
       {
         "lineNumber": 515,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                }"
+        "content": "                                display:none;"
       },
       {
         "lineNumber": 516,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                            }"
       },
       {
         "lineNumber": 517,
@@ -8665,114 +8665,114 @@
       {
         "lineNumber": 518,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "            .code{"
+        "content": "                            \u0026.hide{"
       },
       {
         "lineNumber": 519,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                display:none;"
+        "content": "                                display:inherit;"
       },
       {
         "lineNumber": 520,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                border-left:0.25rem solid $grey;"
+        "content": "                            }"
       },
       {
         "lineNumber": 521,
         "author": {
           "gitId": "-"
         },
-        "content": "                background-color:mui-color(\u0027white\u0027);"
+        "content": "                        }"
       },
       {
         "lineNumber": 522,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "                    }"
       },
       {
         "lineNumber": 523,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                }"
       },
       {
         "lineNumber": 524,
         "author": {
           "gitId": "-"
         },
-        "content": "            .closer{"
+        "content": ""
       },
       {
         "lineNumber": 525,
         "author": {
           "gitId": "-"
         },
-        "content": "                cursor:pointer;"
+        "content": "                .code{"
       },
       {
         "lineNumber": 526,
         "author": {
           "gitId": "-"
         },
-        "content": "                padding:0.5rem 1rem;"
+        "content": "                    display:none;"
       },
       {
         "lineNumber": 527,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                }"
       },
       {
         "lineNumber": 528,
         "author": {
           "gitId": "-"
         },
-        "content": "                .icon{"
+        "content": ""
       },
       {
         "lineNumber": 529,
         "author": {
           "gitId": "-"
         },
-        "content": "                    background-color:$grey;"
+        "content": "                .closer{"
       },
       {
         "lineNumber": 530,
         "author": {
           "gitId": "-"
         },
-        "content": "                    color:mui-color(\u0027white\u0027);"
+        "content": "                    cursor:pointer;"
       },
       {
         "lineNumber": 531,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "                    position:absolute;"
       },
       {
         "lineNumber": 532,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    width:2.2rem;"
+        "content": "                    // custom margin for position of toggle icon"
       },
       {
         "lineNumber": 533,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    border-radius:0.25rem;"
+        "content": "                    margin:0.2rem 0 0 -0.45rem;"
       },
       {
         "lineNumber": 534,
@@ -8784,93 +8784,93 @@
       {
         "lineNumber": 535,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    \u0026:hover{"
+        "content": "                    \u0026.bottom{"
       },
       {
         "lineNumber": 536,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                        background:black;"
+        "content": "                        //custom margin for position of toggle icon at the bottom of segment"
       },
       {
         "lineNumber": 537,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    }"
+        "content": "                        margin:-1.05rem 0 0 -0.45rem;"
       },
       {
         "lineNumber": 538,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "                    }"
       },
       {
         "lineNumber": 539,
         "author": {
           "gitId": "-"
         },
-        "content": "                    \u0026:hover ~ .tooltiptext{"
+        "content": ""
       },
       {
         "lineNumber": 540,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                        visibility:visible;"
+        "content": "                    .icon{"
       },
       {
         "lineNumber": 541,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    }"
+        "content": "                        width:0.75em;"
       },
       {
         "lineNumber": 542,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                }"
+        "content": "                        background-color:mui-color(\u0027white\u0027);"
       },
       {
         "lineNumber": 543,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "                        color:mui-color(\u0027grey\u0027);"
       },
       {
         "lineNumber": 544,
         "author": {
           "gitId": "-"
         },
-        "content": "                .tooltiptext{"
+        "content": ""
       },
       {
         "lineNumber": 545,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    padding:0.5rem;"
+        "content": "                        \u0026.open{"
       },
       {
         "lineNumber": 546,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    margin-left:0.5rem;"
+        "content": "                            display:inherit;"
       },
       {
         "lineNumber": 547,
         "author": {
           "gitId": "-"
         },
-        "content": "                    border-radius:0.25rem;"
+        "content": "                        }"
       },
       {
         "lineNumber": 548,
@@ -8882,79 +8882,79 @@
       {
         "lineNumber": 549,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    color:mui-color(\u0027white\u0027);"
+        "content": "                        \u0026.hide{"
       },
       {
         "lineNumber": 550,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "                    background-color:mui-color(\u0027black\u0027);"
+        "content": "                            display:none;"
       },
       {
         "lineNumber": 551,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                        }"
       },
       {
         "lineNumber": 552,
         "author": {
           "gitId": "-"
         },
-        "content": "                    text-align:center;"
+        "content": "                    }"
       },
       {
         "lineNumber": 553,
         "author": {
           "gitId": "-"
         },
-        "content": "                    visibility:hidden;"
+        "content": "                }"
       },
       {
         "lineNumber": 554,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            }"
       },
       {
         "lineNumber": 555,
         "author": {
           "gitId": "-"
         },
-        "content": "                    \u0026--open{ display:none; }"
+        "content": "        }"
       },
       {
         "lineNumber": 556,
         "author": {
           "gitId": "-"
         },
-        "content": "                    \u0026--close{ display:inline-block; }"
+        "content": "    }"
       },
       {
         "lineNumber": 557,
         "author": {
           "gitId": "-"
         },
-        "content": "                }"
+        "content": ""
       },
       {
         "lineNumber": 558,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "    .empty{"
       },
       {
         "lineNumber": 559,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        text-align:center;"
       },
       {
         "lineNumber": 560,
@@ -8968,40 +8968,12 @@
         "author": {
           "gitId": "-"
         },
-        "content": ""
-      },
-      {
-        "lineNumber": 562,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .empty{"
-      },
-      {
-        "lineNumber": 563,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        text-align:center;"
-      },
-      {
-        "lineNumber": 564,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 565,
-        "author": {
-          "gitId": "-"
-        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "jamessspanggg": 48,
-      "-": 517
+      "jamessspanggg": 66,
+      "-": 495
     }
   },
   {
@@ -18355,53 +18327,60 @@
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    i.fas.fa-ellipsis-h.icon"
+        "content": "    i.fas.fa-plus-circle.icon.open(v-bind:title\u003d\"\u0027Click to open code\u0027\")"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    span.tooltiptext.tooltiptext--close Show untouched code"
+        "content": "    i.fas.fa-chevron-circle-down.icon.hide(v-bind:title\u003d\"\u0027Click to hide code\u0027\")"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    span.tooltiptext.tooltiptext--open Hide untouched code"
+        "content": "  div(v-if\u003d\"loaded\", v-hljs\u003d\"path\")"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "  div(v-if\u003d\"loaded\", v-hljs\u003d\"path\")"
+        "content": "    .code(v-for\u003d\"(line, index) in segment.lines\")"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    .code(v-for\u003d\"(line, index) in segment.lines\")"
+        "content": "      .line-number {{ segment.lineNumbers[index] + \"\\n\" }}"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "      .line-number {{ segment.lineNumbers[index] + \"\\n\" }}"
+        "content": "      .line-content {{ line + \"\\n\" }}"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "      .line-content {{ line + \"\\n\" }}"
+        "content": "  .closer.bottom(v-if\u003d\"!segment.authored \u0026\u0026 segment.lines.length \u003e 4\", v-on:click\u003d\"loadCode()\")"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    i.fas.fa-chevron-circle-up.icon.hide(v-bind:title\u003d\"\u0027Click to hide code\u0027\")"
       }
     ],
     "authorContributionMap": {
-      "jamessspanggg": 9
+      "jamessspanggg": 10
     }
   },
   {

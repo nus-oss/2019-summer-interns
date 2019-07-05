@@ -299,12 +299,25 @@
             "deletions": 11
           }
         ]
+      },
+      {
+        "insertions": 69,
+        "deletions": 72,
+        "date": "2019-07-04",
+        "commitResults": [
+          {
+            "hash": "61be4e20b1af8e9eb1832fa5afa89bf7fe155f5a",
+            "message": "[#312] CodeView: reduce space taken by toggle icon (#773)",
+            "insertions": 69,
+            "deletions": 72
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 337,
-    "jamessspanggg": 240
+    "jamessspanggg": 259
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -321,18 +334,18 @@
     "jamessspanggg": {
       "java": 38,
       "js": 100,
-      "scss": 48,
+      "scss": 66,
       "json": 0,
       "md": 1,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 53
+      "pug": 54
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 1664.6667,
-    "jamessspanggg": 354.84134
+    "jylee-git": 1635.004,
+    "jamessspanggg": 676.83594
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

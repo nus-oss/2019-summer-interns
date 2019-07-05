@@ -110962,6 +110962,554 @@
     }
   },
   {
+    "path": "src/web/app/pages-instructor/instructor-session-edit-page/instructor-session-edit-page.component.html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003ctm-session-edit-form [formMode]\u003d\"SessionEditFormMode.EDIT\" [(model)]\u003d\"sessionEditFormModel\" (editExistingSessionEvent)\u003d\"editExistingSessionHandler()\""
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                      (deleteExistingSessionEvent)\u003d\"deleteExistingSessionHandler()\" (copyCurrentSessionEvent)\u003d\"copyCurrentSession()\"\u003e\u003c/tm-session-edit-form\u003e"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv *ngFor\u003d\"let questionEditFormModel of questionEditFormModels; let i \u003d index; trackBy: trackQuestionEditFormByFn\" class\u003d\"margin-top-30px\"\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003ctm-question-edit-form [formMode]\u003d\"QuestionEditFormMode.EDIT\""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                         [numOfQuestions]\u003d\"questionEditFormModels.length\""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                         (saveExistingQuestionEvent)\u003d\"saveExistingQuestionHandler(i)\""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                         (discardExistingQuestionChangesEvent)\u003d\"discardExistingQuestionHandler(i)\""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                         (duplicateCurrentQuestionEvent)\u003d\"duplicateCurrentQuestionHandler(i)\""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                         (deleteCurrentQuestionEvent)\u003d\"deleteExistingQuestionHandler(i)\""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                         [(formModel)]\u003d\"questionEditFormModels[i]\"\u003e\u003c/tm-question-edit-form\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cbr/\u003e"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"card\" *ngIf\u003d\"!isAddingQuestionPanelExpanded\"\u003e"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"card-body background-color-light-blue text-center\"\u003e"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cdiv ngbDropdown class\u003d\"d-inline-block\"\u003e"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cbutton class\u003d\"btn btn-primary\" ngbDropdownToggle\u003eAdd New Question\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cdiv ngbDropdownMenu\u003e"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cbutton class\u003d\"dropdown-item\" (click)\u003d\"templateQuestionModalHandler()\"\u003eChoose from template questions\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cbutton class\u003d\"dropdown-item\" *ngFor\u003d\"let questionType of FeedbackQuestionType | enumToArray\""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                (click)\u003d\"populateAndShowNewQuestionForm(questionType)\"\u003e"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          {{ questionType | questionTypeName }}"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003c/button\u003e"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cbutton type\u003d\"button\" class\u003d\"btn btn-link\" (click)\u003d\"questionsHelpHandler()\"\u003e\u003ci class\u003d\"fas fa-info-circle\"\u003e\u003c/i\u003e\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cbutton class\u003d\"btn btn-primary\" (click)\u003d\"copyQuestionsFromOtherSessionsHandler()\"\u003eCopy Question\u003c/button\u003e\u0026nbsp;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cbutton class\u003d\"btn btn-primary\" (click)\u003d\"doneEditingHandler(pageNotSavedModal)\"\u003eDone Editing\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003ctm-question-edit-form *ngIf\u003d\"isAddingQuestionPanelExpanded\""
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                       [formMode]\u003d\"QuestionEditFormMode.ADD\""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                       [numOfQuestions]\u003d\"questionEditFormModels.length + 1\""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                       (discardNewQuestionEvent)\u003d\"isAddingQuestionPanelExpanded \u003d false\""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                       (createNewQuestionEvent)\u003d\"createNewQuestionHandler()\""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                       [(formModel)]\u003d\"newQuestionEditFormModel\""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003e\u003c/tm-question-edit-form\u003e"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cbr/\u003e"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv class\u003d\"card\"\u003e"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cdiv class\u003d\"card-body background-color-light-blue text-center\"\u003e"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cdiv class\u003d\"row align-items-center\"\u003e"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cdiv class\u003d\"col-2 text-right\"\u003e"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cb\u003ePreview Session:\u003c/b\u003e"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cdiv class\u003d\"col-5\" ngbTooltip\u003d\"View how this session would look like to a student who is submitting feedback. Preview is unavailable if the course has yet to have any student enrolled.\"\u003e"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cselect class\u003d\"form-control preview-select\" [(ngModel)]\u003d\"emailOfStudentToPreview\"\u003e"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          \u003coption *ngFor\u003d\"let student of studentsOfCourse\" [ngValue]\u003d\"student.email\"\u003e[{{ student.teamName }}] {{ student.name }}\u003c/option\u003e"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003c/select\u003e"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cbutton class\u003d\"btn btn-primary\" [disabled]\u003d\"emailOfStudentToPreview.length \u003d\u003d\u003d 0\" (click)\u003d\"previewAsStudent()\"\u003ePreview as Student\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003cdiv class\u003d\"col-5\" ngbTooltip\u003d\"View how this session would look like to an instructor who is submitting feedback. Only instructors with submit privileges are included in the list.\"\u003e"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cselect class\u003d\"form-control preview-select\" [(ngModel)]\u003d\"emailOfInstructorToPreview\"\u003e"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          \u003coption *ngFor\u003d\"let instructor of instructorsCanBePreviewedAs\" [ngValue]\u003d\"instructor.email\"\u003e{{ instructor.name }}\u003c/option\u003e"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003c/select\u003e"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u003cbutton class\u003d\"btn btn-primary\" [disabled]\u003d\"emailOfInstructorToPreview.length \u003d\u003d\u003d 0\" (click)\u003d\"previewAsInstructor()\"\u003ePreview as Instructor\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "\u003cng-template #pageNotSavedModal let-modal\u003e"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003cdiv class\u003d\"modal-header bg-warning\"\u003e"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003ch5 class\u003d\"modal-title text-white\"\u003e\u003ci class\u003d\"fas fa-exclamation-circle\"\u003e\u003c/i\u003e Warning: Unsaved field(s).\u003c/h5\u003e"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cbutton type\u003d\"button\" class\u003d\"close\" (click)\u003d\"modal.dismiss()\"\u003e"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "      \u003ci class\u003d\"fas fa-times\"\u003e\u003c/i\u003e"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003c/button\u003e"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003cdiv class\u003d\"modal-body\"\u003e"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cp\u003eThere exists unsaved field(s), this operation will cause all the changes to be lost.\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cp\u003eAre you sure you want to continue?\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003cdiv class\u003d\"modal-footer\"\u003e"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cbutton type\u003d\"button\" class\u003d\"btn btn-light\" (click)\u003d\"modal.dismiss()\"\u003eNo, cancel the operation\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "    \u003cbutton type\u003d\"button\" class\u003d\"btn btn-warning\" (click)\u003d\"modal.close()\"\u003eYes\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "crizyli"
+        },
+        "content": "\u003c/ng-template\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "crizyli": 17,
+      "-": 60
+    }
+  },
+  {
     "path": "src/web/app/pages-instructor/instructor-session-edit-page/instructor-session-edit-page.component.ts",
     "lines": [
       {
@@ -116553,72 +117101,72 @@
       {
         "lineNumber": 799,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "  doneEditingHandler(): void {"
+        "content": "  doneEditingHandler(modal: any): void {"
       },
       {
         "lineNumber": 800,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "    this.router.navigateByUrl(\u0027/web/instructor/sessions\u0027);"
+        "content": "    if (this.questionEditFormModels.some((q: QuestionEditFormModel) \u003d\u003e q.isEditable)"
       },
       {
         "lineNumber": 801,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "    // TODO focus on the row of current feedback session in the sessions page"
+        "content": "        || this.sessionEditFormModel.isEditable) {"
       },
       {
         "lineNumber": 802,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "  }"
+        "content": "      this.modalService.open(modal).result.then(() \u003d\u003e {"
       },
       {
         "lineNumber": 803,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        this.router.navigateByUrl(\u0027/web/instructor/sessions\u0027);"
       },
       {
         "lineNumber": 804,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "  /**"
+        "content": "      }, () \u003d\u003e {});"
       },
       {
         "lineNumber": 805,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "   * Handles question \u0027Help\u0027 link click event."
+        "content": "    } else {"
       },
       {
         "lineNumber": 806,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "   */"
+        "content": "      this.router.navigateByUrl(\u0027/web/instructor/sessions\u0027);"
       },
       {
         "lineNumber": 807,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "  questionsHelpHandler(): void {"
+        "content": "    }"
       },
       {
         "lineNumber": 808,
         "author": {
-          "gitId": "crizyli"
+          "gitId": "-"
         },
-        "content": "    window.open(`${environment.frontendUrl}/web/instructor/help#questions`);"
+        "content": "    // TODO focus on the row of current feedback session in the sessions page"
       },
       {
         "lineNumber": 809,
@@ -116646,7 +117194,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "   * Gets all students of a course."
+        "content": "   * Handles question \u0027Help\u0027 link click event."
       },
       {
         "lineNumber": 813,
@@ -116660,161 +117208,161 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  getAllStudentsOfCourse(): void {"
+        "content": "  questionsHelpHandler(): void {"
       },
       {
         "lineNumber": 815,
         "author": {
-          "gitId": "-"
+          "gitId": "crizyli"
         },
-        "content": "    const paramMap: { [key: string]: string } \u003d {"
+        "content": "    window.open(`${environment.frontendUrl}/web/instructor/help#questions`);"
       },
       {
         "lineNumber": 816,
         "author": {
           "gitId": "-"
         },
-        "content": "      courseid: this.courseId,"
+        "content": "  }"
       },
       {
         "lineNumber": 817,
         "author": {
           "gitId": "-"
         },
-        "content": "    };"
+        "content": ""
       },
       {
         "lineNumber": 818,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.httpRequestService.get(\u0027/students\u0027, paramMap)"
+        "content": "  /**"
       },
       {
         "lineNumber": 819,
         "author": {
           "gitId": "-"
         },
-        "content": "        .subscribe((students: Students) \u003d\u003e {"
+        "content": "   * Gets all students of a course."
       },
       {
         "lineNumber": 820,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.studentsOfCourse \u003d students.students;"
+        "content": "   */"
       },
       {
         "lineNumber": 821,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  getAllStudentsOfCourse(): void {"
       },
       {
         "lineNumber": 822,
         "author": {
           "gitId": "-"
         },
-        "content": "          // sort the student list based on team name and student name"
+        "content": "    const paramMap: { [key: string]: string } \u003d {"
       },
       {
         "lineNumber": 823,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.studentsOfCourse.sort((a: Student, b: Student): number \u003d\u003e {"
+        "content": "      courseid: this.courseId,"
       },
       {
         "lineNumber": 824,
         "author": {
           "gitId": "-"
         },
-        "content": "            const teamNameCompare: number \u003d a.teamName.localeCompare(b.teamName);"
+        "content": "    };"
       },
       {
         "lineNumber": 825,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (teamNameCompare \u003d\u003d\u003d 0) {"
+        "content": "    this.httpRequestService.get(\u0027/students\u0027, paramMap)"
       },
       {
         "lineNumber": 826,
         "author": {
           "gitId": "-"
         },
-        "content": "              return a.name.localeCompare(b.name);"
+        "content": "        .subscribe((students: Students) \u003d\u003e {"
       },
       {
         "lineNumber": 827,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "          this.studentsOfCourse \u003d students.students;"
       },
       {
         "lineNumber": 828,
         "author": {
           "gitId": "-"
         },
-        "content": "            return teamNameCompare;"
+        "content": ""
       },
       {
         "lineNumber": 829,
         "author": {
           "gitId": "-"
         },
-        "content": "          });"
+        "content": "          // sort the student list based on team name and student name"
       },
       {
         "lineNumber": 830,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "          this.studentsOfCourse.sort((a: Student, b: Student): number \u003d\u003e {"
       },
       {
         "lineNumber": 831,
         "author": {
           "gitId": "-"
         },
-        "content": "          // select the first student"
+        "content": "            const teamNameCompare: number \u003d a.teamName.localeCompare(b.teamName);"
       },
       {
         "lineNumber": 832,
         "author": {
           "gitId": "-"
         },
-        "content": "          if (this.studentsOfCourse.length \u003e\u003d 1) {"
+        "content": "            if (teamNameCompare \u003d\u003d\u003d 0) {"
       },
       {
         "lineNumber": 833,
         "author": {
           "gitId": "-"
         },
-        "content": "            this.emailOfStudentToPreview \u003d this.studentsOfCourse[0].email;"
+        "content": "              return a.name.localeCompare(b.name);"
       },
       {
         "lineNumber": 834,
         "author": {
           "gitId": "-"
         },
-        "content": "          }"
+        "content": "            }"
       },
       {
         "lineNumber": 835,
         "author": {
           "gitId": "-"
         },
-        "content": "        }, (resp: ErrorMessageOutput) \u003d\u003e { this.statusMessageService.showErrorMessage(resp.error.message); });"
+        "content": "            return teamNameCompare;"
       },
       {
         "lineNumber": 836,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "          });"
       },
       {
         "lineNumber": 837,
@@ -116828,182 +117376,182 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": "          // select the first student"
       },
       {
         "lineNumber": 839,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Gets all instructors of a course which can be previewed as."
+        "content": "          if (this.studentsOfCourse.length \u003e\u003d 1) {"
       },
       {
         "lineNumber": 840,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "            this.emailOfStudentToPreview \u003d this.studentsOfCourse[0].email;"
       },
       {
         "lineNumber": 841,
         "author": {
           "gitId": "-"
         },
-        "content": "  getAllInstructorsCanBePreviewedAs(): void {"
+        "content": "          }"
       },
       {
         "lineNumber": 842,
         "author": {
           "gitId": "-"
         },
-        "content": "    const paramMap: { [key: string]: string } \u003d {"
+        "content": "        }, (resp: ErrorMessageOutput) \u003d\u003e { this.statusMessageService.showErrorMessage(resp.error.message); });"
       },
       {
         "lineNumber": 843,
         "author": {
           "gitId": "-"
         },
-        "content": "      courseid: this.courseId,"
+        "content": "  }"
       },
       {
         "lineNumber": 844,
         "author": {
           "gitId": "-"
         },
-        "content": "      intent: Intent.FULL_DETAIL,"
+        "content": ""
       },
       {
         "lineNumber": 845,
         "author": {
           "gitId": "-"
         },
-        "content": "    };"
+        "content": "  /**"
       },
       {
         "lineNumber": 846,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.httpRequestService.get(\u0027/instructors\u0027, paramMap)"
+        "content": "   * Gets all instructors of a course which can be previewed as."
       },
       {
         "lineNumber": 847,
         "author": {
           "gitId": "-"
         },
-        "content": "        .subscribe((instructors: Instructors) \u003d\u003e {"
+        "content": "   */"
       },
       {
         "lineNumber": 848,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.instructorsCanBePreviewedAs \u003d instructors.instructors;"
+        "content": "  getAllInstructorsCanBePreviewedAs(): void {"
       },
       {
         "lineNumber": 849,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    const paramMap: { [key: string]: string } \u003d {"
       },
       {
         "lineNumber": 850,
         "author": {
           "gitId": "-"
         },
-        "content": "          // TODO use privilege API to filter instructors who has INSTRUCTOR_PERMISSION_SUBMIT_SESSION_IN_SECTIONS"
+        "content": "      courseid: this.courseId,"
       },
       {
         "lineNumber": 851,
         "author": {
           "gitId": "-"
         },
-        "content": "          // in the feedback session"
+        "content": "      intent: Intent.FULL_DETAIL,"
       },
       {
         "lineNumber": 852,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    };"
       },
       {
         "lineNumber": 853,
         "author": {
           "gitId": "-"
         },
-        "content": "          // sort the instructor list based on name"
+        "content": "    this.httpRequestService.get(\u0027/instructors\u0027, paramMap)"
       },
       {
         "lineNumber": 854,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.instructorsCanBePreviewedAs.sort((a: Instructor, b: Instructor): number \u003d\u003e {"
+        "content": "        .subscribe((instructors: Instructors) \u003d\u003e {"
       },
       {
         "lineNumber": 855,
         "author": {
           "gitId": "-"
         },
-        "content": "            return a.name.localeCompare(b.name);"
+        "content": "          this.instructorsCanBePreviewedAs \u003d instructors.instructors;"
       },
       {
         "lineNumber": 856,
         "author": {
           "gitId": "-"
         },
-        "content": "          });"
+        "content": ""
       },
       {
         "lineNumber": 857,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "          // TODO use privilege API to filter instructors who has INSTRUCTOR_PERMISSION_SUBMIT_SESSION_IN_SECTIONS"
       },
       {
         "lineNumber": 858,
         "author": {
           "gitId": "-"
         },
-        "content": "          // select the first instructor"
+        "content": "          // in the feedback session"
       },
       {
         "lineNumber": 859,
         "author": {
           "gitId": "-"
         },
-        "content": "          if (this.instructorsCanBePreviewedAs.length \u003e\u003d 1) {"
+        "content": ""
       },
       {
         "lineNumber": 860,
         "author": {
           "gitId": "-"
         },
-        "content": "            this.emailOfInstructorToPreview \u003d this.instructorsCanBePreviewedAs[0].email;"
+        "content": "          // sort the instructor list based on name"
       },
       {
         "lineNumber": 861,
         "author": {
           "gitId": "-"
         },
-        "content": "          }"
+        "content": "          this.instructorsCanBePreviewedAs.sort((a: Instructor, b: Instructor): number \u003d\u003e {"
       },
       {
         "lineNumber": 862,
         "author": {
           "gitId": "-"
         },
-        "content": "        }, (resp: ErrorMessageOutput) \u003d\u003e { this.statusMessageService.showErrorMessage(resp.error.message); });"
+        "content": "            return a.name.localeCompare(b.name);"
       },
       {
         "lineNumber": 863,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "          });"
       },
       {
         "lineNumber": 864,
@@ -117017,136 +117565,185 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": "          // select the first instructor"
       },
       {
         "lineNumber": 866,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Previews the submission of the feedback session as a student."
+        "content": "          if (this.instructorsCanBePreviewedAs.length \u003e\u003d 1) {"
       },
       {
         "lineNumber": 867,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "            this.emailOfInstructorToPreview \u003d this.instructorsCanBePreviewedAs[0].email;"
       },
       {
         "lineNumber": 868,
         "author": {
           "gitId": "-"
         },
-        "content": "  previewAsStudent(): void {"
+        "content": "          }"
       },
       {
         "lineNumber": 869,
         "author": {
           "gitId": "-"
         },
-        "content": "    window.open(`${environment.frontendUrl}/web/sessions/submission`"
+        "content": "        }, (resp: ErrorMessageOutput) \u003d\u003e { this.statusMessageService.showErrorMessage(resp.error.message); });"
       },
       {
         "lineNumber": 870,
         "author": {
           "gitId": "-"
         },
-        "content": "        + `?courseid\u003d${this.courseId}\u0026fsname\u003d${this.feedbackSessionName}\u0026previewas\u003d${this.emailOfStudentToPreview}`);"
+        "content": "  }"
       },
       {
         "lineNumber": 871,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 872,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  /**"
       },
       {
         "lineNumber": 873,
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": "   * Previews the submission of the feedback session as a student."
       },
       {
         "lineNumber": 874,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Previews the submission of the feedback session as an instructor."
+        "content": "   */"
       },
       {
         "lineNumber": 875,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "  previewAsStudent(): void {"
       },
       {
         "lineNumber": 876,
         "author": {
           "gitId": "-"
         },
-        "content": "  previewAsInstructor(): void {"
+        "content": "    window.open(`${environment.frontendUrl}/web/sessions/submission`"
       },
       {
         "lineNumber": 877,
         "author": {
           "gitId": "-"
         },
-        "content": "    window.open(`${environment.frontendUrl}/web/instructor/sessions/submission`"
+        "content": "        + `?courseid\u003d${this.courseId}\u0026fsname\u003d${this.feedbackSessionName}\u0026previewas\u003d${this.emailOfStudentToPreview}`);"
       },
       {
         "lineNumber": 878,
         "author": {
           "gitId": "-"
         },
-        "content": "        + `?courseid\u003d${this.courseId}\u0026fsname\u003d${this.feedbackSessionName}\u0026previewas\u003d${this.emailOfInstructorToPreview}`);"
+        "content": "  }"
       },
       {
         "lineNumber": 879,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 880,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  /**"
       },
       {
         "lineNumber": 881,
         "author": {
           "gitId": "-"
         },
-        "content": "  private deepCopy\u003cT\u003e(obj: T): T {"
+        "content": "   * Previews the submission of the feedback session as an instructor."
       },
       {
         "lineNumber": 882,
         "author": {
           "gitId": "-"
         },
-        "content": "    return JSON.parse(JSON.stringify(obj));"
+        "content": "   */"
       },
       {
         "lineNumber": 883,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "  previewAsInstructor(): void {"
       },
       {
         "lineNumber": 884,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    window.open(`${environment.frontendUrl}/web/instructor/sessions/submission`"
+      },
+      {
+        "lineNumber": 885,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        + `?courseid\u003d${this.courseId}\u0026fsname\u003d${this.feedbackSessionName}\u0026previewas\u003d${this.emailOfInstructorToPreview}`);"
+      },
+      {
+        "lineNumber": 886,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 887,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 888,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  private deepCopy\u003cT\u003e(obj: T): T {"
+      },
+      {
+        "lineNumber": 889,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return JSON.parse(JSON.stringify(obj));"
+      },
+      {
+        "lineNumber": 890,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 891,
         "author": {
           "gitId": "-"
         },
@@ -117154,8 +117751,8 @@
       }
     ],
     "authorContributionMap": {
-      "crizyli": 1,
-      "-": 883
+      "crizyli": 9,
+      "-": 882
     }
   },
   {
