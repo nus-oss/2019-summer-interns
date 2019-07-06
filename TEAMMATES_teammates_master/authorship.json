@@ -84009,474 +84009,488 @@
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "   * Checks if None of the above option is enabled and disables it."
+        "content": "   * Removes the \"None of the above\" option in an answers list if it\u0027s present"
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "   */"
+        "content": "   * then returns the altered list."
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "  disableNoneOfTheAboveOption(): void {"
+        "content": "   */"
       },
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "    if (this.isNoneOfTheAboveEnabled) {"
+        "content": "  disableNoneOfTheAboveOption(answers: string[]): string[] {"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "      const newAnswers: string[] \u003d this.responseDetails.answers.slice();"
+        "content": "    if (this.isNoneOfTheAboveEnabled) {"
       },
       {
         "lineNumber": 55,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "      newAnswers.splice(0 , 1);"
+        "content": "      const newAnswers: string[] \u003d answers.slice();"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.triggerResponseDetailsChange(\u0027answers\u0027, newAnswers);"
+        "content": "      newAnswers.splice(0 , 1);"
       },
       {
         "lineNumber": 57,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "    }"
+        "content": "      return newAnswers;"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    }"
       },
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": ""
+        "content": "    return answers;"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Updates the answers to include/exclude the Msq option specified by the index."
+        "content": ""
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "  /**"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "  updateSelectedAnswers(index: number): void {"
+        "content": "   * Updates the answers to include/exclude the Msq option specified by the index."
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.disableNoneOfTheAboveOption();"
+        "content": "   */"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "    const newAnswers: string[] \u003d this.responseDetails.answers.slice();"
+        "content": "  updateSelectedAnswers(index: number): void {"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "    const indexInResponseArray: number \u003d this.responseDetails.answers.indexOf(this.questionDetails.msqChoices[index]);"
+        "content": "    let newAnswers: string[] \u003d this.responseDetails.answers.slice();"
       },
       {
         "lineNumber": 67,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "    if (indexInResponseArray \u003e -1) {"
+        "content": "    newAnswers \u003d this.disableNoneOfTheAboveOption(newAnswers);"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "      newAnswers.splice(indexInResponseArray, 1);"
+        "content": "    const indexInResponseArray: number \u003d this.responseDetails.answers.indexOf(this.questionDetails.msqChoices[index]);"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "    } else {"
+        "content": "    if (indexInResponseArray \u003e -1) {"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": "      newAnswers.push(this.questionDetails.msqChoices[index]);"
+        "content": "      newAnswers.splice(indexInResponseArray, 1);"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    } else {"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.triggerResponseDetailsChange(\u0027answers\u0027, newAnswers);"
+        "content": "      newAnswers.push(this.questionDetails.msqChoices[index]);"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    }"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    this.triggerResponseDetailsChange(\u0027answers\u0027, newAnswers);"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Updates the other option checkbox when clicked."
+        "content": ""
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "  /**"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "  updateIsOtherOption(): void {"
+        "content": "   * Updates the other option checkbox when clicked."
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "    const fieldsToUpdate: any \u003d {};"
+        "content": "   */"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "    fieldsToUpdate.isOther \u003d !this.responseDetails.isOther;"
+        "content": "  updateIsOtherOption(): void {"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.disableNoneOfTheAboveOption();"
+        "content": "    const fieldsToUpdate: any \u003d {};"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (!fieldsToUpdate.isOther) {"
+        "content": "    fieldsToUpdate.isOther \u003d !this.responseDetails.isOther;"
       },
       {
         "lineNumber": 83,
         "author": {
-          "gitId": "-"
+          "gitId": "erjillsison"
         },
-        "content": "      fieldsToUpdate.otherFieldContent \u003d \u0027\u0027;"
+        "content": "    fieldsToUpdate.answers \u003d this.disableNoneOfTheAboveOption(this.responseDetails.answers);"
       },
       {
         "lineNumber": 84,
         "author": {
-          "gitId": "Pengyuz"
+          "gitId": "-"
         },
-        "content": "    } else {"
+        "content": "    if (!fieldsToUpdate.isOther) {"
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "Pengyuz"
+          "gitId": "-"
         },
-        "content": "      setTimeout(() \u003d\u003e { // focus on the text box after the isOther field is updated to enable the text box"
+        "content": "      fieldsToUpdate.otherFieldContent \u003d \u0027\u0027;"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "Pengyuz"
         },
-        "content": "        (this.inputTextBoxOther as ElementRef).nativeElement.focus();"
+        "content": "    } else {"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "Pengyuz"
         },
-        "content": "      }, 0);"
+        "content": "      setTimeout(() \u003d\u003e { // focus on the text box after the isOther field is updated to enable the text box"
       },
       {
         "lineNumber": 88,
         "author": {
-          "gitId": "-"
+          "gitId": "Pengyuz"
         },
-        "content": "    }"
+        "content": "        (this.inputTextBoxOther as ElementRef).nativeElement.focus();"
       },
       {
         "lineNumber": 89,
         "author": {
-          "gitId": "-"
+          "gitId": "Pengyuz"
         },
-        "content": "    this.triggerResponseDetailsChangeBatch(fieldsToUpdate);"
+        "content": "      }, 0);"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    }"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    this.triggerResponseDetailsChangeBatch(fieldsToUpdate);"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Checks if None of the above checkbox is enabled."
+        "content": ""
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "  /**"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "  get isNoneOfTheAboveEnabled(): boolean {"
+        "content": "   * Checks if None of the above checkbox is enabled."
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "    return this.responseDetails.answers[0] \u003d\u003d\u003d NONE_OF_THE_ABOVE;"
+        "content": "   */"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "  get isNoneOfTheAboveEnabled(): boolean {"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    return this.responseDetails.answers[0] \u003d\u003d\u003d NONE_OF_THE_ABOVE;"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": "  }"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Updates answers if None of the Above option is selected."
+        "content": ""
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "  /**"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "  updateNoneOfTheAbove(): void {"
+        "content": "   * Updates answers if None of the Above option is selected."
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "    let newAnswers: string[] \u003d this.responseDetails.answers.slice();"
+        "content": "   */"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "    const fieldsToUpdate: any \u003d {};"
+        "content": "  updateNoneOfTheAbove(): void {"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (this.isNoneOfTheAboveEnabled) {"
+        "content": "    let newAnswers: string[] \u003d this.responseDetails.answers.slice();"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "      newAnswers.splice(0, 1);"
+        "content": "    const fieldsToUpdate: any \u003d {};"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "    } else {"
+        "content": "    if (this.isNoneOfTheAboveEnabled) {"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.isMsqOptionSelected \u003d Array(this.questionDetails.msqChoices.length).fill(false);"
+        "content": "      newAnswers.splice(0, 1);"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "      newAnswers \u003d [];"
+        "content": "    } else {"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "      fieldsToUpdate.isOther \u003d false;"
+        "content": "      this.isMsqOptionSelected \u003d Array(this.questionDetails.msqChoices.length).fill(false);"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "      fieldsToUpdate.otherFieldContent \u003d \u0027\u0027;"
+        "content": "      newAnswers \u003d [];"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": "      newAnswers[0] \u003d NONE_OF_THE_ABOVE;"
+        "content": "      fieldsToUpdate.isOther \u003d false;"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      fieldsToUpdate.otherFieldContent \u003d \u0027\u0027;"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": "    fieldsToUpdate.answers \u003d newAnswers;"
+        "content": "      newAnswers[0] \u003d NONE_OF_THE_ABOVE;"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.triggerResponseDetailsChangeBatch(fieldsToUpdate);"
+        "content": "    }"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    fieldsToUpdate.answers \u003d newAnswers;"
       },
       {
         "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    this.triggerResponseDetailsChangeBatch(fieldsToUpdate);"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
@@ -84485,7 +84499,8 @@
     ],
     "authorContributionMap": {
       "Pengyuz": 6,
-      "-": 111
+      "erjillsison": 9,
+      "-": 104
     }
   },
   {

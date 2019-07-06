@@ -148,6 +148,19 @@
             "deletions": 117
           }
         ]
+      },
+      {
+        "insertions": 9,
+        "deletions": 7,
+        "date": "2019-07-05",
+        "commitResults": [
+          {
+            "hash": "187c884defad438a3dd12e1e421f837c206ff86e",
+            "message": "[#9805] MSQ: Selecting another option does not deselect \"None of the above\" option (#9807)",
+            "insertions": 9,
+            "deletions": 7
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -317,7 +330,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 780,
+    "erjillsison": 789,
     "Pengyuz": 301,
     "crizyli": 928
   },
@@ -330,7 +343,7 @@
       "py": 0,
       "tag": 0,
       "html": 65,
-      "ts": 420
+      "ts": 429
     },
     "Pengyuz": {
       "java": 231,
@@ -354,7 +367,7 @@
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 4326.315,
+    "erjillsison": 4318.8755,
     "Pengyuz": 1036.4227,
     "crizyli": 30663.709
   },

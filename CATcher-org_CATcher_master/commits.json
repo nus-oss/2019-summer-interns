@@ -1263,12 +1263,31 @@
             "deletions": 4
           }
         ]
+      },
+      {
+        "insertions": 174,
+        "deletions": 10,
+        "date": "2019-07-05",
+        "commitResults": [
+          {
+            "hash": "f9b0557e5b8f3a6244683cc9ce7f34568a1d0271",
+            "message": "Animate sync button while syncing (#119)",
+            "insertions": 15,
+            "deletions": 10
+          },
+          {
+            "hash": "c82251c2ece45bb6bc776672b45f1a259957c760",
+            "message": "Setup Jasmine unit test (#99)",
+            "insertions": 159,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "ptvrajsk": 883,
-    "KevinCJH": 652
+    "KevinCJH": 818
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1288,13 +1307,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 152,
-      "ts": 500
+      "html": 158,
+      "ts": 660
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 7106.8296,
-    "KevinCJH": 10775.283
+    "ptvrajsk": 7002.596,
+    "KevinCJH": 10844.754
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

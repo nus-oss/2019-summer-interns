@@ -32098,9 +32098,9 @@
       {
         "lineNumber": 2,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "  \u003cbutton *ngIf\u003d\"needToShowBackButton()\" mat-icon-button class\u003d\"mat-toolbar mat-primary\" style\u003d\"transform: scale(0.9)\" (click)\u003d\"goBack()\"\u003e"
+        "content": "  \u003cbutton *ngIf\u003d\"isBackButtonShown()\" mat-icon-button class\u003d\"mat-toolbar mat-primary\" style\u003d\"transform: scale(0.9)\" (click)\u003d\"goBack()\"\u003e"
       },
       {
         "lineNumber": 3,
@@ -32163,7 +32163,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 needToShowOpenUrlButton()\" mat-button matTooltip\u003d\"View current page in web-browser\" (click)\u003d\"viewBrowser()\"\u003e"
+        "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isOpenUrlButtonShown()\" mat-button matTooltip\u003d\"View current page in web-browser\" (click)\u003d\"viewBrowser()\"\u003e"
       },
       {
         "lineNumber": 12,
@@ -32191,7 +32191,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 needToShowReloadButton()\" [disabled]\u003d\"this.isReloadBtnDisabled\""
+        "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isReloadButtonShown() \u0026\u0026 !this.isReloadButtonDisabled\""
       },
       {
         "lineNumber": 16,
@@ -32219,38 +32219,73 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    \u003c/button\u003e"
+        "content": "  \u003c/button\u003e"
       },
       {
         "lineNumber": 20,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  \u003cdiv class\u003d\"sync-spinner\" *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isReloadButtonShown() \u0026\u0026 this.isReloadButtonDisabled\"\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003cspan style\u003d\"font-size: 14px; margin-right: 7px;\"\u003eSync\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003cmat-spinner class\u003d\"white-spinner\" [diameter]\u003d\"20\"\u003e\u003c/mat-spinner\u003e"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated()\" mat-button matTooltip\u003d\"Log out\" (click)\u003d\"logOut()\"\u003e"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
         "content": "    ({{userService.currentUser.loginId}})"
       },
       {
-        "lineNumber": 22,
+        "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
         "content": "    \u003cmat-icon style\u003d\"margin-left: 2px\"\u003eexit_to_app\u003c/mat-icon\u003e"
       },
       {
-        "lineNumber": 23,
+        "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003c/button\u003e"
       },
       {
-        "lineNumber": 24,
+        "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
@@ -32258,8 +32293,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 9,
-      "-": 15
+      "KevinCJH": 15,
+      "-": 14
     }
   },
   {
@@ -32410,7 +32445,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  isReloadBtnDisabled \u003d false;"
+        "content": "  isReloadButtonDisabled \u003d false;"
       },
       {
         "lineNumber": 22,
@@ -32541,9 +32576,9 @@
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "  needToShowBackButton(): boolean {"
+        "content": "  isBackButtonShown(): boolean {"
       },
       {
         "lineNumber": 41,
@@ -32571,7 +32606,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  needToShowReloadButton(): boolean {"
+        "content": "  isReloadButtonShown(): boolean {"
       },
       {
         "lineNumber": 45,
@@ -32599,7 +32634,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  needToShowOpenUrlButton(): boolean {"
+        "content": "  isOpenUrlButtonShown(): boolean {"
       },
       {
         "lineNumber": 49,
@@ -32949,7 +32984,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.isReloadBtnDisabled \u003d true;"
+        "content": "    this.isReloadButtonDisabled \u003d true;"
       },
       {
         "lineNumber": 99,
@@ -33019,7 +33054,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      this.isReloadBtnDisabled \u003d false;"
+        "content": "      this.isReloadButtonDisabled \u003d false;"
       },
       {
         "lineNumber": 109,
@@ -33079,8 +33114,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 76,
-      "-": 40
+      "KevinCJH": 77,
+      "-": 39
     }
   },
   {
@@ -33209,6 +33244,1135 @@
     "authorContributionMap": {
       "ptvrajsk": 2,
       "-": 15
+    }
+  },
+  {
+    "path": "tests/constants/label.constants.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "// Label name constants"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const SEVERITY_LOW \u003d \u0027Low\u0027;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const SEVERITY_MEDIUM \u003d \u0027Medium\u0027;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const SEVERITY_HIGH \u003d \u0027High\u0027;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const TYPE_DOCUMENTATION_BUG \u003d \u0027DocumentationBug\u0027;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const TYPE_FUNCTIONALITY_BUG \u003d \u0027FunctionalityBug\u0027;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const RESPONSE_ACCEPTED \u003d \u0027Accepted\u0027;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const RESPONSE_REJECTED \u003d \u0027Rejected\u0027;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const RESPONSE_ISSUE_UNCLEAR \u003d \u0027IssueUnclear\u0027;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const RESPONSE_CANNOT_REPRODUCE \u003d \u0027CannotReproduce\u0027;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const STATUS_DONE \u003d \u0027Done\u0027;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const STATUS_INCOMPLETE \u003d \u0027Incomplete\u0027;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "// Label category constants"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const SEVERITY \u003d \u0027severity\u0027;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const TYPE \u003d \u0027type\u0027;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const RESPONSE \u003d \u0027response\u0027;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const STATUS \u003d \u0027status\u0027;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "// Label color constants"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_BLACK  \u003d \u0027000000\u0027;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_WHITE  \u003d \u0027FFFFFF\u0027;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_SEVERITY_LOW \u003d \u0027ffb3b3\u0027;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_SEVERITY_MEDIUM \u003d \u0027ff6666\u0027;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_SEVERITY_HIGH \u003d \u0027b30000\u0027;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_TYPE_DOCUMENTATION_BUG \u003d \u0027ccb3ff\u0027;"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_TYPE_FUNCTIONALITY_BUG \u003d \u0027661aff\u0027;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_RESPONSE_ACCEPTED \u003d \u002780ffcc\u0027;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_RESPONSE_REJECTED \u003d \u0027ff80b3\u0027;"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_RESPONSE_ISSUE_UNCLEAR \u003d \u0027ffcc80\u0027;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_RESPONSE_CANNOT_REPRODUCE \u003d \u0027bfbfbf\u0027;"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_STATUS_DONE \u003d \u0027b3ecff\u0027;"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const COLOR_STATUS_INCOMPLETE \u003d \u00271ac6ff\u0027;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "// CSS style constants"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const DARK_BG_LIGHT_TEXT \u003d {"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027background-color\u0027 : `#${COLOR_BLACK}`,"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027border-radius\u0027 : \u00273px\u0027,"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027padding\u0027 : \u00273px\u0027,"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027color\u0027 : `#${COLOR_WHITE}`,"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027font-weight\u0027 : \u0027410\u0027,"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const LIGHT_BG_DARK_TEXT \u003d {"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027background-color\u0027 : `#${COLOR_WHITE}`,"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027border-radius\u0027 : \u00273px\u0027,"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027padding\u0027 : \u00273px\u0027,"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027color\u0027 : `#${COLOR_BLACK}`,"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u0027font-weight\u0027 : \u0027410\u0027,"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "};"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "// Constant array of labels to simulate Github response"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export const LABEL_ARRAY \u003d ["
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        color: COLOR_RESPONSE_ACCEPTED,"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        name: RESPONSE + \u0027.\u0027 + RESPONSE_ACCEPTED"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        color: COLOR_SEVERITY_LOW,"
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        name: SEVERITY + \u0027.\u0027 + SEVERITY_LOW"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    {"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        color: COLOR_TYPE_FUNCTIONALITY_BUG,"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        name: TYPE + \u0027.\u0027 + TYPE_FUNCTIONALITY_BUG"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "];"
+      }
+    ],
+    "authorContributionMap": {
+      "KevinCJH": 66
+    }
+  },
+  {
+    "path": "tests/services/label.service.spec.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { LabelService } from \u0027../../src/app/core/services/label.service\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { Label } from \u0027../../src/app/core/models/label.model\u0027;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import * as LabelConstant from \u0027../constants/label.constants\u0027;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "let labelService: LabelService;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "let labelList: Label[];"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "describe(\u0027LabelService: parseLabelData()\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    beforeAll(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d new LabelService(null);"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelList \u003d labelService.parseLabelData(LabelConstant.LABEL_ARRAY);"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    afterAll(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d null;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be response.Accepted label\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[0].labelCategory).toBe(LabelConstant.RESPONSE);"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[0].labelValue).toBe(LabelConstant.RESPONSE_ACCEPTED);"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[0].labelColor).toBe(LabelConstant.COLOR_RESPONSE_ACCEPTED);"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be severity.Low\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[1].labelCategory).toBe(LabelConstant.SEVERITY);"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[1].labelValue).toBe(LabelConstant.SEVERITY_LOW);"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[1].labelColor).toBe(LabelConstant.COLOR_SEVERITY_LOW);"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be type.FunctionalityBug\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[2].labelCategory).toBe(LabelConstant.TYPE);"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[2].labelValue).toBe(LabelConstant.TYPE_FUNCTIONALITY_BUG);"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelList[2].labelColor).toBe(LabelConstant.COLOR_TYPE_FUNCTIONALITY_BUG);"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "});"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "describe(\u0027LabelService: isDarkColor()\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    beforeEach(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d new LabelService(null);"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    afterEach(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d null;"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be true for dark color\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelService.isDarkColor(LabelConstant.COLOR_BLACK)).toBeTruthy();"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be false for light color\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelService.isDarkColor(LabelConstant.COLOR_WHITE)).toBeFalsy();"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "});"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "describe(\u0027LabelService: setLabelStyle()\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    beforeEach(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d new LabelService(null);"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    afterEach(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d null;"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be dark color background with light color text\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelService.setLabelStyle(LabelConstant.COLOR_BLACK))"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "            .toEqual(LabelConstant.DARK_BG_LIGHT_TEXT);"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be light color background with dark color text\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelService.setLabelStyle(LabelConstant.COLOR_WHITE))"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "            .toEqual(LabelConstant.LIGHT_BG_DARK_TEXT);"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "});"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "describe(\u0027LabelService: getColorOfLabel()\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    beforeEach(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d new LabelService(null);"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    afterEach(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        labelService \u003d null;"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be correct label color for Severity.Low\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelService.getColorOfLabel(LabelConstant.SEVERITY_LOW))"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "            .toEqual(LabelConstant.COLOR_SEVERITY_LOW);"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    it(\u0027should be white color for invalid inputs\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        expect(labelService.getColorOfLabel(null))"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "            .toEqual(LabelConstant.COLOR_WHITE.toLowerCase());"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "});"
+      }
+    ],
+    "authorContributionMap": {
+      "KevinCJH": 93
     }
   }
 ]
