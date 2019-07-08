@@ -410,6 +410,19 @@
             "deletions": 18
           }
         ]
+      },
+      {
+        "insertions": 380,
+        "deletions": 587,
+        "date": "2019-07-08",
+        "commitResults": [
+          {
+            "hash": "5af067c3e0b153039a647c10e90fce27ba5965f9",
+            "message": "Table Restructure (#115)",
+            "insertions": 380,
+            "deletions": 587
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1286,8 +1299,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 883,
-    "KevinCJH": 818
+    "ptvrajsk": 1246,
+    "KevinCJH": 718
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1297,8 +1310,8 @@
       "md": 4,
       "py": 0,
       "tag": 0,
-      "html": 58,
-      "ts": 821
+      "html": 198,
+      "ts": 1044
     },
     "KevinCJH": {
       "java": 0,
@@ -1307,13 +1320,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 158,
-      "ts": 660
+      "html": 73,
+      "ts": 645
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 7002.596,
-    "KevinCJH": 10844.754
+    "ptvrajsk": 21599.215,
+    "KevinCJH": 10482.015
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

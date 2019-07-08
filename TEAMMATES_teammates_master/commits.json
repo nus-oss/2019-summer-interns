@@ -228,6 +228,19 @@
             "deletions": 3
           }
         ]
+      },
+      {
+        "insertions": 213,
+        "deletions": 2,
+        "date": "2019-07-07",
+        "commitResults": [
+          {
+            "hash": "e4700402dcc9a3ae6193d2501b069da096d6c47a",
+            "message": "[#9595] Add tests for POST /response (#9733)",
+            "insertions": 213,
+            "deletions": 2
+          }
+        ]
       }
     ],
     "crizyli": [
@@ -344,7 +357,7 @@
   },
   "authorFinalContributionMap": {
     "erjillsison": 789,
-    "Pengyuz": 301,
+    "Pengyuz": 514,
     "crizyli": 937
   },
   "authorFileFormatContributionMap": {
@@ -359,7 +372,7 @@
       "ts": 429
     },
     "Pengyuz": {
-      "java": 231,
+      "java": 444,
       "js": 0,
       "scss": 0,
       "md": 0,
@@ -380,9 +393,9 @@
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 4248.0024,
-    "Pengyuz": 1018.1632,
-    "crizyli": 30112.389
+    "erjillsison": 4179.392,
+    "Pengyuz": 1768.8723,
+    "crizyli": 29588.691
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",

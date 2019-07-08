@@ -51126,6 +51126,407 @@
     }
   },
   {
+    "path": "src/main/java/teammates/ui/webapi/request/FeedbackResponseBasicRequest.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package teammates.ui.webapi.request;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Map;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import teammates.common.datatransfer.questions.FeedbackQuestionType;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import teammates.common.datatransfer.questions.FeedbackResponseDetails;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import teammates.common.util.JsonUtils;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * The basic request of modifying a feedback response."
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class FeedbackResponseBasicRequest extends BasicRequest {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private String recipientIdentifier;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private FeedbackQuestionType questionType;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private Map\u003cString, Object\u003e responseDetails;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public String getRecipientIdentifier() {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return recipientIdentifier;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public FeedbackQuestionType getQuestionType() {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return questionType;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Get the feedback response details in the request."
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public FeedbackResponseDetails getResponseDetails() {"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        FeedbackResponseDetails details \u003d"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                JsonUtils.fromJson(JsonUtils.toJson(responseDetails), questionType.getResponseDetailsClass());"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        details.setQuestionType(questionType);"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return details;"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    public void setRecipientIdentifier(String recipientIdentifier) {"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        this.recipientIdentifier \u003d recipientIdentifier;"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    public void setQuestionType(FeedbackQuestionType feedbackQuestionType) {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        this.questionType \u003d feedbackQuestionType;"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    public void setResponseDetails(FeedbackResponseDetails feedbackResponseDetails) {"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        this.responseDetails \u003d JsonUtils.fromJson(JsonUtils.toJson(feedbackResponseDetails), Map.class);"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void validate() {"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertTrue(recipientIdentifier !\u003d null, \"recipientIdentifier cannot be null\");"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertTrue(questionType !\u003d null, \"questionType cannot be null\");"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        assertTrue(responseDetails !\u003d null, \"responseDetails cannot be null\");"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Pengyuz": 12,
+      "-": 44
+    }
+  },
+  {
     "path": "src/test/java/teammates/test/cases/automated/FeedbackSessionPublishedRemindersActionTest.java",
     "lines": [
       {
@@ -72579,6 +72980,1653 @@
     "authorContributionMap": {
       "crizyli": 18,
       "-": 992
+    }
+  },
+  {
+    "path": "src/test/java/teammates/test/cases/webapi/CreateFeedbackResponseActionTest.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package teammates.test.cases.webapi;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import org.apache.http.HttpStatus;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import org.testng.annotations.Test;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.FeedbackParticipantType;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.attributes.FeedbackQuestionAttributes;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.attributes.FeedbackResponseAttributes;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.attributes.FeedbackSessionAttributes;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.attributes.InstructorAttributes;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.attributes.StudentAttributes;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.questions.FeedbackQuestionType;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.questions.FeedbackResponseDetails;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.datatransfer.questions.FeedbackTextResponseDetails;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.exception.EntityNotFoundException;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.exception.InvalidHttpParameterException;"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.exception.InvalidHttpRequestBodyException;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.common.exception.UnauthorizedAccessException;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import teammates.common.util.Const;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import teammates.ui.webapi.action.CreateFeedbackResponseAction;"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.ui.webapi.action.Intent;"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.ui.webapi.action.JsonResult;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.ui.webapi.output.FeedbackResponseData;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "import teammates.ui.webapi.request.FeedbackResponseCreateRequest;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * SUT: {@link CreateFeedbackResponseAction}."
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class CreateFeedbackResponseActionTest extends BaseActionTest\u003cCreateFeedbackResponseAction\u003e {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private FeedbackQuestionAttributes qn1InSession1InCourse1;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private StudentAttributes student1InCourse1;"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private InstructorAttributes instructor1OfCourse1;"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private InstructorAttributes instructor2OfCourse1;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private FeedbackQuestionAttributes qn2InGracePeriodInCourse1;"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private InstructorAttributes instructor1OfCourse2;"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private FeedbackQuestionAttributes qn1InClosedSessionInCourse1;"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private StudentAttributes student2InCourse1;"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private StudentAttributes student5InCourse1;"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private FeedbackQuestionAttributes qn2InSession1InCourse1;"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected String getActionUri() {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return Const.ResourceURIs.RESPONSE;"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected String getRequestMethod() {"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return POST;"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    protected void prepareTestData() {"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        removeAndRestoreTypicalDataBundle();"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackSessionAttributes gracePeriodSession \u003d typicalBundle.feedbackSessions.get(\"gracePeriodSession\");"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackSessionAttributes session1InCourse1 \u003d typicalBundle.feedbackSessions.get(\"session1InCourse1\");"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackSessionAttributes closedSession \u003d typicalBundle.feedbackSessions.get(\"closedSession\");"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        instructor1OfCourse1 \u003d typicalBundle.instructors.get(\"instructor1OfCourse1\");"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        student1InCourse1 \u003d typicalBundle.students.get(\"student1InCourse1\");"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        qn1InSession1InCourse1 \u003d logic.getFeedbackQuestion("
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                session1InCourse1.getFeedbackSessionName(), session1InCourse1.getCourseId(), 1);"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        qn2InGracePeriodInCourse1 \u003d logic.getFeedbackQuestion("
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                gracePeriodSession.getFeedbackSessionName(), gracePeriodSession.getCourseId(), 2);"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        qn1InClosedSessionInCourse1 \u003d logic.getFeedbackQuestion("
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                closedSession.getFeedbackSessionName(), closedSession.getCourseId(), 1);"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        instructor1OfCourse2 \u003d typicalBundle.instructors.get(\"instructor1OfCourse2\");"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        student2InCourse1 \u003d typicalBundle.students.get(\"student2InCourse1\");"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        student5InCourse1 \u003d typicalBundle.students.get(\"student5InCourse1\");"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        instructor2OfCourse1 \u003d typicalBundle.instructors.get(\"instructor2OfCourse1\");"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        qn2InSession1InCourse1 \u003d logic.getFeedbackQuestion("
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                session1InCourse1.getFeedbackSessionName(), session1InCourse1.getCourseId(), 2);"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected void testExecute() throws Exception {"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"not enough attributes\");"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyHttpParameterFailure();"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyHttpParameterFailure(Const.ParamsNames.INTENT, Intent.STUDENT_SUBMISSION.toString());"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyHttpParameterFailure(Const.ParamsNames.FEEDBACK_QUESTION_ID, qn1InSession1InCourse1.getId());"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"typical case for student\");"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        loginAsStudent(student2InCourse1.getGoogleId());"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] paramsQn2 \u003d {"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn2InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.STUDENT_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseCreateRequest createRequest \u003d getResponseRequest(student1InCourse1.getEmail());"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        CreateFeedbackResponseAction typicalAction \u003d getAction(createRequest, paramsQn2);"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        JsonResult typicalResult \u003d getJsonResult(typicalAction);"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(HttpStatus.SC_OK, typicalResult.getStatusCode());"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseData typicalData \u003d (FeedbackResponseData) typicalResult.getOutput();"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseAttributes responseAddedForStudent \u003d"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                logic.getFeedbackResponse(qn2InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                        student2InCourse1.getEmail(), student1InCourse1.getEmail());"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertNotNull(responseAddedForStudent);"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(\"This is the text\", typicalData.getResponseDetails().getAnswerString());"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(student1InCourse1.getEmail(), typicalData.getRecipientIdentifier());"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertNotNull(typicalData.getFeedbackResponseId());"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(student2InCourse1.getEmail(), typicalData.getGiverIdentifier());"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"typical case for instructor\");"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        loginAsInstructor(instructor2OfCourse1.getGoogleId());"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] paramsQn2Grace \u003d {"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn2InGracePeriodInCourse1.getId(),"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.INSTRUCTOR_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseCreateRequest requestForInstructor \u003d getResponseRequest(instructor2OfCourse1.getEmail());"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        CreateFeedbackResponseAction typicalActionForInstructor \u003d getAction(requestForInstructor, paramsQn2Grace);"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        JsonResult typicalResultInstructor \u003d getJsonResult(typicalActionForInstructor);"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(HttpStatus.SC_OK, typicalResultInstructor.getStatusCode());"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseData typicalDataInstructor \u003d (FeedbackResponseData) typicalResultInstructor.getOutput();"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseAttributes responseAddedForInstructor \u003d"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                logic.getFeedbackResponse(qn2InGracePeriodInCourse1.getId(),"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                        instructor2OfCourse1.getEmail(), instructor2OfCourse1.getEmail());"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertNotNull(responseAddedForInstructor);"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(\"This is the text\", typicalDataInstructor.getResponseDetails().getAnswerString());"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertNotNull(typicalDataInstructor.getFeedbackResponseId());"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(instructor2OfCourse1.getEmail(), typicalDataInstructor.getGiverIdentifier());"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(instructor2OfCourse1.getEmail(), typicalDataInstructor.getRecipientIdentifier());"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"response already exists\");"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        //show that this FeedbackResponse already exists"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseAttributes existingFeedbackResponse \u003d"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                logic.getFeedbackResponse(qn2InSession1InCourse1.getId(), student2InCourse1.getEmail(),"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                        student5InCourse1.getEmail());"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertNotNull(existingFeedbackResponse);"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] paramsQ2S1C1 \u003d {"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn2InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.STUDENT_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        loginAsStudent(student2InCourse1.getGoogleId());"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseCreateRequest createRequestAlreadyExists \u003d getResponseRequest(student5InCourse1.getEmail());"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        CreateFeedbackResponseAction typicalActionAlreadyExists \u003d getAction(createRequestAlreadyExists, paramsQ2S1C1);"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertThrows(InvalidHttpRequestBodyException.class, () -\u003e getJsonResult(typicalActionAlreadyExists));"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"invalid intent\");"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] invalidIntentParams \u003d {"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn1InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.FULL_DETAIL.toString(),"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyHttpParameterFailure(invalidIntentParams);"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Test"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    protected void testAccessControl() throws Exception {"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"non-exist feedback question\");"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        loginAsInstructor(instructor1OfCourse1.getGoogleId());"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] nonExistFeedbackQuestionParams \u003d {"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, \"randomNonExist\","
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.INSTRUCTOR_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertThrows(EntityNotFoundException.class,"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                () -\u003e getAction(nonExistFeedbackQuestionParams).checkAccessControl());"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"feedback session is closed\");"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] closedFeedbackSessionParams \u003d {"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn1InClosedSessionInCourse1.getId(),"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.INSTRUCTOR_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyCannotAccess(closedFeedbackSessionParams);"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"in preview request\");"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] previewParams \u003d {"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn1InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.STUDENT_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.PREVIEWAS, student1InCourse1.getEmail(),"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyCannotAccess(previewParams);"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"not answerable for students\");"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] notAnswerableForStudents \u003d {"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn2InGracePeriodInCourse1.getId(),"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.STUDENT_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        //verify not answerable to students"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(FeedbackParticipantType.INSTRUCTORS, qn2InGracePeriodInCourse1.getGiverType());"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyCannotAccess(notAnswerableForStudents);"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"not answerable to instructors\");"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] notAnswerableForInstructors \u003d {"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn1InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.INSTRUCTOR_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertEquals(FeedbackParticipantType.STUDENTS, qn1InSession1InCourse1.getGiverType());"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        verifyCannotAccess(notAnswerableForInstructors);"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"invalid HTTP parameters\");"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] invalidParams \u003d {"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn1InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.FULL_DETAIL.toString(),"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertThrows(InvalidHttpParameterException.class, () -\u003e getAction(invalidParams).checkAccessControl());"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        invalidParams[3] \u003d Intent.INSTRUCTOR_RESULT.toString();"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertThrows(InvalidHttpParameterException.class, () -\u003e getAction(invalidParams).checkAccessControl());"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"invalid recipient for student\");"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        loginAsStudent(student1InCourse1.getGoogleId());"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] invalidRecipientForStudent \u003d {"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn1InSession1InCourse1.getId(),"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.STUDENT_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertThrows(UnauthorizedAccessException.class, () -\u003e {"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "            FeedbackResponseCreateRequest createRequest \u003d getResponseRequest(student2InCourse1.getEmail());"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "            getAction(createRequest, invalidRecipientForStudent).checkAccessControl();"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        });"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        ______TS(\"invalid recipient for instructor\");"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        loginAsInstructor(instructor1OfCourse1.getGoogleId());"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        String[] invalidRecipientForInstructor \u003d {"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.FEEDBACK_QUESTION_ID, qn2InGracePeriodInCourse1.getId(),"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "                Const.ParamsNames.INTENT, Intent.INSTRUCTOR_SUBMISSION.toString(),"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        };"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        assertThrows(UnauthorizedAccessException.class, () -\u003e {"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "            FeedbackResponseCreateRequest createRequest \u003d getResponseRequest(instructor1OfCourse2.getEmail());"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "            getAction(createRequest, invalidRecipientForInstructor).checkAccessControl();"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        });"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    private FeedbackResponseCreateRequest getResponseRequest(String recipientEmail) {"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseCreateRequest createRequest \u003d new FeedbackResponseCreateRequest();"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        createRequest.setQuestionType(FeedbackQuestionType.TEXT);"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        createRequest.setRecipientIdentifier(recipientEmail);"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        FeedbackResponseDetails responseDetails \u003d new FeedbackTextResponseDetails(\"This is the text\");"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        createRequest.setResponseDetails(responseDetails);"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "        return createRequest;"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "Pengyuz"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Pengyuz": 201,
+      "-": 33
     }
   },
   {

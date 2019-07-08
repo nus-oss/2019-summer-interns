@@ -129,22 +129,35 @@
             "deletions": 295
           }
         ]
+      },
+      {
+        "insertions": 340,
+        "deletions": 44,
+        "date": "2019-07-07",
+        "commitResults": [
+          {
+            "hash": "c9f6741cc8b16e6f8ec3b27f22938e135a2e908a",
+            "message": "#1938 explanation items copy default settings (#1939)",
+            "insertions": 340,
+            "deletions": 44
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 1796
+    "yuhongherald": 2124
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 1796
+      "cs": 2124
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 52977.812
+    "yuhongherald": 51250.586
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
