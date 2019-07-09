@@ -142,22 +142,41 @@
             "deletions": 44
           }
         ]
+      },
+      {
+        "insertions": 90,
+        "deletions": 90,
+        "date": "2019-07-08",
+        "commitResults": [
+          {
+            "hash": "552a746a637179697f3179c56c7f41d626925437",
+            "message": "refactor resource file names (#1956)",
+            "insertions": 30,
+            "deletions": 30
+          },
+          {
+            "hash": "c4b651ea1a19d1f8d10e65bebc036c0f4a05f79b",
+            "message": "#1469 standardize english in code base (#1955)",
+            "insertions": 60,
+            "deletions": 60
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 2124
+    "yuhongherald": 2200
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 2124
+      "cs": 2200
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 51250.586
+    "yuhongherald": 50586.016
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
