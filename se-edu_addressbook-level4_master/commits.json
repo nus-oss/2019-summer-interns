@@ -1,22 +1,54 @@
 {
   "authorDailyContributionsMap": {
-    "Jeffry Lum": []
+    "Jeffry Lum": [
+      {
+        "insertions": 332,
+        "deletions": 261,
+        "date": "2019-07-09",
+        "commitResults": [
+          {
+            "hash": "9ab83e3b026deeb06672a2a964ba6e7057264f03",
+            "message": "Extract section on setting up into a separate document",
+            "insertions": 90,
+            "deletions": 74
+          },
+          {
+            "hash": "e80a0b64f66bfd2257b251187c1817783d337df7",
+            "message": "Extract section on documentation into a separate document",
+            "insertions": 122,
+            "deletions": 102
+          },
+          {
+            "hash": "0a29ea77dfbc0cb89fe896bee237d81fc72e86e9",
+            "message": "Extract section on testing into a separate document",
+            "insertions": 71,
+            "deletions": 54
+          },
+          {
+            "hash": "02f0a599cc6948dba3a697101d0a895c80b46ddc",
+            "message": "Extract section on dev ops into a separate document",
+            "insertions": 49,
+            "deletions": 31
+          }
+        ]
+      }
+    ]
   },
   "authorFinalContributionMap": {
-    "Jeffry Lum": 0
+    "Jeffry Lum": 331
   },
   "authorFileFormatContributionMap": {
     "Jeffry Lum": {
       "java": 0,
       "js": 0,
       "css": 0,
-      "adoc": 0,
+      "adoc": 331,
       "fxml": 0,
       "gradle": 0
     }
   },
   "authorContributionVariance": {
-    "Jeffry Lum": 0.0
+    "Jeffry Lum": 5958.381
   },
   "authorDisplayNameMap": {
     "Jeffry Lum": "Jeffry"
