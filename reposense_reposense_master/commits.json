@@ -312,12 +312,25 @@
             "deletions": 72
           }
         ]
+      },
+      {
+        "insertions": 29,
+        "deletions": 7,
+        "date": "2019-07-10",
+        "commitResults": [
+          {
+            "hash": "e3dc5d13cd231f26062bcc9fd5cf22ffaed32b9d",
+            "message": "[#748] Restore authorship tab (#749)",
+            "insertions": 29,
+            "deletions": 7
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 337,
-    "jamessspanggg": 259
+    "jamessspanggg": 285
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -333,7 +346,7 @@
     },
     "jamessspanggg": {
       "java": 38,
-      "js": 100,
+      "js": 126,
       "scss": 66,
       "json": 0,
       "md": 1,
@@ -344,8 +357,8 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 1635.004,
-    "jamessspanggg": 676.83594
+    "jylee-git": 1477.0266,
+    "jamessspanggg": 627.9713
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

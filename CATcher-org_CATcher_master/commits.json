@@ -423,6 +423,19 @@
             "deletions": 587
           }
         ]
+      },
+      {
+        "insertions": 193,
+        "deletions": 112,
+        "date": "2019-07-10",
+        "commitResults": [
+          {
+            "hash": "0a82be674a4a9cd6fa721ff58b103a96dc1296f3",
+            "message": "Remote Phase Determination (#102)",
+            "insertions": 193,
+            "deletions": 112
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1295,12 +1308,25 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 317,
+        "deletions": 323,
+        "date": "2019-07-10",
+        "commitResults": [
+          {
+            "hash": "2fb8b1880fb2b7103eac5072758bfc62411ce16e",
+            "message": "Extract \"View Issue\" from phase folder (#121)",
+            "insertions": 317,
+            "deletions": 323
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 1246,
-    "KevinCJH": 718
+    "ptvrajsk": 1408,
+    "KevinCJH": 966
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1310,8 +1336,8 @@
       "md": 4,
       "py": 0,
       "tag": 0,
-      "html": 198,
-      "ts": 1044
+      "html": 208,
+      "ts": 1196
     },
     "KevinCJH": {
       "java": 0,
@@ -1320,13 +1346,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 73,
-      "ts": 645
+      "html": 173,
+      "ts": 793
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 21599.215,
-    "KevinCJH": 10482.015
+    "ptvrajsk": 21979.254,
+    "KevinCJH": 15791.453
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

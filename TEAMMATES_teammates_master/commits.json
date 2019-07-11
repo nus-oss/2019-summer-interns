@@ -161,6 +161,19 @@
             "deletions": 7
           }
         ]
+      },
+      {
+        "insertions": 10,
+        "deletions": 8,
+        "date": "2019-07-10",
+        "commitResults": [
+          {
+            "hash": "79f429f6fcc65b744cc7dd5e832212ae743b2e1c",
+            "message": "[#9675] Cannot archive courses in the instructor home page (#9815)",
+            "insertions": 10,
+            "deletions": 8
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -239,6 +252,19 @@
             "message": "[#9595] Add tests for POST /response (#9733)",
             "insertions": 213,
             "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 57,
+        "deletions": 0,
+        "date": "2019-07-10",
+        "commitResults": [
+          {
+            "hash": "b987a188b2298130424efd046d7985c44b080a15",
+            "message": "[#9382] Add test cases for question-text-with-info component (#9749)",
+            "insertions": 57,
+            "deletions": 0
           }
         ]
       }
@@ -352,13 +378,26 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 162,
+        "deletions": 19,
+        "date": "2019-07-10",
+        "commitResults": [
+          {
+            "hash": "8c20e258a41d43c12ef59c46b49fbf5753561421",
+            "message": "[#9595] Add tests for GET /auth (#9731)",
+            "insertions": 162,
+            "deletions": 19
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 789,
-    "Pengyuz": 514,
-    "crizyli": 937
+    "erjillsison": 795,
+    "Pengyuz": 571,
+    "crizyli": 1095
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
@@ -369,7 +408,7 @@
       "py": 0,
       "tag": 0,
       "html": 65,
-      "ts": 429
+      "ts": 435
     },
     "Pengyuz": {
       "java": 444,
@@ -379,23 +418,23 @@
       "py": 0,
       "tag": 0,
       "html": 2,
-      "ts": 68
+      "ts": 125
     },
     "crizyli": {
-      "java": 237,
+      "java": 399,
       "js": 0,
       "scss": 3,
       "md": 0,
       "py": 0,
       "tag": 0,
       "html": 95,
-      "ts": 602
+      "ts": 598
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 4179.392,
-    "Pengyuz": 1768.8723,
-    "crizyli": 29588.691
+    "erjillsison": 3979.9521,
+    "Pengyuz": 1720.1292,
+    "crizyli": 28505.502
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",
