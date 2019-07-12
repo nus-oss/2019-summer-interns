@@ -161,22 +161,53 @@
             "deletions": 60
           }
         ]
+      },
+      {
+        "insertions": 1007,
+        "deletions": 150,
+        "date": "2019-07-11",
+        "commitResults": [
+          {
+            "hash": "8612aad0e4273b0ca6a79b908ccdc04b3ab3eefb",
+            "message": "#1835 use item source to reduce code duplication (#1952)",
+            "insertions": 12,
+            "deletions": 71
+          },
+          {
+            "hash": "18f28a1970b40741bbe8fe6a893f6f150b9de6c1",
+            "message": "#1963 zoom lab buttons greyed out depsite rectangle selected (#1964)",
+            "insertions": 51,
+            "deletions": 5
+          },
+          {
+            "hash": "68439e981c4b8e5848838d8439370eacfe0f0962",
+            "message": "#1525 Testing implement wpf control handles (#1925)",
+            "insertions": 916,
+            "deletions": 51
+          },
+          {
+            "hash": "b110b25df634d6c7c02c0476d94e4cf24a931649",
+            "message": "#1935 create self explanation test passes despite showing diffe… (#1936)",
+            "insertions": 28,
+            "deletions": 23
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 2200
+    "yuhongherald": 3199
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 2200
+      "cs": 3199
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 50586.016
+    "yuhongherald": 67803.13
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
