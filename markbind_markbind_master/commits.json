@@ -88,6 +88,19 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 0,
+        "date": "2019-07-13",
+        "commitResults": [
+          {
+            "hash": "0bf8891a66f1960a196c6452e12ee5ca0df501c8",
+            "message": "Fix bug in syntax/footnotes.mbdf (#911)",
+            "insertions": 1,
+            "deletions": 0
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -241,11 +254,24 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 12,
+        "deletions": 12,
+        "date": "2019-07-13",
+        "commitResults": [
+          {
+            "hash": "409dcbe9146371b4c128ec73f4b23b4989226675",
+            "message": "Fixed puml diagrams for user guide (#917)",
+            "insertions": 12,
+            "deletions": 12
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 577,
+    "openorclose": 578,
     "alyip98": 657
   },
   "authorFileFormatContributionMap": {
@@ -256,7 +282,7 @@
       "json": 1,
       "md": 21,
       "mbd": 0,
-      "mbdf": 87,
+      "mbdf": 88,
       "njk": 0,
       "py": 0,
       "yml": 0
@@ -275,8 +301,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 5594.572,
-    "alyip98": 4012.8784
+    "openorclose": 4278.537,
+    "alyip98": 3108.8284
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",

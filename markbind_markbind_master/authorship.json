@@ -5405,7 +5405,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/sequence.puml\" width\u003d300/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/sequence.png\" width\u003d\"300\" /\u003e"
       },
       {
         "lineNumber": 69,
@@ -5496,7 +5496,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/sequence.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/sequence.png\" /\u003e"
       },
       {
         "lineNumber": 82,
@@ -5517,7 +5517,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/usecase.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/usecase.png\" /\u003e"
       },
       {
         "lineNumber": 85,
@@ -5538,7 +5538,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/class.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/class.png\" /\u003e"
       },
       {
         "lineNumber": 88,
@@ -5559,7 +5559,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/activity.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/activity.png\" /\u003e"
       },
       {
         "lineNumber": 91,
@@ -5580,7 +5580,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/component.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/component.png\" /\u003e"
       },
       {
         "lineNumber": 94,
@@ -5601,7 +5601,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/state.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/state.png\" /\u003e"
       },
       {
         "lineNumber": 97,
@@ -5622,7 +5622,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/object.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/object.png\" /\u003e"
       },
       {
         "lineNumber": 100,
@@ -5643,7 +5643,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/gantt.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/gantt.png\" /\u003e"
       },
       {
         "lineNumber": 103,
@@ -5664,7 +5664,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/entityrelation.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/entityrelation.png\" /\u003e"
       },
       {
         "lineNumber": 106,
@@ -5685,7 +5685,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/ditaa.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/ditaa.png\" /\u003e"
       },
       {
         "lineNumber": 109,
@@ -5706,7 +5706,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "\u003cpuml src\u003d\"diagrams/archimate.puml\"/\u003e"
+        "content": "\u003cpic src\u003d\"diagrams/archimate.png\" /\u003e"
       },
       {
         "lineNumber": 112,
@@ -7074,94 +7074,101 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "```html"
+        "content": ""
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "**Normal footnotes:**"
+        "content": "```html"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
+        "content": "**Normal footnotes:**"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
+        "content": ""
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^longnote]: Here\u0027s one with multiple blocks."
+        "content": ""
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    Subsequent paragraphs are indented to show that they"
+        "content": "[^longnote]: Here\u0027s one with multiple blocks."
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "belong to the previous footnote."
+        "content": "    Subsequent paragraphs are indented to show that they"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "```"
+        "content": "belong to the previous footnote."
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003c/span\u003e"
+        "content": "```"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003cspan id\u003d\"examples\" class\u003d\"d-none\"\u003e"
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "This is not updated"
+        "content": "\u003cspan id\u003d\"examples\" class\u003d\"d-none\"\u003e"
       },
       {
         "lineNumber": 59,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "This is not updated"
+      },
+      {
+        "lineNumber": 60,
         "author": {
           "gitId": "openorclose"
         },
@@ -7169,7 +7176,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 59
+      "openorclose": 60
     }
   },
   {

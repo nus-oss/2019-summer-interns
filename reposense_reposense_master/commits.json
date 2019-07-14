@@ -104,6 +104,19 @@
             "deletions": 7
           }
         ]
+      },
+      {
+        "insertions": 206,
+        "deletions": 55,
+        "date": "2019-07-13",
+        "commitResults": [
+          {
+            "hash": "784d4c3a60bbe4547cf5328febc58a3197aaae66",
+            "message": "[#567] Report#Zip: remove unrelated files and folders (#656)",
+            "insertions": 206,
+            "deletions": 55
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -329,15 +342,15 @@
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 337,
+    "jylee-git": 540,
     "jamessspanggg": 285
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 284,
+      "java": 376,
       "js": 20,
       "scss": 0,
-      "json": 0,
+      "json": 111,
       "md": 30,
       "py": 0,
       "jade": 0,
@@ -357,8 +370,8 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 1477.0266,
-    "jamessspanggg": 627.9713
+    "jylee-git": 2421.3577,
+    "jamessspanggg": 602.03516
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
