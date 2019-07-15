@@ -18088,229 +18088,54 @@
       {
         "lineNumber": 27,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        \u003cmat-form-field class\u003d\"left-half\"\u003e"
+        "content": "        \u003capp-label-dropdown initialValue\u003d\"\" attributeName\u003d\"severity\" [dropdownForm]\u003d\"newIssueForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          \u003cmat-select formControlName\u003d\"severity\" placeholder\u003d\"Severity\""
+        "content": "        \u003capp-label-dropdown initialValue\u003d\"\" attributeName\u003d\"type\" [dropdownForm]\u003d\"newIssueForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
         "lineNumber": 29,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          (selectionChange)\u003d\"setSelectedLabelColor($event.value, \u0027severity\u0027)\" "
-      },
-      {
-        "lineNumber": 30,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          [ngStyle]\u003d\"this.labelService.setLabelStyle(this.selectedSeverityColor)\"\u003e"
-      },
-      {
-        "lineNumber": 31,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of severityValues\" [value]\u003d\"value.labelValue\""
-      },
-      {
-        "lineNumber": 32,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            [ngStyle]\u003d\"this.labelService.setLabelStyle(value.labelColor)\"\u003e"
-      },
-      {
-        "lineNumber": 33,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "              {{value.labelValue}}"
-      },
-      {
-        "lineNumber": 34,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            \u003c/mat-option\u003e"
-      },
-      {
-        "lineNumber": 35,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-select\u003e"
-      },
-      {
-        "lineNumber": 36,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-error *ngIf\u003d\"severity.errors \u0026\u0026 severity.errors[\u0027required\u0027] \u0026\u0026 severity.touched\"\u003e"
-      },
-      {
-        "lineNumber": 37,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            Severity required."
-      },
-      {
-        "lineNumber": 38,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-error\u003e"
-      },
-      {
-        "lineNumber": 39,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003c/mat-form-field\u003e"
-      },
-      {
-        "lineNumber": 40,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 41,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003cmat-form-field class\u003d\"right-half\"\u003e"
-      },
-      {
-        "lineNumber": 42,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          \u003cmat-select formControlName\u003d\"type\" placeholder\u003d\"Type\""
-      },
-      {
-        "lineNumber": 43,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          (selectionChange)\u003d\"setSelectedLabelColor($event.value, \u0027type\u0027)\" "
-      },
-      {
-        "lineNumber": 44,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          [ngStyle]\u003d\"this.labelService.setLabelStyle(this.selectedTypeColor)\"\u003e"
-      },
-      {
-        "lineNumber": 45,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of issueTypeValues\" [value]\u003d\"value.labelValue\""
-      },
-      {
-        "lineNumber": 46,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            [ngStyle]\u003d\"this.labelService.setLabelStyle(value.labelColor)\"\u003e"
-      },
-      {
-        "lineNumber": 47,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "              {{value.labelValue}}"
-      },
-      {
-        "lineNumber": 48,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            \u003c/mat-option\u003e"
-      },
-      {
-        "lineNumber": 49,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-select\u003e"
-      },
-      {
-        "lineNumber": 50,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-error *ngIf\u003d\"type.errors \u0026\u0026 type.errors[\u0027required\u0027] \u0026\u0026 type.touched\"\u003e"
-      },
-      {
-        "lineNumber": 51,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            Type required."
-      },
-      {
-        "lineNumber": 52,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-error\u003e"
-      },
-      {
-        "lineNumber": 53,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003c/mat-form-field\u003e"
-      },
-      {
-        "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
         "content": "      \u003c/div\u003e"
       },
       {
-        "lineNumber": 55,
+        "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 56,
+        "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
         "content": "    \u003c/div\u003e"
       },
       {
-        "lineNumber": 57,
+        "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 58,
+        "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003c/div\u003e"
       },
       {
-        "lineNumber": 59,
+        "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
@@ -18318,8 +18143,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 26,
-      "-": 33
+      "KevinCJH": 16,
+      "-": 18
     }
   },
   {
@@ -18433,37 +18258,37 @@
       {
         "lineNumber": 16,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "  severityValues \u003d this.labelService.getLabelList(\u0027severity\u0027);"
+        "content": "  isFormPending \u003d false;"
       },
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "  issueTypeValues \u003d this.labelService.getLabelList(\u0027type\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": "  isFormPending \u003d false;"
+        "content": "  constructor(private issueService: IssueService, private formBuilder: FormBuilder,"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  selectedSeverityColor: string;"
+        "content": "              private errorHandlingService: ErrorHandlingService, public labelService: LabelService,"
       },
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "  selectedTypeColor: string;"
+        "content": "              private router: Router) { }"
       },
       {
         "lineNumber": 21,
@@ -18477,416 +18302,297 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  constructor(private issueService: IssueService, private formBuilder: FormBuilder,"
-      },
-      {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "              private errorHandlingService: ErrorHandlingService, public labelService: LabelService,"
-      },
-      {
-        "lineNumber": 24,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              private router: Router) { }"
-      },
-      {
-        "lineNumber": 25,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 26,
-        "author": {
-          "gitId": "-"
-        },
         "content": "  ngOnInit() {"
       },
       {
-        "lineNumber": 27,
+        "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
         "content": "    this.newIssueForm \u003d this.formBuilder.group({"
       },
       {
-        "lineNumber": 28,
+        "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
         "content": "      title: [\u0027\u0027, Validators.required],"
       },
       {
-        "lineNumber": 29,
+        "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
         "content": "      description: [\u0027\u0027, Validators.required],"
       },
       {
-        "lineNumber": 30,
+        "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
         "content": "      severity: [\u0027\u0027, Validators.required],"
       },
       {
-        "lineNumber": 31,
+        "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
         "content": "      type: [\u0027\u0027, Validators.required],"
       },
       {
-        "lineNumber": 32,
+        "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
         "content": "    });"
       },
       {
-        "lineNumber": 33,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    this.selectedSeverityColor \u003d this.labelService.getColorOfLabel(\u0027\u0027);"
-      },
-      {
-        "lineNumber": 34,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    this.selectedTypeColor \u003d this.labelService.getColorOfLabel(\u0027\u0027);"
-      },
-      {
-        "lineNumber": 35,
+        "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 36,
+        "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 37,
+        "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
         "content": "  submitNewIssue(form: NgForm) {"
       },
       {
-        "lineNumber": 38,
+        "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
         "content": "    if (this.newIssueForm.invalid) {"
       },
       {
-        "lineNumber": 39,
+        "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
         "content": "      return;"
       },
       {
-        "lineNumber": 40,
+        "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 41,
+        "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
         "content": "    this.isFormPending \u003d true;"
       },
       {
-        "lineNumber": 42,
+        "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
         "content": "    this.issueService.createIssue(this.title.value, this.description.value,"
       },
       {
-        "lineNumber": 43,
+        "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
         "content": "      this.severity.value, this.type.value).pipe(finalize(() \u003d\u003e this.isFormPending \u003d false))"
       },
       {
-        "lineNumber": 44,
+        "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
         "content": "      .subscribe("
       },
       {
-        "lineNumber": 45,
+        "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
         "content": "        newIssue \u003d\u003e {"
       },
       {
-        "lineNumber": 46,
+        "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
         "content": "          this.issueService.updateLocalStore(newIssue);"
       },
       {
-        "lineNumber": 47,
+        "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
         "content": "          this.router.navigateByUrl(`phase1/issues/${newIssue.id}`);"
       },
       {
-        "lineNumber": 48,
+        "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
         "content": "          form.resetForm();"
       },
       {
-        "lineNumber": 49,
+        "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
         "content": "          },"
       },
       {
-        "lineNumber": 50,
+        "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
         "content": "          error \u003d\u003e {"
       },
       {
-        "lineNumber": 51,
+        "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
         "content": "          this.errorHandlingService.handleHttpError(error);"
       },
       {
-        "lineNumber": 52,
+        "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
         "content": "        });"
       },
       {
-        "lineNumber": 53,
+        "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 54,
+        "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  setSelectedLabelColor(labelValue: string, labelType: string) {"
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    switch (labelType) {"
-      },
-      {
-        "lineNumber": 57,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      case \u0027severity\u0027:"
-      },
-      {
-        "lineNumber": 58,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        this.selectedSeverityColor \u003d this.labelService.getColorOfLabel(labelValue);"
-      },
-      {
-        "lineNumber": 59,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        break;"
-      },
-      {
-        "lineNumber": 60,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      case \u0027type\u0027:"
-      },
-      {
-        "lineNumber": 61,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        this.selectedTypeColor \u003d this.labelService.getColorOfLabel(labelValue);"
-      },
-      {
-        "lineNumber": 62,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        break;"
-      },
-      {
-        "lineNumber": 63,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 64,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 65,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 66,
+        "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
         "content": "  get title() {"
       },
       {
-        "lineNumber": 67,
+        "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newIssueForm.get(\u0027title\u0027);"
       },
       {
-        "lineNumber": 68,
+        "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 70,
+        "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
         "content": "  get description() {"
       },
       {
-        "lineNumber": 71,
+        "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newIssueForm.get(\u0027description\u0027);"
       },
       {
-        "lineNumber": 72,
+        "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 73,
+        "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 74,
+        "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
         "content": "  get severity() {"
       },
       {
-        "lineNumber": 75,
+        "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newIssueForm.get(\u0027severity\u0027);"
       },
       {
-        "lineNumber": 76,
+        "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 77,
+        "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 78,
+        "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
         "content": "  get type() {"
       },
       {
-        "lineNumber": 79,
+        "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newIssueForm.get(\u0027type\u0027);"
       },
       {
-        "lineNumber": 80,
+        "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 81,
+        "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
@@ -18894,7 +18600,7 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 19,
+      "KevinCJH": 2,
       "-": 62
     }
   },
@@ -19384,124 +19090,138 @@
       {
         "lineNumber": 13,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "import { LabelDropdownModule } from \u0027../shared/label-dropdown/label-dropdown.module\u0027;"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
-        "content": "@NgModule({"
+        "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
-        "content": "  imports: ["
+        "content": "@NgModule({"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
-        "content": "    Phase1RoutingModule,"
+        "content": "  imports: ["
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "-"
         },
-        "content": "    SharedModule,"
+        "content": "    Phase1RoutingModule,"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": "    IssueComponentsModule,"
+        "content": "    SharedModule,"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "    CommentEditorModule,"
+        "content": "    IssueComponentsModule,"
       },
       {
         "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    CommentEditorModule,"
+      },
+      {
+        "lineNumber": 21,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    ViewIssueModule,"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
         "content": "    MarkdownModule.forChild(),"
       },
       {
-        "lineNumber": 22,
+        "lineNumber": 23,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    IssueTablesModule,"
       },
       {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  ],"
-      },
-      {
         "lineNumber": 24,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "  declarations: ["
+        "content": "    LabelDropdownModule"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "    Phase1Component,"
+        "content": "  ],"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "    NewIssueComponent,"
+        "content": "  declarations: ["
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "    IssueComponent,"
+        "content": "    Phase1Component,"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "  ],"
+        "content": "    NewIssueComponent,"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "})"
+        "content": "    IssueComponent,"
       },
       {
         "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  ],"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "})"
+      },
+      {
+        "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
@@ -19510,7 +19230,7 @@
     ],
     "authorContributionMap": {
       "ptvrajsk": 2,
-      "KevinCJH": 2,
+      "KevinCJH": 4,
       "-": 26
     }
   },
@@ -28459,6 +28179,527 @@
     }
   },
   {
+    "path": "src/app/shared/label-dropdown/label-dropdown.component.html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "\u003cform [formGroup]\u003d\"dropdownForm\"\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  \u003cmat-form-field style\u003d\"width: 100%;\"\u003e"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003cmat-select [ngClass]\u003d\"dropdownTextColor\" formControlName\u003d\"{{attributeName}}\" placeholder\u003d\"{{this.labelService.getLabelTitle(attributeName)}}\""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      (selectionChange)\u003d\"setSelectedLabelColor($event.value)\" [ngStyle]\u003d\"this.labelService.setLabelStyle(this.selectedColor)\"\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u003cmat-select-trigger\u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        {{dropdownControl.value}}"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u003c/mat-select-trigger\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u003cmat-option *ngFor\u003d\"let value of labelList\" [value]\u003d\"value.labelValue\"\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        \u003cmat-icon [ngStyle]\u003d\"{\u0027color\u0027: \u0027#\u0027 + value.labelColor}\"\u003estop\u003c/mat-icon\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        \u003cspan\u003e {{value.labelValue}}\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u003c/mat-option\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003c/mat-select\u003e"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003cmat-error *ngIf\u003d\"dropdownControl.errors \u0026\u0026 dropdownControl.errors[\u0027required\u0027] \u0026\u0026 dropdownControl.touched\"\u003e"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      {{this.labelService.getLabelTitle(attributeName)}} required."
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003c/mat-error\u003e"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  \u003c/mat-form-field\u003e"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "\u003c/form\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "KevinCJH": 17
+    }
+  },
+  {
+    "path": "src/app/shared/label-dropdown/label-dropdown.component.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { Component, OnInit, Input } from \u0027@angular/core\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { LabelService } from \u0027../../core/services/label.service\u0027;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { FormGroup, AbstractControl } from \u0027@angular/forms\u0027;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { Label } from \u0027../../core/models/label.model\u0027;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "@Component({"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  selector: \u0027app-label-dropdown\u0027,"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  templateUrl: \u0027./label-dropdown.component.html\u0027,"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  styleUrls: [\u0027./label-dropdown.component.css\u0027]"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "})"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export class LabelDropdownComponent implements OnInit {"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  dropdownControl: AbstractControl;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  @Input() attributeName: string;"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  @Input() initialValue: string;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  @Input() dropdownForm: FormGroup;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  selectedColor: string;"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  labelList: Label[];"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  constructor(private labelService: LabelService) { }"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  ngOnInit() {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.selectedColor \u003d this.labelService.getColorOfLabel(this.initialValue);"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.labelList \u003d this.labelService.getLabelList(this.attributeName);"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.dropdownControl \u003d this.dropdownForm.get(this.attributeName);"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  setSelectedLabelColor(labelValue: string) {"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.selectedColor \u003d this.labelService.getColorOfLabel(labelValue);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  get dropdownTextColor(): string {"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    return this.labelService.isDarkColor(this.selectedColor) ? \u0027white-text\u0027 : \u0027black-text\u0027;"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "KevinCJH": 36
+    }
+  },
+  {
+    "path": "src/app/shared/label-dropdown/label-dropdown.module.ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { NgModule } from \u0027@angular/core\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { CommonModule } from \u0027@angular/common\u0027;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { LabelDropdownComponent } from \u0027./label-dropdown.component\u0027;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "import { SharedModule } from \u0027../shared.module\u0027;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "@NgModule({"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  declarations: ["
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    LabelDropdownComponent"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  ],"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  imports: ["
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    CommonModule,"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    SharedModule"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  ],"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  exports: ["
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    LabelDropdownComponent"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  ]"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "})"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "export class LabelDropdownModule { }"
+      }
+    ],
+    "authorContributionMap": {
+      "KevinCJH": 18
+    }
+  },
+  {
     "path": "src/app/shared/layout/header.component.html",
     "lines": [
       {
@@ -29725,605 +29966,395 @@
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    \u003c/div\u003e"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cdiv style\u003d\"float: right;\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cbutton type\u003d\"submit\" style\u003d\"margin-left: 10px\" [disabled]\u003d\"newTeamResponseForm.invalid || isFormPending\" mat-button color\u003d\"primary\"\u003eSubmit\u003c/button\u003e"
+        "content": "    \u003cdiv\u003e"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003c/div\u003e"
+        "content": "      \u003cdiv class\u003d\"container\"\u003e"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003c/div\u003e"
+        "content": "        \u003cdiv\u003e"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "          \u003cmat-checkbox style\u003d\"display: inline-block; width: 20%\" formControlName\u003d\"duplicated\" (change)\u003d\"handleChangeOfDuplicateCheckbox($event)\"\u003e"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003cdiv\u003e"
+        "content": "            Duplicated Issue"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cdiv class\u003d\"container\"\u003e"
+        "content": "          \u003c/mat-checkbox\u003e"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cdiv\u003e"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-checkbox style\u003d\"display: inline-block; width: 20%\" formControlName\u003d\"duplicated\" (change)\u003d\"handleChangeOfDuplicateCheckbox($event)\"\u003e"
+        "content": "          \u003cmat-form-field [style.visibility]\u003d\"!duplicated.value ? \u0027hidden\u0027 : \u0027visible\u0027\" style\u003d\"display: inline-block; width: 50%\"\u003e"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
-        "content": "            Duplicated Issue"
+        "content": "            \u003cmat-select formControlName\u003d\"duplicateOf\" placeholder\u003d\"Duplicate of\"\u003e"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-checkbox\u003e"
+        "content": "              \u003cmat-option *ngFor\u003d\"let issue of duplicatedIssueList | async\" [disabled]\u003d\"dupIssueOptionIsDisabled(issue)\" [value]\u003d\"issue.id\"\u003e"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                \u003cspan class\u003d\"mat-body-strong\"\u003e #{{issue.id}}: \u003c/span\u003e  \u003cspan class\u003d\"mat-body\"\u003e{{issue.title}}\u003c/span\u003e"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-form-field [style.visibility]\u003d\"!duplicated.value ? \u0027hidden\u0027 : \u0027visible\u0027\" style\u003d\"display: inline-block; width: 50%\"\u003e"
+        "content": "                \u003cspan *ngIf\u003d\"dupIssueOptionIsDisabled(issue)\" class\u003d\"mat-caption\" style\u003d\"color: #f44336\"\u003e ({{getDisabledDupOptionErrorText(issue)}}) \u003c/span\u003e"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cmat-select formControlName\u003d\"duplicateOf\" placeholder\u003d\"Duplicate of\"\u003e"
+        "content": "              \u003c/mat-option\u003e"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "              \u003cmat-option *ngFor\u003d\"let issue of duplicatedIssueList | async\" [disabled]\u003d\"dupIssueOptionIsDisabled(issue)\" [value]\u003d\"issue.id\"\u003e"
+        "content": "            \u003c/mat-select\u003e"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": "                \u003cspan class\u003d\"mat-body-strong\"\u003e #{{issue.id}}: \u003c/span\u003e  \u003cspan class\u003d\"mat-body\"\u003e{{issue.title}}\u003c/span\u003e"
+        "content": "            \u003cmat-error *ngIf\u003d\"duplicateOf.errors \u0026\u0026 duplicateOf.errors[\u0027required\u0027] \u0026\u0026 duplicateOf.touched\"\u003e"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "                \u003cspan *ngIf\u003d\"dupIssueOptionIsDisabled(issue)\" class\u003d\"mat-caption\" style\u003d\"color: #f44336\"\u003e ({{getDisabledDupOptionErrorText(issue)}}) \u003c/span\u003e"
+        "content": "              Need to specify the duplicated issue."
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "              \u003c/mat-option\u003e"
+        "content": "            \u003c/mat-error\u003e"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003c/mat-select\u003e"
+        "content": "          \u003c/mat-form-field\u003e"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cmat-error *ngIf\u003d\"duplicateOf.errors \u0026\u0026 duplicateOf.errors[\u0027required\u0027] \u0026\u0026 duplicateOf.touched\"\u003e"
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "              Need to specify the duplicated issue."
+        "content": "      \u003c/div\u003e"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003c/mat-error\u003e"
+        "content": ""
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-form-field\u003e"
+        "content": "      \u003cdiv class\u003d\"container\"\u003e"
       },
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        \u003c/div\u003e"
+        "content": "        \u003cdiv class\u003d\"left-half\"\u003e"
       },
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      \u003c/div\u003e"
+        "content": "          \u003capp-label-dropdown [initialValue]\u003d\"this.issue.severity\" attributeName\u003d\"severity\" [dropdownForm]\u003d\"newTeamResponseForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cdiv class\u003d\"container\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 33,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        \u003cmat-form-field class\u003d\"left-half\"\u003e"
+        "content": "        \u003cdiv class\u003d\"right-half\"\u003e"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          \u003cmat-select formControlName\u003d\"severity\" placeholder\u003d\"Severity\""
+        "content": "          \u003capp-label-dropdown [initialValue]\u003d\"this.issue.type\" attributeName\u003d\"type\" [dropdownForm]\u003d\"newTeamResponseForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          (selectionChange)\u003d\"setSelectedLabelColor($event.value, \u0027severity\u0027)\" "
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 36,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          [ngStyle]\u003d\"this.labelService.setLabelStyle(this.selectedSeverityColor)\"\u003e"
-      },
-      {
-        "lineNumber": 37,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of severityValues\" [value]\u003d\"value.labelValue\""
-      },
-      {
-        "lineNumber": 38,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            [ngStyle]\u003d\"this.labelService.setLabelStyle(value.labelColor)\"\u003e"
-      },
-      {
-        "lineNumber": 39,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "              {{value.labelValue}}"
-      },
-      {
-        "lineNumber": 40,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            \u003c/mat-option\u003e"
-      },
-      {
-        "lineNumber": 41,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-select\u003e"
-      },
-      {
-        "lineNumber": 42,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-error *ngIf\u003d\"severity.errors \u0026\u0026 severity.errors[\u0027required\u0027] \u0026\u0026 severity.touched\"\u003e"
-      },
-      {
-        "lineNumber": 43,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            Severity required."
-      },
-      {
-        "lineNumber": 44,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-error\u003e"
-      },
-      {
-        "lineNumber": 45,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003c/mat-form-field\u003e"
-      },
-      {
-        "lineNumber": 46,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 47,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003cmat-form-field class\u003d\"right-half\"\u003e"
-      },
-      {
-        "lineNumber": 48,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          \u003cmat-select formControlName\u003d\"type\" placeholder\u003d\"Type\""
-      },
-      {
-        "lineNumber": 49,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          (selectionChange)\u003d\"setSelectedLabelColor($event.value, \u0027type\u0027)\" "
-      },
-      {
-        "lineNumber": 50,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "          [ngStyle]\u003d\"this.labelService.setLabelStyle(this.selectedTypeColor)\"\u003e"
-      },
-      {
-        "lineNumber": 51,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of issueTypeValues\" [value]\u003d\"value.labelValue\""
-      },
-      {
-        "lineNumber": 52,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            [ngStyle]\u003d\"this.labelService.setLabelStyle(value.labelColor)\"\u003e"
-      },
-      {
-        "lineNumber": 53,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "              {{value.labelValue}}"
-      },
-      {
-        "lineNumber": 54,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            \u003c/mat-option\u003e"
-      },
-      {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-select\u003e"
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-error *ngIf\u003d\"type.errors \u0026\u0026 type.errors[\u0027required\u0027] \u0026\u0026 type.touched\"\u003e"
-      },
-      {
-        "lineNumber": 57,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            Type required."
-      },
-      {
-        "lineNumber": 58,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-error\u003e"
-      },
-      {
-        "lineNumber": 59,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003c/mat-form-field\u003e"
-      },
-      {
-        "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
         "content": "      \u003c/div\u003e"
       },
       {
-        "lineNumber": 61,
+        "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 62,
+        "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
         "content": "      \u003cdiv class\u003d\"container\" [style.display]\u003d\"duplicated.value ? \u0027none\u0027 : \u0027grid\u0027\"\u003e"
       },
       {
-        "lineNumber": 63,
+        "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
         "content": "        \u003cmat-form-field class\u003d\"left-half\"\u003e"
       },
       {
-        "lineNumber": 64,
+        "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
         "content": "          \u003cmat-select placeholder\u003d\"Assignees\" formControlName\u003d\"assignees\" multiple\u003e"
       },
       {
-        "lineNumber": 65,
+        "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
         "content": "            \u003cmat-option *ngFor\u003d\"let member of teamMembers\" [value]\u003d\"member\"\u003e{{member}}\u003c/mat-option\u003e"
       },
       {
-        "lineNumber": 66,
+        "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
         "content": "          \u003c/mat-select\u003e"
       },
       {
-        "lineNumber": 67,
+        "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
         "content": "          \u003cmat-error *ngIf\u003d\"assignees.errors \u0026\u0026 assignees.errors[\u0027required\u0027] \u0026\u0026 assignees.touched\"\u003e"
       },
       {
-        "lineNumber": 68,
+        "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
         "content": "            Assignee(s) required."
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
         "content": "          \u003c/mat-error\u003e"
       },
       {
-        "lineNumber": 70,
+        "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
         "content": "        \u003c/mat-form-field\u003e"
       },
       {
-        "lineNumber": 71,
+        "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003cmat-form-field class\u003d\"right-half\"\u003e"
-      },
-      {
-        "lineNumber": 73,
+        "lineNumber": 48,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          \u003cmat-select formControlName\u003d\"responseTag\" placeholder\u003d\"Response\""
+        "content": "        \u003cdiv class\u003d\"right-half\"\u003e"
       },
       {
-        "lineNumber": 74,
+        "lineNumber": 49,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          (selectionChange)\u003d\"setSelectedLabelColor($event.value, \u0027responseTag\u0027)\" "
+        "content": "          \u003capp-label-dropdown [initialValue]\u003d\"this.issue.responseTag\" attributeName\u003d\"responseTag\" [dropdownForm]\u003d\"newTeamResponseForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
-        "lineNumber": 75,
+        "lineNumber": 50,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          [ngStyle]\u003d\"this.labelService.setLabelStyle(this.selectedResponseColor)\"\u003e"
+        "content": "        \u003c/div\u003e"
       },
       {
-        "lineNumber": 76,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of responseList\" [value]\u003d\"value.labelValue\""
-      },
-      {
-        "lineNumber": 77,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "            [ngStyle]\u003d\"this.labelService.setLabelStyle(value.labelColor)\"\u003e"
-      },
-      {
-        "lineNumber": 78,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "              {{value.labelValue}}"
-      },
-      {
-        "lineNumber": 79,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            \u003c/mat-option\u003e"
-      },
-      {
-        "lineNumber": 80,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-select\u003e"
-      },
-      {
-        "lineNumber": 81,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-error *ngIf\u003d\"responseTag.errors \u0026\u0026 responseTag.errors[\u0027required\u0027] \u0026\u0026 responseTag.touched\"\u003e"
-      },
-      {
-        "lineNumber": 82,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            Response required."
-      },
-      {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-error\u003e"
-      },
-      {
-        "lineNumber": 84,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003c/mat-form-field\u003e"
-      },
-      {
-        "lineNumber": 85,
+        "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
         "content": "      \u003c/div\u003e"
       },
       {
-        "lineNumber": 86,
+        "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 87,
+        "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
         "content": "      \u003capp-comment-editor [commentField]\u003d\"newTeamResponseForm.get(\u0027description\u0027)\" [commentForm]\u003d\"newTeamResponseForm\"\u003e\u003c/app-comment-editor\u003e"
       },
       {
-        "lineNumber": 88,
+        "lineNumber": 54,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    "
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u003cdiv style\u003d\"float: right; padding: 5px;\"\u003e"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "        \u003cbutton type\u003d\"submit\" style\u003d\"margin-left: 10px\" [disabled]\u003d\"newTeamResponseForm.invalid || isFormPending\" mat-stroked-button color\u003d\"primary\"\u003eSubmit\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "      \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
         "content": "    \u003c/div\u003e"
       },
       {
-        "lineNumber": 89,
+        "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 90,
+        "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003c/div\u003e"
       },
       {
-        "lineNumber": 91,
+        "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
@@ -30331,8 +30362,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 19,
-      "-": 72
+      "KevinCJH": 14,
+      "-": 47
     }
   },
   {
@@ -30453,1041 +30484,880 @@
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  severityValues \u003d this.labelService.getLabelList(\u0027severity\u0027);"
-      },
-      {
-        "lineNumber": 18,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  issueTypeValues \u003d this.labelService.getLabelList(\u0027type\u0027);"
-      },
-      {
-        "lineNumber": 19,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  responseList \u003d this.labelService.getLabelList(\u0027responseTag\u0027);"
-      },
-      {
-        "lineNumber": 20,
-        "author": {
           "gitId": "-"
         },
         "content": "  teamMembers: string[];"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
         "content": "  duplicatedIssueList: Observable\u003cIssue[]\u003e;"
       },
       {
-        "lineNumber": 22,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  selectedSeverityColor: string;"
-      },
-      {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  selectedTypeColor: string;"
-      },
-      {
-        "lineNumber": 24,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  selectedResponseColor: string;"
-      },
-      {
-        "lineNumber": 25,
+        "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 26,
+        "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
         "content": "  isFormPending \u003d false;"
       },
       {
-        "lineNumber": 27,
+        "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
         "content": "  @Input() issue: Issue;"
       },
       {
-        "lineNumber": 28,
+        "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
         "content": "  @Output() issueUpdated \u003d new EventEmitter\u003cIssue\u003e();"
       },
       {
-        "lineNumber": 29,
+        "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 30,
+        "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
         "content": "  constructor(private issueService: IssueService,"
       },
       {
-        "lineNumber": 31,
+        "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
         "content": "              private formBuilder: FormBuilder,"
       },
       {
-        "lineNumber": 32,
+        "lineNumber": 26,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "              public labelService: LabelService,"
       },
       {
-        "lineNumber": 33,
+        "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
         "content": "              private errorHandlingService: ErrorHandlingService) { }"
       },
       {
-        "lineNumber": 34,
+        "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 35,
+        "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
         "content": "  ngOnInit() {"
       },
       {
-        "lineNumber": 36,
+        "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
         "content": "    this.teamMembers \u003d this.issue.teamAssigned.teamMembers.map((member) \u003d\u003e {"
       },
       {
-        "lineNumber": 37,
+        "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
         "content": "      return member.loginId;"
       },
       {
-        "lineNumber": 38,
+        "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
         "content": "    });"
       },
       {
-        "lineNumber": 39,
+        "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
         "content": "    this.duplicatedIssueList \u003d this.getDupIssueList();"
       },
       {
-        "lineNumber": 40,
+        "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
         "content": "    this.newTeamResponseForm \u003d this.formBuilder.group({"
       },
       {
-        "lineNumber": 41,
+        "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
         "content": "      description: [\u0027\u0027, Validators.required],"
       },
       {
-        "lineNumber": 42,
+        "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
         "content": "      severity: [this.issue.severity, Validators.required],"
       },
       {
-        "lineNumber": 43,
+        "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
         "content": "      type: [this.issue.type, Validators.required],"
       },
       {
-        "lineNumber": 44,
+        "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
         "content": "      responseTag: [this.issue.responseTag, Validators.required],"
       },
       {
-        "lineNumber": 45,
+        "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
         "content": "      assignees: [this.issue.assignees],"
       },
       {
-        "lineNumber": 46,
+        "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
         "content": "      duplicated: [false],"
       },
       {
-        "lineNumber": 47,
+        "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
         "content": "      duplicateOf: [\u0027\u0027]"
       },
       {
-        "lineNumber": 48,
+        "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
         "content": "    });"
       },
       {
-        "lineNumber": 49,
+        "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
         "content": "    this.duplicated.valueChanges.subscribe(checked \u003d\u003e {"
       },
       {
-        "lineNumber": 50,
+        "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
         "content": "      if (checked) {"
       },
       {
-        "lineNumber": 51,
+        "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
         "content": "        this.duplicateOf.setValidators(Validators.required);"
       },
       {
-        "lineNumber": 52,
+        "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
         "content": "        this.responseTag.setValidators(null);"
       },
       {
-        "lineNumber": 53,
+        "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
         "content": "      } else {"
       },
       {
-        "lineNumber": 54,
+        "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
         "content": "        this.duplicateOf.setValidators(null);"
       },
       {
-        "lineNumber": 55,
+        "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
         "content": "        this.responseTag.setValidators(Validators.required);"
       },
       {
-        "lineNumber": 56,
+        "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 57,
+        "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
         "content": "      this.duplicateOf.updateValueAndValidity();"
       },
       {
-        "lineNumber": 58,
+        "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
         "content": "      this.responseTag.updateValueAndValidity();"
       },
       {
-        "lineNumber": 59,
+        "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
         "content": "    });"
       },
       {
-        "lineNumber": 60,
+        "lineNumber": 54,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 61,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    this.selectedSeverityColor \u003d this.labelService.getColorOfLabel(this.issue.severity);"
-      },
-      {
-        "lineNumber": 62,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    this.selectedTypeColor \u003d this.labelService.getColorOfLabel(this.issue.type);"
-      },
-      {
-        "lineNumber": 63,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    this.selectedResponseColor \u003d this.labelService.getColorOfLabel(this.issue.responseTag);"
-      },
-      {
-        "lineNumber": 64,
+        "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 65,
+        "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 66,
+        "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
         "content": "  submitNewTeamResponse(form: NgForm) {"
       },
       {
-        "lineNumber": 67,
+        "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
         "content": "    if (this.newTeamResponseForm.invalid) {"
       },
       {
-        "lineNumber": 68,
+        "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
         "content": "      return;"
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 70,
+        "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
         "content": "    this.isFormPending \u003d true;"
       },
       {
-        "lineNumber": 71,
+        "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
         "content": "    this.issueService.updateIssue({"
       },
       {
-        "lineNumber": 72,
+        "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
         "content": "      ...this.issue,"
       },
       {
-        "lineNumber": 73,
+        "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
         "content": "      severity: this.severity.value,"
       },
       {
-        "lineNumber": 74,
+        "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
         "content": "      type: this.type.value,"
       },
       {
-        "lineNumber": 75,
+        "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
         "content": "      assignees: this.assignees.value,"
       },
       {
-        "lineNumber": 76,
+        "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
         "content": "      responseTag: this.responseTag.value,"
       },
       {
-        "lineNumber": 77,
+        "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
         "content": "      duplicated: this.duplicated.value,"
       },
       {
-        "lineNumber": 78,
+        "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
         "content": "      status: STATUS.Done,"
       },
       {
-        "lineNumber": 79,
+        "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
         "content": "      teamResponse: this.description.value,"
       },
       {
-        "lineNumber": 80,
+        "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
         "content": "      duplicateOf: this.duplicateOf.value,"
       },
       {
-        "lineNumber": 81,
+        "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
         "content": "    }).pipe(finalize(() \u003d\u003e this.isFormPending \u003d false)).subscribe((updatedIssue: Issue) \u003d\u003e {"
       },
       {
-        "lineNumber": 82,
+        "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
         "content": "      this.issueUpdated.emit(updatedIssue);"
       },
       {
-        "lineNumber": 83,
+        "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
         "content": "      form.resetForm();"
       },
       {
-        "lineNumber": 84,
+        "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
         "content": "    }, (error) \u003d\u003e {"
       },
       {
-        "lineNumber": 85,
+        "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
         "content": "      this.errorHandlingService.handleHttpError(error);"
       },
       {
-        "lineNumber": 86,
+        "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
         "content": "    });"
       },
       {
-        "lineNumber": 87,
+        "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 88,
+        "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 89,
+        "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
         "content": "  dupIssueOptionIsDisabled(issue: Issue): boolean {"
       },
       {
-        "lineNumber": 90,
+        "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
         "content": "    return SEVERITY_ORDER[this.severity.value] \u003e SEVERITY_ORDER[issue.severity] || (issue.duplicated || !!issue.duplicateOf);"
       },
       {
-        "lineNumber": 91,
+        "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 92,
+        "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 93,
+        "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
         "content": "  getDisabledDupOptionErrorText(issue: Issue): string {"
       },
       {
-        "lineNumber": 94,
+        "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
         "content": "    const reason \u003d new Array\u003cstring\u003e();"
       },
       {
-        "lineNumber": 95,
+        "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
         "content": "    if (this.dupIssueOptionIsDisabled(issue)) {"
       },
       {
-        "lineNumber": 96,
+        "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
         "content": "      if (SEVERITY_ORDER[this.severity.value] \u003e SEVERITY_ORDER[issue.severity]) {"
       },
       {
-        "lineNumber": 97,
+        "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
         "content": "        reason.push(\u0027Issue of lower priority\u0027);"
       },
       {
-        "lineNumber": 98,
+        "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
         "content": "      } else if (issue.duplicated || !!issue.duplicateOf) {"
       },
       {
-        "lineNumber": 99,
+        "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
         "content": "        reason.push(\u0027A duplicated issue\u0027);"
       },
       {
-        "lineNumber": 100,
+        "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 101,
+        "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 102,
+        "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
         "content": "    return reason.join(\u0027, \u0027);"
       },
       {
-        "lineNumber": 103,
+        "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 104,
+        "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 105,
+        "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
         "content": "  handleChangeOfDuplicateCheckbox(event) {"
       },
       {
-        "lineNumber": 106,
+        "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
         "content": "    if (event.checked) {"
       },
       {
-        "lineNumber": 107,
+        "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
         "content": "      this.responseTag.setValue(\u0027\u0027);"
       },
       {
-        "lineNumber": 108,
+        "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
         "content": "      this.assignees.setValue([]);"
       },
       {
-        "lineNumber": 109,
+        "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
         "content": "      this.responseTag.markAsUntouched();"
       },
       {
-        "lineNumber": 110,
+        "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
         "content": "    } else {"
       },
       {
-        "lineNumber": 111,
+        "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
         "content": "      this.duplicateOf.setValue(\u0027\u0027);"
       },
       {
-        "lineNumber": 112,
+        "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
         "content": "      this.duplicateOf.markAsUntouched();"
       },
       {
-        "lineNumber": 113,
+        "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 114,
+        "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 115,
+        "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 116,
+        "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
         "content": "  private getDupIssueList(): Observable\u003cIssue[]\u003e {"
       },
       {
-        "lineNumber": 117,
+        "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.issueService.issues$.pipe(map((issues) \u003d\u003e {"
       },
       {
-        "lineNumber": 118,
+        "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
         "content": "      return issues.filter((issue) \u003d\u003e {"
       },
       {
-        "lineNumber": 119,
+        "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
         "content": "        return this.issue.id !\u003d\u003d issue.id;"
       },
       {
-        "lineNumber": 120,
+        "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
         "content": "      });"
       },
       {
-        "lineNumber": 121,
+        "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
         "content": "    }));"
       },
       {
-        "lineNumber": 122,
+        "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 123,
+        "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 124,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  setSelectedLabelColor(labelValue: string, labelType: string) {"
-      },
-      {
-        "lineNumber": 125,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    switch (labelType) {"
-      },
-      {
-        "lineNumber": 126,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      case \u0027severity\u0027:"
-      },
-      {
-        "lineNumber": 127,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        this.selectedSeverityColor \u003d this.labelService.getColorOfLabel(labelValue);"
-      },
-      {
-        "lineNumber": 128,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        break;"
-      },
-      {
-        "lineNumber": 129,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      case \u0027type\u0027:"
-      },
-      {
-        "lineNumber": 130,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        this.selectedTypeColor \u003d this.labelService.getColorOfLabel(labelValue);"
-      },
-      {
-        "lineNumber": 131,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        break;"
-      },
-      {
-        "lineNumber": 132,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      case \u0027responseTag\u0027:"
-      },
-      {
-        "lineNumber": 133,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        this.selectedResponseColor \u003d this.labelService.getColorOfLabel(labelValue);"
-      },
-      {
-        "lineNumber": 134,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        break;"
-      },
-      {
-        "lineNumber": 135,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 136,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 137,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 138,
+        "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
         "content": "  get description() {"
       },
       {
-        "lineNumber": 139,
+        "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newTeamResponseForm.get(\u0027description\u0027);"
       },
       {
-        "lineNumber": 140,
+        "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 141,
+        "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 142,
+        "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
         "content": "  get severity() {"
       },
       {
-        "lineNumber": 143,
+        "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newTeamResponseForm.get(\u0027severity\u0027);"
       },
       {
-        "lineNumber": 144,
+        "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 145,
+        "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 146,
+        "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
         "content": "  get type() {"
       },
       {
-        "lineNumber": 147,
+        "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newTeamResponseForm.get(\u0027type\u0027);"
       },
       {
-        "lineNumber": 148,
+        "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 149,
+        "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 150,
+        "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
         "content": "  get assignees() {"
       },
       {
-        "lineNumber": 151,
+        "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newTeamResponseForm.get(\u0027assignees\u0027);"
       },
       {
-        "lineNumber": 152,
+        "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 153,
+        "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 154,
+        "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
         "content": "  get responseTag() {"
       },
       {
-        "lineNumber": 155,
+        "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newTeamResponseForm.get(\u0027responseTag\u0027);"
       },
       {
-        "lineNumber": 156,
+        "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 157,
+        "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 158,
+        "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
         "content": "  get duplicated() {"
       },
       {
-        "lineNumber": 159,
+        "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newTeamResponseForm.get(\u0027duplicated\u0027);"
       },
       {
-        "lineNumber": 160,
+        "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 161,
+        "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 162,
+        "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
         "content": "  get duplicateOf() {"
       },
       {
-        "lineNumber": 163,
+        "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
         "content": "    return this.newTeamResponseForm.get(\u0027duplicateOf\u0027);"
       },
       {
-        "lineNumber": 164,
+        "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 165,
+        "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
@@ -31495,7 +31365,7 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 27,
+      "KevinCJH": 4,
       "-": 138
     }
   },
@@ -31535,612 +31405,465 @@
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    \u003c/div\u003e"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cdiv style\u003d\"float: right;\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cbutton type\u003d\"submit\" style\u003d\"margin-left: 10px\" [disabled]\u003d\"tutorResponseForm.invalid || isFormPending\" mat-button color\u003d\"primary\"\u003eSubmit\u003c/button\u003e"
+        "content": "    \u003cdiv\u003e"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003c/div\u003e"
+        "content": "      \u003cdiv class\u003d\"container\"\u003e"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003c/div\u003e"
+        "content": "        \u003cdiv\u003e"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "          \u003cmat-checkbox style\u003d\"display: inline-block; width: 20%\" formControlName\u003d\"duplicated\" (change)\u003d\"handleChangeOfDuplicateCheckbox($event)\"\u003e"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003cdiv\u003e"
+        "content": "            Duplicated Issue"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cdiv class\u003d\"container\"\u003e"
+        "content": "          \u003c/mat-checkbox\u003e"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cdiv\u003e"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-checkbox style\u003d\"display: inline-block; width: 20%\" formControlName\u003d\"duplicated\" (change)\u003d\"handleChangeOfDuplicateCheckbox($event)\"\u003e"
+        "content": "          \u003cmat-form-field [style.visibility]\u003d\"!duplicated.value ? \u0027hidden\u0027 : \u0027visible\u0027\" style\u003d\"display: inline-block; width: 50%\"\u003e"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
-        "content": "            Duplicated Issue"
+        "content": "            \u003cmat-select formControlName\u003d\"duplicateOf\" placeholder\u003d\"Duplicate of\"\u003e"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-checkbox\u003e"
+        "content": "              \u003cmat-option *ngFor\u003d\"let issue of duplicatedIssueList | async\" [disabled]\u003d\"dupIssueOptionIsDisabled(issue)\" [value]\u003d\"issue.id\"\u003e"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                \u003cspan class\u003d\"mat-body-strong\"\u003e #{{issue.id}}: \u003c/span\u003e  \u003cspan class\u003d\"mat-body\"\u003e{{issue.title}}\u003c/span\u003e"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-form-field [style.visibility]\u003d\"!duplicated.value ? \u0027hidden\u0027 : \u0027visible\u0027\" style\u003d\"display: inline-block; width: 50%\"\u003e"
+        "content": "                \u003cspan *ngIf\u003d\"dupIssueOptionIsDisabled(issue)\" class\u003d\"mat-caption\" style\u003d\"color: #f44336\"\u003e ({{getDisabledDupOptionErrorText(issue)}}) \u003c/span\u003e"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cmat-select formControlName\u003d\"duplicateOf\" placeholder\u003d\"Duplicate of\"\u003e"
+        "content": "              \u003c/mat-option\u003e"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "              \u003cmat-option *ngFor\u003d\"let issue of duplicatedIssueList | async\" [disabled]\u003d\"dupIssueOptionIsDisabled(issue)\" [value]\u003d\"issue.id\"\u003e"
+        "content": "            \u003c/mat-select\u003e"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": "                \u003cspan class\u003d\"mat-body-strong\"\u003e #{{issue.id}}: \u003c/span\u003e  \u003cspan class\u003d\"mat-body\"\u003e{{issue.title}}\u003c/span\u003e"
+        "content": "            \u003cmat-error *ngIf\u003d\"duplicateOf.errors \u0026\u0026 duplicateOf.errors[\u0027required\u0027] \u0026\u0026 duplicateOf.touched\"\u003e"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "                \u003cspan *ngIf\u003d\"dupIssueOptionIsDisabled(issue)\" class\u003d\"mat-caption\" style\u003d\"color: #f44336\"\u003e ({{getDisabledDupOptionErrorText(issue)}}) \u003c/span\u003e"
+        "content": "              Need to specify the duplicated issue."
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "              \u003c/mat-option\u003e"
+        "content": "            \u003c/mat-error\u003e"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003c/mat-select\u003e"
+        "content": "          \u003c/mat-form-field\u003e"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cmat-error *ngIf\u003d\"duplicateOf.errors \u0026\u0026 duplicateOf.errors[\u0027required\u0027] \u0026\u0026 duplicateOf.touched\"\u003e"
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "              Need to specify the duplicated issue."
+        "content": "      \u003c/div\u003e"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003c/mat-error\u003e"
+        "content": ""
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-form-field\u003e"
+        "content": "      \u003cdiv class\u003d\"container\" *ngFor\u003d\"let todo of issue.todoList; index as i; trackBy: trackTodoList\"\u003e"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003c/div\u003e"
+        "content": "        \u003cdiv\u003e"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003c/div\u003e"
+        "content": "          \u003cmat-checkbox style\u003d\"display: inline-block; width: 20%\" [checked]\u003d\"isTodoChecked(todo)\" (change)\u003d\"handleChangeOfTodoCheckbox($event, todo, i)\"\u003e"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            {{ todo.substring(6) }}"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cdiv class\u003d\"container\" *ngFor\u003d\"let todo of issue.todoList; index as i; trackBy: trackTodoList\"\u003e"
+        "content": "          \u003c/mat-checkbox\u003e"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cdiv\u003e"
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-checkbox style\u003d\"display: inline-block; width: 20%\" [checked]\u003d\"isTodoChecked(todo)\" (change)\u003d\"handleChangeOfTodoCheckbox($event, todo, i)\"\u003e"
+        "content": "      \u003c/div\u003e"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "            {{ todo.substring(6) }}"
+        "content": ""
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-checkbox\u003e"
+        "content": "      \u003cbr\u003e"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003c/div\u003e"
+        "content": ""
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003c/div\u003e"
+        "content": "      \u003cdiv class\u003d\"container\" [style.display]\u003d\"duplicated.value ? \u0027none\u0027 : \u0027grid\u0027\"\u003e"
       },
       {
         "lineNumber": 39,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "        \u003cdiv class\u003d\"left-half\"\u003e"
       },
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      \u003cbr\u003e"
+        "content": "          \u003capp-label-dropdown [initialValue]\u003d\"this.issue.severity\" attributeName\u003d\"severity\" [dropdownForm]\u003d\"tutorResponseForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
         "lineNumber": 41,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cdiv class\u003d\"container\" [style.display]\u003d\"duplicated.value ? \u0027none\u0027 : \u0027grid\u0027\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        \u003cmat-form-field class\u003d\"left-half\"\u003e"
+        "content": "        \u003cdiv class\u003d\"right-half\"\u003e"
       },
       {
         "lineNumber": 44,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "          \u003cmat-select formControlName\u003d\"severity\" placeholder\u003d\"Severity\"\u003e"
+        "content": "          \u003capp-label-dropdown [initialValue]\u003d\"this.issue.type\" attributeName\u003d\"type\" [dropdownForm]\u003d\"tutorResponseForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of severityValues\" [value]\u003d\"value\"\u003e"
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "              {{value}}"
+        "content": "      \u003c/div\u003e"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003c/mat-option\u003e"
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-select\u003e"
+        "content": "      \u003cdiv class\u003d\"container\" [style.display]\u003d\"duplicated.value ? \u0027none\u0027 : \u0027grid\u0027\"\u003e"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-error *ngIf\u003d\"severity.errors \u0026\u0026 severity.errors[\u0027required\u0027] \u0026\u0026 severity.touched\"\u003e"
+        "content": "        \u003cmat-form-field class\u003d\"left-half\"\u003e"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "            Severity required."
+        "content": "          \u003cmat-select placeholder\u003d\"Assignees\" formControlName\u003d\"assignees\" multiple\u003e"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-error\u003e"
+        "content": "            \u003cmat-option *ngFor\u003d\"let member of issue.teamAssigned.teamMembers\" [value]\u003d\"member.loginId\"\u003e{{member.loginId}}\u003c/mat-option\u003e"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003c/mat-form-field\u003e"
+        "content": "          \u003c/mat-select\u003e"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "          \u003cmat-error *ngIf\u003d\"assignees.errors \u0026\u0026 assignees.errors[\u0027required\u0027] \u0026\u0026 assignees.touched\"\u003e"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003cmat-form-field class\u003d\"right-half\"\u003e"
+        "content": "            Assignee(s) required."
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-select formControlName\u003d\"type\" placeholder\u003d\"Type\"\u003e"
+        "content": "          \u003c/mat-error\u003e"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of issueTypeValues\" [value]\u003d\"value\"\u003e"
+        "content": "        \u003c/mat-form-field\u003e"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "              {{value}}"
+        "content": ""
       },
       {
         "lineNumber": 58,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "            \u003c/mat-option\u003e"
+        "content": "        \u003cdiv class\u003d\"right-half\"\u003e"
       },
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "          \u003c/mat-select\u003e"
+        "content": "          \u003capp-label-dropdown [initialValue]\u003d\"this.issue.responseTag\" attributeName\u003d\"responseTag\" [dropdownForm]\u003d\"tutorResponseForm\"\u003e\u003c/app-label-dropdown\u003e"
       },
       {
         "lineNumber": 60,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "          \u003cmat-error *ngIf\u003d\"type.errors \u0026\u0026 type.errors[\u0027required\u0027] \u0026\u0026 type.touched\"\u003e"
+        "content": "        \u003c/div\u003e"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "            Type required."
+        "content": "      \u003c/div\u003e"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-error\u003e"
+        "content": ""
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u003c/mat-form-field\u003e"
+        "content": "      \u003capp-comment-editor [commentField]\u003d\"tutorResponseForm.get(\u0027description\u0027)\" [commentForm]\u003d\"tutorResponseForm\"\u003e\u003c/app-comment-editor\u003e"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      \u003c/div\u003e"
+        "content": "    "
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "      \u003cdiv style\u003d\"float: right; padding:5px;\"\u003e"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      \u003cdiv class\u003d\"container\" [style.display]\u003d\"duplicated.value ? \u0027none\u0027 : \u0027grid\u0027\"\u003e"
+        "content": "        \u003cbutton type\u003d\"submit\" style\u003d\"margin-left: 10px\" [disabled]\u003d\"tutorResponseForm.invalid || isFormPending\" mat-stroked-button color\u003d\"primary\"\u003eSubmit\u003c/button\u003e"
       },
       {
         "lineNumber": 67,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        \u003cmat-form-field class\u003d\"left-half\"\u003e"
+        "content": "      \u003c/div\u003e"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003cmat-select placeholder\u003d\"Assignees\" formControlName\u003d\"assignees\" multiple\u003e"
+        "content": "    \u003c/div\u003e"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "            \u003cmat-option *ngFor\u003d\"let member of issue.teamAssigned.teamMembers\" [value]\u003d\"member.loginId\"\u003e{{member.loginId}}\u003c/mat-option\u003e"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": "          \u003c/mat-select\u003e"
-      },
-      {
-        "lineNumber": 71,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-error *ngIf\u003d\"assignees.errors \u0026\u0026 assignees.errors[\u0027required\u0027] \u0026\u0026 assignees.touched\"\u003e"
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            Assignee(s) required."
-      },
-      {
-        "lineNumber": 73,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-error\u003e"
-      },
-      {
-        "lineNumber": 74,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003c/mat-form-field\u003e"
-      },
-      {
-        "lineNumber": 75,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 76,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003cmat-form-field class\u003d\"right-half\"\u003e"
-      },
-      {
-        "lineNumber": 77,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-select formControlName\u003d\"responseTag\" placeholder\u003d\"Response\"\u003e"
-      },
-      {
-        "lineNumber": 78,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            \u003cmat-option *ngFor\u003d\"let value of responseList\" [value]\u003d\"value\"\u003e"
-      },
-      {
-        "lineNumber": 79,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              {{value}}"
-      },
-      {
-        "lineNumber": 80,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            \u003c/mat-option\u003e"
-      },
-      {
-        "lineNumber": 81,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-select\u003e"
-      },
-      {
-        "lineNumber": 82,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003cmat-error *ngIf\u003d\"responseTag.errors \u0026\u0026 responseTag.errors[\u0027required\u0027] \u0026\u0026 responseTag.touched\"\u003e"
-      },
-      {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            Response required."
-      },
-      {
-        "lineNumber": 84,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          \u003c/mat-error\u003e"
-      },
-      {
-        "lineNumber": 85,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u003c/mat-form-field\u003e"
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      \u003c/div\u003e"
-      },
-      {
-        "lineNumber": 87,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 88,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      \u003capp-comment-editor [commentField]\u003d\"tutorResponseForm.get(\u0027description\u0027)\" [commentForm]\u003d\"tutorResponseForm\"\u003e\u003c/app-comment-editor\u003e"
-      },
-      {
-        "lineNumber": 89,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    \u003c/div\u003e"
-      },
-      {
-        "lineNumber": 90,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 91,
-        "author": {
-          "gitId": "-"
-        },
         "content": "  \u003c/div\u003e"
       },
       {
-        "lineNumber": 92,
+        "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
@@ -32148,8 +31871,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 1,
-      "-": 91
+      "KevinCJH": 14,
+      "-": 57
     }
   },
   {
@@ -33744,129 +33467,143 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "import { LabelDropdownModule } from \u0027../label-dropdown/label-dropdown.module\u0027;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "@NgModule({"
+        "content": ""
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  exports: ["
+        "content": "@NgModule({"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    ViewIssueComponent"
+        "content": "  exports: ["
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  ],"
+        "content": "    ViewIssueComponent"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  declarations: ["
+        "content": "  ],"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    TutorResponseComponent,"
+        "content": "  declarations: ["
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    NewTeamResponseComponent,"
+        "content": "    TutorResponseComponent,"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    ViewIssueComponent"
+        "content": "    NewTeamResponseComponent,"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  ],"
+        "content": "    ViewIssueComponent"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  imports: ["
+        "content": "  ],"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    CommonModule,"
+        "content": "  imports: ["
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    CommentEditorModule,"
+        "content": "    CommonModule,"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    SharedModule,"
+        "content": "    CommentEditorModule,"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    IssueComponentsModule,"
+        "content": "    SharedModule,"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    MarkdownModule.forChild(),"
+        "content": "    IssueComponentsModule,"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  ]"
+        "content": "    LabelDropdownModule,"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "})"
+        "content": "    MarkdownModule.forChild(),"
       },
       {
         "lineNumber": 28,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  ]"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "})"
+      },
+      {
+        "lineNumber": 30,
         "author": {
           "gitId": "KevinCJH"
         },
@@ -33874,7 +33611,7 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 28
+      "KevinCJH": 30
     }
   },
   {

@@ -57,6 +57,19 @@
             "deletions": 5
           }
         ]
+      },
+      {
+        "insertions": 8,
+        "deletions": 11,
+        "date": "2019-07-14",
+        "commitResults": [
+          {
+            "hash": "593169d552ded70da146464e4c71512a24b15ce5",
+            "message": "Refactor trigger to style text if no add-class (#112)",
+            "insertions": 8,
+            "deletions": 11
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -102,7 +115,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 53,
+    "openorclose": 61,
     "alyip98": 143
   },
   "authorFileFormatContributionMap": {
@@ -113,7 +126,7 @@
       "json": 0,
       "md": 0,
       "py": 0,
-      "vue": 27
+      "vue": 35
     },
     "alyip98": {
       "java": 0,
@@ -126,8 +139,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 142.01506,
-    "alyip98": 396.3858
+    "openorclose": 103.0542,
+    "alyip98": 273.11658
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",

@@ -90,6 +90,32 @@
         ]
       },
       {
+        "insertions": 4,
+        "deletions": 1,
+        "date": "2019-07-01",
+        "commitResults": [
+          {
+            "hash": "6dd26d2f1c17924dcb82941cc74b2c4f235f1a93",
+            "message": "Add footnotes to userGuide/formattingContents",
+            "insertions": 4,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-07-04",
+        "commitResults": [
+          {
+            "hash": "78817979fdfafdb0fb91b8df297be59d57ef3487",
+            "message": "Added footnotes example to reader-facing",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      },
+      {
         "insertions": 1,
         "deletions": 0,
         "date": "2019-07-13",
@@ -271,7 +297,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 578,
+    "openorclose": 580,
     "alyip98": 657
   },
   "authorFileFormatContributionMap": {
@@ -282,7 +308,7 @@
       "json": 1,
       "md": 21,
       "mbd": 0,
-      "mbdf": 88,
+      "mbdf": 90,
       "njk": 0,
       "py": 0,
       "yml": 0
@@ -301,7 +327,7 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 4278.537,
+    "openorclose": 4276.5293,
     "alyip98": 3108.8284
   },
   "authorDisplayNameMap": {

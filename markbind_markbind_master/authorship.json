@@ -3781,142 +3781,142 @@
       {
         "lineNumber": 18,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "  images : [\u0027Images\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
+        "content": "  footnotes: [\u0027Footnotes\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "  tables : [\u0027Tables\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
+        "content": "  images : [\u0027Images\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "  emoji : [\u0027Emoji\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
+        "content": "  tables : [\u0027Tables\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": "  icons : [\u0027Icons\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
+        "content": "  emoji : [\u0027Emoji\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "  embeds : [\u0027Embeds\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
+        "content": "  icons : [\u0027Icons\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  embeds : [\u0027Embeds\u0027, [\u0027basic\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "  frontmatter : [\u0027Front Matter\u0027, [\u0027other\u0027]],"
+        "content": ""
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "  includes : [\u0027Includes\u0027, [\u0027other\u0027]],"
+        "content": "  frontmatter : [\u0027Front Matter\u0027, [\u0027other\u0027]],"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "  searchBars : [\u0027Search Bars\u0027, [\u0027other\u0027, \u0027reader-facing\u0027]],"
+        "content": "  includes : [\u0027Includes\u0027, [\u0027other\u0027]],"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "  keywords : [\u0027Keywords\u0027, [\u0027other\u0027]],"
+        "content": "  searchBars : [\u0027Search Bars\u0027, [\u0027other\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "  pageHead : [\u0027Page Head\u0027, [\u0027other\u0027]],"
+        "content": "  keywords : [\u0027Keywords\u0027, [\u0027other\u0027]],"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "  pageLayouts : [\u0027Page Layouts\u0027, [\u0027other\u0027]],"
+        "content": "  pageHead : [\u0027Page Head\u0027, [\u0027other\u0027]],"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "  tags : [\u0027Tags\u0027, [\u0027other\u0027]],"
+        "content": "  pageLayouts : [\u0027Page Layouts\u0027, [\u0027other\u0027]],"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "  variables : [\u0027Variables\u0027, [\u0027other\u0027]],"
+        "content": "  tags : [\u0027Tags\u0027, [\u0027other\u0027]],"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  variables : [\u0027Variables\u0027, [\u0027other\u0027]],"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": "  badges : [\u0027Badges\u0027, [\u0027component\u0027, \u0027reader-facing\u0027]],"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": "  boxes : [\u0027Boxes\u0027, [\u0027component\u0027, \u0027reader-facing\u0027]],"
+        "content": "  badges : [\u0027Badges\u0027, [\u0027component\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "  dropdowns : [\u0027Dropdowns\u0027, [\u0027component\u0027, \u0027reader-facing\u0027]],"
+        "content": "  boxes : [\u0027Boxes\u0027, [\u0027component\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "  footers : [\u0027Footers\u0027, [\u0027other\u0027, \u0027reader-facing\u0027]],"
+        "content": "  dropdowns : [\u0027Dropdowns\u0027, [\u0027component\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "  footnotes: [\u0027Footnotes\u0027, [\u0027other\u0027, \u0027reader-facing\u0027]],"
+        "content": "  footers : [\u0027Footers\u0027, [\u0027other\u0027, \u0027reader-facing\u0027]],"
       },
       {
         "lineNumber": 38,
@@ -6759,63 +6759,63 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003cspan id\u003d\"main-example-markbind\"\u003e"
+        "content": "## Footnotes"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003cinclude src\u003d\"outputBox.md\" boilerplate \u003e"
+        "content": ""
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003cspan id\u003d\"code\"\u003e"
+        "content": "\u003cspan id\u003d\"main-example-markbind\"\u003e"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "\u003cinclude src\u003d\"outputBox.md\" boilerplate \u003e"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "```markdown"
+        "content": "\u003cspan id\u003d\"code\"\u003e"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "**Normal footnotes:**"
+        "content": ""
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
+        "content": "```markdown"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "**Normal footnotes:**"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
+        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
       },
       {
         "lineNumber": 10,
@@ -6829,7 +6829,7 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^longnote]: Here\u0027s one with multiple blocks."
+        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
       },
       {
         "lineNumber": 12,
@@ -6843,119 +6843,119 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    Subsequent paragraphs are indented to show that they"
+        "content": "[^longnote]: Here\u0027s one with multiple blocks."
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "belong to the previous footnote."
+        "content": ""
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "    Subsequent paragraphs are indented to show that they"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "belong to the previous footnote."
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "**Inline footnotes:**"
+        "content": ""
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "Here is an inline note.^[Inlines notes are easier to write, since"
+        "content": ""
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "you don\u0027t have to pick an identifier and move down to type the"
+        "content": "**Inline footnotes:**"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "note.]"
+        "content": "Here is an inline note.^[Inlines notes are easier to write, since"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "you don\u0027t have to pick an identifier and move down to type the"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "```"
+        "content": "note.]"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003c/span\u003e"
+        "content": ""
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003cspan id\u003d\"output\"\u003e"
+        "content": "```"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "**Normal footnotes:**"
+        "content": "\u003cspan id\u003d\"output\"\u003e"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
+        "content": ""
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "**Normal footnotes:**"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
+        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
       },
       {
         "lineNumber": 30,
@@ -6969,7 +6969,7 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^longnote]: Here\u0027s one with multiple blocks."
+        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
       },
       {
         "lineNumber": 32,
@@ -6983,70 +6983,70 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    Subsequent paragraphs are indented to show that they"
+        "content": "[^longnote]: Here\u0027s one with multiple blocks."
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "belong to the previous footnote."
+        "content": ""
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "    Subsequent paragraphs are indented to show that they"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "belong to the previous footnote."
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "**Inline footnotes:**"
+        "content": ""
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "Here is an inline note.^[Inlines notes are easier to write, since"
+        "content": ""
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "you don\u0027t have to pick an identifier and move down to type the"
+        "content": "**Inline footnotes:**"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "note.]"
+        "content": "Here is an inline note.^[Inlines notes are easier to write, since"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003c/span\u003e"
+        "content": "you don\u0027t have to pick an identifier and move down to type the"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003c/include\u003e"
+        "content": "note.]"
       },
       {
         "lineNumber": 43,
@@ -7060,14 +7060,14 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "\u003c/include\u003e"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003cspan id\u003d\"short\" class\u003d\"d-none\"\u003e"
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 46,
@@ -7081,35 +7081,35 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "```html"
+        "content": "\u003cspan id\u003d\"short\" class\u003d\"d-none\"\u003e"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "**Normal footnotes:**"
+        "content": ""
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
+        "content": "```html"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "**Normal footnotes:**"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
+        "content": "Here is a footnote reference,[^1] and another.[^longnote]"
       },
       {
         "lineNumber": 52,
@@ -7123,52 +7123,66 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "[^longnote]: Here\u0027s one with multiple blocks."
+        "content": "[^1]: Here is the footnote. Footnotes will appear at the bottom of the page."
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    Subsequent paragraphs are indented to show that they"
+        "content": ""
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "belong to the previous footnote."
+        "content": "[^longnote]: Here\u0027s one with multiple blocks."
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "```"
+        "content": "    Subsequent paragraphs are indented to show that they"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003c/span\u003e"
+        "content": "belong to the previous footnote."
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "\u003cspan id\u003d\"examples\" class\u003d\"d-none\"\u003e"
+        "content": "```"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "This is not updated"
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 60,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "\u003cspan id\u003d\"examples\" class\u003d\"d-none\"\u003e"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "1 + 1 \u003d 2 ^[Math]"
+      },
+      {
+        "lineNumber": 62,
         "author": {
           "gitId": "openorclose"
         },
@@ -7176,7 +7190,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 60
+      "openorclose": 62
     }
   },
   {

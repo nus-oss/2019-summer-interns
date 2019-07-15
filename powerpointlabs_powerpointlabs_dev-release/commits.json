@@ -192,22 +192,41 @@
             "deletions": 23
           }
         ]
+      },
+      {
+        "insertions": 34,
+        "deletions": 33,
+        "date": "2019-07-15",
+        "commitResults": [
+          {
+            "hash": "afae977f9e8b722bc287fa2f9f2abbc855d28af6",
+            "message": "#1957 remove redundant todos simple (#1958)",
+            "insertions": 21,
+            "deletions": 21
+          },
+          {
+            "hash": "ead22fc74f6d398ca7e0fd04451d32a9814ef203",
+            "message": "#1969 compile error explanationitem does not implement interface (#1970)",
+            "insertions": 13,
+            "deletions": 12
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 3199
+    "yuhongherald": 3222
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 3199
+      "cs": 3222
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 67803.13
+    "yuhongherald": 63862.97
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

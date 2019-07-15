@@ -338,12 +338,25 @@
             "deletions": 7
           }
         ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 5,
+        "date": "2019-07-14",
+        "commitResults": [
+          {
+            "hash": "d45513d6692248bfa38808e3b045b4ce51039c0c",
+            "message": "[#791] CodeView: bugfix for unexpected colors in line numbers (#792)",
+            "insertions": 2,
+            "deletions": 5
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 540,
-    "jamessspanggg": 285
+    "jamessspanggg": 284
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -360,7 +373,7 @@
     "jamessspanggg": {
       "java": 38,
       "js": 126,
-      "scss": 66,
+      "scss": 65,
       "json": 0,
       "md": 1,
       "py": 0,
@@ -370,8 +383,8 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 2421.3577,
-    "jamessspanggg": 602.03516
+    "jylee-git": 2385.308,
+    "jamessspanggg": 592.5661
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

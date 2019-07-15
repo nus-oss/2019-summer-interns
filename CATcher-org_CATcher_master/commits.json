@@ -1310,10 +1310,71 @@
         ]
       },
       {
-        "insertions": 317,
-        "deletions": 323,
+        "insertions": 24,
+        "deletions": 10,
+        "date": "2019-07-08",
+        "commitResults": [
+          {
+            "hash": "f1c98b90a7f8018f4d6c3fb101483b0927a81b58",
+            "message": "fix the label dropdown for New Issue",
+            "insertions": 22,
+            "deletions": 8
+          },
+          {
+            "hash": "86490ddc2f2c691122ebde5475c963d4832d8032",
+            "message": "edit the style for span text in mat-option",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 417,
+        "deletions": 406,
         "date": "2019-07-10",
         "commitResults": [
+          {
+            "hash": "51a8df9f515437758d27a748da8210f8dc223071",
+            "message": "extract out the label dropdown component",
+            "insertions": 74,
+            "deletions": 39
+          },
+          {
+            "hash": "d3325ff9f5aa345297b4d29602a7cc2a2b383662",
+            "message": "fix code spacing",
+            "insertions": 0,
+            "deletions": 1
+          },
+          {
+            "hash": "df053019802ca488d3a25049a28fd454a39df8a8",
+            "message": "fix html code spacing",
+            "insertions": 15,
+            "deletions": 16
+          },
+          {
+            "hash": "6ffabc91c4e247fe15af233d86eaa7f8d451a500",
+            "message": "allows initial value for dropdown",
+            "insertions": 7,
+            "deletions": 6
+          },
+          {
+            "hash": "4784877c8e849646ec0d1382d1519b73d80b6854",
+            "message": "use ng deep as /deep/ is depreceated",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "1f03a4c5ccbb04de0b9ac5cfd5d9b05dd8f57868",
+            "message": "remove unused code",
+            "insertions": 0,
+            "deletions": 17
+          },
+          {
+            "hash": "7a874ab70522588abaa77b4dda4379b304e3cee9",
+            "message": "remove unused style",
+            "insertions": 3,
+            "deletions": 3
+          },
           {
             "hash": "2fb8b1880fb2b7103eac5072758bfc62411ce16e",
             "message": "Extract \"View Issue\" from phase folder (#121)",
@@ -1321,12 +1382,50 @@
             "deletions": 323
           }
         ]
+      },
+      {
+        "insertions": 40,
+        "deletions": 114,
+        "date": "2019-07-11",
+        "commitResults": [
+          {
+            "hash": "7efc5d2762d9c50ec17a522ae236b65b5740c6b5",
+            "message": "fix new tutor and new team response",
+            "insertions": 29,
+            "deletions": 78
+          },
+          {
+            "hash": "cdf6b99777dd329c0a8121a8ec9377112c641c52",
+            "message": "remove unused code",
+            "insertions": 0,
+            "deletions": 26
+          },
+          {
+            "hash": "d90706e705fcddc4864f3cea3c168a11cda721bc",
+            "message": "remove input for dropdownControl",
+            "insertions": 11,
+            "deletions": 10
+          }
+        ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 2,
+        "date": "2019-07-12",
+        "commitResults": [
+          {
+            "hash": "1f4050ced4eb4eb3e8838252d1d9fcdb33742721",
+            "message": "add return type for method",
+            "insertions": 1,
+            "deletions": 2
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "ptvrajsk": 1408,
-    "KevinCJH": 966
+    "KevinCJH": 999
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1346,13 +1445,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 173,
-      "ts": 793
+      "html": 188,
+      "ts": 811
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 21979.254,
-    "KevinCJH": 15791.453
+    "ptvrajsk": 21359.578,
+    "KevinCJH": 19358.424
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
