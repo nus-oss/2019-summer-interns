@@ -194,10 +194,16 @@
         ]
       },
       {
-        "insertions": 34,
+        "insertions": 104,
         "deletions": 33,
         "date": "2019-07-15",
         "commitResults": [
+          {
+            "hash": "01b742c4897fe2fc508c284031c4d7e221bb8217",
+            "message": "#1856-ResizeLab changes orientation of text in shape (#1946)",
+            "insertions": 70,
+            "deletions": 0
+          },
           {
             "hash": "afae977f9e8b722bc287fa2f9f2abbc855d28af6",
             "message": "#1957 remove redundant todos simple (#1958)",
@@ -211,22 +217,35 @@
             "deletions": 12
           }
         ]
+      },
+      {
+        "insertions": 802,
+        "deletions": 304,
+        "date": "2019-07-16",
+        "commitResults": [
+          {
+            "hash": "ce32c1e14b1c125e6e477e38587a8b7a732f5f05",
+            "message": "#1913 Error in Zoomlab step back (#1915)",
+            "insertions": 802,
+            "deletions": 304
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 3222
+    "yuhongherald": 4000
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 3222
+      "cs": 4000
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 63862.97
+    "yuhongherald": 78926.33
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
