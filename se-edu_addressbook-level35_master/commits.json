@@ -31,24 +31,62 @@
             "deletions": 31
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 2,
+        "date": "2019-07-12",
+        "commitResults": [
+          {
+            "hash": "eebddcb8e24440510b27ac0d7284e432a18853d8",
+            "message": "Developer Guide: Fix broken link",
+            "insertions": 1,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 3,
+        "deletions": 4,
+        "date": "2019-07-15",
+        "commitResults": [
+          {
+            "hash": "a6d2b4b907a7803502b93b0e2b5dcac9455915db",
+            "message": "Developer Guide: Specify the label for inter-document xref",
+            "insertions": 2,
+            "deletions": 2
+          },
+          {
+            "hash": "ac47d7cf1a7593dac7580a7abe4ca184e6979ac4",
+            "message": "Developer Guide: Optimize reading experience",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "9ba6eefcc621a1805194a019c92d926d614c327f",
+            "message": "Developer Guide: Remove anchor for Testing",
+            "insertions": 0,
+            "deletions": 1
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Jeffry Lum": 302
+    "Jeffry Lum": 301
   },
   "authorFileFormatContributionMap": {
     "Jeffry Lum": {
       "java": 0,
       "js": 0,
       "css": 0,
-      "adoc": 302,
+      "adoc": 301,
       "fxml": 0,
       "gradle": 0
     }
   },
   "authorContributionVariance": {
-    "Jeffry Lum": 5958.381
+    "Jeffry Lum": 5406.651
   },
   "authorDisplayNameMap": {
     "Jeffry Lum": "Jeffry"

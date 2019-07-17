@@ -83,6 +83,19 @@
             "deletions": 8
           }
         ]
+      },
+      {
+        "insertions": 10,
+        "deletions": 0,
+        "date": "2019-07-17",
+        "commitResults": [
+          {
+            "hash": "20a48d5defa5e3294c2bca9bb12819df22d5c40a",
+            "message": "Enhance popovers to allow hovering over them (#114)",
+            "insertions": 10,
+            "deletions": 0
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -128,13 +141,13 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 53,
+    "openorclose": 63,
     "alyip98": 143
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
       "java": 0,
-      "js": 26,
+      "js": 36,
       "css": 0,
       "json": 0,
       "md": 0,
@@ -152,8 +165,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 104.26755,
-    "alyip98": 264.87668
+    "openorclose": 103.55303,
+    "alyip98": 260.94174
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",

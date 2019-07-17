@@ -8342,422 +8342,422 @@
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "    }"
+        "content": "    },"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "  },"
+        "content": "    hoverable: {"
       },
       {
         "lineNumber": 39,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "  data () {"
+        "content": "      type: Boolean,"
       },
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "    return {"
+        "content": "      default: false"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "      position: {"
+        "content": "    }"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "        top: 0,"
+        "content": "  },"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "        left: 0"
+        "content": "  data () {"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "    return {"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "      isPopover: false,"
+        "content": "      position: {"
       },
       {
         "lineNumber": 46,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "      show: false,"
+        "content": "        top: 0,"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "      delayTimeout: null"
+        "content": "        left: 0"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      },"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "  },"
+        "content": "      isPopover: false,"
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "  computed: {"
+        "content": "      show: false,"
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "    contentRendered () {"
+        "content": "      delayTimeout: null"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "      return md.renderInline(this.content)"
+        "content": "    }"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "  },"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "    titleRendered () {"
+        "content": "  computed: {"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "      return md.renderInline(this.title)"
+        "content": "    contentRendered () {"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      return md.renderInline(this.content)"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "  },"
+        "content": "    },"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "  methods: {"
+        "content": "    titleRendered () {"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "    bindTrigger (trigger, popover) {"
+        "content": "      return md.renderInline(this.title)"
       },
       {
         "lineNumber": 60,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "      if (popover \u003d\u003d\u003d this.id) {"
+        "content": "    },"
       },
       {
         "lineNumber": 61,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "        trigger.setTriggerBy(this)"
+        "content": "    hoverableBool() {"
       },
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "      }"
+        "content": "      return toBoolean(this.hoverable)"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "    }"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "    clearTimeout() {"
+        "content": "  },"
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "      clearTimeout(this.delayTimeout)"
+        "content": "  methods: {"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "      this.delayTimeout \u003d null"
+        "content": "    bindTrigger (trigger, popover) {"
       },
       {
         "lineNumber": 67,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "    },"
+        "content": "      if (popover \u003d\u003d\u003d this.id) {"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "    toggle (e) {"
+        "content": "        trigger.setTriggerBy(this)"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "      let trigger \u003d getFirstChild(this.$refs.trigger)"
+        "content": "      }"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (e \u0026\u0026 this.trigger \u003d\u003d\u003d \u0027contextmenu\u0027 \u0026\u0026 trigger \u003d\u003d\u003d e.target) e.preventDefault()"
+        "content": "    },"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "      if (this.show) {"
+        "content": "    clearTimeout() {"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "        if (e.type \u003d\u003d\u003d \u0027mouseleave\u0027) {"
+        "content": "      clearTimeout(this.delayTimeout)"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          // Only delay closing for hover events"
+        "content": "      this.delayTimeout \u003d null"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          this.delayTimeout \u003d setTimeout(() \u003d\u003e {"
+        "content": "    },"
       },
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "            this.show \u003d false"
+        "content": "    toggle (e) {"
       },
       {
         "lineNumber": 76,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "            this.clearTimeout()"
+        "content": "      let trigger \u003d getFirstChild(this.$refs.trigger)"
       },
       {
         "lineNumber": 77,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "          }, POPOVER_TIMEOUT)"
+        "content": "      if (e \u0026\u0026 this.trigger \u003d\u003d\u003d \u0027contextmenu\u0027 \u0026\u0026 trigger \u003d\u003d\u003d e.target) e.preventDefault()"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "        } else if (e.type \u003d\u003d\u003d \u0027mouseenter\u0027) {"
+        "content": "      if (this.show) {"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          // If user hovers back, cancel the close"
+        "content": "        if (e.type \u003d\u003d\u003d \u0027mouseleave\u0027) {"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          this.clearTimeout()"
+        "content": "          // Only delay closing for hover events"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "        } else {"
+        "content": "          this.delayTimeout \u003d setTimeout(() \u003d\u003e {"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          // Otherwise, it\u0027s another trigger and we close it immediately"
+        "content": "            this.show \u003d false"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          this.clearTimeout()"
+        "content": "            this.clearTimeout()"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          this.show \u003d false;"
+        "content": "          }, POPOVER_TIMEOUT)"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "        }"
+        "content": "        } else if (e.type \u003d\u003d\u003d \u0027mouseenter\u0027) {"
       },
       {
         "lineNumber": 86,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "        return"
+        "content": "          // If user hovers back, cancel the close"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "      } else {"
+        "content": "          this.clearTimeout()"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "        this.clearTimeout()"
+        "content": "        } else {"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "        this.show \u003d true"
+        "content": "          // Otherwise, it\u0027s another trigger and we close it immediately"
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "      }"
+        "content": "          this.clearTimeout()"
       },
       {
         "lineNumber": 91,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "      if (e) {"
+        "content": "          this.show \u003d false;"
       },
       {
         "lineNumber": 92,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "        let target \u003d e.target"
+        "content": "        }"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (trigger !\u003d\u003d target \u0026\u0026 getFirst(this._trigger) !\u003d\u003d target) {"
+        "content": "        return"
       },
       {
         "lineNumber": 94,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "          // Multiple triggers share this popover"
+        "content": "      } else {"
       },
       {
         "lineNumber": 95,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "          trigger \u003d getFirstChild(target)"
+        "content": "        this.clearTimeout()"
       },
       {
         "lineNumber": 96,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "        }"
+        "content": "        this.show \u003d true"
       },
       {
         "lineNumber": 97,
@@ -8771,777 +8771,777 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      setTimeout(() \u003d\u003e {"
+        "content": "      if (e) {"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "        const popover \u003d this.$refs.popover"
+        "content": "        let target \u003d e.target"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "        this.isPopover \u003d Array.some(popover.classList, classname \u003d\u003e classname \u003d\u003d\u003d \u0027popover\u0027);"
+        "content": "        if (trigger !\u003d\u003d target \u0026\u0026 getFirst(this._trigger) !\u003d\u003d target) {"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "        trigger.offsetParent.style.position \u003d \u0027relative\u0027;"
+        "content": "          // Multiple triggers share this popover"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.position \u003d \u0027absolute\u0027;"
+        "content": "          trigger \u003d getFirstChild(target)"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "        this.calculateOffset(trigger, popover)"
+        "content": "        }"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": "        this.updateOffsetForMargins(popover)"
+        "content": "      }"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.top \u003d this.position.top + \u0027px\u0027"
+        "content": "      setTimeout(() \u003d\u003e {"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.left \u003d this.position.left + \u0027px\u0027"
+        "content": "        const popover \u003d this.$refs.popover"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (this.$refs.arrow) {"
+        "content": "        this.isPopover \u003d Array.some(popover.classList, classname \u003d\u003e classname \u003d\u003d\u003d \u0027popover\u0027);"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "          let actualWidth  \u003d popover.offsetWidth"
+        "content": "        trigger.offsetParent.style.position \u003d \u0027relative\u0027;"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "          let actualHeight \u003d popover.offsetHeight"
+        "content": "        popover.style.position \u003d \u0027absolute\u0027;"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.calculateOffset(trigger, popover) // Update for CSS adjustment"
+        "content": "        this.calculateOffset(trigger, popover)"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.updateOffsetForMargins(popover)"
+        "content": "        this.updateOffsetForMargins(popover)"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": "          let delta \u003d this.getViewportAdjustedDelta(this.position, actualWidth, actualHeight)"
+        "content": "        popover.style.top \u003d this.position.top + \u0027px\u0027"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "          if (delta.left) this.position.left +\u003d delta.left"
+        "content": "        popover.style.left \u003d this.position.left + \u0027px\u0027"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": "          else this.position.top +\u003d delta.top"
+        "content": "        if (this.$refs.arrow) {"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "          popover.style.top \u003d this.position.top + \u0027px\u0027"
+        "content": "          let actualWidth  \u003d popover.offsetWidth"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "          popover.style.left \u003d this.position.left + \u0027px\u0027"
+        "content": "          let actualHeight \u003d popover.offsetHeight"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "          let isVertical \u003d /top|bottom/.test(this.placement)"
+        "content": "          this.calculateOffset(trigger, popover) // Update for CSS adjustment"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": "          let arrowDelta \u003d isVertical ? delta.left * 2 : delta.top * 2;"
+        "content": "          this.updateOffsetForMargins(popover)"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": "          let arrowOffsetPosition \u003d isVertical ? popover.offsetWidth : popover.offsetHeight"
+        "content": "          let delta \u003d this.getViewportAdjustedDelta(this.position, actualWidth, actualHeight)"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.adjustArrow(arrowDelta, arrowOffsetPosition, isVertical)"
+        "content": "          if (delta.left) this.position.left +\u003d delta.left"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "          else this.position.top +\u003d delta.top"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "          popover.style.top \u003d this.position.top + \u0027px\u0027"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": "        // temporary fix for popover going off screen - start"
+        "content": "          popover.style.left \u003d this.position.left + \u0027px\u0027"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.position \u003d \u0027fixed\u0027;"
+        "content": "          let isVertical \u003d /top|bottom/.test(this.placement)"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.top \u003d `${(e.clientY + 5)}px`;"
+        "content": "          let arrowDelta \u003d isVertical ? delta.left * 2 : delta.top * 2;"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.left \u003d `${(e.clientX + 5)}px`;"
+        "content": "          let arrowOffsetPosition \u003d isVertical ? popover.offsetWidth : popover.offsetHeight"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.margin \u003d 0;"
+        "content": "          this.adjustArrow(arrowDelta, arrowOffsetPosition, isVertical)"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "        popover.style.padding \u003d 0;"
+        "content": "        }"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (this.$refs.arrow) {"
+        "content": ""
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.$refs.arrow.style[\u0027display\u0027] \u003d \u0027none\u0027;"
+        "content": "        // temporary fix for popover going off screen - start"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        popover.style.position \u003d \u0027fixed\u0027;"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "        // temporary fix for popover going off screen - end"
+        "content": "        popover.style.top \u003d `${(e.clientY + 5)}px`;"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        popover.style.left \u003d `${(e.clientX + 5)}px`;"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "      }, 20)"
+        "content": "        popover.style.margin \u003d 0;"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "        popover.style.padding \u003d 0;"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "    calculateOffset (trigger, popover) {"
+        "content": "        if (this.$refs.arrow) {"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
-        "content": "      switch (this.placement) {"
+        "content": "          this.$refs.arrow.style[\u0027display\u0027] \u003d \u0027none\u0027;"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "        case \u0027top\u0027 :"
+        "content": "        }"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.left \u003d trigger.offsetLeft - popover.offsetWidth / 2 + trigger.offsetWidth / 2"
+        "content": "        // temporary fix for popover going off screen - end"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.top \u003d trigger.offsetTop - popover.offsetHeight"
+        "content": ""
       },
       {
         "lineNumber": 141,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "          if (this.isPopover) {"
+        "content": "        if (this.hoverableBool) {"
       },
       {
         "lineNumber": 142,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "            this.position.top -\u003d this.$refs.arrow.offsetHeight;"
+        "content": "          $(this.$refs.popover).on(\u0027mouseleave mouseenter\u0027, this.toggle)"
       },
       {
         "lineNumber": 143,
         "author": {
-          "gitId": "-"
+          "gitId": "openorclose"
         },
-        "content": "          }"
+        "content": "        }"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
-        "content": "          break"
+        "content": "      }, 20)"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "        case \u0027left\u0027:"
+        "content": "    },"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.left \u003d trigger.offsetLeft - popover.offsetWidth"
+        "content": "    calculateOffset (trigger, popover) {"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.top \u003d trigger.offsetTop + trigger.offsetHeight / 2 - popover.offsetHeight / 2"
+        "content": "      switch (this.placement) {"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "          if (this.isPopover) {"
+        "content": "        case \u0027top\u0027 :"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "            this.position.left -\u003d this.$refs.arrow.offsetWidth;"
+        "content": "          this.position.left \u003d trigger.offsetLeft - popover.offsetWidth / 2 + trigger.offsetWidth / 2"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": "          }"
+        "content": "          this.position.top \u003d trigger.offsetTop - popover.offsetHeight"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "          break"
+        "content": "          if (this.isPopover) {"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": "        case \u0027right\u0027:"
+        "content": "            this.position.top -\u003d this.$refs.arrow.offsetHeight;"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.left \u003d trigger.offsetLeft + trigger.offsetWidth"
+        "content": "          }"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.top \u003d trigger.offsetTop + trigger.offsetHeight / 2 - popover.offsetHeight / 2"
+        "content": "          break"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "          break"
+        "content": "        case \u0027left\u0027:"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": "        case \u0027bottom\u0027:"
+        "content": "          this.position.left \u003d trigger.offsetLeft - popover.offsetWidth"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.left \u003d trigger.offsetLeft - popover.offsetWidth / 2 + trigger.offsetWidth / 2"
+        "content": "          this.position.top \u003d trigger.offsetTop + trigger.offsetHeight / 2 - popover.offsetHeight / 2"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.top \u003d trigger.offsetTop + trigger.offsetHeight"
+        "content": "          if (this.isPopover) {"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": "          break"
+        "content": "            this.position.left -\u003d this.$refs.arrow.offsetWidth;"
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "-"
         },
-        "content": "        default:"
+        "content": "          }"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "          console.warn(\u0027Wrong placement prop\u0027)"
+        "content": "          break"
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "        case \u0027right\u0027:"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "          this.position.left \u003d trigger.offsetLeft + trigger.offsetWidth"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": "    updateOffsetForMargins (popover) {"
+        "content": "          this.position.top \u003d trigger.offsetTop + trigger.offsetHeight / 2 - popover.offsetHeight / 2"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "      const rect \u003d popover.getBoundingClientRect()"
+        "content": "          break"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (rect.left \u003c 0) {"
+        "content": "        case \u0027bottom\u0027:"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": "        this.position.left -\u003d rect.left"
+        "content": "          this.position.left \u003d trigger.offsetLeft - popover.offsetWidth / 2 + trigger.offsetWidth / 2"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
-        "content": "        const marginLeft \u003d parseInt(jQuery(popover).css(\u0027margin-left\u0027), 10)"
+        "content": "          this.position.top \u003d trigger.offsetTop + trigger.offsetHeight"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (marginLeft \u003c 0) {"
+        "content": "          break"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": "          this.position.left +\u003d marginLeft"
+        "content": "        default:"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": "          popover.style.marginLeft \u003d 0"
+        "content": "          console.warn(\u0027Wrong placement prop\u0027)"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "      }"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "    },"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "    updateOffsetForMargins (popover) {"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "    getViewportAdjustedDelta (pos, actualWidth, actualHeight) {"
+        "content": "      const rect \u003d popover.getBoundingClientRect()"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": "      var delta \u003d { top: 0, left: 0 };"
+        "content": "      if (rect.left \u003c 0) {"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "      let vpRect \u003d this._viewport.getBoundingClientRect();"
+        "content": "        this.position.left -\u003d rect.left"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "-"
         },
-        "content": "      let vpOffset \u003d { top: 0, left: 0 };"
+        "content": "        const marginLeft \u003d parseInt(jQuery(popover).css(\u0027margin-left\u0027), 10)"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "      let scroll \u003d {scroll: document.documentElement.scrollTop || document.body.scrollTop}"
+        "content": "        if (marginLeft \u003c 0) {"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": "      let outerDims \u003d { width: jQuery(window).width(), height: jQuery(window).height() };"
+        "content": "          this.position.left +\u003d marginLeft"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": "      let viewportDimensions \u003d Object.assign({}, vpRect, scroll, outerDims, vpOffset)"
+        "content": "          popover.style.marginLeft \u003d 0"
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (/right|left/.test(this.placement)) {"
+        "content": "      }"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "-"
         },
-        "content": "        var topEdgeOffset    \u003d pos.top - scroll"
+        "content": "    },"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": "        var bottomEdgeOffset \u003d pos.top - scroll + actualHeight"
+        "content": "    getViewportAdjustedDelta (pos, actualWidth, actualHeight) {"
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (topEdgeOffset \u003c viewportDimensions.top) { // top overflow"
+        "content": "      var delta \u003d { top: 0, left: 0 };"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "-"
         },
-        "content": "          delta.top \u003d viewportDimensions.top - topEdgeOffset"
+        "content": "      let vpRect \u003d this._viewport.getBoundingClientRect();"
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "-"
         },
-        "content": "        } else if (bottomEdgeOffset \u003e viewportDimensions.top + viewportDimensions.height) { // bottom overflow"
+        "content": "      let vpOffset \u003d { top: 0, left: 0 };"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "-"
         },
-        "content": "          delta.top \u003d viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset"
+        "content": "      let scroll \u003d {scroll: document.documentElement.scrollTop || document.body.scrollTop}"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "      let outerDims \u003d { width: jQuery(window).width(), height: jQuery(window).height() };"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "-"
         },
-        "content": "      } else {"
+        "content": "      let viewportDimensions \u003d Object.assign({}, vpRect, scroll, outerDims, vpOffset)"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": "        var leftEdgeOffset  \u003d pos.left"
+        "content": ""
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
-        "content": "        var rightEdgeOffset \u003d pos.left + actualWidth"
+        "content": "      if (/right|left/.test(this.placement)) {"
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (leftEdgeOffset \u003c viewportDimensions.left) { // left overflow"
+        "content": "        var topEdgeOffset    \u003d pos.top - scroll"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": "          delta.left \u003d viewportDimensions.left - leftEdgeOffset"
+        "content": "        var bottomEdgeOffset \u003d pos.top - scroll + actualHeight"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "-"
         },
-        "content": "        } else if (rightEdgeOffset \u003e viewportDimensions.right) { // right overflow"
+        "content": "        if (topEdgeOffset \u003c viewportDimensions.top) { // top overflow"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "-"
         },
-        "content": "          delta.left \u003d viewportDimensions.left + viewportDimensions.width - rightEdgeOffset"
+        "content": "          delta.top \u003d viewportDimensions.top - topEdgeOffset"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        } else if (bottomEdgeOffset \u003e viewportDimensions.top + viewportDimensions.height) { // bottom overflow"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "          delta.top \u003d viewportDimensions.top + viewportDimensions.height - bottomEdgeOffset"
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "-"
         },
-        "content": "      return delta"
+        "content": "        }"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "      } else {"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "-"
         },
-        "content": "    adjustArrow (delta, dimension, isVertical) {"
+        "content": "        var leftEdgeOffset  \u003d pos.left"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.$refs.arrow.style[isVertical ? \u0027left\u0027 : \u0027top\u0027] \u003d 50 * (1 - delta / dimension) + \u0027%\u0027"
+        "content": "        var rightEdgeOffset \u003d pos.left + actualWidth"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.$refs.arrow.style[isVertical ? \u0027top\u0027 : \u0027left\u0027] \u003d \u0027\u0027"
+        "content": "        if (leftEdgeOffset \u003c viewportDimensions.left) { // left overflow"
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "-"
         },
-        "content": "      let translateLeft \u003d 0;"
+        "content": "          delta.left \u003d viewportDimensions.left - leftEdgeOffset"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "-"
         },
-        "content": "      let translateTop \u003d 0;"
+        "content": "        } else if (rightEdgeOffset \u003e viewportDimensions.right) { // right overflow"
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (this.placement \u003d\u003d\u003d \u0027left\u0027 || this.placement \u003d\u003d\u003d \u0027right\u0027) {"
+        "content": "          delta.left \u003d viewportDimensions.left + viewportDimensions.width - rightEdgeOffset"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "-"
         },
-        "content": "        translateTop \u003d this.isPopover ? -75 : -50;"
+        "content": "        }"
       },
       {
         "lineNumber": 209,
@@ -9555,199 +9555,269 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      if (this.placement \u003d\u003d\u003d \u0027top\u0027 || this.placement \u003d\u003d\u003d \u0027bottom\u0027) {"
+        "content": "      return delta"
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "-"
         },
-        "content": "        translateLeft \u003d this.isPopover ? -100 : -50;"
+        "content": "    },"
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "    adjustArrow (delta, dimension, isVertical) {"
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.$refs.arrow.style[\u0027transform\u0027] \u003d `translate(${translateLeft}%, ${translateTop}%)`;"
+        "content": "      this.$refs.arrow.style[isVertical ? \u0027left\u0027 : \u0027top\u0027] \u003d 50 * (1 - delta / dimension) + \u0027%\u0027"
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      this.$refs.arrow.style[isVertical ? \u0027top\u0027 : \u0027left\u0027] \u003d \u0027\u0027"
       },
       {
         "lineNumber": 215,
         "author": {
           "gitId": "-"
         },
-        "content": "  },"
+        "content": "      let translateLeft \u003d 0;"
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "-"
         },
-        "content": "  created () {"
+        "content": "      let translateTop \u003d 0;"
       },
       {
         "lineNumber": 217,
         "author": {
           "gitId": "-"
         },
-        "content": "    globalEventBus.$on(\u0027trigger:bind\u0027, this.bindTrigger)"
+        "content": "      if (this.placement \u003d\u003d\u003d \u0027left\u0027 || this.placement \u003d\u003d\u003d \u0027right\u0027) {"
       },
       {
         "lineNumber": 218,
         "author": {
           "gitId": "-"
         },
-        "content": "  },"
+        "content": "        translateTop \u003d this.isPopover ? -75 : -50;"
       },
       {
         "lineNumber": 219,
         "author": {
           "gitId": "-"
         },
-        "content": "  mounted () {"
+        "content": "      }"
       },
       {
         "lineNumber": 220,
         "author": {
           "gitId": "-"
         },
-        "content": "    let trigger \u003d this.$refs.trigger"
+        "content": "      if (this.placement \u003d\u003d\u003d \u0027top\u0027 || this.placement \u003d\u003d\u003d \u0027bottom\u0027) {"
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "-"
         },
-        "content": "    this._viewport \u003d document.body"
+        "content": "        translateLeft \u003d this.isPopover ? -100 : -50;"
       },
       {
         "lineNumber": 222,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (!trigger) return"
+        "content": "      }"
       },
       {
         "lineNumber": 223,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (this.trigger \u003d\u003d\u003d \u0027focus\u0027 \u0026\u0026 !~trigger.tabIndex) {"
+        "content": "      this.$refs.arrow.style[\u0027transform\u0027] \u003d `translate(${translateLeft}%, ${translateTop}%)`;"
       },
       {
         "lineNumber": 224,
         "author": {
           "gitId": "-"
         },
-        "content": "      trigger \u003d $(\u0027a,input,select,textarea,button\u0027, trigger)"
+        "content": "    }"
       },
       {
         "lineNumber": 225,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (!trigger.length) {"
+        "content": "  },"
       },
       {
         "lineNumber": 226,
         "author": {
           "gitId": "-"
         },
-        "content": "        trigger \u003d null"
+        "content": "  created () {"
       },
       {
         "lineNumber": 227,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "    globalEventBus.$on(\u0027trigger:bind\u0027, this.bindTrigger)"
       },
       {
         "lineNumber": 228,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "  },"
       },
       {
         "lineNumber": 229,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (trigger) {"
+        "content": "  mounted () {"
       },
       {
         "lineNumber": 230,
         "author": {
           "gitId": "-"
         },
-        "content": "      let events \u003d {contextmenu: \u0027contextmenu\u0027, hover: \u0027mouseleave mouseenter\u0027, focus: \u0027blur focus\u0027}"
+        "content": "    let trigger \u003d this.$refs.trigger"
       },
       {
         "lineNumber": 231,
         "author": {
           "gitId": "-"
         },
-        "content": "      $(trigger).on(events[this.trigger] || \u0027click\u0027, this.toggle)"
+        "content": "    this._viewport \u003d document.body"
       },
       {
         "lineNumber": 232,
         "author": {
           "gitId": "-"
         },
-        "content": "      this._trigger \u003d trigger"
+        "content": "    if (!trigger) return"
       },
       {
         "lineNumber": 233,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    if (this.trigger \u003d\u003d\u003d \u0027focus\u0027 \u0026\u0026 !~trigger.tabIndex) {"
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "-"
         },
-        "content": "  },"
+        "content": "      trigger \u003d $(\u0027a,input,select,textarea,button\u0027, trigger)"
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "-"
         },
-        "content": "  beforeDestroy () {"
+        "content": "      if (!trigger.length) {"
       },
       {
         "lineNumber": 236,
         "author": {
           "gitId": "-"
         },
-        "content": "    globalEventBus.$off(\u0027trigger:bind\u0027, this.bindTrigger)"
+        "content": "        trigger \u003d null"
       },
       {
         "lineNumber": 237,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      }"
       },
       {
         "lineNumber": 238,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (trigger) {"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      let events \u003d {contextmenu: \u0027contextmenu\u0027, hover: \u0027mouseleave mouseenter\u0027, focus: \u0027blur focus\u0027}"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      $(trigger).on(events[this.trigger] || \u0027click\u0027, this.toggle)"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this._trigger \u003d trigger"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  beforeDestroy () {"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    globalEventBus.$off(\u0027trigger:bind\u0027, this.bindTrigger)"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 248,
         "author": {
           "gitId": "-"
         },
@@ -9755,7 +9825,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 26,
+      "openorclose": 36,
       "-": 212
     }
   }
