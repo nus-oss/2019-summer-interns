@@ -117,6 +117,25 @@
             "deletions": 55
           }
         ]
+      },
+      {
+        "insertions": 227,
+        "deletions": 129,
+        "date": "2019-07-17",
+        "commitResults": [
+          {
+            "hash": "e2c6b8c24edeb99ffe65a8c425978c5011d80db1",
+            "message": "[#738] CsvParser: fix incorrect splitting of literals commas (#739)",
+            "insertions": 148,
+            "deletions": 91
+          },
+          {
+            "hash": "88c4964f61cf797e6f0ab75925be1ae0851f43c9",
+            "message": "[#531,#707] Analysis: use all formats by default (#708)",
+            "insertions": 79,
+            "deletions": 38
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -351,40 +370,59 @@
             "deletions": 5
           }
         ]
+      },
+      {
+        "insertions": 17,
+        "deletions": 2,
+        "date": "2019-07-17",
+        "commitResults": [
+          {
+            "hash": "255907108d29f67d4a08b91d36c8fe9a8368e7aa",
+            "message": "ChartView: highlight error messages in red (#790)",
+            "insertions": 16,
+            "deletions": 2
+          },
+          {
+            "hash": "674f87d83558ccdee29d8aadf42a9647624e2d30",
+            "message": "[#811] CodeView: fix position of toggle icons (#813)",
+            "insertions": 1,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 540,
-    "jamessspanggg": 284
+    "jylee-git": 753,
+    "jamessspanggg": 299
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 376,
-      "js": 20,
+      "java": 569,
+      "js": 34,
       "scss": 0,
       "json": 111,
-      "md": 30,
+      "md": 32,
       "py": 0,
       "jade": 0,
-      "gradle": 0,
-      "pug": 3
+      "gradle": 3,
+      "pug": 4
     },
     "jamessspanggg": {
       "java": 38,
       "js": 126,
-      "scss": 65,
+      "scss": 74,
       "json": 0,
       "md": 1,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 54
+      "pug": 60
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 2385.308,
-    "jamessspanggg": 592.5661
+    "jylee-git": 4049.2424,
+    "jamessspanggg": 569.66376
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

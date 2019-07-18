@@ -34545,70 +34545,70 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const cheerio \u003d module.parent.require(\u0027cheerio\u0027);"
+        "content": "/**"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const fs \u003d require(\u0027fs\u0027);"
+        "content": " * Parses PlantUML diagrams"
       },
       {
         "lineNumber": 3,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const path \u003d require(\u0027path\u0027);"
+        "content": " * Replaces \u003cpuml\u003e tags with \u003cpic\u003e tags with the appropriate src attribute and generates the diagrams"
       },
       {
         "lineNumber": 4,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const { exec } \u003d require(\u0027child_process\u0027);"
+        "content": " * by running the JAR executable"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const logger \u003d require(\u0027../../util/logger\u0027);"
+        "content": " */"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "const cheerio \u003d module.parent.require(\u0027cheerio\u0027);"
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const JAR_PATH \u003d path.resolve(__dirname, \u0027plantuml.jar\u0027);"
+        "content": "const fs \u003d require(\u0027fs\u0027);"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "const path \u003d require(\u0027path\u0027);"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const ERR_PROCESSING \u003d \u0027Error processing\u0027;"
+        "content": "const { exec } \u003d require(\u0027child_process\u0027);"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const ERR_READING \u003d \u0027Error reading\u0027;"
+        "content": "const logger \u003d require(\u0027../../util/logger\u0027);"
       },
       {
         "lineNumber": 11,
@@ -34622,91 +34622,91 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "// Tracks diagrams that have already been processed"
+        "content": "const JAR_PATH \u003d path.resolve(__dirname, \u0027plantuml.jar\u0027);"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "const processedDiagrams \u003d new Set();"
+        "content": ""
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "const ERR_PROCESSING \u003d \u0027Error processing\u0027;"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "const ERR_READING \u003d \u0027Error reading\u0027;"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "/**"
+        "content": ""
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "alyip98"
         },
-        "content": " * Parses PlantUML diagrams"
+        "content": "// Tracks diagrams that have already been processed"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "alyip98"
         },
-        "content": " * Replaces \u003cpuml\u003e tags with \u003cpic\u003e tags with the appropriate src attribute"
+        "content": "const processedDiagrams \u003d new Set();"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "alyip98"
         },
-        "content": " */"
+        "content": ""
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "/**"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "/**"
+        "content": " * Generates diagram and replaces src attribute of puml tag"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "alyip98"
         },
-        "content": " * Generates diagram and replaces src attribute of puml tag"
+        "content": " * @param src src attribute of the puml tag"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "alyip98"
         },
-        "content": " * @param src"
+        "content": " * @param cwf original file that contains the puml tag, we resolve relative src to this file"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "alyip98"
         },
-        "content": " * @param config"
+        "content": " * @param config sourcePath and resultPath from parser context"
       },
       {
         "lineNumber": 25,
@@ -34727,7 +34727,7 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "function generateDiagram(src, config) {"
+        "content": "function generateDiagram(src, cwf, config) {"
       },
       {
         "lineNumber": 28,
@@ -34741,455 +34741,455 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  // For replacing img.src"
+        "content": "  const _cwf \u003d cwf || sourcePath;"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  const diagramSrc \u003d src.replace(\u0027.puml\u0027, \u0027.png\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  // Path of the .puml file"
+        "content": "  // For replacing img.src"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  const rawDiagramPath \u003d path.resolve(path.dirname(sourcePath), src);"
+        "content": "  const diagramSrc \u003d src.replace(\u0027.puml\u0027, \u0027.png\u0027);"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  // Path of the .png to be generated"
+        "content": "  // Path of the .puml file"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  const outputFilePath \u003d path.resolve(path.dirname(resultPath), diagramSrc);"
+        "content": "  const rawDiagramPath \u003d path.resolve(path.dirname(_cwf), src);"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  // Output dir for the png file"
+        "content": "  // Path of the .png to be generated"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  const outputDir \u003d path.dirname(outputFilePath);"
+        "content": "  const outputFilePath \u003d path.resolve(resultPath, path.relative(sourcePath, rawDiagramPath)"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "    .replace(\u0027.puml\u0027, \u0027.png\u0027));"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  // Tracks built files to avoid accessing twice"
+        "content": "  // Output dir for the png file"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  if (processedDiagrams.has(outputFilePath)) { return diagramSrc; }"
+        "content": "  const outputDir \u003d path.dirname(outputFilePath);"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  processedDiagrams.add(outputFilePath);"
+        "content": ""
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "  // Tracks built files to avoid accessing twice"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  // Creates output dir if it doesn\u0027t exist"
+        "content": "  if (processedDiagrams.has(outputFilePath)) { return diagramSrc; }"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  if (!fs.existsSync(outputDir)) {"
+        "content": "  processedDiagrams.add(outputFilePath);"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    fs.mkdirSync(outputDir, { recursive: true });"
+        "content": ""
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  }"
+        "content": "  // Creates output dir if it doesn\u0027t exist"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "  if (!fs.existsSync(outputDir)) {"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  // Read diagram file, launch PlantUML jar"
+        "content": "    fs.mkdirSync(outputDir, { recursive: true });"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  fs.readFile(rawDiagramPath, (err, data) \u003d\u003e {"
+        "content": "  }"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    if (err) {"
+        "content": ""
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      logger.debug(err);"
+        "content": "  // Read diagram file, launch PlantUML jar"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      logger.error(`${ERR_READING} ${rawDiagramPath}`);"
+        "content": "  fs.readFile(rawDiagramPath, (err, data) \u003d\u003e {"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      return;"
+        "content": "    if (err) {"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    }"
+        "content": "      logger.debug(err);"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "      logger.error(`${ERR_READING} ${rawDiagramPath}`);"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    const umlCode \u003d data.toString();"
+        "content": "      return;"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    // Java command to launch PlantUML jar"
+        "content": ""
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    const cmd \u003d `java -jar \"${JAR_PATH}\" -pipe \u003e \"${outputFilePath}\"`;"
+        "content": "    const umlCode \u003d data.toString();"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    const childProcess \u003d exec(cmd);"
+        "content": ""
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "    // Java command to launch PlantUML jar"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    let errorLog \u003d \u0027\u0027;"
+        "content": "    const cmd \u003d `java -jar \"${JAR_PATH}\" -pipe \u003e \"${outputFilePath}\"`;"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "    const childProcess \u003d exec(cmd);"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    childProcess.stdin.write("
+        "content": ""
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      umlCode,"
+        "content": "    let errorLog \u003d \u0027\u0027;"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      (e) \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "        if (e) {"
+        "content": "    childProcess.stdin.write("
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "          logger.debug(e);"
+        "content": "      umlCode,"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "          logger.error(`${ERR_PROCESSING} ${rawDiagramPath}`);"
+        "content": "      (e) \u003d\u003e {"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "        }"
+        "content": "        if (e) {"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "        childProcess.stdin.end();"
+        "content": "          logger.debug(e);"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      },"
+        "content": "          logger.error(`${ERR_PROCESSING} ${rawDiagramPath}`);"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    );"
+        "content": "        }"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "        childProcess.stdin.end();"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    childProcess.on(\u0027error\u0027, (error) \u003d\u003e {"
+        "content": "      },"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      logger.debug(error);"
+        "content": "    );"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      logger.error(`${ERR_PROCESSING} ${rawDiagramPath}`);"
+        "content": ""
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    });"
+        "content": "    childProcess.on(\u0027error\u0027, (error) \u003d\u003e {"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "      logger.debug(error);"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    childProcess.stderr.on(\u0027data\u0027, (errorMsg) \u003d\u003e {"
+        "content": "      logger.error(`${ERR_PROCESSING} ${rawDiagramPath}`);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      errorLog +\u003d errorMsg;"
+        "content": "    });"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    });"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "    childProcess.stderr.on(\u0027data\u0027, (errorMsg) \u003d\u003e {"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    childProcess.on(\u0027close\u0027, (code) \u003d\u003e {"
+        "content": "      errorLog +\u003d errorMsg;"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      if (code !\u003d\u003d 0) {"
+        "content": "    });"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "        logger.error(`${ERR_PROCESSING} ${rawDiagramPath}`);"
+        "content": ""
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "        // This goes to the log file, but not shown on the console"
+        "content": "    childProcess.on(\u0027close\u0027, (code) \u003d\u003e {"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "        logger.debug(errorLog);"
+        "content": "      if (code !\u003d\u003d 0) {"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      }"
+        "content": "        logger.error(`${ERR_PROCESSING} ${rawDiagramPath}`);"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    });"
+        "content": "        // This goes to the log file, but not shown on the console"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  });"
+        "content": "        logger.debug(errorLog);"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "      }"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  return diagramSrc;"
+        "content": "    });"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "}"
+        "content": "  });"
       },
       {
         "lineNumber": 94,
@@ -35203,56 +35203,56 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "module.exports \u003d {"
+        "content": "  return diagramSrc;"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  preRender: (content, pluginContext, frontmatter, config) \u003d\u003e {"
+        "content": "}"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    // Processes all \u003cpuml\u003e tags"
+        "content": ""
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    const $ \u003d cheerio.load(content, { xmlMode: true });"
+        "content": "module.exports \u003d {"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    $(\u0027puml\u0027).each((i, tag) \u003d\u003e {"
+        "content": "  preRender: (content, pluginContext, frontmatter, config) \u003d\u003e {"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      // eslint-disable-next-line no-param-reassign"
+        "content": "    // Processes all \u003cpuml\u003e tags"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      tag.name \u003d \u0027pic\u0027;"
+        "content": "    const $ \u003d cheerio.load(content, { xmlMode: true });"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      const { src } \u003d tag.attribs;"
+        "content": "    $(\u0027puml\u0027).each((i, tag) \u003d\u003e {"
       },
       {
         "lineNumber": 103,
@@ -35266,38 +35266,59 @@
         "author": {
           "gitId": "alyip98"
         },
-        "content": "      tag.attribs.src \u003d generateDiagram(src, config);"
+        "content": "      tag.name \u003d \u0027pic\u0027;"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    });"
+        "content": "      const { src, cwf } \u003d tag.attribs;"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "alyip98"
         },
-        "content": ""
+        "content": "      // eslint-disable-next-line no-param-reassign"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "    return $.html();"
+        "content": "      tag.attribs.src \u003d generateDiagram(src, cwf, config);"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "alyip98"
         },
-        "content": "  },"
+        "content": "    });"
       },
       {
         "lineNumber": 109,
+        "author": {
+          "gitId": "alyip98"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "alyip98"
+        },
+        "content": "    return $.html();"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "alyip98"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 112,
         "author": {
           "gitId": "alyip98"
         },
@@ -35305,7 +35326,7 @@
       }
     ],
     "authorContributionMap": {
-      "alyip98": 109
+      "alyip98": 112
     }
   },
   {

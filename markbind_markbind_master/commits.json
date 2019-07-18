@@ -293,12 +293,25 @@
             "deletions": 12
           }
         ]
+      },
+      {
+        "insertions": 16,
+        "deletions": 13,
+        "date": "2019-07-18",
+        "commitResults": [
+          {
+            "hash": "ee3cf9c10c8caf2b001cab06a99faf2b5dbe2dc1",
+            "message": "Fix PlantUML include bug (#919)",
+            "insertions": 16,
+            "deletions": 13
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "openorclose": 580,
-    "alyip98": 657
+    "alyip98": 660
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
@@ -315,7 +328,7 @@
     },
     "alyip98": {
       "java": 0,
-      "js": 142,
+      "js": 145,
       "css": 0,
       "json": 105,
       "md": 317,
@@ -327,8 +340,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 4276.5293,
-    "alyip98": 3108.8284
+    "openorclose": 3965.7654,
+    "alyip98": 2892.8394
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",
