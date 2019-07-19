@@ -174,6 +174,25 @@
             "deletions": 8
           }
         ]
+      },
+      {
+        "insertions": 194,
+        "deletions": 74,
+        "date": "2019-07-19",
+        "commitResults": [
+          {
+            "hash": "98f2066cc30b1ce6e38b27e52433f4bb0f7657df",
+            "message": "[#9750] Instructor: Courses/Enroll: Limit of 100 students per section is not enforced (#9753)",
+            "insertions": 155,
+            "deletions": 46
+          },
+          {
+            "hash": "e12c376eeb13254f9deba268acd4665facfabe14",
+            "message": "[#9811] Students List: Have a better way to show empty students list (#9814)",
+            "insertions": 39,
+            "deletions": 28
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -264,6 +283,19 @@
             "hash": "b987a188b2298130424efd046d7985c44b080a15",
             "message": "[#9382] Add test cases for question-text-with-info component (#9749)",
             "insertions": 57,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 158,
+        "deletions": 0,
+        "date": "2019-07-19",
+        "commitResults": [
+          {
+            "hash": "b24b9a50b098a4805716d482d9ab93af08622ec9",
+            "message": "[#9382] Add tests for mcq/msq/rank-options-question-additional-info components (#9754)",
+            "insertions": 158,
             "deletions": 0
           }
         ]
@@ -391,23 +423,36 @@
             "deletions": 19
           }
         ]
+      },
+      {
+        "insertions": 335,
+        "deletions": 2,
+        "date": "2019-07-19",
+        "commitResults": [
+          {
+            "hash": "7bf3facbc3598c17e4c8a88fe44b679c44a305b3",
+            "message": "[#9595] Add tests for POST /submission/confirmation (#9725)",
+            "insertions": 335,
+            "deletions": 2
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 795,
-    "Pengyuz": 571,
-    "crizyli": 1095
+    "erjillsison": 960,
+    "Pengyuz": 729,
+    "crizyli": 1430
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
-      "java": 288,
+      "java": 443,
       "js": 0,
       "scss": 7,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 65,
+      "html": 75,
       "ts": 435
     },
     "Pengyuz": {
@@ -418,10 +463,10 @@
       "py": 0,
       "tag": 0,
       "html": 2,
-      "ts": 125
+      "ts": 283
     },
     "crizyli": {
-      "java": 399,
+      "java": 734,
       "js": 0,
       "scss": 3,
       "md": 0,
@@ -432,9 +477,9 @@
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 3979.9521,
-    "Pengyuz": 1720.1292,
-    "crizyli": 28505.502
+    "erjillsison": 4404.786,
+    "Pengyuz": 1825.6155,
+    "crizyli": 26224.633
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",

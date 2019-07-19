@@ -461,7 +461,7 @@
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "    implementation  group: \u0027org.fusesource.jansi\u0027, name: \u0027jansi\u0027, version: \u00271.18\u0027"
       },
@@ -1560,7 +1560,8 @@
     ],
     "authorContributionMap": {
       "jylee-git": 3,
-      "-": 189
+      "bluein-green": 1,
+      "-": 188
     }
   },
   {
@@ -7553,7 +7554,7 @@
       {
         "lineNumber": 132,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "              .summary-charts__title--contribution.mini-font(title\u003d\"Total contribution of group\") [{{ getGroupTotalContribution(repo) }} lines]"
       },
@@ -7588,7 +7589,7 @@
       {
         "lineNumber": 137,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "              .summary-charts__title--contribution.mini-font(title\u003d\"Total contribution of group\") [{{ getGroupTotalContribution(repo) }} lines]"
       },
@@ -7763,7 +7764,7 @@
       {
         "lineNumber": 162,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "                .summary-chart__title--contribution.mini-font [{{ user.totalCommits }} lines]"
       },
@@ -8701,8 +8702,9 @@
     ],
     "authorContributionMap": {
       "jylee-git": 4,
+      "bluein-green": 3,
       "jamessspanggg": 46,
-      "-": 245
+      "-": 242
     }
   },
   {
@@ -11655,28 +11657,28 @@
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": ".mini-font {"
       },
       {
         "lineNumber": 49,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "  font-size: .65rem;"
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "  font-weight: normal;"
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "}"
       },
@@ -12558,21 +12560,21 @@
       {
         "lineNumber": 177,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "    flex: 0 1 auto;"
       },
       {
         "lineNumber": 178,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "    flex-flow: inherit;"
       },
       {
         "lineNumber": 179,
         "author": {
-          "gitId": "-"
+          "gitId": "bluein-green"
         },
         "content": "    justify-content: inherit;"
       },
@@ -15511,8 +15513,9 @@
       }
     ],
     "authorContributionMap": {
+      "bluein-green": 7,
       "jamessspanggg": 183,
-      "-": 415
+      "-": 408
     }
   },
   {
@@ -45932,6 +45935,358 @@
     ],
     "authorContributionMap": {
       "jamessspanggg": 7
+    }
+  },
+  {
+    "path": "src/main/java/reposense/system/CustomLogFormatter.java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package reposense.system;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "import static org.fusesource.jansi.Ansi.ansi;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.text.DateFormat;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.text.SimpleDateFormat;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.Date;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "import java.util.HashMap;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "import java.util.Map;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "import java.util.logging.Level;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.LogRecord;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.SimpleFormatter;"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "import org.fusesource.jansi.Ansi;"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "import org.fusesource.jansi.AnsiConsole;"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Custom log formatter for different handlers to display only relevant information"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class CustomLogFormatter extends SimpleFormatter {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final DateFormat dateFormat \u003d new SimpleDateFormat(\"hh:mm:ss\");"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    private static final String ERROR_HIGHLIGHT \u003d ansi().bg(Ansi.Color.RED).fg(Ansi.Color.WHITE).a(\"[ERROR]\")"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "            .reset().toString();"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    private static final String WARNING_HIGHLIGHT \u003d ansi().bg(Ansi.Color.YELLOW).fg(Ansi.Color.BLACK).a(\"[WARNING]\")"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "            .reset().toString();"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    private static final Map\u003cLevel, String\u003e formatMap \u003d new HashMap\u003c\u003e();"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    public CustomLogFormatter() {"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "        formatMap.put(Level.WARNING, WARNING_HIGHLIGHT);"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "        formatMap.put(Level.SEVERE, ERROR_HIGHLIGHT);"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "        AnsiConsole.systemInstall();"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @Override"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public synchronized String format(LogRecord record) {"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        StringBuilder builder \u003d new StringBuilder();"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        builder.append(dateFormat.format(new Date(record.getMillis()))).append(\" - \");"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "        if (formatMap.containsKey(record.getLevel())) {"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "            builder.append(formatMap.get(record.getLevel())).append(\" \");"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        builder.append(formatMessage(record));"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        builder.append(\"\\n\");"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return builder.toString();"
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "bluein-green": 24,
+      "-": 25
     }
   },
   {

@@ -138,6 +138,47 @@
         ]
       }
     ],
+    "bluein-green": [
+      {
+        "insertions": 8,
+        "deletions": 6,
+        "date": "2019-07-10",
+        "commitResults": [
+          {
+            "hash": "95e1ff81b55b7337c6f79e354acfbca56c05e53c",
+            "message": "[#745] Toolbar: edit flexbox properties (#768)",
+            "insertions": 8,
+            "deletions": 6
+          }
+        ]
+      },
+      {
+        "insertions": 25,
+        "deletions": 0,
+        "date": "2019-07-14",
+        "commitResults": [
+          {
+            "hash": "0e24977b4c6c418078697361e13f7402aa485deb",
+            "message": "[#705] Log: distinct warning and error messages (#794)",
+            "insertions": 25,
+            "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 9,
+        "deletions": 5,
+        "date": "2019-07-18",
+        "commitResults": [
+          {
+            "hash": "e7aa3277c8785b608e7b36ccdfc4457f65f832ff",
+            "message": "[#753] Display individuals\u0027 contribution (#762)",
+            "insertions": 9,
+            "deletions": 5
+          }
+        ]
+      }
+    ],
     "jamessspanggg": [
       {
         "insertions": 2,
@@ -407,6 +448,7 @@
   },
   "authorFinalContributionMap": {
     "jylee-git": 753,
+    "bluein-green": 35,
     "jamessspanggg": 728
   },
   "authorFileFormatContributionMap": {
@@ -420,6 +462,17 @@
       "jade": 0,
       "gradle": 3,
       "pug": 4
+    },
+    "bluein-green": {
+      "java": 24,
+      "js": 0,
+      "scss": 7,
+      "json": 0,
+      "md": 0,
+      "py": 0,
+      "jade": 0,
+      "gradle": 1,
+      "pug": 3
     },
     "jamessspanggg": {
       "java": 38,
@@ -435,10 +488,12 @@
   },
   "authorContributionVariance": {
     "jylee-git": 3993.0547,
+    "bluein-green": 14.553352,
     "jamessspanggg": 35830.332
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
+    "bluein-green": "Jin Minjia",
     "jamessspanggg": "James"
   }
 }
