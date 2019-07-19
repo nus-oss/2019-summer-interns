@@ -69,24 +69,37 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 282,
+        "date": "2019-07-18",
+        "commitResults": [
+          {
+            "hash": "4a8e46c3cdddb12d1a93969542b914e79ec33a83",
+            "message": "Developer Guide: Remove GetStartedProgramming",
+            "insertions": 1,
+            "deletions": 282
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Jeffry Lum": 330
+    "Jeffry Lum": 327
   },
   "authorFileFormatContributionMap": {
     "Jeffry Lum": {
       "java": 0,
       "js": 0,
       "css": 0,
-      "adoc": 330,
+      "adoc": 327,
       "fxml": 0,
       "gradle": 0
     }
   },
   "authorContributionVariance": {
-    "Jeffry Lum": 5406.651
+    "Jeffry Lum": 6269.846
   },
   "authorDisplayNameMap": {
     "Jeffry Lum": "Jeffry"

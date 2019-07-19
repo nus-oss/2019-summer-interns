@@ -389,12 +389,25 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 806,
+        "deletions": 752,
+        "date": "2019-07-18",
+        "commitResults": [
+          {
+            "hash": "e8bf034aaf33fa1a59c8933ffaa22dfdf82048fb",
+            "message": "[#522] Implement style checker on .scss files (#803)",
+            "insertions": 806,
+            "deletions": 752
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 753,
-    "jamessspanggg": 299
+    "jamessspanggg": 728
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -411,18 +424,18 @@
     "jamessspanggg": {
       "java": 38,
       "js": 126,
-      "scss": 74,
-      "json": 0,
-      "md": 1,
+      "scss": 467,
+      "json": 34,
+      "md": 5,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 60
+      "pug": 58
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 4049.2424,
-    "jamessspanggg": 569.66376
+    "jylee-git": 3993.0547,
+    "jamessspanggg": 35830.332
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
