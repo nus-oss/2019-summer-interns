@@ -1,6 +1,6 @@
 {
-  "repoSenseVersion": "e8bf034aaf",
-  "reportGeneratedTime": "Fri Jul 19 18:17:17 2019 UTC+08:00",
+  "repoSenseVersion": "e2a938abbd",
+  "reportGeneratedTime": "Sat Jul 20 11:35:14 2019 UTC+08:00",
   "repos": [
     {
       "location": {
@@ -9,7 +9,8 @@
         "organization": "markbind"
       },
       "branch": "master",
-      "displayName": "markbind_markbind_master"
+      "displayName": "markbind/markbind[master]",
+      "outputFolderName": "markbind_markbind_master"
     },
     {
       "location": {
@@ -18,7 +19,8 @@
         "organization": "markbind"
       },
       "branch": "master",
-      "displayName": "markbind_vue-strap_master"
+      "displayName": "markbind/vue-strap[master]",
+      "outputFolderName": "markbind_vue-strap_master"
     },
     {
       "location": {
@@ -27,7 +29,8 @@
         "organization": "powerpointlabs"
       },
       "branch": "dev-release",
-      "displayName": "powerpointlabs_powerpointlabs_dev-release"
+      "displayName": "powerpointlabs/powerpointlabs[dev-release]",
+      "outputFolderName": "powerpointlabs_powerpointlabs_dev-release"
     },
     {
       "location": {
@@ -36,7 +39,8 @@
         "organization": "powerpointlabs"
       },
       "branch": "master",
-      "displayName": "powerpointlabs_PowerPointLabs-Website_master"
+      "displayName": "powerpointlabs/PowerPointLabs-Website[master]",
+      "outputFolderName": "powerpointlabs_PowerPointLabs-Website_master"
     },
     {
       "location": {
@@ -45,7 +49,8 @@
         "organization": "reposense"
       },
       "branch": "master",
-      "displayName": "reposense_reposense_master"
+      "displayName": "reposense/reposense[master]",
+      "outputFolderName": "reposense_reposense_master"
     },
     {
       "location": {
@@ -54,7 +59,8 @@
         "organization": "se-edu"
       },
       "branch": "master",
-      "displayName": "se-edu_addressbook-level4_master"
+      "displayName": "se-edu/addressbook-level4[master]",
+      "outputFolderName": "se-edu_addressbook-level4_master"
     },
     {
       "location": {
@@ -63,7 +69,8 @@
         "organization": "se-edu"
       },
       "branch": "master",
-      "displayName": "se-edu_addressbook-level35_master"
+      "displayName": "se-edu/addressbook-level35[master]",
+      "outputFolderName": "se-edu_addressbook-level35_master"
     },
     {
       "location": {
@@ -72,7 +79,8 @@
         "organization": "se-edu"
       },
       "branch": "master",
-      "displayName": "se-edu_addressbook-level2_master"
+      "displayName": "se-edu/addressbook-level2[master]",
+      "outputFolderName": "se-edu_addressbook-level2_master"
     },
     {
       "location": {
@@ -81,7 +89,8 @@
         "organization": "se-edu"
       },
       "branch": "master",
-      "displayName": "se-edu_addressbook-level1_master"
+      "displayName": "se-edu/addressbook-level1[master]",
+      "outputFolderName": "se-edu_addressbook-level1_master"
     },
     {
       "location": {
@@ -90,7 +99,8 @@
         "organization": "TEAMMATES"
       },
       "branch": "master",
-      "displayName": "TEAMMATES_teammates_master"
+      "displayName": "TEAMMATES/teammates[master]",
+      "outputFolderName": "TEAMMATES_teammates_master"
     },
     {
       "location": {
@@ -99,9 +109,10 @@
         "organization": "CATcher-org"
       },
       "branch": "master",
-      "displayName": "CATcher-org_CATcher_master"
+      "displayName": "CATcher-org/CATcher[master]",
+      "outputFolderName": "CATcher-org_CATcher_master"
     }
   ],
   "sinceDate": "2019-05-13",
-  "untilDate": "2019-07-19"
+  "untilDate": "2019-07-20"
 }

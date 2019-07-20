@@ -177,6 +177,19 @@
             "deletions": 5
           }
         ]
+      },
+      {
+        "insertions": 25,
+        "deletions": 12,
+        "date": "2019-07-20",
+        "commitResults": [
+          {
+            "hash": "e2a938abbd053464ffd9fba61692c962eedf52cf",
+            "message": "[#661] Change chart title format (#802)",
+            "insertions": 25,
+            "deletions": 12
+          }
+        ]
       }
     ],
     "jamessspanggg": [
@@ -448,7 +461,7 @@
   },
   "authorFinalContributionMap": {
     "jylee-git": 753,
-    "bluein-green": 35,
+    "bluein-green": 60,
     "jamessspanggg": 728
   },
   "authorFileFormatContributionMap": {
@@ -464,11 +477,11 @@
       "pug": 4
     },
     "bluein-green": {
-      "java": 24,
-      "js": 0,
+      "java": 44,
+      "js": 4,
       "scss": 7,
       "json": 0,
-      "md": 0,
+      "md": 1,
       "py": 0,
       "jade": 0,
       "gradle": 1,
@@ -487,9 +500,9 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 3993.0547,
-    "bluein-green": 14.553352,
-    "jamessspanggg": 35830.332
+    "jylee-git": 3885.207,
+    "bluein-green": 32.878387,
+    "jamessspanggg": 34821.125
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
