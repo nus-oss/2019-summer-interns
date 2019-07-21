@@ -193,6 +193,19 @@
             "deletions": 28
           }
         ]
+      },
+      {
+        "insertions": 38,
+        "deletions": 5,
+        "date": "2019-07-20",
+        "commitResults": [
+          {
+            "hash": "1990e969cf627ae43421352708b5303408dd07b1",
+            "message": "[#9766] Instructor: Sessions: Add new feedback session form should be hidden by default (#9790)",
+            "insertions": 38,
+            "deletions": 5
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -436,24 +449,37 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 166,
+        "deletions": 339,
+        "date": "2019-07-20",
+        "commitResults": [
+          {
+            "hash": "bbb46191ea35431d2f64df9d80b75aa7e82cd49c",
+            "message": "[#9595] Migrate GET /instructor/courses to RESTFul API (#9822)",
+            "insertions": 166,
+            "deletions": 339
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 960,
+    "erjillsison": 983,
     "Pengyuz": 729,
-    "crizyli": 1430
+    "crizyli": 1594
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
       "java": 443,
       "js": 0,
-      "scss": 7,
+      "scss": 13,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 75,
-      "ts": 435
+      "html": 91,
+      "ts": 436
     },
     "Pengyuz": {
       "java": 444,
@@ -472,14 +498,14 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 95,
-      "ts": 598
+      "html": 136,
+      "ts": 721
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 4404.786,
-    "Pengyuz": 1825.6155,
-    "crizyli": 26224.633
+    "erjillsison": 4348.0864,
+    "Pengyuz": 1800.8441,
+    "crizyli": 29060.312
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",

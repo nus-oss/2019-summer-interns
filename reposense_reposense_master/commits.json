@@ -456,13 +456,32 @@
             "deletions": 752
           }
         ]
+      },
+      {
+        "insertions": 11,
+        "deletions": 1,
+        "date": "2019-07-20",
+        "commitResults": [
+          {
+            "hash": "174d06f15417b6feb7fc44bc608a478518a66b34",
+            "message": "[#764] Toolbar: fix search functionality for Safari users (#797)",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "f6520543bcb0c7ef1d0365a74a87958caca89e92",
+            "message": "[#763] v_summary.js: remove redundant calls to getFiltered() (#800)",
+            "insertions": 9,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 753,
     "bluein-green": 60,
-    "jamessspanggg": 728
+    "jamessspanggg": 739
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -489,20 +508,20 @@
     },
     "jamessspanggg": {
       "java": 38,
-      "js": 126,
+      "js": 136,
       "scss": 467,
       "json": 34,
       "md": 5,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 58
+      "pug": 59
     }
   },
   "authorContributionVariance": {
     "jylee-git": 3885.207,
     "bluein-green": 32.878387,
-    "jamessspanggg": 34821.125
+    "jamessspanggg": 34812.277
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
