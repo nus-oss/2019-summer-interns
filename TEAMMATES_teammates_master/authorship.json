@@ -164950,7 +164950,7 @@
         "author": {
           "gitId": "erjillsison"
         },
-        "content": "        \u003cng-container *ngIf\u003d\"student.status \u003d\u003d \u0027Yet to join\u0027\"\u003e"
+        "content": "        \u003cng-container *ngIf\u003d\"student.status \u003d\u003d\u003d JoinState.NOT_JOINED\"\u003e"
       },
       {
         "lineNumber": 88,
@@ -167969,13 +167969,195 @@
       {
         "lineNumber": 337,
         "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 338,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "  it(\u0027should display \"Send Invite\" button when a student has not joined the course\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 339,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    component.enableRemindButton \u003d true;"
+      },
+      {
+        "lineNumber": 340,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    component.sections \u003d ["
+      },
+      {
+        "lineNumber": 341,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "      {"
+      },
+      {
+        "lineNumber": 342,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        students: ["
+      },
+      {
+        "lineNumber": 343,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "          {"
+      },
+      {
+        "lineNumber": 344,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "            name: \u0027tester\u0027,"
+      },
+      {
+        "lineNumber": 345,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "            team: \u00271\u0027,"
+      },
+      {
+        "lineNumber": 346,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "            email: \u0027tester@tester.com\u0027,"
+      },
+      {
+        "lineNumber": 347,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "            status: JoinState.NOT_JOINED,"
+      },
+      {
+        "lineNumber": 348,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "          },"
+      },
+      {
+        "lineNumber": 349,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        ],"
+      },
+      {
+        "lineNumber": 350,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        sectionName: \u00271\u0027,"
+      },
+      {
+        "lineNumber": 351,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        isAllowedToViewStudentInSection: true,"
+      },
+      {
+        "lineNumber": 352,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        isAllowedToModifyStudent: true,"
+      },
+      {
+        "lineNumber": 353,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "      },"
+      },
+      {
+        "lineNumber": 354,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    ];"
+      },
+      {
+        "lineNumber": 355,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 356,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    fixture.detectChanges();"
+      },
+      {
+        "lineNumber": 357,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 358,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    const buttons: any \u003d fixture.nativeElement.querySelectorAll(\u0027button\u0027);"
+      },
+      {
+        "lineNumber": 359,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    const sendInviteButton: any \u003d Array.from(buttons)"
+      },
+      {
+        "lineNumber": 360,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "        .find((button: any) \u003d\u003e button.firstChild.nodeValue \u003d\u003d\u003d \u0027Send Invite\u0027);"
+      },
+      {
+        "lineNumber": 361,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "    expect(sendInviteButton).toBeTruthy();"
+      },
+      {
+        "lineNumber": 362,
+        "author": {
+          "gitId": "erjillsison"
+        },
+        "content": "  });"
+      },
+      {
+        "lineNumber": 363,
+        "author": {
           "gitId": "-"
         },
         "content": "});"
       }
     ],
     "authorContributionMap": {
-      "erjillsison": 29,
+      "erjillsison": 55,
       "-": 308
     }
   },

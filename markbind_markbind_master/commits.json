@@ -127,6 +127,25 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 377,
+        "deletions": 3,
+        "date": "2019-07-21",
+        "commitResults": [
+          {
+            "hash": "ab565fcd129ef68d2f53674d2efdb2bdfbf3208a",
+            "message": "Remove underline on footnote popovers (#924)",
+            "insertions": 1,
+            "deletions": 3
+          },
+          {
+            "hash": "741118c564b6a3a504670cafee64822056d15c07",
+            "message": "Add temp styles to panel to reduce FOUC (#927)",
+            "insertions": 376,
+            "deletions": 0
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -310,14 +329,14 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 580,
+    "openorclose": 954,
     "alyip98": 660
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
       "java": 0,
-      "js": 444,
-      "css": 24,
+      "js": 442,
+      "css": 400,
       "json": 1,
       "md": 21,
       "mbd": 0,
@@ -340,8 +359,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 3965.7654,
-    "alyip98": 2892.8394
+    "openorclose": 5727.5186,
+    "alyip98": 2777.3691
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",

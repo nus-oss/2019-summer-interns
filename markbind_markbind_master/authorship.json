@@ -1407,31 +1407,689 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "/* Footnote anchor */"
+        "content": "/* Hide the contents of unexpanded panels */"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "/* stylelint-disable selector-type-no-unknown */"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "li.footnote-item:target {"
+        "content": "panel:not([expanded]):not([minimized]) {"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    background-color: #eee;"
+        "content": "    display: block;"
       },
       {
         "lineNumber": 205,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized] {"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([expanded]):not([minimized])::before {"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"Loading...\";"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: block;"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    line-height: 1.5;"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-bottom: 0;"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-top: 5px;"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]::before {"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: #0b2e13;"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"\";"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dseamless]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: transparent;"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: 0;"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dprimary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--primary);"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--primary);"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsecondary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsuccess]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--success);"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--success);"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dwarning]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--warning);"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--warning);"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddanger]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--danger);"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--danger);"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dinfo]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--info);"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--info);"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dlight]:not([expanded])::before,"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([type]):not([expanded])::before {"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddark]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--dark);"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--dark);"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* increasing specificity */"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "#flex-body panel:not([expanded]) panel {"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: none;"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* stylelint-enable selector-type-no-unknown */"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* Footnote anchor */"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "li.footnote-item:target {"
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: #eee;"
+      },
+      {
+        "lineNumber": 299,
         "author": {
           "gitId": "openorclose"
         },
@@ -1439,7 +2097,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 6,
+      "openorclose": 100,
       "-": 199
     }
   },
@@ -9231,7 +9889,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  \"version\": \"2.5.2\","
+        "content": "  \"version\": \"2.5.3\","
       },
       {
         "lineNumber": 4,
@@ -34446,87 +35104,73 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "            \u003ctrigger for\u003d\"${id}\"\u003e"
+        "content": "            ${$(li).html()}"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "              ${$(li).html()}"
+        "content": "          \u003c/div\u003e"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "            \u003c/trigger\u003e"
+        "content": "        \u003c/popover\u003e"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "          \u003c/div\u003e"
+        "content": "      `;"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "        \u003c/popover\u003e"
+        "content": "    });"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "      `;"
+        "content": "    $(\u0027#content-wrapper\u0027)"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    });"
+        "content": "      .append($(\u0027hr.footnotes-sep\u0027))"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    $(\u0027#content-wrapper\u0027)"
+        "content": "      .append($(\u0027section.footnotes\u0027).append(popoversHtml));"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "      .append($(\u0027hr.footnotes-sep\u0027))"
+        "content": "    return $.html();"
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "      .append($(\u0027section.footnotes\u0027).append(popoversHtml));"
-      },
-      {
-        "lineNumber": 22,
-        "author": {
-          "gitId": "openorclose"
-        },
-        "content": "    return $.html();"
-      },
-      {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "openorclose"
-        },
         "content": "  },"
       },
       {
-        "lineNumber": 24,
+        "lineNumber": 22,
         "author": {
           "gitId": "openorclose"
         },
@@ -34534,7 +35178,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 24
+      "openorclose": 22
     }
   },
   {
@@ -36977,31 +37621,689 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "/* Footnote anchor */"
+        "content": "/* Hide the contents of unexpanded panels */"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "/* stylelint-disable selector-type-no-unknown */"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "li.footnote-item:target {"
+        "content": "panel:not([expanded]):not([minimized]) {"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    background-color: #eee;"
+        "content": "    display: block;"
       },
       {
         "lineNumber": 205,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized] {"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([expanded]):not([minimized])::before {"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"Loading...\";"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: block;"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    line-height: 1.5;"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-bottom: 0;"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-top: 5px;"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]::before {"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: #0b2e13;"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"\";"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dseamless]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: transparent;"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: 0;"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dprimary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--primary);"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--primary);"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsecondary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsuccess]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--success);"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--success);"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dwarning]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--warning);"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--warning);"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddanger]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--danger);"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--danger);"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dinfo]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--info);"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--info);"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dlight]:not([expanded])::before,"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([type]):not([expanded])::before {"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddark]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--dark);"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--dark);"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* increasing specificity */"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "#flex-body panel:not([expanded]) panel {"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: none;"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* stylelint-enable selector-type-no-unknown */"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* Footnote anchor */"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "li.footnote-item:target {"
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: #eee;"
+      },
+      {
+        "lineNumber": 299,
         "author": {
           "gitId": "openorclose"
         },
@@ -37009,7 +38311,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 6,
+      "openorclose": 100,
       "-": 199
     }
   },
@@ -44658,31 +45960,689 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "/* Footnote anchor */"
+        "content": "/* Hide the contents of unexpanded panels */"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "/* stylelint-disable selector-type-no-unknown */"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "li.footnote-item:target {"
+        "content": "panel:not([expanded]):not([minimized]) {"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    background-color: #eee;"
+        "content": "    display: block;"
       },
       {
         "lineNumber": 205,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized] {"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([expanded]):not([minimized])::before {"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"Loading...\";"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: block;"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    line-height: 1.5;"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-bottom: 0;"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-top: 5px;"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]::before {"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: #0b2e13;"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"\";"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dseamless]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: transparent;"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: 0;"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dprimary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--primary);"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--primary);"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsecondary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsuccess]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--success);"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--success);"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dwarning]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--warning);"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--warning);"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddanger]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--danger);"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--danger);"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dinfo]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--info);"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--info);"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dlight]:not([expanded])::before,"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([type]):not([expanded])::before {"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddark]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--dark);"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--dark);"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* increasing specificity */"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "#flex-body panel:not([expanded]) panel {"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: none;"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* stylelint-enable selector-type-no-unknown */"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* Footnote anchor */"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "li.footnote-item:target {"
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: #eee;"
+      },
+      {
+        "lineNumber": 299,
         "author": {
           "gitId": "openorclose"
         },
@@ -44690,7 +46650,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 6,
+      "openorclose": 100,
       "-": 199
     }
   },
@@ -46102,31 +48062,689 @@
         "author": {
           "gitId": "openorclose"
         },
-        "content": "/* Footnote anchor */"
+        "content": "/* Hide the contents of unexpanded panels */"
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "openorclose"
         },
-        "content": ""
+        "content": "/* stylelint-disable selector-type-no-unknown */"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "li.footnote-item:target {"
+        "content": "panel:not([expanded]):not([minimized]) {"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "openorclose"
         },
-        "content": "    background-color: #eee;"
+        "content": "    display: block;"
       },
       {
         "lineNumber": 205,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized] {"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: hidden;"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([expanded]):not([minimized])::before {"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"Loading...\";"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: block;"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 53px;"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    line-height: 1.5;"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-bottom: 0;"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    margin-top: 5px;"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]::before {"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: #0b2e13;"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: white;"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    content: \"\";"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: inline-block;"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    height: 38px;"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    padding: 0.75rem 1.25rem;"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    visibility: visible;"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dseamless]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: transparent;"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border: 0;"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dprimary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--primary);"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--primary);"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsecondary]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--secondary);"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dsuccess]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--success);"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--success);"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dwarning]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--warning);"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--warning);"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddanger]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--danger);"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--danger);"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dinfo]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--info);"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--info);"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003dlight]:not([expanded])::before,"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel:not([type]):not([expanded])::before {"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    color: black;"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[type\u003ddark]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--dark);"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    border-color: var(--dark);"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "panel[minimized]:not([expanded])::before {"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: var(--light);"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* increasing specificity */"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "#flex-body panel:not([expanded]) panel {"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    display: none;"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* stylelint-enable selector-type-no-unknown */"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "/* Footnote anchor */"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "li.footnote-item:target {"
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "openorclose"
+        },
+        "content": "    background-color: #eee;"
+      },
+      {
+        "lineNumber": 299,
         "author": {
           "gitId": "openorclose"
         },
@@ -46134,7 +48752,7 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 6,
+      "openorclose": 100,
       "-": 199
     }
   },

@@ -230,22 +230,41 @@
             "deletions": 304
           }
         ]
+      },
+      {
+        "insertions": 41,
+        "deletions": 59,
+        "date": "2019-07-21",
+        "commitResults": [
+          {
+            "hash": "b462fe2daf6e1972b5c89a739e2826b6281f8049",
+            "message": "refactor haschildshaperange-\u003echildshaperange into method (#1967)",
+            "insertions": 18,
+            "deletions": 50
+          },
+          {
+            "hash": "9849ba075f665a01cd6ebe1cac8bc39161da041f",
+            "message": "Fix dialog box not appearing (#1953)",
+            "insertions": 23,
+            "deletions": 9
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 4000
+    "yuhongherald": 4044
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 4000
+      "cs": 4044
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 78926.33
+    "yuhongherald": 73768.77
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

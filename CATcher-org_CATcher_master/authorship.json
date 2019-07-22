@@ -31835,21 +31835,21 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  constructor(private permissions: PermissionService,"
+        "content": "  constructor(public userService: UserService,"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "              private labelService: LabelService,"
+        "content": "              private permissions: PermissionService,"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "              private userService: UserService,"
+        "content": "              private labelService: LabelService,"
       },
       {
         "lineNumber": 56,
@@ -34855,9 +34855,9 @@
       {
         "lineNumber": 20,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  constructor(private labelService: LabelService) { }"
+        "content": "  constructor(public labelService: LabelService) { }"
       },
       {
         "lineNumber": 21,
@@ -34973,7 +34973,8 @@
       }
     ],
     "authorContributionMap": {
-      "KevinCJH": 36
+      "ptvrajsk": 1,
+      "KevinCJH": 35
     }
   },
   {
@@ -40391,16 +40392,16 @@
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  private readonly issueComponentsEnum \u003d ISSUE_COMPONENTS;"
+        "content": "  public readonly issueComponentsEnum \u003d ISSUE_COMPONENTS;"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  private readonly userRole \u003d UserRole;"
+        "content": "  public readonly userRole \u003d UserRole;"
       },
       {
         "lineNumber": 50,
@@ -40894,8 +40895,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 2,
-      "KevinCJH": 117
+      "ptvrajsk": 3,
+      "KevinCJH": 116
     }
   },
   {

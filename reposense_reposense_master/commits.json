@@ -475,18 +475,43 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 49,
+        "deletions": 26,
+        "date": "2019-07-22",
+        "commitResults": [
+          {
+            "hash": "c8f248d9283fe86270e1f2906a7812882742bff2",
+            "message": "[#724] Modify zoom-in feature to based on selected granularity (#729)",
+            "insertions": 42,
+            "deletions": 19
+          },
+          {
+            "hash": "eb0e20f6cfda5485770df37e8f387082452d88c7",
+            "message": "[#780] v_summary.js: remove Vue watcher for repos (#783)",
+            "insertions": 6,
+            "deletions": 6
+          },
+          {
+            "hash": "790840f5c3130b829cb655609d5e481b5932991d",
+            "message": "[#820] Cypress: add sinceDate in command arguments (#821)",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 753,
+    "jylee-git": 751,
     "bluein-green": 60,
-    "jamessspanggg": 739
+    "jamessspanggg": 781
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
       "java": 569,
-      "js": 34,
+      "js": 32,
       "scss": 0,
       "json": 111,
       "md": 32,
@@ -508,20 +533,20 @@
     },
     "jamessspanggg": {
       "java": 38,
-      "js": 136,
-      "scss": 467,
+      "js": 160,
+      "scss": 477,
       "json": 34,
       "md": 5,
       "py": 0,
       "jade": 0,
-      "gradle": 0,
-      "pug": 59
+      "gradle": 1,
+      "pug": 66
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 3885.207,
-    "bluein-green": 32.878387,
-    "jamessspanggg": 34812.277
+    "jylee-git": 3783.0027,
+    "bluein-green": 31.998814,
+    "jamessspanggg": 33872.24
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
