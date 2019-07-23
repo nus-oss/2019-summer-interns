@@ -8,7 +8,8 @@
         "commitResults": [
           {
             "hash": "08f6d8541022ddaf17ace15a6c97a196965b5a47",
-            "message": "[#9707] Add New Feedback Session: Default selected course ID in the form is incorrect (#9710)",
+            "messageTitle": "[#9707] Add New Feedback Session: Default selected course ID in the form is incorrect (#9710)",
+            "messageBody": "* Get courseId from query params\r\n\r\n* Change the default selected course to be same as query\r\n\r\n* Refactor instructor-sessions-page.component.ts\r\n\r\n* Inline getCourseFromList method\r\n",
             "insertions": 10,
             "deletions": 2
           }
@@ -21,7 +22,8 @@
         "commitResults": [
           {
             "hash": "96e1a43ad563e8b9637e7be4519a3ac70619acaf",
-            "message": "[#9706] UI: Headers: Inconsistent colour scheme for headers across different pages (#9711)",
+            "messageTitle": "[#9706] UI: Headers: Inconsistent colour scheme for headers across different pages (#9711)",
+            "messageBody": "* Update instructor home page card header colours\r\n\r\n* Update instructor student list card header colours\r\n\r\n* Update snapshot\r\n\r\n* Remove irrelevant change\r\n",
             "insertions": 4,
             "deletions": 4
           }
@@ -34,19 +36,22 @@
         "commitResults": [
           {
             "hash": "1302ea06ea723385d310e4d844bab669cd931859",
-            "message": "[#9510] Instructor: Course Page Component: Implement sorting for table headers (#9741)",
+            "messageTitle": "[#9510] Instructor: Course Page Component: Implement sorting for table headers (#9741)",
+            "messageBody": "* Add sort for course table\r\n\r\n* Update instructor course page snap\r\n",
             "insertions": 114,
             "deletions": 3
           },
           {
             "hash": "9a160d39db86a28323e729bf5534232eec68a817",
-            "message": "[#9657] Improve look of dropdown options in team contribution question  (#9699)",
+            "messageTitle": "[#9657] Improve look of dropdown options in team contribution question  (#9699)",
+            "messageBody": "* Fix colours of contribution dropdown options\r\n\r\n* Fix colour of \u0027Not Sure\u0027 option to be neutral\r\n\r\n* Fix indentation and ngClass to class\r\n",
             "insertions": 5,
             "deletions": 2
           },
           {
             "hash": "2999868d97d357472742ff61032d1ab2db57ecee",
-            "message": "[#9662] Instructor: Course Page: Some navbar buttons are not responsive after snackbar is shown (#9712)",
+            "messageTitle": "[#9662] Instructor: Course Page: Some navbar buttons are not responsive after snackbar is shown (#9712)",
+            "messageBody": "",
             "insertions": 1,
             "deletions": 1
           }
@@ -59,7 +64,8 @@
         "commitResults": [
           {
             "hash": "002061c6b41248664b11953c411cb251408e1629",
-            "message": "[#9734] Logic fix publish feedback session() method signature (#9735)",
+            "messageTitle": "[#9734] Logic fix publish feedback session() method signature (#9735)",
+            "messageBody": "* Update signature of publishFeedbackSession\r\n\r\n* Update PublishFeedbackSessionAction.java\r\n\r\n* Update Logic.java\r\n\r\n* Update FeedbackSessionsLogic.java\r\n\r\n* Update UnpublishFeedbackSessionAction.java\r\n\r\n* Update tests\r\n\r\n* Update javadocs\r\n\r\n* Fix lint issues\r\n\r\n* Fix code style\r\n\r\n* Fix throw exception\r\n\r\n* Add tests for (un)publishing non-existent session\r\n",
             "insertions": 76,
             "deletions": 43
           }
@@ -72,7 +78,8 @@
         "commitResults": [
           {
             "hash": "ad2d071317e2b1c70139daf43148219cf859f0db",
-            "message": "[#9595] Add tests for DELETE /session (#9723)",
+            "messageTitle": "[#9595] Add tests for DELETE /session (#9723)",
+            "messageBody": "* Update DeleteFeedbackSessionActionTest.java\r\n\r\n* Remove unnecessary line\r\n\r\n* Change assertThrows to assertNull\r\n\r\n* Remove unused import\r\n\r\n* Update DeleteFeedbackSessionActionTest.java\r\n\r\n* Reorder lines\r\n\r\n* Update DeleteFeedbackSessionActionTest.java\r\n\r\n* Update DeleteFeedbackSessionActionTest.java\r\n\r\n* Add test for no courseId and no sessionName\r\n\r\n* Update DeleteFeedbackSessionActionTest.java\r\n\r\n* Update DeleteFeedbackSessionActionTest.java\r\n\r\n* Remove unused import\r\n\r\n* Update DeleteFeedbackSessionActionTest.java\r\n",
             "insertions": 123,
             "deletions": 3
           }
@@ -85,7 +92,8 @@
         "commitResults": [
           {
             "hash": "a4f1c93074428fbfce77ab74026e4b22132d6e83",
-            "message": "[#9714] Student List: \"Send Invite\" button under Action(s) header is missing (#9777)",
+            "messageTitle": "[#9714] Student List: \"Send Invite\" button under Action(s) header is missing (#9777)",
+            "messageBody": "* Change status from string back to enum\r\n\r\nUse pipe to format the display\r\n\r\n* Fix lint issues\r\n\r\n* Update instructor-help-students-section status properties\r\n\r\n* Remove wrongly placed comment\r\n\r\n* Update tests\r\n\r\n* Change \u003d\u003d to \u003d\u003d\u003d\r\n",
             "insertions": 89,
             "deletions": 47
           }
@@ -98,7 +106,8 @@
         "commitResults": [
           {
             "hash": "78587c00568660379f58ba9dafeef9eeb095aaad",
-            "message": "[#9776] Student/Submission: Some question forms for cetain question types are not disabled when viewing a closed submission (#9784)",
+            "messageTitle": "[#9776] Student/Submission: Some question forms for cetain question types are not disabled when viewing a closed submission (#9784)",
+            "messageBody": "",
             "insertions": 1,
             "deletions": 1
           }
@@ -111,7 +120,8 @@
         "commitResults": [
           {
             "hash": "2c03b28774e374004ef13a8a08d542f8fc07a4d4",
-            "message": "[#9595] Add tests for POST /session/publish (#9726)",
+            "messageTitle": "[#9595] Add tests for POST /session/publish (#9726)",
+            "messageBody": "* Create tests in PublishFeedbackSessionActionTest\r\n\r\n* Remove unnecessary line\r\n\r\n* Remove impossible case\r\n\r\n* Add failure test cases\r\n\r\n* Update assertions\r\n\r\n* Fix lint issue\r\n\r\n* Fix assertEquals order of parameter\r\n",
             "insertions": 89,
             "deletions": 3
           }
@@ -124,13 +134,15 @@
         "commitResults": [
           {
             "hash": "861d8f5484a43375e5496b1db52128e42c813e29",
-            "message": "[#9382] Add tests for error-report component (#9744)",
+            "messageTitle": "[#9382] Add tests for error-report component (#9744)",
+            "messageBody": "* Add tests for error-report component\r\n\r\n* Update error-report.component.spec.ts\r\n\r\n* Update snapshots\r\n\r\n* Update error-report.component.spec.ts\r\n\r\n* Remove extra spaces\r\n\r\n* Fix lint issues\r\n\r\n* Fix import order\r\n\r\n* Remove redundant test cases\r\n\r\n* Update snapshot\r\n\r\n* Remove \u0027should snap with disabled send report button after sending report\u0027\r\n\r\n* Add checks for button html element\r\n\r\n* Update snapshots\r\n",
             "insertions": 49,
             "deletions": 0
           },
           {
             "hash": "c7a0f227397b51131ce04589a9a1ec33a54196dd",
-            "message": "[#9806] Submission page: Fix typo/grammatically incorrect error message (#9812)",
+            "messageTitle": "[#9806] Submission page: Fix typo/grammatically incorrect error message (#9812)",
+            "messageBody": "* Update grammar. Change emoji to font icon\r\n\r\n* Remove .unanswered-exclamation-mark css class\r\n",
             "insertions": 2,
             "deletions": 6
           }
@@ -143,7 +155,8 @@
         "commitResults": [
           {
             "hash": "0d9a983cd9ea2f0f902cc58f5b208181337049b2",
-            "message": "[#9510] Instructor: Student List Component: Implement sorting for table headers (#9715)",
+            "messageTitle": "[#9510] Instructor: Student List Component: Implement sorting for table headers (#9715)",
+            "messageBody": "* Add clickable reverse sort for Section\r\n\r\nOnly works once\r\n\r\n* Add two-way sorting for section name\r\n\r\n* Add changing arrow indicator\r\n\r\n* Add clickable headers for Team, Student name, Status, Email\r\n\r\n* Remove hasSection() check for non-Section headers\r\n\r\n* Flatten section data to student list\r\n\r\n* Update sort function to work with student list\r\n\r\n* Add photoUrl to mapping\r\n\r\n* Clean up\r\n\r\n* Update student-list-component snapshot\r\n\r\n* Fix lint issues\r\n\r\n* Move enums to student-list-section-data\r\n\r\n* Remove getter for sections\r\n\r\n* Fix hasSection() to make use of the students array\r\n\r\n* Remove extra line\r\n\r\n* Fix lint issues\r\n\r\n* Update hasSection()\r\n\r\n* Implement iterablediffer to detect changes\r\n\r\n* Fix lint issues\r\n\r\n* Update snapshots\r\n\r\n* Add comment\r\n\r\n* Add a new interface to store flattened data\r\n\r\n* Add trailing comma\r\n\r\n* Update joinState\r\n\r\n* Update student-list.component.spec.ts.snap\r\n\r\n* Move FlatStudentListData to student-list.component\r\n\r\n* Move SortBy and SortOrder to student-list.component\r\n",
             "insertions": 307,
             "deletions": 117
           }
@@ -156,7 +169,8 @@
         "commitResults": [
           {
             "hash": "187c884defad438a3dd12e1e421f837c206ff86e",
-            "message": "[#9805] MSQ: Selecting another option does not deselect \"None of the above\" option (#9807)",
+            "messageTitle": "[#9805] MSQ: Selecting another option does not deselect \"None of the above\" option (#9807)",
+            "messageBody": "* Fix disableNoneOfTheAboveOption()\r\n\r\n* Update comment\r\n",
             "insertions": 9,
             "deletions": 7
           }
@@ -169,7 +183,8 @@
         "commitResults": [
           {
             "hash": "79f429f6fcc65b744cc7dd5e832212ae743b2e1c",
-            "message": "[#9675] Cannot archive courses in the instructor home page (#9815)",
+            "messageTitle": "[#9675] Cannot archive courses in the instructor home page (#9815)",
+            "messageBody": "* Update archiveCourse method\r\n\r\n* Fix style\r\n",
             "insertions": 10,
             "deletions": 8
           }
@@ -182,13 +197,15 @@
         "commitResults": [
           {
             "hash": "98f2066cc30b1ce6e38b27e52433f4bb0f7657df",
-            "message": "[#9750] Instructor: Courses/Enroll: Limit of 100 students per section is not enforced (#9753)",
+            "messageTitle": "[#9750] Instructor: Courses/Enroll: Limit of 100 students per section is not enforced (#9753)",
+            "messageBody": "* Add validity checks for section and teams\r\n\r\n* Remove unused validateTeamName method\r\n\r\n* Remove unecessary method call\r\n\r\n* Update to return InvalidHttp.. exception instead of JsonResult\r\n\r\n* Update methods error messages\r\n\r\nUpdate them to not use the deprecated Const.StatusMessages\r\n\r\n* Remove unused error message\r\n\r\n* Update getTeamValidityInfo()\r\n\r\n* Remove unecessary error message\r\n\r\n* Update error messages\r\n\r\n* Update EnrollStudentsActionTest.java\r\n\r\n* Refactor error messages. Make section limit public\r\n\r\n* Update tests, fix messages\r\n\r\n* Fix pmd issues\r\n\r\n* Add test case for updating section name\r\n\r\n* Move constants from StudentsLogic to Const\r\n\r\n* Update Const messages in StudentsLogicTest\r\n\r\n* Add test case for exceeding section limit in EnrollStudentsActionTest\r\n\r\n* Update comment\r\n\r\n* Fix lint issue\r\n\r\n* Change StudentsLogicConst to static\r\n",
             "insertions": 155,
             "deletions": 46
           },
           {
             "hash": "e12c376eeb13254f9deba268acd4665facfabe14",
-            "message": "[#9811] Students List: Have a better way to show empty students list (#9814)",
+            "messageTitle": "[#9811] Students List: Have a better way to show empty students list (#9814)",
+            "messageBody": "* Replace student list table and stats with noMessage template when there are no students in the course\r\n\r\n* Swap enroll button and make text bigger\r\n",
             "insertions": 39,
             "deletions": 28
           }
@@ -201,7 +218,8 @@
         "commitResults": [
           {
             "hash": "1990e969cf627ae43421352708b5303408dd07b1",
-            "message": "[#9766] Instructor: Sessions: Add new feedback session form should be hidden by default (#9790)",
+            "messageTitle": "[#9766] Instructor: Sessions: Add new feedback session form should be hidden by default (#9790)",
+            "messageBody": "* Change session edit form to be collapsible/expandable by clicking a button\r\n\r\n* Add close button to edit form\r\n\r\n* Fix lint issue\r\n\r\n* Fix code style\r\n\r\n* Fix style\r\n",
             "insertions": 38,
             "deletions": 5
           }
@@ -214,7 +232,8 @@
         "commitResults": [
           {
             "hash": "cef3fea7144aa6c18d3ce7a6dc5f8681e7145ad3",
-            "message": "[#9816] Student list page: \"Send invite\" button missing (#9817)",
+            "messageTitle": "[#9816] Student list page: \"Send invite\" button missing (#9817)",
+            "messageBody": "* Change \u0027Yet to join\u0027 to JoinState.NOT_JOINED\r\n\r\n* Write test. Update snapshot\r\n\r\n* Fix lint\r\n",
             "insertions": 27,
             "deletions": 1
           }
@@ -229,7 +248,8 @@
         "commitResults": [
           {
             "hash": "d94f72bb18196cc27859319ed8a23dd7345aed35",
-            "message": "[#9703] Instructor: enroll students: Remove incorrect message after enrolling students to a new course (#9708)",
+            "messageTitle": "[#9703] Instructor: enroll students: Remove incorrect message after enrolling students to a new course (#9708)",
+            "messageBody": "",
             "insertions": 1,
             "deletions": 0
           }
@@ -242,7 +262,8 @@
         "commitResults": [
           {
             "hash": "7e9068a9344f59606faf290b908dc12dd4e616d5",
-            "message": "[#9757] Feedback Session Edit: Fix assigned weights not shown after clicking \u0027Choices are weighted\u0027 checkbox (#9759)",
+            "messageTitle": "[#9757] Feedback Session Edit: Fix assigned weights not shown after clicking \u0027Choices are weighted\u0027 checkbox (#9759)",
+            "messageBody": "* fix choice weights not shown bug.\r\n\r\n* fix choice weights not shown in unidirectional-data-flow pattern.\r\n\r\n* following unidirectional data flow, stopping changing values at child component, send value to  update to parent.\r\n",
             "insertions": 4,
             "deletions": 0
           }
@@ -255,7 +276,8 @@
         "commitResults": [
           {
             "hash": "a1ca379b54ad2ab2d2a509d54129809a61605dc6",
-            "message": "[#9382] Add tests for status-message component (#9763)",
+            "messageTitle": "[#9382] Add tests for status-message component (#9763)",
+            "messageBody": "* add test cases for status-message component.\r\n\r\n* add tests for status message component.\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* verify component message.\r\n",
             "insertions": 51,
             "deletions": 0
           }
@@ -268,7 +290,8 @@
         "commitResults": [
           {
             "hash": "30f56ffea3016decff6026cc46bb03e346ab7ffd",
-            "message": "[#9770] Session Submit Page: Make input form clickable (#9779)",
+            "messageTitle": "[#9770] Session Submit Page: Make input form clickable (#9779)",
+            "messageBody": "* make input form in mcq clickabble\r\n\r\n* make input form in msq clickable\r\n\r\n* fix lint issues.\r\n\r\n* update ui changes.\r\n\r\n* add comment on code, give more meaningful name to variables.\r\n\r\n* fix lint issues.\r\n",
             "insertions": 15,
             "deletions": 4
           }
@@ -281,7 +304,8 @@
         "commitResults": [
           {
             "hash": "a77834f53a17f4dd7265d1650b659263cd41afe3",
-            "message": "[#9595] Add tests for GET /responses (#9728)",
+            "messageTitle": "[#9595] Add tests for GET /responses (#9728)",
+            "messageBody": "* add test cases for excute of GetFeedbackResponsesAction.\r\n\r\n* update test cases for GetFeedbackResponseAction\r\n\r\n* Delete TODO from GetFeedbackResponsesActionTest.java\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* run travis.\r\n\r\n* fix lint issues.\r\n\r\n* update test cases.\r\n\r\n* remove unused import.\r\n\r\n* update test cases.\r\n",
             "insertions": 231,
             "deletions": 3
           }
@@ -294,7 +318,8 @@
         "commitResults": [
           {
             "hash": "e4700402dcc9a3ae6193d2501b069da096d6c47a",
-            "message": "[#9595] Add tests for POST /response (#9733)",
+            "messageTitle": "[#9595] Add tests for POST /response (#9733)",
+            "messageBody": "* unfinished test cases.\r\n\r\n* add test cases for CreateFeedbackResponseAction\r\n\r\n* update test cases for CreateFeedbackResponseActionTest.java\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* update test\r\n\r\n* fix lint issues.\r\n\r\n* update test cases.\r\n",
             "insertions": 213,
             "deletions": 2
           }
@@ -307,7 +332,8 @@
         "commitResults": [
           {
             "hash": "b987a188b2298130424efd046d7985c44b080a15",
-            "message": "[#9382] Add test cases for question-text-with-info component (#9749)",
+            "messageTitle": "[#9382] Add test cases for question-text-with-info component (#9749)",
+            "messageBody": "* add test cases for question-text-with-info\r\n\r\n* update test cases and snapshot\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n\r\n* update test cases.\r\n",
             "insertions": 57,
             "deletions": 0
           }
@@ -320,7 +346,8 @@
         "commitResults": [
           {
             "hash": "b24b9a50b098a4805716d482d9ab93af08622ec9",
-            "message": "[#9382] Add tests for mcq/msq/rank-options-question-additional-info components (#9754)",
+            "messageTitle": "[#9382] Add tests for mcq/msq/rank-options-question-additional-info components (#9754)",
+            "messageBody": "* update test cases for mcq-questions-additional-info\r\n\r\n* add test cases for msq-question-additional-info\r\n\r\n* add tests for rank-options-qustions-addtional-info\r\n\r\n* remove obsolete snapshots.\r\n\r\n* update test cases.\r\n",
             "insertions": 158,
             "deletions": 0
           }
@@ -335,7 +362,8 @@
         "commitResults": [
           {
             "hash": "c8a2a187daca8612aea7032712b0a8cdcb74ee2f",
-            "message": "[#9704] Student: Upload/Edit Photo: Confusing error message shown when uploading empty photo (#9709)",
+            "messageTitle": "[#9704] Student: Upload/Edit Photo: Confusing error message shown when uploading empty photo (#9709)",
+            "messageBody": "* add an additional check to make sure the profile photo is not empty before sending the request\r\n\r\n* change to use guard clause\r\n\r\n* update error message and fix promiss not resolved bug\r\n\r\n* update to use then handler\r\n\r\n* add onReject handler for .then()\r\n\r\n* update onreject handler\r\n",
             "insertions": 5,
             "deletions": 1
           }
@@ -348,19 +376,22 @@
         "commitResults": [
           {
             "hash": "a8e239ccbdd1bd22f863c737ac8d6e4507235d21",
-            "message": "[#9537] Instructor Help Page: Tooltips should link to specific sections in the help page (#9696)",
+            "messageTitle": "[#9537] Instructor Help Page: Tooltips should link to specific sections in the help page (#9696)",
+            "messageBody": "* Tooltips link to specific sections in the help page when clicked\r\n\r\n* change time delay to 5ms\r\n\r\n* tidy up codes\r\n\r\n* remove TODO comment\r\n\r\n* update to use div ids instead of anchor ids\r\n\r\n* update to use event handle logic\r\n\r\n* update to use router fragment\r\n\r\n* update to use scroll() method\r\n\r\n* update to use ngAfterViewInit lifecycle hook\r\n",
             "insertions": 12,
             "deletions": 8
           },
           {
             "hash": "eb10022b534a916324395b5790cd57334a43f2ca",
-            "message": "[#9595] Add tests for DELETE /session/publish (#9727)",
+            "messageTitle": "[#9595] Add tests for DELETE /session/publish (#9727)",
+            "messageBody": "* test cases for UnpublishFeedbackSessionActionTest.java\r\n\r\n* update test cases in UnpublishFeedbackSessionActionTest.java\r\n\r\n* fix wrong description\r\n\r\n* add check for email is sent\r\n",
             "insertions": 90,
             "deletions": 2
           },
           {
             "hash": "3d135f591c715b5367f19775929021e1e443a699",
-            "message": "[#9771] Instructor search page: Tooltip not shown for the info icon (#9772)",
+            "messageTitle": "[#9771] Instructor search page: Tooltip not shown for the info icon (#9772)",
+            "messageBody": "",
             "insertions": 2,
             "deletions": 0
           }
@@ -373,7 +404,8 @@
         "commitResults": [
           {
             "hash": "e2d4e18c3ea1920269fd11fb57151da984160f3d",
-            "message": "[#9595] Migrate GET /session/students/response to RESTFul API (#9785)",
+            "messageTitle": "[#9595] Migrate GET /session/students/response to RESTFul API (#9785)",
+            "messageBody": "* separate instructors out from the remind list\r\n\r\n* sort the instructor list after initialization\r\n\r\n* change getfeedbacksessionstudentresponse to getfeedbacksessionsubmittedgiverset\r\nupdate relative modals\r\n\r\n* fix linting issues\r\n\r\n* update tests\r\n\r\n* delete oldpointURI /session/students/response\r\n\r\n* fix indentation\r\n\r\n* update snapshot test\r\n\r\n* import neccessary components for tests\r\n\r\n* revert changes of session-submission-page.component.ts, update method docs\r\n",
             "insertions": 723,
             "deletions": 573
           }
@@ -386,7 +418,8 @@
         "commitResults": [
           {
             "hash": "d2e1c33963f8f1ee511b27819192e9fcdd41d90c",
-            "message": "[#9654] Error messages not shown on entering invalid answers on submission page (#9717)",
+            "messageTitle": "[#9654] Error messages not shown on entering invalid answers on submission page (#9717)",
+            "messageBody": "* add validation check after the scale answer value is key in\r\n\r\n* add info message for input\r\n\r\n* update to use Angular way, instead of jquery-like way\r\n\r\n* update DEFAULT_NUMSCALE_RESPONSE_DETAILS to -999\r\n\r\n* use the NUMERICAL_SCALE_ANSWER_NOT_SUBMITTED constant for DEFAULT_NUMSCALE_RESPONSE_DETAILS\r\n\r\n* fix linting issue\r\n\r\n* delete magic numbers\r\n\r\n* remove Number() conversion\r\n",
             "insertions": 21,
             "deletions": 2
           }
@@ -399,13 +432,15 @@
         "commitResults": [
           {
             "hash": "e8e4fc85fc0638e5b2beb28381bb9ace78eedd1c",
-            "message": "[#9382] Add tests for copy-session-modal component (#9745)",
+            "messageTitle": "[#9382] Add tests for copy-session-modal component (#9745)",
+            "messageBody": "* add tests for copy-session-modal.component.spec.ts\r\n\r\n* fix lint issue\r\n\r\n* update copy-session-modal.component.spec.ts use snapshot test only\r\n\r\n* delete tick method in snapshot test\r\n\r\n* update test case to check individual change event\r\n",
             "insertions": 73,
             "deletions": 1
           },
           {
             "hash": "2de0e312d914e253519c5c6603e4dd8ab6061494",
-            "message": "[#9801] Admin Account Details page: Remove account from course not work (#9802)",
+            "messageTitle": "[#9801] Admin Account Details page: Remove account from course not work (#9802)",
+            "messageBody": "",
             "insertions": 2,
             "deletions": 2
           }
@@ -418,7 +453,8 @@
         "commitResults": [
           {
             "hash": "8a595c2482cfca388ea551cd68b1ba874def1f28",
-            "message": "[#9751] Feedback Session Edit: Changes are not saved after clicking \u0027Done Editing\u0027 button (#9755)",
+            "messageTitle": "[#9751] Feedback Session Edit: Changes are not saved after clicking \u0027Done Editing\u0027 button (#9755)",
+            "messageBody": "* enable Done Editing button to save changes\r\n\r\n* Revert \"enable Done Editing button to save changes\"\r\n\r\nThis reverts commit fb2ddf173950cfe2769ce5313b91042d28c39939.\r\n\r\n* add question not saved modal\r\n\r\n* add open modal logic\r\n\r\n* fix lint issue\r\n\r\n* update suggested changes\r\n",
             "insertions": 26,
             "deletions": 3
           }
@@ -431,7 +467,8 @@
         "commitResults": [
           {
             "hash": "214734a44faa81422858fb60ee7fe5fdca6d9de7",
-            "message": "[#9758] Feedback Session Edit: Feedback path not set correctly using \u0027Other predefined combinations\u0027 (#9760)",
+            "messageTitle": "[#9758] Feedback Session Edit: Feedback path not set correctly using \u0027Other predefined combinations\u0027 (#9760)",
+            "messageBody": "* set default value for recipient type if not given\r\n\r\n* fix object initialization issue, make sure variable is defined\r\n\r\n* ensure variable is defined\r\n\r\n* change to use tslint:disable-next-line:\r\n",
             "insertions": 9,
             "deletions": 1
           }
@@ -444,7 +481,8 @@
         "commitResults": [
           {
             "hash": "8c20e258a41d43c12ef59c46b49fbf5753561421",
-            "message": "[#9595] Add tests for GET /auth (#9731)",
+            "messageTitle": "[#9595] Add tests for GET /auth (#9731)",
+            "messageBody": "* add test for csrf token in GetAuthInfoActionTest.java\r\n\r\n* test for not adding csrf token to response\r\n\r\n* update tests in GetAuthInfoActionTest.java\r\n\r\n* update GetAuthInfoActionTest.java\r\n\r\n* update to use cookie list in JsonResult\r\n\r\n* update to use list of cookies as parameter\r\n\r\n* fix issue with null value assertion\r\n\r\n* update suggested changes\r\n\r\n* add test for JsonResult\r\n\r\n* remove unused variable\r\n\r\n* change to send cookies first\r\n\r\n* update test method name\r\n\r\n* remove resp for Action.java\r\n\r\n* remove unused import\r\n",
             "insertions": 162,
             "deletions": 19
           }
@@ -457,7 +495,8 @@
         "commitResults": [
           {
             "hash": "7bf3facbc3598c17e4c8a88fe44b679c44a305b3",
-            "message": "[#9595] Add tests for POST /submission/confirmation (#9725)",
+            "messageTitle": "[#9595] Add tests for POST /submission/confirmation (#9725)",
+            "messageBody": "* test for ConfirmFeedbackSessionSubmissionActionTest.java\r\n\r\n* update ComfirmFeedbackSessionSubmissionActionTest.java\r\n\r\n* update ConfirmFeedbackSessionSubmissionActionTest.java\r\n\r\n* move prepareTestData to top\r\n\r\n* remove unrelated tests\r\n\r\n* fix lint issue\r\n\r\n* add verification for task added\r\n\r\n* fix lint issue\r\n\r\n* change to session.isOpend() method\r\n\r\n* fix naming error\r\n",
             "insertions": 335,
             "deletions": 2
           }
@@ -470,18 +509,33 @@
         "commitResults": [
           {
             "hash": "bbb46191ea35431d2f64df9d80b75aa7e82cd49c",
-            "message": "[#9595] Migrate GET /instructor/courses to RESTFul API (#9822)",
+            "messageTitle": "[#9595] Migrate GET /instructor/courses to RESTFul API (#9822)",
+            "messageBody": "* change to use \u0027courses\u0027 API\r\n\r\n* remove old get instructor courses api and action\r\n\r\n* update canDeleteAll and canRestoreAll\r\n\r\n* use composition instead of inheritence\r\n\r\n* update test\r\n\r\n* update test\r\n\r\n* update course model\r\n\r\n* clear couses before new request\r\n\r\n* fix lint\r\n",
             "insertions": 166,
             "deletions": 339
+          }
+        ]
+      },
+      {
+        "insertions": 2,
+        "deletions": 2,
+        "date": "2019-07-22",
+        "commitResults": [
+          {
+            "hash": "fafad5708addbd0e33b811b27cd0d47c9e6d97b9",
+            "messageTitle": "[#9791] Instructor Student Page: `Send Invite` button show error message (#9792)",
+            "messageBody": "* fix navigation with null params issue\r\n\r\n* change url\r\n",
+            "insertions": 2,
+            "deletions": 2
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 1009,
-    "Pengyuz": 729,
-    "crizyli": 1594
+    "erjillsison": 1000,
+    "Pengyuz": 723,
+    "crizyli": 1596
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
@@ -492,7 +546,7 @@
       "py": 0,
       "tag": 0,
       "html": 91,
-      "ts": 462
+      "ts": 453
     },
     "Pengyuz": {
       "java": 444,
@@ -501,8 +555,8 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 2,
-      "ts": 283
+      "html": 0,
+      "ts": 279
     },
     "crizyli": {
       "java": 734,
@@ -512,13 +566,13 @@
       "py": 0,
       "tag": 0,
       "html": 136,
-      "ts": 721
+      "ts": 723
     }
   },
   "authorContributionVariance": {
     "erjillsison": 4232.4575,
     "Pengyuz": 1753.2559,
-    "crizyli": 28279.945
+    "crizyli": 28276.09
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",

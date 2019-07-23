@@ -8,19 +8,22 @@
         "commitResults": [
           {
             "hash": "282556db72955c69aef24fbf6ca82062239e1ae8",
-            "message": "Cache panel contents after first load (#105)",
+            "messageTitle": "Cache panel contents after first load (#105)",
+            "messageBody": "Panels that do not have the preload attribute\r\nhave their contents destroyed and recreated on each reopen.\r\n\r\nThis causes issues such as inner text inputs and inner panels not\r\nremembering their previous state,\r\nand panels with src attribute repeating the same ajax request.\r\n\r\nSee\r\nhttps://github.com/MarkBind/markbind/issues/868\r\nhttps://github.com/MarkBind/markbind/issues/483\r\n\r\nLet\u0027s have an additional `isCached` property, which is set to true\r\nwhenever the content is/will be loaded. Only when isCached is true\r\nwill the content be rendered and.\r\n\r\nAs a side effect, since once the panel is loaded v-show is always used,\r\nthe v-else part of the template is not needed anymore,\r\nwhich also reduces code duplication.",
             "insertions": 12,
             "deletions": 17
           },
           {
             "hash": "adf8b4d250c2a7a7ba4c476310e3db6d20377579",
-            "message": "Refactor setting of Panel#isCached",
+            "messageTitle": "Refactor setting of Panel#isCached",
+            "messageBody": "Setting isCached in a watcher requires developers to understand\nthe order Vue sets a component up.\n\nExplicitly setting isCached whenever localExpanded is set\nmakes it easier to reason about code.\n",
             "insertions": 8,
             "deletions": 6
           },
           {
             "hash": "726aa5ff2972748b52777a4eb07cfcffba3bc1d5",
-            "message": "Prevent double-fetching of panel with src and expanded",
+            "messageTitle": "Prevent double-fetching of panel with src and expanded",
+            "messageBody": "When such a panel is rendered, two ajax requests are fired.\nOne due to mounted() calling the retriever\u0027s fetch,\nand another due to the watch listener being triggered by the setting\nof localExpanded in created() which\nmakes another call to the retriever\u0027s fetch.\n\nSince the retriever element is conditionally rendered if\n(it has been open at least once) or (it is preloaded),\nlet\u0027s remove the delay attribute on the retriever element,\nas now we can be sure that when the retriever element is needed,\nwe can fetch the data immediately.\n\nThis also lets us remove the redundant code that manually fetches\nthe retriever\u0027s content.\n",
             "insertions": 3,
             "deletions": 24
           }
@@ -33,7 +36,8 @@
         "commitResults": [
           {
             "hash": "c2180ab48b8c6b8c47238768ff11ee9451efea66",
-            "message": "Add attribute to allow vertical centering of panels (#108)",
+            "messageTitle": "Add attribute to allow vertical centering of panels (#108)",
+            "messageBody": "",
             "insertions": 8,
             "deletions": 1
           }
@@ -46,13 +50,15 @@
         "commitResults": [
           {
             "hash": "8383f4326fd7d11a98722d9bb46f3ac13488c3ed",
-            "message": "Delay popover close when trigger is hover",
+            "messageTitle": "Delay popover close when trigger is hover",
+            "messageBody": "When a popover is triggered by by hovering, it is near impossible\nfor the user to mouse over the popover to select/copy or otherwise\ninteract with it.\n\nLet\u0027s add a timeout to the closing of the popover on mouseleave only\nwhen it is opened by a mouseenter. This timeout will be cancelled once\na mouseenter event is triggered again, so the popover stays open.\n\nTo allow the hovering over of a popover without disappearing,\nauthors can manually set the content of the popover to trigger\nitself:\n\n\u003cpopover id\u003d\"hoverable\"\u003e\n  \u003cdiv slot\u003d\"content\"\u003e\n    \u003ctrigger for\u003d\"hoverable\"\u003e\n      Hover over me to keep me open\n    \u003c/trigger\u003e\n  \u003c/div\u003e\n  Hover to trigger\n\u003c/popover\u003e\n",
             "insertions": 26,
             "deletions": 2
           },
           {
             "hash": "f57e1a51f146a8c81dc7a1719cba02bdd89c2058",
-            "message": "Removed redundant click handlers",
+            "messageTitle": "Removed redundant click handlers",
+            "messageBody": "There are many v-on:click \u003d \"false\" attributes in Popover.vue and\nTooltip.vue. They cause silent errors when interacting with popovers\nand tooltips, since false is an identifier and Vue attempts to call\nfalse(), causing a TypeError.\n\nLet\u0027s remove these redundant handlers.\n",
             "insertions": 5,
             "deletions": 5
           }
@@ -65,7 +71,8 @@
         "commitResults": [
           {
             "hash": "593169d552ded70da146464e4c71512a24b15ce5",
-            "message": "Refactor trigger to style text if no add-class (#112)",
+            "messageTitle": "Refactor trigger to style text if no add-class (#112)",
+            "messageBody": "It is hard to add custom styles to trigger elements, as trigger\r\nsets the style attribute directly.\r\n\r\nLet\u0027s only add the custom underline style to triggers only\r\nwhen the add-class attribute is not specified, so that users\r\ncan provide their own classes.",
             "insertions": 8,
             "deletions": 11
           }
@@ -78,7 +85,8 @@
         "commitResults": [
           {
             "hash": "7acb04f5492c6e3118dc3a5361fdc735b8f6d774",
-            "message": "Revert \"Refactor trigger to style text if no add-class (#112)\" (#113)",
+            "messageTitle": "Revert \"Refactor trigger to style text if no add-class (#112)\" (#113)",
+            "messageBody": "add-class should only add classes to a component, not selectively decide\r\nwhat styles to add.\r\n\r\nThis reverts commit 593169d552ded70da146464e4c71512a24b15ce5.",
             "insertions": 11,
             "deletions": 8
           }
@@ -91,7 +99,8 @@
         "commitResults": [
           {
             "hash": "20a48d5defa5e3294c2bca9bb12819df22d5c40a",
-            "message": "Enhance popovers to allow hovering over them (#114)",
+            "messageTitle": "Enhance popovers to allow hovering over them (#114)",
+            "messageBody": "It is hard to interact with popovers and tooltips, since they disappear\r\nonce hovered over.\r\n\r\nLet\u0027s add a new attribute \u0027hoverable\u0027 to popoverMixins.\r\n\r\nIf true, once the popover is loaded the popover itself will listen to\r\nthe hover (mouseenter and mouseleave) events just like a trigger.",
             "insertions": 10,
             "deletions": 0
           }
@@ -104,7 +113,8 @@
         "commitResults": [
           {
             "hash": "8e054d54c548bcba3ebaade70ff7e08f2139605e",
-            "message": "Make popovers and tooltips always hoverable (#115)",
+            "messageTitle": "Make popovers and tooltips always hoverable (#115)",
+            "messageBody": "",
             "insertions": 2,
             "deletions": 10
           }
@@ -119,7 +129,8 @@
         "commitResults": [
           {
             "hash": "aea00dcb5ae3bd4ba6ed49e4bc067543f15df216",
-            "message": "Add dismissible box feature (#110)",
+            "messageTitle": "Add dismissible box feature (#110)",
+            "messageBody": "Let\u0027s add an attribute to the \u003cbox\u003e feature that allows users to\r\ndismiss the box by clicking on a \u0027x\u0027 button.",
             "insertions": 8,
             "deletions": 1
           }
@@ -132,7 +143,8 @@
         "commitResults": [
           {
             "hash": "814c8526ba990e8422cf0cb652a9ee3bdde944e9",
-            "message": "Add thumbnails feature (#107)",
+            "messageTitle": "Add thumbnails feature (#107)",
+            "messageBody": "Let\u0027s add a \u003cthumbnail\u003e tag to support square/circular thumbnails.\r\nThis feature crops the source image to a centered square/circle of the\r\ndesired size. The tag also supports emoji, icons and text in addition\r\nto images",
             "insertions": 132,
             "deletions": 0
           }
@@ -145,7 +157,8 @@
         "commitResults": [
           {
             "hash": "959abd50def36142a89ac796dc8a113f410a1b69",
-            "message": "Remove stray space after tooltip (#111)",
+            "messageTitle": "Remove stray space after tooltip (#111)",
+            "messageBody": "Currently, there is a bug where there will be an extra space after a\r\ntooltip.\r\n\r\nLet\u0027s fix that by removing the newline characters in the Vue template",
             "insertions": 3,
             "deletions": 4
           }

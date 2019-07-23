@@ -8,7 +8,8 @@
         "commitResults": [
           {
             "hash": "e1d915e19ac54fc969af07491213b13cfd3592ba",
-            "message": "#1861 highly duplicated code for image icon creation (#1908)",
+            "messageTitle": "#1861 highly duplicated code for image icon creation (#1908)",
+            "messageBody": "* extract duplicated method into commonutil\r\n\r\n* Update CommonUtil.cs\r\n",
             "insertions": 79,
             "deletions": 201
           }
@@ -21,7 +22,8 @@
         "commitResults": [
           {
             "hash": "e3fefa1e4fe3b9efee93de627e01ab0aad627942",
-            "message": "#1905 Using directive should follow OSS generics coding standard (#1907)",
+            "messageTitle": "#1905 Using directive should follow OSS generics coding standard (#1907)",
+            "messageBody": "* refactor using directive\r\n\r\n* Remove leading newlines\r\n",
             "insertions": 181,
             "deletions": 589
           }
@@ -34,7 +36,8 @@
         "commitResults": [
           {
             "hash": "7d28ae4154b43e2f31c95d8592e4555b4f561c0c",
-            "message": "#1900 cannot pick color colorslab (#1910)",
+            "messageTitle": "#1900 cannot pick color colorslab (#1910)",
+            "messageBody": "* change winform timer to dispatchertimer\r\n\r\n* remove alternate mousepointer code\r\n\r\n* Update ColorsLabPaneWPF.xaml.cs\r\n\r\n* Update ColorsLabPaneWPF.xaml.cs\r\n",
             "insertions": 6,
             "deletions": 6
           }
@@ -47,13 +50,15 @@
         "commitResults": [
           {
             "hash": "8794eb93761c1cf21035ed8799a245e7ddc9f0d0",
-            "message": "#1745 Limit the maximum number of open labs panes (#1914)",
+            "messageTitle": "#1745 Limit the maximum number of open labs panes (#1914)",
+            "messageBody": "* Simple fix for limiting number of active panes to 2.\r\n\r\n* add test\r\n\r\n- add delay for autonarrationtest\r\n- reduce similarity tolerance for effectslabtest\r\n\r\n* reverse hunk\r\n\r\n* Add test for panes across windows\r\n",
             "insertions": 252,
             "deletions": 2
           },
           {
             "hash": "4cbf5a079de3e908de86b7f03b4d6db84b1cec53",
-            "message": "#1922 E-learning settings voice ranking disappears (#1923)",
+            "messageTitle": "#1922 E-learning settings voice ranking disappears (#1923)",
+            "messageBody": "",
             "insertions": 1,
             "deletions": 1
           }
@@ -66,7 +71,8 @@
         "commitResults": [
           {
             "hash": "e20bb4a32438cacdc92a9295cec4baa813166e2e",
-            "message": "#1930 Error when opening ShapesLab (#1934)",
+            "messageTitle": "#1930 Error when opening ShapesLab (#1934)",
+            "messageBody": "",
             "insertions": 5,
             "deletions": 1
           }
@@ -79,7 +85,8 @@
         "commitResults": [
           {
             "hash": "184e136e531799b38264e3795a4572c4912a3810",
-            "message": "#1931 Highly duplicated code for converting between media color… (#1932)",
+            "messageTitle": "#1931 Highly duplicated code for converting between media color… (#1932)",
+            "messageBody": "* Move CreateBitmapSource from CommonUtil to GraphicsUtil\r\nSwitch some code to use Color API from GraphicsUtil\r\n\r\n* retire commonutil.createbitmapsource in favor of imageutil.bitmaptoimagesource\r\n",
             "insertions": 106,
             "deletions": 116
           }
@@ -92,7 +99,8 @@
         "commitResults": [
           {
             "hash": "91b2c04516dba40a9a4a30cfaeedc6fab6a8021c",
-            "message": "change actionprotection to flushundohistory (#1942)",
+            "messageTitle": "change actionprotection to flushundohistory (#1942)",
+            "messageBody": "",
             "insertions": 13,
             "deletions": 9
           }
@@ -105,13 +113,15 @@
         "commitResults": [
           {
             "hash": "738f64739a6709f14eb99e07780bcf4c0c36fb75",
-            "message": "#1900 colors lab eyedropper timer not updating (#1940)",
+            "messageTitle": "#1900 colors lab eyedropper timer not updating (#1940)",
+            "messageBody": "* Add guard to STAThread problem\r\n\r\n* Construct DispatcherTimers with Control\u0027s Dispatcher\r\n\r\n* Update ThisAddIn.cs\r\n",
             "insertions": 24,
             "deletions": 13
           },
           {
             "hash": "fb6e3331344c190fa41de5e07e8d7348032fb3ca",
-            "message": "#1854 create tooltip stack instead of cascade (#1943)",
+            "messageTitle": "#1854 create tooltip stack instead of cascade (#1943)",
+            "messageBody": "* wip\r\n\r\n* Add tooltip displacement\r\n\r\n* Edited CreateTooltip unit test to account for displacement\r\n\r\n* remove unnecessary using directives\r\n\r\n* add comments to shapeutil methods\r\n",
             "insertions": 79,
             "deletions": 15
           }
@@ -124,7 +134,8 @@
         "commitResults": [
           {
             "hash": "9def9f817655d35d1bb05ba18e16e5ec8148019c",
-            "message": "#1902 ui problem using dark theme (#1909)",
+            "messageTitle": "#1902 ui problem using dark theme (#1909)",
+            "messageBody": "* change background color of resizepane to white\r\n\r\n* add theme change event\r\n\r\n* add adpative colors for animationlabsettingsdialogbox.\r\n\r\n* add adaptive color support for most PPl pane elemnts, excluding ListView.\r\n\r\n* refactor color theme handling into thememanager, and powerpointlabs.colorthemes\r\n\r\n* wip narrations refactor\r\n\r\n* move change presentation logic into tempstorage\r\n\r\n* replace showdialog with showthematicdialog\r\n\r\n* wip recolor\r\n\r\n* replace stylecop package\r\nuse switch types to apply color themes\r\n\r\n* Add combobox adaptive color support\r\n\r\n* Add checkbox support\r\n\r\n* remove alternate implementation\r\n\r\n* Add handler to refresh colors\r\nOptimize performance by skipping color check if updated\r\n\r\n* allow hidden content to update colors\r\n\r\n* add adaptive colors to loading windows\r\n\r\n* add window support\r\n\r\n* add support for pages (eLL)\r\n\r\n* add support for elearning settings\r\n\r\n* Add refresh visual\r\nAdd feature to only change styles if color theme is no longer colorful.\r\n\r\n* edit files\r\n\r\n* Add 2013 color themes\r\n\r\n* Remove new Stylecop\r\n\r\n* Add old stylecop back\r\n\r\n* Remove switch types\r\n\r\n* Add missing dlls\r\n\r\nSomehow Sourcetree does not push these dlls\r\n\r\n* remove files\r\n\r\n* add missing dlls\r\n\r\n* catch registrywatcher null key on init\r\nfix recorderpane null exception\r\n\r\n* change default color schemes\r\n\r\n* minor fixes\r\n\r\n* change background color to be consistent\r\n",
             "insertions": 1169,
             "deletions": 295
           }
@@ -137,7 +148,8 @@
         "commitResults": [
           {
             "hash": "c9f6741cc8b16e6f8ec3b27f22938e135a2e908a",
-            "message": "#1938 explanation items copy default settings (#1939)",
+            "messageTitle": "#1938 explanation items copy default settings (#1939)",
+            "messageBody": "* implement copy explanation format, need to write tests\r\n\r\n* Create classes for ELearningLab testing\r\n\r\n* comment\r\n\r\n* Write tests for adding explanation items above, below and at the bottom\r\n",
             "insertions": 340,
             "deletions": 44
           }
@@ -150,13 +162,15 @@
         "commitResults": [
           {
             "hash": "552a746a637179697f3179c56c7f41d626925437",
-            "message": "refactor resource file names (#1956)",
+            "messageTitle": "refactor resource file names (#1956)",
+            "messageBody": "",
             "insertions": 30,
             "deletions": 30
           },
           {
             "hash": "c4b651ea1a19d1f8d10e65bebc036c0f4a05f79b",
-            "message": "#1469 standardize english in code base (#1955)",
+            "messageTitle": "#1469 standardize english in code base (#1955)",
+            "messageBody": "* Change spelling of synchronise to synchronize\r\n\r\n* change colour spelling to color\r\n\r\n* change grey spelling to gray\r\n",
             "insertions": 60,
             "deletions": 60
           }
@@ -169,25 +183,29 @@
         "commitResults": [
           {
             "hash": "8612aad0e4273b0ca6a79b908ccdc04b3ab3eefb",
-            "message": "#1835 use item source to reduce code duplication (#1952)",
+            "messageTitle": "#1835 use item source to reduce code duplication (#1952)",
+            "messageBody": "* display seems to be working\r\n\r\n* use itemsource for recent and favorite colors\r\n",
             "insertions": 12,
             "deletions": 71
           },
           {
             "hash": "18f28a1970b40741bbe8fe6a893f6f150b9de6c1",
-            "message": "#1963 zoom lab buttons greyed out depsite rectangle selected (#1964)",
+            "messageTitle": "#1963 zoom lab buttons greyed out depsite rectangle selected (#1964)",
+            "messageBody": "",
             "insertions": 51,
             "deletions": 5
           },
           {
             "hash": "68439e981c4b8e5848838d8439370eacfe0f0962",
-            "message": "#1525 Testing implement wpf control handles (#1925)",
+            "messageTitle": "#1525 Testing implement wpf control handles (#1925)",
+            "messageBody": "* test stub\r\n\r\n* draft\r\n\r\n* edits\r\n\r\n* PoC done for getting window handles\r\n\r\n* testing marshalwindow\r\n\r\n* add marshal window\r\n\r\n* cleanup\r\n\r\n* unable to detect window\r\n\r\n* got test to work, but main not working\r\n\r\n* Working textbox focus\r\n\r\n* refactor code\r\nfix spotlight test\r\n\r\n* Add zoom lab settings window support.\r\n\r\n* Add additional guard\r\n\r\n* wip\r\n\r\n* Add automatic window close functionality.\r\n\r\n* synclab wip\r\n\r\n* Add loader handling, wip existing presentation\r\n\r\n* minor edit\r\n\r\n* wip\r\n\r\n* move windowstackmanager to powerpointlabsft for marshalling.\r\nelearninglab test looks wrong. investigation wip.\r\n\r\n* Add functionality to detect windows in headless (unit) tests\r\n\r\n* fix unit test finding process\r\n\r\n* Reverse sln file, add logging and remove unneccessary comments\r\n\r\n* add comments, tidy up code\r\n\r\n* tidy up code, revert non-ui reliant tests back (Spotlight settings, zoom settings)\r\n\r\n* update csproj file\r\n",
             "insertions": 916,
             "deletions": 51
           },
           {
             "hash": "b110b25df634d6c7c02c0476d94e4cf24a931649",
-            "message": "#1935 create self explanation test passes despite showing diffe… (#1936)",
+            "messageTitle": "#1935 create self explanation test passes despite showing diffe… (#1936)",
+            "messageBody": "* fix callout alternate text not showing\r\n\r\n* Fix callout position\r\n\r\n* decreased test tolerance\r\n",
             "insertions": 28,
             "deletions": 23
           }
@@ -200,19 +218,22 @@
         "commitResults": [
           {
             "hash": "01b742c4897fe2fc508c284031c4d7e221bb8217",
-            "message": "#1856-ResizeLab changes orientation of text in shape (#1946)",
+            "messageTitle": "#1856-ResizeLab changes orientation of text in shape (#1946)",
+            "messageBody": "* keep text rotation\r\n\r\n* Add PPShapes test\r\n\r\n* Move text rotation\r\n\r\n* change namespace, remove unneccessary directives\r\n",
             "insertions": 70,
             "deletions": 0
           },
           {
             "hash": "afae977f9e8b722bc287fa2f9f2abbc855d28af6",
-            "message": "#1957 remove redundant todos simple (#1958)",
+            "messageTitle": "#1957 remove redundant todos simple (#1958)",
+            "messageBody": "* Resolve todos\r\n\r\n* remove redundant todos\r\n",
             "insertions": 21,
             "deletions": 21
           },
           {
             "hash": "ead22fc74f6d398ca7e0fd04451d32a9814ef203",
-            "message": "#1969 compile error explanationitem does not implement interface (#1970)",
+            "messageTitle": "#1969 compile error explanationitem does not implement interface (#1970)",
+            "messageBody": "* Fix LimitOpenPanes test\r\nFix ExplanationItem compile error\r\n\r\n* add delay to improve test stability\r\n",
             "insertions": 13,
             "deletions": 12
           }
@@ -225,7 +246,8 @@
         "commitResults": [
           {
             "hash": "ce32c1e14b1c125e6e477e38587a8b7a732f5f05",
-            "message": "#1913 Error in Zoomlab step back (#1915)",
+            "messageTitle": "#1913 Error in Zoomlab step back (#1915)",
+            "messageBody": "* Add safecopy to handle placeholder textboxes\r\n\r\n* add shape copy attributes\r\n\r\n* remove exception causing attribute\r\n\r\n* add reflection method to copy shape attributes\r\n\r\n* correct typo\r\n\r\n* add clipboard lock and release\r\n\r\n* edit bugs\r\n\r\n* add teardown\r\n\r\n* reduce clipboard restoration measures\r\n\r\n* tests\r\n\r\n* fix agenda lab and zoom lab integration\r\n\r\n* fix effectslab typo, remove clipboard restore functionality, add PPLClipboard autodismiss for test.\r\n\r\n* add switching to slide with shapes before select\r\n\r\n* Improve code readability\r\n\r\n* Add wrapper API to handle AccessViolationException\r\n\r\n* remove dependency on ClipboardUtil\r\n\r\n* add wrappers for clipboard functions\r\n\r\n* effects lab test failing due to similarity diff: 85\r\n\r\n* fix effectslab bug\r\n\r\n* tidy up code\r\n\r\n* add comments\r\n\r\n* add logging\r\n\r\n* move curly brace\r\n\r\n* fix clipboard not released exception\r\n\r\n* improve UT stability\r\n\r\n* Add delay to wait for effects to apply\r\n",
             "insertions": 802,
             "deletions": 304
           }
@@ -238,33 +260,70 @@
         "commitResults": [
           {
             "hash": "b462fe2daf6e1972b5c89a739e2826b6281f8049",
-            "message": "refactor haschildshaperange-\u003echildshaperange into method (#1967)",
+            "messageTitle": "refactor haschildshaperange-\u003echildshaperange into method (#1967)",
+            "messageBody": "",
             "insertions": 18,
             "deletions": 50
           },
           {
             "hash": "9849ba075f665a01cd6ebe1cac8bc39161da041f",
-            "message": "Fix dialog box not appearing (#1953)",
+            "messageTitle": "Fix dialog box not appearing (#1953)",
+            "messageBody": "",
             "insertions": 23,
             "deletions": 9
+          }
+        ]
+      },
+      {
+        "insertions": 409,
+        "deletions": 316,
+        "date": "2019-07-22",
+        "commitResults": [
+          {
+            "hash": "0e4aa76a4910838cbb2bcb24d8b000b0412dd851",
+            "messageTitle": "#1531 convert to picture for shapes in a group (#1966)",
+            "messageBody": "* Modify shape retrieval to use child shape range\r\n\r\n* Add fix for multiple shapes in shapegroup.\r\n\r\n* add test\r\n\r\n* fix multi-select implementation\r\n\r\n* Fix bug for single shape from group selected\r\n\r\n* handle null reference for selectionsingleshape\r\nremove unneccessary code\r\n\r\n* fix 2010 childshaperange bug\r\n",
+            "insertions": 67,
+            "deletions": 7
+          },
+          {
+            "hash": "1de2267f9ea543bc1e6765ea924655dbc6203c3c",
+            "messageTitle": "#1957 remove redundant todos shapes extension (#1959)",
+            "messageBody": "* change shapesutil shape methods to extension methods\r\n\r\n* csproj file\r\n",
+            "insertions": 118,
+            "deletions": 132
+          },
+          {
+            "hash": "eabb2fc79981dbb5302475279c3703cbf8956f8f",
+            "messageTitle": "#1855 step back does not account for fading animations (#1949)",
+            "messageBody": "* add delete shapes with entry animations\r\n\r\n* wip\r\n\r\n* commit\r\n\r\n* change implementation\r\n\r\n* revert test slides\r\n\r\n* change slideasshape to gaphicsutil version\r\n\r\n* Update PowerPointSlide.cs\r\n",
+            "insertions": 41,
+            "deletions": 5
+          },
+          {
+            "hash": "e67172e2650bdf3c6c72272bfaee4f1aa7f2e804",
+            "messageTitle": "#1945 shape corruption fix (#1948)",
+            "messageBody": "* Add SafeDelete operation\r\n\r\n* remove extension from tests\r\n\r\n* Update PasteIntoGroup.cs\r\n",
+            "insertions": 183,
+            "deletions": 172
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 4044
+    "yuhongherald": 4423
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 4044
+      "cs": 4423
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 73768.77
+    "yuhongherald": 78347.43
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

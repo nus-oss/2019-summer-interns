@@ -1,13 +1,28 @@
 {
   "authorDailyContributionsMap": {
-    "yuhongherald": []
+    "yuhongherald": [
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-07-22",
+        "commitResults": [
+          {
+            "hash": "628b04463675467ab842f60da22b6d4db7b76347",
+            "messageTitle": "fix meta image (#99)",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
+      }
+    ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 0
+    "yuhongherald": 1
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
-      "html": 0,
+      "html": 1,
       "js": 0,
       "css": 0,
       "cs": 0,
@@ -15,7 +30,7 @@
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 0.0
+    "yuhongherald": 0.055544533
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

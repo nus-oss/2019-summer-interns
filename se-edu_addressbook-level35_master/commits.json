@@ -8,25 +8,29 @@
         "commitResults": [
           {
             "hash": "9ab83e3b026deeb06672a2a964ba6e7057264f03",
-            "message": "Extract section on setting up into a separate document",
+            "messageTitle": "Extract section on setting up into a separate document",
+            "messageBody": "As students are not required to maintain certain sections of the\ndeveloper guide, let\u0027s extract those sections into their own files.\n\nThe benefits are as follows:\nCutting down on repetition and visual clutter makes it easier for\ngraders to distinguish between students\u0027 work and boilerplate.\n\nStudents now have a clear distinction to show them what sections they\nare responsible for maintaining.\n\nLet\u0027s start by extracting the \"Setting Up\" section into its own\ndocument.\n",
             "insertions": 90,
             "deletions": 74
           },
           {
             "hash": "e80a0b64f66bfd2257b251187c1817783d337df7",
-            "message": "Extract section on documentation into a separate document",
+            "messageTitle": "Extract section on documentation into a separate document",
+            "messageBody": "As students are not required to maintain certain sections of the\ndeveloper guide, let\u0027s extract those sections into their own files.\n\nThe benefits are as follows:\nCutting down on repetition and visual clutter makes it easier for\ngraders to distinguish between students\u0027 work and boilerplate.\n\nStudents now have a clear distinction to show them what sections they\nare responsible for maintaining.\n\nLet\u0027s also extract the \"Documentation\" section into its own document.\n",
             "insertions": 122,
             "deletions": 102
           },
           {
             "hash": "0a29ea77dfbc0cb89fe896bee237d81fc72e86e9",
-            "message": "Extract section on testing into a separate document",
+            "messageTitle": "Extract section on testing into a separate document",
+            "messageBody": "As students are not required to maintain certain sections of the\ndeveloper guide, let\u0027s extract those sections into their own files.\n\nThe benefits are as follows:\nCutting down on repetition and visual clutter makes it easier for\ngraders to distinguish between students\u0027 work and boilerplate.\n\nStudents now have a clear distinction to show them what sections they\nare responsible for maintaining.\n\nLet\u0027s also extract the \"Testing\" section into its own document.\n",
             "insertions": 71,
             "deletions": 54
           },
           {
             "hash": "02f0a599cc6948dba3a697101d0a895c80b46ddc",
-            "message": "Extract section on dev ops into a separate document",
+            "messageTitle": "Extract section on dev ops into a separate document",
+            "messageBody": "As students are not required to maintain certain sections of the\ndeveloper guide, let\u0027s extract those sections into their own files.\n\nThe benefits are as follows:\nCutting down on repetition and visual clutter makes it easier for\ngraders to distinguish between students\u0027 work and boilerplate.\n\nStudents now have a clear distinction to show them what sections they\nare responsible for maintaining.\n\nLet\u0027s also extract the \"DevOps\" section into its own document.\n",
             "insertions": 49,
             "deletions": 31
           }
@@ -39,7 +43,8 @@
         "commitResults": [
           {
             "hash": "eebddcb8e24440510b27ac0d7284e432a18853d8",
-            "message": "Developer Guide: Fix broken link",
+            "messageTitle": "Developer Guide: Fix broken link",
+            "messageBody": "Remove excess newline that prevented a link from rendering properly.\n",
             "insertions": 1,
             "deletions": 2
           }
@@ -52,19 +57,22 @@
         "commitResults": [
           {
             "hash": "a6d2b4b907a7803502b93b0e2b5dcac9455915db",
-            "message": "Developer Guide: Specify the label for inter-document xref",
+            "messageTitle": "Developer Guide: Specify the label for inter-document xref",
+            "messageBody": "Linking between different documents produces different behavior compared\nto linking within a document, resulting in links being rendered with\nthe document name as the body instead of the section name.\n\nIn our case, links are being rendered with the text DeveloperGuide.html\nwhich does not accurately reflect the destination of the link.\n\nLet\u0027s explicitly specify the link text instead.\n",
             "insertions": 2,
             "deletions": 2
           },
           {
             "hash": "ac47d7cf1a7593dac7580a7abe4ca184e6979ac4",
-            "message": "Developer Guide: Optimize reading experience",
+            "messageTitle": "Developer Guide: Optimize reading experience",
+            "messageBody": "The link for `Run the tests` points to another link instead of directly\nto the relevant document.\n\nLet\u0027s remove this redundant jump.\n",
             "insertions": 1,
             "deletions": 1
           },
           {
             "hash": "9ba6eefcc621a1805194a019c92d926d614c327f",
-            "message": "Developer Guide: Remove anchor for Testing",
+            "messageTitle": "Developer Guide: Remove anchor for Testing",
+            "messageBody": "Since the section on testing has been moved to a separate document,\nthe old anchor is no longer used.\n\nLet\u0027s remove it.\n",
             "insertions": 0,
             "deletions": 1
           }
@@ -77,7 +85,8 @@
         "commitResults": [
           {
             "hash": "4a8e46c3cdddb12d1a93969542b914e79ec33a83",
-            "message": "Developer Guide: Remove GetStartedProgramming",
+            "messageTitle": "Developer Guide: Remove GetStartedProgramming",
+            "messageBody": "We are dropping support for tutorials in AB-4 as:\n- a different set of targeted tutorials are being written for AB-3\n- the cost of maintaining two separate sets of tutorials is too high\n- students working with AB-4 are expected to be able to cope without\n    tutorials\n\nLet\u0027s remove the tutorial section GetStartedProgramming and any links to\nit since the section will no longer be maintained.\n",
             "insertions": 1,
             "deletions": 282
           }

@@ -8,25 +8,29 @@
         "commitResults": [
           {
             "hash": "09076fa8ca3c549e37c0871b9ca76cc9b79ddb6e",
-            "message": "Use Sets instead of Dictionaries for Page.includedFiles",
+            "messageTitle": "Use Sets instead of Dictionaries for Page.includedFiles",
+            "messageBody": "includedFiles is used to keep track of what pages\nneed to be rebuilt when a page is updated.\n\nPreviously, an object was used to do this:\n`includedFiles[file] \u003d true` if a file needs to be rebuilt\nand\n`includedFiles[file]` to check if the file needs to be rebuilt\n\nBut since ES6 there has been a more idiomatic way to do it with Sets:\n`includedFiles.add(file)` if a file needs to be rebuilt\nand\n`includedFiles.has(file)` to check if the file needs to be rebuilt\n",
             "insertions": 9,
             "deletions": 12
           },
           {
             "hash": "ca2aed37b07f09a34881f019e176caaa781bddef",
-            "message": "Use Sets instead of Dictionaries for builtFiles",
+            "messageTitle": "Use Sets instead of Dictionaries for builtFiles",
+            "messageBody": "builtFiles is used to keep track of what pages\nhave already been built\n\nPreviously, an object was used to do this:\n`builtFiles[file] \u003d true` if a file has already been built\nand\n`builtFiles[file]` to check if the file has already been built\n\nBut since ES6 there has been a more idiomatic way to do it with Sets:\n`builtFiles.add(file)` if a file has already been built\nand\n`builtFiles.has(file)` to check if the file has already been built\n",
             "insertions": 4,
             "deletions": 5
           },
           {
             "hash": "8b639ae42f3c599019f16607d3d79ee9560e1177",
-            "message": "Use Sets instead of Dictionaries for Site.baseUrlMap",
+            "messageTitle": "Use Sets instead of Dictionaries for Site.baseUrlMap",
+            "messageBody": "Previously, an object was used to do this:\n`baseUrlMap[url] \u003d true` if a url is a base url\nand\n`baseUrlMap[url]` to check if the url is a base url\n\nBut since ES6 there has been a more idiomatic way to do it with Sets:\n`baseUrlMap.add(url)` if a url is a base url\nand\n`baseUrlMap.has(url)` to check if the url is a bse url\n",
             "insertions": 7,
             "deletions": 11
           },
           {
             "hash": "dde86d47739c8b18a0011b5465bb8ccd5832f1c8",
-            "message": "Update tests to expect Sets instead of objects",
+            "messageTitle": "Update tests to expect Sets instead of objects",
+            "messageBody": "baseUrlMap, includedFiles, and builtFiles have all been updated,\nand use Sets instead of Javascript objects to store information,\nso the tests have been updated to expect the new data structure.\n",
             "insertions": 17,
             "deletions": 34
           }
@@ -39,7 +43,8 @@
         "commitResults": [
           {
             "hash": "9fdaa9959f7d9b9565c8d20e3b089b3ef6100de3",
-            "message": "Make Site.js default layout comply with eslint (#854)",
+            "messageTitle": "Make Site.js default layout comply with eslint (#854)",
+            "messageBody": "Currently, the default content in Site.js is not compliant\r\nwith the `no-undef` eslint rule.\r\n\r\nA comment disabling the offended rule was added.",
             "insertions": 4,
             "deletions": 2
           }
@@ -52,13 +57,15 @@
         "commitResults": [
           {
             "hash": "7abe96670bc678aa9ac64c12160e9896cc7fd16d",
-            "message": "Add center attribute to userGuide/components#modal",
+            "messageTitle": "Add center attribute to userGuide/components#modal",
+            "messageBody": "Since modals now support the center attribute,\nlet\u0027s update the user guide to reflect this.\n",
             "insertions": 23,
             "deletions": 1
           },
           {
             "hash": "2ee1592e42bdeb4c4f93c096602dae899dfb4e75",
-            "message": "Update userGuide modal example to show actual code",
+            "messageTitle": "Update userGuide modal example to show actual code",
+            "messageBody": "The user guide did not show the lorem ipsum text,\ndiffering from the displayed output.\n\nLet\u0027s update the code such that both the example code\nand the example demo code are the same.\n\nSome ids have to be changed, since there are two modals\nthat have the same id, causing the wrong modal to be displayed.\n",
             "insertions": 16,
             "deletions": 21
           }
@@ -71,19 +78,22 @@
         "commitResults": [
           {
             "hash": "2cfdea612c3f176afbd528e8c3eb8cf1a2f9fe65",
-            "message": "Implement footnotes via extended markdown syntax",
+            "messageTitle": "Implement footnotes via extended markdown syntax",
+            "messageBody": "Plugin adapted from:\nhttps://github.com/markdown-it/markdown-it-footnote\n\nUsing the above syntax, let\u0027s also show the footnote as a popover when\nthe link is hovered over.\n",
             "insertions": 409,
             "deletions": 1
           },
           {
             "hash": "0a44e245f4f9043d0a39694413aa873908de5e72",
-            "message": "Add userGuide for footnotes",
+            "messageTitle": "Add userGuide for footnotes",
+            "messageBody": "",
             "insertions": 61,
             "deletions": 0
           },
           {
             "hash": "0c612344b56d2c7aaba2c268109f1cd9b58b4074",
-            "message": "Add tests for footnotes",
+            "messageTitle": "Add tests for footnotes",
+            "messageBody": "",
             "insertions": 38,
             "deletions": 0
           }
@@ -96,7 +106,8 @@
         "commitResults": [
           {
             "hash": "6dd26d2f1c17924dcb82941cc74b2c4f235f1a93",
-            "message": "Add footnotes to userGuide/formattingContents",
+            "messageTitle": "Add footnotes to userGuide/formattingContents",
+            "messageBody": "Let\u0027s put footnotes syntax in formattingContents for easy discovery.\n",
             "insertions": 4,
             "deletions": 1
           }
@@ -109,7 +120,8 @@
         "commitResults": [
           {
             "hash": "78817979fdfafdb0fb91b8df297be59d57ef3487",
-            "message": "Added footnotes example to reader-facing",
+            "messageTitle": "Added footnotes example to reader-facing",
+            "messageBody": "",
             "insertions": 1,
             "deletions": 1
           }
@@ -122,7 +134,8 @@
         "commitResults": [
           {
             "hash": "0bf8891a66f1960a196c6452e12ee5ca0df501c8",
-            "message": "Fix bug in syntax/footnotes.mbdf (#911)",
+            "messageTitle": "Fix bug in syntax/footnotes.mbdf (#911)",
+            "messageBody": "#short contents does not get rendered as markdown,\r\nand causes the full syntax reference to break.\r\n\r\nLet\u0027s add a newline before the relevant markdown code,\r\nso that it does get rendered as markdown.",
             "insertions": 1,
             "deletions": 0
           }
@@ -135,13 +148,15 @@
         "commitResults": [
           {
             "hash": "ab565fcd129ef68d2f53674d2efdb2bdfbf3208a",
-            "message": "Remove underline on footnote popovers (#924)",
+            "messageTitle": "Remove underline on footnote popovers (#924)",
+            "messageBody": "Since popovers already allow hovering over them, let\u0027s remove the\r\nredundant trigger on a footnote popover.",
             "insertions": 1,
             "deletions": 3
           },
           {
             "hash": "741118c564b6a3a504670cafee64822056d15c07",
-            "message": "Add temp styles to panel to reduce FOUC (#927)",
+            "messageTitle": "Add temp styles to panel to reduce FOUC (#927)",
+            "messageBody": "Unexpanded panels show their content temporarily until Vue loads\r\ncompletely.\r\n\r\nLet\u0027s add some temp styles to panel tags that reduce this FOUC.",
             "insertions": 376,
             "deletions": 0
           }
@@ -156,19 +171,22 @@
         "commitResults": [
           {
             "hash": "ebdf0b96582baef650e70d37d61ca6a4f5e7514e",
-            "message": "Remove anchor generation dependency on indexing level",
+            "messageTitle": "Remove anchor generation dependency on indexing level",
+            "messageBody": "Anchor were only generated if the indexing level was greater than the\nheading level, resulting in missing anchors and inconsistent behaviour\n\nChange: Anchors are generated for all header tags, except those hidden\nin panels\n",
             "insertions": 13,
             "deletions": 28
           },
           {
             "hash": "7c0582078ee71d72f337e86e15ad6293c0e93a94",
-            "message": "Add tests for anchor generation",
+            "messageTitle": "Add tests for anchor generation",
+            "messageBody": "",
             "insertions": 86,
             "deletions": 0
           },
           {
             "hash": "972111b00e9ef99d47af0ab198f1b931de9b68e1",
-            "message": "Update expected test files",
+            "messageTitle": "Update expected test files",
+            "messageBody": "",
             "insertions": 27,
             "deletions": 0
           }
@@ -181,13 +199,15 @@
         "commitResults": [
           {
             "hash": "6087752d08ef97e7999b9d6c84d07eb9269517ee",
-            "message": "Docs: remove extra line (#855)",
+            "messageTitle": "Docs: remove extra line (#855)",
+            "messageBody": "",
             "insertions": 1,
             "deletions": 2
           },
           {
             "hash": "b28e6d0b29d135e82400f8b9ba752a4b0712b8ec",
-            "message": "Add npm script that run linters with the --fix tag (#853)",
+            "messageTitle": "Add npm script that run linters with the --fix tag (#853)",
+            "messageBody": "Adds an npm script `autolint` to automatically perform easy \r\nfixes with the linters\u0027 built in functionality",
             "insertions": 10,
             "deletions": 1
           }
@@ -200,13 +220,15 @@
         "commitResults": [
           {
             "hash": "2c7fcf929796ece2297b72fd2f74ca18808a6cd5",
-            "message": "Box: Add support for `dismissible` attribute",
+            "messageTitle": "Box: Add support for `dismissible` attribute",
+            "messageBody": "Let\u0027s enhance the Box feature by adding support for a `dismissible`\nattribute, which adds a close button to the box.\n",
             "insertions": 13,
             "deletions": 13
           },
           {
             "hash": "c946559908353403207ffbd6d9187a5793a5ad95",
-            "message": "Docs: Update Box user guide for `dismissible`",
+            "messageTitle": "Docs: Update Box user guide for `dismissible`",
+            "messageBody": "",
             "insertions": 9,
             "deletions": 2
           }
@@ -219,19 +241,22 @@
         "commitResults": [
           {
             "hash": "25a9d9f8321120271cd97bdf7a432e70e97e147a",
-            "message": "Add thumbnails feature",
+            "messageTitle": "Add thumbnails feature",
+            "messageBody": "To use an image as a thumbnail, we have to crop and rescale the image\nby wrapping it in a div and using CSS. This can be especially\ncumbersome with multiple images with different dimensions.\n\nLet\u0027s add a built in feature that supports convenient creation of\nthumbnails using a \u003cthumb\u003e tag. It only accepts one dimension attribute\n`size`, rather than a separate `width` and `height`, and crops the\nsupplied image into a square or optionally a circle with minimal\nhassle from the author.\n\nLet\u0027s also extend that feature to also allow the author to supply text,\nicons or emojis in place of an image.\n",
             "insertions": 27,
             "deletions": 4
           },
           {
             "hash": "fb10ed91543937ea8206b82b348ec49e74ae3b44",
-            "message": "Add tests for thumbnail feature",
+            "messageTitle": "Add tests for thumbnail feature",
+            "messageBody": "",
             "insertions": 159,
             "deletions": 39
           },
           {
             "hash": "fc956051771b79d044b7c0faa4a31057d9991dc9",
-            "message": "Docs: Add user guide entry for thumbnails",
+            "messageTitle": "Docs: Add user guide entry for thumbnails",
+            "messageBody": "",
             "insertions": 61,
             "deletions": 0
           }
@@ -244,13 +269,15 @@
         "commitResults": [
           {
             "hash": "a017b4073b7f97a68dff5e6aa079aa6545e159f7",
-            "message": "Removed space after tooltip",
+            "messageTitle": "Removed space after tooltip",
+            "messageBody": "Currently, there is a bug where an extra space appears after text\nwrapped in a `tooltip` tag.\n\nLet\u0027s fix that by removing the extra space\n",
             "insertions": 12,
             "deletions": 12
           },
           {
             "hash": "80773e652b661a2ac2c30786b793a6deac30e31e",
-            "message": "Add tests for tooltip spacing",
+            "messageTitle": "Add tests for tooltip spacing",
+            "messageBody": "",
             "insertions": 74,
             "deletions": 36
           }
@@ -263,7 +290,8 @@
         "commitResults": [
           {
             "hash": "2bbc68c3915ef9885b90dd90b26d31b150c867dc",
-            "message": "Document header.md in page layouts (#893)",
+            "messageTitle": "Document header.md in page layouts (#893)",
+            "messageBody": "",
             "insertions": 2,
             "deletions": 0
           }
@@ -276,25 +304,29 @@
         "commitResults": [
           {
             "hash": "f72166af3a68f93b4efcdd44a19119e2679c321b",
-            "message": "Add PlantUML feature",
+            "messageTitle": "Add PlantUML feature",
+            "messageBody": "Markbind page authors can use diagrams in their sites by linking them\nin a `\u003cpic\u003e` tag. This is tedious as it requires the author to generate\nthe diagrams using an external tool, and the binary files generated by\nthat tool (e.g. .pptx, .psd) are not version control friendly.\n\nLet\u0027s support PlantUML, a tool that allows users to write diagrams in\na simple and intuitive language. Users can then write their diagrams\nin a text editor, and Markbind will generate the diagrams using\nPlantUML, eliminating the need of an external editor.\n",
             "insertions": 112,
             "deletions": 1
           },
           {
             "hash": "0a76639431f5a3976163293ca92188f79c3bfc2d",
-            "message": "Docs: Document PlantUML feature",
+            "messageTitle": "Docs: Document PlantUML feature",
+            "messageBody": "",
             "insertions": 121,
             "deletions": 2
           },
           {
             "hash": "a0b3c0c930eb5d8bbb5ba7c649f86190886f1946",
-            "message": "Test: Add tests for PlantUML",
+            "messageTitle": "Test: Add tests for PlantUML",
+            "messageBody": "",
             "insertions": 43,
             "deletions": 0
           },
           {
             "hash": "c89acd3647574518add16a566739e31695dcac2c",
-            "message": "Insert navbar temp styles after layout header",
+            "messageTitle": "Insert navbar temp styles after layout header",
+            "messageBody": "Previously, a fix was implemented for reducing FOUC by applying\ntemporary styles for \u003cnavbar\u003e and \u003cdropdown\u003e. A later commit broke this\nfix by moving the header and footer files to a layout, which caused\nthe contents of those files to be missed by the temporary style fix.\n\nThis commit fixes this by inserting the temporary styles after\nthe header and footer files are inserted in the page, such that\nthe temporary styles are applied correctly to the relevant tags.\n",
             "insertions": 1,
             "deletions": 1
           }
@@ -307,7 +339,8 @@
         "commitResults": [
           {
             "hash": "409dcbe9146371b4c128ec73f4b23b4989226675",
-            "message": "Fixed puml diagrams for user guide (#917)",
+            "messageTitle": "Fixed puml diagrams for user guide (#917)",
+            "messageBody": "Travis, the deployment tool does not have Graphviz installed, causing\r\nthe diagrams on markbind.org to fail to generate.\r\n\r\nThis commit changes them to normal `\u003cpic\u003e` tags, which work without\r\nGraphviz",
             "insertions": 12,
             "deletions": 12
           }
@@ -320,7 +353,8 @@
         "commitResults": [
           {
             "hash": "ee3cf9c10c8caf2b001cab06a99faf2b5dbe2dc1",
-            "message": "Fix PlantUML include bug (#919)",
+            "messageTitle": "Fix PlantUML include bug (#919)",
+            "messageBody": "PlantUML plugin throws an error while trying to process diagrams\r\nwithin an \u003cinclude\u003e. The original implementation resolves\r\ndiagram paths w.r.t. sourcePath rather than cwf.\r\n\r\nsourcePath refers to the path of the file being processed\r\n(in this case the file doing the include) and cwf refers to the file\r\nbeing included.\r\n\r\nThis commit fixes that by preferring cwf where available (within\r\nincluded file), and using sourcePath when cwf is unavailable\r\n(within normal files).",
             "insertions": 16,
             "deletions": 13
           }

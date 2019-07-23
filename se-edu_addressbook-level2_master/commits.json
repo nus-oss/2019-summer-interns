@@ -8,7 +8,8 @@
         "commitResults": [
           {
             "hash": "ffc79e3b7cada10c4ce8adf2a92e3dbe4e550305",
-            "message": "Migrate to JDK 11+",
+            "messageTitle": "Migrate to JDK 11+",
+            "messageBody": "For consistency with the other ABs, let\u0027s update AB-2 to JDK11.\nFortunately the codebase can be ported without any changes.\n",
             "insertions": 2,
             "deletions": 2
           }
@@ -21,7 +22,8 @@
         "commitResults": [
           {
             "hash": "deafd87065f93d1214b27db3665d2bcc531c5ecc",
-            "message": "Migrate to JUnit 5 from JUnit 4",
+            "messageTitle": "Migrate to JUnit 5 from JUnit 4",
+            "messageBody": "Change imports to JUnit 5 imports.\n\nReplace @Before with @BeforeEach, ExpectedException with assertThrows,\nTemporaryFolder with TempDir where applicable as the former are\nremoved in JUnit 5.\n\nAdd dependencies for JUnit 5 to build.gradle.txt.\n\nUpdate DG to import JUnit 5.4x.\n\nAdd images to DG to illustrate the process of downloading of JUnit5.4\nfrom Maven as the process varies on different versions of IntelliJ IDEA.\n\nUpdate the DG to reflect the fully qualified package name of JUnit5.\n",
             "insertions": 55,
             "deletions": 62
           }
@@ -34,7 +36,8 @@
         "commitResults": [
           {
             "hash": "a66bc842e6e05a8e7311d7932b36dbf363f51ca0",
-            "message": "Update checkstyle ruleset to match later levels of AddressBook.",
+            "messageTitle": "Update checkstyle ruleset to match later levels of AddressBook.",
+            "messageBody": "Upgrade checkstyle version to 8.1 and checkstyle rules to match that of\nlater AddressBooks for consistency.\n\nAdd checkstyle checks into the buildfile to ensure that future commits\nwill remain compliant to checkstyle rules.\n\nFix checkstyle violations as the AddressBooks are meant to be models for\nstudents to learn from.\n\nUpdate dependencies in build.gradle.txt to reflect the required version\nof checkstyle.\n\nAdd checkstyle checks to travis build.\n",
             "insertions": 102,
             "deletions": 59
           }

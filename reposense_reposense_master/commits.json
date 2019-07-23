@@ -8,7 +8,8 @@
         "commitResults": [
           {
             "hash": "27655c76427fd97a00b3ee2debcd348c8b94b047",
-            "message": "[#667] Report: fix search bar not displaying value provided by url parameter (#676)",
+            "messageTitle": "[#667] Report: fix search bar not displaying value provided by url parameter (#676)",
+            "messageBody": "Search bar component is not displaying the value that is provided \r\nby the URL parameter.\r\n\r\nThis confuses users into thinking that only the listed authors and \r\nrepos are all that\u0027s captured by the system, when there are others \r\nwhich are filtered out.\r\n\r\nLet\u0027s fix this bug by adding a two-way binding that binds the search \r\nfield and the corresponding JavaScript filterSearch variable.",
             "insertions": 1,
             "deletions": 1
           }
@@ -21,7 +22,8 @@
         "commitResults": [
           {
             "hash": "358440932d705337e318e89232a5da0d4d4f0775",
-            "message": "[#695] Report: allow reset of date controls (#700)",
+            "messageTitle": "[#695] Report: allow reset of date controls (#700)",
+            "messageBody": "Pressing the \"X\" button in the date field only clears the \r\ndate, with no useful functionality.\r\n\r\nUsers who wish to go back to the default dates will \r\nneed to manually pick the dates from the date picker,\r\nwhich can be troublesome.\r\n\r\nLet\u0027s reset the \"since date\" and \"until date\" to the earliest and \r\nlatest date respectively, should the user clear the date in the \r\nrespective boxes.",
             "insertions": 8,
             "deletions": 2
           }
@@ -34,7 +36,8 @@
         "commitResults": [
           {
             "hash": "d009bcbd8e0b7ccf4c82d340e5fea19fbe23d134",
-            "message": "[#506] Report: add checks to ensure that .zip file is uploaded (#693)",
+            "messageTitle": "[#506] Report: add checks to ensure that .zip file is uploaded (#693)",
+            "messageBody": "Uploaded files are not checked if the file type is of .zip file.\r\n\r\nNo alerts will be shown to the user and nothing will happen if they \r\nwere to upload non .zip files to the web page.\r\n\r\nLet\u0027s check if the uploaded file is .zip file, and show an alert to \r\nthe user if the user uploaded a non .zip file to the web page.\r\n",
             "insertions": 5,
             "deletions": 2
           }
@@ -47,7 +50,8 @@
         "commitResults": [
           {
             "hash": "cfbe4a0042ba5e71b8f71390fb7ab76dcb3acf51",
-            "message": "[#681,#756] UG: update in accordance to change in Toolbar (#696)",
+            "messageTitle": "[#681,#756] UG: update in accordance to change in Toolbar (#696)",
+            "messageBody": "The recent changes in the toolbar component of the report view are not \r\nreflected in the user guide, especially the `group by` function.\r\n\r\nWhen users want to seek the explanation for the `group by`\r\nfunctionality, they may not understand as the relevant sections in user\r\nguide are outdated.\r\n\r\nLet\u0027s update the user guide to reflect the changes made to the Toolbar.\r\nLet\u0027s also take this chance to rephrase certain descriptions that are\r\noutdated or misleading.",
             "insertions": 24,
             "deletions": 14
           }
@@ -60,7 +64,8 @@
         "commitResults": [
           {
             "hash": "1bc01e990391b800818820f4102e5d39958ce3a0",
-            "message": "[#721] Report: remove usage of spread operator (#766)",
+            "messageTitle": "[#721] Report: remove usage of spread operator (#766)",
+            "messageBody": "Microsoft Edge browser does not support spread operator in JavaScript \r\nES6.\r\n\r\nUsers using Microsoft Edge will not be able to load the report.\r\n\r\nLet\u0027s remove the usage of spread operator so as to allow the report\r\nto be run from Microsoft Edge browser.",
             "insertions": 9,
             "deletions": 6
           }
@@ -73,7 +78,8 @@
         "commitResults": [
           {
             "hash": "2a83c22b1cdb5975aac1699ce9662acc605f3d40",
-            "message": "[#711] Analysis: ignore binary files (#728)",
+            "messageTitle": "[#711] Analysis: ignore binary files (#728)",
+            "messageBody": "Binary files are included in the commits analysis and are shown in the\r\nreport view as interpreted plain text.\r\n\r\nThe produced results are gibberish; junks that do not make sense and\r\nnot useful to the readers.\r\n\r\nLet\u0027s exclude binary files from the analysis.\r\n\r\nThe method implemented to determine whether a file is binary or not is \r\nby utilizing \"git diff\" functionality return a list of committed files \r\nwith the number of lines added and deleted. A file is deemed to be \r\nbinary when the number of lines added and deleted are both \"-\".",
             "insertions": 115,
             "deletions": 47
           }
@@ -86,7 +92,8 @@
         "commitResults": [
           {
             "hash": "ed5c1cf95679951b1e858c6469f3906e7b4f044f",
-            "message": "[#683,#688] Limit range of commits to one month if \"since date\" is not specified (#690)",
+            "messageTitle": "[#683,#688] Limit range of commits to one month if \"since date\" is not specified (#690)",
+            "messageBody": "\"since date\", when not specified, defaults to the date of the first\r\ncommit. \r\n\r\nAnalyzing repos with large number of commits can take up a\r\nlong time, which may leave a bad impression for first time users.\r\n\r\nLet\u0027s,\r\n* limit the range of commits to be captured to one month, if\r\n\"since date\" is not specified.\r\n* allow `--since *` as a shorthand to specify the date of the first\r\ncommit without knowing the actual date.",
             "insertions": 175,
             "deletions": 76
           }
@@ -99,7 +106,8 @@
         "commitResults": [
           {
             "hash": "8ac91e8b6e083128429d2b6a2dddefe6eede9832",
-            "message": "[#781] Fix broken program when reserved character is used without escaping (#782)",
+            "messageTitle": "[#781] Fix broken program when reserved character is used without escaping (#782)",
+            "messageBody": "Following #690, asterisk is used in since date argument as a shorthand\r\nto the date of the first commit.\r\n\r\nAs asterisk is also a reserved character in shell, using it without\r\nescaping cause the program to be unusable.\r\n\r\nLet\u0027s change the shorthand to d1 so it can be used directly without the\r\nneed to escape.",
             "insertions": 13,
             "deletions": 7
           }
@@ -112,7 +120,8 @@
         "commitResults": [
           {
             "hash": "784d4c3a60bbe4547cf5328febc58a3197aaae66",
-            "message": "[#567] Report#Zip: remove unrelated files and folders (#656)",
+            "messageTitle": "[#567] Report#Zip: remove unrelated files and folders (#656)",
+            "messageBody": "Zipped files currently contain irrelevant files and/or folders. \r\n\r\nSome users may dump other irrelevant files/folders into \r\nthe same directory as the directory for the repos to be \r\ncloned into. This results in irrelevant files and folders being \r\nincluded in the zip file, which is not intended to be.\r\n\r\nLet\u0027s zip only the relevant repo folders and the \r\ncorresponding .JSON files into the zip file. \r\n\r\nThis method utilizes the existing class `RepoConfiguration` , to\r\nget the list of repos report to be zipped.",
             "insertions": 206,
             "deletions": 55
           }
@@ -125,15 +134,31 @@
         "commitResults": [
           {
             "hash": "e2c6b8c24edeb99ffe65a8c425978c5011d80db1",
-            "message": "[#738] CsvParser: fix incorrect splitting of literals commas (#739)",
+            "messageTitle": "[#738] CsvParser: fix incorrect splitting of literals commas (#739)",
+            "messageBody": "We parse CSV by using comma as a delimiter.\r\n\r\nWhen commas are used in a column as value, by enclosing double quotes,\r\nthey are mistakenly treated as a delimiter. This results in incorrect\r\nparsing of values.\r\n\r\nLet\u0027s use third-party CSV parser library, Apache Commons CSV to\r\nhandle the intricacies of CSV parsing in a correct and clean\r\nmanner.",
             "insertions": 148,
             "deletions": 91
           },
           {
             "hash": "88c4964f61cf797e6f0ab75925be1ae0851f43c9",
-            "message": "[#531,#707] Analysis: use all formats by default (#708)",
+            "messageTitle": "[#531,#707] Analysis: use all formats by default (#708)",
+            "messageBody": "By default, a set of common programming file formats is used for\r\nanalysis. To override the default set, one would need the knowledge of\r\nthe file formats used in their repository.\r\n\r\nLet\u0027s,\r\n* simplify this process by using all file formats present in the\r\nrepository by default.\r\n* fix the wrong detection of full directory path instead of filename for\r\nfiles without file extensions.",
             "insertions": 79,
             "deletions": 38
+          }
+        ]
+      },
+      {
+        "insertions": 149,
+        "deletions": 35,
+        "date": "2019-07-22",
+        "commitResults": [
+          {
+            "hash": "43ae58637fbb9de7306174fb4b6e00a207b0e9cf",
+            "messageTitle": "[#671, #750] CommitInfo: capture commits\u0027 message body (#751)",
+            "messageBody": "In the zoom tab, only the commit titles were listed.\r\n\r\nThe commit message title alone may be too abstract for users to \r\nunderstand the rationale of large implementations.\r\n\r\nLet\u0027s capture the commit message body as well and store it in\r\ncommits report.\r\n\r\nThis is a backend implementation of capturing message body to aid \r\nin the implementation of displaying commit message body in the \r\nzoom tab.",
+            "insertions": 149,
+            "deletions": 35
           }
         ]
       }
@@ -146,7 +171,8 @@
         "commitResults": [
           {
             "hash": "95e1ff81b55b7337c6f79e354acfbca56c05e53c",
-            "message": "[#745] Toolbar: edit flexbox properties (#768)",
+            "messageTitle": "[#745] Toolbar: edit flexbox properties (#768)",
+            "messageBody": "The toolbar does not adjust to changes in window or pane width.\r\n\r\nUnder certain widths, the `search` field is not visible.\r\n\r\nLet\u0027s edit the flexbox properties of the toolbar to allow its elements\r\nto shrink and wrap to occupy more rows when the window or pane width \r\nis decreased.",
             "insertions": 8,
             "deletions": 6
           }
@@ -159,7 +185,8 @@
         "commitResults": [
           {
             "hash": "0e24977b4c6c418078697361e13f7402aa485deb",
-            "message": "[#705] Log: distinct warning and error messages (#794)",
+            "messageTitle": "[#705] Log: distinct warning and error messages (#794)",
+            "messageBody": "Messages of different severity are outputed in similar format, without\r\nany form of distinction.\r\n\r\nThis creates difficulty for our users to distinguish messages of\r\ndifferent severity from the logs. Moreover, messages of higher severity\r\noften contains important info which may requires user\u0027s action and\r\nshouldn\u0027t be left unnoticed.\r\n\r\nLet\u0027s make these messages more distinct by inserting a highlighted\r\nstatus tag e.g. `[ERROR]` before the message.",
             "insertions": 25,
             "deletions": 0
           }
@@ -172,7 +199,8 @@
         "commitResults": [
           {
             "hash": "e7aa3277c8785b608e7b36ccdfc4457f65f832ff",
-            "message": "[#753] Display individuals\u0027 contribution (#762)",
+            "messageTitle": "[#753] Display individuals\u0027 contribution (#762)",
+            "messageBody": "Contribution is shown only for each group as a whole.\r\n\r\nWhile it is possible to view the contribution based on each chart by \r\nhovering over the contribution bar, this requires extra work by the\r\nuser. It will be more user-friendly if the contribution can be viewed\r\non the page itself.\r\n\r\nLet\u0027s display the contribution for each chart in the chart title.\r\nThis information is shown using the same style as the group\u0027s total \r\ncontribution.",
             "insertions": 9,
             "deletions": 5
           }
@@ -185,7 +213,8 @@
         "commitResults": [
           {
             "hash": "e2a938abbd053464ffd9fba61692c962eedf52cf",
-            "message": "[#661] Change chart title format (#802)",
+            "messageTitle": "[#661] Change chart title format (#802)",
+            "messageBody": "The chart title uses underscores to separate `org`, `repo` and\r\n`branch`. Furthermore, `displayName` is used for both the chart title\r\nand repo analysis output folder name.\r\n\r\n`org`, `repo` and `branch` might have underscores in them, making it\r\ndifficult to discern each term. Using a single parameter displayName\r\nto represent both the output folder name and the chart title would\r\nconstrain us to not use /. This has shown that the output folder name\r\nand the chart title have little compatibility, and difficulty in coming\r\nup with a coherent format.\r\n\r\nLet\u0027s use a separate variable, `outputFolderName`, for the out folder\r\nname so that a different format, `org/repo[branch]`, can be used for\r\nthe chart title.",
             "insertions": 25,
             "deletions": 12
           }
@@ -200,7 +229,8 @@
         "commitResults": [
           {
             "hash": "adb48f4e903be700b33b953457ca5b69df4908e8",
-            "message": "[#652] ChartView: fix url directing to wrong repository (#655)",
+            "messageTitle": "[#652] ChartView: fix url directing to wrong repository (#655)",
+            "messageBody": "The Octocat icon links to a GitHub repository by using the index 0 to\r\nget the URL of the first repository.\r\n\r\nWhen summary charts are grouped by Author, different repositories \r\nunder the same Author to all link to the same URL as the first \r\nrepository.\r\n\r\nLet\u0027s update the URL to point to their respective repository by\r\nreferencing with the correct index.",
             "insertions": 2,
             "deletions": 2
           }
@@ -213,13 +243,15 @@
         "commitResults": [
           {
             "hash": "3bbe5fccfc04aeb2742d814fef4fb8f534f3b55e",
-            "message": "[#672] Toolbar: set \u0027commit\u0027 as default for granularity (#684)",
+            "messageTitle": "[#672] Toolbar: set \u0027commit\u0027 as default for granularity (#684)",
+            "messageBody": "The default value of granularity is `Day`.\r\n\r\n`Commit` as granularity is more closer to reality because users are more\r\nlikely to observe per commits rather than per day/week. Users can choose\r\na more summarized view at their discretion.\r\n\r\nLet\u0027s change the default value for granularity to `Commit`.\r\n",
             "insertions": 1,
             "deletions": 1
           },
           {
             "hash": "3bf07fd69586874cf3238e9b28ea025b96f7ba97",
-            "message": "[#699] Report: standardize the author\u0027s name display (#701)",
+            "messageTitle": "[#699] Report: standardize the author\u0027s name display (#701)",
+            "messageBody": "When summary charts are grouped by none or repo/branch, author\u0027s name\r\ndisplay shows only the display name. Whereas when grouped by author,\r\nthe name display shows the display name as well as GitHub username.\r\n\r\nThis causes inconsistency in the name display. Furthermore, user won\u0027t\r\nbe able to refer to the author\u0027s GitHub username when the summary\r\ncharts are not grouped by author.\r\n\r\nLet\u0027s standardize all the name display using the format,\r\n[display name] (github username).",
             "insertions": 1,
             "deletions": 1
           }
@@ -232,7 +264,8 @@
         "commitResults": [
           {
             "hash": "7c0750c510003722f72ad363cb50ce759aa6735a",
-            "message": "[#635] CodeView: add line number to code (#669)",
+            "messageTitle": "[#635] CodeView: add line number to code (#669)",
+            "messageBody": "The code view displays only the code without the line number.\r\n\r\nIt is hard to associate a specific line from the code view with the\r\nactual code without the line number.\r\n\r\nLet\u0027s update the code view to display the line numbers by adding an\r\narray in each segment to keep track of the line numbers of the code.",
             "insertions": 32,
             "deletions": 2
           }
@@ -245,19 +278,22 @@
         "commitResults": [
           {
             "hash": "ad1e0265a549888e25fc4b94759cca4bea575785",
-            "message": "[#702] Fix url directing to the wrong branch (#704)",
+            "messageTitle": "[#702] Fix url directing to the wrong branch (#704)",
+            "messageBody": "The Octocat icon always links to the master branch of a GitHub \r\nrepository.\r\n\r\nOctocat icons of summary charts that are not within the master \r\nbranch will still point to the URL of the master branch.\r\n\r\nLet\u0027s update the URL to point to their respective branch.",
             "insertions": 18,
             "deletions": 10
           },
           {
             "hash": "afa5be94ea35410ed126c2958024696a62d4fa2e",
-            "message": "[#664] Toolbar: expand width for `breakdown by file format` (#685)",
+            "messageTitle": "[#664] Toolbar: expand width for `breakdown by file format` (#685)",
+            "messageBody": "The width of label `breakdown by fileformat` is set to 110px which\r\ndisplays in two lines even though there are enough room for it to\r\ndisplay in a single line.\r\n\r\nThis will cause the label to not look as organised as compared to the\r\nlabel being displayed in a single line.\r\n\r\nLet\u0027s expand the width for `breakdown by file format` by setting the\r\nwidth as fit-content to ensure that the label is displayed in a single\r\nline.",
             "insertions": 6,
             "deletions": 5
           },
           {
             "hash": "eb9c7460a0e7672bff50c5e0708cb1ff0ed5b329",
-            "message": "[#663] ChartView: add total contribution of group (#697)",
+            "messageTitle": "[#663] ChartView: add total contribution of group (#697)",
+            "messageBody": "A group only shows the total contribution of each author or repo/branch\r\nwithin the group but not the total contribution of all combined.\r\n\r\nIt is rather difficult for the user to compare the total contribution\r\nbetween groups as the user would need to sum up the contribution of each\r\nrow in order to get the total contribution of a group.\r\n\r\nLet\u0027s display the total contribution of groups beside the group title so\r\nthat it is easier for the user to do comparisons between groups.",
             "insertions": 14,
             "deletions": 2
           }
@@ -270,7 +306,8 @@
         "commitResults": [
           {
             "hash": "f96222a79167a55bb30fc9ced940b8660ef72425",
-            "message": "[#647] Toolbar: rename values in `sort group by` (#668)",
+            "messageTitle": "[#647] Toolbar: rename values in `sort group by` (#668)",
+            "messageBody": "The `sort groups by` selection contains the option of `repo/branch` and\r\n`name` when charts are grouped by Repo/Branch and Author respectively.\r\n\r\nAs it is a `sort group by` selection, there\u0027s is no need to use two\r\ndifferent options `repo/branch` and `name` as they both refer to the\r\n`group name`\r\n\r\nLet\u0027s rename both values to `group name` to standardize the values.",
             "insertions": 36,
             "deletions": 42
           }
@@ -283,7 +320,8 @@
         "commitResults": [
           {
             "hash": "0d3ba8a7da3f4c97014ece0805bef0d1e40799b9",
-            "message": "[#660] ChartView: remove ramp slices not within date range (#670)",
+            "messageTitle": "[#660] ChartView: remove ramp slices not within date range (#670)",
+            "messageBody": "After adjusting the date range, ramp slices that are not within the \r\ndate range still shows in the ramp row.\r\n\r\nUsers would only want to see the ramp slices that are within the date \r\nrange.\r\n\r\nLet\u0027s remove the ramp slices that are not within date range by \r\nchecking if the position of the ramp slices are within the width of \r\nthe ramp row (if it is not within the width of the ramp row, the ramp\r\nslice is not within date range) before adding the ramp slices to the \r\nramp row.",
             "insertions": 34,
             "deletions": 24
           }
@@ -296,7 +334,8 @@
         "commitResults": [
           {
             "hash": "27152fb10573899b79fe93ffc2e211329ce9a4fc",
-            "message": "[#712] ChartView: fix misalignment of chart title (#715)",
+            "messageTitle": "[#712] ChartView: fix misalignment of chart title (#715)",
+            "messageBody": "When \u0027breakdown by file format\u0027 is checked, the title of a chart aligns\r\nbeside the contribution bars of the previous chart when the\r\ncontribution bars\u0027 height of exceeds the margin allocated.\r\n\r\nLet\u0027s fix this misalignment by adding css property \u0027clear:left\u0027 to the\r\nchart title so that the chart title will always start at a new line.",
             "insertions": 2,
             "deletions": 0
           }
@@ -309,7 +348,8 @@
         "commitResults": [
           {
             "hash": "5a405e1be35dc5ae8ccf832dd5caf27a94f699d4",
-            "message": "[#689] v_summary.js: remove unused remnants code (#733)",
+            "messageTitle": "[#689] v_summary.js: remove unused remnants code (#733)",
+            "messageBody": "Unused code was found in v_summary.js; specifically code associated\r\nwith the variable, filterSortReverse. They are remnants left behind by\r\nthe improvement of sort controls introduced in #618.\r\n\r\nThe unused code was originally bind to the reverse checkbox in the\r\nolder version of RepoSense. As the checkbox was replaced by the\r\nintroduction of ascending and descending options in #618, the code is\r\nnow unused and redundant. This is also partially due to the complexity\r\nbrought upon by new sorting group, the reversing has to be done within\r\nthe code of descending\u0027s logic, rendering those code not reusable.\r\n\r\nLet\u0027s remove the unused code associated to the variable, \r\nfilterSortReverse and it\u0027s implementations.",
             "insertions": 0,
             "deletions": 10
           }
@@ -322,13 +362,15 @@
         "commitResults": [
           {
             "hash": "194bd125a57a63f2e764a348b7549f9bba18213e",
-            "message": "[#645] CodeView: improve UI of sort bar (#716)",
+            "messageTitle": "[#645] CodeView: improve UI of sort bar (#716)",
+            "messageBody": "In the UI of sortbar: \r\n- The font size of 3 controls (searchbar, checkbox, sort) are different\r\n- The sorting option\u0027s position is below the radio controls\r\n- The font of reverse checkbox is red in colour\r\n- The gaps between sorting option and radio controls is not \r\nstandardized\r\n\r\nLets:\r\n- Standardize the font size of all 3 controls so that the sort bar\r\nlooks neater\r\n- Shift sorting option to be above radio controls to further\r\nemphasize the number of radio buttons better\r\n- Set the font of reverse checkbox to be black in color to\r\ndifferentiate from other checkboxes and to be consistent with the\r\nChartView\r\n- Standardize the gaps between sorting option and radio controls",
             "insertions": 28,
             "deletions": 19
           },
           {
             "hash": "5ad348098a9baa2effea7646bf0463da8cae5dd2",
-            "message": "[#720] Set command-click to activate zoom-in feature for macOS devices (#730)",
+            "messageTitle": "[#720] Set command-click to activate zoom-in feature for macOS devices (#730)",
+            "messageBody": "Ctrl + mouse left-click is the default combination to activate the\r\nzoom-in feature for all environment.\r\n\r\nHowever, as the combination is registered as a right-click in macOS\r\nenvironment, users of macOS devices wouldn\u0027t be able to activate the\r\ncorresponding feature.\r\n\r\nLet\u0027s modify the zoom-in controls to allow command click for macOS \r\ndevices and control click for all other devices.",
             "insertions": 8,
             "deletions": 3
           }
@@ -341,7 +383,8 @@
         "commitResults": [
           {
             "hash": "8591328fbf84af35f2943756ae3f2a6fed8f67ef",
-            "message": "[#666] CodeView: load un-authored code only when toggled (#740)",
+            "messageTitle": "[#666] CodeView: load un-authored code only when toggled (#740)",
+            "messageBody": "Viewing the changes in code of an author causes the app to \r\nrender all authored and un-authored segments within modified files.\r\nA small change in large file will cause the entire file to be preloaded.\r\n\r\nWhen an author has small changes done to a lot of large files, it will\r\nlead to an unresponsive page as loading the large un-authored segments\r\nwill affect the rendering speed. Furthermore, the preloading of all \r\nun-authored code is not necessary as users might only view the \r\nun-authored code under certain circumstances. (e.g. when the user \r\ndoes not understand why the author added the authored code)\r\n\r\nLet\u0027s modify the app to only load the un-authored code when the \r\nuser toggles the \u0027Show untouched code\u0027 icon.",
             "insertions": 35,
             "deletions": 10
           }
@@ -354,7 +397,8 @@
         "commitResults": [
           {
             "hash": "d09194c65d9016c56dfc11d341b91cde5c0d1503",
-            "message": "[#741] Fix view code icon not opening CodeView (#744)",
+            "messageTitle": "[#741] Fix view code icon not opening CodeView (#744)",
+            "messageBody": "The splitCommitsWeek() method executes a dateRounding() method that \r\nrounds up the filterSinceDate to the next nearest Monday. When the \r\nreport page is reloaded, the filterSinceDate is set to the value of \r\nthe \u0027since\u0027 hash by the getDates() method. Since within the \r\ngetFiltered() method, splitCommitsWeek() is executed before\r\ngetDates(), the filterSinceDate stores an empty string which is \r\npassed to the dateRounding() method and returns a NaN value. \r\n\r\nSince splitCommitsWeek() method is only called when granularity is \r\n\u0027week\u0027, if users were to set granularity as \u0027week\u0027 and reload the page,\r\nclicking on the view code icon does not open the CodeView panel. \r\n\r\nLet\u0027s shift the getDates() method to be executed before \r\nsplitCommitsWeek() to make sure that splitCommitWeek() method\r\nis called with a valid filterSinceDate, which fixes the described bug.",
             "insertions": 1,
             "deletions": 1
           }
@@ -367,7 +411,8 @@
         "commitResults": [
           {
             "hash": "63ca0a11c8351729866d181a152742b2333c987d",
-            "message": "[#680] Vue: fix error message in development mode (#742)",
+            "messageTitle": "[#680] Vue: fix error message in development mode (#742)",
+            "messageBody": "An error message stating \"error compiling template: - \u003ctemplate\u003e\r\ncannot be keyed. Place the key on real elements instead.\" was found in\r\nChrome browser\u0027s console when running Vue in development mode for our\r\nreport.\r\n\r\nAlthough the Vue development tool still functions correctly, it \r\nhighlights an issue with the existing style and possibility degrades \r\nthe efficiency of the operations.\r\n\r\nLet\u0027s remove the Chrome browser console error by shifting the binding \r\nof keys from the \u003ctemplate\u003e tag to the inner \u003clabel\u003e tag.",
             "insertions": 2,
             "deletions": 2
           }
@@ -380,7 +425,8 @@
         "commitResults": [
           {
             "hash": "651df45df4d9a91cf5557aabc030c309e93f20de",
-            "message": "[#770] Add placeholder for repositories with no author found (#777)",
+            "messageTitle": "[#770] Add placeholder for repositories with no author found (#777)",
+            "messageBody": "Repositories with no author specified in the configuration files as\r\nwell as no commits made during the specified period do not appear in\r\nthe report.\r\n\r\nThis is caused by a TypeError in JavaScript. When an author\r\nconfiguration can\u0027t be found for a repository, RepoSense will perform\r\nthe identification of the authors using the commits. However, in the\r\nevent that even commits cannot be found, author information will not be\r\navailable and result in the error stated above.\r\n\r\nAs users may not notice the disappearance of these repositories, let\u0027s\r\nadd a placeholder with an error message of \u0027NO AUTHOR WITH COMMITS\r\nFOUND WITHIN THIS PERIOD OF TIME\u0027 to the affected repositories to\r\ninform users of the occurrence of this error.",
             "insertions": 38,
             "deletions": 11
           }
@@ -393,7 +439,8 @@
         "commitResults": [
           {
             "hash": "61be4e20b1af8e9eb1832fa5afa89bf7fe155f5a",
-            "message": "[#312] CodeView: reduce space taken by toggle icon (#773)",
+            "messageTitle": "[#312] CodeView: reduce space taken by toggle icon (#773)",
+            "messageBody": "The toggle icon that separates between untouched and touched code \r\nsegments within the CodeView takes up significant amount of extra space.\r\n\r\nThe extra white space causes the code to be in a different layout than \r\nits actual layout.\r\n\r\nLet\u0027s place the toggle icon on the side of the code to not disrupt the \r\nlayout of the code while saving the extra space taken by the current\r\ntoggle icon.",
             "insertions": 69,
             "deletions": 72
           }
@@ -406,7 +453,8 @@
         "commitResults": [
           {
             "hash": "e3dc5d13cd231f26062bcc9fd5cf22ffaed32b9d",
-            "message": "[#748] Restore authorship tab (#749)",
+            "messageTitle": "[#748] Restore authorship tab (#749)",
+            "messageBody": "Reloading the report page with the authorship tab opened will result\r\nto a closed authorship tab.\r\n\r\nThe info.name property is only created when clicking on the view code\r\nicon and calling openTabAuthorship() method of v_summary. The\r\ninitiate() method of v_authorship sets the isTabActive property to be \r\nfalse if info.name property does not exist. Reloading the report page \r\ndoes not call openTabAuthorship(), which means that the info.name \r\nproperty will not exist and the isTabActive is false regardless of \r\nurl value.\r\n\r\nLet\u0027s modify the initiate() method of v_authorship.js to check for\r\ninfo.author property instead of info.name as the property exists \r\nwhen reloading the page as well as clicking on the view code icon.\r\nThis modification properly restores the last viewed authorship tab, \r\nif any.",
             "insertions": 29,
             "deletions": 7
           }
@@ -419,7 +467,8 @@
         "commitResults": [
           {
             "hash": "d45513d6692248bfa38808e3b045b4ce51039c0c",
-            "message": "[#791] CodeView: bugfix for unexpected colors in line numbers (#792)",
+            "messageTitle": "[#791] CodeView: bugfix for unexpected colors in line numbers (#792)",
+            "messageBody": "The css property of line number only overwrites the color property of \r\nclasses \u0027hljs-number\u0027 and \u0027hljs-comment\u0027. Others classes such as\r\n\u0027hljs-quote\u0027, \u0027hljs-name\u0027 and more are not overwritten.\r\n\r\nThis will cause the color property of certain line numbers to inherit \r\nfrom the hljs classes that are not overwritten.\r\n\r\nLet\u0027s overwrite all hljs classes to ensure the color property of the \r\nline number to always be grey.",
             "insertions": 2,
             "deletions": 5
           }
@@ -432,13 +481,15 @@
         "commitResults": [
           {
             "hash": "255907108d29f67d4a08b91d36c8fe9a8368e7aa",
-            "message": "ChartView: highlight error messages in red (#790)",
+            "messageTitle": "ChartView: highlight error messages in red (#790)",
+            "messageBody": "Within ChartView, ramp charts with error messages are blended together \r\nwith the other ramp charts without error messages as they both have \r\nsimilar UI.\r\n\r\nLet\u0027s modify the UI of ramp charts with error messages to use red color \r\nfor their info message font to distinguish itself from other ramp \r\ncharts without error messages.",
             "insertions": 16,
             "deletions": 2
           },
           {
             "hash": "674f87d83558ccdee29d8aadf42a9647624e2d30",
-            "message": "[#811] CodeView: fix position of toggle icons (#813)",
+            "messageTitle": "[#811] CodeView: fix position of toggle icons (#813)",
+            "messageBody": "The \u0027closer\u0027 class designated for icons that toggle code segments\r\nis absolutely positioned. Due its parent class, \u0027untouched\u0027, being \r\nin default static position, \u0027closer\u0027 is positioned relatively to the \r\nedges of the root containing block.\r\n\r\nWhen scrolling through horizontally within each code segment, the \r\ntoggle icons remains unchanged in their position in x-axis, hovering \r\nover the text in code view.\r\n\r\nLet\u0027s relatively position the \u0027untouched\u0027 class, which turns the class \r\ninto a containing block. This ensures absolutely positioned elements \r\ncontained within will be positioned relative to the edges of \u0027untouched\u0027\r\nrather than the root containing block. ",
             "insertions": 1,
             "deletions": 0
           }
@@ -451,7 +502,8 @@
         "commitResults": [
           {
             "hash": "e8bf034aaf33fa1a59c8933ffaa22dfdf82048fb",
-            "message": "[#522] Implement style checker on .scss files (#803)",
+            "messageTitle": "[#522] Implement style checker on .scss files (#803)",
+            "messageBody": "RepoSense currently has CheckStyle and ESLint to check our java and \r\njavascript code styles automatically. However, .scss files are not \r\ncovered by any of these tools.\r\n\r\nLet\u0027s implement stylelint to check the code styles of .scss files.",
             "insertions": 806,
             "deletions": 752
           }
@@ -464,13 +516,15 @@
         "commitResults": [
           {
             "hash": "174d06f15417b6feb7fc44bc608a478518a66b34",
-            "message": "[#764] Toolbar: fix search functionality for Safari users (#797)",
+            "messageTitle": "[#764] Toolbar: fix search functionality for Safari users (#797)",
+            "messageBody": "The \u0027enter\u0027 key submits html forms in browsers such as Chrome and \r\nFirefox, but not in Safari.\r\n\r\nSince the getFiltered() method is executed on submit of the html form,\r\nSafari browser users are unable to activate the search functionality \r\nwhen search value is keyed in and \u0027enter\u0027 key is pressed.\r\n\r\nLet\u0027s move the execution of getFiltered() method to be within \r\nupdateFilterSearch(), to ensure that Safari users are also able to \r\nactivate the search functionality.",
             "insertions": 2,
             "deletions": 1
           },
           {
             "hash": "f6520543bcb0c7ef1d0365a74a87958caca89e92",
-            "message": "[#763] v_summary.js: remove redundant calls to getFiltered() (#800)",
+            "messageTitle": "[#763] v_summary.js: remove redundant calls to getFiltered() (#800)",
+            "messageBody": "When reloading the report page, the data in v_summary such as\r\nfilterSinceDate, filterUntilDate, filterTimeFrame etc will change based \r\non the URL hash values. The changes in data will trigger the watchers \r\nfor those data, and each of them will call getFiltered() method.\r\n\r\nOnly one call for getFiltered() is required after rendering the filter \r\nhash, the other getFiltered() calls by the watchers are redundant.\r\nWhen the report is large in size, repeatedly executing getFiltered()\r\nwhen reloading the report will also significantly affect the loading \r\nperformance of our report.\r\n\r\nLet\u0027s only allow watchers to execute getFiltered() after the first \r\ncycle of watcher updates to prevent redundant calls to getFiltered().",
             "insertions": 9,
             "deletions": 0
           }
@@ -483,19 +537,22 @@
         "commitResults": [
           {
             "hash": "c8f248d9283fe86270e1f2906a7812882742bff2",
-            "message": "[#724] Modify zoom-in feature to based on selected granularity (#729)",
+            "messageTitle": "[#724] Modify zoom-in feature to based on selected granularity (#729)",
+            "messageBody": "The zoom-in feature opens the zoom panel to show the selected\r\nsub-range of a ramp chart in terms of \u0027commit\u0027. This feature, however, \r\nonly works when the granularity is set to commit or day.\r\n\r\nUsers will not be able to use this feature with granularity set to week,\r\nas the method getUserCommits() gets all user commits by interating \r\nthrough an undefined key object \u0027dayCommits\u0027, which stops the method\r\nexecution.\r\n\r\nMoreover, long sub-range of ramp charts will contain dense information \r\nwith ramp slices overlapping each other. This happens even when \r\ngranularity is set to day or week, which makes it difficult for users to \r\nnotice substantial info on these ramp charts.\r\n\r\nLet\u0027s correctly implement the zoom-in feature when granularity is set to\r\nweek. Furthermore, let\u0027s modify the feature for the ramp chart within \r\nzoom panel to be in terms of the granularity selected, which allow users \r\nto observe selected granularity of commits more clearly within the \r\nzoomed-in range.",
             "insertions": 42,
             "deletions": 19
           },
           {
             "hash": "eb0e20f6cfda5485770df37e8f387082452d88c7",
-            "message": "[#780] v_summary.js: remove Vue watcher for repos (#783)",
+            "messageTitle": "[#780] v_summary.js: remove Vue watcher for repos (#783)",
+            "messageBody": "A redundant Vue watcher was found in v_summary.js, specifically the Vue\r\nwatcher for repos, as repos should remain constant and not be modified.\r\n\r\nThis is primarily used to call the getUsers() method, however this \r\nitself is redundant as getUsers() shouldn\u0027t be called more than once \r\nas it tends to overwrite repos with the same set of values.\r\n\r\nAdditionally, using Vue watcher for large data, such as repos, affects \r\nthe performance of the report.\r\n\r\nLet\u0027s remove the Vue watcher for repos and modify getUsers() to be \r\ncalled only once when page is firstly loaded.",
             "insertions": 6,
             "deletions": 6
           },
           {
             "hash": "790840f5c3130b829cb655609d5e481b5932991d",
-            "message": "[#820] Cypress: add sinceDate in command arguments (#821)",
+            "messageTitle": "[#820] Cypress: add sinceDate in command arguments (#821)",
+            "messageBody": "The arguments used to generate the sample report used in Cypress \r\ntests is \u0027--repo https://github.com/reposense/RepoSense.git --view\u0027. \r\n\r\nSince sinceDate and untilDate is not provided in the arguments, the \r\nreport duration will be from one month before today\u0027s date until\r\ntoday\u0027s date. This causes the current sample report used for Cypress\r\ntests to contain empty ramp charts, which does not mimic a realistic\r\nreport.\r\n\r\nLet\u0027s add a \u0027--since d1\u0027 argument to the existing arguments, which \r\ngenerates a more realistic sample report that contains the commits\r\nmade from start until today\u0027s date.",
             "insertions": 1,
             "deletions": 1
           }
@@ -504,13 +561,13 @@
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 751,
+    "jylee-git": 895,
     "bluein-green": 60,
     "jamessspanggg": 781
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 569,
+      "java": 711,
       "js": 32,
       "scss": 0,
       "json": 111,
@@ -518,7 +575,7 @@
       "py": 0,
       "jade": 0,
       "gradle": 3,
-      "pug": 4
+      "pug": 6
     },
     "bluein-green": {
       "java": 44,
@@ -544,7 +601,7 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 3783.0027,
+    "jylee-git": 4171.224,
     "bluein-green": 31.998814,
     "jamessspanggg": 33872.24
   },

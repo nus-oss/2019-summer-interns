@@ -1,1 +1,256 @@
-[]
+[
+  {
+    "path": "_includes/header.html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003chead\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmeta charset\u003d\"utf-8\"\u003e"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmeta http-equiv\u003d\"X-UA-Compatible\" content\u003d\"IE\u003dedge,chrome\u003d1\"\u003e"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003ctitle\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    {{ page.title }}{% unless page.overview %}{% unless page.hideLayoutTitle %} {{ layout.title }}{% endunless %} - PowerPointLabs{% endunless %}"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/title\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c!-- Standard Description Meta tag --\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmeta name\u003d\"description\" content\u003d\"PowerPoint, supercharged. A plugin for Microsoft PowerPoint that makes creating impressive presentations easy.\" /\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c!-- Facebook Open Graph --\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmeta property\u003d\"og:title\" content\u003d\"PowerPointLabs\" /\u003e"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmeta property\u003d\"og:type\" content\u003d\"website\" /\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "yuhongherald"
+        },
+        "content": "  \u003cmeta property\u003d\"og:image\" content\u003d\"http://www.powerpointlabs.info/~pptlabs/img/install.png\" /\u003e"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmeta property\u003d\"og:url\" content\u003d\"http://www.powerpointlabs.info\" /\u003e"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmeta property\u003d\"og:description\" content\u003d\"PowerPoint, supercharged. A plugin for Microsoft PowerPoint that makes creating impressive presentations easy.\" /\u003e"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003clink rel\u003d\"stylesheet\" href\u003d\"//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css\"\u003e"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003clink rel\u003d\"stylesheet\" href\u003d\"//fonts.googleapis.com/css?family\u003dOpen+Sans:400,300\"\u003e"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003clink rel\u003d\"stylesheet\" href\u003d\"//fonts.googleapis.com/css?family\u003dLato:700,400,300\"\u003e"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003clink rel\u003d\"stylesheet\" href\u003d\"{{ site.baseurl }}/css/main.css\"\u003e"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003clink rel\u003d\"shortcut icon\" type\u003d\"image/png\" href\u003d\"{{ site.baseurl }}/img/logo-small.png\"/\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cscript src\u003d\"{{ site.baseurl }}/js/jquery-1.11.2.min.js\"\u003e\u003c/script\u003e"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cscript src\u003d\"{{ site.baseurl }}/js/bootstrap-3.0.3.min.js\"\u003e\u003c/script\u003e"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cscript\u003e"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  (function(i,s,o,g,r,a,m){i[\u0027GoogleAnalyticsObject\u0027]\u003dr;i[r]\u003di[r]||function(){"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  (i[r].q\u003di[r].q||[]).push(arguments)},i[r].l\u003d1*new Date();a\u003ds.createElement(o),"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  m\u003ds.getElementsByTagName(o)[0];a.async\u003d1;a.src\u003dg;m.parentNode.insertBefore(a,m)"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  })(window,document,\u0027script\u0027,\u0027//www.google-analytics.com/analytics.js\u0027,\u0027ga\u0027);"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  ga(\u0027create\u0027, \u0027UA-46768719-1\u0027, \u0027nus.edu.sg\u0027);"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  ga(\u0027send\u0027, \u0027pageview\u0027);"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/script\u003e"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/head\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "-": 34,
+      "yuhongherald": 1
+    }
+  }
+]

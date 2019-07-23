@@ -8,7 +8,8 @@
         "commitResults": [
           {
             "hash": "3fdd0cc64198db32688dfd2b6d488faccdcc6695",
-            "message": "Migrate to JDK11+",
+            "messageTitle": "Migrate to JDK11+",
+            "messageBody": "For consistency with the other ABs, let\u0027s update AB-1 to JDK11 (LTS).\r\nFortunately the codebase can be ported without any changes.\r\n",
             "insertions": 2,
             "deletions": 2
           }
@@ -21,7 +22,8 @@
         "commitResults": [
           {
             "hash": "fa07d774719697fc7d1d4ec562b3cbcd0adf46dd",
-            "message": "Add checkstyle support",
+            "messageTitle": "Add checkstyle support",
+            "messageBody": "Include a modified version of checkstyle rules based on AB-4 without\n`suppressions.xml` as there are no JUnit test files to exclude.\n\nFix checkstyle violations as AB-1 is supposed to be a model for\nstudents to follow.\n\nModify the buildfile to run checkstyle as part of the default build\nprocess to ensure that future builds will remain compliant.\n",
             "insertions": 23,
             "deletions": 16
           }
