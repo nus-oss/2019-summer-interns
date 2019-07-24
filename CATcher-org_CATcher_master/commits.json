@@ -513,8 +513,8 @@
         ]
       },
       {
-        "insertions": 223,
-        "deletions": 222,
+        "insertions": 225,
+        "deletions": 225,
         "date": "2019-07-23",
         "commitResults": [
           {
@@ -523,6 +523,27 @@
             "messageBody": "* Phase3 Renamed to PhaseModeration\r\n\r\n* Phase2 Renamed to PhaseTeamResponse\r\n\r\n* Renamed Phase1 to PhaseBugReporting\r\n\r\n* Minor Code Cleanups\r\n\r\n* Lint Fix\r\n\r\n* Fix Phase3 TesterResponse Display\r\n",
             "insertions": 223,
             "deletions": 222
+          },
+          {
+            "hash": "1407ca542ffd85daf706bcfc3698f6ba661c3246",
+            "messageTitle": "Link to UserGuide",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 3
+          }
+        ]
+      },
+      {
+        "insertions": 51,
+        "deletions": 26,
+        "date": "2019-07-24",
+        "commitResults": [
+          {
+            "hash": "7a33d09512f03aba16075e2bc0b37f95f8066585",
+            "messageTitle": "Labels Update (#143)",
+            "messageBody": "* Change getFormattedName() in Label Model\r\n\r\nIn preparation of a new set of labels (some which do not contain a\r\ncategory), the afore mentioned method had to be morphed to accomodate\r\nlabels that have no category.\r\n\r\n* Updated Label Set \u0026 Parsing Methods\r\n\r\nParsing Methods did not previously account for labels that might not\r\ncontain a category. It has now been updated to account for it.\r\n\r\n* Jasmine Tests Update\r\n",
+            "insertions": 51,
+            "deletions": 26
           }
         ]
       }
@@ -1654,12 +1675,26 @@
             "deletions": 24
           }
         ]
+      },
+      {
+        "insertions": 117,
+        "deletions": 117,
+        "date": "2019-07-24",
+        "commitResults": [
+          {
+            "hash": "2e2a57a530c01ad1b3dee748c37629f4dbea07d5",
+            "messageTitle": "Refactor property name in permission service (#140)",
+            "messageBody": "* refactor property name in permission service\r\n\r\n* change name for create issue\r\n",
+            "insertions": 117,
+            "deletions": 117
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2236,
-    "KevinCJH": 1017
+    "ptvrajsk": 2240,
+    "KevinCJH": 1121
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1669,8 +1704,8 @@
       "md": 4,
       "py": 0,
       "tag": 0,
-      "html": 301,
-      "ts": 1931
+      "html": 295,
+      "ts": 1941
     },
     "KevinCJH": {
       "java": 0,
@@ -1679,13 +1714,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 193,
-      "ts": 824
+      "html": 207,
+      "ts": 914
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 28288.812,
-    "KevinCJH": 17051.602
+    "ptvrajsk": 27956.22,
+    "KevinCJH": 17211.684
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

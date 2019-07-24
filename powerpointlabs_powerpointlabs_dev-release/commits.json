@@ -308,22 +308,50 @@
             "deletions": 172
           }
         ]
+      },
+      {
+        "insertions": 2180,
+        "deletions": 2180,
+        "date": "2019-07-23",
+        "commitResults": [
+          {
+            "hash": "96a37c3bc74c8aec1c5984085101cdb22a0c4cc7",
+            "messageTitle": "#1680 update line endings (#1977)",
+            "messageBody": "",
+            "insertions": 2180,
+            "deletions": 2180
+          }
+        ]
+      },
+      {
+        "insertions": 482,
+        "deletions": 482,
+        "date": "2019-07-24",
+        "commitResults": [
+          {
+            "hash": "1209bdf80c860d19a9cdfccc96e49cd8a51975ba",
+            "messageTitle": "dev-release-5.3.0.0 (#1979)",
+            "messageBody": "* change line endings\r\n\r\n* update dev release\r\n",
+            "insertions": 482,
+            "deletions": 482
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 4423
+    "yuhongherald": 4426
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 4423
+      "cs": 4426
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 78347.43
+    "yuhongherald": 330382.0
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
