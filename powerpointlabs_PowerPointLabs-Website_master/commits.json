@@ -14,6 +14,20 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-07-25",
+        "commitResults": [
+          {
+            "hash": "bdc797612966829c4558b9773089917356ea9294",
+            "messageTitle": "Update team members (#100)",
+            "messageBody": "* Update pastmembers.yml\r\n\r\n* Update coremembers.yml\r\n\r\n* Add team members\r\n\r\n* change image dimensions\r\n\r\n* resize images to 105 by 130\r\n\r\n* reduce face size\r\n\r\n* change face size\r\n\r\n* change face size\r\n\r\n* fix opengraph image tag\r\n\r\n* remove white border at bottom\r\n\r\n* remove border\r\n",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ]
   },
@@ -30,7 +44,7 @@
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 0.055544533
+    "yuhongherald": 0.10518627
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

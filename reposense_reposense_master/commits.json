@@ -161,6 +161,20 @@
             "deletions": 35
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-07-25",
+        "commitResults": [
+          {
+            "hash": "26feb35158e42a9c25f92d80d742ab3ff779cd97",
+            "messageTitle": "[#833] build.gradle: update node.js to 10.16.0 (#836)",
+            "messageBody": "One of our indirect dependencies, sass@1.22.8, requires\r\n`url.pathToFileURL` which is only available in node.js 10.12.0 or\r\nlater.\r\n\r\nAs our version of node.js is at 10.5.0, this cause our CIs to fail.\r\n\r\nLet\u0027s update node.js to the latest lts release 10.16.0.",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "bluein-green": [
@@ -557,13 +571,27 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 0,
+        "deletions": 9,
+        "date": "2019-07-24",
+        "commitResults": [
+          {
+            "hash": "1378e60b66d2493595efc17eae763327d266faa8",
+            "messageTitle": "[#828] Revert \"v_summary.js: remove redundant calls to getFiltered() (#800)\" (#832)",
+            "messageBody": "PR #800 was intended to ensure the getFiltered() method to be executed \r\nonly once when the page is reloaded. The solution used was to set \r\nboolean canGetFiltered to true in beforeUpdate() lifecycle hook, \r\npreventing the execution of getFiltered() before the lifecycle hook.\r\nHowever, the beforeUpdate() lifecycle hook will only be executed when \r\nthere are changes to the DOM. \r\n\r\nInstances where the page is reloaded and there are no changes to the DOM\r\nwill not set boolean canGetFiltered to true, preventing getFiltered() to \r\nbe executed until the DOM has changed.\r\n\r\nLet\u0027s revert PR #800 to allow getFiltered() to be executed even when \r\nthere are no changes to the DOM.",
+            "insertions": 0,
+            "deletions": 9
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 895,
+    "jylee-git": 896,
     "bluein-green": 60,
-    "jamessspanggg": 781
+    "jamessspanggg": 772
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -574,7 +602,7 @@
       "md": 32,
       "py": 0,
       "jade": 0,
-      "gradle": 3,
+      "gradle": 4,
       "pug": 6
     },
     "bluein-green": {
@@ -590,7 +618,7 @@
     },
     "jamessspanggg": {
       "java": 38,
-      "js": 160,
+      "js": 151,
       "scss": 477,
       "json": 34,
       "md": 5,
@@ -601,9 +629,9 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 4171.224,
-    "bluein-green": 31.998814,
-    "jamessspanggg": 33872.24
+    "jylee-git": 4014.3818,
+    "bluein-green": 30.764065,
+    "jamessspanggg": 32531.82
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

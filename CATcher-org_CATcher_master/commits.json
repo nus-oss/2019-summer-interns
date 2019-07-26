@@ -534,8 +534,8 @@
         ]
       },
       {
-        "insertions": 51,
-        "deletions": 26,
+        "insertions": 54,
+        "deletions": 29,
         "date": "2019-07-24",
         "commitResults": [
           {
@@ -544,6 +544,34 @@
             "messageBody": "* Change getFormattedName() in Label Model\r\n\r\nIn preparation of a new set of labels (some which do not contain a\r\ncategory), the afore mentioned method had to be morphed to accomodate\r\nlabels that have no category.\r\n\r\n* Updated Label Set \u0026 Parsing Methods\r\n\r\nParsing Methods did not previously account for labels that might not\r\ncontain a category. It has now been updated to account for it.\r\n\r\n* Jasmine Tests Update\r\n",
             "insertions": 51,
             "deletions": 26
+          },
+          {
+            "hash": "c790084e52030cbf4b95bf46045984f1668ab4b8",
+            "messageTitle": "Session Info Input Change",
+            "messageBody": "Session Information was previously using \u003ctextarea /\u003e and now uses \u003cinput /\u003e\n",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "36228d775ef58bcfd05f5f5a92dbcc6604f0be68",
+            "messageTitle": "Length \u0026 Placeholder Tweaks",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 2
+          }
+        ]
+      },
+      {
+        "insertions": 12,
+        "deletions": 3,
+        "date": "2019-07-25",
+        "commitResults": [
+          {
+            "hash": "12b65725a3e9592a970014a52a66656a43803789",
+            "messageTitle": "Changed Dropdown Names and Selected Phase Indication (#152)",
+            "messageBody": "* Changed Dropdown Names and selected Indication\r\n\r\n* DropDown UI Enhancements\r\n\r\n* Display Actual Titles\r\n",
+            "insertions": 12,
+            "deletions": 3
           }
         ]
       }
@@ -1693,7 +1721,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2240,
+    "ptvrajsk": 2250,
     "KevinCJH": 1121
   },
   "authorFileFormatContributionMap": {
@@ -1704,8 +1732,8 @@
       "md": 4,
       "py": 0,
       "tag": 0,
-      "html": 295,
-      "ts": 1941
+      "html": 301,
+      "ts": 1945
     },
     "KevinCJH": {
       "java": 0,
@@ -1719,8 +1747,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 27956.22,
-    "KevinCJH": 17211.684
+    "ptvrajsk": 27613.1,
+    "KevinCJH": 17036.543
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

@@ -2827,16 +2827,16 @@
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "            \u003cmat-form-field class\u003d\"login-field\" style\u003d\"width: 50%\"\u003e"
+        "content": "            \u003cmat-form-field class\u003d\"login-field\"\u003e"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "              \u003ctextarea matInput placeholder\u003d\"OrgName/SessionName\" formControlName\u003d\"session\" required\u003e\u003c/textarea\u003e"
+        "content": "              \u003cinput matInput placeholder\u003d\"Settings Location (Org/Repo)\" formControlName\u003d\"session\" required\u003e"
       },
       {
         "lineNumber": 27,
@@ -2917,8 +2917,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 3,
-      "-": 34
+      "ptvrajsk": 4,
+      "-": 33
     }
   },
   {
@@ -37402,7 +37402,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    \u003cbutton mat-button [matMenuTriggerFor]\u003d\"menu\"\u003eOpen Phases\u003c/button\u003e"
+        "content": "    \u003cbutton mat-button [matMenuTriggerFor]\u003d\"menu\"\u003e\u003cmat-icon style\u003d\"color: white;\"\u003eexpand_more\u003c/mat-icon\u003e\u003c/button\u003e"
       },
       {
         "lineNumber": 12,
@@ -37423,98 +37423,98 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        [disabled]\u003d\"this.phaseService.currentPhase \u003d\u003d\u003d openPhase\""
+        "content": "       (click)\u003d\"this.routeToSelectedPhase(openPhase)\"\u003e"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "       (click)\u003d\"this.routeToSelectedPhase(openPhase)\"\u003e{{ this.phaseService.sessionData[openPhase].toUpperCase() }}\u003c/button\u003e"
+        "content": "        \u003cspan\u003e"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    \u003c/mat-menu\u003e"
+        "content": "          \u003cmat-icon [ngStyle]\u003d\"{color: \u0027green\u0027,"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  \u003c/div\u003e"
+        "content": "            visibility: this.phaseService.currentPhase \u003d\u003d\u003d openPhase ? \u0027visible\u0027 : \u0027hidden\u0027}\"\u003edone\u003c/mat-icon\u003e"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "          {{ phaseService.phaseDescription[openPhase] }}"
       },
       {
         "lineNumber": 19,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        \u003c/span\u003e"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      \u003c/button\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    \u003c/mat-menu\u003e"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003cspan style\u003d\"flex: 1 1 auto\"\u003e\u003c/span\u003e"
       },
       {
-        "lineNumber": 20,
+        "lineNumber": 25,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isOpenUrlButtonShown()\" mat-button matTooltip\u003d\"View current page in web-browser\" (click)\u003d\"viewBrowser()\"\u003e"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 26,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    View in Browser"
       },
       {
-        "lineNumber": 22,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    \u003cmat-icon\u003elink\u003c/mat-icon\u003e"
-      },
-      {
-        "lineNumber": 23,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  \u003c/button\u003e"
-      },
-      {
-        "lineNumber": 24,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isReloadButtonShown() \u0026\u0026 !this.isReloadButtonDisabled\""
-      },
-      {
-        "lineNumber": 25,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    mat-button matTooltip\u003d\"Synchronize with Github data\" (click)\u003d\"reload()\"\u003e"
-      },
-      {
-        "lineNumber": 26,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    Sync"
-      },
-      {
         "lineNumber": 27,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    \u003cmat-icon\u003erefresh\u003c/mat-icon\u003e"
+        "content": "    \u003cmat-icon\u003elink\u003c/mat-icon\u003e"
       },
       {
         "lineNumber": 28,
@@ -37528,66 +37528,101 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  \u003cdiv class\u003d\"sync-spinner\" *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isReloadButtonShown() \u0026\u0026 this.isReloadButtonDisabled\"\u003e"
+        "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isReloadButtonShown() \u0026\u0026 !this.isReloadButtonDisabled\""
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    \u003cspan style\u003d\"font-size: 14px; margin-right: 7px;\"\u003eSync\u003c/span\u003e"
+        "content": "    mat-button matTooltip\u003d\"Synchronize with Github data\" (click)\u003d\"reload()\"\u003e"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    \u003cmat-spinner class\u003d\"white-spinner\" [diameter]\u003d\"20\"\u003e\u003c/mat-spinner\u003e"
+        "content": "    Sync"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  \u003c/div\u003e"
+        "content": "    \u003cmat-icon\u003erefresh\u003c/mat-icon\u003e"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  \u003c/button\u003e"
       },
       {
         "lineNumber": 34,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  \u003cdiv class\u003d\"sync-spinner\" *ngIf\u003d\"auth.isAuthenticated() \u0026\u0026 isReloadButtonShown() \u0026\u0026 this.isReloadButtonDisabled\"\u003e"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003cspan style\u003d\"font-size: 14px; margin-right: 7px;\"\u003eSync\u003c/span\u003e"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    \u003cmat-spinner class\u003d\"white-spinner\" [diameter]\u003d\"20\"\u003e\u003c/mat-spinner\u003e"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  \u003c/div\u003e"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003cbutton *ngIf\u003d\"auth.isAuthenticated()\" mat-button matTooltip\u003d\"Log out\" (click)\u003d\"logOut()\"\u003e"
       },
       {
-        "lineNumber": 35,
+        "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
         "content": "    ({{userService.currentUser.loginId}})"
       },
       {
-        "lineNumber": 36,
+        "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
         "content": "    \u003cmat-icon style\u003d\"margin-left: 2px\"\u003eexit_to_app\u003c/mat-icon\u003e"
       },
       {
-        "lineNumber": 37,
+        "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003c/button\u003e"
       },
       {
-        "lineNumber": 38,
+        "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
@@ -37595,7 +37630,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 9,
+      "ptvrajsk": 14,
       "KevinCJH": 15,
       "-": 14
     }
@@ -37923,56 +37958,56 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Replace Current Phase Data."
+        "content": "    // Do nothing if the selected phase is the current phase."
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.phaseService.currentPhase \u003d Phase[openPhase];"
+        "content": "    if (this.phaseService.currentPhase \u003d\u003d\u003d Phase[openPhase]) {"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.githubService.storePhaseDetails(this.phaseService.getPhaseOwner(this.phaseService.currentPhase),"
+        "content": "      return;"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        this.phaseService.sessionData[openPhase]);"
+        "content": "    }"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    // Replace Current Phase Data."
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Remove current phase issues and load selected phase issues."
+        "content": "    this.phaseService.currentPhase \u003d Phase[openPhase];"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.issueService.reset();"
+        "content": "    this.githubService.storePhaseDetails(this.phaseService.getPhaseOwner(this.phaseService.currentPhase),"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.reload();"
+        "content": "        this.phaseService.sessionData[openPhase]);"
       },
       {
         "lineNumber": 54,
@@ -37986,21 +38021,21 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Route app to new phase."
+        "content": "    // Remove current phase issues and load selected phase issues."
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.router.navigateByUrl(this.phaseService.currentPhase);"
+        "content": "    this.issueService.reset();"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    this.reload();"
       },
       {
         "lineNumber": 58,
@@ -38012,28 +38047,28 @@
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  isBackButtonShown(): boolean {"
+        "content": "    // Route app to new phase."
       },
       {
         "lineNumber": 60,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return `/${this.phaseService.currentPhase}` !\u003d\u003d this.router.url \u0026\u0026 this.router.url !\u003d\u003d \u0027/\u0027;"
+        "content": "    this.router.navigateByUrl(this.phaseService.currentPhase);"
       },
       {
         "lineNumber": 61,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
         "content": ""
       },
@@ -38042,26 +38077,26 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  isReloadButtonShown(): boolean {"
+        "content": "  isBackButtonShown(): boolean {"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    return this.router.url !\u003d\u003d \u0027/phaseBugReporting/issues/new\u0027;"
+        "content": "    return `/${this.phaseService.currentPhase}` !\u003d\u003d this.router.url \u0026\u0026 this.router.url !\u003d\u003d \u0027/\u0027;"
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "  }"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": ""
       },
@@ -38070,479 +38105,507 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  isOpenUrlButtonShown(): boolean {"
+        "content": "  isReloadButtonShown(): boolean {"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseBugReporting ||"
+        "content": "    return this.router.url !\u003d\u003d \u0027/phaseBugReporting/issues/new\u0027;"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.userService.currentUser.role \u003d\u003d\u003d UserRole.Student ||"
+        "content": "  }"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    (this.issueService.getIssueTeamFilter() !\u003d\u003d \u0027All Teams\u0027 || this.router.url.includes(\u0027/issues\u0027));"
+        "content": ""
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  isOpenUrlButtonShown(): boolean {"
       },
       {
         "lineNumber": 72,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    return this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseBugReporting ||"
       },
       {
         "lineNumber": 73,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "  goBack() {"
+        "content": "    this.userService.currentUser.role \u003d\u003d\u003d UserRole.Student ||"
       },
       {
         "lineNumber": 74,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "    if (this.prevUrl \u003d\u003d\u003d `/${this.phaseService.currentPhase}/issues/new`) {"
+        "content": "    (this.issueService.getIssueTeamFilter() !\u003d\u003d \u0027All Teams\u0027 || this.router.url.includes(\u0027/issues\u0027));"
       },
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "      this.router.navigate([\u0027/phaseBugReporting\u0027]);"
+        "content": "  }"
       },
       {
         "lineNumber": 76,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "    } else {"
+        "content": ""
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.location.back();"
+        "content": "  goBack() {"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    if (this.prevUrl \u003d\u003d\u003d `/${this.phaseService.currentPhase}/issues/new`) {"
       },
       {
         "lineNumber": 79,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      this.router.navigate([\u0027/phaseBugReporting\u0027]);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    } else {"
       },
       {
         "lineNumber": 81,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "  viewBrowser() {"
+        "content": "      this.location.back();"
       },
       {
         "lineNumber": 82,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "    const routerUrl \u003d this.router.url.substring(1); // remove the first \u0027/\u0027 from string"
+        "content": "    }"
       },
       {
         "lineNumber": 83,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "    const issueUrlIndex \u003d routerUrl.indexOf(\u0027/\u0027); // find the index of second \u0027/\u0027"
+        "content": "  }"
       },
       {
         "lineNumber": 84,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "    let issueUrl: string;"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  viewBrowser() {"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // If can\u0027t find the index of second \u0027/\u0027, then router is at the /issues (table list) page"
+        "content": "    const routerUrl \u003d this.router.url.substring(1); // remove the first \u0027/\u0027 from string"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    if (issueUrlIndex \u003c 0) {"
+        "content": "    const issueUrlIndex \u003d routerUrl.indexOf(\u0027/\u0027); // find the index of second \u0027/\u0027"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      // Apply filters to the issueUrl"
+        "content": "    let issueUrl: string;"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      issueUrl \u003d this.ISSUE_FILTER.concat(this.getTeamFilterString());"
+        "content": ""
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    } else {"
+        "content": "    // If can\u0027t find the index of second \u0027/\u0027, then router is at the /issues (table list) page"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      // issueUrl will be from the second \u0027/\u0027"
+        "content": "    if (issueUrlIndex \u003c 0) {"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      issueUrl \u003d routerUrl.substring(issueUrlIndex);"
+        "content": "      // Apply filters to the issueUrl"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      issueUrl \u003d this.ISSUE_FILTER.concat(this.getTeamFilterString());"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // Open the url in user\u0027s preferred browser"
+        "content": "    } else {"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    shell.openExternal(\u0027https://github.com/\u0027.concat(this.githubService.getRepoURL()).concat(issueUrl));"
+        "content": "      // issueUrl will be from the second \u0027/\u0027"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "      issueUrl \u003d routerUrl.substring(issueUrlIndex);"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private getTeamFilterString() {"
+        "content": "    // Open the url in user\u0027s preferred browser"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // First Phase does not need team filtering"
+        "content": "    shell.openExternal(\u0027https://github.com/\u0027.concat(this.githubService.getRepoURL()).concat(issueUrl));"
       },
       {
         "lineNumber": 100,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "    if (this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseBugReporting || this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseTesterResponse) {"
+        "content": "  }"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      return \u0027\u0027;"
+        "content": ""
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "  private getTeamFilterString() {"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    // First Phase does not need team filtering"
       },
       {
         "lineNumber": 104,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    // Initialise the team filter for Students in other Phases, as they do not have team filter assigned by default"
+        "content": "    if (this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseBugReporting || this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseTesterResponse) {"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    if (this.userService.currentUser.team) {"
+        "content": "      return \u0027\u0027;"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      this.issueService.setIssueTeamFilter(this.userService.currentUser.team.id); // e.g W12-3"
+        "content": "    }"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    // Initialise the team filter for Students in other Phases, as they do not have team filter assigned by default"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const teamFilter \u003d this.issueService.getIssueTeamFilter().split(\u0027-\u0027); // e.g W12-3 -\u003e W12 and 3"
+        "content": "    if (this.userService.currentUser.team) {"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // The team filter string E.g \"+label:tutorial.W12+label:team.3\""
+        "content": "      this.issueService.setIssueTeamFilter(this.userService.currentUser.team.id); // e.g W12-3"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const teamFilterString \u003d this.TUTORIAL_LABEL.concat(teamFilter[0]).concat(this.TEAM_LABEL).concat(teamFilter[1]);"
+        "content": "    }"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // Only include duplicate Issues in last Phase"
+        "content": ""
       },
       {
         "lineNumber": 113,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "    return (this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseModeration) ? teamFilterString : this.EXCLUDE_DUPLICATE.concat(teamFilterString);"
+        "content": "    const teamFilter \u003d this.issueService.getIssueTeamFilter().split(\u0027-\u0027); // e.g W12-3 -\u003e W12 and 3"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    // The team filter string E.g \"+label:tutorial.W12+label:team.3\""
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    const teamFilterString \u003d this.TUTORIAL_LABEL.concat(teamFilter[0]).concat(this.TEAM_LABEL).concat(teamFilter[1]);"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  reload() {"
+        "content": "    // Only include duplicate Issues in last Phase"
       },
       {
         "lineNumber": 117,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.isReloadButtonDisabled \u003d true;"
+        "content": "    return (this.phaseService.currentPhase \u003d\u003d\u003d Phase.phaseModeration) ? teamFilterString : this.EXCLUDE_DUPLICATE.concat(teamFilterString);"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.githubEventService.reloadPage().subscribe("
+        "content": ""
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      (success) \u003d\u003e success,"
+        "content": "  reload() {"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      (error) \u003d\u003e {"
+        "content": "    this.isReloadButtonDisabled \u003d true;"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        this.errorHandlingService.handleHttpError(error, () \u003d\u003e this.githubEventService.reloadPage());"
+        "content": ""
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      });"
+        "content": "    this.githubEventService.reloadPage().subscribe("
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "      (success) \u003d\u003e success,"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    // Prevent user from spamming the reload button"
+        "content": "      (error) \u003d\u003e {"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    setTimeout(() \u003d\u003e {"
+        "content": "        this.errorHandlingService.handleHttpError(error, () \u003d\u003e this.githubEventService.reloadPage());"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      this.isReloadButtonDisabled \u003d false;"
+        "content": "      });"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    },"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    3000);"
+        "content": "    // Prevent user from spamming the reload button"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    setTimeout(() \u003d\u003e {"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "      this.isReloadButtonDisabled \u003d false;"
       },
       {
         "lineNumber": 132,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    3000);"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
         "content": "  logOut() {"
       },
       {
-        "lineNumber": 133,
+        "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
         "content": "    this.auth.logOut();"
       },
       {
-        "lineNumber": 134,
+        "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 135,
+        "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
@@ -38550,7 +38613,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 24,
+      "ptvrajsk": 28,
       "KevinCJH": 73,
       "-": 38
     }
