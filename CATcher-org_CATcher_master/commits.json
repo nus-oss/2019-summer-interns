@@ -574,6 +574,20 @@
             "deletions": 3
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-07-26",
+        "commitResults": [
+          {
+            "hash": "f934d0756719b634576fb339b7d599ce9ea5b2c1",
+            "messageTitle": "Change back to Settings.json (#156)",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1747,8 +1761,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 27613.1,
-    "KevinCJH": 17036.543
+    "ptvrajsk": 27294.51,
+    "KevinCJH": 16864.553
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

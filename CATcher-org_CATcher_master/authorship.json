@@ -11581,7 +11581,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027dupsettings.json\u0027}))"
+        "content": "    return from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027settings.json\u0027}))"
       },
       {
         "lineNumber": 208,

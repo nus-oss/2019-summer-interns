@@ -336,6 +336,20 @@
             "deletions": 482
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-07-25",
+        "commitResults": [
+          {
+            "hash": "0d1528b106391a65167194b5c84b0493dd3b2592",
+            "messageTitle": "dev-release-5.3.0.1 (#1980)",
+            "messageBody": "* change line endings\r\n\r\n* update dev release\r\n",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ]
   },
@@ -351,7 +365,7 @@
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 330382.0
+    "yuhongherald": 326285.47
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
