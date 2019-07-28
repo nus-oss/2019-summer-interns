@@ -585,13 +585,41 @@
             "deletions": 9
           }
         ]
+      },
+      {
+        "insertions": 32,
+        "deletions": 18,
+        "date": "2019-07-27",
+        "commitResults": [
+          {
+            "hash": "6873b4e5d289f1c898118a607c2c4b1e65c67e70",
+            "messageTitle": "[#809] DeveloperGuide: update the HTML report section (#810)",
+            "messageBody": "The HTML report section in our DG contains outdated info such as the\r\nreport summary diagram, sequence diagrams and the list of js files.\r\n\r\nLet\u0027s perform promptly due update, revise the HTML report section with\r\nthe latest report summary diagram, Vue lifecycle diagram, sequence\r\ndiagrams and the descriptions of the recently added js files such as\r\nv_ramp, v_zoom, and v_segment.",
+            "insertions": 32,
+            "deletions": 18
+          }
+        ]
+      },
+      {
+        "insertions": 84,
+        "deletions": 4,
+        "date": "2019-07-28",
+        "commitResults": [
+          {
+            "hash": "8f7db355698cb2430b536c32557339c357607378",
+            "messageTitle": "[#723] Report: fix modifying dates for Safari users (#801)",
+            "messageBody": "Safari browser users are unable to modify sinceDate and untilDate in\r\nthe report.\r\n\r\nThis is due to the datepickers used are HTML5 elements; they are not\r\nsupported by Safari. Furthermore, the alternative to modify the date\r\nfields, through the keydown events, are disabled.\r\n\r\nLet\u0027s allow Safari browser users to use a text-type input for their\r\nsinceDate and untilDate inputs. They can modify the dates by\r\nkeying the numeric date values into the date fields followed by hitting\r\nthe key, `enter`.",
+            "insertions": 84,
+            "deletions": 4
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 896,
     "bluein-green": 60,
-    "jamessspanggg": 772
+    "jamessspanggg": 884
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -618,20 +646,20 @@
     },
     "jamessspanggg": {
       "java": 38,
-      "js": 151,
+      "js": 222,
       "scss": 477,
       "json": 34,
-      "md": 5,
+      "md": 37,
       "py": 0,
       "jade": 0,
       "gradle": 1,
-      "pug": 66
+      "pug": 75
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 4014.3818,
-    "bluein-green": 30.764065,
-    "jamessspanggg": 32531.82
+    "jylee-git": 3869.677,
+    "bluein-green": 29.620853,
+    "jamessspanggg": 31323.896
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
