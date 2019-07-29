@@ -238,6 +238,20 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 218,
+        "deletions": 40,
+        "date": "2019-07-28",
+        "commitResults": [
+          {
+            "hash": "7193ef40ad3dfb3ac7cbb0d71ae8163961948ce9",
+            "messageTitle": "[#9356] Improve UI for loading indicators - Loading bar (#9786)",
+            "messageBody": "* Create skeleton loader bar component\r\n\r\n* Add mat-progress-bar and skeleton loader service\r\n\r\n* Update progress bar based on value\r\n\r\n* Hide on animationEnd\r\n\r\n* Change to indeterminate\r\n\r\n* Remove logging\r\n\r\n* Add styling\r\n\r\n* Fix lint issues\r\n\r\n* Update tests\r\n\r\n* Fix lint issues\r\n\r\n* Remove loaderService from http-request service\r\n\r\n* Rename LoaderService to LoadingBarService\r\n\r\n* Update http-request.service.ts\r\n\r\n* Update loading-bar-service to not have a counter\r\n\r\n* Rename loading-bar-service methods\r\n\r\n* Add loading-bar to relevant pages\r\n\r\n* Update snapshots\r\n\r\n* Wrap \"New to TEAMMATES...\" message in an ng-container to use ngIf\r\n\r\n* Rename isCoursesLoading to hasCoursesLoaded\r\n\r\n* Hide \"You have not created...\" message while Sessions page is still loading\r\n\r\n* Update snapshots. Rename variables.\r\n",
+            "insertions": 218,
+            "deletions": 40
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -533,7 +547,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 1000,
+    "erjillsison": 1189,
     "Pengyuz": 723,
     "crizyli": 1595
   },
@@ -541,12 +555,12 @@
     "erjillsison": {
       "java": 443,
       "js": 0,
-      "scss": 13,
+      "scss": 30,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 91,
-      "ts": 453
+      "html": 98,
+      "ts": 618
     },
     "Pengyuz": {
       "java": 444,
@@ -570,9 +584,9 @@
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 4232.4575,
-    "Pengyuz": 1753.2559,
-    "crizyli": 28276.09
+    "erjillsison": 4658.535,
+    "Pengyuz": 1624.4222,
+    "crizyli": 26167.842
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",

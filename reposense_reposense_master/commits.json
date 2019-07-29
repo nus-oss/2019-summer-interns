@@ -601,8 +601,8 @@
         ]
       },
       {
-        "insertions": 84,
-        "deletions": 4,
+        "insertions": 105,
+        "deletions": 15,
         "date": "2019-07-28",
         "commitResults": [
           {
@@ -611,6 +611,13 @@
             "messageBody": "Safari browser users are unable to modify sinceDate and untilDate in\r\nthe report.\r\n\r\nThis is due to the datepickers used are HTML5 elements; they are not\r\nsupported by Safari. Furthermore, the alternative to modify the date\r\nfields, through the keydown events, are disabled.\r\n\r\nLet\u0027s allow Safari browser users to use a text-type input for their\r\nsinceDate and untilDate inputs. They can modify the dates by\r\nkeying the numeric date values into the date fields followed by hitting\r\nthe key, `enter`.",
             "insertions": 84,
             "deletions": 4
+          },
+          {
+            "hash": "acc66d3caae0072397b592eebe20aa6b6863b227",
+            "messageTitle": "[#778] ChartView: add zoom tab button (#796)",
+            "messageBody": "In addition to zooming into a range of ramp slices, the zoom tab also\r\nshows the breakdown of commits that are within the zoom range. This \r\nfunctionality however, is not encompassed for the entire ramp chart.\r\n\r\nLet\u0027s add a button that opens the zoom tab for the entire ramp chart.",
+            "insertions": 21,
+            "deletions": 11
           }
         ]
       }
@@ -619,7 +626,7 @@
   "authorFinalContributionMap": {
     "jylee-git": 896,
     "bluein-green": 60,
-    "jamessspanggg": 884
+    "jamessspanggg": 901
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -646,20 +653,20 @@
     },
     "jamessspanggg": {
       "java": 38,
-      "js": 222,
+      "js": 232,
       "scss": 477,
       "json": 34,
       "md": 37,
       "py": 0,
       "jade": 0,
       "gradle": 1,
-      "pug": 75
+      "pug": 82
     }
   },
   "authorContributionVariance": {
     "jylee-git": 3869.677,
     "bluein-green": 29.620853,
-    "jamessspanggg": 31323.896
+    "jamessspanggg": 31384.275
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
