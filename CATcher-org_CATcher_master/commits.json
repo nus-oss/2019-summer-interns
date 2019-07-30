@@ -588,6 +588,20 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 29,
+        "deletions": 10,
+        "date": "2019-07-30",
+        "commitResults": [
+          {
+            "hash": "1c8984f2b9672c72e65d770dc10566dde31613e1",
+            "messageTitle": "CommentEditor Toggling (#153)",
+            "messageBody": "* If Disagree is not checked Input is Ignored.\r\n\r\nAdded the toggle comment section functionality in the TesterResponse\r\nComponent.\r\n\r\n* Fix Checkbox Issue\r\n",
+            "insertions": 29,
+            "deletions": 10
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1735,7 +1749,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2250,
+    "ptvrajsk": 2270,
     "KevinCJH": 1121
   },
   "authorFileFormatContributionMap": {
@@ -1746,8 +1760,8 @@
       "md": 4,
       "py": 0,
       "tag": 0,
-      "html": 301,
-      "ts": 1945
+      "html": 302,
+      "ts": 1964
     },
     "KevinCJH": {
       "java": 0,
@@ -1761,8 +1775,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 27294.51,
-    "KevinCJH": 16864.553
+    "ptvrajsk": 26061.074,
+    "KevinCJH": 16206.875
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

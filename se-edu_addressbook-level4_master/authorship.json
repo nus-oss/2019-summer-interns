@@ -545,9 +545,9 @@
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "image::Architecture.png[width\u003d\"600\"]"
+        "content": "image::ArchitectureDiagram.png[]"
       },
       {
         "lineNumber": 30,
@@ -580,555 +580,555 @@
       {
         "lineNumber": 34,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "The `.pptx` files used to create diagrams in this document can be found in the link:{repoURL}/docs/diagrams/[diagrams] folder. To update a diagram, modify the diagram in the pptx file, select the objects of the diagram, and choose `Save as picture`."
+        "content": "The `.puml` files used to create diagrams in this document can be found in the link:{repoURL}/docs/diagrams/[diagrams] folder."
       },
       {
         "lineNumber": 35,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "Refer to the \u003c\u003cUsingPlantUml#, Using PlantUML guide\u003e\u003e to learn how to create and edit diagrams."
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "`Main` has two classes called link:{repoURL}/src/main/java/seedu/address/Main.java[`Main`] and link:{repoURL}/src/main/java/seedu/address/MainApp.java[`MainApp`]. It is responsible for,"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "`Main` has two classes called link:{repoURL}/src/main/java/seedu/address/Main.java[`Main`] and link:{repoURL}/src/main/java/seedu/address/MainApp.java[`MainApp`]. It is responsible for,"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "* At app launch: Initializes the components in the correct sequence, and connects them up with each other."
+        "content": ""
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "* At shut down: Shuts down the components and invokes cleanup method where necessary."
+        "content": "* At app launch: Initializes the components in the correct sequence, and connects them up with each other."
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* At shut down: Shuts down the components and invokes cleanup method where necessary."
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c\u003cDesign-Commons,*`Commons`*\u003e\u003e represents a collection of classes used by multiple other components."
+        "content": ""
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "The following class plays an important role at the architecture level:"
+        "content": "\u003c\u003cDesign-Commons,*`Commons`*\u003e\u003e represents a collection of classes used by multiple other components."
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The following class plays an important role at the architecture level:"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "* `LogsCenter` : Used by many classes to write log messages to the App\u0027s log file."
+        "content": ""
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `LogsCenter` : Used by many classes to write log messages to the App\u0027s log file."
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "The rest of the App consists of four components."
+        "content": ""
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The rest of the App consists of four components."
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "* \u003c\u003cDesign-Ui,*`UI`*\u003e\u003e: The UI of the App."
+        "content": ""
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "* \u003c\u003cDesign-Logic,*`Logic`*\u003e\u003e: The command executor."
+        "content": "* \u003c\u003cDesign-Ui,*`UI`*\u003e\u003e: The UI of the App."
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "* \u003c\u003cDesign-Model,*`Model`*\u003e\u003e: Holds the data of the App in-memory."
+        "content": "* \u003c\u003cDesign-Logic,*`Logic`*\u003e\u003e: The command executor."
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "* \u003c\u003cDesign-Storage,*`Storage`*\u003e\u003e: Reads data from, and writes data to, the hard disk."
+        "content": "* \u003c\u003cDesign-Model,*`Model`*\u003e\u003e: Holds the data of the App in-memory."
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* \u003c\u003cDesign-Storage,*`Storage`*\u003e\u003e: Reads data from, and writes data to, the hard disk."
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "Each of the four components"
+        "content": ""
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Each of the four components"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "* Defines its _API_ in an `interface` with the same name as the Component."
+        "content": ""
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "* Exposes its functionality using a `{Component Name}Manager` class."
+        "content": "* Defines its _API_ in an `interface` with the same name as the Component."
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* Exposes its functionality using a `{Component Name}Manager` class."
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "For example, the `Logic` component (see the class diagram given below) defines it\u0027s API in the `Logic.java` interface and exposes its functionality using the `LogicManager.java` class."
+        "content": ""
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "For example, the `Logic` component (see the class diagram given below) defines it\u0027s API in the `Logic.java` interface and exposes its functionality using the `LogicManager.java` class."
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": ".Class Diagram of the Logic Component"
+        "content": ""
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "image::LogicClassDiagram.png[width\u003d\"800\"]"
+        "content": ".Class Diagram of the Logic Component"
       },
       {
         "lineNumber": 62,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::LogicClassDiagram.png[]"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "[discrete]"
+        "content": ""
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d\u003d How the architecture components interact with each other"
+        "content": "[discrete]"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d\u003d How the architecture components interact with each other"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "The _Sequence Diagram_ below shows how the components interact with each other for the scenario where the user issues the command `delete 1`."
+        "content": ""
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The _Sequence Diagram_ below shows how the components interact with each other for the scenario where the user issues the command `delete 1`."
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": ".Component interactions for `delete 1` command"
+        "content": ""
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "image::SDforDeletePerson.png[width\u003d\"800\"]"
+        "content": ".Component interactions for `delete 1` command"
       },
       {
         "lineNumber": 70,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::ArchitectureSequenceDiagram.png[]"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "The sections below give more details of each component."
+        "content": ""
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The sections below give more details of each component."
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "[[Design-Ui]]"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d UI component"
+        "content": "[[Design-Ui]]"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d UI component"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": ".Structure of the UI Component"
+        "content": ""
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UiClassDiagram.png[width\u003d\"800\"]"
+        "content": ".Structure of the UI Component"
       },
       {
         "lineNumber": 78,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::UiClassDiagram.png[]"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "*API* : link:{repoURL}/src/main/java/seedu/address/ui/Ui.java[`Ui.java`]"
+        "content": ""
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*API* : link:{repoURL}/src/main/java/seedu/address/ui/Ui.java[`Ui.java`]"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "The UI consists of a `MainWindow` that is made up of parts e.g.`CommandBox`, `ResultDisplay`, `PersonListPanel`, `StatusBarFooter`, `BrowserPanel` etc. All these, including the `MainWindow`, inherit from the abstract `UiPart` class."
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The UI consists of a `MainWindow` that is made up of parts e.g.`CommandBox`, `ResultDisplay`, `PersonListPanel`, `StatusBarFooter`, `BrowserPanel` etc. All these, including the `MainWindow`, inherit from the abstract `UiPart` class."
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "The `UI` component uses JavaFx UI framework. The layout of these UI parts are defined in matching `.fxml` files that are in the `src/main/resources/view` folder. For example, the layout of the link:{repoURL}/src/main/java/seedu/address/ui/MainWindow.java[`MainWindow`] is specified in link:{repoURL}/src/main/resources/view/MainWindow.fxml[`MainWindow.fxml`]"
+        "content": ""
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The `UI` component uses JavaFx UI framework. The layout of these UI parts are defined in matching `.fxml` files that are in the `src/main/resources/view` folder. For example, the layout of the link:{repoURL}/src/main/java/seedu/address/ui/MainWindow.java[`MainWindow`] is specified in link:{repoURL}/src/main/resources/view/MainWindow.fxml[`MainWindow.fxml`]"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "The `UI` component,"
+        "content": ""
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The `UI` component,"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "* Executes user commands using the `Logic` component."
+        "content": ""
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "* Listens for changes to `Model` data so that the UI can be updated with the modified data."
+        "content": "* Executes user commands using the `Logic` component."
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* Listens for changes to `Model` data so that the UI can be updated with the modified data."
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "[[Design-Logic]]"
+        "content": ""
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Logic component"
+        "content": "[[Design-Logic]]"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d Logic component"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "[[fig-LogicClassDiagram]]"
+        "content": ""
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": ".Structure of the Logic Component"
+        "content": "[[fig-LogicClassDiagram]]"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "image::LogicClassDiagram.png[width\u003d\"800\"]"
+        "content": ".Structure of the Logic Component"
       },
       {
         "lineNumber": 96,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::LogicClassDiagram.png[]"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "*API* :"
+        "content": ""
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "link:{repoURL}/src/main/java/seedu/address/logic/Logic.java[`Logic.java`]"
+        "content": "*API* :"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "link:{repoURL}/src/main/java/seedu/address/logic/Logic.java[`Logic.java`]"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": ".  `Logic` uses the `AddressBookParser` class to parse the user command."
+        "content": ""
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": ".  This results in a `Command` object which is executed by the `LogicManager`."
+        "content": ".  `Logic` uses the `AddressBookParser` class to parse the user command."
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": ".  The command execution can affect the `Model` (e.g. adding a person)."
+        "content": ".  This results in a `Command` object which is executed by the `LogicManager`."
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": ".  The result of the command execution is encapsulated as a `CommandResult` object which is passed back to the `Ui`."
+        "content": ".  The command execution can affect the `Model` (e.g. adding a person)."
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": ".  In addition, the `CommandResult` object can also instruct the `Ui` to perform certain actions, such as displaying help to the user."
+        "content": ".  The result of the command execution is encapsulated as a `CommandResult` object which is passed back to the `Ui`."
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ".  In addition, the `CommandResult` object can also instruct the `Ui` to perform certain actions, such as displaying help to the user."
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "Given below is the Sequence Diagram for interactions within the `Logic` component for the `execute(\"delete 1\")` API call."
+        "content": ""
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Given below is the Sequence Diagram for interactions within the `Logic` component for the `execute(\"delete 1\")` API call."
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": ".Interactions Inside the Logic Component for the `delete 1` Command"
+        "content": ""
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "image::DeletePersonSdForLogic.png[width\u003d\"800\"]"
+        "content": ".Interactions Inside the Logic Component for the `delete 1` Command"
       },
       {
         "lineNumber": 110,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::DeleteSequenceDiagram.png[]"
       },
       {
         "lineNumber": 111,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "[[Design-Model]]"
+        "content": ""
       },
       {
         "lineNumber": 112,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d\u003d Model component"
+        "content": "NOTE: The lifeline for `DeleteCommandParser` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram."
       },
       {
         "lineNumber": 113,
@@ -1142,14 +1142,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": ".Structure of the Model Component"
+        "content": "[[Design-Model]]"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "image::ModelClassDiagram.png[width\u003d\"800\"]"
+        "content": "\u003d\u003d\u003d Model component"
       },
       {
         "lineNumber": 116,
@@ -1163,112 +1163,112 @@
         "author": {
           "gitId": "-"
         },
-        "content": "*API* : link:{repoURL}/src/main/java/seedu/address/model/Model.java[`Model.java`]"
+        "content": ".Structure of the Model Component"
       },
       {
         "lineNumber": 118,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::ModelClassDiagram.png[]"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": "The `Model`,"
+        "content": ""
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*API* : link:{repoURL}/src/main/java/seedu/address/model/Model.java[`Model.java`]"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "* stores a `UserPref` object that represents the user\u0027s preferences."
+        "content": ""
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": "* stores the Address Book data."
+        "content": "The `Model`,"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": "* exposes an unmodifiable `ObservableList\u003cPerson\u003e` that can be \u0027observed\u0027 e.g. the UI can be bound to this list so that the UI automatically updates when the data in the list change."
+        "content": ""
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "* does not depend on any of the other three components."
+        "content": "* stores a `UserPref` object that represents the user\u0027s preferences."
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* stores the Address Book data."
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": "[NOTE]"
+        "content": "* exposes an unmodifiable `ObservableList\u003cPerson\u003e` that can be \u0027observed\u0027 e.g. the UI can be bound to this list so that the UI automatically updates when the data in the list change."
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": "As a more OOP model, we can store a `Tag` list in `Address Book`, which `Person` can reference. This would allow `Address Book` to only require one `Tag` object per unique `Tag`, instead of each `Person` needing their own `Tag` object. An example of how such a model may look like is given below. +"
+        "content": "* does not depend on any of the other three components."
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": " +"
+        "content": ""
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "image:ModelClassBetterOopDiagram.png[width\u003d\"800\"]"
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "As a more OOP model, we can store a `Tag` list in `Address Book`, which `Person` can reference. This would allow `Address Book` to only require one `Tag` object per unique `Tag`, instead of each `Person` needing their own `Tag` object. An example of how such a model may look like is given below. +"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "[[Design-Storage]]"
+        "content": " +"
       },
       {
         "lineNumber": 132,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d\u003d Storage component"
+        "content": "image:BetterModelClassDiagram.png[]"
       },
       {
         "lineNumber": 133,
@@ -1282,14 +1282,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": ".Structure of the Storage Component"
+        "content": "[[Design-Storage]]"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "image::StorageClassDiagram.png[width\u003d\"800\"]"
+        "content": "\u003d\u003d\u003d Storage component"
       },
       {
         "lineNumber": 136,
@@ -1303,42 +1303,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "*API* : link:{repoURL}/src/main/java/seedu/address/storage/Storage.java[`Storage.java`]"
+        "content": ".Structure of the Storage Component"
       },
       {
         "lineNumber": 138,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::StorageClassDiagram.png[]"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "The `Storage` component,"
+        "content": ""
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*API* : link:{repoURL}/src/main/java/seedu/address/storage/Storage.java[`Storage.java`]"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "* can save `UserPref` objects in json format and read it back."
+        "content": ""
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": "* can save the Address Book data in json format and read it back."
+        "content": "The `Storage` component,"
       },
       {
         "lineNumber": 143,
@@ -1352,14 +1352,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[[Design-Commons]]"
+        "content": "* can save `UserPref` objects in json format and read it back."
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Common classes"
+        "content": "* can save the Address Book data in json format and read it back."
       },
       {
         "lineNumber": 146,
@@ -1373,252 +1373,252 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Classes used by multiple components are in the `seedu.addressbook.commons` package."
+        "content": "[[Design-Commons]]"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d Common classes"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Implementation"
+        "content": ""
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Classes used by multiple components are in the `seedu.addressbook.commons` package."
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "This section describes some noteworthy details on how certain features are implemented."
+        "content": ""
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Implementation"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "// tag::undoredo[]"
+        "content": ""
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Undo/Redo feature"
+        "content": "This section describes some noteworthy details on how certain features are implemented."
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d\u003d Current Implementation"
+        "content": ""
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "// tag::undoredo[]"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "The undo/redo mechanism is facilitated by `VersionedAddressBook`."
+        "content": "\u003d\u003d\u003d Undo/Redo feature"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": "It extends `AddressBook` with an undo/redo history, stored internally as an `addressBookStateList` and `currentStatePointer`."
+        "content": "\u003d\u003d\u003d\u003d Current Implementation"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": "Additionally, it implements the following operations:"
+        "content": ""
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The undo/redo mechanism is facilitated by `VersionedAddressBook`."
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "* `VersionedAddressBook#commit()` -- Saves the current address book state in its history."
+        "content": "It extends `AddressBook` with an undo/redo history, stored internally as an `addressBookStateList` and `currentStatePointer`."
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": "* `VersionedAddressBook#undo()` -- Restores the previous address book state from its history."
+        "content": "Additionally, it implements the following operations:"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": "* `VersionedAddressBook#redo()` -- Restores a previously undone address book state from its history."
+        "content": ""
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `VersionedAddressBook#commit()` -- Saves the current address book state in its history."
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "These operations are exposed in the `Model` interface as `Model#commitAddressBook()`, `Model#undoAddressBook()` and `Model#redoAddressBook()` respectively."
+        "content": "* `VersionedAddressBook#undo()` -- Restores the previous address book state from its history."
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `VersionedAddressBook#redo()` -- Restores a previously undone address book state from its history."
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": "Given below is an example usage scenario and how the undo/redo mechanism behaves at each step."
+        "content": ""
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "These operations are exposed in the `Model` interface as `Model#commitAddressBook()`, `Model#undoAddressBook()` and `Model#redoAddressBook()` respectively."
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": "Step 1. The user launches the application for the first time. The `VersionedAddressBook` will be initialized with the initial address book state, and the `currentStatePointer` pointing to that single address book state."
+        "content": ""
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Given below is an example usage scenario and how the undo/redo mechanism behaves at each step."
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoStartingStateListDiagram.png[width\u003d\"800\"]"
+        "content": ""
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Step 1. The user launches the application for the first time. The `VersionedAddressBook` will be initialized with the initial address book state, and the `currentStatePointer` pointing to that single address book state."
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": "Step 2. The user executes `delete 5` command to delete the 5th person in the address book. The `delete` command calls `Model#commitAddressBook()`, causing the modified state of the address book after the `delete 5` command executes to be saved in the `addressBookStateList`, and the `currentStatePointer` is shifted to the newly inserted address book state."
+        "content": ""
       },
       {
         "lineNumber": 174,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::UndoRedoState0.png[]"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoNewCommand1StateListDiagram.png[width\u003d\"800\"]"
+        "content": ""
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Step 2. The user executes `delete 5` command to delete the 5th person in the address book. The `delete` command calls `Model#commitAddressBook()`, causing the modified state of the address book after the `delete 5` command executes to be saved in the `addressBookStateList`, and the `currentStatePointer` is shifted to the newly inserted address book state."
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "Step 3. The user executes `add n/David ...` to add a new person. The `add` command also calls `Model#commitAddressBook()`, causing another modified address book state to be saved into the `addressBookStateList`."
+        "content": ""
       },
       {
         "lineNumber": 178,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::UndoRedoState1.png[]"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoNewCommand2StateListDiagram.png[width\u003d\"800\"]"
+        "content": ""
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Step 3. The user executes `add n/David ...` to add a new person. The `add` command also calls `Model#commitAddressBook()`, causing another modified address book state to be saved into the `addressBookStateList`."
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": "[NOTE]"
+        "content": ""
       },
       {
         "lineNumber": 182,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "If a command fails its execution, it will not call `Model#commitAddressBook()`, so the address book state will not be saved into the `addressBookStateList`."
+        "content": "image::UndoRedoState2.png[]"
       },
       {
         "lineNumber": 183,
@@ -1632,42 +1632,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Step 4. The user now decides that adding the person was a mistake, and decides to undo that action by executing the `undo` command. The `undo` command will call `Model#undoAddressBook()`, which will shift the `currentStatePointer` once to the left, pointing it to the previous address book state, and restores the address book to that state."
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "If a command fails its execution, it will not call `Model#commitAddressBook()`, so the address book state will not be saved into the `addressBookStateList`."
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoExecuteUndoStateListDiagram.png[width\u003d\"800\"]"
+        "content": ""
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Step 4. The user now decides that adding the person was a mistake, and decides to undo that action by executing the `undo` command. The `undo` command will call `Model#undoAddressBook()`, which will shift the `currentStatePointer` once to the left, pointing it to the previous address book state, and restores the address book to that state."
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "-"
         },
-        "content": "[NOTE]"
+        "content": ""
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "If the `currentStatePointer` is at index 0, pointing to the initial address book state, then there are no previous address book states to restore. The `undo` command uses `Model#canUndoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo."
+        "content": "image::UndoRedoState3.png[]"
       },
       {
         "lineNumber": 190,
@@ -1681,56 +1681,56 @@
         "author": {
           "gitId": "-"
         },
-        "content": "The following sequence diagram shows how the undo operation works:"
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "If the `currentStatePointer` is at index 0, pointing to the initial address book state, then there are no previous address book states to restore. The `undo` command uses `Model#canUndoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the undo."
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoSequenceDiagram.png[width\u003d\"800\"]"
+        "content": ""
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The following sequence diagram shows how the undo operation works:"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": "The `redo` command does the opposite -- it calls `Model#redoAddressBook()`, which shifts the `currentStatePointer` once to the right, pointing to the previously undone state, and restores the address book to that state."
+        "content": ""
       },
       {
         "lineNumber": 196,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::UndoSequenceDiagram.png[]"
       },
       {
         "lineNumber": 197,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "[NOTE]"
+        "content": ""
       },
       {
         "lineNumber": 198,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "If the `currentStatePointer` is at index `addressBookStateList.size() - 1`, pointing to the latest address book state, then there are no undone address book states to restore. The `redo` command uses `Model#canRedoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo."
+        "content": "NOTE: The lifeline for `UndoCommand` should end at the destroy marker (X) but due to a limitation of PlantUML, the lifeline reaches the end of diagram."
       },
       {
         "lineNumber": 199,
@@ -1744,7 +1744,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Step 5. The user then decides to execute the command `list`. Commands that do not modify the address book, such as `list`, will usually not call `Model#commitAddressBook()`, `Model#undoAddressBook()` or `Model#redoAddressBook()`. Thus, the `addressBookStateList` remains unchanged."
+        "content": "The `redo` command does the opposite -- it calls `Model#redoAddressBook()`, which shifts the `currentStatePointer` once to the right, pointing to the previously undone state, and restores the address book to that state."
       },
       {
         "lineNumber": 201,
@@ -1758,245 +1758,245 @@
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoNewCommand3StateListDiagram.png[width\u003d\"800\"]"
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "If the `currentStatePointer` is at index `addressBookStateList.size() - 1`, pointing to the latest address book state, then there are no undone address book states to restore. The `redo` command uses `Model#canRedoAddressBook()` to check if this is the case. If so, it will return an error to the user rather than attempting to perform the redo."
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "-"
         },
-        "content": "Step 6. The user executes `clear`, which calls `Model#commitAddressBook()`. Since the `currentStatePointer` is not pointing at the end of the `addressBookStateList`, all address book states after the `currentStatePointer` will be purged. We designed it this way because it no longer makes sense to redo the `add n/David ...` command. This is the behavior that most modern desktop applications follow."
+        "content": ""
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Step 5. The user then decides to execute the command `list`. Commands that do not modify the address book, such as `list`, will usually not call `Model#commitAddressBook()`, `Model#undoAddressBook()` or `Model#redoAddressBook()`. Thus, the `addressBookStateList` remains unchanged."
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoNewCommand4StateListDiagram.png[width\u003d\"800\"]"
+        "content": ""
       },
       {
         "lineNumber": 207,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::UndoRedoState4.png[]"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "-"
         },
-        "content": "The following activity diagram summarizes what happens when a user executes a new command:"
+        "content": ""
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Step 6. The user executes `clear`, which calls `Model#commitAddressBook()`. Since the `currentStatePointer` is not pointing at the end of the `addressBookStateList`, all address book states after the `currentStatePointer` will be purged. We designed it this way because it no longer makes sense to redo the `add n/David ...` command. This is the behavior that most modern desktop applications follow."
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "-"
         },
-        "content": "image::UndoRedoActivityDiagram.png[width\u003d\"650\"]"
+        "content": ""
       },
       {
         "lineNumber": 211,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::UndoRedoState5.png[]"
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d\u003d Design Considerations"
+        "content": ""
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "The following activity diagram summarizes what happens when a user executes a new command:"
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d\u003d\u003d Aspect: How undo \u0026 redo executes"
+        "content": ""
       },
       {
         "lineNumber": 215,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::CommitActivityDiagram.png[]"
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "-"
         },
-        "content": "* **Alternative 1 (current choice):** Saves the entire address book."
+        "content": ""
       },
       {
         "lineNumber": 217,
         "author": {
           "gitId": "-"
         },
-        "content": "** Pros: Easy to implement."
+        "content": "\u003d\u003d\u003d\u003d Design Considerations"
       },
       {
         "lineNumber": 218,
         "author": {
           "gitId": "-"
         },
-        "content": "** Cons: May have performance issues in terms of memory usage."
+        "content": ""
       },
       {
         "lineNumber": 219,
         "author": {
           "gitId": "-"
         },
-        "content": "* **Alternative 2:** Individual command knows how to undo/redo by itself."
+        "content": "\u003d\u003d\u003d\u003d\u003d Aspect: How undo \u0026 redo executes"
       },
       {
         "lineNumber": 220,
         "author": {
           "gitId": "-"
         },
-        "content": "** Pros: Will use less memory (e.g. for `delete`, just save the person being deleted)."
+        "content": ""
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "-"
         },
-        "content": "** Cons: We must ensure that the implementation of each individual command are correct."
+        "content": "* **Alternative 1 (current choice):** Saves the entire address book."
       },
       {
         "lineNumber": 222,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "** Pros: Easy to implement."
       },
       {
         "lineNumber": 223,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d\u003d\u003d Aspect: Data structure to support the undo/redo commands"
+        "content": "** Cons: May have performance issues in terms of memory usage."
       },
       {
         "lineNumber": 224,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* **Alternative 2:** Individual command knows how to undo/redo by itself."
       },
       {
         "lineNumber": 225,
         "author": {
           "gitId": "-"
         },
-        "content": "* **Alternative 1 (current choice):** Use a list to store the history of address book states."
+        "content": "** Pros: Will use less memory (e.g. for `delete`, just save the person being deleted)."
       },
       {
         "lineNumber": 226,
         "author": {
           "gitId": "-"
         },
-        "content": "** Pros: Easy for new Computer Science student undergraduates to understand, who are likely to be the new incoming developers of our project."
+        "content": "** Cons: We must ensure that the implementation of each individual command are correct."
       },
       {
         "lineNumber": 227,
         "author": {
           "gitId": "-"
         },
-        "content": "** Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update both `HistoryManager` and `VersionedAddressBook`."
+        "content": ""
       },
       {
         "lineNumber": 228,
         "author": {
           "gitId": "-"
         },
-        "content": "* **Alternative 2:** Use `HistoryManager` for undo/redo"
+        "content": "\u003d\u003d\u003d\u003d\u003d Aspect: Data structure to support the undo/redo commands"
       },
       {
         "lineNumber": 229,
         "author": {
           "gitId": "-"
         },
-        "content": "** Pros: We do not need to maintain a separate list, and just reuse what is already in the codebase."
+        "content": ""
       },
       {
         "lineNumber": 230,
         "author": {
           "gitId": "-"
         },
-        "content": "** Cons: Requires dealing with commands that have already been undone: We must remember to skip these commands. Violates Single Responsibility Principle and Separation of Concerns as `HistoryManager` now needs to do two different things."
+        "content": "* **Alternative 1 (current choice):** Use a list to store the history of address book states."
       },
       {
         "lineNumber": 231,
         "author": {
           "gitId": "-"
         },
-        "content": "// end::undoredo[]"
+        "content": "** Pros: Easy for new Computer Science student undergraduates to understand, who are likely to be the new incoming developers of our project."
       },
       {
         "lineNumber": 232,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "** Cons: Logic is duplicated twice. For example, when a new command is executed, we must remember to update both `HistoryManager` and `VersionedAddressBook`."
       },
       {
         "lineNumber": 233,
         "author": {
           "gitId": "-"
         },
-        "content": "// tag::dataencryption[]"
+        "content": "* **Alternative 2:** Use `HistoryManager` for undo/redo"
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d [Proposed] Data Encryption"
+        "content": "** Pros: We do not need to maintain a separate list, and just reuse what is already in the codebase."
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "** Cons: Requires dealing with commands that have already been undone: We must remember to skip these commands. Violates Single Responsibility Principle and Separation of Concerns as `HistoryManager` now needs to do two different things."
       },
       {
         "lineNumber": 236,
         "author": {
           "gitId": "-"
         },
-        "content": "_{Explain here how the data encryption feature will be implemented}_"
+        "content": "// end::undoredo[]"
       },
       {
         "lineNumber": 237,
@@ -2010,112 +2010,112 @@
         "author": {
           "gitId": "-"
         },
-        "content": "// end::dataencryption[]"
+        "content": "// tag::dataencryption[]"
       },
       {
         "lineNumber": 239,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d [Proposed] Data Encryption"
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Logging"
+        "content": ""
       },
       {
         "lineNumber": 241,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "_{Explain here how the data encryption feature will be implemented}_"
       },
       {
         "lineNumber": 242,
         "author": {
           "gitId": "-"
         },
-        "content": "We are using `java.util.logging` package for logging. The `LogsCenter` class is used to manage the logging levels and logging destinations."
+        "content": ""
       },
       {
         "lineNumber": 243,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "// end::dataencryption[]"
       },
       {
         "lineNumber": 244,
         "author": {
           "gitId": "-"
         },
-        "content": "* The logging level can be controlled using the `logLevel` setting in the configuration file (See \u003c\u003cImplementation-Configuration\u003e\u003e)"
+        "content": ""
       },
       {
         "lineNumber": 245,
         "author": {
           "gitId": "-"
         },
-        "content": "* The `Logger` for a class can be obtained using `LogsCenter.getLogger(Class)` which will log messages according to the specified logging level"
+        "content": "\u003d\u003d\u003d Logging"
       },
       {
         "lineNumber": 246,
         "author": {
           "gitId": "-"
         },
-        "content": "* Currently log messages are output through: `Console` and to a `.log` file."
+        "content": ""
       },
       {
         "lineNumber": 247,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "We are using `java.util.logging` package for logging. The `LogsCenter` class is used to manage the logging levels and logging destinations."
       },
       {
         "lineNumber": 248,
         "author": {
           "gitId": "-"
         },
-        "content": "*Logging Levels*"
+        "content": ""
       },
       {
         "lineNumber": 249,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* The logging level can be controlled using the `logLevel` setting in the configuration file (See \u003c\u003cImplementation-Configuration\u003e\u003e)"
       },
       {
         "lineNumber": 250,
         "author": {
           "gitId": "-"
         },
-        "content": "* `SEVERE` : Critical problem detected which may possibly cause the termination of the application"
+        "content": "* The `Logger` for a class can be obtained using `LogsCenter.getLogger(Class)` which will log messages according to the specified logging level"
       },
       {
         "lineNumber": 251,
         "author": {
           "gitId": "-"
         },
-        "content": "* `WARNING` : Can continue, but with caution"
+        "content": "* Currently log messages are output through: `Console` and to a `.log` file."
       },
       {
         "lineNumber": 252,
         "author": {
           "gitId": "-"
         },
-        "content": "* `INFO` : Information showing the noteworthy actions by the App"
+        "content": ""
       },
       {
         "lineNumber": 253,
         "author": {
           "gitId": "-"
         },
-        "content": "* `FINE` : Details that is not usually noteworthy but may be useful in debugging e.g. print the actual list instead of just its size"
+        "content": "*Logging Levels*"
       },
       {
         "lineNumber": 254,
@@ -2129,28 +2129,28 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[[Implementation-Configuration]]"
+        "content": "* `SEVERE` : Critical problem detected which may possibly cause the termination of the application"
       },
       {
         "lineNumber": 256,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Configuration"
+        "content": "* `WARNING` : Can continue, but with caution"
       },
       {
         "lineNumber": 257,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* `INFO` : Information showing the noteworthy actions by the App"
       },
       {
         "lineNumber": 258,
         "author": {
           "gitId": "-"
         },
-        "content": "Certain properties of the application can be controlled (e.g user prefs file location, logging level) through the configuration file (default: `config.json`)."
+        "content": "* `FINE` : Details that is not usually noteworthy but may be useful in debugging e.g. print the actual list instead of just its size"
       },
       {
         "lineNumber": 259,
@@ -2164,98 +2164,98 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Documentation"
+        "content": "[[Implementation-Configuration]]"
       },
       {
         "lineNumber": 261,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d Configuration"
       },
       {
         "lineNumber": 262,
         "author": {
-          "gitId": "Jeffry Lum"
+          "gitId": "-"
         },
-        "content": "Refer to the guide \u003c\u003cDocumentation#, here\u003e\u003e."
+        "content": ""
       },
       {
         "lineNumber": 263,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "Certain properties of the application can be controlled (e.g user prefs file location, logging level) through the configuration file (default: `config.json`)."
       },
       {
         "lineNumber": 264,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Testing"
+        "content": ""
       },
       {
         "lineNumber": 265,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Documentation"
       },
       {
         "lineNumber": 266,
         "author": {
-          "gitId": "Jeffry Lum"
+          "gitId": "-"
         },
-        "content": "Refer to the guide \u003c\u003cTesting#, here\u003e\u003e."
+        "content": ""
       },
       {
         "lineNumber": 267,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "Refer to the guide \u003c\u003cDocumentation#, here\u003e\u003e."
       },
       {
         "lineNumber": 268,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Dev Ops"
+        "content": ""
       },
       {
         "lineNumber": 269,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Testing"
       },
       {
         "lineNumber": 270,
         "author": {
-          "gitId": "Jeffry Lum"
+          "gitId": "-"
         },
-        "content": "Refer to the guide \u003c\u003cDevOps#, here\u003e\u003e."
+        "content": ""
       },
       {
         "lineNumber": 271,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "Refer to the guide \u003c\u003cTesting#, here\u003e\u003e."
       },
       {
         "lineNumber": 272,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": ""
       },
       {
         "lineNumber": 273,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Product Scope"
+        "content": "\u003d\u003d Dev Ops"
       },
       {
         "lineNumber": 274,
@@ -2267,9 +2267,9 @@
       {
         "lineNumber": 275,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "*Target user profile*:"
+        "content": "Refer to the guide \u003c\u003cDevOps#, here\u003e\u003e."
       },
       {
         "lineNumber": 276,
@@ -2283,70 +2283,70 @@
         "author": {
           "gitId": "-"
         },
-        "content": "* has a need to manage a significant number of contacts"
+        "content": "[appendix]"
       },
       {
         "lineNumber": 278,
         "author": {
           "gitId": "-"
         },
-        "content": "* prefer desktop apps over other types"
+        "content": "\u003d\u003d Product Scope"
       },
       {
         "lineNumber": 279,
         "author": {
           "gitId": "-"
         },
-        "content": "* can type fast"
+        "content": ""
       },
       {
         "lineNumber": 280,
         "author": {
           "gitId": "-"
         },
-        "content": "* prefers typing over mouse input"
+        "content": "*Target user profile*:"
       },
       {
         "lineNumber": 281,
         "author": {
           "gitId": "-"
         },
-        "content": "* is reasonably comfortable using CLI apps"
+        "content": ""
       },
       {
         "lineNumber": 282,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* has a need to manage a significant number of contacts"
       },
       {
         "lineNumber": 283,
         "author": {
           "gitId": "-"
         },
-        "content": "*Value proposition*: manage contacts faster than a typical mouse/GUI driven app"
+        "content": "* prefer desktop apps over other types"
       },
       {
         "lineNumber": 284,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* can type fast"
       },
       {
         "lineNumber": 285,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": "* prefers typing over mouse input"
       },
       {
         "lineNumber": 286,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d User Stories"
+        "content": "* is reasonably comfortable using CLI apps"
       },
       {
         "lineNumber": 287,
@@ -2360,7 +2360,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Priorities: High (must have) - `* * \\*`, Medium (nice to have) - `* \\*`, Low (unlikely to have) - `*`"
+        "content": "*Value proposition*: manage contacts faster than a typical mouse/GUI driven app"
       },
       {
         "lineNumber": 289,
@@ -2374,28 +2374,28 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[width\u003d\"59%\",cols\u003d\"22%,\u003c23%,\u003c25%,\u003c30%\",options\u003d\"header\",]"
+        "content": "[appendix]"
       },
       {
         "lineNumber": 291,
         "author": {
           "gitId": "-"
         },
-        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
+        "content": "\u003d\u003d User Stories"
       },
       {
         "lineNumber": 292,
         "author": {
           "gitId": "-"
         },
-        "content": "|Priority |As a ... |I want to ... |So that I can..."
+        "content": ""
       },
       {
         "lineNumber": 293,
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |new user |see usage instructions |refer to instructions when I forget how to use the App"
+        "content": "Priorities: High (must have) - `* * \\*`, Medium (nice to have) - `* \\*`, Low (unlikely to have) - `*`"
       },
       {
         "lineNumber": 294,
@@ -2409,70 +2409,70 @@
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |user |add a new person |"
+        "content": "[width\u003d\"59%\",cols\u003d\"22%,\u003c23%,\u003c25%,\u003c30%\",options\u003d\"header\",]"
       },
       {
         "lineNumber": 296,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
       },
       {
         "lineNumber": 297,
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |user |delete a person |remove entries that I no longer need"
+        "content": "|Priority |As a ... |I want to ... |So that I can..."
       },
       {
         "lineNumber": 298,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|`* * *` |new user |see usage instructions |refer to instructions when I forget how to use the App"
       },
       {
         "lineNumber": 299,
         "author": {
           "gitId": "-"
         },
-        "content": "|`* * *` |user |find a person by name |locate details of persons without having to go through the entire list"
+        "content": ""
       },
       {
         "lineNumber": 300,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|`* * *` |user |add a new person |"
       },
       {
         "lineNumber": 301,
         "author": {
           "gitId": "-"
         },
-        "content": "|`* *` |user |hide \u003c\u003cprivate-contact-detail,private contact details\u003e\u003e by default |minimize chance of someone else seeing them by accident"
+        "content": ""
       },
       {
         "lineNumber": 302,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|`* * *` |user |delete a person |remove entries that I no longer need"
       },
       {
         "lineNumber": 303,
         "author": {
           "gitId": "-"
         },
-        "content": "|`*` |user with many persons in the address book |sort persons by name |locate a person easily"
+        "content": ""
       },
       {
         "lineNumber": 304,
         "author": {
           "gitId": "-"
         },
-        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
+        "content": "|`* * *` |user |find a person by name |locate details of persons without having to go through the entire list"
       },
       {
         "lineNumber": 305,
@@ -2486,7 +2486,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "_{More to be added}_"
+        "content": "|`* *` |user |hide \u003c\u003cprivate-contact-detail,private contact details\u003e\u003e by default |minimize chance of someone else seeing them by accident"
       },
       {
         "lineNumber": 307,
@@ -2500,14 +2500,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": "|`*` |user with many persons in the address book |sort persons by name |locate a person easily"
       },
       {
         "lineNumber": 309,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Use Cases"
+        "content": "|\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d"
       },
       {
         "lineNumber": 310,
@@ -2521,7 +2521,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "(For all use cases below, the *System* is the `AddressBook` and the *Actor* is the `user`, unless specified otherwise)"
+        "content": "_{More to be added}_"
       },
       {
         "lineNumber": 312,
@@ -2535,14 +2535,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[discrete]"
+        "content": "[appendix]"
       },
       {
         "lineNumber": 314,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Use case: Delete person"
+        "content": "\u003d\u003d Use Cases"
       },
       {
         "lineNumber": 315,
@@ -2556,7 +2556,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "*MSS*"
+        "content": "(For all use cases below, the *System* is the `AddressBook` and the *Actor* is the `user`, unless specified otherwise)"
       },
       {
         "lineNumber": 317,
@@ -2570,91 +2570,91 @@
         "author": {
           "gitId": "-"
         },
-        "content": "1.  User requests to list persons"
+        "content": "[discrete]"
       },
       {
         "lineNumber": 319,
         "author": {
           "gitId": "-"
         },
-        "content": "2.  AddressBook shows a list of persons"
+        "content": "\u003d\u003d\u003d Use case: Delete person"
       },
       {
         "lineNumber": 320,
         "author": {
           "gitId": "-"
         },
-        "content": "3.  User requests to delete a specific person in the list"
+        "content": ""
       },
       {
         "lineNumber": 321,
         "author": {
           "gitId": "-"
         },
-        "content": "4.  AddressBook deletes the person"
+        "content": "*MSS*"
       },
       {
         "lineNumber": 322,
         "author": {
           "gitId": "-"
         },
-        "content": "+"
+        "content": ""
       },
       {
         "lineNumber": 323,
         "author": {
           "gitId": "-"
         },
-        "content": "Use case ends."
+        "content": "1.  User requests to list persons"
       },
       {
         "lineNumber": 324,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "2.  AddressBook shows a list of persons"
       },
       {
         "lineNumber": 325,
         "author": {
           "gitId": "-"
         },
-        "content": "*Extensions*"
+        "content": "3.  User requests to delete a specific person in the list"
       },
       {
         "lineNumber": 326,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "4.  AddressBook deletes the person"
       },
       {
         "lineNumber": 327,
         "author": {
           "gitId": "-"
         },
-        "content": "[none]"
+        "content": "+"
       },
       {
         "lineNumber": 328,
         "author": {
           "gitId": "-"
         },
-        "content": "* 2a. The list is empty."
+        "content": "Use case ends."
       },
       {
         "lineNumber": 329,
         "author": {
           "gitId": "-"
         },
-        "content": "+"
+        "content": ""
       },
       {
         "lineNumber": 330,
         "author": {
           "gitId": "-"
         },
-        "content": "Use case ends."
+        "content": "*Extensions*"
       },
       {
         "lineNumber": 331,
@@ -2668,77 +2668,77 @@
         "author": {
           "gitId": "-"
         },
-        "content": "* 3a. The given index is invalid."
+        "content": "[none]"
       },
       {
         "lineNumber": 333,
         "author": {
           "gitId": "-"
         },
-        "content": "+"
+        "content": "* 2a. The list is empty."
       },
       {
         "lineNumber": 334,
         "author": {
           "gitId": "-"
         },
-        "content": "[none]"
+        "content": "+"
       },
       {
         "lineNumber": 335,
         "author": {
           "gitId": "-"
         },
-        "content": "** 3a1. AddressBook shows an error message."
+        "content": "Use case ends."
       },
       {
         "lineNumber": 336,
         "author": {
           "gitId": "-"
         },
-        "content": "+"
+        "content": ""
       },
       {
         "lineNumber": 337,
         "author": {
           "gitId": "-"
         },
-        "content": "Use case resumes at step 2."
+        "content": "* 3a. The given index is invalid."
       },
       {
         "lineNumber": 338,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "+"
       },
       {
         "lineNumber": 339,
         "author": {
           "gitId": "-"
         },
-        "content": "_{More to be added}_"
+        "content": "[none]"
       },
       {
         "lineNumber": 340,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "** 3a1. AddressBook shows an error message."
       },
       {
         "lineNumber": 341,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": "+"
       },
       {
         "lineNumber": 342,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Non Functional Requirements"
+        "content": "Use case resumes at step 2."
       },
       {
         "lineNumber": 343,
@@ -2752,56 +2752,56 @@
         "author": {
           "gitId": "-"
         },
-        "content": ".  Should work on any \u003c\u003cmainstream-os,mainstream OS\u003e\u003e as long as it has Java `11` or above installed."
+        "content": "_{More to be added}_"
       },
       {
         "lineNumber": 345,
         "author": {
           "gitId": "-"
         },
-        "content": ".  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage."
+        "content": ""
       },
       {
         "lineNumber": 346,
         "author": {
           "gitId": "-"
         },
-        "content": ".  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse."
+        "content": "[appendix]"
       },
       {
         "lineNumber": 347,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Non Functional Requirements"
       },
       {
         "lineNumber": 348,
         "author": {
           "gitId": "-"
         },
-        "content": "_{More to be added}_"
+        "content": ""
       },
       {
         "lineNumber": 349,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ".  Should work on any \u003c\u003cmainstream-os,mainstream OS\u003e\u003e as long as it has Java `11` or above installed."
       },
       {
         "lineNumber": 350,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": ".  Should be able to hold up to 1000 persons without a noticeable sluggishness in performance for typical usage."
       },
       {
         "lineNumber": 351,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Glossary"
+        "content": ".  A user with above average typing speed for regular English text (i.e. not code, not system admin commands) should be able to accomplish most of the tasks faster using commands than using the mouse."
       },
       {
         "lineNumber": 352,
@@ -2815,70 +2815,70 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[[mainstream-os]] Mainstream OS::"
+        "content": "_{More to be added}_"
       },
       {
         "lineNumber": 354,
         "author": {
           "gitId": "-"
         },
-        "content": "Windows, Linux, Unix, OS-X"
+        "content": ""
       },
       {
         "lineNumber": 355,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "[appendix]"
       },
       {
         "lineNumber": 356,
         "author": {
           "gitId": "-"
         },
-        "content": "[[private-contact-detail]] Private contact detail::"
+        "content": "\u003d\u003d Glossary"
       },
       {
         "lineNumber": 357,
         "author": {
           "gitId": "-"
         },
-        "content": "A contact detail that is not meant to be shared with others"
+        "content": ""
       },
       {
         "lineNumber": 358,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "[[mainstream-os]] Mainstream OS::"
       },
       {
         "lineNumber": 359,
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": "Windows, Linux, Unix, OS-X"
       },
       {
         "lineNumber": 360,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Product Survey"
+        "content": ""
       },
       {
         "lineNumber": 361,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "[[private-contact-detail]] Private contact detail::"
       },
       {
         "lineNumber": 362,
         "author": {
           "gitId": "-"
         },
-        "content": "*Product Name*"
+        "content": "A contact detail that is not meant to be shared with others"
       },
       {
         "lineNumber": 363,
@@ -2892,42 +2892,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Author: ..."
+        "content": "[appendix]"
       },
       {
         "lineNumber": 365,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d Product Survey"
       },
       {
         "lineNumber": 366,
         "author": {
           "gitId": "-"
         },
-        "content": "Pros:"
+        "content": ""
       },
       {
         "lineNumber": 367,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "*Product Name*"
       },
       {
         "lineNumber": 368,
         "author": {
           "gitId": "-"
         },
-        "content": "* ..."
+        "content": ""
       },
       {
         "lineNumber": 369,
         "author": {
           "gitId": "-"
         },
-        "content": "* ..."
+        "content": "Author: ..."
       },
       {
         "lineNumber": 370,
@@ -2941,7 +2941,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Cons:"
+        "content": "Pros:"
       },
       {
         "lineNumber": 372,
@@ -2976,28 +2976,28 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[appendix]"
+        "content": "Cons:"
       },
       {
         "lineNumber": 377,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d Instructions for Manual Testing"
+        "content": ""
       },
       {
         "lineNumber": 378,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "* ..."
       },
       {
         "lineNumber": 379,
         "author": {
           "gitId": "-"
         },
-        "content": "Given below are instructions to test the app manually."
+        "content": "* ..."
       },
       {
         "lineNumber": 380,
@@ -3011,14 +3011,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "[NOTE]"
+        "content": "[appendix]"
       },
       {
         "lineNumber": 382,
         "author": {
           "gitId": "-"
         },
-        "content": "These instructions only provide a starting point for testers to work on; testers are expected to do more _exploratory_ testing."
+        "content": "\u003d\u003d Instructions for Manual Testing"
       },
       {
         "lineNumber": 383,
@@ -3032,7 +3032,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Launch and Shutdown"
+        "content": "Given below are instructions to test the app manually."
       },
       {
         "lineNumber": 385,
@@ -3046,241 +3046,276 @@
         "author": {
           "gitId": "-"
         },
-        "content": ". Initial launch"
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 387,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "These instructions only provide a starting point for testers to work on; testers are expected to do more _exploratory_ testing."
       },
       {
         "lineNumber": 388,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Download the jar file and copy into an empty folder"
+        "content": ""
       },
       {
         "lineNumber": 389,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Double-click the jar file +"
+        "content": "\u003d\u003d\u003d Launch and Shutdown"
       },
       {
         "lineNumber": 390,
         "author": {
           "gitId": "-"
         },
-        "content": "   Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum."
+        "content": ""
       },
       {
         "lineNumber": 391,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ". Initial launch"
       },
       {
         "lineNumber": 392,
         "author": {
           "gitId": "-"
         },
-        "content": ". Saving window preferences"
+        "content": ""
       },
       {
         "lineNumber": 393,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ".. Download the jar file and copy into an empty folder"
       },
       {
         "lineNumber": 394,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Resize the window to an optimum size. Move the window to a different location. Close the window."
+        "content": ".. Double-click the jar file +"
       },
       {
         "lineNumber": 395,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Re-launch the app by double-clicking the jar file. +"
+        "content": "   Expected: Shows the GUI with a set of sample contacts. The window size may not be optimum."
       },
       {
         "lineNumber": 396,
         "author": {
           "gitId": "-"
         },
-        "content": "   Expected: The most recent window size and location is retained."
+        "content": ""
       },
       {
         "lineNumber": 397,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ". Saving window preferences"
       },
       {
         "lineNumber": 398,
         "author": {
           "gitId": "-"
         },
-        "content": "_{ more test cases ... }_"
+        "content": ""
       },
       {
         "lineNumber": 399,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": ".. Resize the window to an optimum size. Move the window to a different location. Close the window."
       },
       {
         "lineNumber": 400,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Deleting a person"
+        "content": ".. Re-launch the app by double-clicking the jar file. +"
       },
       {
         "lineNumber": 401,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "   Expected: The most recent window size and location is retained."
       },
       {
         "lineNumber": 402,
         "author": {
           "gitId": "-"
         },
-        "content": ". Deleting a person while all persons are listed"
+        "content": ""
       },
       {
         "lineNumber": 403,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "_{ more test cases ... }_"
       },
       {
         "lineNumber": 404,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Prerequisites: List all persons using the `list` command. Multiple persons in the list."
+        "content": ""
       },
       {
         "lineNumber": 405,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Test case: `delete 1` +"
+        "content": "\u003d\u003d\u003d Deleting a person"
       },
       {
         "lineNumber": 406,
         "author": {
           "gitId": "-"
         },
-        "content": "   Expected: First contact is deleted from the list. Details of the deleted contact shown in the status message. Timestamp in the status bar is updated."
+        "content": ""
       },
       {
         "lineNumber": 407,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Test case: `delete 0` +"
+        "content": ". Deleting a person while all persons are listed"
       },
       {
         "lineNumber": 408,
         "author": {
           "gitId": "-"
         },
-        "content": "   Expected: No person is deleted. Error details shown in the status message. Status bar remains the same."
+        "content": ""
       },
       {
         "lineNumber": 409,
         "author": {
           "gitId": "-"
         },
-        "content": ".. Other incorrect delete commands to try: `delete`, `delete x` (where x is larger than the list size) _{give more}_ +"
+        "content": ".. Prerequisites: List all persons using the `list` command. Multiple persons in the list."
       },
       {
         "lineNumber": 410,
         "author": {
           "gitId": "-"
         },
-        "content": "   Expected: Similar to previous."
+        "content": ".. Test case: `delete 1` +"
       },
       {
         "lineNumber": 411,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "   Expected: First contact is deleted from the list. Details of the deleted contact shown in the status message. Timestamp in the status bar is updated."
       },
       {
         "lineNumber": 412,
         "author": {
           "gitId": "-"
         },
-        "content": "_{ more test cases ... }_"
+        "content": ".. Test case: `delete 0` +"
       },
       {
         "lineNumber": 413,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "   Expected: No person is deleted. Error details shown in the status message. Status bar remains the same."
       },
       {
         "lineNumber": 414,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Saving data"
+        "content": ".. Other incorrect delete commands to try: `delete`, `delete x` (where x is larger than the list size) _{give more}_ +"
       },
       {
         "lineNumber": 415,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "   Expected: Similar to previous."
       },
       {
         "lineNumber": 416,
         "author": {
           "gitId": "-"
         },
-        "content": ". Dealing with missing/corrupted data files"
+        "content": ""
       },
       {
         "lineNumber": 417,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "_{ more test cases ... }_"
       },
       {
         "lineNumber": 418,
         "author": {
           "gitId": "-"
         },
-        "content": ".. _{explain how to simulate a missing/corrupted file and the expected behavior}_"
+        "content": ""
       },
       {
         "lineNumber": 419,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003d\u003d\u003d Saving data"
       },
       {
         "lineNumber": 420,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 421,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ". Dealing with missing/corrupted data files"
+      },
+      {
+        "lineNumber": 422,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 423,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".. _{explain how to simulate a missing/corrupted file and the expected behavior}_"
+      },
+      {
+        "lineNumber": 424,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 425,
         "author": {
           "gitId": "-"
         },
@@ -3288,8 +3323,8 @@
       }
     ],
     "authorContributionMap": {
-      "Jeffry Lum": 4,
-      "-": 416
+      "Jeffry Lum": 27,
+      "-": 398
     }
   },
   {
@@ -3496,7 +3531,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d Publishing Documentation"
+        "content": "\u003d\u003d Editing Diagrams"
       },
       {
         "lineNumber": 30,
@@ -3510,7 +3545,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "See \u003c\u003cUsingTravis#deploying-github-pages, UsingTravis.adoc\u003e\u003e to learn how to deploy GitHub Pages using Travis."
+        "content": "See \u003c\u003cUsingPlantUml#, UsingPlantUml.adoc\u003e\u003e to find out how to create and update the UML diagrams in the developer guide."
       },
       {
         "lineNumber": 32,
@@ -3524,7 +3559,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d Converting Documentation to PDF format"
+        "content": "\u003d\u003d Publishing Documentation"
       },
       {
         "lineNumber": 34,
@@ -3538,7 +3573,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "We use https://www.google.com/chrome/browser/desktop/[Google Chrome] for converting documentation to PDF format, as Chrome\u0027s PDF engine preserves hyperlinks used in webpages."
+        "content": "See \u003c\u003cUsingTravis#deploying-github-pages, UsingTravis.adoc\u003e\u003e to learn how to deploy GitHub Pages using Travis."
       },
       {
         "lineNumber": 36,
@@ -3552,7 +3587,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Here are the steps to convert the project documentation files to PDF format."
+        "content": "\u003d\u003d Converting Documentation to PDF format"
       },
       {
         "lineNumber": 38,
@@ -3566,308 +3601,308 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ".  Follow the instructions in \u003c\u003cUsingGradle#rendering-asciidoc-files, UsingGradle.adoc\u003e\u003e to convert the AsciiDoc files in the `docs/` directory to HTML format."
+        "content": "We use https://www.google.com/chrome/browser/desktop/[Google Chrome] for converting documentation to PDF format, as Chrome\u0027s PDF engine preserves hyperlinks used in webpages."
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ".  Go to your generated HTML files in the `build/docs` folder, right click on them and select `Open with` -\u003e `Google Chrome`."
+        "content": ""
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ".  Within Chrome, click on the `Print` option in Chrome\u0027s menu."
+        "content": "Here are the steps to convert the project documentation files to PDF format."
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ".  Set the destination to `Save as PDF`, then click `Save` to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below."
+        "content": ""
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": ".  Follow the instructions in \u003c\u003cUsingGradle#rendering-asciidoc-files, UsingGradle.adoc\u003e\u003e to convert the AsciiDoc files in the `docs/` directory to HTML format."
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ".Saving documentation as PDF files in Chrome"
+        "content": ".  Go to your generated HTML files in the `build/docs` folder, right click on them and select `Open with` -\u003e `Google Chrome`."
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "image::chrome_save_as_pdf.png[width\u003d\"300\"]"
+        "content": ".  Within Chrome, click on the `Print` option in Chrome\u0027s menu."
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": ".  Set the destination to `Save as PDF`, then click `Save` to save a copy of the file in PDF format. For best results, use the settings indicated in the screenshot below."
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[[Docs-SiteWideDocSettings]]"
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d Site-wide Documentation Settings"
+        "content": ".Saving documentation as PDF files in Chrome"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "image::chrome_save_as_pdf.png[width\u003d\"300\"]"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "The link:{repoURL}/build.gradle[`build.gradle`] file specifies some project-specific https://asciidoctor.org/docs/user-manual/#attributes[asciidoc attributes] which affects how all documentation files within this project are rendered."
+        "content": ""
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "[[Docs-SiteWideDocSettings]]"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[TIP]"
+        "content": "\u003d\u003d Site-wide Documentation Settings"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Attributes left unset in the `build.gradle` file will use their *default value*, if any."
+        "content": ""
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "The link:{repoURL}/build.gradle[`build.gradle`] file specifies some project-specific https://asciidoctor.org/docs/user-manual/#attributes[asciidoc attributes] which affects how all documentation files within this project are rendered."
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[cols\u003d\"1,2a,1\", options\u003d\"header\"]"
+        "content": ""
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ".List of site-wide attributes"
+        "content": "[TIP]"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|\u003d\u003d\u003d"
+        "content": "Attributes left unset in the `build.gradle` file will use their *default value*, if any."
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|Attribute name |Description |Default value"
+        "content": ""
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "[cols\u003d\"1,2a,1\", options\u003d\"header\"]"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|`site-name`"
+        "content": ".List of site-wide attributes"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|The name of the website."
+        "content": "|\u003d\u003d\u003d"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "If set, the name will be displayed near the top of the page."
+        "content": "|Attribute name |Description |Default value"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|_not set_"
+        "content": ""
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "|`site-name`"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|`site-githuburl`"
+        "content": "|The name of the website."
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|URL to the site\u0027s repository on https://github.com[GitHub]."
+        "content": "If set, the name will be displayed near the top of the page."
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Setting this will add a \"View on GitHub\" link in the navigation bar."
+        "content": "|_not set_"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|_not set_"
+        "content": ""
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "|`site-githuburl`"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|`site-seedu`"
+        "content": "|URL to the site\u0027s repository on https://github.com[GitHub]."
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|Define this attribute if the project is an official SE-EDU project."
+        "content": "Setting this will add a \"View on GitHub\" link in the navigation bar."
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "This will render the SE-EDU navigation bar at the top of the page, and add some SE-EDU-specific navigation items."
+        "content": "|_not set_"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|_not set_"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "|`site-seedu`"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|\u003d\u003d\u003d"
+        "content": "|Define this attribute if the project is an official SE-EDU project."
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "This will render the SE-EDU navigation bar at the top of the page, and add some SE-EDU-specific navigation items."
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[[Docs-PerFileDocSettings]]"
+        "content": "|_not set_"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d Per-file Documentation Settings"
+        "content": ""
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "|\u003d\u003d\u003d"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Each `.adoc` file may also specify some file-specific https://asciidoctor.org/docs/user-manual/#attributes[asciidoc attributes] which affects how the file is rendered."
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "[[Docs-PerFileDocSettings]]"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Asciidoctor\u0027s https://asciidoctor.org/docs/user-manual/#builtin-attributes[built-in attributes] may be specified and used as well."
+        "content": "\u003d\u003d Per-file Documentation Settings"
       },
       {
         "lineNumber": 83,
@@ -3881,126 +3916,126 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[TIP]"
+        "content": "Each `.adoc` file may also specify some file-specific https://asciidoctor.org/docs/user-manual/#attributes[asciidoc attributes] which affects how the file is rendered."
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Attributes left unset in `.adoc` files will use their *default value*, if any."
+        "content": ""
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "Asciidoctor\u0027s https://asciidoctor.org/docs/user-manual/#builtin-attributes[built-in attributes] may be specified and used as well."
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[cols\u003d\"1,2a,1\", options\u003d\"header\"]"
+        "content": ""
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ".List of per-file attributes, excluding Asciidoctor\u0027s built-in attributes"
+        "content": "[TIP]"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|\u003d\u003d\u003d"
+        "content": "Attributes left unset in `.adoc` files will use their *default value*, if any."
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|Attribute name |Description |Default value"
+        "content": ""
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "[cols\u003d\"1,2a,1\", options\u003d\"header\"]"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|`site-section`"
+        "content": ".List of per-file attributes, excluding Asciidoctor\u0027s built-in attributes"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|Site section that the document belongs to."
+        "content": "|\u003d\u003d\u003d"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "This will cause the associated item in the navigation bar to be highlighted."
+        "content": "|Attribute name |Description |Default value"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "One of: `UserGuide`, `DeveloperGuide`, ``LearningOutcomes``{asterisk}, `AboutUs`, `ContactUs`"
+        "content": ""
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "|`site-section`"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "_{asterisk} Official SE-EDU projects only_"
+        "content": "|Site section that the document belongs to."
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|_not set_"
+        "content": "This will cause the associated item in the navigation bar to be highlighted."
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "One of: `UserGuide`, `DeveloperGuide`, ``LearningOutcomes``{asterisk}, `AboutUs`, `ContactUs`"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|`no-site-header`"
+        "content": ""
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|Set this attribute to remove the site navigation bar."
+        "content": "_{asterisk} Official SE-EDU projects only_"
       },
       {
         "lineNumber": 102,
@@ -4021,21 +4056,21 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "|\u003d\u003d\u003d"
+        "content": "|`no-site-header`"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "|Set this attribute to remove the site navigation bar."
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d Site Template"
+        "content": "|_not set_"
       },
       {
         "lineNumber": 107,
@@ -4049,77 +4084,77 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "The files in link:{repoURL}/docs/stylesheets[`docs/stylesheets`] are the https://developer.mozilla.org/en-US/docs/Web/CSS[CSS stylesheets] of the site."
+        "content": "|\u003d\u003d\u003d"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "You can modify them to change some properties of the site\u0027s design."
+        "content": ""
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "\u003d\u003d Site Template"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "The files in link:{repoURL}/docs/templates[`docs/templates`] controls the rendering of `.adoc` files into HTML5."
+        "content": ""
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "These template files are written in a mixture of https://www.ruby-lang.org[Ruby] and http://slim-lang.com[Slim]."
+        "content": "The files in link:{repoURL}/docs/stylesheets[`docs/stylesheets`] are the https://developer.mozilla.org/en-US/docs/Web/CSS[CSS stylesheets] of the site."
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "You can modify them to change some properties of the site\u0027s design."
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[WARNING]"
+        "content": ""
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d\u003d\u003d"
+        "content": "The files in link:{repoURL}/docs/templates[`docs/templates`] controls the rendering of `.adoc` files into HTML5."
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Modifying the template files in link:{repoURL}/docs/templates[`docs/templates`] requires some knowledge and experience with Ruby and Asciidoctor\u0027s API."
+        "content": "These template files are written in a mixture of https://www.ruby-lang.org[Ruby] and http://slim-lang.com[Slim]."
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "You should only modify them if you need greater control over the site\u0027s layout than what stylesheets can provide."
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "The SE-EDU team does not provide support for modified template files."
+        "content": "[WARNING]"
       },
       {
         "lineNumber": 119,
@@ -4127,10 +4162,38 @@
           "gitId": "Jeffry Lum"
         },
         "content": "\u003d\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Modifying the template files in link:{repoURL}/docs/templates[`docs/templates`] requires some knowledge and experience with Ruby and Asciidoctor\u0027s API."
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "You should only modify them if you need greater control over the site\u0027s layout than what stylesheets can provide."
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "The SE-EDU team does not provide support for modified template files."
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d"
       }
     ],
     "authorContributionMap": {
-      "Jeffry Lum": 119
+      "Jeffry Lum": 123
     }
   },
   {
@@ -5239,6 +5302,1491 @@
     ],
     "authorContributionMap": {
       "Jeffry Lum": 70
+    }
+  },
+  {
+    "path": "docs/UsingPlantUml.adoc",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d Using PlantUML"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":site-section: DeveloperGuide"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":imagesDir: images/plantuml"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":stylesDir: stylesheets"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":experimental:"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "ifdef::env-github[]"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":tip-caption: :bulb:"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":note-caption: :information_source:"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "endif::[]"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Introduction to PlantUML"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "PlantUML is a tool used in this project to create UML diagrams."
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For more information about the basics of PlantUML, head over to http://plantuml.com/[its official website]."
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Set up PlantUML"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d Installing Graphviz"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Graphviz is a dependency that PlantUML requires to generate more advanced diagrams."
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Head over to the https://www.graphviz.org/download/[downloads page] on the official Graphviz website and follow instructions to install Graphviz."
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d Installing the `PlantUML integration` plugin for IntelliJ IDEA"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Go to `Settings` \u003e `Plugins` \u003e `Marketplace` and install the plugin `PlantUML integration`."
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Then go to `Settings` \u003e `Other Settings` \u003e `PlantUML` or search for PlantUML."
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Configure the path to the `dot` executable."
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "This executable can be found in the `/bin` directory where you installed GraphViz."
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Settings - Other Settings - PlantUML: input the path to your dot executable"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::ConfiguringGraphviz.png[]"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Create/Edit PlantUML diagrams"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "After installing the `PlantUML integration` plugin, simply create or open any `.puml` file to start editing it."
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Editing `DeleteSequenceDiagram.puml`"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::EditingDeleteSequenceDiagram.png[]"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Any changes you make in editor pane on the left will be reflected in the preview pane on the right."
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "However, do take note that these changes _will not_ be reflected in the developers guide until you export the diagram."
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "//TODO: Discussion about why we\u0027re not using asciidoctor-diagram"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Export PlantUML diagrams"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "The `PlantUML integration` plugin allows you to export individual diagrams to a location of your choosing."
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Click the `Save Current Diagram Only` button and choose the location to export the image file."
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "NOTE: You will have to `git add` any new diagrams generated!"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Common tasks"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d Applying consistent formatting to PlantUML diagrams"
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "It is highly recommended to consistently color your UML diagrams as an visual aid."
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "You can achieve this by creating a dictionary of colors and import it like CSS."
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For example, you can create a `Style.puml` with the contents:"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Style.puml"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source]"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "!define LOGIC_COLOR #3333C4"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "!define LOGIC_COLOR_T1 #7777DB"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "!define LOGIC_COLOR_T2 #5252CE"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "!define LOGIC_COLOR_T3 #1616B0"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "!define LOGIC_COLOR_T4 #101086"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Then you can use it in another PlantUML file like this:"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".UndoSequenceDiagram.puml"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source]"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "!include Style.puml"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "box Logic LOGIC_COLOR_T2"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "participant \":LogicManager\" as LogicManager LOGIC_COLOR"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "participant \":AddressBookParser\" as AddressBookParser LOGIC_COLOR"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "participant \":UndoCommand\" as UndoCommand LOGIC_COLOR"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "end box"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "You can fine-tune the formatting of PlantUML diagrams with the `skinparam` command."
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For example, `skinparam backgroundColor transparent` turns the background of the diagram transparent."
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For a comprehensive list of ``skinparam``s head over to the https://plantuml-documentation.readthedocs.io/en/latest/[unofficial PlantUML skinparam documentation]."
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "***"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d Repositioning elements in PlantUML diagrams"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "While PlantUML\u0027s automatic layout engine usually produces satisfactory results, at times the result can be less than ideal, especially on larger diagrams."
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Here is an example where the default layout generated by PlantUML has a lot of overlapping lines that are hard to decipher:"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".The UI class diagram without additional formatting"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::RawUiDiagram.png[]"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "NOTE: In most cases, you should consider decomposing the diagram into smaller ones or focusing on a more specific portion of the diagram."
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Here are some of the techniques we used in this project to obtain a more palatable diagram."
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d Link lengths"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "By default, a short link (`\\-\u003e`) points to right and a long link (`-\\-\u003e`)"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "points downwards. you can extend any link to make it longer (```--\\-\u003e```)."
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Length of arrows and its effects"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::ArrowLength.png[]"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d Link directions"
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Clever usage of arrow directions will resolve most layout issues."
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For example, the table below shows how the way in which you specify arrows can results in drastically different layouts for the same diagram."
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Link directions"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[cols\u003d\"40a,60a\"]"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|Source |Result"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|[source, puml]"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A --\u003e Z"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "B --\u003e Z"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C --\u003e Z"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "D --\u003e Z"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A --\u003e 1"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "B --\u003e 2"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C --\u003e 3"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "D --\u003e 4"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|image::AllDown.png[]"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|[source, puml]"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u0027default is down"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A --\u003e Z"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u0027specify down"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "B -down-\u003e Z"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u0027shorthand for down"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C -d-\u003e Z"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u0027arrow lengths take priority"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "D -down\u003e Z"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A -up-\u003e 1"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "B -up-\u003e 2"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C -up-\u003e 3"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "D -up-\u003e 4"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|image::UpAndDown.png[]"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|[source, puml]"
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A -up-\u003e Z"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "B -up-\u003e Z"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C -up-\u003e Z"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "D -up-\u003e Z"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A --\u003e 1"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "B --\u003e 2"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C --\u003e 3"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "D --\u003e 4"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u0027Force A B C D"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A -right[hidden]- B"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "B -right[hidden]- C"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C -right[hidden]- D"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|image::HiddenArrows.png[]"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d Reordering definitions"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "As a general rule of thumb, the layout engine will attempt to order objects in the order in which they are defined."
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "If there is no formal definition, the objects is taken to be declared upon its first usage."
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Definition ordering and outcomes"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[cols\u003d\"70a,30a\"]"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|Source |Result"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|[source, puml]"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A --\u003e B"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C --\u003e D"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|image::ABeforeC.png[]"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|[source, puml]"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u0027Class C is defined before A"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Class C"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A --\u003e B"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "C --\u003e D"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|image::CBeforeA.png[]"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|[source, puml]"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "package \"Rule Of Thumb\"{"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    Class C"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    A --\u003e B"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    C --\u003e D"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|image::PackagesAndConsistency.png[]"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "|\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "TIP: Explicitly define all symbols to avoid any potential layout mishaps."
+      }
+    ],
+    "authorContributionMap": {
+      "Jeffry Lum": 211
     }
   }
 ]
