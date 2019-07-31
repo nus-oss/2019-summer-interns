@@ -350,22 +350,50 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 882,
+        "deletions": 857,
+        "date": "2019-07-31",
+        "commitResults": [
+          {
+            "hash": "5eaf438716f49b62955aff8a64a4e361d0424d69",
+            "messageTitle": "#1973 synclab unable to sync shapes (#1986)",
+            "messageBody": "* change line endings\r\n\r\n* Add new exception handling\r\n",
+            "insertions": 42,
+            "deletions": 8
+          },
+          {
+            "hash": "c5fa68583d1d0284a6f0cb75d59adf26c93e0236",
+            "messageTitle": "#1983 ut tests not passing (#1984)",
+            "messageBody": "* change line endings\r\n\r\n* fix ppshape and positionslabsnaptest\r\n\r\n* fix syncpane test\r\n\r\n* fix agendalabtests, fix autozoom removeentryanimations\r\n",
+            "insertions": 823,
+            "deletions": 846
+          },
+          {
+            "hash": "49a6e777618be297e0fee518f8cba1c362dc52e6",
+            "messageTitle": "#1981 highlightlab unhandled unauthorizedaccessexception (#1985)",
+            "messageBody": "* change line endings\r\n\r\n* add catch clause\r\n",
+            "insertions": 17,
+            "deletions": 3
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 4426
+    "yuhongherald": 4499
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 4426
+      "cs": 4499
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 326285.47
+    "yuhongherald": 334380.6
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

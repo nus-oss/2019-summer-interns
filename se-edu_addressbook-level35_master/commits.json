@@ -91,24 +91,38 @@
             "deletions": 282
           }
         ]
+      },
+      {
+        "insertions": 238,
+        "deletions": 18,
+        "date": "2019-07-29",
+        "commitResults": [
+          {
+            "hash": "5272d589ab491ea68fdf98d341c8ec6570663320",
+            "messageTitle": "Migrate to PlantUML from PowerPoint",
+            "messageBody": "PlantUML is a mature, specialized tool to generate UML diagrams. As it\nis avtext-based markup language, it works very well with git (e.g.\nproduces easy to grok diffs).Moreover, it is an open-source tool which\ndoes not require students to obtain proprietary, paid software to use.\n\nBased on these advantages that PlantUML offer over PowerPoint, let\u0027s\nadopt PlantUML as the tool of choice to generate UML diagrams.\n\nIntroduce a tutorial to help students understand the basics of PlantUML\nand how its used in AddressBook to generate diagrams.\n\nReplace .pptx diagram templates with .puml files.\n\nReplace instances of pptx generated diagrams with puml diagrams.\n",
+            "insertions": 238,
+            "deletions": 18
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Jeffry Lum": 298
+    "Jeffry Lum": 536
   },
   "authorFileFormatContributionMap": {
     "Jeffry Lum": {
       "java": 0,
       "js": 0,
       "css": 0,
-      "adoc": 298,
+      "adoc": 536,
       "fxml": 0,
       "gradle": 0
     }
   },
   "authorContributionVariance": {
-    "Jeffry Lum": 6269.846
+    "Jeffry Lum": 6161.694
   },
   "authorDisplayNameMap": {
     "Jeffry Lum": "Jeffry"

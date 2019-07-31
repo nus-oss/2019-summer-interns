@@ -175,6 +175,20 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 194,
+        "deletions": 91,
+        "date": "2019-07-30",
+        "commitResults": [
+          {
+            "hash": "a4d72afe5c5f5f10b81a1199fe2aca31c7a55591",
+            "messageTitle": "[#759] Cloning: remove redundant cloning from remote (#765)",
+            "messageBody": "In Windows OS, each repo will be bare cloned from the remote, checked \r\nfor any illegal characters in the file path, then cloned from the \r\nremote again to be analyzed.\r\n\r\nThe double cloning of the same repo from the remote increases analysis \r\ntime significantly, especially when the user has a sub-optimal\r\ninternet bandwidth.\r\n\r\nIn addition, when setting repo-config file, if the user specifies a\r\nrepo branch that contains file path with illegal characters in the repo\r\nto be analyzed first before the other branches of the same repo, an\r\nexception will be thrown for the first branch with files containing\r\nillegal characters in the repo, and the other branches of the same repo\r\nwill be ignored.\r\n\r\nLet\u0027s: -\r\n- Locally clone from the previously cloned bare repo instead to\r\nreduce the overall time of cloning and analysis.\r\n- Check the other branches of the same repo for files containing \r\nillegal characters as well as analyze them.\r\n\r\nEach repo will be bare cloned. Then for each branch to be analyzed, \r\nthe bare repo will be used to check for any illegal characters in the \r\nfile path. If no illegal characters are found, perform a full clone \r\nfrom the bare repo into a new location and directly check out into the \r\ntargeted branch to be analyzed.",
+            "insertions": 194,
+            "deletions": 91
+          }
+        ]
       }
     ],
     "bluein-green": [
@@ -624,24 +638,24 @@
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 896,
-    "bluein-green": 60,
-    "jamessspanggg": 901
+    "jylee-git": 1088,
+    "bluein-green": 59,
+    "jamessspanggg": 896
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 711,
+      "java": 902,
       "js": 32,
       "scss": 0,
       "json": 111,
-      "md": 32,
+      "md": 33,
       "py": 0,
       "jade": 0,
       "gradle": 4,
       "pug": 6
     },
     "bluein-green": {
-      "java": 44,
+      "java": 43,
       "js": 4,
       "scss": 7,
       "json": 0,
@@ -652,7 +666,7 @@
       "pug": 3
     },
     "jamessspanggg": {
-      "java": 38,
+      "java": 33,
       "js": 232,
       "scss": 477,
       "json": 34,
@@ -664,9 +678,9 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 3869.677,
-    "bluein-green": 29.620853,
-    "jamessspanggg": 31384.275
+    "jylee-git": 4674.5156,
+    "bluein-green": 28.904661,
+    "jamessspanggg": 30614.316
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

@@ -11404,9 +11404,9 @@
       {
         "lineNumber": 182,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  fetchEventsForRepo() {"
+        "content": "  fetchEventsForRepo(): Observable\u003cany[]\u003e {"
       },
       {
         "lineNumber": 183,
@@ -11872,8 +11872,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 43,
-      "KevinCJH": 27,
+      "ptvrajsk": 44,
+      "KevinCJH": 26,
       "-": 178
     }
   },
@@ -12044,341 +12044,383 @@
       {
         "lineNumber": 24,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "          this.setLastModifiedTime(response[0][\u0027created_at\u0027]);"
+        "content": "          if (response.length \u003d\u003d\u003d 0) {"
       },
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "          this.setLastModifiedCommentTime(response[0][\u0027issue\u0027][\u0027updated_at\u0027]);"
+        "content": "            return response;"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "          return response;"
+        "content": "          }"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        })"
+        "content": "          this.setLastModifiedTime(response[0][\u0027created_at\u0027]);"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      );"
+        "content": "          this.setLastModifiedCommentTime(response[0][\u0027issue\u0027][\u0027updated_at\u0027]);"
       },
       {
         "lineNumber": 29,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "          return response;"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "        })"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  /**"
+        "content": "      );"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * Returns the latest github event (e.g renaming an issue\u0027s title) of current repository"
+        "content": "  }"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   * @returns the json data of the latest event"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "   */"
+        "content": "  /**"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  reloadPage() {"
+        "content": "   * Returns the latest github event (e.g renaming an issue\u0027s title) of current repository"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return this.githubService.fetchEventsForRepo().pipe("
+        "content": "   * @returns the json data of the latest event"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      flatMap((response) \u003d\u003e {"
+        "content": "   */"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        const eventResponse \u003d response[0];"
+        "content": "  reloadPage() {"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        // Will only allow page to reload if the latest modify time is different"
+        "content": "    return this.githubService.fetchEventsForRepo().pipe("
       },
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        // from last modified, meaning that some changes to the repo has occured."
+        "content": "      flatMap((response: any[]) \u003d\u003e {"
       },
       {
         "lineNumber": 41,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        if (eventResponse[\u0027created_at\u0027] !\u003d\u003d this.getLastModifiedTime() ||"
+        "content": "        if (response.length \u003d\u003d\u003d 0) {"
       },
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "        eventResponse[\u0027issue\u0027][\u0027updated_at\u0027] !\u003d\u003d this.getLastModifiedCommentTime()) {"
+        "content": "          return of(response);"
       },
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "          this.setLastModifiedTime(eventResponse[\u0027created_at\u0027]);"
+        "content": "        }"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          this.setLastModifiedCommentTime(eventResponse[\u0027issue\u0027][\u0027updated_at\u0027]);"
+        "content": "        const eventResponse \u003d response[0];"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          return this.issueService.reloadAllIssues();"
+        "content": "        // Will only allow page to reload if the latest modify time is different"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        }"
+        "content": "        // from last modified, meaning that some changes to the repo has occured."
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        return of(response);"
+        "content": "        if (eventResponse[\u0027created_at\u0027] !\u003d\u003d this.getLastModifiedTime() ||"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      })"
+        "content": "        eventResponse[\u0027issue\u0027][\u0027updated_at\u0027] !\u003d\u003d this.getLastModifiedCommentTime()) {"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    );"
+        "content": "          this.setLastModifiedTime(eventResponse[\u0027created_at\u0027]);"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "          this.setLastModifiedCommentTime(eventResponse[\u0027issue\u0027][\u0027updated_at\u0027]);"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "          return this.issueService.reloadAllIssues();"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  setLastModifiedTime(lastModified: string) {"
+        "content": "        }"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.lastModified \u003d lastModified;"
+        "content": "        return of(response);"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "      })"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    );"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  setLastModifiedCommentTime(lastModified: string) {"
+        "content": "  }"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.lastModifiedComment \u003d lastModified;"
+        "content": ""
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  setLastModifiedTime(lastModified: string) {"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    this.lastModified \u003d lastModified;"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  getLastModifiedTime() {"
+        "content": "  }"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return this.lastModified;"
+        "content": ""
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  setLastModifiedCommentTime(lastModified: string) {"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    this.lastModifiedComment \u003d lastModified;"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  getLastModifiedCommentTime() {"
+        "content": "  }"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return this.lastModifiedComment;"
+        "content": ""
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  getLastModifiedTime() {"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    return this.lastModified;"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  reset() {"
+        "content": "  }"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.lastModified \u003d undefined;"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.lastModifiedComment \u003d undefined;"
+        "content": "  getLastModifiedCommentTime() {"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return this.lastModifiedComment;"
       },
       {
         "lineNumber": 72,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  reset() {"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.lastModified \u003d undefined;"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    this.lastModifiedComment \u003d undefined;"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 78,
         "author": {
           "gitId": "KevinCJH"
         },
@@ -12386,8 +12428,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 2,
-      "KevinCJH": 70
+      "ptvrajsk": 9,
+      "KevinCJH": 69
     }
   },
   {

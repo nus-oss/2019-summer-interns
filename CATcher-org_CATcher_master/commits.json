@@ -590,8 +590,8 @@
         ]
       },
       {
-        "insertions": 29,
-        "deletions": 10,
+        "insertions": 37,
+        "deletions": 12,
         "date": "2019-07-30",
         "commitResults": [
           {
@@ -600,6 +600,13 @@
             "messageBody": "* If Disagree is not checked Input is Ignored.\r\n\r\nAdded the toggle comment section functionality in the TesterResponse\r\nComponent.\r\n\r\n* Fix Checkbox Issue\r\n",
             "insertions": 29,
             "deletions": 10
+          },
+          {
+            "hash": "a97674a460db047503e8c60cf92ca93610910dcb",
+            "messageTitle": "Fix For Empty Repo (#158)",
+            "messageBody": "Previously code did not account for the fact that User Repos will be\r\ninitially empty thus causing some errors. They have now been adjusted to\r\naccount for empty repos.",
+            "insertions": 8,
+            "deletions": 2
           }
         ]
       }
@@ -1749,8 +1756,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2270,
-    "KevinCJH": 1121
+    "ptvrajsk": 2278,
+    "KevinCJH": 1119
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1761,7 +1768,7 @@
       "py": 0,
       "tag": 0,
       "html": 302,
-      "ts": 1964
+      "ts": 1972
     },
     "KevinCJH": {
       "java": 0,
@@ -1771,11 +1778,11 @@
       "py": 0,
       "tag": 0,
       "html": 207,
-      "ts": 914
+      "ts": 912
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 26061.074,
+    "ptvrajsk": 26057.027,
     "KevinCJH": 16206.875
   },
   "authorDisplayNameMap": {
