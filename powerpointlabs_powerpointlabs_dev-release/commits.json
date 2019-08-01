@@ -352,8 +352,8 @@
         ]
       },
       {
-        "insertions": 882,
-        "deletions": 857,
+        "insertions": 888,
+        "deletions": 861,
         "date": "2019-07-31",
         "commitResults": [
           {
@@ -376,24 +376,38 @@
             "messageBody": "* change line endings\r\n\r\n* add catch clause\r\n",
             "insertions": 17,
             "deletions": 3
+          },
+          {
+            "hash": "85cd2d112be7b6b846255b4b741782b3f94a1a13",
+            "messageTitle": "#1973 unable to sync shapes (#1988)",
+            "messageBody": "* change line endings\r\n\r\n* fix compilation error\r\n",
+            "insertions": 4,
+            "deletions": 2
+          },
+          {
+            "hash": "1ff11d748cbbf4868caba354e400390031f2ad35",
+            "messageTitle": "dev-release-6.0.0.0 (#1990)",
+            "messageBody": "* change line endings\r\n\r\n* update dev-release\r\n",
+            "insertions": 2,
+            "deletions": 2
           }
         ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 4499
+    "yuhongherald": 4503
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 4499
+      "cs": 4503
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 334380.6
+    "yuhongherald": 334772.75
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

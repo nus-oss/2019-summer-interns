@@ -634,18 +634,60 @@
             "deletions": 11
           }
         ]
+      },
+      {
+        "insertions": 334,
+        "deletions": 118,
+        "date": "2019-07-31",
+        "commitResults": [
+          {
+            "hash": "80a592516d07d23a54932a78209bca9f0bc1a498",
+            "messageTitle": "[#662] ChartView: add merge group option (#752)",
+            "messageBody": "Within ChartView, a group has multiple rows of ramp charts that belongs\r\nto the group itself.\r\n\r\nIt may be difficult for users to analyse the contribution of the entire\r\ngroup or to compare the contribution between groups.\r\n\r\nLet\u0027s add a merge group checkbox such that when the checkbox is\r\nchecked, all ramp charts of the same group will be merged together\r\nto form a single ramp chart. This allows users to easily analyse \r\nthe total contribution on the group level.",
+            "insertions": 131,
+            "deletions": 26
+          },
+          {
+            "hash": "42b6b574f474cf6aed2acfc24bf2142a487d768e",
+            "messageTitle": "[#846] CodeView: fix show ramps for this period button (#847)",
+            "messageBody": "Clicking on show ramp chart for this period button in the commits\r\npanel calls updateDateRange(), which recomputes the duration of the\r\nramp chart according to the drags by the user. The method proceeds \r\nto call deactivateAllOverlays(), which removes the drags by the user.\r\n\r\nSince no more drags are left after the first execution of \r\nupdateDateRange(), clicking on the show ramp chart for this period\r\nbutton will not be able to activate updateDateRange().\r\n\r\nLet\u0027s use the zoom since date and until date to recompute the duration\r\nof the ramp chart, instead of using the drags. This will ensure that\r\nclicking on the button will always show the ramp chart for the \r\ndesignated period.",
+            "insertions": 7,
+            "deletions": 16
+          },
+          {
+            "hash": "9018b9073abfea6c10609b96b0d85e4d99ccaf97",
+            "messageTitle": "[#839] Set config to be inclusive of until date (#840)",
+            "messageBody": "The until date in the config does not match with the until date used in\r\ngit rev-list. Until date in the config is in 00:00:00 time whereas\r\nuntil date used in git rev-list uses the time 23:59:59 of the day\r\nbefore.\r\n\r\nThis discrepancy can cause the content and author of each line detected\r\nby git rev-list to be different, and have caused a disparity in the\r\noutput results in #789.\r\n\r\nLet\u0027s standardise the until date in the config to use time of 23:59:59 \r\nto match with the until date used in git rev-list.\r\n\r\nReference:\r\nhttps://github.com/reposense/RepoSense/pull/789#discussion_r307350220",
+            "insertions": 111,
+            "deletions": 39
+          },
+          {
+            "hash": "1c3bcf6e6fe863f4e06a1605d718659594e491b7",
+            "messageTitle": "[#754] Url: include date hashes only when modified (#757)",
+            "messageBody": "The initial URL of the report page captures a start and until \r\nhash parameter even when the users did not specify the start date\r\nand end date fields in the CLI.\r\n\r\nThe URL is then shared to others. If there are further updates to the \r\nreport, the URL will still navigate to the report page with ramps up \r\nuntil the original start date and until date instead of the most\r\nupdated dates which may include more recent/older commits.\r\n\r\nLet’s modify the report’s initial URL to not capture the start and end \r\ndate hashes when users did not specify the respective date field in\r\nthe CLI. Without the start date or end date hash parameter in the URL,\r\nthe URL will navigate to the report with the most updated start date\r\nand end date.",
+            "insertions": 77,
+            "deletions": 27
+          },
+          {
+            "hash": "06c5a05d9256dbd53c2565228226b9556555afa0",
+            "messageTitle": "[#842] Fix out of bound ramp slices (#844)",
+            "messageBody": "Ramp slices appear outside of the ramp charts in week granularity.\r\n\r\nThis is due to the implementation of splitCommitsWeek() does not take\r\ninto account when the duration between since date and until date is\r\nless than one week. When the duration is less than a week, the\r\nalgorithm calculates commits up to the following Monday, even if they\r\nare beyond the until date. Hence, it causes a distortion in the ui.\r\n\r\nLet\u0027s revamp the logic within splitCommitsWeek to check, and trim any\r\ncommits beyond the until date.",
+            "insertions": 8,
+            "deletions": 10
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 1088,
+    "jylee-git": 1077,
     "bluein-green": 59,
-    "jamessspanggg": 896
+    "jamessspanggg": 1195
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 902,
-      "js": 32,
+      "java": 893,
+      "js": 30,
       "scss": 0,
       "json": 111,
       "md": 33,
@@ -666,21 +708,21 @@
       "pug": 3
     },
     "jamessspanggg": {
-      "java": 33,
-      "js": 232,
+      "java": 182,
+      "js": 350,
       "scss": 477,
       "json": 34,
-      "md": 37,
+      "md": 38,
       "py": 0,
       "jade": 0,
       "gradle": 1,
-      "pug": 82
+      "pug": 113
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 4674.5156,
-    "bluein-green": 28.904661,
-    "jamessspanggg": 30614.316
+    "jylee-git": 4621.1035,
+    "bluein-green": 28.559376,
+    "jamessspanggg": 32421.941
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
