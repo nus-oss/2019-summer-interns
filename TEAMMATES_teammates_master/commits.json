@@ -252,6 +252,20 @@
             "deletions": 40
           }
         ]
+      },
+      {
+        "insertions": 35,
+        "deletions": 5,
+        "date": "2019-08-02",
+        "commitResults": [
+          {
+            "hash": "3f4a98822d1c731c2ce5152f2d0658d5344d50cc",
+            "messageTitle": "[#9831] Instructor/Courses: Hide \"Add New Course\" form by default (#9833)",
+            "messageBody": "* Hide \"Add New Course\" form by default\r\n\r\nUse [hidden] instead of *ngIf because rerendering of the timezone options is slow\r\nShow the form if navigated from home page \"Add New Course\" button\r\nRemove \"Active Courses\" label to have a consistent design from the Sessions page\r\n\r\n* Update snapshots\r\n\r\n* Rename isAddNewCourse param and only set it if its not undefined\r\n\r\n* Update snapshot\r\n",
+            "insertions": 35,
+            "deletions": 5
+          }
+        ]
       }
     ],
     "Pengyuz": [
@@ -547,7 +561,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 1189,
+    "erjillsison": 1224,
     "Pengyuz": 723,
     "crizyli": 1595
   },
@@ -555,12 +569,12 @@
     "erjillsison": {
       "java": 443,
       "js": 0,
-      "scss": 30,
+      "scss": 36,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 98,
-      "ts": 618
+      "html": 114,
+      "ts": 631
     },
     "Pengyuz": {
       "java": 444,
@@ -584,9 +598,9 @@
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 4658.535,
-    "Pengyuz": 1624.4222,
-    "crizyli": 26167.842
+    "erjillsison": 4402.138,
+    "Pengyuz": 1530.646,
+    "crizyli": 24636.69
   },
   "authorDisplayNameMap": {
     "erjillsison": "Erjill",

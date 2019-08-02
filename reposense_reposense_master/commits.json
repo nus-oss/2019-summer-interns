@@ -189,6 +189,27 @@
             "deletions": 91
           }
         ]
+      },
+      {
+        "insertions": 268,
+        "deletions": 72,
+        "date": "2019-08-01",
+        "commitResults": [
+          {
+            "hash": "52f95c2b3445bea5dc169cf9c2feae7f4572e1e7",
+            "messageTitle": "[#598] Report: show error message summary (#743)",
+            "messageBody": "Repos that fail to be cloned or branched will be blended with the \r\nother successfully analyzed repos with a failure message.\r\n\r\nUsers may fail to differentiate between the repos that failed the \r\nanalysis and the ones that did not.\r\n\r\nLet\u0027s collate the list of repos that experienced issues during the \r\nanalysis and display them in a message box on top of the report \r\nview.",
+            "insertions": 264,
+            "deletions": 70
+          },
+          {
+            "hash": "1e6e866d3ed2151f1e2c0869b0a6a283bf8b72d9",
+            "messageTitle": "[#825] ReportGenerator: fix zip paths (#826)",
+            "messageBody": "Due to a change in the RepoConfiguration display name in a recent PR,\r\n#802, the ZIP utility now attempts to zip report folders using the new \r\ndisplay name. Hence, as the name of the report folder is now different \r\nfrom the display name, this results in none of the files being zipped\r\nand produce a zip file unusable to display the report.\r\n\r\nLet\u0027s fix this by directing the zip algorithm to look for the\r\n`OutputFolderName` instead.",
+            "insertions": 4,
+            "deletions": 2
+          }
+        ]
       }
     ],
     "bluein-green": [
@@ -245,6 +266,27 @@
             "messageBody": "The chart title uses underscores to separate `org`, `repo` and\r\n`branch`. Furthermore, `displayName` is used for both the chart title\r\nand repo analysis output folder name.\r\n\r\n`org`, `repo` and `branch` might have underscores in them, making it\r\ndifficult to discern each term. Using a single parameter displayName\r\nto represent both the output folder name and the chart title would\r\nconstrain us to not use /. This has shown that the output folder name\r\nand the chart title have little compatibility, and difficulty in coming\r\nup with a coherent format.\r\n\r\nLet\u0027s use a separate variable, `outputFolderName`, for the out folder\r\nname so that a different format, `org/repo[branch]`, can be used for\r\nthe chart title.",
             "insertions": 25,
             "deletions": 12
+          }
+        ]
+      },
+      {
+        "insertions": 28,
+        "deletions": 4,
+        "date": "2019-08-01",
+        "commitResults": [
+          {
+            "hash": "9c017d0238bee39bab3d466f7d5f0ded01c68921",
+            "messageTitle": "[#767] ChartView: clear selected zoom region on settings change (#775)",
+            "messageBody": "The zoom region on the ramp chart is not cleared when settings in the\r\ntoolbar are changed. \r\n\r\nThis could be misleading for users as the commits currently in the \r\nzoom region on the ramp chart do not correspond to those in the\r\ncommits panel.\r\n\r\nLet\u0027s clear the ramp chart\u0027s zoom region by calling \r\n`deactivateAllOverlays()` when the settings are changed.",
+            "insertions": 3,
+            "deletions": 4
+          },
+          {
+            "hash": "208f5b560e9d95df434360123a5e7757bc35bcbf",
+            "messageTitle": "[#319] StandaloneConfig: add default value unit test (#843)",
+            "messageBody": "We do not have a repo that contains a standalone config with only the\r\nmandatory fields filled in.\r\n\r\nHaving such a repo and a unit test is needed to check whether the\r\nresulting `RepoConfiguration` based on the minimal standalone config\r\nhas its fields assigned default values.\r\n\r\nLet\u0027s add a repo containing a minimal standalone config, and the\r\ncorresponding test for default values.",
+            "insertions": 25,
+            "deletions": 0
           }
         ]
       }
@@ -676,53 +718,67 @@
             "deletions": 10
           }
         ]
+      },
+      {
+        "insertions": 53,
+        "deletions": 30,
+        "date": "2019-08-01",
+        "commitResults": [
+          {
+            "hash": "7ff4d5de6c6a3f3103d526cfeaeff8c38f137ec1",
+            "messageTitle": "Zoom Tab: revamp header ui (#848)",
+            "messageBody": "The zoom tab header remains the same irregardless of the grouping\r\noption (authors, repos or none). The period of the zoom tab is also not\r\nshown in the zoom tab.\r\n\r\nThis creates a problem when the merge group option is used; a merged\r\ngroup may consists of more than one chart, and the title used in the\r\nheader might not apply to all the ramps within the merged chart.\r\n\r\nLet\u0027s modify the UI of the zoom tab title to use a new sequence:\r\n`group title` -\u003e `chart title` -\u003e `period of zoom tab` -\u003e\r\n`granularity`, and hide the chart title when the merge group option is\r\nchecked.\r\n\r\nLet\u0027s also modify the authorship\u0027s title format to match with the zoom\r\ntab\u0027s title format as well.",
+            "insertions": 53,
+            "deletions": 30
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 1077,
-    "bluein-green": 59,
-    "jamessspanggg": 1195
+    "jylee-git": 1314,
+    "bluein-green": 85,
+    "jamessspanggg": 1209
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 893,
-      "js": 30,
-      "scss": 0,
+      "java": 1036,
+      "js": 73,
+      "scss": 42,
       "json": 111,
       "md": 33,
       "py": 0,
       "jade": 0,
-      "gradle": 4,
-      "pug": 6
+      "gradle": 5,
+      "pug": 14
     },
     "bluein-green": {
-      "java": 43,
-      "js": 4,
-      "scss": 7,
+      "java": 67,
+      "js": 5,
+      "scss": 6,
       "json": 0,
       "md": 1,
       "py": 0,
       "jade": 0,
       "gradle": 1,
-      "pug": 3
+      "pug": 5
     },
     "jamessspanggg": {
-      "java": 182,
-      "js": 350,
-      "scss": 477,
+      "java": 173,
+      "js": 348,
+      "scss": 488,
       "json": 34,
       "md": 38,
       "py": 0,
       "jade": 0,
-      "gradle": 1,
-      "pug": 113
+      "gradle": 0,
+      "pug": 128
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 4621.1035,
-    "bluein-green": 28.559376,
-    "jamessspanggg": 32421.941
+    "jylee-git": 5813.327,
+    "bluein-green": 39.830208,
+    "jamessspanggg": 32048.592
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

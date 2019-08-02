@@ -392,22 +392,36 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 546,
+        "deletions": 343,
+        "date": "2019-08-02",
+        "commitResults": [
+          {
+            "hash": "9a6b05eb0a45b0ef093af5d045996fffaeafc671",
+            "messageTitle": "#1992 ft support multiple versions (#1993)",
+            "messageBody": "* change line endings\r\n\r\n* Add method to select version for FTs\r\n\r\n* remove change\r\n\r\n* add line back\r\n\r\n* Fix 2010 fail to highlight\r\n\r\nShape needs to be selected before text can be selected\r\n\r\n* Add Format Shape to whitelist\r\n\r\n2010 opens additional window which is not whitelisted\r\n\r\n* Decrease zoomtoarea threshold\r\n",
+            "insertions": 546,
+            "deletions": 343
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "yuhongherald": 4503
+    "yuhongherald": 4705
   },
   "authorFileFormatContributionMap": {
     "yuhongherald": {
       "html": 0,
       "js": 0,
       "css": 0,
-      "cs": 4503
+      "cs": 4705
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 334772.75
+    "yuhongherald": 333150.44
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"
