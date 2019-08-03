@@ -394,8 +394,8 @@
         ]
       },
       {
-        "insertions": 546,
-        "deletions": 343,
+        "insertions": 548,
+        "deletions": 345,
         "date": "2019-08-02",
         "commitResults": [
           {
@@ -404,6 +404,13 @@
             "messageBody": "* change line endings\r\n\r\n* Add method to select version for FTs\r\n\r\n* remove change\r\n\r\n* add line back\r\n\r\n* Fix 2010 fail to highlight\r\n\r\nShape needs to be selected before text can be selected\r\n\r\n* Add Format Shape to whitelist\r\n\r\n2010 opens additional window which is not whitelisted\r\n\r\n* Decrease zoomtoarea threshold\r\n",
             "insertions": 546,
             "deletions": 343
+          },
+          {
+            "hash": "a09f703cf5fecfff3bb18ff760356c859ea456ea",
+            "messageTitle": "dev-release-6.0.0.1 (#1995)",
+            "messageBody": "* change line endings\r\n\r\n* change line endings\r\n\r\n* update dev release\r\n",
+            "insertions": 2,
+            "deletions": 2
           }
         ]
       }
@@ -421,7 +428,7 @@
     }
   },
   "authorContributionVariance": {
-    "yuhongherald": 333150.44
+    "yuhongherald": 333219.62
   },
   "authorDisplayNameMap": {
     "yuhongherald": "Herald"

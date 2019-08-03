@@ -254,8 +254,8 @@
         ]
       },
       {
-        "insertions": 35,
-        "deletions": 5,
+        "insertions": 356,
+        "deletions": 357,
         "date": "2019-08-02",
         "commitResults": [
           {
@@ -264,6 +264,27 @@
             "messageBody": "* Hide \"Add New Course\" form by default\r\n\r\nUse [hidden] instead of *ngIf because rerendering of the timezone options is slow\r\nShow the form if navigated from home page \"Add New Course\" button\r\nRemove \"Active Courses\" label to have a consistent design from the Sessions page\r\n\r\n* Update snapshots\r\n\r\n* Rename isAddNewCourse param and only set it if its not undefined\r\n\r\n* Update snapshot\r\n",
             "insertions": 35,
             "deletions": 5
+          },
+          {
+            "hash": "e3266466f4bf2359bd8729f57994ebdf92895a4b",
+            "messageTitle": "[#9793] Instructor/Courses/Details: Status in student list showing as \"Unknown\" (#9838)",
+            "messageBody": "* Update snapshots\r\n\r\n\r\nUpdate snapshots\r\n\r\n* Replace old endpoint to new endpoints\r\n\r\nUpdate loadInstructor\r\n\r\nRemove unused CourseInfo\r\n\r\nAdd role to InstructorData\r\n\r\n\r\nGet stats from student data\r\n\r\n\r\nHide page components before data is loaded\r\n\r\nUpdate comment\r\n\r\n\r\nUpdate test\r\n\r\n* Update test\r\n\r\n* Change counting of teams to use Set\r\n\r\n* Hide role from students\r\n\r\n* Change course and stats of CourseDetailsBundle as not optional\r\n\r\n* Remove ngIfs as data cannot be null\r\n\r\n* Update snapshots\r\n\r\n* Remove old interfaces\r\n\r\n* Update test case\r\n\r\n* Update html variables\r\n\r\n* Remove old endpoint\r\n",
+            "insertions": 158,
+            "deletions": 322
+          },
+          {
+            "hash": "f069e233c63c3617d96d828cc34b89a647eb5a49",
+            "messageTitle": "[#9730] Student Enroll: Error when enrolling students with empty Section Name (#9746)",
+            "messageBody": "* Update Requests to replace empty section name with default section name\r\n\r\n* Update tests\r\n\r\n* Revert line break change\r\n\r\n* Revert line break change\r\n",
+            "insertions": 69,
+            "deletions": 2
+          },
+          {
+            "hash": "5eb285f342117f56e06c405be44a955e126151e8",
+            "messageTitle": "[#9752] Instructor: Course/Student/Edit: Able to exceed section limit by editing section name of an existing student (#9839)",
+            "messageBody": "* Fix parameters passed to validate methods to be the updated value\r\n\r\n* Update test\r\n\r\n* Update test case\r\n\r\n* Remove unused validateTeams method\r\n\r\n* Update UpdateStudentActionTest.java\r\n",
+            "insertions": 94,
+            "deletions": 28
           }
         ]
       }
@@ -561,20 +582,20 @@
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 1224,
+    "erjillsison": 1534,
     "Pengyuz": 723,
     "crizyli": 1595
   },
   "authorFileFormatContributionMap": {
     "erjillsison": {
-      "java": 443,
+      "java": 609,
       "js": 0,
       "scss": 36,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 114,
-      "ts": 631
+      "html": 132,
+      "ts": 757
     },
     "Pengyuz": {
       "java": 444,
@@ -598,7 +619,7 @@
     }
   },
   "authorContributionVariance": {
-    "erjillsison": 4402.138,
+    "erjillsison": 10159.971,
     "Pengyuz": 1530.646,
     "crizyli": 24636.69
   },

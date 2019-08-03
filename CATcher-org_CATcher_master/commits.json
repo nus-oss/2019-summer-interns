@@ -1752,12 +1752,26 @@
             "deletions": 117
           }
         ]
+      },
+      {
+        "insertions": 634,
+        "deletions": 102,
+        "date": "2019-08-02",
+        "commitResults": [
+          {
+            "hash": "326111a2f560e0adcb48b389287445b6676a12d3",
+            "messageTitle": "Tester Response and Moderation Phase changes (#151)",
+            "messageBody": "* add issue comment to issue model\r\n\r\n* change testerresponse to read from comment\r\n\r\n* add guard condition\r\n\r\n* fix bug where team response is read again\r\n\r\n* submit testerresponse also updates issue comment\r\n\r\n* add spinner while comment is loading\r\n\r\n* filter to check for team response\r\n\r\n* flatMap for createIssueModel\r\n\r\n* revert changes to table filter\r\n\r\n* change item title to contain question mark\r\n\r\n* Asynchronous Comment Loading Established\r\n\r\n* Fix IssueComment Undefined Error\r\n\r\n* fix bug where comment is not loaded properly\r\n\r\n* add filter to table\r\n\r\n* Parsing Label Changes from Team Response\r\n\r\n* Label Parsing from Issue Comment\r\n\r\n* Fix parsing of tester response\r\n\r\nNew Regex correctly Parses tester responses\r\n\r\n* [WIP] Issue 144 Moderation phase (#5)\r\n\r\n* add dispute component to moderation phase\r\n\r\n* function to create new comment for tutor response\r\n\r\n* fix bug student settutorresponse\r\n\r\n* set pending for disputes\r\n\r\n* todolist for disputes\r\n\r\n* code cleaning\r\n\r\n* code cleaning\r\n\r\n* Further TesterResp Parsing Regex Fixes\r\n\r\n* LabelExtraction Regex Flexibility added\r\n\r\n* Further labelExtraction Constraints \u0026 Flexibility\r\n\r\n* parseTesterResp. regex flexibility added\r\n\r\n* Further Regex Flexibility Changes\r\n\r\nChanges done to parseTutorResponseInComment and parseIssueDisputes\r\n\r\n* code cleaning and comment\r\n\r\n* revert concat string\r\n\r\n* Case Insensitivity Added to Regex\r\n\r\n* Regex Pattern Spaces Set to Any Number\r\n\r\n* add unsure checkbox\r\n\r\n* fix bug where description format for bugreporting and testerresponse are different\r\n\r\n* update comment for model\r\n\r\n* clean up issue comment\r\n\r\n* revert previous commit\r\n\r\n* clean up issue comment code and add support for filtering multiple comment\r\n\r\n* documentation for issue comment\r\n\r\n* change version number in package.json\r\n",
+            "insertions": 634,
+            "deletions": 102
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2278,
-    "KevinCJH": 1119
+    "ptvrajsk": 2252,
+    "KevinCJH": 1711
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1767,8 +1781,8 @@
       "md": 4,
       "py": 0,
       "tag": 0,
-      "html": 302,
-      "ts": 1972
+      "html": 300,
+      "ts": 1948
     },
     "KevinCJH": {
       "java": 0,
@@ -1777,13 +1791,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 207,
-      "ts": 912
+      "html": 280,
+      "ts": 1431
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 26057.027,
-    "KevinCJH": 16206.875
+    "ptvrajsk": 25230.73,
+    "KevinCJH": 21220.076
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",

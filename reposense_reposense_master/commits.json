@@ -210,6 +210,34 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 96,
+        "deletions": 4,
+        "date": "2019-08-02",
+        "commitResults": [
+          {
+            "hash": "997c68367efead68f1de81a6202035ce86fc338f",
+            "messageTitle": "[#750] Zoom Tab: display commit message body (#755)",
+            "messageBody": "In the zoom tab, only the commit message titles were listed.\r\n\r\nThe commit message title alone may be too abstract for users to \r\nunderstand the rationale of large implementations.\r\n\r\nLet\u0027s display the commit message body below each commit message title \r\nso that users get more clarity to the purpose of each commits.\r\n\r\nThis is a front-end implementation of displaying commit message body \r\nafter the merged PR #751 that handles the storing of commit message\r\nbody in the commit report files.",
+            "insertions": 96,
+            "deletions": 4
+          }
+        ]
+      },
+      {
+        "insertions": 35,
+        "deletions": 21,
+        "date": "2019-08-03",
+        "commitResults": [
+          {
+            "hash": "bc562724f208acab57e336383d3011ecc350ceb0",
+            "messageTitle": "[#808, #815] Docs: update documentation (#822)",
+            "messageBody": "With the recently merged pull requests, UI and behavioral changes in \r\nthe report view are not reflected in the documentation.\r\n\r\nUsers who want to view an author\u0027s codes or expand the codes that \r\nwere untouched by an author, may not understand how to do so as the \r\nuser guide relating to these features is outdated.\r\n\r\nLet\u0027s update the user guide to reflect the changes made to the summary \r\nand code panel. Let\u0027s also take this chance to update components in  \r\nthe developer guide that are outdated and can cause confusion with the \r\nnew developers.",
+            "insertions": 35,
+            "deletions": 21
+          }
+        ]
       }
     ],
     "bluein-green": [
@@ -287,6 +315,34 @@
             "messageBody": "We do not have a repo that contains a standalone config with only the\r\nmandatory fields filled in.\r\n\r\nHaving such a repo and a unit test is needed to check whether the\r\nresulting `RepoConfiguration` based on the minimal standalone config\r\nhas its fields assigned default values.\r\n\r\nLet\u0027s add a repo containing a minimal standalone config, and the\r\ncorresponding test for default values.",
             "insertions": 25,
             "deletions": 0
+          }
+        ]
+      },
+      {
+        "insertions": 31,
+        "deletions": 1,
+        "date": "2019-08-02",
+        "commitResults": [
+          {
+            "hash": "e9c4bdcda2880bed4bda06e6002f74040de3c567",
+            "messageTitle": "[#703] Log: show analysis progress (#837)",
+            "messageBody": "The progress in analyzing the repos is not shown.\r\n\r\nUsers who are waiting for the analysis to complete may want\r\nto know how many repos RepoSense has analyzed so far.\r\n\r\nLet\u0027s show the queue number of the repo that is currently\r\nbeing analyzed. Repos that failed to clone or checkout will\r\nnot cause the queue number to increase.",
+            "insertions": 31,
+            "deletions": 1
+          }
+        ]
+      },
+      {
+        "insertions": 63,
+        "deletions": 1,
+        "date": "2019-08-03",
+        "commitResults": [
+          {
+            "hash": "6003050a7f2df8a8427e66e99ea9dfe7cb835979",
+            "messageTitle": "[#817] Cypress: add code view loading time benchmark test (#824)",
+            "messageBody": "We do not have a benchmark for the time taken to load code view. \r\n\r\nThis makes it difficult to ascertain whether new code added will slow\r\ndown its opening, which will result in a less positive user experience.\r\n\r\nLet\u0027s add a benchmark test for the opening of the code view. The\r\nthreshold for the load time is 8s, with the buffer time being\r\nthe larger of 3s or 10% of the threshold. If out of 5 trials, the\r\nload times of all trials exceed the maximum time, the test is deemed to\r\nhave failed.",
+            "insertions": 63,
+            "deletions": 1
           }
         ]
       }
@@ -736,27 +792,27 @@
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 1314,
-    "bluein-green": 85,
-    "jamessspanggg": 1209
+    "jylee-git": 1433,
+    "bluein-green": 179,
+    "jamessspanggg": 1211
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
-      "java": 1036,
-      "js": 73,
-      "scss": 42,
+      "java": 1035,
+      "js": 109,
+      "scss": 72,
       "json": 111,
-      "md": 33,
+      "md": 72,
       "py": 0,
       "jade": 0,
       "gradle": 5,
-      "pug": 14
+      "pug": 29
     },
     "bluein-green": {
-      "java": 67,
-      "js": 5,
+      "java": 98,
+      "js": 66,
       "scss": 6,
-      "json": 0,
+      "json": 2,
       "md": 1,
       "py": 0,
       "jade": 0,
@@ -766,9 +822,9 @@
     "jamessspanggg": {
       "java": 173,
       "js": 348,
-      "scss": 488,
+      "scss": 491,
       "json": 34,
-      "md": 38,
+      "md": 37,
       "py": 0,
       "jade": 0,
       "gradle": 0,
@@ -776,9 +832,9 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 5813.327,
-    "bluein-green": 39.830208,
-    "jamessspanggg": 32048.592
+    "jylee-git": 5753.828,
+    "bluein-green": 95.872536,
+    "jamessspanggg": 31307.85
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
