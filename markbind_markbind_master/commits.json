@@ -161,6 +161,20 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 319,
+        "deletions": 43,
+        "date": "2019-08-06",
+        "commitResults": [
+          {
+            "hash": "f3e7879a441d571e9a0a1dd999023d0709a40e56",
+            "messageTitle": "Add importing variables from other files (#891)",
+            "messageBody": "Let\u0027s introduce a new syntax to import variables from other files:\r\n\r\n\u003cimport\r\n  varname1 varname2 ...\r\n  from\u003d\u0027filename.md\u0027\r\n  as\u003d\u0027namespace\u0027\r\n/\u003e\r\n\r\nIf varname1, varname2... attributes are specified,\r\nthe respective variables from filename.md can be used as variables\r\nin the current page normally: {{varname1}} {{varname2}}.\r\n\r\nIf attribute \u0027as\u0027 is specified, ALL page variables from filename.md\r\ncan be accessed through the namespace specified in the attribute:\r\n{{namespace.varname3}}, {{namespace.varname4}}\r\n\r\nIn extractPageVariables, we store all non-imported page variables into\r\na global lookup table. Also we detect what variables are imported ones,\r\nand let nunjucks replace them with themselves first.\r\nIn the above example,\r\n{{namespace.varname1}} would be replaced with {{namespace.varname1}}\r\nin the first nunjucks call in includeFile after extractPageVariables.\r\n\r\nAfter this, and before _preprocess, a new preprocessing step\r\nis introduced that extracts the imported variables,\r\nafter which another nunjucks call is made so that the imported variables\r\ncan be rendered correctly.",
+            "insertions": 319,
+            "deletions": 43
+          }
+        ]
       }
     ],
     "alyip98": [
@@ -363,18 +377,18 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 954,
+    "openorclose": 1271,
     "alyip98": 660
   },
   "authorFileFormatContributionMap": {
     "openorclose": {
       "java": 0,
-      "js": 442,
+      "js": 597,
       "css": 400,
-      "json": 1,
-      "md": 21,
+      "json": 31,
+      "md": 87,
       "mbd": 0,
-      "mbdf": 90,
+      "mbdf": 156,
       "njk": 0,
       "py": 0,
       "yml": 0
@@ -393,8 +407,8 @@
     }
   },
   "authorContributionVariance": {
-    "openorclose": 5727.5186,
-    "alyip98": 2777.3691
+    "openorclose": 6098.8516,
+    "alyip98": 2289.426
   },
   "authorDisplayNameMap": {
     "openorclose": "Daryl",
