@@ -788,13 +788,27 @@
             "deletions": 30
           }
         ]
+      },
+      {
+        "insertions": 17,
+        "deletions": 4,
+        "date": "2019-08-09",
+        "commitResults": [
+          {
+            "hash": "6dc9ee3595b1c98c28b32339715fe8b5295cd953",
+            "messageTitle": "[#851] Fix url directing to wrong repository when merge group (#854)",
+            "messageBody": "When the merge group option is checked, charts are grouped by\r\nauthors and granularity is set to \u0027commit\u0027, the url of some commits \r\nmay point to the wrong repository.\r\n\r\nThis is due to our current structure of the merged groups, where each\r\nmerged author stores only one repository name even though they may \r\nhave contributed to more than one repository. This causes all url \r\nof commits to point to the same repository.\r\n\r\nLet\u0027s bind the repository name to each commit when merge group \r\noption is checked to ensure that all url of commits point to the \r\ncorrect repository.",
+            "insertions": 17,
+            "deletions": 4
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 1433,
     "bluein-green": 179,
-    "jamessspanggg": 1211
+    "jamessspanggg": 1227
   },
   "authorFileFormatContributionMap": {
     "jylee-git": {
@@ -821,7 +835,7 @@
     },
     "jamessspanggg": {
       "java": 173,
-      "js": 348,
+      "js": 364,
       "scss": 491,
       "json": 34,
       "md": 37,
@@ -832,9 +846,9 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 5753.828,
-    "bluein-green": 95.872536,
-    "jamessspanggg": 31307.85
+    "jylee-git": 5405.756,
+    "bluein-green": 89.84293,
+    "jamessspanggg": 29266.627
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
