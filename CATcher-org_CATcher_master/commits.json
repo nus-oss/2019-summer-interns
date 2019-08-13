@@ -1766,12 +1766,26 @@
             "deletions": 102
           }
         ]
+      },
+      {
+        "insertions": 29,
+        "deletions": 42,
+        "date": "2019-08-12",
+        "commitResults": [
+          {
+            "hash": "e9609fc9b8dc86b991d8fdb52747a34410f73168",
+            "messageTitle": "Fix bug where issue comment is not updated properly (#160)",
+            "messageBody": "* fix bug where issue comment is not updated\r\n\r\n* fix bug with sync\r\n\r\n* add local store support for issuecomment\r\n\r\n* ismodified check for issue comment\r\n\r\n* remove unused boolean\r\n\r\n* local store will store all comments of an issue\r\n\r\n* refactor isModified to isIssueReloaded\r\n",
+            "insertions": 29,
+            "deletions": 42
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2252,
-    "KevinCJH": 1711
+    "ptvrajsk": 2251,
+    "KevinCJH": 1700
   },
   "authorFileFormatContributionMap": {
     "ptvrajsk": {
@@ -1782,7 +1796,7 @@
       "py": 0,
       "tag": 0,
       "html": 300,
-      "ts": 1948
+      "ts": 1947
     },
     "KevinCJH": {
       "java": 0,
@@ -1791,13 +1805,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 280,
-      "ts": 1431
+      "html": 274,
+      "ts": 1426
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 25230.73,
-    "KevinCJH": 21220.076
+    "ptvrajsk": 22812.25,
+    "KevinCJH": 19315.281
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
