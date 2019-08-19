@@ -1,6 +1,7 @@
 [
   {
     "path": "README.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -1032,6 +1033,7 @@
   },
   {
     "path": "main.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -2084,6 +2086,7 @@
   },
   {
     "path": "src/app/app-routing.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -2247,6 +2250,7 @@
   },
   {
     "path": "src/app/app.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -2655,6 +2659,7 @@
   },
   {
     "path": "src/app/auth/auth.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -2923,6 +2928,7 @@
   },
   {
     "path": "src/app/auth/auth.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -3871,6 +3877,7 @@
   },
   {
     "path": "src/app/auth/auth.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -4055,6 +4062,7 @@
   },
   {
     "path": "src/app/auth/profiles/json-parse-error-dialog/json-parse-error-dialog.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -4133,6 +4141,7 @@
   },
   {
     "path": "src/app/auth/profiles/json-parse-error-dialog/json-parse-error-dialog.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -4316,6 +4325,7 @@
   },
   {
     "path": "src/app/auth/profiles/json-parse-error-dialog/json-parse-error-dialog.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -4527,6 +4537,7 @@
   },
   {
     "path": "src/app/auth/profiles/profiles.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -4626,6 +4637,7 @@
   },
   {
     "path": "src/app/auth/profiles/profiles.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -4810,6 +4822,7 @@
   },
   {
     "path": "src/app/auth/profiles/profiles.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -5953,6 +5966,7 @@
   },
   {
     "path": "src/app/core/guards/can-deactivate-issue-guard.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -6235,6 +6249,7 @@
   },
   {
     "path": "src/app/core/guards/user-confirmation/user-confirmation.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -6306,6 +6321,7 @@
   },
   {
     "path": "src/app/core/guards/user-confirmation/user-confirmation.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -6489,6 +6505,7 @@
   },
   {
     "path": "src/app/core/guards/user-confirmation/user-confirmation.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -6714,6 +6731,7 @@
   },
   {
     "path": "src/app/core/models/issue-dispute.model.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -6988,6 +7006,7 @@
   },
   {
     "path": "src/app/core/models/issue.model.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -7838,6 +7857,7 @@
   },
   {
     "path": "src/app/core/models/label.model.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -8043,6 +8063,7 @@
   },
   {
     "path": "src/app/core/models/tester-response.model.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -8234,6 +8255,7 @@
   },
   {
     "path": "src/app/core/services/auth.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -8797,6 +8819,7 @@
   },
   {
     "path": "src/app/core/services/data.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -10486,6 +10509,7 @@
   },
   {
     "path": "src/app/core/services/github.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -12232,6 +12256,7 @@
   },
   {
     "path": "src/app/core/services/githubevent.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -12787,6 +12812,7 @@
   },
   {
     "path": "src/app/core/services/issue-comment.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -13594,6 +13620,7 @@
   },
   {
     "path": "src/app/core/services/issue.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -18098,6 +18125,7 @@
   },
   {
     "path": "src/app/core/services/label.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -19906,6 +19934,7 @@
   },
   {
     "path": "src/app/core/services/permission.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -21162,6 +21191,7 @@
   },
   {
     "path": "src/app/core/services/phase.service.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -22124,6 +22154,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/issue/issue.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -22154,6 +22185,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/issue/issue.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -22408,6 +22440,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/new-issue/new-issue.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -22656,6 +22689,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/new-issue/new-issue.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -23114,6 +23148,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/phase-bug-reporting-routing.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -23262,6 +23297,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/phase-bug-reporting.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -23433,6 +23469,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/phase-bug-reporting.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -23638,6 +23675,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/phase-bug-reporting.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -23906,6 +23944,7 @@
   },
   {
     "path": "src/app/phase-bug-reporting/phase-bug-reporting.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -24133,6 +24172,7 @@
   },
   {
     "path": "src/app/phase-moderation/issue/issue.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -24163,6 +24203,7 @@
   },
   {
     "path": "src/app/phase-moderation/issue/issue.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -24494,6 +24535,7 @@
   },
   {
     "path": "src/app/phase-moderation/phase-moderation-routing.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -24685,6 +24727,7 @@
   },
   {
     "path": "src/app/phase-moderation/phase-moderation.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -24897,6 +24940,7 @@
   },
   {
     "path": "src/app/phase-moderation/phase-moderation.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -25074,6 +25118,7 @@
   },
   {
     "path": "src/app/phase-moderation/phase-moderation.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -25539,6 +25584,7 @@
   },
   {
     "path": "src/app/phase-moderation/phase-moderation.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -25736,6 +25782,7 @@
   },
   {
     "path": "src/app/phase-team-response/issue/issue.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -25766,6 +25813,7 @@
   },
   {
     "path": "src/app/phase-team-response/issue/issue.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -26083,6 +26131,7 @@
   },
   {
     "path": "src/app/phase-team-response/issues-faulty/issues-faulty.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -26197,6 +26246,7 @@
   },
   {
     "path": "src/app/phase-team-response/issues-faulty/issues-faulty.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -26725,6 +26775,7 @@
   },
   {
     "path": "src/app/phase-team-response/issues-pending/issues-pending.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -26839,6 +26890,7 @@
   },
   {
     "path": "src/app/phase-team-response/issues-pending/issues-pending.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -27331,6 +27383,7 @@
   },
   {
     "path": "src/app/phase-team-response/issues-responded/issues-responded.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -27445,6 +27498,7 @@
   },
   {
     "path": "src/app/phase-team-response/issues-responded/issues-responded.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -27944,6 +27998,7 @@
   },
   {
     "path": "src/app/phase-team-response/phase-team-response-routing.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -28079,6 +28134,7 @@
   },
   {
     "path": "src/app/phase-team-response/phase-team-response.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -28256,6 +28312,7 @@
   },
   {
     "path": "src/app/phase-team-response/phase-team-response.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -28525,6 +28582,7 @@
   },
   {
     "path": "src/app/phase-team-response/phase-team-response.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -28764,6 +28822,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue-pending/issue-pending.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -28884,6 +28943,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue-pending/issue-pending.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -29068,6 +29128,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue-pending/issue-pending.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -29357,6 +29418,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue-responded/issue-responded.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -29477,6 +29539,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue-responded/issue-responded.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -29660,6 +29723,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue-responded/issue-responded.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -29935,6 +29999,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue/issue.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -29964,6 +30029,7 @@
   },
   {
     "path": "src/app/phase-tester-response/issue/issue.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -30259,6 +30325,7 @@
   },
   {
     "path": "src/app/phase-tester-response/phase-tester-response-routing.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -30393,6 +30460,7 @@
   },
   {
     "path": "src/app/phase-tester-response/phase-tester-response.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -30429,6 +30497,7 @@
   },
   {
     "path": "src/app/phase-tester-response/phase-tester-response.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -30605,6 +30674,7 @@
   },
   {
     "path": "src/app/phase-tester-response/phase-tester-response.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -30718,6 +30788,7 @@
   },
   {
     "path": "src/app/phase-tester-response/phase-tester-response.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -30936,6 +31007,7 @@
   },
   {
     "path": "src/app/shared/comment-editor/comment-editor.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -31190,6 +31262,7 @@
   },
   {
     "path": "src/app/shared/comment-editor/comment-editor.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -32620,6 +32693,7 @@
   },
   {
     "path": "src/app/shared/issue-dispute/issue-dispute.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -32957,6 +33031,7 @@
   },
   {
     "path": "src/app/shared/issue-dispute/issue-dispute.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -34036,6 +34111,7 @@
   },
   {
     "path": "src/app/shared/issue-tables/IssuesDataTable.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -35228,6 +35304,7 @@
   },
   {
     "path": "src/app/shared/issue-tables/issue-tables.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -36259,6 +36336,7 @@
   },
   {
     "path": "src/app/shared/issue-tables/issue-tables.component.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -36443,6 +36521,7 @@
   },
   {
     "path": "src/app/shared/issue-tables/issue-tables.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -37369,6 +37448,7 @@
   },
   {
     "path": "src/app/shared/issue-tables/issue-tables.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -37517,6 +37597,7 @@
   },
   {
     "path": "src/app/shared/issue/assignee/assignee.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -37659,6 +37740,7 @@
   },
   {
     "path": "src/app/shared/issue/description/description.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -37802,6 +37884,7 @@
   },
   {
     "path": "src/app/shared/issue/duplicateOf/duplicate-of.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -38008,6 +38091,7 @@
   },
   {
     "path": "src/app/shared/issue/duplicateOf/duplicate-of.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -38948,6 +39032,7 @@
   },
   {
     "path": "src/app/shared/issue/duplicatedIssues/duplicated-issues.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -39034,6 +39119,7 @@
   },
   {
     "path": "src/app/shared/issue/issue-components.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -39365,6 +39451,7 @@
   },
   {
     "path": "src/app/shared/issue/label/label.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -39472,6 +39559,7 @@
   },
   {
     "path": "src/app/shared/issue/label/label.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -39845,6 +39933,7 @@
   },
   {
     "path": "src/app/shared/issue/response/response.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -39988,6 +40077,7 @@
   },
   {
     "path": "src/app/shared/issue/response/response.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -40733,6 +40823,7 @@
   },
   {
     "path": "src/app/shared/issue/title/title.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -40896,6 +40987,7 @@
   },
   {
     "path": "src/app/shared/issue/todo-list/todo-list.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -41521,6 +41613,7 @@
   },
   {
     "path": "src/app/shared/issue/unsure-checkbox/unsure-checkbox.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -41550,6 +41643,7 @@
   },
   {
     "path": "src/app/shared/issue/unsure-checkbox/unsure-checkbox.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -41838,6 +41932,7 @@
   },
   {
     "path": "src/app/shared/label-dropdown/label-dropdown.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -41965,6 +42060,7 @@
   },
   {
     "path": "src/app/shared/label-dropdown/label-dropdown.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -42226,6 +42322,7 @@
   },
   {
     "path": "src/app/shared/label-dropdown/label-dropdown.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -42360,6 +42457,7 @@
   },
   {
     "path": "src/app/shared/layout/header.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -42671,6 +42769,7 @@
   },
   {
     "path": "src/app/shared/layout/header.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -43675,6 +43774,7 @@
   },
   {
     "path": "src/app/shared/new-team-respond/new-team-response.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -44112,6 +44212,7 @@
   },
   {
     "path": "src/app/shared/new-team-respond/new-team-response.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -45115,6 +45216,7 @@
   },
   {
     "path": "src/app/shared/new-tutor-response/new-tutor-response.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -45621,6 +45723,7 @@
   },
   {
     "path": "src/app/shared/new-tutor-response/new-tutor-response.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -46736,6 +46839,7 @@
   },
   {
     "path": "src/app/shared/tester-response/tester-response.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -47067,6 +47171,7 @@
   },
   {
     "path": "src/app/shared/tester-response/tester-response.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -48021,6 +48126,7 @@
   },
   {
     "path": "src/app/shared/view-issue/view-issue.component.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -48835,6 +48941,7 @@
   },
   {
     "path": "src/app/shared/view-issue/view-issue.component.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -49656,6 +49763,7 @@
   },
   {
     "path": "src/app/shared/view-issue/view-issue.module.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -49903,6 +50011,7 @@
   },
   {
     "path": "src/index.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,
@@ -50031,6 +50140,7 @@
   },
   {
     "path": "tests/constants/label.constants.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,
@@ -50516,6 +50626,7 @@
   },
   {
     "path": "tests/services/label.service.spec.ts",
+    "fileType": "ts",
     "lines": [
       {
         "lineNumber": 1,

@@ -1,6 +1,7 @@
 [
   {
     "path": "docs/DevOps.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,
@@ -346,6 +347,7 @@
   },
   {
     "path": "docs/DeveloperGuide.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,
@@ -3330,6 +3332,7 @@
   },
   {
     "path": "docs/Documentation.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,
@@ -4200,6 +4203,7 @@
   },
   {
     "path": "docs/SettingUp.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,
@@ -4811,6 +4815,7 @@
   },
   {
     "path": "docs/Testing.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,
@@ -5219,6 +5224,7 @@
   },
   {
     "path": "docs/UsingPlantUml.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,

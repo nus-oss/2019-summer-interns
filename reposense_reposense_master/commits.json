@@ -238,6 +238,20 @@
             "deletions": 21
           }
         ]
+      },
+      {
+        "insertions": 831,
+        "deletions": 320,
+        "date": "2019-08-18",
+        "commitResults": [
+          {
+            "hash": "ada4e3e372d1e51fe380e952913f2468cd2355e4",
+            "messageTitle": "[#520] Group: allow customization of file categories (#787)",
+            "messageBody": "\"Group\" is a new type of classification introduced in this PR to \r\nclassify files/directories that match the given globs into different \r\ncategories. This is similar to how we use the file formats to perform \r\nbreakdown in the ChartView as well as search and filter in CodeView.\r\n\r\nThis Group functionality provides the ability to customize each \r\ncategory, giving users more control over the information reflected in \r\nthe report. To utilize this feature, users simply have to specify the \r\ncategories and the corresponding globs for the classification. \r\nE.g.: the user can categorize the entire \"src/\" folder as code, which \r\nis especially useful when the codebase consists of more than 1 file \r\nformat.\r\n\r\nLet\u0027s allow users to specify their own custom groups for files in a \r\nrepository, and view a breakdown of contribution by these groups in \r\nthe report.\r\n\r\nThe user can specify a config file named \"groups-config.csv\", which \r\ncontains the repository\u0027s location, group names and globs to include \r\nfor the group. \r\n\r\nIf no group is assigned to a file, it is assigned the default \r\ngroup: `other`.\r\n\r\nIf groups are specified by the user, the Code View and the Contribution\r\nbar will show a breakdown by groups for the checkboxes. Else, breakdown\r\nby file formats are shown instead.\r\n\r\nAs the code for Format and Grouping are largely similar, let\u0027s,\r\n* replace the existing Format class with a new class \"FileType\",\r\nwhich uses file globs to determine if a file matches the formats or\r\ngroups glob.\r\n* introduce a new class \"FileTypeManager\" that holds two list of \r\nFileType: \"Format\" and \"Group\".",
+            "insertions": 831,
+            "deletions": 320
+          }
+        ]
       }
     ],
     "bluein-green": [
@@ -806,21 +820,21 @@
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 1433,
+    "jylee-git": 2219,
     "bluein-green": 179,
-    "jamessspanggg": 1227
+    "jamessspanggg": 1214
   },
-  "authorFileFormatContributionMap": {
+  "authorFileTypeContributionMap": {
     "jylee-git": {
-      "java": 1035,
-      "js": 109,
-      "scss": 72,
+      "java": 1710,
+      "js": 172,
+      "scss": 77,
       "json": 111,
-      "md": 72,
+      "md": 92,
       "py": 0,
       "jade": 0,
       "gradle": 5,
-      "pug": 29
+      "pug": 52
     },
     "bluein-green": {
       "java": 98,
@@ -834,21 +848,21 @@
       "pug": 5
     },
     "jamessspanggg": {
-      "java": 173,
-      "js": 364,
+      "java": 171,
+      "js": 356,
       "scss": 491,
       "json": 34,
       "md": 37,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 128
+      "pug": 125
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 5405.756,
-    "bluein-green": 89.84293,
-    "jamessspanggg": 29266.627
+    "jylee-git": 17834.973,
+    "bluein-green": 82.09243,
+    "jamessspanggg": 26672.768
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

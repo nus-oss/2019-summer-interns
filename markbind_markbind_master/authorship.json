@@ -1,6 +1,7 @@
 [
   {
     "path": "asset/css/markbind.css",
+    "fileType": "css",
     "lines": [
       {
         "lineNumber": 1,
@@ -2103,6 +2104,7 @@
   },
   {
     "path": "docs/_markbind/layouts/userGuide/navigation.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -2308,6 +2310,7 @@
   },
   {
     "path": "docs/_markbind/navigation/userGuideSections.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -2513,6 +2516,7 @@
   },
   {
     "path": "docs/devGuide/devGuide.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -3999,6 +4003,7 @@
   },
   {
     "path": "docs/userGuide/formattingContents.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -4316,6 +4321,7 @@
   },
   {
     "path": "docs/userGuide/fullSyntaxReference.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -4718,6 +4724,7 @@
   },
   {
     "path": "docs/userGuide/markBindSyntaxOverview.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -5588,6 +5595,7 @@
   },
   {
     "path": "docs/userGuide/puml.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -6415,6 +6423,7 @@
   },
   {
     "path": "docs/userGuide/syntax/boxes.mbdf",
+    "fileType": "mbdf",
     "lines": [
       {
         "lineNumber": 1,
@@ -7411,6 +7420,7 @@
   },
   {
     "path": "docs/userGuide/syntax/footnotes.mbdf",
+    "fileType": "mbdf",
     "lines": [
       {
         "lineNumber": 1,
@@ -7853,6 +7863,7 @@
   },
   {
     "path": "docs/userGuide/syntax/modals.mbdf",
+    "fileType": "mbdf",
     "lines": [
       {
         "lineNumber": 1,
@@ -8422,6 +8433,7 @@
   },
   {
     "path": "docs/userGuide/syntax/pageLayouts.mbdf",
+    "fileType": "mbdf",
     "lines": [
       {
         "lineNumber": 1,
@@ -9110,6 +9122,7 @@
   },
   {
     "path": "docs/userGuide/syntax/thumbnails.mbdf",
+    "fileType": "mbdf",
     "lines": [
       {
         "lineNumber": 1,
@@ -9538,6 +9551,7 @@
   },
   {
     "path": "docs/userGuide/syntax/variables.mbdf",
+    "fileType": "mbdf",
     "lines": [
       {
         "lineNumber": 1,
@@ -11199,6 +11213,7 @@
   },
   {
     "path": "docs/userGuide/usingComponents.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -11530,6 +11545,7 @@
   },
   {
     "path": "package.json",
+    "fileType": "json",
     "lines": [
       {
         "lineNumber": 1,
@@ -12197,6 +12213,7 @@
   },
   {
     "path": "src/Page.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -19333,6 +19350,7 @@
   },
   {
     "path": "src/Site.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -27707,6 +27725,7 @@
   },
   {
     "path": "src/lib/markbind/src/lib/markdown-it/index.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -28276,6 +28295,7 @@
   },
   {
     "path": "src/lib/markbind/src/lib/markdown-it/markdown-it-footnotes.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -30923,6 +30943,7 @@
   },
   {
     "path": "src/lib/markbind/src/parser.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -37282,6 +37303,7 @@
   },
   {
     "path": "src/plugins/default/markbind-plugin-anchors.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -37480,6 +37502,7 @@
   },
   {
     "path": "src/plugins/default/markbind-plugin-footnotes-popovers.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -37642,6 +37665,7 @@
   },
   {
     "path": "src/plugins/default/markbind-plugin-plantuml.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -38434,6 +38458,7 @@
   },
   {
     "path": "src/util/fsUtil.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -38674,6 +38699,7 @@
   },
   {
     "path": "test/functional/test_site/expected/markbind/css/markbind.css",
+    "fileType": "css",
     "lines": [
       {
         "lineNumber": 1,
@@ -40776,6 +40802,7 @@
   },
   {
     "path": "test/functional/test_site/expected/siteData.json",
+    "fileType": "json",
     "lines": [
       {
         "lineNumber": 1,
@@ -43068,6 +43095,7 @@
   },
   {
     "path": "test/functional/test_site/expected/testTooltipSpacing.mbd",
+    "fileType": "mbd",
     "lines": [
       {
         "lineNumber": 1,
@@ -43160,6 +43188,7 @@
   },
   {
     "path": "test/functional/test_site/index.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -44898,6 +44927,7 @@
   },
   {
     "path": "test/functional/test_site/moreVariablesToImport.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -44962,6 +44992,7 @@
   },
   {
     "path": "test/functional/test_site/panelSrcs.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -45040,6 +45071,7 @@
   },
   {
     "path": "test/functional/test_site/site.json",
+    "fileType": "json",
     "lines": [
       {
         "lineNumber": 1,
@@ -45834,6 +45866,7 @@
   },
   {
     "path": "test/functional/test_site/sub_site/testAnchorGenerationInclude.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -46108,6 +46141,7 @@
   },
   {
     "path": "test/functional/test_site/testAnchorGeneration.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -46424,6 +46458,7 @@
   },
   {
     "path": "test/functional/test_site/testFootnotes.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -46537,6 +46572,7 @@
   },
   {
     "path": "test/functional/test_site/testImportVariables.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -46622,6 +46658,7 @@
   },
   {
     "path": "test/functional/test_site/testPanelsWithImportedVariables.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -46707,6 +46744,7 @@
   },
   {
     "path": "test/functional/test_site/testPlantUML.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -46869,6 +46907,7 @@
   },
   {
     "path": "test/functional/test_site/testThumbnails.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -47472,6 +47511,7 @@
   },
   {
     "path": "test/functional/test_site/testTooltipSpacing.mbd",
+    "fileType": "mbd",
     "lines": [
       {
         "lineNumber": 1,
@@ -47564,6 +47604,7 @@
   },
   {
     "path": "test/functional/test_site/variablesToImport.md",
+    "fileType": "md",
     "lines": [
       {
         "lineNumber": 1,
@@ -47754,6 +47795,7 @@
   },
   {
     "path": "test/functional/test_site_algolia_plugin/expected/markbind/css/markbind.css",
+    "fileType": "css",
     "lines": [
       {
         "lineNumber": 1,
@@ -49856,6 +49898,7 @@
   },
   {
     "path": "test/functional/test_site_convert/expected/markbind/css/markbind.css",
+    "fileType": "css",
     "lines": [
       {
         "lineNumber": 1,
@@ -51958,6 +52001,7 @@
   },
   {
     "path": "test/unit/Page.test.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -52121,6 +52165,7 @@
   },
   {
     "path": "test/unit/Site.test.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -57345,6 +57390,7 @@
   },
   {
     "path": "test/unit/parser.test.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,
@@ -61127,6 +61173,7 @@
   },
   {
     "path": "test/unit/utils/data.js",
+    "fileType": "js",
     "lines": [
       {
         "lineNumber": 1,

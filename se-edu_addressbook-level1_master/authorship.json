@@ -1,6 +1,7 @@
 [
   {
     "path": "docs/DeveloperGuide.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,
@@ -486,6 +487,7 @@
   },
   {
     "path": "src/seedu/addressbook/AddressBook.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,

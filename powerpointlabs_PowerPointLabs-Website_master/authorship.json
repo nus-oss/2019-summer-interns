@@ -1,6 +1,7 @@
 [
   {
     "path": "_includes/header.html",
+    "fileType": "html",
     "lines": [
       {
         "lineNumber": 1,

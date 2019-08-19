@@ -1,6 +1,7 @@
 [
   {
     "path": "docs/DeveloperGuide.adoc",
+    "fileType": "adoc",
     "lines": [
       {
         "lineNumber": 1,
@@ -584,6 +585,7 @@
   },
   {
     "path": "src/seedu/addressbook/commands/Command.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -1083,6 +1085,7 @@
   },
   {
     "path": "src/seedu/addressbook/commands/CommandResult.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -1344,6 +1347,7 @@
   },
   {
     "path": "src/seedu/addressbook/commands/ListCommand.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -1521,6 +1525,7 @@
   },
   {
     "path": "src/seedu/addressbook/common/Messages.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -1656,6 +1661,7 @@
   },
   {
     "path": "src/seedu/addressbook/data/person/Name.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -2106,6 +2112,7 @@
   },
   {
     "path": "src/seedu/addressbook/ui/TextUi.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -3340,6 +3347,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/commands/AddCommandTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -4378,6 +4386,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/commands/DeleteCommandTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -5521,6 +5530,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/commands/FindCommandTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -6006,6 +6016,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/commands/ViewCommandTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -7079,6 +7090,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/common/UtilsTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -7550,6 +7562,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/data/AddressBookTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -8490,6 +8503,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/parser/ParserTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -10823,6 +10837,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/storage/StorageFileTest.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -11665,6 +11680,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/util/TestUtil.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
@@ -12654,6 +12670,7 @@
   },
   {
     "path": "test/java/seedu/addressbook/util/TypicalPersons.java",
+    "fileType": "java",
     "lines": [
       {
         "lineNumber": 1,
