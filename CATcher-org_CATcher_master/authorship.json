@@ -125,100 +125,100 @@
       {
         "lineNumber": 18,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "3. **Evaluation**: Tutors and Admins will be able to view the bug reports and their respective teams\u0027 response. They can evaluate the responses, change the severity and status of the bug reports if needed."
+        "content": "3. **Tester\u0027s Response**: Testers will be able to respond to the team\u0027s acknowledgement / rejection of the bugs submitted."
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "3. **Evaluation**: Tutors and Admins will be able to view the bug reports and their respective teams\u0027 response. They can evaluate the responses, change the severity and status of the bug reports if needed."
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "# 2. Getting Started"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "# 2. Getting Started"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "## 2.1. Set up Organization"
+        "content": ""
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "A Github organization must be created first. The organization must have the following settings:"
+        "content": "## 2.1. Set up Organization"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "1. Set `Base Permissions` to `None`."
+        "content": "A Github organization must be created first. The organization must have the following settings:"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "    1. Under `Settings` page of your organization, click on `Member privileges` navigation tab."
+        "content": "1. Set `Base Permissions` to `None`."
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "    2. Under `Base permissions`, select `None`."
+        "content": "    1. Under `Settings` page of your organization, click on `Member privileges` navigation tab."
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "2. Create `admins` team."
+        "content": "    2. Under `Base permissions`, select `None`."
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "3. Create `students` team."
+        "content": "2. Create `admins` team."
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "4. Create `tutors` team."
+        "content": "3. Create `students` team."
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "5. Invite github users into their respective teams."
+        "content": "4. Create `tutors` team."
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "5. Invite github users into their respective teams."
       },
       {
         "lineNumber": 32,
@@ -232,133 +232,133 @@
         "author": {
           "gitId": "-"
         },
-        "content": "## 2.2. Set up Github Repositories"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": "This application assumes 4 repositories will be created under the above organization."
+        "content": "## 2.2. Set up Github Repositories"
       },
       {
         "lineNumber": 35,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "This application requires 4 separate repositories."
       },
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "For each phase, users with write access will be able to upload files (e.g. screenshots, .txt files, etc...) onto the repository\u0027s `/file` folder. These files are used in conjuction with issue description and comments in a form of a link. As for images, the actual image will be displayed."
+        "content": "1. Settings Repository"
       },
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "2. Bug Testing Phase / Tester\u0027s Response Phase Repository (**Both** phases utilize the same repository)"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "### 2.2.1. `public_data` Repository"
+        "content": "3. Team\u0027s Response Phase Repository"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "The name of this repository must be **exactly** `public_data`. This repository must contain 1 file called `data.csv`. This `.csv` file, will contain the following information:"
+        "content": "4. Moderation Phase Repository"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "1. Roles of users. (Student, Tutor, Admin)"
+        "content": ""
       },
       {
         "lineNumber": 41,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "2. Student\u0027s team allocation. For each student, the `.csv` file must specify which team the student is in."
+        "content": "For each phase, users with write access will be able to upload files (e.g. screenshots, .txt files, etc...) onto the repository\u0027s `/file` folder. These files are used in conjuction with issue description and comments in a form of a link. As for images, the actual image will be displayed."
       },
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "3. Tutor\u0027s team allocation. For each tutor, the `.csv` must specify which teams the tutor is assigned to."
+        "content": ""
       },
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "**NOTE**: The repositories used in the *Bug Reporting Phase* and *Tester\u0027s Response Phase* are to be located in the individual User\u0027s Repository."
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "An example of `data.csv`: https://github.com/CATcher-org/public_data/blob/master/data.csv"
+        "content": ""
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "### 2.2.1. Settings Repository"
       },
       {
         "lineNumber": 46,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "### 2.2.2. Bug Reporting Repository"
+        "content": "The name of this repository must be stated in the application during login. This repository must contain a **`data.csv`** and a **`settings.json`** file. "
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "All the bug reports that are created from the application will be posted into this repository."
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "The `data.csv` file, must contain the following information:"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "This repository must include the following issue tags:"
+        "content": "1. Roles of users. (Student, Tutor, Admin)"
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "1. **Severity**: `severity.High`, `severity.Medium`, `severity.Low`"
+        "content": "2. Student\u0027s team allocation. For each student, the `.csv` file must specify which team the student is in."
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "2. **Type**: `type.DocumentationBug`, `type.FunctionalityBug`"
+        "content": "3. Tutor\u0027s team allocation. For each tutor, the `.csv` must specify which teams the tutor is assigned to."
       },
       {
         "lineNumber": 52,
@@ -370,93 +370,93 @@
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "### 2.2.3. Team\u0027s Response Repository"
+        "content": "An example of `data.csv`: https://github.com/CATcher-org/public_data/blob/master/data.csv"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "After the bug reporting phase, the issues posted during that phase will be transferred over to this repository, with the identity of the poster anonymized."
+        "content": ""
       },
       {
         "lineNumber": 55,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "The `settings.json` file must contain the following information:"
       },
       {
         "lineNumber": 56,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "This repository will then be used by the application for individual teams to respond to the bugs that are discovered by the testers testing their application."
+        "content": "1. The list of open phases represented by `\"openPhases\": []`."
       },
       {
         "lineNumber": 57,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "2. The name of the repository that each phase is to utilize."
       },
       {
         "lineNumber": 58,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "This repository must include the following issue tags:"
+        "content": ""
       },
       {
         "lineNumber": 59,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "1. **Severity**: `severity.High`, `severity.Medium`, `severity.Low`"
+        "content": "An example of `settings.json`: https://github.com/CATcher-org/public_data/blob/master/settings.json"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "2. **Type**: `type.DocumentationBug`, `type.FunctionalityBug`"
+        "content": ""
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "3. **Response**: `response.Accepted`, `response.CannotReproduce`, `response.IssueUnclear`, `response.Rejected`"
+        "content": "### 2.2.2. Bug Reporting Repository"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "4. **Status**: `status.Done`, `status.Incomplete`"
+        "content": "All the bug reports that are created from the application will be posted into this repository."
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "5. **Team**: `team.*`, with the star representing the team number."
+        "content": ""
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": "7. **Tutorial**: `tutorial.*`, with the star representing tutorial name."
+        "content": "### 2.2.3. Team\u0027s Response Repository"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "8. **Duplicate**: `duplicate`"
+        "content": "After the bug reporting phase, the issues posted during that phase will be transferred over to this repository, with the identity of the poster anonymized."
       },
       {
         "lineNumber": 66,
@@ -470,7 +470,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "**Team** and **Tutorial** tags are compulsory tags for each issue."
+        "content": "This repository will then be used by the application for individual teams to respond to the bugs that are discovered by the testers testing their application."
       },
       {
         "lineNumber": 68,
@@ -482,16 +482,16 @@
       {
         "lineNumber": 69,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "### 2.2.4. Evaluation Repository"
+        "content": "### 2.2.4 Tester\u0027s Response Repository"
       },
       {
         "lineNumber": 70,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "After the teams have responded to the bugs reported by their testers. The issues and their respective responses from `pe-results` will be transferred over to this repository. "
+        "content": "After the teams have responded to the bugs reported by their testers, the issues posted during that phase will be transferred over to this repository, with the identity of the poster anonymized."
       },
       {
         "lineNumber": 71,
@@ -503,9 +503,9 @@
       {
         "lineNumber": 72,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "The application will then use this repository to post tutor\u0027s or admin\u0027s evaluation of each team\u0027s response and their respective bug report."
+        "content": "This repository will then be used by the application for individual tester to respond to the team\u0027s assessment of the bug they had reported initially."
       },
       {
         "lineNumber": 73,
@@ -517,184 +517,184 @@
       {
         "lineNumber": 74,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "This repository must include the following issue tags:"
+        "content": "### 2.2.5. Evaluation Repository"
       },
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "1. **Severity**: `severity.High`, `severity.Medium`, `severity.Low`"
+        "content": "After the testers have responded to the bug report responses. The issues and their respective information from the Tester\u0027s Response Phase will be transferred over to this repository. "
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "2. **Type**: `type.DocumentationBug`, `type.FunctionalityBug`"
+        "content": ""
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "3. **Response**: `response.Accepted`, `response.CannotReproduce`, `response.IssueUnclear`, `response.Rejected`"
+        "content": "The application will then use this repository to post tutor\u0027s or admin\u0027s evaluation of each team\u0027s response and their respective bug report."
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "4. **Team**: `team.*`,  with the star representing the team number."
+        "content": ""
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "5. **Tutorial**: `tutorial.*`, with the star representing tutorial name."
+        "content": "## 2.3. Set up access rights"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "6. **Duplicate**: `duplicate`"
+        "content": "For each of the teams, follow the steps below to assign the right access level to the repositories. "
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "1. Go to their respective team page on Github."
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "**Team** and **Tutorial** tags are compulsory for each issue."
+        "content": "2. Click on `Repositories` navigation tab."
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "3. Add the following repositories with the respective access right level as desribed below."
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "## 2.3. Set up access rights"
+        "content": "    1. For `admins` team."
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "For each of the teams, follow the steps below to assign the right access level to the repositories. "
+        "content": "        1. pe: `Admin`"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "1. Go to their respective team page on Github."
+        "content": "        2. pe-results: `Admin`"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "2. Click on `Repositories` navigation tab."
+        "content": "        3. pe-evaluation: `Admin`"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "3. Add the following repositories with the respective access right level as desribed below."
+        "content": "    2. For `students` team."
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "    1. For `admins` team."
+        "content": "        1. pe: `Write`"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "        1. pe: `Admin`"
+        "content": "        2. pe-results: `Write`"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "        2. pe-results: `Admin`"
+        "content": "    3. For `tutors` team."
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "        3. pe-evaluation: `Admin`"
+        "content": "        1. pe: `Read`"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "    2. For `students` team."
+        "content": "        2. pe-results: `Read`"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "        1. pe: `Write`"
+        "content": "        3. pe-evaluation: `Write`"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "        2. pe-results: `Write`"
+        "content": ""
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "    3. For `tutors` team."
+        "content": "## 2.4. The Application"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "        1. pe: `Read`"
+        "content": "You can download the latest release from https://github.com/CATcher-org/CATcher/releases"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "        2. pe-results: `Read`"
+        "content": ""
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "        3. pe-evaluation: `Write`"
+        "content": "Start the application by clicking on the executable file, no installation is required."
       },
       {
         "lineNumber": 100,
@@ -708,14 +708,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "## 2.4. The Application"
+        "content": "The login page will be displayed."
       },
       {
         "lineNumber": 102,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "You can download the latest release from https://github.com/CATcher-org/CATcher/releases"
+        "content": "![login](https://i.imgur.com/6APFI3J.png)"
       },
       {
         "lineNumber": 103,
@@ -729,7 +729,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "Start the application by clicking on the executable file, no installation is required."
+        "content": "Use your Github credentials for username and password."
       },
       {
         "lineNumber": 105,
@@ -741,30 +741,30 @@
       {
         "lineNumber": 106,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "The login page will be displayed."
+        "content": "**Settings Location** refers to the name of the Organization and Repository that contains the `settings.json` mentioned in *2.2.1*."
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "![login](https://i.imgur.com/zb1tN2k.png)"
+        "content": ""
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "# 3. Development"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "Use your Github credentials for username and password."
+        "content": "1. Clone this repository locally."
       },
       {
         "lineNumber": 110,
@@ -778,7 +778,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "**Encoded Text** will contain the urls of the 3 different repositories that are created in Section 2.2.2, 2.2.3 and 2.2.4."
+        "content": "2. Install dependencies with npm: `npm install` "
       },
       {
         "lineNumber": 112,
@@ -792,133 +792,133 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# 3. Development"
+        "content": "3. Compile and start the application: `npm start`"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": "1. Clone this repository locally."
+        "content": ""
       },
       {
         "lineNumber": 115,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "After compilation, an application window will start up which runs on localhost:4200. You can disable \"Developer Tools\" by un-commenting `enableProdMode();` in `main.ts`."
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "2. Install dependencies with npm: `npm install` "
+        "content": ""
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "# 4. Commands"
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": "3. Compile and start the application: `npm start`"
+        "content": "|Command|Description|"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|--|--|"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "After compilation, an application window will start up which runs on localhost:4200. You can disable \"Developer Tools\" by commenting `win.webContents.openDevTools();` in `main.ts`."
+        "content": "|`npm run build`| Build the app. Your built files are in the /dist folder. |"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|`npm run build:prod`| Build the app with Angular aot. Your built files are in the /dist folder. |"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
-        "content": "# 4. Commands"
+        "content": "|`npm run electron:local`| Builds your application and start electron"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "|`npm run electron:linux`| Builds your application and creates an app consumable on linux system |"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "|Command|Description|"
+        "content": "|`npm run electron:windows`| On a Windows OS, builds your application and creates an app consumable in windows 32/64 bit systems |"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "|--|--|"
+        "content": "|`npm run electron:mac`|  On a MAC OS, builds your application and generates a `.app` file of your application that can be run on Mac |"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": "|`npm run build`| Build the app. Your built files are in the /dist folder. |"
+        "content": ""
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": "|`npm run build:prod`| Build the app with Angular aot. Your built files are in the /dist folder. |"
+        "content": "# 5. Future Developments"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "|`npm run electron:local`| Builds your application and start electron"
+        "content": "Here are a few suggestions that future developers can work on to improve this application!"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "|`npm run electron:linux`| Builds your application and creates an app consumable on linux system |"
+        "content": ""
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "|`npm run electron:windows`| On a Windows OS, builds your application and creates an app consumable in windows 32/64 bit systems |"
+        "content": "## 5.1. Support Commenting"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "|`npm run electron:mac`|  On a MAC OS, builds your application and generates a `.app` file of your application that can be run on Mac |"
+        "content": "Currently, the application only support 1 response for each phase. So a commenting section would be good to allow discussions between team members as well as between tutors and admins. "
       },
       {
         "lineNumber": 132,
@@ -932,14 +932,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# 5. Future Developments"
+        "content": "## 5.2. Poll for updates"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "Here are a few suggestions that future developers can work on to improve this application!"
+        "content": "The state of the application is based on the initial log-in in which the data will be pulled from Github. However, this state is not updated as the user uses the application. This might lead to problems where the user is shown an outdated version of an issue."
       },
       {
         "lineNumber": 135,
@@ -947,88 +947,11 @@
           "gitId": "-"
         },
         "content": ""
-      },
-      {
-        "lineNumber": 136,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "## 5.1. Support Commenting"
-      },
-      {
-        "lineNumber": 137,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "Currently, the application only support 1 response for each phase. So a commenting section would be good to allow discussions between team members as well as between tutors and admins. "
-      },
-      {
-        "lineNumber": 138,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 139,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "## 5.2. Poll for updates"
-      },
-      {
-        "lineNumber": 140,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "The state of the application is based on the initial log-in in which the data will be pulled from Github. However, this state is not updated as the user uses the application. This might lead to problems where the user is shown an outdated version of an issue."
-      },
-      {
-        "lineNumber": 141,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 142,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "## 5.3. Add Tester\u0027s response phase (Right after the Team\u0027s Response)"
-      },
-      {
-        "lineNumber": 143,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "The rational for this phase is to ease the workload of tutors and admins during the evaluation phase. In this phase, testers who reported the bug will be able to look at the team\u0027s response to their bug report. If they think that the response is unjust, they can object it."
-      },
-      {
-        "lineNumber": 144,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 145,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "During the evaluation phase, the tutors and admins just need focus on those bug reports with objections. Those without objections will not be moderated."
-      },
-      {
-        "lineNumber": 146,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 4,
-      "-": 142
+      "ptvrajsk": 28,
+      "-": 107
     }
   },
   {

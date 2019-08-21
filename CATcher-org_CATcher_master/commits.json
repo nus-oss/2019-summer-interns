@@ -609,6 +609,20 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 26,
+        "deletions": 37,
+        "date": "2019-08-20",
+        "commitResults": [
+          {
+            "hash": "59bf7867d3d3655c4d86e8a447598d4096e995ef",
+            "messageTitle": "Updates to README.md (#169)",
+            "messageBody": "* Updates to README.md\r\n\r\n* Nit Fixes\r\n\r\n* Removal of Label Information\r\n",
+            "insertions": 26,
+            "deletions": 37
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1784,7 +1798,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2251,
+    "ptvrajsk": 2275,
     "KevinCJH": 1700
   },
   "authorFileTypeContributionMap": {
@@ -1792,7 +1806,7 @@
       "java": 0,
       "js": 0,
       "scss": 0,
-      "md": 4,
+      "md": 28,
       "py": 0,
       "tag": 0,
       "html": 300,
@@ -1810,8 +1824,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 22812.25,
-    "KevinCJH": 19315.281
+    "ptvrajsk": 21162.33,
+    "KevinCJH": 18042.668
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
