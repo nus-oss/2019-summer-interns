@@ -105,24 +105,38 @@
             "deletions": 18
           }
         ]
+      },
+      {
+        "insertions": 52,
+        "deletions": 40,
+        "date": "2019-08-19",
+        "commitResults": [
+          {
+            "hash": "ebbb7131ecdb83f2512b79068f952d37f69784b5",
+            "messageTitle": "Remove dependencies on WebView",
+            "messageBody": "The HelpWindow is the only component that relies on WebView, a\ndependency that weighs in at around 70MB, more than quadrupling the size\nof the executable jar. As there are plans to customize the jars for each\nindividual student during the practical examination, this overhead can\nlead to further problems (bandwidth in the lecture hall, storage space,\netc).\n\nLet\u0027s remove the dependency on WebView by changing HelpWindow to display\na link to the user guide instead.\n",
+            "insertions": 52,
+            "deletions": 40
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Jeffry Lum": 536
+    "Jeffry Lum": 580
   },
   "authorFileTypeContributionMap": {
     "Jeffry Lum": {
-      "java": 0,
+      "java": 24,
       "js": 0,
       "css": 0,
-      "adoc": 536,
-      "fxml": 0,
+      "adoc": 529,
+      "fxml": 27,
       "gradle": 0
     }
   },
   "authorContributionVariance": {
-    "Jeffry Lum": 6161.694
+    "Jeffry Lum": 4953.686
   },
   "authorDisplayNameMap": {
     "Jeffry Lum": "Jeffry"

@@ -4455,21 +4455,21 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Click `OK` to accept the default settings"
+        "content": ". Click `OK` to accept the default settings."
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Open a console and run the command `gradlew processResources` (Mac/Linux: `./gradlew processResources`). It should finish with the `BUILD SUCCESSFUL` message. +"
+        "content": ""
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "This will generate all resources required by the application and tests."
+        "content": "\u003d\u003d Verifying the setup"
       },
       {
         "lineNumber": 39,
@@ -4483,28 +4483,28 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d Verifying the setup"
+        "content": ". Run the `seedu.address.Main` and try a few commands"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": ". \u003c\u003cTesting#,Run the tests\u003e\u003e to ensure they all pass."
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Run the `seedu.address.Main` and try a few commands"
+        "content": ""
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". \u003c\u003cTesting#,Run the tests\u003e\u003e to ensure they all pass."
+        "content": "\u003d\u003d Configurations to do before writing code"
       },
       {
         "lineNumber": 44,
@@ -4518,7 +4518,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d Configurations to do before writing code"
+        "content": "\u003d\u003d\u003d Configuring the coding style"
       },
       {
         "lineNumber": 46,
@@ -4532,7 +4532,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d\u003d Configuring the coding style"
+        "content": "This project follows https://github.com/oss-generic/process/blob/master/docs/CodingStandards.adoc[oss-generic coding standards]. IntelliJ\u0027s default style is mostly compliant with ours but it uses a different import order from ours. To rectify,"
       },
       {
         "lineNumber": 48,
@@ -4546,56 +4546,56 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "This project follows https://github.com/oss-generic/process/blob/master/docs/CodingStandards.adoc[oss-generic coding standards]. IntelliJ\u0027s default style is mostly compliant with ours but it uses a different import order from ours. To rectify,"
+        "content": ". Go to `File` \u003e `Settings...` (Windows/Linux), or `IntelliJ IDEA` \u003e `Preferences...` (macOS)"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": ". Select `Editor` \u003e `Code Style` \u003e `Java`"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Go to `File` \u003e `Settings...` (Windows/Linux), or `IntelliJ IDEA` \u003e `Preferences...` (macOS)"
+        "content": ". Click on the `Imports` tab to set the order"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Select `Editor` \u003e `Code Style` \u003e `Java`"
+        "content": ""
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Click on the `Imports` tab to set the order"
+        "content": "* For `Class count to use import with \u0027\\*\u0027` and `Names count to use static import with \u0027*\u0027`: Set to `999` to prevent IntelliJ from contracting the import statements"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "* For `Import Layout`: The order is `import static all other imports`, `import java.\\*`, `import javax.*`, `import org.\\*`, `import com.*`, `import all other imports`. Add a `\u003cblank line\u003e` between each `import`"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "* For `Class count to use import with \u0027\\*\u0027` and `Names count to use static import with \u0027*\u0027`: Set to `999` to prevent IntelliJ from contracting the import statements"
+        "content": ""
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "* For `Import Layout`: The order is `import static all other imports`, `import java.\\*`, `import javax.*`, `import org.\\*`, `import com.*`, `import all other imports`. Add a `\u003cblank line\u003e` between each `import`"
+        "content": "Optionally, you can follow the \u003c\u003cUsingCheckstyle#, UsingCheckstyle.adoc\u003e\u003e document to configure Intellij to check style-compliance as you write code."
       },
       {
         "lineNumber": 57,
@@ -4609,7 +4609,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Optionally, you can follow the \u003c\u003cUsingCheckstyle#, UsingCheckstyle.adoc\u003e\u003e document to configure Intellij to check style-compliance as you write code."
+        "content": "\u003d\u003d\u003d Updating documentation to match your fork"
       },
       {
         "lineNumber": 59,
@@ -4621,9 +4621,9 @@
       {
         "lineNumber": 60,
         "author": {
-          "gitId": "Jeffry Lum"
+          "gitId": "-"
         },
-        "content": "\u003d\u003d\u003d Updating documentation to match your fork"
+        "content": "After forking the repo, the documentation will still have the SE-EDU branding and refer to the `se-edu/addressbook-level3` repo."
       },
       {
         "lineNumber": 61,
@@ -4637,7 +4637,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "After forking the repo, the documentation will still have the SE-EDU branding and refer to the `se-edu/addressbook-level3` repo."
+        "content": "If you plan to develop this fork as a separate product (i.e. instead of contributing to `se-edu/addressbook-level3`), you should do the following:"
       },
       {
         "lineNumber": 63,
@@ -4649,9 +4649,9 @@
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "If you plan to develop this fork as a separate product (i.e. instead of contributing to `se-edu/addressbook-level3`), you should do the following:"
+        "content": ". Configure the \u003c\u003cDocumentation#Docs-SiteWideDocSettings, site-wide documentation settings\u003e\u003e in link:{repoURL}/build.gradle[`build.gradle`], such as the `site-name`, to suit your own project."
       },
       {
         "lineNumber": 65,
@@ -4665,7 +4665,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Configure the \u003c\u003cDocumentation#Docs-SiteWideDocSettings, site-wide documentation settings\u003e\u003e in link:{repoURL}/build.gradle[`build.gradle`], such as the `site-name`, to suit your own project."
+        "content": ". Replace the URL in the attribute `repoURL` in link:{repoURL}/docs/DeveloperGuide.adoc[`DeveloperGuide.adoc`] and link:{repoURL}/docs/UserGuide.adoc[`UserGuide.adoc`] with the URL of your fork."
       },
       {
         "lineNumber": 67,
@@ -4679,7 +4679,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ". Replace the URL in the attribute `repoURL` in link:{repoURL}/docs/DeveloperGuide.adoc[`DeveloperGuide.adoc`] and link:{repoURL}/docs/UserGuide.adoc[`UserGuide.adoc`] with the URL of your fork."
+        "content": "\u003d\u003d\u003d Setting up CI"
       },
       {
         "lineNumber": 69,
@@ -4693,7 +4693,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d\u003d Setting up CI"
+        "content": "Set up Travis to perform Continuous Integration (CI) for your fork. See \u003c\u003cUsingTravis#, UsingTravis.adoc\u003e\u003e to learn how to set it up."
       },
       {
         "lineNumber": 71,
@@ -4707,7 +4707,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Set up Travis to perform Continuous Integration (CI) for your fork. See \u003c\u003cUsingTravis#, UsingTravis.adoc\u003e\u003e to learn how to set it up."
+        "content": "After setting up Travis, you can optionally set up coverage reporting for your team fork (see \u003c\u003cUsingCoveralls#, UsingCoveralls.adoc\u003e\u003e)."
       },
       {
         "lineNumber": 73,
@@ -4721,28 +4721,28 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "After setting up Travis, you can optionally set up coverage reporting for your team fork (see \u003c\u003cUsingCoveralls#, UsingCoveralls.adoc\u003e\u003e)."
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "Coverage reporting could be useful for a team repository that hosts the final version but it is not that useful for your personal fork."
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[NOTE]"
+        "content": ""
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Coverage reporting could be useful for a team repository that hosts the final version but it is not that useful for your personal fork."
+        "content": "Optionally, you can set up AppVeyor as a second CI (see \u003c\u003cUsingAppVeyor#, UsingAppVeyor.adoc\u003e\u003e)."
       },
       {
         "lineNumber": 78,
@@ -4756,28 +4756,28 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Optionally, you can set up AppVeyor as a second CI (see \u003c\u003cUsingAppVeyor#, UsingAppVeyor.adoc\u003e\u003e)."
+        "content": "[NOTE]"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": ""
+        "content": "Having both Travis and AppVeyor ensures your App works on both Unix-based platforms and Windows-based platforms (Travis is Unix-based and AppVeyor is Windows-based)"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "[NOTE]"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "Having both Travis and AppVeyor ensures your App works on both Unix-based platforms and Windows-based platforms (Travis is Unix-based and AppVeyor is Windows-based)"
+        "content": "\u003d\u003d\u003d Getting started with coding"
       },
       {
         "lineNumber": 83,
@@ -4791,25 +4791,11 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "\u003d\u003d\u003d Getting started with coding"
-      },
-      {
-        "lineNumber": 85,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
         "content": "When you are ready to start coding, we recommend that you get some sense of the overall design by reading about \u003c\u003cDeveloperGuide#Design-Architecture, AddressBook\u0027s architecture\u003e\u003e."
       }
     ],
     "authorContributionMap": {
-      "Jeffry Lum": 82,
+      "Jeffry Lum": 80,
       "-": 4
     }
   },
@@ -5137,7 +5123,7 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "**Problem: `HelpWindowTest` fails with a `NullPointerException`.**"
+        "content": "**Problem: Keyboard and mouse movements are not simulated on macOS Mojave, resulting in GUI Tests failure.**"
       },
       {
         "lineNumber": 47,
@@ -5151,14 +5137,14 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "* Reason: One of its dependencies, `HelpWindow.html` in `src/main/resources/docs` is missing."
+        "content": "* Reason: From macOS Mojave onwards, applications without `Accessibility` permission cannot simulate certain keyboard and mouse movements."
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "* Solution: Execute Gradle task `processResources`."
+        "content": "* Solution: Open `System Preferences`, click `Security and Privacy` -\u003e `Privacy` -\u003e `Accessibility`, and check the box beside `Intellij IDEA`."
       },
       {
         "lineNumber": 50,
@@ -5172,45 +5158,10 @@
         "author": {
           "gitId": "Jeffry Lum"
         },
-        "content": "**Problem: Keyboard and mouse movements are not simulated on macOS Mojave, resulting in GUI Tests failure.**"
-      },
-      {
-        "lineNumber": 52,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 53,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
-        "content": "* Reason: From macOS Mojave onwards, applications without `Accessibility` permission cannot simulate certain keyboard and mouse movements."
-      },
-      {
-        "lineNumber": 54,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
-        "content": "* Solution: Open `System Preferences`, click `Security and Privacy` -\u003e `Privacy` -\u003e `Accessibility`, and check the box beside `Intellij IDEA`."
-      },
-      {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
         "content": ".`Accessibility` permission is granted to `IntelliJ IDEA`"
       },
       {
-        "lineNumber": 57,
+        "lineNumber": 52,
         "author": {
           "gitId": "Jeffry Lum"
         },
@@ -5218,7 +5169,7 @@
       }
     ],
     "authorContributionMap": {
-      "Jeffry Lum": 49,
+      "Jeffry Lum": 44,
       "-": 8
     }
   },
@@ -6706,6 +6657,1034 @@
     ],
     "authorContributionMap": {
       "Jeffry Lum": 211
+    }
+  },
+  {
+    "path": "src/main/java/seedu/address/ui/HelpWindow.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "package seedu.address.ui;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import java.util.logging.Logger;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import javafx.fxml.FXML;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "import javafx.scene.control.Button;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "import javafx.scene.control.Label;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "import javafx.scene.input.Clipboard;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "import javafx.scene.input.ClipboardContent;"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import javafx.stage.Stage;"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import seedu.address.commons.core.LogsCenter;"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " * Controller for a help page"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "public class HelpWindow extends UiPart\u003cStage\u003e {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    public static final String USERGUIDE_URL \u003d \"https://se-education.org/addressbook-level3/UserGuide.html\";"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    public static final String HELP_MESSAGE \u003d \"Refer to the user guide: \" + USERGUIDE_URL;"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final Logger logger \u003d LogsCenter.getLogger(HelpWindow.class);"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    private static final String FXML \u003d \"HelpWindow.fxml\";"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    @FXML"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    private Button copyButton;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    @FXML"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    private Label helpMessage;"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Creates a new HelpWindow."
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * @param root Stage to use as the root of the HelpWindow."
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public HelpWindow(Stage root) {"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        super(FXML, root);"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        helpMessage.setText(HELP_MESSAGE);"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        root.sizeToScene();"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Creates a new HelpWindow."
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public HelpWindow() {"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this(new Stage());"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Shows the help window."
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * @throws IllegalStateException"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * \u003cul\u003e"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003cli\u003e"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *         if this method is called on a thread other than the JavaFX Application Thread."
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003c/li\u003e"
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003cli\u003e"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *         if this method is called during animation or layout processing."
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003c/li\u003e"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003cli\u003e"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *         if this method is called on the primary stage."
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003c/li\u003e"
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003cli\u003e"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *         if {@code dialogStage} is already showing."
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     *     \u003c/li\u003e"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * \u003c/ul\u003e"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void show() {"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        logger.fine(\"Showing help page about the application.\");"
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        getRoot().show();"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        getRoot().centerOnScreen();"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Returns true if the help window is currently being shown."
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public boolean isShowing() {"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return getRoot().isShowing();"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Hides the help window."
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void hide() {"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        getRoot().hide();"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Focuses on the help window."
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public void focus() {"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        getRoot().requestFocus();"
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     * Copies the URL to the user guide to the clipboard."
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    @FXML"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    private void copyUrl() {"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        final Clipboard clipboard \u003d Clipboard.getSystemClipboard();"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        final ClipboardContent url \u003d new ClipboardContent();"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        url.putString(USERGUIDE_URL);"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        clipboard.setContent(url);"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "Jeffry Lum": 24,
+      "-": 79
+    }
+  },
+  {
+    "path": "src/main/resources/view/HelpWindow.fxml",
+    "fileType": "fxml",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c?xml version\u003d\"1.0\" encoding\u003d\"UTF-8\"?\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003c?import javafx.geometry.Insets?\u003e"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c?import javafx.scene.Scene?\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003c?import javafx.scene.control.Button?\u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003c?import javafx.scene.control.Label?\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c?import javafx.scene.image.Image?\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003c?import javafx.scene.layout.HBox?\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003c?import javafx.stage.Stage?\u003e"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c!-- TODO: set a more appropriate initial size --\u003e"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003cfx:root maximized\u003d\"true\" title\u003d\"Help\" type\u003d\"javafx.stage.Stage\" xmlns\u003d\"http://javafx.com/javafx/11\" xmlns:fx\u003d\"http://javafx.com/fxml/1\"\u003e"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cicons\u003e"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cImage url\u003d\"@/images/help_icon.png\" /\u003e"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/icons\u003e"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cscene\u003e"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003cScene\u003e"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "         \u003cHBox alignment\u003d\"CENTER\"\u003e"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "            \u003cchildren\u003e"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "               \u003cLabel fx:id\u003d\"helpMessage\" text\u003d\"Label\"\u003e"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "                  \u003cHBox.margin\u003e"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "                     \u003cInsets right\u003d\"5.0\" /\u003e"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "                  \u003c/HBox.margin\u003e"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "               \u003c/Label\u003e"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "               \u003cButton fx:id\u003d\"copyButton\" mnemonicParsing\u003d\"false\" onAction\u003d\"#copyUrl\" text\u003d\"Copy URL\"\u003e"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "                  \u003cHBox.margin\u003e"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "                     \u003cInsets left\u003d\"5.0\" /\u003e"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "                  \u003c/HBox.margin\u003e"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "               \u003c/Button\u003e"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "            \u003c/children\u003e"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "            \u003copaqueInsets\u003e"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "               \u003cInsets bottom\u003d\"10.0\" left\u003d\"5.0\" right\u003d\"10.0\" top\u003d\"5.0\" /\u003e"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "            \u003c/opaqueInsets\u003e"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "            \u003cpadding\u003e"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "               \u003cInsets bottom\u003d\"10.0\" left\u003d\"5.0\" right\u003d\"10.0\" top\u003d\"5.0\" /\u003e"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "            \u003c/padding\u003e"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "         \u003c/HBox\u003e"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u003c/Scene\u003e"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/scene\u003e"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/fx:root\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "Jeffry Lum": 27,
+      "-": 14
     }
   }
 ]
