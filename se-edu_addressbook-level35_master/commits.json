@@ -119,24 +119,38 @@
             "deletions": 40
           }
         ]
+      },
+      {
+        "insertions": 258,
+        "deletions": 0,
+        "date": "2019-08-21",
+        "commitResults": [
+          {
+            "hash": "6202ca3ba62e9113537b673d7960ea35abca5642",
+            "messageTitle": "Add tutorial on tracing code",
+            "messageBody": "Feedback from previous students indicated that they have some problem\ngrokking the code base. Let\u0027s address this by having a simple tutorial\nwhere students learn how to apply the tools at hand to trace the\nexecution flow of code.\n",
+            "insertions": 258,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Jeffry Lum": 580
+    "Jeffry Lum": 838
   },
   "authorFileTypeContributionMap": {
     "Jeffry Lum": {
       "java": 24,
       "js": 0,
       "css": 0,
-      "adoc": 529,
+      "adoc": 787,
       "fxml": 27,
       "gradle": 0
     }
   },
   "authorContributionVariance": {
-    "Jeffry Lum": 4953.686
+    "Jeffry Lum": 5448.7104
   },
   "authorDisplayNameMap": {
     "Jeffry Lum": "Jeffry"

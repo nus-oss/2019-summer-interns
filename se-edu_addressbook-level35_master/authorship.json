@@ -6660,6 +6660,1821 @@
     }
   },
   {
+    "path": "docs/tutorials/TracingCode.adoc",
+    "fileType": "adoc",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d Tutorial - Tracing a Command Execution Path"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":site-section: DeveloperGuide"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":imagesDir: ../images/tracing"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":stylesDir: ../stylesheets"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":xrefstyle: full"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "ifdef::env-github[]"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":tip-caption: :bulb:"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":note-caption: :information_source:"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":warning-caption: :warning:"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "endif::[]"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[quote, Robert C. Martin, Clean Code: A Handbook of Agile Software Craftsmanship ]"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Indeed, the ratio of time spent reading versus writing is well over 10 to 1. We are constantly reading old code as"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "part of the effort to write new code.  ...[Therefore,] making it easy to read makes it easier to write."
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "When trying to understand an unfamiliar code base, one common strategy used is to trace some representative execution"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "path through the code base. One easy way to trace an execution path is to use a debugger to step through the code."
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "In this tutorial, you will be using the IntelliJ IDEA\u0027s debugger to trace the execution path of a specific user command."
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Before we jump into the code, it is useful to get an idea of the overall structure and the high-level behavior of the"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "application. This is provided in the \u0027Architecture\u0027 section of the developer guide. In particular, the"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "architecture diagram (reproduced below), tells us that the App consists of several components."
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::../ArchitectureDiagram.png[]"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "It also has a sequence diagram (reproduced below) that tells us how a command propagates through the App."
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Architecture sequence diagram from the developer guide"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::../ArchitectureSequenceDiagram.png[]"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Note how the diagram shows only how the execution flows _between_ the main components. That is, it does not show details of"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "the execution path _inside_ each component. By hiding those details, the diagram succeeds in informing the reader"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "about the overall execution path of a command without overwhelming the reader with too much details."
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "In this tutorial, you aim to find those omitted details so that you get a more in-depth understanding of the code base."
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Before we proceed, ensure that you have done the following:"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Read the _Architecture_ section of the DG"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Set up the project in Intellij IDEA"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Learn basic debugging features of Intellij IDEA"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Setting a break point"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "As you know, the first step of debugging is to put in a breakpoint where you want the debugger to pause the execution."
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For example, if you are trying to understand how the App starts up, you would put a breakpoint in the first statement"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "of the `main` method. In our case, we would want to begin the tracing at the very point where the App start processing"
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "user input i.e., somewhere in the UI component, and then trace through how the execution proceeds through the UI component."
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "However, the execution path through a GUI is often somewhat obscure due to various _event-driven mechanisms_"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "used by GUI frameworks, which happens to be the case here too. Therefore, let us put the breakpoint where the UI transfers"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "control to the Logic component. According to the sequence diagram, the UI component yields control to the Logic component"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "through a method named `execute`. Searching through the code base for `execute()` yields a promising candidate in"
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "`seedu.address.ui.CommandBox.CommandExecutor`."
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Using the `Search for target by name` feature. `Navigate` \u003e `Symbol`."
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::Execute.png[]"
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A quick look at the class confirms that this is indeed close to what we\u0027re looking for. However, it is just an"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "`Interface`. Let\u0027s delve further and find the implementation of the interface by using the `Find Usages` feature in"
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "IntelliJ IDEA."
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".`Find Usages` tool window. `Edit` \u003e `Find` \u003e `Find Usages`."
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::FindUsages.png[]"
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Bingo! `MainWindow#executeCommand()` seems to be exactly what we\u0027re looking for!"
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Now let\u0027s set the breakpoint. First, double-click the item to reach the corresponding code. Once there, click on the left"
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "gutter to set a breakpoint, as shown below."
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image:LeftGutter.png[]"
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Tracing the execution path"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Recall from the User Guide that the `edit` command has the format: `edit INDEX [n/NAME] [p/PHONE] [e/EMAIL]"
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[a/ADDRESS] [t/TAG]...` For this tutorial we will be issuing the command `edit 1 n/Alice Yeoh`."
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[TIP]"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Taking notes"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Over the course of the debugging session, you will encounter every major component in the application. Try to jot down"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "what happens inside the component and where the execution transfers to another component."
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". To start the debugging session, simply `Run` \u003e `Debug Main`"
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Enter `edit 1 n/Alice Yeoh` into the command box and press `Enter`."
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". The Debugger tool window should show up and look something like this:"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image:DebuggerStep1.png[]"
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Use the `Show execution point` feature to jump to the line of code that we stopped at:"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image:ShowExecutionPoint.png[]"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". `CommandResult commandResult \u003d logic.execute(commandText);` is the line that you end up at."
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". We are interested in the `logic.execute(commandText)` portion of that line so let\u0027s `Step in` into that method call:"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image:StepInto.png[]"
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". We end up in `LogicManager#execute()`. Let\u0027s take a look at the body of the method and annotate what we can deduce."
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".LogicManager#execute()"
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, java]"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "@Override"
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "public CommandResult execute(String commandText) throws CommandException, ParseException {"
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     //Logging, safe to ignore"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     logger.info(\"----------------[USER COMMAND][\" + commandText + \"]\");"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     CommandResult commandResult;"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     //Parse user input from String to a Command"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     Command command \u003d addressBookParser.parseCommand(commandText);"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     //Executes the Command and stores the result"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     commandResult \u003d command.execute(model);"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     try {"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "         //We can deduce that the previous line of code modifies model in some way"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "         // since it\u0027s being stored here."
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "         storage.saveAddressBook(model.getAddressBook());"
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     } catch (IOException ioe) {"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "         throw new CommandException(FILE_OPS_ERROR_MESSAGE + ioe, ioe);"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     }"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "     return commandResult;"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": " }"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". `LogicManager#execute()` appears to delegate most of the heavy lifting to other components. Let\u0027s take a closer"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "look at each one."
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". `Step over` the logging code since it is of no interest to us now."
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image:StepOver.png[]"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". `Step into` the line where user input in parsed from a String to a Command."
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".AddressBookParser#parseCommand()"
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, java]"
+      },
+      {
+        "lineNumber": 130,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "public Command parseCommand(String userInput) throws ParseException {"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    ..."
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    final String commandWord \u003d matcher.group(\"commandWord\");"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    final String arguments \u003d matcher.group(\"arguments\");"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    ..."
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". `Step over` until you reach the `switch` statement. The `Variables` window now shows the value of both"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "`commandWord` and `arguments` :"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image:Variables.png[]"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". We see that the value of `commandWord` is now `edit` but `arguments` is still not processed in any meaningful way."
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Stepping into the `switch`, we obviously stop at"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".AddressBookParser#parseCommand()"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, java]"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "case EditCommand.COMMAND_WORD:"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    return new EditCommandParser().parse(arguments);"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Let\u0027s see what `EditCommandParser#parse()` does by stepping into it."
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Stepping through the method shows that it calls `ArgumentTokenizer#tokenize()` and `ParserUtil#parseIndex()` to"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "obtain the arguments and index required."
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[TIP]"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Stepping out"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Sometimes you might end up stepping into functions that are not of interest. Simply `step out` of them!"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d\u003d"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". The rest of the method seems to exhaustively check for the existence of each possible parameter of the `edit`"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "command and store any possible changes in an `EditPersonDescriptor`. Recall that we can verify the contents of"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "`editPersonDesciptor` through the `Variable` tool window."
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image:EditCommand.png[]"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Let\u0027s continue stepping through until we return to `LogicManager#execute()`."
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "The sequence diagram below shows the details of the execution path through the Logic component."
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Does the execution path you traced in the code so far matches with the diagram?"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Tracing an `edit` command through the Logic component"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::LogicSequenceDiagram.png[]"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Now let\u0027s see what happens when we call `command#execute()`!"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".EditCommand#execute()"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, java]"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "@Override"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "public CommandResult execute(Model model) throws CommandException {"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    ..."
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    Person personToEdit \u003d lastShownList.get(index.getZeroBased());"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    Person editedPerson \u003d createEditedPerson(personToEdit, editPersonDescriptor);"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    if (!personToEdit.isSamePerson(editedPerson) \u0026\u0026 model.hasPerson(editedPerson)) {"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        throw new CommandException(MESSAGE_DUPLICATE_PERSON);"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    model.setPerson(personToEdit, editedPerson);"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    model.updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    return new CommandResult(String.format(MESSAGE_EDIT_PERSON_SUCCESS, editedPerson));"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". As suspected, `command#execute()` does indeed make changes to `model`."
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". We can a closer look at how storage works by repeatedly stepping into the code until we arrive at"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "`JsonAddressBook#saveAddressBook()`."
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Again, it appears that the heavy lifting is delegated. Let\u0027s take a look at ``JsonSerializableAddressBook``\u0027s"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "constructor."
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".JsonSerializableAddressBook#JsonSerializableAddressBook()"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, java]"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": " * Converts a given {@code ReadOnlyAddressBook} into this class for Jackson use."
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": " *"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": " * @param source future changes to this will not affect the created"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": " * {@code JsonSerializableAddressBook}."
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "public JsonSerializableAddressBook(ReadOnlyAddressBook source) {"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    persons.addAll("
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "        source.getPersonList()"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "              .stream()"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "              .map(JsonAdaptedPerson::new)"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "              .collect(Collectors.toList()));"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". It appears that a `JsonAdaptedPerson` is created for each `Person` and then added to the"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "`JsonSerializableAddressBook`."
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". We can continue to step through until we return to `MainWindow#executeCommand()`."
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Stepping into ``resultDisplay.setFeedbackToUser(commandResult.getFeedbackToUser());``, we end up in:"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".ResultDisplay#setFeedbackToUser()"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, java]"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "public void setFeedbackToUser(String feedbackToUser) {"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    requireNonNull(feedbackToUser);"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    resultDisplay.setText(feedbackToUser);"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Finally, we step through until we reach the end of `MainWindow#executeCommand()`."
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Conclusion"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "In this tutorial, we traced a valid edit command from raw user input to the result being displayed to the user. From"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "this tutorial, you learned more about the inner workings of AddressBook and how the various components mesh together"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "to form one cohesive product."
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".What\u0027s next?"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "****"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Here are some quick questions you can try to answer based on your execution path tracing. In some cases, you can"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "do further tracing for the given commands to find exactly what happens."
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". In this tutorial, we traced the \"happy path\" (i.e., no errors). What do you think will happen if we traced the following commands"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "instead? What exceptions do you think will be thrown(if any), where will the exceptions be thrown and where will they be"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "handled?"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. `redit 1 n/Alice Yu`"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. `edit 0 n/Alice Yu`"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. `edit 1 n/Alex Yeoh`"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. `edit 1`"
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. `edit 1 n/アリス ユー`"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. `edit 1 t/one t/two t/three t/one`"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". What components will you have to modify to perform the following enhancements to the application?"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. Make command words case-insensitive"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. Allow `delete` to remove more than one index at a time"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. Save the address book in the CSV format instead"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. Add a new command"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. Add a new field to `Person`"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".. Add a new entity to the address book"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "****"
+      }
+    ],
+    "authorContributionMap": {
+      "Jeffry Lum": 258
+    }
+  },
+  {
     "path": "src/main/java/seedu/address/ui/HelpWindow.java",
     "fileType": "java",
     "lines": [
