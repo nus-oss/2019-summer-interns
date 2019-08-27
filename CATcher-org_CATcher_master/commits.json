@@ -623,6 +623,20 @@
             "deletions": 37
           }
         ]
+      },
+      {
+        "insertions": 4,
+        "deletions": 4,
+        "date": "2019-08-26",
+        "commitResults": [
+          {
+            "hash": "6f18f2047de5c54dc8758de632655e2ede854173",
+            "messageTitle": "Deprecated API Fixes. (#170)",
+            "messageBody": "A few areas in which the \"number\" key is deprecated has been replaced\r\nwith the updated \"issue_number\" key.",
+            "insertions": 4,
+            "deletions": 4
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1798,8 +1812,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2275,
-    "KevinCJH": 1700
+    "ptvrajsk": 2279,
+    "KevinCJH": 1698
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -1810,7 +1824,7 @@
       "py": 0,
       "tag": 0,
       "html": 300,
-      "ts": 1947
+      "ts": 1951
     },
     "KevinCJH": {
       "java": 0,
@@ -1820,12 +1834,12 @@
       "py": 0,
       "tag": 0,
       "html": 274,
-      "ts": 1426
+      "ts": 1424
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 21162.33,
-    "KevinCJH": 18042.668
+    "ptvrajsk": 20081.525,
+    "KevinCJH": 17188.78
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
