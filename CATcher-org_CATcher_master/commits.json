@@ -637,6 +637,20 @@
             "deletions": 4
           }
         ]
+      },
+      {
+        "insertions": 129,
+        "deletions": 33,
+        "date": "2019-09-03",
+        "commitResults": [
+          {
+            "hash": "c217711e36669f7ca367c14d6a3c3b1671d17beb",
+            "messageTitle": "Dev Response Phase Fixed to Follow Template (#171)",
+            "messageBody": "* Fixed Parsing From Comment for Dev Response\r\n\r\nTeam Response phase now takes the data from the comment (following the\r\ntemplate) instead of the description itself.\r\n\r\nTODO: Ensure that updates to the Dev Response (Either new or editing)\r\nboth correctly gets updated to the comment instead of the description.\r\n\r\n* Temp Commit\r\n\r\nAttempting to replicate a weird bug where the output emitter from\r\nnew-team-response-component.ts is not triggering the function to update\r\nthe issueComment that is necesary to allow editing of a new comment.\r\n\r\n* Fixed Comment Updates\r\n\r\nTeamResponse now relies on the IssueComment to store the Team\u0027s\r\nResponse.\r\n\r\n* Lint Fixes\r\n\r\n* Nit Fixes\r\n\r\n* Fixed issue where Duplicates were not displayed.\r\n\r\nDuplicates now display correctly when assigned to an edited / new issue.\r\nAlso noticed an issue whereby the latest comment of an issue is not\r\nfetched (needed to work in the case where a new issue is assigned a\r\nduplicate and the duplicate is then removed.) So added the functionality\r\nto retrieve the most recent comment that matches the required template.\r\n\r\n* Fixed issue where duplicate disappears upon edit.\r\n",
+            "insertions": 129,
+            "deletions": 33
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1812,8 +1826,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2279,
-    "KevinCJH": 1698
+    "ptvrajsk": 2399,
+    "KevinCJH": 1689
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -1823,8 +1837,8 @@
       "md": 28,
       "py": 0,
       "tag": 0,
-      "html": 300,
-      "ts": 1951
+      "html": 304,
+      "ts": 2067
     },
     "KevinCJH": {
       "java": 0,
@@ -1833,13 +1847,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 274,
-      "ts": 1424
+      "html": 270,
+      "ts": 1419
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 20081.525,
-    "KevinCJH": 17188.78
+    "ptvrajsk": 18915.021,
+    "KevinCJH": 16164.637
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
