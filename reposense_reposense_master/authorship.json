@@ -8277,9 +8277,9 @@
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "          .tab-close(v-on:click\u003d\"isTabActive\u003dfalse\")"
+        "content": "          .tab-close(v-on:click\u003d\"deactivateTab\")"
       },
       {
         "lineNumber": 48,
@@ -10287,8 +10287,8 @@
     "authorContributionMap": {
       "jylee-git": 35,
       "bluein-green": 5,
-      "jamessspanggg": 85,
-      "-": 208
+      "jamessspanggg": 86,
+      "-": 207
     }
   },
   {
@@ -19569,9 +19569,9 @@
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "          .then(() \u003d\u003e this.updateReportView());"
+        "content": "          .then(() \u003d\u003e this.updateReportView().then(() \u003d\u003e this.renderTabHash()));"
       },
       {
         "lineNumber": 130,
@@ -19611,9 +19611,9 @@
       {
         "lineNumber": 135,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "      this.updateReportView();"
+        "content": "      this.updateReportView().then(() \u003d\u003e this.renderTabHash());"
       },
       {
         "lineNumber": 136,
@@ -19625,16 +19625,16 @@
       {
         "lineNumber": 137,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "    updateReportView() {"
+        "content": "    async updateReportView() {"
       },
       {
         "lineNumber": 138,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "      window.api.loadSummary().then((names) \u003d\u003e {"
+        "content": "      await window.api.loadSummary().then((names) \u003d\u003e {"
       },
       {
         "lineNumber": 139,
@@ -19949,682 +19949,738 @@
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "      window.addHash(\u0027tabType\u0027, this.tabType);"
+        "content": "      window.addHash(\u0027tabOpen\u0027, this.isTabActive);"
       },
       {
         "lineNumber": 184,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "    },"
+        "content": "      window.addHash(\u0027tabType\u0027, this.tabType);"
       },
       {
         "lineNumber": 185,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "      window.encodeHash();"
       },
       {
         "lineNumber": 186,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "    updateTabAuthorship(obj) {"
+        "content": "    },"
       },
       {
         "lineNumber": 187,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "      this.tabInfo.tabAuthorship \u003d Object.assign({}, obj);"
+        "content": ""
       },
       {
         "lineNumber": 188,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "      this.activateTab(\u0027authorship\u0027);"
+        "content": "    deactivateTab() {"
       },
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "    },"
+        "content": "      this.isTabActive \u003d false;"
       },
       {
         "lineNumber": 190,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "    updateTabZoom(obj) {"
+        "content": "      window.addHash(\u0027tabOpen\u0027, this.isTabActive);"
       },
       {
         "lineNumber": 191,
         "author": {
-          "gitId": "-"
-        },
-        "content": "      this.tabInfo.tabZoom \u003d Object.assign({}, obj);"
-      },
-      {
-        "lineNumber": 192,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      this.activateTab(\u0027zoom\u0027);"
-      },
-      {
-        "lineNumber": 193,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    },"
-      },
-      {
-        "lineNumber": 194,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 195,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    // updating summary view"
-      },
-      {
-        "lineNumber": 196,
-        "author": {
           "gitId": "jamessspanggg"
-        },
-        "content": "    updateSummaryDates(since, until) {"
-      },
-      {
-        "lineNumber": 197,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      this.$refs.summary.updateDateRange(since, until);"
-      },
-      {
-        "lineNumber": 198,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    },"
-      },
-      {
-        "lineNumber": 199,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 200,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    renderAuthorShipTabHash(minDate, maxDate) {"
-      },
-      {
-        "lineNumber": 201,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const hash \u003d window.hashParams;"
-      },
-      {
-        "lineNumber": 202,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const info \u003d {"
-      },
-      {
-        "lineNumber": 203,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        author: hash.tabAuthor,"
-      },
-      {
-        "lineNumber": 204,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        repo: hash.tabRepo,"
-      },
-      {
-        "lineNumber": 205,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        minDate,"
-      },
-      {
-        "lineNumber": 206,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        maxDate,"
-      },
-      {
-        "lineNumber": 207,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      };"
-      },
-      {
-        "lineNumber": 208,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const tabInfoLength \u003d Object.values(info).filter((x) \u003d\u003e x).length;"
-      },
-      {
-        "lineNumber": 209,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      if (Object.keys(info).length \u003d\u003d\u003d tabInfoLength) {"
-      },
-      {
-        "lineNumber": 210,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        this.updateTabAuthorship(info);"
-      },
-      {
-        "lineNumber": 211,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      } else if (hash.tabOpen \u003d\u003d\u003d \u0027false\u0027 || tabInfoLength \u003e 2) {"
-      },
-      {
-        "lineNumber": 212,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        window.app.isTabActive \u003d false;"
-      },
-      {
-        "lineNumber": 213,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 214,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    },"
-      },
-      {
-        "lineNumber": 215,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 216,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    renderTabHash() {"
-      },
-      {
-        "lineNumber": 217,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      window.decodeHash();"
-      },
-      {
-        "lineNumber": 218,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      const hash \u003d window.hashParams;"
-      },
-      {
-        "lineNumber": 219,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      if (!hash.tabOpen) {"
-      },
-      {
-        "lineNumber": 220,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        return;"
-      },
-      {
-        "lineNumber": 221,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 222,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      this.isTabActive \u003d hash.tabOpen \u003d\u003d\u003d \u0027true\u0027;"
-      },
-      {
-        "lineNumber": 223,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 224,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      if (this.isTabActive) {"
-      },
-      {
-        "lineNumber": 225,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        if (hash.tabType \u003d\u003d\u003d \u0027authorship\u0027) {"
-      },
-      {
-        "lineNumber": 226,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          this.renderAuthorShipTabHash(hash.since, hash.until);"
-      },
-      {
-        "lineNumber": 227,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        } else {"
-      },
-      {
-        "lineNumber": 228,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          // handle zoom tab if needed"
-      },
-      {
-        "lineNumber": 229,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 230,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 231,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    },"
-      },
-      {
-        "lineNumber": 232,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 233,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    generateKey(dataObj) {"
-      },
-      {
-        "lineNumber": 234,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      return JSON.stringify(dataObj);"
-      },
-      {
-        "lineNumber": 235,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    },"
-      },
-      {
-        "lineNumber": 236,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 237,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    getRepoSenseLink() {"
-      },
-      {
-        "lineNumber": 238,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const version \u003d window.app.repoSenseVersion;"
-      },
-      {
-        "lineNumber": 239,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      if (!version) {"
-      },
-      {
-        "lineNumber": 240,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        return \u0027https://github.com/reposense/RepoSense\u0027;"
-      },
-      {
-        "lineNumber": 241,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 242,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      if (version.startsWith(\u0027v\u0027)) {"
-      },
-      {
-        "lineNumber": 243,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        return `https://github.com/reposense/RepoSense/releases/tag/${version}`;"
-      },
-      {
-        "lineNumber": 244,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 245,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      return `https://github.com/reposense/RepoSense/commits/${version}`;"
-      },
-      {
-        "lineNumber": 246,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    },"
-      },
-      {
-        "lineNumber": 247,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 248,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    receiveDates(dates) {"
-      },
-      {
-        "lineNumber": 249,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      const [minDate, maxDate] \u003d dates;"
-      },
-      {
-        "lineNumber": 250,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 251,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      if (this.tabType \u003d\u003d\u003d \u0027authorship\u0027) {"
-      },
-      {
-        "lineNumber": 252,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        this.renderAuthorShipTabHash(minDate, maxDate);"
-      },
-      {
-        "lineNumber": 253,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 254,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    },"
-      },
-      {
-        "lineNumber": 255,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  },"
-      },
-      {
-        "lineNumber": 256,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  components: {"
-      },
-      {
-        "lineNumber": 257,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    v_zoom: window.vZoom,"
-      },
-      {
-        "lineNumber": 258,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    v_summary: window.vSummary,"
-      },
-      {
-        "lineNumber": 259,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    v_authorship: window.vAuthorship,"
-      },
-      {
-        "lineNumber": 260,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    CircleSpinner: window.VueLoadingSpinner.Circle,"
-      },
-      {
-        "lineNumber": 261,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  },"
-      },
-      {
-        "lineNumber": 262,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  created() {"
-      },
-      {
-        "lineNumber": 263,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    this.updateReportDir();"
-      },
-      {
-        "lineNumber": 264,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    this.renderTabHash();"
-      },
-      {
-        "lineNumber": 265,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  },"
-      },
-      {
-        "lineNumber": 266,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  updated() {"
-      },
-      {
-        "lineNumber": 267,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    this.$nextTick(() \u003d\u003e {"
-      },
-      {
-        "lineNumber": 268,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      if (window.$(\u0027tabs-wrapper\u0027)) {"
-      },
-      {
-        "lineNumber": 269,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        window.$(\u0027tabs-wrapper\u0027).style.flex \u003d `0 0 ${flexWidth * 100}%`;"
-      },
-      {
-        "lineNumber": 270,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 271,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    });"
-      },
-      {
-        "lineNumber": 272,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    if (!this.isTabActive) {"
-      },
-      {
-        "lineNumber": 273,
-        "author": {
-          "gitId": "-"
         },
         "content": "      window.removeHash(\u0027tabAuthor\u0027);"
       },
       {
-        "lineNumber": 274,
+        "lineNumber": 192,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
         "content": "      window.removeHash(\u0027tabRepo\u0027);"
       },
       {
-        "lineNumber": 275,
+        "lineNumber": 193,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      window.removeHash(\u0027tabType\u0027);"
       },
       {
-        "lineNumber": 276,
+        "lineNumber": 194,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      window.encodeHash();"
+      },
+      {
+        "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    },"
       },
       {
-        "lineNumber": 277,
+        "lineNumber": 196,
         "author": {
           "gitId": "-"
         },
-        "content": "    window.addHash(\u0027tabOpen\u0027, this.isTabActive);"
+        "content": ""
       },
       {
-        "lineNumber": 278,
+        "lineNumber": 197,
         "author": {
           "gitId": "-"
         },
-        "content": "    window.encodeHash();"
+        "content": "    updateTabAuthorship(obj) {"
       },
       {
-        "lineNumber": 279,
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.tabInfo.tabAuthorship \u003d Object.assign({}, obj);"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.activateTab(\u0027authorship\u0027);"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    updateTabZoom(obj) {"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.tabInfo.tabZoom \u003d Object.assign({}, obj);"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.activateTab(\u0027zoom\u0027);"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    // updating summary view"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    updateSummaryDates(since, until) {"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      this.$refs.summary.updateDateRange(since, until);"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    renderAuthorShipTabHash(minDate, maxDate) {"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const hash \u003d window.hashParams;"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const info \u003d {"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        author: hash.tabAuthor,"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        repo: hash.tabRepo,"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        minDate,"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        maxDate,"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      };"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const tabInfoLength \u003d Object.values(info).filter((x) \u003d\u003e x).length;"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      if (Object.keys(info).length \u003d\u003d\u003d tabInfoLength) {"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.updateTabAuthorship(info);"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      } else if (hash.tabOpen \u003d\u003d\u003d \u0027false\u0027 || tabInfoLength \u003e 2) {"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        window.app.isTabActive \u003d false;"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    renderTabHash() {"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      window.decodeHash();"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      const hash \u003d window.hashParams;"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      if (!hash.tabOpen) {"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        return;"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      this.isTabActive \u003d hash.tabOpen \u003d\u003d\u003d \u0027true\u0027;"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      if (this.isTabActive) {"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        if (hash.tabType \u003d\u003d\u003d \u0027authorship\u0027) {"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          let { since, until } \u003d hash;"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          // get since and until dates from window.app if not found in hash"
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          since \u003d since || window.app.sinceDate;"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          until \u003d until || window.app.untilDate;"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          this.renderAuthorShipTabHash(since, until);"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          // handle zoom tab if needed"
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    generateKey(dataObj) {"
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return JSON.stringify(dataObj);"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    getRepoSenseLink() {"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const version \u003d window.app.repoSenseVersion;"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      if (!version) {"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return \u0027https://github.com/reposense/RepoSense\u0027;"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      if (version.startsWith(\u0027v\u0027)) {"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return `https://github.com/reposense/RepoSense/releases/tag/${version}`;"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      return `https://github.com/reposense/RepoSense/commits/${version}`;"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    receiveDates(dates) {"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      const [minDate, maxDate] \u003d dates;"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      if (this.tabType \u003d\u003d\u003d \u0027authorship\u0027) {"
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.renderAuthorShipTabHash(minDate, maxDate);"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 271,
         "author": {
           "gitId": "-"
         },
         "content": "  },"
       },
       {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  components: {"
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    v_zoom: window.vZoom,"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    v_summary: window.vSummary,"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    v_authorship: window.vAuthorship,"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    CircleSpinner: window.VueLoadingSpinner.Circle,"
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  created() {"
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    this.updateReportDir();"
+      },
+      {
         "lineNumber": 280,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  updated() {"
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    this.$nextTick(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      if (window.$(\u0027tabs-wrapper\u0027)) {"
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        window.$(\u0027tabs-wrapper\u0027).style.flex \u003d `0 0 ${flexWidth * 100}%`;"
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 288,
         "author": {
           "gitId": "-"
         },
@@ -20633,8 +20689,8 @@
     ],
     "authorContributionMap": {
       "jylee-git": 5,
-      "jamessspanggg": 30,
-      "-": 245
+      "jamessspanggg": 48,
+      "-": 235
     }
   },
   {

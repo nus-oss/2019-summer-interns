@@ -830,13 +830,27 @@
             "deletions": 2
           }
         ]
+      },
+      {
+        "insertions": 22,
+        "deletions": 14,
+        "date": "2019-09-05",
+        "commitResults": [
+          {
+            "hash": "816bb1a856387ca848504ae279bc2a4b81f4a308",
+            "messageTitle": "[#858] Restore authorship tab (#874)",
+            "messageBody": "Authorship tab is not restorable after refreshing the page.\r\n\r\nRestoring authorship tab requires the since and until date hashes \r\nwhereas PR #757 has made changes where the date hashes will not \r\nbe captured in the URL if not specified by the user.\r\n\r\nLet\u0027s \r\n- use the window\u0027s since and until date to restore the authorship \r\n  tab if the date hashes are unavailable. \r\n- move the restoring of tab hashes to be executed after \r\n  loadSummary() to ensure that the window\u0027s since and until date is \r\n  available.\r\n- extract the deactivation of tab pane to a method instead of using\r\n  the updated hook as the updated hook will be called repeatedly \r\n  whenever there are data changes that affect the DOM.\r\n",
+            "insertions": 22,
+            "deletions": 14
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 2219,
     "bluein-green": 179,
-    "jamessspanggg": 1214
+    "jamessspanggg": 1233
   },
   "authorFileTypeContributionMap": {
     "jylee-git": {
@@ -863,20 +877,20 @@
     },
     "jamessspanggg": {
       "java": 171,
-      "js": 356,
+      "js": 374,
       "scss": 491,
       "json": 34,
       "md": 37,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 125
+      "pug": 126
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 15725.159,
-    "bluein-green": 72.37212,
-    "jamessspanggg": 23438.441
+    "jylee-git": 15210.771,
+    "bluein-green": 70.00265,
+    "jamessspanggg": 22649.012
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

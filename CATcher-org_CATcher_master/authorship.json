@@ -11291,9 +11291,9 @@
       {
         "lineNumber": 123,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    octokit.issues.updateLabel({owner: ORG_NAME, repo: REPO, current_name: labelName, color: labelColor});"
+        "content": "    octokit.issues.updateLabel({owner: ORG_NAME, repo: REPO, name: labelName, current_name: labelName, color: labelColor});"
       },
       {
         "lineNumber": 124,
@@ -12172,9 +12172,9 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 48,
+      "ptvrajsk": 47,
       "KevinCJH": 26,
-      "-": 174
+      "-": 175
     }
   },
   {
@@ -15418,9 +15418,9 @@
       {
         "lineNumber": 262,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "        return combineLatest(mappingFunctions);"
+        "content": "        return mappingFunctions.length \u003d\u003d\u003d 0 ? of([]) : combineLatest(mappingFunctions);"
       },
       {
         "lineNumber": 263,
@@ -18337,8 +18337,8 @@
     ],
     "authorContributionMap": {
       "ptvrajsk": 96,
-      "KevinCJH": 200,
-      "-": 382
+      "KevinCJH": 199,
+      "-": 383
     }
   },
   {
@@ -48786,14 +48786,14 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        \u003capp-issue-description [isEditing]\u003d\"isIssueDescriptionEditing\" (changeEditState)\u003d\"updateDescriptionEditState($event)\" "
+        "content": "        \u003capp-issue-description [isEditing]\u003d\"isIssueDescriptionEditing\" (changeEditState)\u003d\"updateDescriptionEditState($event)\""
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          *ngIf\u003d\"!isIssueLoading \u0026\u0026 this.isComponentVisible(issueComponentsEnum.TESTER_POST)\" "
+        "content": "          *ngIf\u003d\"!isIssueLoading \u0026\u0026 this.isComponentVisible(issueComponentsEnum.TESTER_POST)\""
       },
       {
         "lineNumber": 11,
@@ -48828,7 +48828,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        \u003capp-issue-response *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.TEAM_RESPONSE) \u0026\u0026 !isIssueLoading \u0026\u0026 issue.teamResponse\" "
+        "content": "        \u003capp-issue-response *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.TEAM_RESPONSE) \u0026\u0026 !isIssueLoading \u0026\u0026 issue.teamResponse\""
       },
       {
         "lineNumber": 16,
@@ -48912,7 +48912,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        \u003capp-tester-response *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.TESTER_RESPONSE) \u0026\u0026 "
+        "content": "        \u003capp-tester-response *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.TESTER_RESPONSE) \u0026\u0026"
       },
       {
         "lineNumber": 28,
@@ -48989,7 +48989,7 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        \u003capp-issue-response *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.TUTOR_RESPONSE) \u0026\u0026 !isIssueLoading \u0026\u0026 issue.tutorResponse\" "
+        "content": "        \u003capp-issue-response *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.TUTOR_RESPONSE) \u0026\u0026 !isIssueLoading \u0026\u0026 issue.tutorResponse\""
       },
       {
         "lineNumber": 39,
@@ -49360,14 +49360,14 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        \u003c!-- Faulty issue warning --\u003e  "
+        "content": "        \u003c!-- Faulty issue warning --\u003e"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        \u003cdiv style\u003d\"margin-top: 15px; color: red\" *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.DUPLICATE) \u0026\u0026 "
+        "content": "        \u003cdiv style\u003d\"margin-top: 15px; color: red\" *ngIf\u003d\"this.isComponentVisible(issueComponentsEnum.DUPLICATE) \u0026\u0026"
       },
       {
         "lineNumber": 93,
@@ -49543,9 +49543,9 @@
       {
         "lineNumber": 1,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "import { Component, OnInit, OnDestroy, Input } from \u0027@angular/core\u0027;"
+        "content": "import { Component, OnInit, OnDestroy, OnChanges, Input, SimpleChanges } from \u0027@angular/core\u0027;"
       },
       {
         "lineNumber": 2,
@@ -49795,9 +49795,9 @@
       {
         "lineNumber": 37,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "export class ViewIssueComponent implements OnInit, OnDestroy {"
+        "content": "export class ViewIssueComponent implements OnInit, OnDestroy, OnChanges {"
       },
       {
         "lineNumber": 38,
@@ -49965,388 +49965,402 @@
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.route.params.subscribe("
+        "content": "    this.initializeIssue(this.issueId);"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      params \u003d\u003e {"
+        "content": "  }"
       },
       {
         "lineNumber": 63,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "        this.initializeIssue(this.issueId);"
+        "content": ""
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "      }"
+        "content": "  ngOnChanges(changes: SimpleChanges) {"
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "    );"
+        "content": "    if (!changes.issueId.firstChange) {"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "  }"
+        "content": "      this.initializeIssue(changes.issueId.currentValue);"
       },
       {
         "lineNumber": 67,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  isComponentVisible(component: ISSUE_COMPONENTS): boolean {"
+        "content": "  }"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return this.issueComponents.includes(component);"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  isComponentVisible(component: ISSUE_COMPONENTS): boolean {"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    return this.issueComponents.includes(component);"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  isEditing(): boolean {"
+        "content": "  }"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return !this.isIssueDescriptionEditing \u0026\u0026 !this.isTutorResponseEditing \u0026\u0026 !this.isTeamResponseEditing;"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  isEditing(): boolean {"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    return !this.isIssueDescriptionEditing \u0026\u0026 !this.isTutorResponseEditing \u0026\u0026 !this.isTeamResponseEditing;"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private initializeIssue(id: number) {"
+        "content": "  }"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.getIssue(id);"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  private initializeIssue(id: number) {"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    this.getIssue(id);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  private getIssue(id: number) {"
+        "content": "  }"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.issueSubscription \u003d this.issueService.getAllIssues().subscribe((issues) \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        this.issue \u003d issues.find(issue \u003d\u003e issue.id \u003d\u003d\u003d id);"
+        "content": "  private getIssue(id: number) {"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        this.isIssueLoading \u003d false;"
+        "content": "    this.issueSubscription \u003d this.issueService.getAllIssues().subscribe((issues) \u003d\u003e {"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }, (error) \u003d\u003e {"
+        "content": "        this.issue \u003d issues.find(issue \u003d\u003e issue.id \u003d\u003d\u003d id);"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      this.errorHandlingService.handleHttpError(error, () \u003d\u003e this.initializeIssue(id));"
+        "content": "        this.isIssueLoading \u003d false;"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    });"
+        "content": "    }, (error) \u003d\u003e {"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "      this.errorHandlingService.handleHttpError(error, () \u003d\u003e this.initializeIssue(id));"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    });"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  updateIssue(newIssue: Issue) {"
+        "content": "  }"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.issue \u003d newIssue;"
+        "content": ""
       },
       {
         "lineNumber": 91,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "    this.issueService.updateLocalStore(newIssue);"
+        "content": "  updateIssue(newIssue: Issue) {"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    this.issue \u003d newIssue;"
       },
       {
         "lineNumber": 93,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.issueService.updateLocalStore(newIssue);"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  updateComment(newComment: IssueComment) {"
+        "content": "  }"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.issue.issueComment \u003d newComment;"
+        "content": ""
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.issueCommentService.updateLocalStore(newComment, this.issueId);"
+        "content": "  updateComment(newComment: IssueComment) {"
       },
       {
         "lineNumber": 97,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "    this.issueService.updateLocalStore(this.issue);"
+        "content": "    this.issue.issueComment \u003d newComment;"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    this.issueCommentService.updateLocalStore(newComment, this.issueId);"
       },
       {
         "lineNumber": 99,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.issueService.updateLocalStore(this.issue);"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  updateDescriptionEditState(updatedState: boolean) {"
+        "content": "  }"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.isIssueDescriptionEditing \u003d updatedState;"
+        "content": ""
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  updateDescriptionEditState(updatedState: boolean) {"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    this.isIssueDescriptionEditing \u003d updatedState;"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  updateTeamResponseEditState(updatedState: boolean) {"
+        "content": "  }"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.isTeamResponseEditing \u003d updatedState;"
+        "content": ""
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  updateTeamResponseEditState(updatedState: boolean) {"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    this.isTeamResponseEditing \u003d updatedState;"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  updateTutorResponseEditState(updatedState: boolean) {"
+        "content": "  }"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.isTutorResponseEditing \u003d updatedState;"
+        "content": ""
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  updateTutorResponseEditState(updatedState: boolean) {"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    this.isTutorResponseEditing \u003d updatedState;"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  ngOnDestroy() {"
+        "content": "  }"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    this.issueSubscription.unsubscribe();"
+        "content": ""
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "  ngOnDestroy() {"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    this.issueSubscription.unsubscribe();"
       },
       {
         "lineNumber": 116,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 118,
         "author": {
           "gitId": "KevinCJH"
         },
@@ -50355,7 +50369,8 @@
     ],
     "authorContributionMap": {
       "ptvrajsk": 5,
-      "KevinCJH": 111
+      "KevinCJH": 106,
+      "-": 7
     }
   },
   {
