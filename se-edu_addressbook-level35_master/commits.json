@@ -133,24 +133,52 @@
             "deletions": 0
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 4,
+        "date": "2019-09-02",
+        "commitResults": [
+          {
+            "hash": "f77cfc993419caccea2594956795f1f565619442",
+            "messageTitle": "Prevent HelpWindow from maximizing",
+            "messageBody": "Address a regression in ebbb713 where subsequent `help` commands will\nspawn a `HelpWindow` maximized, covering the screen.\n\nDisable the resizability and the maximize button completely as it serves\nno purpose.\n\nRemove unnecessary call to sizeToScene() as HelpWindow defaults to \nUSE_COMPUTED_SIZE and the computed size of all its children nodes are \navailable before it is shown.\n\nRemove TODO in HelpWindow.fxml as the initial size is set to computed\nsize. \n\n",
+            "insertions": 1,
+            "deletions": 4
+          }
+        ]
+      },
+      {
+        "insertions": 117,
+        "deletions": 0,
+        "date": "2019-09-06",
+        "commitResults": [
+          {
+            "hash": "540ffb24b41df7eef8ea52641a2446d912f263a3",
+            "messageTitle": "Add tutorial on how to remove a field",
+            "messageBody": "In lieu of a tutorial on how to morph which can be hard to write and\nmaintain, we provide a simpler and shorter tutorial on how to remove a\nfield instead.\n\nStudents trying to morph the product can repeat this tutorial to get the\nmodel to a state where they can work with.\n",
+            "insertions": 117,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
-    "Jeffry Lum": 838
+    "Jeffry Lum": 953
   },
   "authorFileTypeContributionMap": {
     "Jeffry Lum": {
-      "java": 24,
+      "java": 23,
       "js": 0,
       "css": 0,
-      "adoc": 787,
-      "fxml": 27,
+      "adoc": 904,
+      "fxml": 26,
       "gradle": 0
     }
   },
   "authorContributionVariance": {
-    "Jeffry Lum": 5448.7104
+    "Jeffry Lum": 4818.887
   },
   "authorDisplayNameMap": {
     "Jeffry Lum": "Jeffry"

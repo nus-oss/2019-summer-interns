@@ -6660,6 +6660,834 @@
     }
   },
   {
+    "path": "docs/tutorials/RemovingFields.adoc",
+    "fileType": "adoc",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d Tutorial - Removing a field from an entity"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":site-section: DeveloperGuide"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":imagesDir: ../images/remove"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":stylesDir: ../stylesheets"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":xrefstyle: full"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "ifdef::env-github[]"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":tip-caption: :bulb:"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":note-caption: :information_source:"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ":warning-caption: :warning:"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "endif::[]"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[quote, Antoine de Saint-Exupery]"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Introduction"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "When working on Address Book, you will most likely find that some features and fields that are no longer necessary."
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "In scenarios like this, you can consider refactoring the existing `Person` model to suit your use case."
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "In this tutorial, we\u0027ll do exactly just that and remove the `address` field from `Person`."
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Safely deleting `Address`"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Fortunately, the IntelliJ IDEA provides a robust refactoring tool that can identify _most_ usages."
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Let\u0027s try to use it as much as we can."
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d Assisted refactoring"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "The `address` field in `Person` is actually an instance of the `seedu.address.model.person.Address` class."
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Since removing the `Address` class will break the application, we start by identifying ``Address``\u0027s usages."
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "This allows us to see code that depends on `Address` to function properly and edit them on a case-by-case basis."
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Right-click the `Address` class and select `Refactor` \u003e `Safe Delete` through the menu."
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".Usages detected"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::UnsafeDelete.png[width\u003d787px. height\u003d238px]"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Choose to `View Usages` and you should be presented with a list of `Safe Delete Conflicts`."
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "These conflicts describe locations in which the `Address` class is used."
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".List of conflicts"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::SafeDeleteConflicts.png[width\u003d955, height\u003d640px]"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Remove usages of `Address` by performing ``Safe Delete``s on each entry."
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "You will need to exercise discretion when removing usages of `Address`."
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Functions like `ParserUtil#parseAddress()` can be safely removed but its usages must be removed as well."
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Other usages like in `EditPersonDescriptor` may require more careful inspection."
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Let\u0027s try removing references to `Address` in `EditPersonDescriptor`."
+      },
+      {
+        "lineNumber": 47,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 48,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Safe delete the field `address` in `EditPersonDescriptor`"
+      },
+      {
+        "lineNumber": 49,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Select `Yes` when prompted to remove getters and setters"
+      },
+      {
+        "lineNumber": 50,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Select `View Usages` again image:UnsafeDeleteOnField.png[width\u003d1145px, height\u003d583px]"
+      },
+      {
+        "lineNumber": 51,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Remove the usages of `address` and select `Do refactor` when you are done."
+      },
+      {
+        "lineNumber": 52,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "+"
+      },
+      {
+        "lineNumber": 53,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "TIP: Removing usages may result in errors."
+      },
+      {
+        "lineNumber": 54,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Exercise discretion and fix them."
+      },
+      {
+        "lineNumber": 55,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For example, removing the `address` field from the `Person` class will require you to modify its constructor."
+      },
+      {
+        "lineNumber": 56,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 57,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ". Repeat the steps for the remaining usages of `Address`"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 59,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "After you are done, verify that the application still works by compiling and running it again."
+      },
+      {
+        "lineNumber": 60,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 61,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d\u003d Manual refactoring"
+      },
+      {
+        "lineNumber": 62,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 63,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Unfortunately, there are usages of `Address` that IntelliJ IDEA cannot identify."
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "You can find them by searching for instances of the word `address` in your code (`Edit` \u003e `Find` \u003e `Find in path`)."
+      },
+      {
+        "lineNumber": 65,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 66,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Places of interest to look out for would be resources used by the application."
+      },
+      {
+        "lineNumber": 67,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "`main/resources` contains images and `fxml` files used by the application and `test/resources` contains test data."
+      },
+      {
+        "lineNumber": 68,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "For example, there is a `$address` in each `PersonCard` that has not been removed nor identified."
+      },
+      {
+        "lineNumber": 69,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "image::$address.png[width\u003d1090px, height\u003d890px]"
+      },
+      {
+        "lineNumber": 71,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 72,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "A quick look at the `PersonCard` class and its `fxml` file quickly reveals why it slipped past the automated refactoring."
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 74,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".PersonCard.java"
+      },
+      {
+        "lineNumber": 75,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, java]"
+      },
+      {
+        "lineNumber": 76,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 77,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 78,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "@FXML"
+      },
+      {
+        "lineNumber": 79,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "private Label address;"
+      },
+      {
+        "lineNumber": 80,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 81,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 82,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 83,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".PersonCard.fxml"
+      },
+      {
+        "lineNumber": 84,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, xml]"
+      },
+      {
+        "lineNumber": 85,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 86,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003cLabel fx:id\u003d\"phone\" styleClass\u003d\"cell_small_label\" text\u003d\"\\$phone\" /\u003e"
+      },
+      {
+        "lineNumber": 88,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003cLabel fx:id\u003d\"address\" styleClass\u003d\"cell_small_label\" text\u003d\"\\$address\" /\u003e"
+      },
+      {
+        "lineNumber": 89,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003cLabel fx:id\u003d\"email\" styleClass\u003d\"cell_small_label\" text\u003d\"\\$email\" /\u003e"
+      },
+      {
+        "lineNumber": 90,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "..."
+      },
+      {
+        "lineNumber": 91,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "----"
+      },
+      {
+        "lineNumber": 92,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 93,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "After removing the `Label`, we can proceed to formally test our code."
+      },
+      {
+        "lineNumber": 94,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "If everything went well, you should have most of your tests pass."
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "Fix any remaining errors until the tests all pass."
+      },
+      {
+        "lineNumber": 96,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 97,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "\u003d\u003d Tidying up"
+      },
+      {
+        "lineNumber": 98,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 99,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "At this point, your application is working as intended and all your tests are passing."
+      },
+      {
+        "lineNumber": 100,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "What\u0027s left to do is to clean up references to `Address` in test data and documentation."
+      },
+      {
+        "lineNumber": 101,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "In `src/test/data/`, data meant for testing purposes are stored."
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "While keeping the `address` field in the json files does not cause the tests to fail, it is not good practice to let cruft from old features accumulate."
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": ".invalidPersonAddressBook.json"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "[source, json]"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "{"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "  \"persons\": [ {"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    \"name\": \"Person with invalid name field: Ha!ns Mu@ster\","
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    \"phone\": \"9482424\","
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    \"email\": \"hans@example.com\","
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "    \"address\": \"4th street\""
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "  } ]"
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "```"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "Jeffry Lum"
+        },
+        "content": "You can go through each individual `json` file and manually remove the `address` field."
+      }
+    ],
+    "authorContributionMap": {
+      "Jeffry Lum": 117
+    }
+  },
+  {
     "path": "docs/tutorials/TracingCode.adoc",
     "fileType": "adoc",
     "lines": [
@@ -8740,460 +9568,453 @@
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "Jeffry Lum"
+          "gitId": "-"
         },
-        "content": "        root.sizeToScene();"
+        "content": "    }"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": "     * Creates a new HelpWindow."
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Creates a new HelpWindow."
+        "content": "     */"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    public HelpWindow() {"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "    public HelpWindow() {"
+        "content": "        this(new Stage());"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "        this(new Stage());"
+        "content": "    }"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": "     * Shows the help window."
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Shows the help window."
+        "content": "     * @throws IllegalStateException"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "     * @throws IllegalStateException"
+        "content": "     * \u003cul\u003e"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "     * \u003cul\u003e"
+        "content": "     *     \u003cli\u003e"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003cli\u003e"
+        "content": "     *         if this method is called on a thread other than the JavaFX Application Thread."
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "     *         if this method is called on a thread other than the JavaFX Application Thread."
+        "content": "     *     \u003c/li\u003e"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003c/li\u003e"
+        "content": "     *     \u003cli\u003e"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003cli\u003e"
+        "content": "     *         if this method is called during animation or layout processing."
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "     *         if this method is called during animation or layout processing."
+        "content": "     *     \u003c/li\u003e"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003c/li\u003e"
+        "content": "     *     \u003cli\u003e"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003cli\u003e"
+        "content": "     *         if this method is called on the primary stage."
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "     *         if this method is called on the primary stage."
+        "content": "     *     \u003c/li\u003e"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003c/li\u003e"
+        "content": "     *     \u003cli\u003e"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003cli\u003e"
+        "content": "     *         if {@code dialogStage} is already showing."
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "     *         if {@code dialogStage} is already showing."
+        "content": "     *     \u003c/li\u003e"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "     *     \u003c/li\u003e"
+        "content": "     * \u003c/ul\u003e"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": "     * \u003c/ul\u003e"
+        "content": "     */"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    public void show() {"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void show() {"
+        "content": "        logger.fine(\"Showing help page about the application.\");"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": "        logger.fine(\"Showing help page about the application.\");"
-      },
-      {
-        "lineNumber": 68,
-        "author": {
-          "gitId": "-"
-        },
         "content": "        getRoot().show();"
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 68,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "        getRoot().centerOnScreen();"
       },
       {
-        "lineNumber": 70,
+        "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
+      },
+      {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": "     * Returns true if the help window is currently being shown."
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Returns true if the help window is currently being shown."
+        "content": "     */"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    public boolean isShowing() {"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "    public boolean isShowing() {"
+        "content": "        return getRoot().isShowing();"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "        return getRoot().isShowing();"
+        "content": "    }"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": "     * Hides the help window."
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Hides the help window."
+        "content": "     */"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    public void hide() {"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void hide() {"
+        "content": "        getRoot().hide();"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "        getRoot().hide();"
+        "content": "    }"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    /**"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": "     * Focuses on the help window."
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Focuses on the help window."
+        "content": "     */"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    public void focus() {"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "    public void focus() {"
+        "content": "        getRoot().requestFocus();"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "        getRoot().requestFocus();"
-      },
-      {
-        "lineNumber": 91,
-        "author": {
-          "gitId": "-"
-        },
         "content": "    }"
       },
       {
-        "lineNumber": 92,
+        "lineNumber": 91,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": ""
       },
       {
-        "lineNumber": 93,
+        "lineNumber": 92,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "    /**"
       },
       {
-        "lineNumber": 94,
+        "lineNumber": 93,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "     * Copies the URL to the user guide to the clipboard."
       },
       {
-        "lineNumber": 95,
+        "lineNumber": 94,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "     */"
       },
       {
-        "lineNumber": 96,
+        "lineNumber": 95,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "    @FXML"
       },
       {
-        "lineNumber": 97,
+        "lineNumber": 96,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "    private void copyUrl() {"
       },
       {
-        "lineNumber": 98,
+        "lineNumber": 97,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "        final Clipboard clipboard \u003d Clipboard.getSystemClipboard();"
       },
       {
-        "lineNumber": 99,
+        "lineNumber": 98,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "        final ClipboardContent url \u003d new ClipboardContent();"
       },
       {
-        "lineNumber": 100,
+        "lineNumber": 99,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "        url.putString(USERGUIDE_URL);"
       },
       {
-        "lineNumber": 101,
+        "lineNumber": 100,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "        clipboard.setContent(url);"
       },
       {
-        "lineNumber": 102,
+        "lineNumber": 101,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 103,
+        "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
@@ -9201,7 +10022,7 @@
       }
     ],
     "authorContributionMap": {
-      "Jeffry Lum": 24,
+      "Jeffry Lum": 23,
       "-": 79
     }
   },
@@ -9282,215 +10103,201 @@
       {
         "lineNumber": 11,
         "author": {
-          "gitId": "-"
+          "gitId": "Jeffry Lum"
         },
-        "content": "\u003c!-- TODO: set a more appropriate initial size --\u003e"
+        "content": "\u003cfx:root resizable\u003d\"false\" title\u003d\"Help\" type\u003d\"javafx.stage.Stage\" xmlns\u003d\"http://javafx.com/javafx/11\" xmlns:fx\u003d\"http://javafx.com/fxml/1\"\u003e"
       },
       {
         "lineNumber": 12,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 13,
-        "author": {
-          "gitId": "Jeffry Lum"
-        },
-        "content": "\u003cfx:root maximized\u003d\"true\" title\u003d\"Help\" type\u003d\"javafx.stage.Stage\" xmlns\u003d\"http://javafx.com/javafx/11\" xmlns:fx\u003d\"http://javafx.com/fxml/1\"\u003e"
-      },
-      {
-        "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003cicons\u003e"
       },
       {
-        "lineNumber": 15,
+        "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
         "content": "    \u003cImage url\u003d\"@/images/help_icon.png\" /\u003e"
       },
       {
-        "lineNumber": 16,
+        "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003c/icons\u003e"
       },
       {
-        "lineNumber": 17,
+        "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003cscene\u003e"
       },
       {
-        "lineNumber": 18,
+        "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
         "content": "    \u003cScene\u003e"
       },
       {
-        "lineNumber": 19,
+        "lineNumber": 17,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "         \u003cHBox alignment\u003d\"CENTER\"\u003e"
       },
       {
-        "lineNumber": 20,
+        "lineNumber": 18,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "            \u003cchildren\u003e"
       },
       {
-        "lineNumber": 21,
+        "lineNumber": 19,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "               \u003cLabel fx:id\u003d\"helpMessage\" text\u003d\"Label\"\u003e"
       },
       {
-        "lineNumber": 22,
+        "lineNumber": 20,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "                  \u003cHBox.margin\u003e"
       },
       {
-        "lineNumber": 23,
+        "lineNumber": 21,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "                     \u003cInsets right\u003d\"5.0\" /\u003e"
       },
       {
-        "lineNumber": 24,
+        "lineNumber": 22,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "                  \u003c/HBox.margin\u003e"
       },
       {
-        "lineNumber": 25,
+        "lineNumber": 23,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "               \u003c/Label\u003e"
       },
       {
-        "lineNumber": 26,
+        "lineNumber": 24,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "               \u003cButton fx:id\u003d\"copyButton\" mnemonicParsing\u003d\"false\" onAction\u003d\"#copyUrl\" text\u003d\"Copy URL\"\u003e"
       },
       {
-        "lineNumber": 27,
+        "lineNumber": 25,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "                  \u003cHBox.margin\u003e"
       },
       {
-        "lineNumber": 28,
+        "lineNumber": 26,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "                     \u003cInsets left\u003d\"5.0\" /\u003e"
       },
       {
-        "lineNumber": 29,
+        "lineNumber": 27,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "                  \u003c/HBox.margin\u003e"
       },
       {
-        "lineNumber": 30,
+        "lineNumber": 28,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "               \u003c/Button\u003e"
       },
       {
-        "lineNumber": 31,
+        "lineNumber": 29,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "            \u003c/children\u003e"
       },
       {
-        "lineNumber": 32,
+        "lineNumber": 30,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "            \u003copaqueInsets\u003e"
       },
       {
-        "lineNumber": 33,
+        "lineNumber": 31,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "               \u003cInsets bottom\u003d\"10.0\" left\u003d\"5.0\" right\u003d\"10.0\" top\u003d\"5.0\" /\u003e"
       },
       {
-        "lineNumber": 34,
+        "lineNumber": 32,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "            \u003c/opaqueInsets\u003e"
       },
       {
-        "lineNumber": 35,
+        "lineNumber": 33,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "            \u003cpadding\u003e"
       },
       {
-        "lineNumber": 36,
+        "lineNumber": 34,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "               \u003cInsets bottom\u003d\"10.0\" left\u003d\"5.0\" right\u003d\"10.0\" top\u003d\"5.0\" /\u003e"
       },
       {
-        "lineNumber": 37,
+        "lineNumber": 35,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "            \u003c/padding\u003e"
       },
       {
-        "lineNumber": 38,
+        "lineNumber": 36,
         "author": {
           "gitId": "Jeffry Lum"
         },
         "content": "         \u003c/HBox\u003e"
       },
       {
-        "lineNumber": 39,
+        "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
         "content": "    \u003c/Scene\u003e"
       },
       {
-        "lineNumber": 40,
+        "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003c/scene\u003e"
       },
       {
-        "lineNumber": 41,
+        "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
@@ -9498,8 +10305,8 @@
       }
     ],
     "authorContributionMap": {
-      "Jeffry Lum": 27,
-      "-": 14
+      "Jeffry Lum": 26,
+      "-": 13
     }
   }
 ]
