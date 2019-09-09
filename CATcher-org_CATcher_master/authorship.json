@@ -9216,9 +9216,9 @@
       {
         "lineNumber": 68,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "        admins[entry[NAME]] \u003d {};"
+        "content": "        admins[entry[NAME].toLowerCase()] \u003d {};"
       },
       {
         "lineNumber": 69,
@@ -9426,9 +9426,9 @@
       {
         "lineNumber": 98,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "      tutors[entry[NAME]] \u003d tutor;"
+        "content": "      tutors[entry[NAME].toLowerCase()] \u003d tutor;"
       },
       {
         "lineNumber": 99,
@@ -9643,9 +9643,9 @@
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "      students[entry[NAME]] \u003d newStudent;"
+        "content": "      students[entry[NAME].toLowerCase()] \u003d newStudent;"
       },
       {
         "lineNumber": 130,
@@ -9839,9 +9839,9 @@
       {
         "lineNumber": 157,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "      team[entry[NAME]] \u003d \u0027true\u0027;"
+        "content": "      team[entry[NAME].toLowerCase()] \u003d \u0027true\u0027;"
       },
       {
         "lineNumber": 158,
@@ -10035,9 +10035,9 @@
       {
         "lineNumber": 185,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "        students[entry[NAME]] \u003d \u0027true\u0027;"
+        "content": "        students[entry[NAME].toLowerCase()] \u003d \u0027true\u0027;"
       },
       {
         "lineNumber": 186,
@@ -10049,9 +10049,9 @@
       {
         "lineNumber": 187,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "        tutors[entry[NAME]] \u003d \u0027true\u0027;"
+        "content": "        tutors[entry[NAME].toLowerCase()] \u003d \u0027true\u0027;"
       },
       {
         "lineNumber": 188,
@@ -10063,9 +10063,9 @@
       {
         "lineNumber": 189,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "        admins[entry[NAME]] \u003d \u0027true\u0027;"
+        "content": "        admins[entry[NAME].toLowerCase()] \u003d \u0027true\u0027;"
       },
       {
         "lineNumber": 190,
@@ -10426,8 +10426,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 193,
-      "-": 47
+      "ptvrajsk": 186,
+      "-": 54
     }
   },
   {
