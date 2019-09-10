@@ -2297,278 +2297,299 @@
       {
         "lineNumber": 18,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "import { SessionFixConfirmationComponent } from \u0027./core/services/session-fix-confirmation/session-fix-confirmation.component\u0027;"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "@NgModule({"
+        "content": ""
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "  declarations: ["
+        "content": "@NgModule({"
       },
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    AppComponent,"
+        "content": "  declarations: ["
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    HeaderComponent,"
+        "content": "    AppComponent,"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    UserConfirmationComponent"
+        "content": "    HeaderComponent,"
       },
       {
         "lineNumber": 24,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  ],"
+        "content": "    UserConfirmationComponent,"
       },
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  imports: ["
+        "content": "    SessionFixConfirmationComponent"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "    BrowserModule,"
+        "content": "  ],"
       },
       {
         "lineNumber": 27,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    PhaseTesterResponseModule,"
+        "content": "  imports: ["
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "    BrowserAnimationsModule,"
+        "content": "    BrowserModule,"
       },
       {
         "lineNumber": 29,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    PhaseTesterResponseModule,"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    BrowserAnimationsModule,"
+      },
+      {
+        "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
         "content": "    AuthModule,"
       },
       {
-        "lineNumber": 30,
+        "lineNumber": 32,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    PhaseBugReportingModule,"
       },
       {
-        "lineNumber": 31,
+        "lineNumber": 33,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    PhaseTeamResponseModule,"
       },
       {
-        "lineNumber": 32,
+        "lineNumber": 34,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    PhaseModerationModule,"
       },
       {
-        "lineNumber": 33,
+        "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
         "content": "    SharedModule,"
       },
       {
-        "lineNumber": 34,
+        "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
         "content": "    HttpClientModule,"
       },
       {
-        "lineNumber": 35,
+        "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
         "content": "    MarkdownModule.forRoot({"
       },
       {
-        "lineNumber": 36,
+        "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
         "content": "      markedOptions: {"
       },
       {
-        "lineNumber": 37,
+        "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
         "content": "        provide: MarkedOptions,"
       },
       {
-        "lineNumber": 38,
+        "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
         "content": "        useValue: {"
       },
       {
-        "lineNumber": 39,
+        "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
         "content": "          gfm: true,"
       },
       {
-        "lineNumber": 40,
+        "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
         "content": "          tables: true,"
       },
       {
-        "lineNumber": 41,
+        "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
         "content": "          breaks: true,"
       },
       {
-        "lineNumber": 42,
+        "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
         "content": "          pedantic: false,"
       },
       {
-        "lineNumber": 43,
+        "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
         "content": "          sanitize: false,"
       },
       {
-        "lineNumber": 44,
+        "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
         "content": "          smartLists: true,"
       },
       {
-        "lineNumber": 45,
+        "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
         "content": "          smartypants: true,"
       },
       {
-        "lineNumber": 46,
+        "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
         "content": "        },"
       },
       {
-        "lineNumber": 47,
+        "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
         "content": "      },"
       },
       {
-        "lineNumber": 48,
+        "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
         "content": "    }),"
       },
       {
-        "lineNumber": 49,
+        "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
         "content": "    AppRoutingModule,"
       },
       {
-        "lineNumber": 50,
+        "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
         "content": "  ],"
       },
       {
-        "lineNumber": 51,
+        "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
         "content": "  providers: [],"
       },
       {
-        "lineNumber": 52,
+        "lineNumber": 54,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  bootstrap: [AppComponent],"
       },
       {
-        "lineNumber": 53,
+        "lineNumber": 55,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  entryComponents: ["
       },
       {
-        "lineNumber": 54,
+        "lineNumber": 56,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    UserConfirmationComponent"
+        "content": "    UserConfirmationComponent,"
       },
       {
-        "lineNumber": 55,
+        "lineNumber": 57,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    SessionFixConfirmationComponent"
+      },
+      {
+        "lineNumber": 58,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  ]"
       },
       {
-        "lineNumber": 56,
+        "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
         "content": "})"
       },
       {
-        "lineNumber": 57,
+        "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
@@ -2576,7 +2597,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 16,
+      "ptvrajsk": 19,
       "-": 41
     }
   },
@@ -10431,6 +10452,338 @@
     }
   },
   {
+    "path": "src/app/core/services/error-handling.service.ts",
+    "fileType": "ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {Injectable} from \u0027@angular/core\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {MatSnackBar} from \u0027@angular/material\u0027;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {NoInternetConnectionComponent} from \u0027../../shared/error-toasters/no-internet-connection/no-internet-connection.component\u0027;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {GeneralMessageErrorComponent} from \u0027../../shared/error-toasters/general-message-error/general-message-error.component\u0027;"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "import {FormErrorComponent} from \u0027../../shared/error-toasters/form-error/form-error.component\u0027;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "export const ERRORCODE_NOT_FOUND \u003d 404;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "@Injectable({"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  providedIn: \u0027root\u0027,"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "})"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "export class ErrorHandlingService {"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  constructor(private snackBar: MatSnackBar) {}"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  // Ref: https://developer.github.com/v3/#client-errors"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  handleHttpError(error, actionCallback?: () \u003d\u003e void) {"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    console.log(error);"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    switch (error.status) {"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      case 500: // Internal Server Error. Could also be due to user not having internet connection."
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (navigator.onLine) {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          this.snackBar.openFromComponent(GeneralMessageErrorComponent, {data: error});"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          const snackbarRef \u003d this.snackBar.openFromComponent(NoInternetConnectionComponent, {data: error.request.method});"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          snackbarRef.onAction().subscribe(actionCallback);"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        break;"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      case 422: // Form errors"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.snackBar.openFromComponent(FormErrorComponent, {data: error});"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        break;"
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      case 400: // Bad request"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      case 401: // Unauthorized"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      case 404: // Not found"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.snackBar.openFromComponent(GeneralMessageErrorComponent, {data: error});"
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        break;"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      default:"
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        this.snackBar.openFromComponent(GeneralMessageErrorComponent, {data: error});"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return;"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 40,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 41,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 42,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  handleGeneralError(error: string) {"
+      },
+      {
+        "lineNumber": 43,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    console.log(error);"
+      },
+      {
+        "lineNumber": 44,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    this.snackBar.openFromComponent(GeneralMessageErrorComponent, {data: {message: error}});"
+      },
+      {
+        "lineNumber": 45,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 46,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "ptvrajsk": 2,
+      "-": 44
+    }
+  },
+  {
     "path": "src/app/core/services/github.service.ts",
     "fileType": "ts",
     "lines": [
@@ -10444,16 +10797,16 @@
       {
         "lineNumber": 2,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "import { map, mergeMap } from \u0027rxjs/operators\u0027;"
+        "content": "import { catchError, map, mergeMap } from \u0027rxjs/operators\u0027;"
       },
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "import { forkJoin, from, Observable } from \u0027rxjs\u0027;"
+        "content": "import { forkJoin, from, Observable, of } from \u0027rxjs\u0027;"
       },
       {
         "lineNumber": 4,
@@ -10479,9 +10832,9 @@
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "import { ErrorHandlingService } from \u0027./error-handling.service\u0027;"
+        "content": "import { ERRORCODE_NOT_FOUND, ErrorHandlingService } from \u0027./error-handling.service\u0027;"
       },
       {
         "lineNumber": 8,
@@ -10920,408 +11273,408 @@
       {
         "lineNumber": 70,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  fetchIssue(id: number): Observable\u003c{}\u003e {"
+        "content": "  /**"
       },
       {
         "lineNumber": 71,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.issues.get({owner: ORG_NAME, repo: REPO, number: id})).pipe("
+        "content": "   * Checks if the specified repository exists."
       },
       {
         "lineNumber": 72,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      map((response) \u003d\u003e {"
+        "content": "   * @param owner - Owner of Specified Repository."
       },
       {
         "lineNumber": 73,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": "   * @param repo - Name of Repository."
       },
       {
         "lineNumber": 74,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      })"
+        "content": "   */"
       },
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "  isRepositoryPresent(owner: string, repo: string): Observable\u003cboolean\u003e {"
       },
       {
         "lineNumber": 76,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    return from(octokit.repos.get({owner: owner, repo: repo})).pipe("
       },
       {
         "lineNumber": 77,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      map((rawData: {status: number}) \u003d\u003e {"
       },
       {
         "lineNumber": 78,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  fetchIssueComments(issueId: number): Observable\u003cArray\u003c{}\u003e\u003e {"
+        "content": "        return rawData.status !\u003d\u003d ERRORCODE_NOT_FOUND;"
       },
       {
         "lineNumber": 79,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return this.getNumberOfCommentPages(issueId).pipe("
+        "content": "      }),"
       },
       {
         "lineNumber": 80,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      mergeMap((numOfPages) \u003d\u003e {"
+        "content": "      catchError(err \u003d\u003e {"
       },
       {
         "lineNumber": 81,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        const apiCalls \u003d [];"
+        "content": "        return of(false);"
       },
       {
         "lineNumber": 82,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        for (let i \u003d 1; i \u003c\u003d numOfPages; i++) {"
+        "content": "      })"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "          apiCalls.push(from(octokit.issues.listComments({owner: ORG_NAME, repo: REPO, issue_number: issueId, page: i})));"
+        "content": "    );"
       },
       {
         "lineNumber": 84,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        }"
+        "content": "  }"
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return forkJoin(apiCalls);"
+        "content": ""
       },
       {
         "lineNumber": 86,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      }),"
+        "content": "  /**"
       },
       {
         "lineNumber": 87,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      map((resultArray) \u003d\u003e {"
+        "content": "   * Creates a repository in for the authenticated user location."
       },
       {
         "lineNumber": 88,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        let collatedData \u003d [];"
+        "content": "   * @param name - Name of Repo to create."
       },
       {
         "lineNumber": 89,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        for (const response of resultArray) {"
+        "content": "   * @return Observable\u003cboolean\u003e - That returns true if the repository has been successfully"
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "          collatedData \u003d ["
+        "content": "   *                                created."
       },
       {
         "lineNumber": 91,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "            ...collatedData,"
+        "content": "   */"
       },
       {
         "lineNumber": 92,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "            ...response[\u0027data\u0027],"
+        "content": "  createRepository(name: string): void {"
       },
       {
         "lineNumber": 93,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "          ];"
+        "content": "    octokit.repos.createForAuthenticatedUser({name: name});"
       },
       {
         "lineNumber": 94,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        }"
+        "content": "  }"
       },
       {
         "lineNumber": 95,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return collatedData;"
+        "content": ""
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "      })"
+        "content": "  fetchIssue(id: number): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "    );"
+        "content": "    return from(octokit.issues.get({owner: ORG_NAME, repo: REPO, number: id})).pipe("
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      map((response) \u003d\u003e {"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": ""
-      },
-      {
-        "lineNumber": 100,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "  fetchAllLabels(): Observable\u003cArray\u003c{}\u003e\u003e {"
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    return from(octokit.issues.listLabelsForRepo({owner: ORG_NAME, repo: REPO})).pipe("
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      map(response \u003d\u003e {"
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "-"
-        },
         "content": "        return response[\u0027data\u0027];"
       },
       {
-        "lineNumber": 104,
+        "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
         "content": "      })"
       },
       {
-        "lineNumber": 105,
+        "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
         "content": "    );"
       },
       {
-        "lineNumber": 106,
+        "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
+      },
+      {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  fetchIssueComments(issueId: number): Observable\u003cArray\u003c{}\u003e\u003e {"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return this.getNumberOfCommentPages(issueId).pipe("
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      mergeMap((numOfPages) \u003d\u003e {"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        const apiCalls \u003d [];"
       },
       {
         "lineNumber": 108,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  /**"
+        "content": "        for (let i \u003d 1; i \u003c\u003d numOfPages; i++) {"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Creates a label in the current repository."
+        "content": "          apiCalls.push(from(octokit.issues.listComments({owner: ORG_NAME, repo: REPO, issue_number: issueId, page: i})));"
       },
       {
         "lineNumber": 110,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * @param formattedLabelName - name of new label."
+        "content": "        }"
       },
       {
         "lineNumber": 111,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * @param labelColor - colour of new label."
+        "content": "        return forkJoin(apiCalls);"
       },
       {
         "lineNumber": 112,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   */"
+        "content": "      }),"
       },
       {
         "lineNumber": 113,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  createLabel(formattedLabelName: string, labelColor: string): void {"
+        "content": "      map((resultArray) \u003d\u003e {"
       },
       {
         "lineNumber": 114,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    octokit.issues.createLabel({owner: ORG_NAME, repo: REPO, name: formattedLabelName, color: labelColor});"
+        "content": "        let collatedData \u003d [];"
       },
       {
         "lineNumber": 115,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  }"
+        "content": "        for (const response of resultArray) {"
       },
       {
         "lineNumber": 116,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "          collatedData \u003d ["
       },
       {
         "lineNumber": 117,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  /**"
+        "content": "            ...collatedData,"
       },
       {
         "lineNumber": 118,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * Updates a label\u0027s information in the current repository."
+        "content": "            ...response[\u0027data\u0027],"
       },
       {
         "lineNumber": 119,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * @param labelName - name of existing label"
+        "content": "          ];"
       },
       {
         "lineNumber": 120,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * @param labelColor - new color to be assigned to existing label."
+        "content": "        }"
       },
       {
         "lineNumber": 121,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   */"
+        "content": "        return collatedData;"
       },
       {
         "lineNumber": 122,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  updateLabel(labelName: string, labelColor: string): void {"
+        "content": "      })"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": "    octokit.issues.updateLabel({owner: ORG_NAME, repo: REPO, name: labelName, current_name: labelName, color: labelColor});"
+        "content": "    );"
       },
       {
         "lineNumber": 124,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
         "content": "  }"
       },
       {
         "lineNumber": 125,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
         "content": ""
       },
       {
         "lineNumber": 126,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "  closeIssue(id: number): Observable\u003c{}\u003e {"
+        "content": "  fetchAllLabels(): Observable\u003cArray\u003c{}\u003e\u003e {"
       },
       {
         "lineNumber": 127,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, issue_number: id, state: \u0027closed\u0027})).pipe("
+        "content": "    return from(octokit.issues.listLabelsForRepo({owner: ORG_NAME, repo: REPO})).pipe("
       },
       {
         "lineNumber": 128,
@@ -11368,142 +11721,142 @@
       {
         "lineNumber": 134,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  createIssue(title: string, description: string, labels: string[]): Observable\u003c{}\u003e {"
+        "content": "  /**"
       },
       {
         "lineNumber": 135,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.issues.create({owner: ORG_NAME, repo: REPO, title: title, body: description, labels: labels})).pipe("
+        "content": "   * Creates a label in the current repository."
       },
       {
         "lineNumber": 136,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      map(response \u003d\u003e {"
+        "content": "   * @param formattedLabelName - name of new label."
       },
       {
         "lineNumber": 137,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": "   * @param labelColor - colour of new label."
       },
       {
         "lineNumber": 138,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      })"
+        "content": "   */"
       },
       {
         "lineNumber": 139,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "  createLabel(formattedLabelName: string, labelColor: string): void {"
       },
       {
         "lineNumber": 140,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    octokit.issues.createLabel({owner: ORG_NAME, repo: REPO, name: formattedLabelName, color: labelColor});"
       },
       {
         "lineNumber": 141,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 142,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  createIssueComment(comment: IssueComment): Observable\u003c{}\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 143,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.issues.createComment({owner: ORG_NAME, repo: REPO, number: comment.id,"
+        "content": "  /**"
       },
       {
         "lineNumber": 144,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      body: comment.description})).pipe("
+        "content": "   * Updates a label\u0027s information in the current repository."
       },
       {
         "lineNumber": 145,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      map(response \u003d\u003e {"
+        "content": "   * @param labelName - name of existing label"
       },
       {
         "lineNumber": 146,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": "   * @param labelColor - new color to be assigned to existing label."
       },
       {
         "lineNumber": 147,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      })"
+        "content": "   */"
       },
       {
         "lineNumber": 148,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "  updateLabel(labelName: string, labelColor: string): void {"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    octokit.issues.updateLabel({owner: ORG_NAME, repo: REPO, name: labelName, current_name: labelName, color: labelColor});"
       },
       {
         "lineNumber": 150,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 151,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  updateIssue(id: number, title: string, description: string, labels: string[], assignees?: string[]): Observable\u003c{}\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 152,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, issue_number: id, title: title, body: description, labels: labels,"
+        "content": "  closeIssue(id: number): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 153,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      assignees: assignees})).pipe("
+        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, issue_number: id, state: \u0027closed\u0027})).pipe("
       },
       {
         "lineNumber": 154,
@@ -11552,619 +11905,801 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  updateIssueComment(issueComment: IssueComment): Observable\u003c{}\u003e {"
+        "content": "  createIssue(title: string, description: string, labels: string[]): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "    return from(octokit.issues.updateComment({owner: ORG_NAME, repo: REPO, comment_id: issueComment.id,"
+        "content": "    return from(octokit.issues.create({owner: ORG_NAME, repo: REPO, title: title, body: description, labels: labels})).pipe("
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": "      body: issueComment.description})).pipe("
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": "      map(response \u003d\u003e {"
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": "      })"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "      })"
+        "content": "    );"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": "    );"
+        "content": "  }"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  createIssueComment(comment: IssueComment): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": "  uploadFile(filename: string, base64String: string): Observable\u003cany\u003e {"
+        "content": "    return from(octokit.issues.createComment({owner: ORG_NAME, repo: REPO, number: comment.id,"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": "    return from(octokit.repos.createFile({owner: ORG_NAME, repo: REPO, path: `files/${filename}`,"
+        "content": "      body: comment.description})).pipe("
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": "      message: \u0027upload file\u0027, content: base64String}));"
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      })"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
-        "content": "  getRepo(orgName: string, repoName: string) {"
+        "content": "    );"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "    return from(octokit.repos.get({owner: orgName, repo: repoName})).pipe("
+        "content": "  }"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": "      map(response \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "        return response[\u0027data\u0027];"
+        "content": "  updateIssue(id: number, title: string, description: string, labels: string[], assignees?: string[]): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 178,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      })"
+        "content": "    return from(octokit.issues.update({owner: ORG_NAME, repo: REPO, issue_number: id, title: title, body: description, labels: labels,"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "    );"
+        "content": "      assignees: assignees})).pipe("
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 182,
         "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "  fetchEventsForRepo(): Observable\u003cany[]\u003e {"
-      },
-      {
-        "lineNumber": 183,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    return from(octokit.issues.listEventsForRepo({owner: ORG_NAME, repo: REPO})).pipe("
-      },
-      {
-        "lineNumber": 184,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      map(response \u003d\u003e {"
-      },
-      {
-        "lineNumber": 185,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "        return response[\u0027data\u0027];"
-      },
-      {
-        "lineNumber": 186,
-        "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "      })"
       },
       {
-        "lineNumber": 187,
+        "lineNumber": 183,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "    );"
       },
       {
-        "lineNumber": 188,
+        "lineNumber": 184,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 189,
+        "lineNumber": 185,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  updateIssueComment(issueComment: IssueComment): Observable\u003c{}\u003e {"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return from(octokit.issues.updateComment({owner: ORG_NAME, repo: REPO, comment_id: issueComment.id,"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      body: issueComment.description})).pipe("
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "-"
         },
-        "content": "  fetchDataFile(): Observable\u003c{}\u003e {"
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 191,
         "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    // roles information"
-      },
-      {
-        "lineNumber": 192,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    return forkJoin("
-      },
-      {
-        "lineNumber": 193,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "      from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027data.csv\u0027}))"
-      },
-      {
-        "lineNumber": 194,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "        .pipe(map(rawData \u003d\u003e atob(rawData[\u0027data\u0027][\u0027content\u0027])))"
-      },
-      {
-        "lineNumber": 195,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    ).pipe("
-      },
-      {
-        "lineNumber": 196,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "      map(([data]) \u003d\u003e {"
-      },
-      {
-        "lineNumber": 197,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "        return {data};"
-      },
-      {
-        "lineNumber": 198,
-        "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
         "content": "      })"
       },
       {
-        "lineNumber": 199,
+        "lineNumber": 192,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
         "content": "    );"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  uploadFile(filename: string, base64String: string): Observable\u003cany\u003e {"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return from(octokit.repos.createFile({owner: ORG_NAME, repo: REPO, path: `files/${filename}`,"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      message: \u0027upload file\u0027, content: base64String}));"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "  getRepo(orgName: string, repoName: string) {"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    return from(octokit.repos.get({owner: orgName, repo: repoName})).pipe("
       },
       {
         "lineNumber": 202,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  /**"
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 203,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * Fetches the data file that is regulates session information."
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 204,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * @return Observable\u003c{}\u003e representing session information."
+        "content": "      })"
       },
       {
         "lineNumber": 205,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   */"
+        "content": "    );"
       },
       {
         "lineNumber": 206,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  fetchSettingsFile(): Observable\u003c{}\u003e {"
+        "content": "  }"
       },
       {
         "lineNumber": 207,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    return from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027settings.json\u0027}))"
+        "content": ""
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        .pipe(map(rawData \u003d\u003e JSON.parse(atob(rawData[\u0027data\u0027][\u0027content\u0027]))));"
+        "content": "  fetchEventsForRepo(): Observable\u003cany[]\u003e {"
       },
       {
         "lineNumber": 209,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return from(octokit.issues.listEventsForRepo({owner: ORG_NAME, repo: REPO})).pipe("
       },
       {
         "lineNumber": 210,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "      map(response \u003d\u003e {"
       },
       {
         "lineNumber": 211,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "  private getNumberOfIssuePages(filter?: {}): Observable\u003cnumber\u003e {"
+        "content": "        return response[\u0027data\u0027];"
       },
       {
         "lineNumber": 212,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "    return from(octokit.issues.listForRepo({...filter, owner: ORG_NAME, repo: REPO, sort: \u0027created\u0027,"
+        "content": "      })"
       },
       {
         "lineNumber": 213,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      direction: \u0027desc\u0027, per_page: 100, page: 1})).pipe("
+        "content": "    );"
       },
       {
         "lineNumber": 214,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      map((response) \u003d\u003e {"
+        "content": "  }"
       },
       {
         "lineNumber": 215,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        if (!response[\u0027headers\u0027].link) {"
+        "content": ""
       },
       {
         "lineNumber": 216,
         "author": {
           "gitId": "-"
         },
-        "content": "          return 1;"
+        "content": "  fetchDataFile(): Observable\u003c{}\u003e {"
       },
       {
         "lineNumber": 217,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        }"
+        "content": "    // roles information"
       },
       {
         "lineNumber": 218,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "        const paginatedData \u003d githubPaginatorParser(response[\u0027headers\u0027].link);"
+        "content": "    return forkJoin("
       },
       {
         "lineNumber": 219,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "        return +paginatedData[\u0027last\u0027] || 1;"
+        "content": "      from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027data.csv\u0027}))"
       },
       {
         "lineNumber": 220,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      })"
+        "content": "        .pipe(map(rawData \u003d\u003e atob(rawData[\u0027data\u0027][\u0027content\u0027])))"
       },
       {
         "lineNumber": 221,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "    ).pipe("
       },
       {
         "lineNumber": 222,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      map(([data]) \u003d\u003e {"
       },
       {
         "lineNumber": 223,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "        return {data};"
       },
       {
         "lineNumber": 224,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  private getNumberOfCommentPages(issueId: number): Observable\u003cnumber\u003e {"
+        "content": "      })"
       },
       {
         "lineNumber": 225,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return from(octokit.issues.listComments({owner: ORG_NAME, repo: REPO, issue_number: issueId, page: 1})).pipe("
+        "content": "    );"
       },
       {
         "lineNumber": 226,
         "author": {
           "gitId": "-"
         },
-        "content": "      map((response) \u003d\u003e {"
+        "content": "  }"
       },
       {
         "lineNumber": 227,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (!response[\u0027headers\u0027].link) {"
+        "content": ""
       },
       {
         "lineNumber": 228,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Fetches the data file that is regulates session information."
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @return Observable\u003c{}\u003e representing session information."
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  fetchSettingsFile(): Observable\u003c{}\u003e {"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return from(octokit.repos.getContents({owner: MOD_ORG, repo: DATA_REPO, path: \u0027settings.json\u0027}))"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        .pipe(map(rawData \u003d\u003e JSON.parse(atob(rawData[\u0027data\u0027][\u0027content\u0027]))));"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  private getNumberOfIssuePages(filter?: {}): Observable\u003cnumber\u003e {"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    return from(octokit.issues.listForRepo({...filter, owner: ORG_NAME, repo: REPO, sort: \u0027created\u0027,"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      direction: \u0027desc\u0027, per_page: 100, page: 1})).pipe("
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      map((response) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (!response[\u0027headers\u0027].link) {"
+      },
+      {
+        "lineNumber": 242,
         "author": {
           "gitId": "-"
         },
         "content": "          return 1;"
       },
       {
-        "lineNumber": 229,
+        "lineNumber": 243,
         "author": {
           "gitId": "-"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 230,
+        "lineNumber": 244,
         "author": {
           "gitId": "-"
         },
         "content": "        const paginatedData \u003d githubPaginatorParser(response[\u0027headers\u0027].link);"
       },
       {
-        "lineNumber": 231,
+        "lineNumber": 245,
         "author": {
           "gitId": "-"
         },
         "content": "        return +paginatedData[\u0027last\u0027] || 1;"
       },
       {
-        "lineNumber": 232,
+        "lineNumber": 246,
         "author": {
           "gitId": "-"
         },
         "content": "      })"
       },
       {
-        "lineNumber": 233,
+        "lineNumber": 247,
         "author": {
           "gitId": "-"
         },
         "content": "    );"
       },
       {
-        "lineNumber": 234,
+        "lineNumber": 248,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 235,
+        "lineNumber": 249,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  private getNumberOfCommentPages(issueId: number): Observable\u003cnumber\u003e {"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return from(octokit.issues.listComments({owner: ORG_NAME, repo: REPO, issue_number: issueId, page: 1})).pipe("
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      map((response) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        if (!response[\u0027headers\u0027].link) {"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          return 1;"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        const paginatedData \u003d githubPaginatorParser(response[\u0027headers\u0027].link);"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return +paginatedData[\u0027last\u0027] || 1;"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      })"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    );"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 261,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 236,
+        "lineNumber": 262,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  getRepoURL(): string {"
       },
       {
-        "lineNumber": 237,
+        "lineNumber": 263,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    return ORG_NAME.concat(\u0027/\u0027).concat(REPO);"
       },
       {
-        "lineNumber": 238,
+        "lineNumber": 264,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 239,
+        "lineNumber": 265,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 240,
+        "lineNumber": 266,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  viewIssueInBrowser(id: number) {"
       },
       {
-        "lineNumber": 241,
+        "lineNumber": 267,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    if (id) {"
       },
       {
-        "lineNumber": 242,
+        "lineNumber": 268,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      shell.openExternal(\u0027https://github.com/\u0027.concat(this.getRepoURL()).concat(\u0027/issues/\u0027).concat(String(id)));"
       },
       {
-        "lineNumber": 243,
+        "lineNumber": 269,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    } else {"
       },
       {
-        "lineNumber": 244,
+        "lineNumber": 270,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      this.errorHandlingService.handleGeneralError(\u0027Unable to open this issue in Browser\u0027);"
       },
       {
-        "lineNumber": 245,
+        "lineNumber": 271,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 246,
+        "lineNumber": 272,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    event.stopPropagation();"
       },
       {
-        "lineNumber": 247,
+        "lineNumber": 273,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 248,
+        "lineNumber": 274,
         "author": {
           "gitId": "-"
         },
@@ -12172,9 +12707,9 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 47,
-      "KevinCJH": 26,
-      "-": 175
+      "ptvrajsk": 78,
+      "KevinCJH": 25,
+      "-": 171
     }
   },
   {
@@ -21416,14 +21951,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "import {Injectable} from \u0027@angular/core\u0027;"
+        "content": "import { Injectable } from \u0027@angular/core\u0027;"
       },
       {
         "lineNumber": 2,
         "author": {
           "gitId": "-"
         },
-        "content": "import { HttpClient} from \u0027@angular/common/http\u0027;"
+        "content": "import { HttpClient } from \u0027@angular/common/http\u0027;"
       },
       {
         "lineNumber": 3,
@@ -21437,14 +21972,14 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "import { Observable, throwError } from \u0027rxjs\u0027;"
+        "content": "import { Observable, of, throwError } from \u0027rxjs\u0027;"
       },
       {
         "lineNumber": 5,
         "author": {
           "gitId": "-"
         },
-        "content": "import {GithubService} from \u0027./github.service\u0027;"
+        "content": "import { GithubService } from \u0027./github.service\u0027;"
       },
       {
         "lineNumber": 6,
@@ -21456,149 +21991,149 @@
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "import { UserService } from \u0027./user.service\u0027;"
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "export enum Phase {"
+        "content": "import { UserRole } from \u0027../models/user.model\u0027;"
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  phaseBugReporting \u003d \u0027phaseBugReporting\u0027,"
+        "content": "import { ErrorHandlingService } from \u0027./error-handling.service\u0027;"
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  phaseTeamResponse \u003d \u0027phaseTeamResponse\u0027,"
+        "content": "import { MatDialog } from \u0027@angular/material\u0027;"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  phaseTesterResponse \u003d \u0027phaseTesterResponse\u0027,"
+        "content": "import { SessionFixConfirmationComponent } from \u0027./session-fix-confirmation/session-fix-confirmation.component\u0027;"
       },
       {
         "lineNumber": 12,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  phaseModeration \u003d \u0027phaseModeration\u0027"
+        "content": ""
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "}"
+        "content": "export enum Phase {"
       },
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  phaseBugReporting \u003d \u0027phaseBugReporting\u0027,"
       },
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  phaseTeamResponse \u003d \u0027phaseTeamResponse\u0027,"
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "export interface SessionData {"
+        "content": "  phaseTesterResponse \u003d \u0027phaseTesterResponse\u0027,"
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  openPhases: string[];"
+        "content": "  phaseModeration \u003d \u0027phaseModeration\u0027"
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  phaseBugReporting: string;"
+        "content": "}"
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  phaseTeamResponse: string;"
+        "content": ""
       },
       {
         "lineNumber": 20,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "  phaseTesterResponse: string;"
-      },
-      {
-        "lineNumber": 21,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "  phaseModeration: string;"
-      },
-      {
-        "lineNumber": 22,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "export interface SessionData {"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  openPhases: string[];"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  phaseBugReporting: string;"
+      },
+      {
         "lineNumber": 24,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "@Injectable({"
+        "content": "  phaseTeamResponse: string;"
       },
       {
         "lineNumber": 25,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  providedIn: \u0027root\u0027,"
+        "content": "  phaseTesterResponse: string;"
       },
       {
         "lineNumber": 26,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "})"
+        "content": "  phaseModeration: string;"
       },
       {
         "lineNumber": 27,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "export class PhaseService {"
+        "content": "}"
       },
       {
         "lineNumber": 28,
@@ -21612,616 +22147,616 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  public currentPhase: Phase;"
+        "content": "@Injectable({"
       },
       {
         "lineNumber": 30,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "  private repoName: string;"
+        "content": "  providedIn: \u0027root\u0027,"
       },
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "  private orgName: string;"
+        "content": "})"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "  public readonly phaseDescription \u003d {"
+        "content": "export class PhaseService {"
       },
       {
         "lineNumber": 33,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    \u0027phaseBugReporting\u0027: \u0027Bug Reporting Phase\u0027,"
+        "content": ""
       },
       {
         "lineNumber": 34,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    \u0027phaseTeamResponse\u0027: \u0027Team\\\u0027s Response Phase\u0027,"
+        "content": "  public currentPhase: Phase;"
       },
       {
         "lineNumber": 35,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "    \u0027phaseTesterResponse\u0027: \u0027Tester\\\u0027s Response Phase\u0027,"
+        "content": "  private repoName: string;"
       },
       {
         "lineNumber": 36,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "    \u0027phaseModeration\u0027: \u0027Moderation Phase\u0027"
+        "content": "  private orgName: string;"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "  };"
+        "content": "  public readonly phaseDescription \u003d {"
       },
       {
         "lineNumber": 38,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    \u0027phaseBugReporting\u0027: \u0027Bug Reporting Phase\u0027,"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  public sessionData: SessionData;"
+        "content": "    \u0027phaseTeamResponse\u0027: \u0027Team\\\u0027s Response Phase\u0027,"
       },
       {
         "lineNumber": 40,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    \u0027phaseTesterResponse\u0027: \u0027Tester\\\u0027s Response Phase\u0027,"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  private phaseRepoOwners \u003d {"
+        "content": "    \u0027phaseModeration\u0027: \u0027Moderation Phase\u0027"
       },
       {
         "lineNumber": 42,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    phaseBugReporting: \u0027\u0027,"
+        "content": "  };"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    phaseTeamResponse: \u0027\u0027,"
+        "content": ""
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    phaseTesterResponse: \u0027\u0027,"
+        "content": "  public sessionData: SessionData;"
       },
       {
         "lineNumber": 45,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    phaseModeration: \u0027\u0027"
+        "content": ""
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  };"
+        "content": "  private phaseRepoOwners \u003d {"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    phaseBugReporting: \u0027\u0027,"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  constructor(private http: HttpClient,"
+        "content": "    phaseTeamResponse: \u0027\u0027,"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "              private githubService: GithubService,"
+        "content": "    phaseTesterResponse: \u0027\u0027,"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "              private labelService: LabelService) {}"
+        "content": "    phaseModeration: \u0027\u0027"
       },
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "  };"
       },
       {
         "lineNumber": 52,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  /**"
+        "content": ""
       },
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "   * Stores the location of the repositories belonging to"
+        "content": "  constructor(private http: HttpClient,"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * each phase of the application."
+        "content": "              private githubService: GithubService,"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param org - name of organization."
+        "content": "              private labelService: LabelService,"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param user - name of user."
+        "content": "              private userService: UserService,"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "              public phaseFixConfirmationDialog: MatDialog) {}"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  setPhaseOwners(org: string, user: string): void {"
+        "content": ""
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.orgName \u003d org;"
+        "content": "  /**"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.phaseRepoOwners.phaseBugReporting \u003d user;"
+        "content": "   * Stores the location of the repositories belonging to"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.phaseRepoOwners.phaseTeamResponse \u003d org;"
+        "content": "   * each phase of the application."
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.phaseRepoOwners.phaseTesterResponse \u003d user;"
+        "content": "   * @param org - name of organization."
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.phaseRepoOwners.phaseModeration \u003d org;"
+        "content": "   * @param user - name of user."
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "   */"
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  setPhaseOwners(org: string, user: string): void {"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "    this.orgName \u003d org;"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Returns the name of the owner of a given phase."
+        "content": "    this.phaseRepoOwners.phaseBugReporting \u003d user;"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param phase"
+        "content": "    this.phaseRepoOwners.phaseTeamResponse \u003d org;"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "    this.phaseRepoOwners.phaseTesterResponse \u003d user;"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  getPhaseOwner(phase: string): string {"
+        "content": "    this.phaseRepoOwners.phaseModeration \u003d org;"
       },
       {
         "lineNumber": 71,
         "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    return this.phaseRepoOwners[phase];"
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 73,
+        "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 73,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  fetchSessionData(): Observable\u003cSessionData\u003e {"
+        "content": "   * Returns the name of the owner of a given phase."
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return this.githubService.fetchSettingsFile().pipe("
+        "content": "   * @param phase"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      map(data \u003d\u003e data as SessionData)"
+        "content": "   */"
       },
       {
         "lineNumber": 77,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "  getPhaseOwner(phase: string): string {"
       },
       {
         "lineNumber": 78,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    return this.phaseRepoOwners[phase];"
       },
       {
         "lineNumber": 79,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 80,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  assertSessionDataIntegrity(sessionData: SessionData): void {"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (sessionData \u003d\u003d\u003d undefined) {"
+        "content": "  fetchSessionData(): Observable\u003cSessionData\u003e {"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      throwError(\u0027Session Data Unavailable.\u0027);"
+        "content": "    return this.githubService.fetchSettingsFile().pipe("
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    } else if (!this.isSessionDataCorrectlyDefined(sessionData)) {"
+        "content": "      map(data \u003d\u003e data as SessionData)"
       },
       {
         "lineNumber": 84,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "      throwError(\u0027Session Data is Incorrectly Defined\u0027);"
+        "content": "    );"
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 87,
+        "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 87,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  assertSessionDataIntegrity(sessionData: SessionData): void {"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "    if (sessionData \u003d\u003d\u003d undefined) {"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Ensures that the input session Data has been correctly defined."
+        "content": "      throwError(\u0027Session Data Unavailable.\u0027);"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Returns true if satisfies these properties, false otherwise."
+        "content": "    } else if (!this.isSessionDataCorrectlyDefined(sessionData)) {"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param sessionData"
+        "content": "      throwError(\u0027Session Data is Incorrectly Defined\u0027);"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "    }"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  isSessionDataCorrectlyDefined(sessionData: SessionData): boolean {"
+        "content": "  }"
       },
       {
         "lineNumber": 94,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    for (const data of Object.values(sessionData)) {"
+        "content": ""
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      if (data \u003d\u003d\u003d undefined || data \u003d\u003d\u003d \u0027\u0027) {"
+        "content": "  /**"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        return false;"
+        "content": "   * Checks if the necessary repository is available and creates it if the permissions are available."
       },
       {
         "lineNumber": 97,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 98,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 99,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    return true;"
-      },
-      {
-        "lineNumber": 100,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "  /**"
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "   * Stores session data and sets current session\u0027s phase."
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "   * @throws throwError - If there are no open phases in this session."
-      },
-      {
-        "lineNumber": 105,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "   * @param sessionData"
       },
       {
-        "lineNumber": 106,
+        "lineNumber": 98,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "   */"
       },
       {
-        "lineNumber": 107,
+        "lineNumber": 99,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  updateSessionParameters(sessionData: SessionData) {"
+        "content": "  verifySessionAvailability(sessionData: SessionData): Observable\u003cboolean\u003e {"
       },
       {
-        "lineNumber": 108,
+        "lineNumber": 100,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (sessionData.openPhases.length \u003d\u003d\u003d 0) {"
+        "content": "    return this.githubService.isRepositoryPresent(this.phaseRepoOwners[this.currentPhase], sessionData[this.currentPhase]);"
       },
       {
-        "lineNumber": 109,
+        "lineNumber": 101,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      throwError(\u0027There are no accessible phases.\u0027);"
+        "content": "  }"
       },
       {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 111,
+        "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
+        "lineNumber": 103,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 104,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * If a Session is unavailable (because the repository is missing) attempt to create IF it is"
+      },
+      {
+        "lineNumber": 105,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * the BugReporting Phase"
+      },
+      {
+        "lineNumber": 106,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param sessionData - SessionData containing repository information."
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @return - Dummy Observable to give the API sometime to propagate the creation of the new repository since"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   *           the API Call used here does not return any response."
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  attemptSessionAvailabilityFix(sessionData: SessionData): Observable\u003cany\u003e {"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    if (this.currentPhase !\u003d\u003d Phase.phaseBugReporting) {"
+      },
+      {
         "lineNumber": 112,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.sessionData \u003d sessionData;"
+        "content": "      throw new Error(\u0027Current Phase\\\u0027s Repository has not been opened.\u0027);"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.currentPhase \u003d Phase[sessionData.openPhases[0]];"
+        "content": "    } else if (this.currentPhase \u003d\u003d\u003d Phase.phaseBugReporting \u0026\u0026 this.userService.currentUser.role !\u003d\u003d UserRole.Student) {"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.repoName \u003d sessionData[sessionData.openPhases[0]];"
+        "content": "      throw new Error(\u0027Bug-Reporting Phase\\\u0027s repository initialisation is only available to Students.\u0027);"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.githubService.storePhaseDetails(this.phaseRepoOwners[this.currentPhase], this.repoName);"
+        "content": "    }"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    this.githubService.createRepository(sessionData[this.currentPhase]);"
       },
       {
         "lineNumber": 117,
@@ -22235,129 +22770,717 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  sessionSetup(): Observable\u003cany\u003e {"
+        "content": "    return new Observable(subscriber \u003d\u003e {"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return this.fetchSessionData().pipe("
+        "content": "      setTimeout(() \u003d\u003e subscriber.next(true), 1000);"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      flatMap((sessionData: SessionData) \u003d\u003e {"
+        "content": "    });"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        this.assertSessionDataIntegrity(sessionData);"
+        "content": "  }"
       },
       {
         "lineNumber": 122,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "        this.updateSessionParameters(sessionData);"
+        "content": ""
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        return this.labelService.synchronizeRemoteLabels();"
+        "content": "  /**"
       },
       {
         "lineNumber": 124,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      })"
+        "content": "   * Ensures that the input session Data has been correctly defined."
       },
       {
         "lineNumber": 125,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    );"
+        "content": "   * Returns true if satisfies these properties, false otherwise."
       },
       {
         "lineNumber": 126,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "   * @param sessionData"
       },
       {
         "lineNumber": 127,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "   */"
       },
       {
         "lineNumber": 128,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  public getPhaseDetail() {"
+        "content": "  isSessionDataCorrectlyDefined(sessionData: SessionData): boolean {"
       },
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return this.orgName.concat(\u0027/\u0027).concat(this.repoName);"
+        "content": "    for (const data of Object.values(sessionData)) {"
       },
       {
         "lineNumber": 130,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      if (data \u003d\u003d\u003d undefined || data \u003d\u003d\u003d \u0027\u0027) {"
       },
       {
         "lineNumber": 131,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "        return false;"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "  reset() {"
+        "content": "      }"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.currentPhase \u003d null;"
+        "content": "    }"
       },
       {
         "lineNumber": 134,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    return true;"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 136,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Stores session data and sets current session\u0027s phase."
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @throws throwError - If there are no open phases in this session."
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param sessionData"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  updateSessionParameters(sessionData: SessionData) {"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    if (sessionData.openPhases.length \u003d\u003d\u003d 0) {"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      throwError(\u0027There are no accessible phases.\u0027);"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.sessionData \u003d sessionData;"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.currentPhase \u003d Phase[sessionData.openPhases[0]];"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.repoName \u003d sessionData[sessionData.openPhases[0]];"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.githubService.storePhaseDetails(this.phaseRepoOwners[this.currentPhase], this.repoName);"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Launches the SessionFixConfirmation Dialog."
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @return Observable\u003cboolean\u003e - Representing user\u0027s permission grant."
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  openSessionFixConfirmation(): Observable\u003cboolean\u003e {"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    const dialogRef \u003d this.phaseFixConfirmationDialog.open(SessionFixConfirmationComponent, {"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      data: {user: this.userService.currentUser.loginId, repoName: this.sessionData[this.currentPhase]}"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return dialogRef.afterClosed();"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Ensures that the necessary data for the current session is available"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * and synchronized with the remote server."
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  sessionSetup(): Observable\u003cany\u003e {"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return this.fetchSessionData().pipe("
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      flatMap((sessionData: SessionData) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        this.assertSessionDataIntegrity(sessionData);"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        this.updateSessionParameters(sessionData);"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        return this.verifySessionAvailability(sessionData);"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      }),"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      flatMap((isSessionAvailable: boolean) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        if (!isSessionAvailable) {"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          return this.openSessionFixConfirmation();"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          return of(null);"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      }),"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      flatMap((sessionFixPermission: boolean | null) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        if (sessionFixPermission \u003d\u003d\u003d null) {"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          // No Session Fix Necessary"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          return of(null);"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        } if (sessionFixPermission \u003d\u003d\u003d true) {"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          return this.attemptSessionAvailabilityFix(this.sessionData);"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        } else {"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          throw new Error(\u0027You cannot proceed without the required repository.\u0027);"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      }),"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      flatMap((isFixAttempted: boolean | null) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        if (isFixAttempted \u003d\u003d\u003d null) {"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          // If no fix has been attempted, there is no need to verify fix outcome."
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          return of(true);"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        } else if (isFixAttempted \u003d\u003d\u003d true) {"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          // Verify that Repository has been created if a fix attempt has occurred."
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          return this.verifySessionAvailability(this.sessionData);"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      }),"
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      flatMap((isSessionCreated: boolean) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        if (!isSessionCreated) {"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "          throw new Error(\u0027Session Availability Fix failed.\u0027);"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        return this.labelService.synchronizeRemoteLabels();"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      })"
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    );"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  public getPhaseDetail() {"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "    return this.orgName.concat(\u0027/\u0027).concat(this.repoName);"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  reset() {"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    this.currentPhase \u003d null;"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 220,
         "author": {
           "gitId": "-"
         },
@@ -22365,9 +23488,463 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 90,
+      "ptvrajsk": 172,
       "KevinCJH": 4,
-      "-": 42
+      "-": 44
+    }
+  },
+  {
+    "path": "src/app/core/services/session-fix-confirmation/session-fix-confirmation.component.html",
+    "fileType": "html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "\u003ch1 mat-dialog-title\u003eHi {{ data.user }}\u003c/h1\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "\u003cdiv mat-dialog-content\u003e"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  \u003cp\u003eDo you want CATcher to create a repository named \"{{ data.repoName }}\"\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  \u003cp\u003ein your Github Account?\u003c/p\u003e"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "\u003cdiv mat-dialog-actions\u003e"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  \u003cbutton mat-button mat-raised-button color\u003d\"warn\" [mat-dialog-close]\u003d\"false\" (click)\u003d\"onNoClick()\"\u003eNo Thanks\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  \u003cbutton mat-button mat-raised-button color\u003d\"primary\" [mat-dialog-close]\u003d\"true\" cdkFocusInitial\u003eOk\u003c/button\u003e"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "\u003c/div\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "ptvrajsk": 9
+    }
+  },
+  {
+    "path": "src/app/core/services/session-fix-confirmation/session-fix-confirmation.component.spec.ts",
+    "fileType": "ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "import { async, ComponentFixture, TestBed } from \u0027@angular/core/testing\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "import { SessionFixConfirmationComponent } from \u0027./session-fix-confirmation.component\u0027;"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "describe(\u0027SessionFixConfirmationComponent\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  let component: SessionFixConfirmationComponent;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  let fixture: ComponentFixture\u003cSessionFixConfirmationComponent\u003e;"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  beforeEach(async(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    TestBed.configureTestingModule({"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      declarations: [ SessionFixConfirmationComponent ]"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    })"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    .compileComponents();"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }));"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  beforeEach(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    fixture \u003d TestBed.createComponent(SessionFixConfirmationComponent);"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    component \u003d fixture.componentInstance;"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    fixture.detectChanges();"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  });"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  it(\u0027should create\u0027, () \u003d\u003e {"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    expect(component).toBeTruthy();"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  });"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "});"
+      }
+    ],
+    "authorContributionMap": {
+      "ptvrajsk": 25
+    }
+  },
+  {
+    "path": "src/app/core/services/session-fix-confirmation/session-fix-confirmation.component.ts",
+    "fileType": "ts",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "import { Component, Inject, OnInit } from \u0027@angular/core\u0027;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "import { MAT_DIALOG_DATA, MatDialogRef } from \u0027@angular/material\u0027;"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "export interface RepositoryData {"
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  user: string;"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  repoName: string;"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "@Component({"
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  selector: \u0027app-session-fix-confirmation\u0027,"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  templateUrl: \u0027./session-fix-confirmation.component.html\u0027,"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  styleUrls: [\u0027./session-fix-confirmation.component.css\u0027]"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "})"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "export class SessionFixConfirmationComponent implements OnInit {"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  constructor("
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    public dialogRef: MatDialogRef\u003cSessionFixConfirmationComponent\u003e,"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    @Inject(MAT_DIALOG_DATA) public data: RepositoryData) {}"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  onNoClick(): void {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.dialogRef.close();"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  ngOnInit() {"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "ptvrajsk": 27
     }
   },
   {
@@ -32907,6 +34484,44 @@
     "authorContributionMap": {
       "ptvrajsk": 22,
       "-": 181
+    }
+  },
+  {
+    "path": "src/app/shared/error-toasters/general-message-error/general-message-error.component.html",
+    "fileType": "html",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "\u003cp style\u003d\"display: inline-block; max-width:300px\"\u003e {{data.message}} \u003c/p\u003e"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cbutton style\u003d\"float: right; margin-top: 8px;\" mat-button"
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        color\u003d\"accent\""
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        (click)\u003d\"snackBarRef.dismiss()\"\u003e Close \u003c/button\u003e"
+      }
+    ],
+    "authorContributionMap": {
+      "ptvrajsk": 1,
+      "-": 3
     }
   },
   {

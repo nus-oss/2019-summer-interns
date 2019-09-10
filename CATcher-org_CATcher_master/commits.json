@@ -651,6 +651,20 @@
             "deletions": 33
           }
         ]
+      },
+      {
+        "insertions": 187,
+        "deletions": 11,
+        "date": "2019-09-09",
+        "commitResults": [
+          {
+            "hash": "d7ad194450159b2769af610bfe59abcad3506b67",
+            "messageTitle": "BugReportingRepository will be automatically created for Students (#189)",
+            "messageBody": "* BugReport Repo will be automatically created.\r\n\r\nThe BugReporting Phase Repository will be automatically created and\r\nsetup if it is missing during the initial log-in. Since the users are\r\nrequired to have this repo for the PE.\r\n\r\n* Streamline Repo Creation Process\r\n\r\nRepository Initialization works only for the Bug Reporting Phase and\r\nonly for Students in that phase. (So Tutors/Admins will not have a\r\nrandom repository created in their account). Error messages have been\r\nput in place to identify any potential faliures.\r\n\r\n* Usage of ErrorCode Constant\r\n\r\n* Lint Fix\r\n\r\n* Artificial wait time for repo creation\r\n\r\n* User Permission Requested prior to Repo Creation\r\n\r\nThe app now seeks the user\u0027s permission prior to initializing the\r\nBugReportingPhase\u0027s repository in their account (should it be missing).\r\n\r\n* Error Message Fix\r\n\r\n* Method Description Fix\r\n",
+            "insertions": 187,
+            "deletions": 11
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1826,8 +1840,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2391,
-    "KevinCJH": 1683
+    "ptvrajsk": 2571,
+    "KevinCJH": 1682
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -1837,8 +1851,8 @@
       "md": 28,
       "py": 0,
       "tag": 0,
-      "html": 304,
-      "ts": 2059
+      "html": 314,
+      "ts": 2229
     },
     "KevinCJH": {
       "java": 0,
@@ -1848,12 +1862,12 @@
       "py": 0,
       "tag": 0,
       "html": 270,
-      "ts": 1413
+      "ts": 1412
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 18915.021,
-    "KevinCJH": 16164.637
+    "ptvrajsk": 18246.893,
+    "KevinCJH": 15470.958
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
