@@ -252,6 +252,20 @@
             "deletions": 320
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-09-14",
+        "commitResults": [
+          {
+            "hash": "0fa0530e02f9277221f30d33ac59fa8cd99e4ace",
+            "messageTitle": "Report: fix breakdown by file type (#889)",
+            "messageBody": "Breakdown by file types functionality is broken when grouping by NONE \r\nor by AUTHORS.\r\n\r\nThis is caused by a typo in a variable name that does not exist. As a \r\nresult, the report is unable to populate the list of file types and \r\nusers won\u0027t be able to view the breakdown of contribution by file type \r\nwhen grouping by NONE or by AUTHORS.\r\n\r\nLet\u0027s fix the typo in the variable name.",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "bluein-green": [
@@ -888,9 +902,9 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 15210.771,
-    "bluein-green": 70.00265,
-    "jamessspanggg": 22649.012
+    "jylee-git": 14166.914,
+    "bluein-green": 65.198456,
+    "jamessspanggg": 21063.734
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",

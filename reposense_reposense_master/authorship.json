@@ -9154,7 +9154,7 @@
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "                    v-for\u003d\"fileType in Object.keys(contributionBaFileTypeColors)\")"
+        "content": "                    v-for\u003d\"fileType in Object.keys(contributionBarFileTypeColors)\")"
       },
       {
         "lineNumber": 173,
