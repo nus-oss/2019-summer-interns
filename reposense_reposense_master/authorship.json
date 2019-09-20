@@ -8202,7 +8202,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "          )"
+        "content": "          ).tab-padding"
       },
       {
         "lineNumber": 37,
@@ -8293,7 +8293,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "          .tab-content"
+        "content": "          .tab-content.tab-padding"
       },
       {
         "lineNumber": 50,
@@ -13350,7 +13350,7 @@
       {
         "lineNumber": 56,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
         "content": "}"
       },
@@ -13399,212 +13399,212 @@
       {
         "lineNumber": 63,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": ".warn {"
+        "content": ".tab-padding {"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "  color: mui-color(\u0027red\u0027);"
+        "content": "  padding: 2rem 1.5rem;"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "}"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "  .summary-charts__title--contribution {"
+        "content": ""
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    color: mui-color(\u0027black\u0027);"
+        "content": ".warn {"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "  }"
+        "content": "  color: mui-color(\u0027red\u0027);"
       },
       {
         "lineNumber": 69,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
+        "lineNumber": 70,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  .summary-charts__title--contribution {"
+      },
+      {
         "lineNumber": 71,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "/** navigation bar **/"
+        "content": "    color: mui-color(\u0027black\u0027);"
       },
       {
         "lineNumber": 72,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "header {"
+        "content": "  }"
       },
       {
         "lineNumber": 73,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "  display: flex;"
+        "content": "}"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "  justify-content: center;"
+        "content": ""
       },
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "  position: relative;"
+        "content": "/** navigation bar **/"
       },
       {
         "lineNumber": 76,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "  z-index: 100;"
+        "content": "header {"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  display: flex;"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "  .content {"
+        "content": "  justify-content: center;"
       },
       {
         "lineNumber": 79,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "    align-items: center;"
+        "content": "  position: relative;"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    display: flex;"
+        "content": "  z-index: 100;"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "    flex-grow: 1;"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "    justify-content: space-between;"
+        "content": "  .content {"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    align-items: center;"
       },
       {
         "lineNumber": 84,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "    display: flex;"
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "  .repo,"
+        "content": "    flex-grow: 1;"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "  .logo {"
+        "content": "    justify-content: space-between;"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "    margin: 0;"
+        "content": "  }"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 89,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "}"
+        "content": "  .repo,"
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "  .logo {"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "#file-upload {"
+        "content": "    margin: 0;"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "  text-align: center;"
+        "content": "  }"
       },
       {
         "lineNumber": 93,
@@ -13625,4301 +13625,4315 @@
         "author": {
           "gitId": "-"
         },
-        "content": "#app-wrapper {"
+        "content": "#file-upload {"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "  display: flex;"
+        "content": "  text-align: center;"
       },
       {
         "lineNumber": 97,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "  height: 100vh;"
+        "content": "}"
       },
       {
         "lineNumber": 98,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "  left: 0;"
+        "content": ""
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "  position: absolute;"
+        "content": "#app-wrapper {"
       },
       {
         "lineNumber": 100,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  top: 0;"
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  width: 100%;"
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  z-index: 50;"
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  #tab-resize-guide {"
-      },
-      {
-        "lineNumber": 105,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    $tabs-width: 50%;"
-      },
-      {
-        "lineNumber": 106,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 107,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    background-color: mui-color(\u0027black\u0027);"
-      },
-      {
-        "lineNumber": 108,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    cursor: col-resize;"
-      },
-      {
-        "lineNumber": 109,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    display: none;"
-      },
-      {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    height: 100%;"
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    position: fixed;"
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    right: $tabs-width;"
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    width: 2px;"
-      },
-      {
-        "lineNumber": 114,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    z-index: 100;"
-      },
-      {
-        "lineNumber": 115,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 116,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 117,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  #summary-wrapper {"
-      },
-      {
-        "lineNumber": 118,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    flex-grow: 1;"
-      },
-      {
-        "lineNumber": 119,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    height: 100%;"
-      },
-      {
-        "lineNumber": 120,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    overflow-y: scroll;"
-      },
-      {
-        "lineNumber": 121,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    text-align: center;"
-      },
-      {
-        "lineNumber": 122,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 123,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .timestamp-footer {"
-      },
-      {
-        "lineNumber": 124,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      color: mui-color(\u0027grey\u0027, \u0027700\u0027);"
-      },
-      {
-        "lineNumber": 125,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-bottom: 1em;"
-      },
-      {
-        "lineNumber": 126,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-left: 1em;"
-      },
-      {
-        "lineNumber": 127,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 128,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 129,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "    .error-message-box {"
-      },
-      {
-        "lineNumber": 130,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      background-color: mui-color(\u0027red\u0027, \u0027100\u0027);"
-      },
-      {
-        "lineNumber": 131,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      border: .1rem solid mui-color(\u0027red\u0027, \u0027900\u0027);"
-      },
-      {
-        "lineNumber": 132,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      border-radius: .25rem;"
-      },
-      {
-        "lineNumber": 133,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      color: mui-color(\u0027red\u0027, \u0027900\u0027);"
-      },
-      {
-        "lineNumber": 134,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      font-size: .75rem;"
-      },
-      {
-        "lineNumber": 135,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      margin-bottom: .9rem;"
-      },
-      {
-        "lineNumber": 136,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      padding: .9rem;"
-      },
-      {
-        "lineNumber": 137,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      text-align: left;"
-      },
-      {
-        "lineNumber": 138,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 139,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      \u0026__close-button {"
-      },
-      {
-        "lineNumber": 140,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        cursor: pointer;"
-      },
-      {
-        "lineNumber": 141,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        float: right;"
-      },
-      {
-        "lineNumber": 142,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        font-size: 1.4rem;"
-      },
-      {
-        "lineNumber": 143,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        font-weight: bold;"
-      },
-      {
-        "lineNumber": 144,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        line-height: .625rem;"
-      },
-      {
-        "lineNumber": 145,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 146,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        \u0026:hover {"
-      },
-      {
-        "lineNumber": 147,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "          color: mui-color(\u0027white\u0027);"
-      },
-      {
-        "lineNumber": 148,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 149,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 150,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 151,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      \u0026__message {"
-      },
-      {
-        "lineNumber": 152,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        border-bottom: .1rem solid;"
-      },
-      {
-        "lineNumber": 153,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        font-weight: bolder;"
-      },
-      {
-        "lineNumber": 154,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        padding-bottom: .5rem;"
-      },
-      {
-        "lineNumber": 155,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 156,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 157,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      .icon {"
-      },
-      {
-        "lineNumber": 158,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        padding-right: .4rem;"
-      },
-      {
-        "lineNumber": 159,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        padding-top: .2rem;"
-      },
-      {
-        "lineNumber": 160,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        width: 1rem;"
-      },
-      {
-        "lineNumber": 161,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 162,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 163,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      \u0026__failed-repo {"
-      },
-      {
-        "lineNumber": 164,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        \u0026--name {"
-      },
-      {
-        "lineNumber": 165,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "          font-weight: bolder;"
-      },
-      {
-        "lineNumber": 166,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "          padding-left: .2rem;"
-      },
-      {
-        "lineNumber": 167,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 168,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 169,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        \u0026--reason {"
-      },
-      {
-        "lineNumber": 170,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "          padding-left: 3rem;"
-      },
-      {
-        "lineNumber": 171,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 172,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 173,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 174,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 175,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 176,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  #tabs-wrapper {"
-      },
-      {
-        "lineNumber": 177,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    $tabs-width: 50%;"
-      },
-      {
-        "lineNumber": 178,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 179,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    background: mui-color(\u0027grey\u0027, \u0027200\u0027);"
-      },
-      {
-        "lineNumber": 180,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    flex: 0 0 $tabs-width;"
-      },
-      {
-        "lineNumber": 181,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    overflow-y: scroll;"
-      },
-      {
-        "lineNumber": 182,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    position: relative;"
-      },
-      {
-        "lineNumber": 183,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 184,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .tab-close {"
-      },
-      {
-        "lineNumber": 185,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      cursor: pointer;"
-      },
-      {
-        "lineNumber": 186,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      position: fixed;"
-      },
-      {
-        "lineNumber": 187,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      top: calc(50vh - 3rem);"
-      },
-      {
-        "lineNumber": 188,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 189,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      svg {"
-      },
-      {
-        "lineNumber": 190,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        background-color: mui-color(\u0027white\u0027);"
-      },
-      {
-        "lineNumber": 191,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        color: mui-color(\u0027black\u0027);"
-      },
-      {
-        "lineNumber": 192,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        padding: 3rem .25rem;"
-      },
-      {
-        "lineNumber": 193,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 194,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 195,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 196,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .tab-content {"
-      },
-      {
-        "lineNumber": 197,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      display: flex;"
-      },
-      {
-        "lineNumber": 198,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      padding: 1rem 1.5rem;"
-      },
-      {
-        "lineNumber": 199,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      padding-top: 4rem;"
-      },
-      {
-        "lineNumber": 200,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 201,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .tab-panes {"
-      },
-      {
-        "lineNumber": 202,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        text-align: left;"
-      },
-      {
-        "lineNumber": 203,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        width: 100%;"
-      },
-      {
-        "lineNumber": 204,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 205,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 206,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 207,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    #tab-resize {"
-      },
-      {
-        "lineNumber": 208,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      background-color: mui-color(\u0027black\u0027);"
-      },
-      {
-        "lineNumber": 209,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      cursor: col-resize;"
-      },
-      {
-        "lineNumber": 210,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      height: 100%;"
-      },
-      {
-        "lineNumber": 211,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      position: fixed;"
-      },
-      {
-        "lineNumber": 212,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      width: 13.250px;"
-      },
-      {
-        "lineNumber": 213,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 214,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 215,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 216,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 217,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "/* summary chart */"
-      },
-      {
-        "lineNumber": 218,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "#summary,"
-      },
-      {
-        "lineNumber": 219,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ".summary-status {"
-      },
-      {
-        "lineNumber": 220,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  padding: 2rem 1rem;"
-      },
-      {
-        "lineNumber": 221,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 222,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 223,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ".summary-picker {"
-      },
-      {
-        "lineNumber": 224,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  align-items: center;"
-      },
-      {
-        "lineNumber": 225,
         "author": {
           "gitId": "-"
         },
         "content": "  display: flex;"
       },
       {
-        "lineNumber": 226,
+        "lineNumber": 101,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  height: 100vh;"
+      },
+      {
+        "lineNumber": 102,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  left: 0;"
+      },
+      {
+        "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "  flex-flow: row wrap;"
+        "content": "  position: absolute;"
       },
       {
-        "lineNumber": 227,
+        "lineNumber": 104,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  top: 0;"
+      },
+      {
+        "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "  justify-content: center;"
+        "content": "  width: 100%;"
       },
       {
-        "lineNumber": 228,
+        "lineNumber": 106,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "  margin-bottom: 2rem;"
+        "content": "  z-index: 50;"
       },
       {
-        "lineNumber": 229,
+        "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 230,
+        "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u0026__section {"
+        "content": "  #tab-resize-guide {"
       },
       {
-        "lineNumber": 231,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    align-items: inherit;"
-      },
-      {
-        "lineNumber": 232,
+        "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": "    display: flex;"
+        "content": "    $tabs-width: 50%;"
       },
       {
-        "lineNumber": 233,
-        "author": {
-          "gitId": "bluein-green"
-        },
-        "content": "    flex: 0 1 auto;"
-      },
-      {
-        "lineNumber": 234,
-        "author": {
-          "gitId": "bluein-green"
-        },
-        "content": "    flex-flow: inherit;"
-      },
-      {
-        "lineNumber": 235,
-        "author": {
-          "gitId": "bluein-green"
-        },
-        "content": "    justify-content: inherit;"
-      },
-      {
-        "lineNumber": 236,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 237,
+        "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 238,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  \u0026__checkboxes {"
-      },
-      {
-        "lineNumber": 239,
+        "lineNumber": 111,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    label {"
+        "content": "    background-color: mui-color(\u0027black\u0027);"
       },
       {
-        "lineNumber": 240,
+        "lineNumber": 112,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "      margin-left: .5rem;"
+        "content": "    cursor: col-resize;"
       },
       {
-        "lineNumber": 241,
+        "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    display: none;"
       },
       {
-        "lineNumber": 242,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 243,
+        "lineNumber": 114,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    span {"
+        "content": "    height: 100%;"
       },
       {
-        "lineNumber": 244,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-left: .25rem;"
-      },
-      {
-        "lineNumber": 245,
+        "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    position: fixed;"
       },
       {
-        "lineNumber": 246,
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    right: $tabs-width;"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    width: 2px;"
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    z-index: 100;"
+      },
+      {
+        "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 247,
+        "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 248,
+        "lineNumber": 121,
         "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  .mui-textfield,"
-      },
-      {
-        "lineNumber": 249,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  .mui-select {"
-      },
-      {
-        "lineNumber": 250,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    margin: .5rem;"
-      },
-      {
-        "lineNumber": 251,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    padding-right: 10px;"
-      },
-      {
-        "lineNumber": 252,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 253,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 254,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  label {"
-      },
-      {
-        "lineNumber": 255,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    font-size: .75rem;"
-      },
-      {
-        "lineNumber": 256,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    overflow-y: hidden;"
-      },
-      {
-        "lineNumber": 257,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    text-align: left;"
-      },
-      {
-        "lineNumber": 258,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    width: fit-content;"
-      },
-      {
-        "lineNumber": 259,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 260,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 261,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  input,"
-      },
-      {
-        "lineNumber": 262,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  select {"
-      },
-      {
-        "lineNumber": 263,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    font-size: .75rem;"
-      },
-      {
-        "lineNumber": 264,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 265,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 266,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 267,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ".summary-charts {"
-      },
-      {
-        "lineNumber": 268,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  margin-bottom: 3rem;"
-      },
-      {
-        "lineNumber": 269,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 270,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  \u0026__title {"
-      },
-      {
-        "lineNumber": 271,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    display: block;"
-      },
-      {
-        "lineNumber": 272,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    font-weight: bold;"
-      },
-      {
-        "lineNumber": 273,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    text-align: left;"
-      },
-      {
-        "lineNumber": 274,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 275,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--contribution {"
-      },
-      {
-        "lineNumber": 276,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      display: inline;"
-      },
-      {
-        "lineNumber": 277,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 278,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 279,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 280,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "  \u0026__fileType--breakdown {"
-      },
-      {
-        "lineNumber": 281,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    overflow-y: hidden;"
-      },
-      {
-        "lineNumber": 282,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 283,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    \u0026__legend {"
-      },
-      {
-        "lineNumber": 284,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      display: inline;"
-      },
-      {
-        "lineNumber": 285,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      float: left;"
-      },
-      {
-        "lineNumber": 286,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 287,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 288,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 289,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 290,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ".summary-chart {"
-      },
-      {
-        "lineNumber": 291,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  margin-bottom: 1rem;"
-      },
-      {
-        "lineNumber": 292,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  overflow: auto;"
-      },
-      {
-        "lineNumber": 293,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  position: relative;"
-      },
-      {
-        "lineNumber": 294,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  text-align: left;"
-      },
-      {
-        "lineNumber": 295,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 296,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  \u0026__title {"
-      },
-      {
-        "lineNumber": 297,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    clear: left;"
-      },
-      {
-        "lineNumber": 298,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 299,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    \u0026 \u003e * {"
-      },
-      {
-        "lineNumber": 300,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      display: inline;"
-      },
-      {
-        "lineNumber": 301,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      padding-right: .5rem;"
-      },
-      {
-        "lineNumber": 302,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 303,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 304,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--index,"
-      },
-      {
-        "lineNumber": 305,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--repo {"
-      },
-      {
-        "lineNumber": 306,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      font-weight: bold;"
-      },
-      {
-        "lineNumber": 307,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 308,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 309,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    \u0026--index::after {"
-      },
-      {
-        "lineNumber": 310,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      content: \u0027.\u0027;"
-      },
-      {
-        "lineNumber": 311,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      display: inline-block;"
-      },
-      {
-        "lineNumber": 312,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 313,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 314,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    \u0026--repo {"
-      },
-      {
-        "lineNumber": 315,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      padding-right: .25rem;"
-      },
-      {
-        "lineNumber": 316,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 317,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 318,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    \u0026--button {"
-      },
-      {
-        "lineNumber": 319,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      color: mui-color(\u0027grey\u0027);"
-      },
-      {
-        "lineNumber": 320,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      cursor: pointer;"
-      },
-      {
-        "lineNumber": 321,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      text-decoration: none;"
-      },
-      {
-        "lineNumber": 322,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 323,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 324,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 325,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  \u0026__ramp {"
-      },
-      {
-        "lineNumber": 326,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    position: relative;"
-      },
-      {
-        "lineNumber": 327,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 328,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .overlay {"
-      },
-      {
-        "lineNumber": 329,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      height: 100%;"
-      },
-      {
-        "lineNumber": 330,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      position: absolute;"
-      },
-      {
-        "lineNumber": 331,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      top: 0;"
-      },
-      {
-        "lineNumber": 332,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 333,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      \u0026.show {"
-      },
-      {
-        "lineNumber": 334,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        background-color: rgba(mui-color(\u0027white\u0027), .5);"
-      },
-      {
-        "lineNumber": 335,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        border: 1px dashed mui-color(\u0027black\u0027);"
-      },
-      {
-        "lineNumber": 336,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 337,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 338,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      \u0026.edge {"
-      },
-      {
-        "lineNumber": 339,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        border-right: 1px dashed mui-color(\u0027black\u0027);"
-      },
-      {
-        "lineNumber": 340,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 341,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 342,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 343,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 344,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  \u0026__contrib {"
-      },
-      {
-        "lineNumber": 345,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    text-align: left;"
-      },
-      {
-        "lineNumber": 346,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 347,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    \u0026--bar {"
-      },
-      {
-        "lineNumber": 348,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      background-color: mui-color(\u0027red\u0027);"
-      },
-      {
-        "lineNumber": 349,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      height: .3rem;"
-      },
-      {
-        "lineNumber": 350,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-top: .1rem;"
-      },
-      {
-        "lineNumber": 351,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 352,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 353,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "    \u0026--bar--fileType {"
-      },
-      {
-        "lineNumber": 354,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      display: inline-block;"
-      },
-      {
-        "lineNumber": 355,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      float: left;"
-      },
-      {
-        "lineNumber": 356,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      height: .3rem;"
-      },
-      {
-        "lineNumber": 357,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-top: .1rem;"
-      },
-      {
-        "lineNumber": 358,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      text-align: left;"
-      },
-      {
-        "lineNumber": 359,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 360,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 361,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 362,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 363,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "/* Ramp */"
-      },
-      {
-        "lineNumber": 364,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ".ramp {"
-      },
-      {
-        "lineNumber": 365,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  $height: 3rem;"
-      },
-      {
-        "lineNumber": 366,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  background-color: mui-color(\u0027blue\u0027, \u002750\u0027);"
-      },
-      {
-        "lineNumber": 367,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  font-size: 100%;"
-      },
-      {
-        "lineNumber": 368,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  height: $height;"
-      },
-      {
-        "lineNumber": 369,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "  position: relative;"
-      },
-      {
-        "lineNumber": 370,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 371,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  \u0026__slice {"
-      },
-      {
-        "lineNumber": 372,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    border-left-color: rgba(0, 0, 0, 0);"
-      },
-      {
-        "lineNumber": 373,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    border-left-style: solid;"
-      },
-      {
-        "lineNumber": 374,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    display: block;"
-      },
-      {
-        "lineNumber": 375,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    height: 0;"
-      },
-      {
-        "lineNumber": 376,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    position: absolute;"
-      },
-      {
-        "lineNumber": 377,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    width: 0;"
-      },
-      {
-        "lineNumber": 378,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 379,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--color0 {"
-      },
-      {
-        "lineNumber": 380,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      border-bottom: $height rgba(mui-color(\u0027orange\u0027), .5) solid;"
-      },
-      {
-        "lineNumber": 381,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 382,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 383,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--color1 {"
-      },
-      {
-        "lineNumber": 384,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      border-bottom: $height rgba(mui-color(\u0027light-blue\u0027), .5) solid;"
-      },
-      {
-        "lineNumber": 385,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 386,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 387,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--color2 {"
-      },
-      {
-        "lineNumber": 388,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      border-bottom: $height rgba(mui-color(\u0027green\u0027), .5) solid;"
-      },
-      {
-        "lineNumber": 389,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 390,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 391,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--color3 {"
-      },
-      {
-        "lineNumber": 392,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      border-bottom: $height rgba(mui-color(\u0027indigo\u0027), .5) solid;"
-      },
-      {
-        "lineNumber": 393,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 394,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 395,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    \u0026--color4 {"
-      },
-      {
-        "lineNumber": 396,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      border-bottom: $height rgba(mui-color(\u0027pink\u0027), .5) solid;"
-      },
-      {
-        "lineNumber": 397,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 398,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 399,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 400,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 401,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "/* Authorship */"
-      },
-      {
-        "lineNumber": 402,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "#tab-authorship {"
-      },
-      {
-        "lineNumber": 403,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  .toolbar {"
-      },
-      {
-        "lineNumber": 404,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    cursor: pointer;"
-      },
-      {
-        "lineNumber": 405,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    float: right;"
-      },
-      {
-        "lineNumber": 406,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 407,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 408,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  .title {"
-      },
-      {
-        "lineNumber": 409,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .repoName {"
-      },
-      {
-        "lineNumber": 410,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      cursor: pointer;"
-      },
-      {
-        "lineNumber": 411,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 412,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 413,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    .author {"
-      },
-      {
-        "lineNumber": 414,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-left: .3rem;"
-      },
-      {
-        "lineNumber": 415,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 416,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 417,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    .period {"
-      },
-      {
-        "lineNumber": 418,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-left: 2rem;"
-      },
-      {
-        "lineNumber": 419,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 420,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 421,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .contribution {"
-      },
-      {
-        "lineNumber": 422,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      color: mui-color(\u0027red\u0027);"
-      },
-      {
-        "lineNumber": 423,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 424,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      .fileType {"
-      },
-      {
-        "lineNumber": 425,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        align-items: center;"
-      },
-      {
-        "lineNumber": 426,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        display: flex;"
-      },
-      {
-        "lineNumber": 427,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin-left: 3rem;"
-      },
-      {
-        "lineNumber": 428,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin-top: 1.0rem;"
-      },
-      {
-        "lineNumber": 429,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 430,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 431,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .radio-button--search {"
-      },
-      {
-        "lineNumber": 432,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        float: left;"
-      },
-      {
-        "lineNumber": 433,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin: 1.75rem 2.0rem 0 0;"
-      },
-      {
-        "lineNumber": 434,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 435,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 436,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .radio-button--checkbox {"
-      },
-      {
-        "lineNumber": 437,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        float: left;"
-      },
-      {
-        "lineNumber": 438,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin: 0 2.0rem 0 -3rem;"
-      },
-      {
-        "lineNumber": 439,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        vertical-align: middle;"
-      },
-      {
-        "lineNumber": 440,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 441,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 442,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      #search {"
-      },
-      {
-        "lineNumber": 443,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin-top: 1.25rem;"
-      },
-      {
-        "lineNumber": 444,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        padding: .5rem 1.0rem .25rem 1.0rem;"
-      },
-      {
-        "lineNumber": 445,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        width: 30%;"
-      },
-      {
-        "lineNumber": 446,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 447,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 448,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      #submit-button {"
-      },
-      {
-        "lineNumber": 449,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        background-color: mui-color(\u0027blue\u0027);"
-      },
-      {
-        "lineNumber": 450,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        color: mui-color(\u0027white\u0027);"
-      },
-      {
-        "lineNumber": 451,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin: 1.0rem 0 0 .25rem;"
-      },
-      {
-        "lineNumber": 452,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        padding: .5rem 1.0rem .25rem 1.0rem;"
-      },
-      {
-        "lineNumber": 453,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 454,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 455,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .select {"
-      },
-      {
-        "lineNumber": 456,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        font-weight: bold;"
-      },
-      {
-        "lineNumber": 457,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 458,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 459,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .loc {"
-      },
-      {
-        "lineNumber": 460,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        font-weight: bolder;"
-      },
-      {
-        "lineNumber": 461,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 462,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 463,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .bloc {"
-      },
-      {
-        "lineNumber": 464,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        color: mui-color(\u0027grey\u0027);"
-      },
-      {
-        "lineNumber": 465,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 466,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 467,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      span.fileType {"
-      },
-      {
-        "lineNumber": 468,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        span.bloc::after {"
-      },
-      {
-        "lineNumber": 469,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          content: \u0027, \u0027;"
-      },
-      {
-        "lineNumber": 470,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 471,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 472,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        span.bloc:last-child::after {"
-      },
-      {
-        "lineNumber": 473,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          content: \u0027\u0027;"
-      },
-      {
-        "lineNumber": 474,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 475,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 476,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 477,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      .mui-checkbox--fileType {"
-      },
-      {
-        "lineNumber": 478,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        vertical-align: middle;"
-      },
-      {
-        "lineNumber": 479,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 480,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 481,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .checkboxes {"
-      },
-      {
-        "lineNumber": 482,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        label {"
-      },
-      {
-        "lineNumber": 483,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          align-items: center;"
-      },
-      {
-        "lineNumber": 484,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          display: inline-flex;"
-      },
-      {
-        "lineNumber": 485,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          padding-right: 10px;"
-      },
-      {
-        "lineNumber": 486,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 487,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 488,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        span {"
-      },
-      {
-        "lineNumber": 489,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          margin-left: .25rem;"
-      },
-      {
-        "lineNumber": 490,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 491,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 492,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 493,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .sorting {"
-      },
-      {
-        "lineNumber": 494,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        align-items: center;"
-      },
-      {
-        "lineNumber": 495,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        display: flex;"
-      },
-      {
-        "lineNumber": 496,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin-top: 1.0rem;"
-      },
-      {
-        "lineNumber": 497,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 498,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        .mui-select {"
-      },
-      {
-        "lineNumber": 499,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          cursor: pointer;"
-      },
-      {
-        "lineNumber": 500,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 501,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 502,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        label {"
-      },
-      {
-        "lineNumber": 503,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          overflow-y: hidden;"
-      },
-      {
-        "lineNumber": 504,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 505,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 506,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u0026 \u003e label {"
-      },
-      {
-        "lineNumber": 507,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          margin-left: 10px;"
-      },
-      {
-        "lineNumber": 508,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 509,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 510,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        span {"
-      },
-      {
-        "lineNumber": 511,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          margin-left: .25rem;"
-      },
-      {
-        "lineNumber": 512,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 513,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 514,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 515,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      .reverse {"
-      },
-      {
-        "lineNumber": 516,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        color: mui-color(\u0027black\u0027);"
-      },
-      {
-        "lineNumber": 517,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 518,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 519,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 520,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 521,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  .files {"
-      },
-      {
-        "lineNumber": 522,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    clear: left;"
-      },
-      {
-        "lineNumber": 523,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 524,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .file {"
-      },
-      {
-        "lineNumber": 525,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      pre {"
-      },
-      {
-        "lineNumber": 526,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        display: none;"
-      },
-      {
-        "lineNumber": 527,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 528,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 529,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      \u0026.active {"
-      },
-      {
-        "lineNumber": 530,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        pre {"
-      },
-      {
-        "lineNumber": 531,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          display: grid;"
-      },
-      {
-        "lineNumber": 532,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 533,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          .hljs {"
-      },
-      {
-        "lineNumber": 534,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            // overwrite hljs library"
-      },
-      {
-        "lineNumber": 535,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            display: inherit;"
-      },
-      {
-        "lineNumber": 536,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            padding: 0;"
-      },
-      {
-        "lineNumber": 537,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          }"
-      },
-      {
-        "lineNumber": 538,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 539,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 540,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 541,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 542,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .title {"
-      },
-      {
-        "lineNumber": 543,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      font-size: 1.25rem;"
-      },
-      {
-        "lineNumber": 544,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      font-weight: bold;"
-      },
-      {
-        "lineNumber": 545,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      margin-top: 1rem;"
-      },
-      {
-        "lineNumber": 546,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 547,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .path {"
-      },
-      {
-        "lineNumber": 548,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        cursor: pointer;"
-      },
-      {
-        "lineNumber": 549,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 550,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 551,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .loc {"
-      },
-      {
-        "lineNumber": 552,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        color: mui-color(\u0027grey\u0027);"
-      },
-      {
-        "lineNumber": 553,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 554,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 555,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .button {"
-      },
-      {
-        "lineNumber": 556,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        color: mui-color(\u0027grey\u0027);"
-      },
-      {
-        "lineNumber": 557,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        font-size: 1.15rem;"
-      },
-      {
-        "lineNumber": 558,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        margin-left: .5rem;"
-      },
-      {
-        "lineNumber": 559,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        text-decoration: none;"
-      },
-      {
-        "lineNumber": 560,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 561,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 562,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 563,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "    .segment {"
-      },
-      {
-        "lineNumber": 564,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      border-left: .25rem solid mui-color(\u0027green\u0027);"
-      },
-      {
-        "lineNumber": 565,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 566,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      .code {"
-      },
-      {
-        "lineNumber": 567,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        background-color: mui-color(\u0027green\u0027, \u002750\u0027);"
-      },
-      {
-        "lineNumber": 568,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        padding-left: 1rem;"
-      },
-      {
-        "lineNumber": 569,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 570,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 571,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      .line-number {"
-      },
-      {
-        "lineNumber": 572,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        color: mui-color(\u0027grey\u0027);"
-      },
-      {
-        "lineNumber": 573,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        float: left;"
-      },
-      {
-        "lineNumber": 574,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        // Not allowing user to select text"
-      },
-      {
-        "lineNumber": 575,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        -webkit-touch-callout: none; /* iOS Safari */"
-      },
-      {
-        "lineNumber": 576,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        -webkit-user-select: none; /* Safari */"
-      },
-      {
-        "lineNumber": 577,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        -khtml-user-select: none; /* Konqueror HTML */"
-      },
-      {
-        "lineNumber": 578,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        -moz-user-select: none; /* Firefox */"
-      },
-      {
-        "lineNumber": 579,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        -ms-user-select: none; /* Internet Explorer/Edge */"
-      },
-      {
-        "lineNumber": 580,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */"
-      },
-      {
-        "lineNumber": 581,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        width: 2rem;"
-      },
-      {
-        "lineNumber": 582,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 583,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        // overwrite all hljs colours"
-      },
-      {
-        "lineNumber": 584,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        [class^\u003d\u0027hljs\u0027] {"
-      },
-      {
-        "lineNumber": 585,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          color: mui-color(\u0027grey\u0027);"
-      },
-      {
-        "lineNumber": 586,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 587,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 588,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 589,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      .line-content {"
-      },
-      {
-        "lineNumber": 590,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        padding-left: 2rem;"
-      },
-      {
-        "lineNumber": 591,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 592,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 593,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      \u0026.untouched {"
-      },
-      {
-        "lineNumber": 594,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        $grey: mui-color(\u0027grey\u0027, \u0027400\u0027);"
-      },
-      {
-        "lineNumber": 595,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        border-left: .25rem solid $grey;"
-      },
-      {
-        "lineNumber": 596,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        height: 20px; /* height of a single line of code */"
-      },
-      {
-        "lineNumber": 597,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        position: relative;"
-      },
-      {
-        "lineNumber": 598,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 599,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \u0026.active {"
-      },
-      {
-        "lineNumber": 600,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          height: 100%;"
-      },
-      {
-        "lineNumber": 601,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 602,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          .code {"
-      },
-      {
-        "lineNumber": 603,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            background-color: mui-color(\u0027white\u0027);"
-      },
-      {
-        "lineNumber": 604,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            display: inherit;"
-      },
-      {
-        "lineNumber": 605,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          }"
-      },
-      {
-        "lineNumber": 606,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 607,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          .closer {"
-      },
-      {
-        "lineNumber": 608,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            .icon {"
-      },
-      {
-        "lineNumber": 609,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "              \u0026.open {"
-      },
-      {
-        "lineNumber": 610,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                display: none;"
-      },
-      {
-        "lineNumber": 611,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              }"
-      },
-      {
-        "lineNumber": 612,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 613,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "              \u0026.hide {"
-      },
-      {
-        "lineNumber": 614,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                display: inherit;"
-      },
-      {
-        "lineNumber": 615,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "              }"
-      },
-      {
-        "lineNumber": 616,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            }"
-      },
-      {
-        "lineNumber": 617,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          }"
-      },
-      {
-        "lineNumber": 618,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 619,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 620,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        .code {"
-      },
-      {
-        "lineNumber": 621,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          display: none;"
-      },
-      {
-        "lineNumber": 622,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 623,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 624,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        .closer {"
-      },
-      {
-        "lineNumber": 625,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          cursor: pointer;"
-      },
-      {
-        "lineNumber": 626,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          // custom margin for position of toggle icon"
-      },
-      {
-        "lineNumber": 627,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          margin: .2rem 0 0 -.45rem;"
-      },
-      {
-        "lineNumber": 628,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          position: absolute;"
-      },
-      {
-        "lineNumber": 629,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 630,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          \u0026.bottom {"
-      },
-      {
-        "lineNumber": 631,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            //custom margin for position of toggle icon at the bottom of segment"
-      },
-      {
-        "lineNumber": 632,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            margin: -1.05rem 0 0 -.45rem;"
-      },
-      {
-        "lineNumber": 633,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          }"
-      },
-      {
-        "lineNumber": 634,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 635,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          .icon {"
-      },
-      {
-        "lineNumber": 636,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            background-color: mui-color(\u0027white\u0027);"
-      },
-      {
-        "lineNumber": 637,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            color: mui-color(\u0027grey\u0027);"
-      },
-      {
-        "lineNumber": 638,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            width: .75em;"
-      },
-      {
-        "lineNumber": 639,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 640,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            \u0026.open {"
-      },
-      {
-        "lineNumber": 641,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "              display: inherit;"
-      },
-      {
-        "lineNumber": 642,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            }"
-      },
-      {
-        "lineNumber": 643,
-        "author": {
           "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 644,
-        "author": {
-          "gitId": "jamessspanggg"
         },
-        "content": "            \u0026.hide {"
+        "content": "  #summary-wrapper {"
       },
       {
-        "lineNumber": 645,
+        "lineNumber": 122,
         "author": {
           "gitId": "jamessspanggg"
-        },
-        "content": "              display: none;"
-      },
-      {
-        "lineNumber": 646,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            }"
-      },
-      {
-        "lineNumber": 647,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          }"
-      },
-      {
-        "lineNumber": 648,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 649,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 650,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 651,
-        "author": {
-          "gitId": "-"
         },
-        "content": "  }"
+        "content": "    flex-grow: 1;"
       },
       {
-        "lineNumber": 652,
+        "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    height: 100%;"
       },
       {
-        "lineNumber": 653,
+        "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "  .empty {"
+        "content": "    overflow-y: scroll;"
       },
       {
-        "lineNumber": 654,
+        "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
         "content": "    text-align: center;"
       },
       {
-        "lineNumber": 655,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 656,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "}"
-      },
-      {
-        "lineNumber": 657,
+        "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 658,
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .timestamp-footer {"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      color: mui-color(\u0027grey\u0027, \u0027700\u0027);"
+      },
+      {
+        "lineNumber": 129,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": ".zoom {"
+        "content": "      margin-bottom: 1em;"
       },
       {
-        "lineNumber": 659,
+        "lineNumber": 130,
         "author": {
           "gitId": "jamessspanggg"
+        },
+        "content": "      margin-left: 1em;"
+      },
+      {
+        "lineNumber": 131,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    .error-message-box {"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      background-color: mui-color(\u0027red\u0027, \u0027100\u0027);"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      border: .1rem solid mui-color(\u0027red\u0027, \u0027900\u0027);"
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      border-radius: .25rem;"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      color: mui-color(\u0027red\u0027, \u0027900\u0027);"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      font-size: .75rem;"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      margin-bottom: .9rem;"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      padding: .9rem;"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      text-align: left;"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      \u0026__close-button {"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        cursor: pointer;"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        float: right;"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        font-size: 1.4rem;"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        font-weight: bold;"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        line-height: .625rem;"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        \u0026:hover {"
+      },
+      {
+        "lineNumber": 151,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "          color: mui-color(\u0027white\u0027);"
+      },
+      {
+        "lineNumber": 152,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 153,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 154,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 155,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      \u0026__message {"
+      },
+      {
+        "lineNumber": 156,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        border-bottom: .1rem solid;"
+      },
+      {
+        "lineNumber": 157,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        font-weight: bolder;"
+      },
+      {
+        "lineNumber": 158,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        padding-bottom: .5rem;"
+      },
+      {
+        "lineNumber": 159,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 160,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 161,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      .icon {"
+      },
+      {
+        "lineNumber": 162,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        padding-right: .4rem;"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        padding-top: .2rem;"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        width: 1rem;"
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      \u0026__failed-repo {"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        \u0026--name {"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "          font-weight: bolder;"
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "          padding-left: .2rem;"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        \u0026--reason {"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "          padding-left: 3rem;"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  #tabs-wrapper {"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    $tabs-width: 50%;"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    background: mui-color(\u0027grey\u0027, \u0027200\u0027);"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    flex: 0 0 $tabs-width;"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    overflow-y: scroll;"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    position: relative;"
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .tab-close {"
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      cursor: pointer;"
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      position: fixed;"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      top: calc(50vh - 3rem);"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      svg {"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        background-color: mui-color(\u0027white\u0027);"
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        color: mui-color(\u0027black\u0027);"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        padding: 3rem .25rem;"
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .tab-content {"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      display: flex;"
+      },
+      {
+        "lineNumber": 202,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 203,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .tab-panes {"
+      },
+      {
+        "lineNumber": 204,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        text-align: left;"
+      },
+      {
+        "lineNumber": 205,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        width: 100%;"
+      },
+      {
+        "lineNumber": 206,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 207,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 208,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 209,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    #tab-resize {"
+      },
+      {
+        "lineNumber": 210,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      background-color: mui-color(\u0027black\u0027);"
+      },
+      {
+        "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      cursor: col-resize;"
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      height: 100%;"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      position: fixed;"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      width: 13.250px;"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 216,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 217,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 218,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 219,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* summary chart */"
+      },
+      {
+        "lineNumber": 220,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "#summary,"
+      },
+      {
+        "lineNumber": 221,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ".summary-status {"
+      },
+      {
+        "lineNumber": 222,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  text-align: center;"
+      },
+      {
+        "lineNumber": 223,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 224,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 225,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".summary-picker {"
+      },
+      {
+        "lineNumber": 226,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  align-items: center;"
+      },
+      {
+        "lineNumber": 227,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  display: flex;"
+      },
+      {
+        "lineNumber": 228,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  flex-flow: row wrap;"
+      },
+      {
+        "lineNumber": 229,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  justify-content: center;"
+      },
+      {
+        "lineNumber": 230,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  margin-bottom: 2rem;"
+      },
+      {
+        "lineNumber": 231,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 232,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0026__section {"
+      },
+      {
+        "lineNumber": 233,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    align-items: inherit;"
+      },
+      {
+        "lineNumber": 234,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: flex;"
+      },
+      {
+        "lineNumber": 235,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    flex: 0 1 auto;"
+      },
+      {
+        "lineNumber": 236,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    flex-flow: inherit;"
+      },
+      {
+        "lineNumber": 237,
+        "author": {
+          "gitId": "bluein-green"
+        },
+        "content": "    justify-content: inherit;"
+      },
+      {
+        "lineNumber": 238,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 239,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 240,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0026__checkboxes {"
+      },
+      {
+        "lineNumber": 241,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    label {"
+      },
+      {
+        "lineNumber": 242,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      margin-left: .5rem;"
+      },
+      {
+        "lineNumber": 243,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 244,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 245,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    span {"
+      },
+      {
+        "lineNumber": 246,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      margin-left: .25rem;"
+      },
+      {
+        "lineNumber": 247,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  .mui-textfield,"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  .mui-select {"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    margin: .5rem;"
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    padding-right: 10px;"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  label {"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    font-size: .75rem;"
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    overflow-y: hidden;"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    text-align: left;"
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    width: fit-content;"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  input,"
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  select {"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    font-size: .75rem;"
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".summary-charts {"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  margin-bottom: 3rem;"
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "-"
         },
         "content": "  \u0026__title {"
       },
       {
-        "lineNumber": 660,
+        "lineNumber": 273,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: block;"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    font-weight: bold;"
+      },
+      {
+        "lineNumber": 275,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    \u0026--chart {"
+        "content": "    text-align: left;"
       },
       {
-        "lineNumber": 661,
+        "lineNumber": 276,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--contribution {"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      display: inline;"
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 281,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 282,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "  \u0026__fileType--breakdown {"
+      },
+      {
+        "lineNumber": 283,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    overflow-y: hidden;"
+      },
+      {
+        "lineNumber": 284,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 285,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u0026__legend {"
+      },
+      {
+        "lineNumber": 286,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      display: inline;"
+      },
+      {
+        "lineNumber": 287,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      float: left;"
+      },
+      {
+        "lineNumber": 288,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 289,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 290,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 291,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 292,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".summary-chart {"
+      },
+      {
+        "lineNumber": 293,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  margin-bottom: 1rem;"
+      },
+      {
+        "lineNumber": 294,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  overflow: auto;"
+      },
+      {
+        "lineNumber": 295,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  position: relative;"
+      },
+      {
+        "lineNumber": 296,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  text-align: left;"
+      },
+      {
+        "lineNumber": 297,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 298,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0026__title {"
+      },
+      {
+        "lineNumber": 299,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    clear: left;"
+      },
+      {
+        "lineNumber": 300,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 301,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u0026 \u003e * {"
+      },
+      {
+        "lineNumber": 302,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      display: inline;"
+      },
+      {
+        "lineNumber": 303,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      padding-right: .5rem;"
+      },
+      {
+        "lineNumber": 304,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 305,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 306,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--index,"
+      },
+      {
+        "lineNumber": 307,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--repo {"
+      },
+      {
+        "lineNumber": 308,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      font-weight: bold;"
+      },
+      {
+        "lineNumber": 309,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 310,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 311,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u0026--index::after {"
+      },
+      {
+        "lineNumber": 312,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      content: \u0027.\u0027;"
+      },
+      {
+        "lineNumber": 313,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      display: inline-block;"
+      },
+      {
+        "lineNumber": 314,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 315,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 316,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u0026--repo {"
+      },
+      {
+        "lineNumber": 317,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      padding-right: .25rem;"
+      },
+      {
+        "lineNumber": 318,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 319,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 320,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u0026--button {"
+      },
+      {
+        "lineNumber": 321,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      color: mui-color(\u0027grey\u0027);"
+      },
+      {
+        "lineNumber": 322,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      cursor: pointer;"
+      },
+      {
+        "lineNumber": 323,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      text-decoration: none;"
+      },
+      {
+        "lineNumber": 324,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 325,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 326,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 327,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0026__ramp {"
+      },
+      {
+        "lineNumber": 328,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    position: relative;"
+      },
+      {
+        "lineNumber": 329,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 330,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .overlay {"
+      },
+      {
+        "lineNumber": 331,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      height: 100%;"
+      },
+      {
+        "lineNumber": 332,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      position: absolute;"
+      },
+      {
+        "lineNumber": 333,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      top: 0;"
+      },
+      {
+        "lineNumber": 334,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 335,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u0026.show {"
+      },
+      {
+        "lineNumber": 336,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        background-color: rgba(mui-color(\u0027white\u0027), .5);"
+      },
+      {
+        "lineNumber": 337,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        border: 1px dashed mui-color(\u0027black\u0027);"
+      },
+      {
+        "lineNumber": 338,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 339,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 340,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u0026.edge {"
+      },
+      {
+        "lineNumber": 341,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        border-right: 1px dashed mui-color(\u0027black\u0027);"
+      },
+      {
+        "lineNumber": 342,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 343,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 344,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 345,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 346,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0026__contrib {"
+      },
+      {
+        "lineNumber": 347,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    text-align: left;"
+      },
+      {
+        "lineNumber": 348,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 349,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    \u0026--bar {"
+      },
+      {
+        "lineNumber": 350,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      background-color: mui-color(\u0027red\u0027);"
+      },
+      {
+        "lineNumber": 351,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      height: .3rem;"
+      },
+      {
+        "lineNumber": 352,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      margin-top: .1rem;"
+      },
+      {
+        "lineNumber": 353,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 354,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 355,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    \u0026--bar--fileType {"
+      },
+      {
+        "lineNumber": 356,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      display: inline-block;"
+      },
+      {
+        "lineNumber": 357,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      float: left;"
+      },
+      {
+        "lineNumber": 358,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      height: .3rem;"
+      },
+      {
+        "lineNumber": 359,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      margin-top: .1rem;"
+      },
+      {
+        "lineNumber": 360,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      text-align: left;"
+      },
+      {
+        "lineNumber": 361,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 362,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 363,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 364,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 365,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* Ramp */"
+      },
+      {
+        "lineNumber": 366,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ".ramp {"
+      },
+      {
+        "lineNumber": 367,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  $height: 3rem;"
+      },
+      {
+        "lineNumber": 368,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  background-color: mui-color(\u0027blue\u0027, \u002750\u0027);"
+      },
+      {
+        "lineNumber": 369,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  font-size: 100%;"
+      },
+      {
+        "lineNumber": 370,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  height: $height;"
+      },
+      {
+        "lineNumber": 371,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  position: relative;"
+      },
+      {
+        "lineNumber": 372,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 373,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u0026__slice {"
+      },
+      {
+        "lineNumber": 374,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    border-left-color: rgba(0, 0, 0, 0);"
+      },
+      {
+        "lineNumber": 375,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    border-left-style: solid;"
+      },
+      {
+        "lineNumber": 376,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    display: block;"
+      },
+      {
+        "lineNumber": 377,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    height: 0;"
+      },
+      {
+        "lineNumber": 378,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    position: absolute;"
+      },
+      {
+        "lineNumber": 379,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    width: 0;"
+      },
+      {
+        "lineNumber": 380,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 381,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--color0 {"
+      },
+      {
+        "lineNumber": 382,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      border-bottom: $height rgba(mui-color(\u0027orange\u0027), .5) solid;"
+      },
+      {
+        "lineNumber": 383,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 384,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 385,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--color1 {"
+      },
+      {
+        "lineNumber": 386,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      border-bottom: $height rgba(mui-color(\u0027light-blue\u0027), .5) solid;"
+      },
+      {
+        "lineNumber": 387,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 388,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 389,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--color2 {"
+      },
+      {
+        "lineNumber": 390,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      border-bottom: $height rgba(mui-color(\u0027green\u0027), .5) solid;"
+      },
+      {
+        "lineNumber": 391,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 392,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 393,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--color3 {"
+      },
+      {
+        "lineNumber": 394,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      border-bottom: $height rgba(mui-color(\u0027indigo\u0027), .5) solid;"
+      },
+      {
+        "lineNumber": 395,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 396,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 397,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--color4 {"
+      },
+      {
+        "lineNumber": 398,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      border-bottom: $height rgba(mui-color(\u0027pink\u0027), .5) solid;"
+      },
+      {
+        "lineNumber": 399,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 400,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 401,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 402,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 403,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "/* Authorship */"
+      },
+      {
+        "lineNumber": 404,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "#tab-authorship {"
+      },
+      {
+        "lineNumber": 405,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  .toolbar {"
+      },
+      {
+        "lineNumber": 406,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    cursor: pointer;"
+      },
+      {
+        "lineNumber": 407,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    float: right;"
+      },
+      {
+        "lineNumber": 408,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 409,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 410,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  .title {"
+      },
+      {
+        "lineNumber": 411,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .repoName {"
+      },
+      {
+        "lineNumber": 412,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      cursor: pointer;"
+      },
+      {
+        "lineNumber": 413,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 414,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 415,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    .author {"
+      },
+      {
+        "lineNumber": 416,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      margin-left: .3rem;"
       },
       {
-        "lineNumber": 662,
+        "lineNumber": 417,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 663,
+        "lineNumber": 418,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 664,
+        "lineNumber": 419,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    \u0026--period {"
+        "content": "    .period {"
       },
       {
-        "lineNumber": 665,
+        "lineNumber": 420,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      margin-left: 2rem;"
       },
       {
-        "lineNumber": 666,
+        "lineNumber": 421,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 422,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 423,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .contribution {"
+      },
+      {
+        "lineNumber": 424,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      color: mui-color(\u0027red\u0027);"
+      },
+      {
+        "lineNumber": 425,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 426,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      .fileType {"
+      },
+      {
+        "lineNumber": 427,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        align-items: center;"
+      },
+      {
+        "lineNumber": 428,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        display: flex;"
+      },
+      {
+        "lineNumber": 429,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin-left: 3rem;"
+      },
+      {
+        "lineNumber": 430,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin-top: 1.0rem;"
+      },
+      {
+        "lineNumber": 431,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 432,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 433,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .radio-button--search {"
+      },
+      {
+        "lineNumber": 434,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        float: left;"
+      },
+      {
+        "lineNumber": 435,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin: 1.75rem 2.0rem 0 0;"
+      },
+      {
+        "lineNumber": 436,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 437,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 438,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .radio-button--checkbox {"
+      },
+      {
+        "lineNumber": 439,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        float: left;"
+      },
+      {
+        "lineNumber": 440,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin: 0 2.0rem 0 -3rem;"
+      },
+      {
+        "lineNumber": 441,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        vertical-align: middle;"
+      },
+      {
+        "lineNumber": 442,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 443,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 444,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      #search {"
+      },
+      {
+        "lineNumber": 445,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin-top: 1.25rem;"
+      },
+      {
+        "lineNumber": 446,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        padding: .5rem 1.0rem .25rem 1.0rem;"
+      },
+      {
+        "lineNumber": 447,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        width: 30%;"
+      },
+      {
+        "lineNumber": 448,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 449,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 450,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      #submit-button {"
+      },
+      {
+        "lineNumber": 451,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        background-color: mui-color(\u0027blue\u0027);"
+      },
+      {
+        "lineNumber": 452,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        color: mui-color(\u0027white\u0027);"
+      },
+      {
+        "lineNumber": 453,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin: 1.0rem 0 0 .25rem;"
+      },
+      {
+        "lineNumber": 454,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        padding: .5rem 1.0rem .25rem 1.0rem;"
+      },
+      {
+        "lineNumber": 455,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 456,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 457,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .select {"
+      },
+      {
+        "lineNumber": 458,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        font-weight: bold;"
+      },
+      {
+        "lineNumber": 459,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 460,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 461,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .loc {"
+      },
+      {
+        "lineNumber": 462,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        font-weight: bolder;"
+      },
+      {
+        "lineNumber": 463,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 464,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 465,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .bloc {"
+      },
+      {
+        "lineNumber": 466,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        color: mui-color(\u0027grey\u0027);"
+      },
+      {
+        "lineNumber": 467,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 468,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 469,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      span.fileType {"
+      },
+      {
+        "lineNumber": 470,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        span.bloc::after {"
+      },
+      {
+        "lineNumber": 471,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          content: \u0027, \u0027;"
+      },
+      {
+        "lineNumber": 472,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 473,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 474,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        span.bloc:last-child::after {"
+      },
+      {
+        "lineNumber": 475,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          content: \u0027\u0027;"
+      },
+      {
+        "lineNumber": 476,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 477,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 478,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 479,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      .mui-checkbox--fileType {"
+      },
+      {
+        "lineNumber": 480,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        vertical-align: middle;"
+      },
+      {
+        "lineNumber": 481,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 482,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 483,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .checkboxes {"
+      },
+      {
+        "lineNumber": 484,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        label {"
+      },
+      {
+        "lineNumber": 485,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          align-items: center;"
+      },
+      {
+        "lineNumber": 486,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          display: inline-flex;"
+      },
+      {
+        "lineNumber": 487,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          padding-right: 10px;"
+      },
+      {
+        "lineNumber": 488,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 489,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 490,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        span {"
+      },
+      {
+        "lineNumber": 491,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          margin-left: .25rem;"
+      },
+      {
+        "lineNumber": 492,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 493,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 494,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 495,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .sorting {"
+      },
+      {
+        "lineNumber": 496,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        align-items: center;"
+      },
+      {
+        "lineNumber": 497,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        display: flex;"
+      },
+      {
+        "lineNumber": 498,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin-top: 1.0rem;"
+      },
+      {
+        "lineNumber": 499,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 500,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .mui-select {"
+      },
+      {
+        "lineNumber": 501,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          cursor: pointer;"
+      },
+      {
+        "lineNumber": 502,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 503,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 504,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        label {"
+      },
+      {
+        "lineNumber": 505,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          overflow-y: hidden;"
+      },
+      {
+        "lineNumber": 506,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 507,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 508,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u0026 \u003e label {"
+      },
+      {
+        "lineNumber": 509,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          margin-left: 10px;"
+      },
+      {
+        "lineNumber": 510,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 511,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 512,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        span {"
+      },
+      {
+        "lineNumber": 513,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          margin-left: .25rem;"
+      },
+      {
+        "lineNumber": 514,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 515,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 516,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 517,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      .reverse {"
+      },
+      {
+        "lineNumber": 518,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        color: mui-color(\u0027black\u0027);"
+      },
+      {
+        "lineNumber": 519,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 520,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 521,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 522,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 523,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  .files {"
+      },
+      {
+        "lineNumber": 524,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    clear: left;"
+      },
+      {
+        "lineNumber": 525,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 526,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .file {"
+      },
+      {
+        "lineNumber": 527,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      pre {"
+      },
+      {
+        "lineNumber": 528,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        display: none;"
+      },
+      {
+        "lineNumber": 529,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 530,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 531,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      \u0026.active {"
+      },
+      {
+        "lineNumber": 532,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        pre {"
+      },
+      {
+        "lineNumber": 533,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          display: grid;"
+      },
+      {
+        "lineNumber": 534,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 535,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          .hljs {"
+      },
+      {
+        "lineNumber": 536,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // overwrite hljs library"
+      },
+      {
+        "lineNumber": 537,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            display: inherit;"
+      },
+      {
+        "lineNumber": 538,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            padding: 0;"
+      },
+      {
+        "lineNumber": 539,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          }"
+      },
+      {
+        "lineNumber": 540,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 541,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 542,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 543,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 544,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    .title {"
+      },
+      {
+        "lineNumber": 545,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      font-size: 1.25rem;"
+      },
+      {
+        "lineNumber": 546,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      font-weight: bold;"
+      },
+      {
+        "lineNumber": 547,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      margin-top: 1rem;"
+      },
+      {
+        "lineNumber": 548,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 549,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .path {"
+      },
+      {
+        "lineNumber": 550,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        cursor: pointer;"
+      },
+      {
+        "lineNumber": 551,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 552,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 553,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .loc {"
+      },
+      {
+        "lineNumber": 554,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        color: mui-color(\u0027grey\u0027);"
+      },
+      {
+        "lineNumber": 555,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 556,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 557,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .button {"
+      },
+      {
+        "lineNumber": 558,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        color: mui-color(\u0027grey\u0027);"
+      },
+      {
+        "lineNumber": 559,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        font-size: 1.15rem;"
+      },
+      {
+        "lineNumber": 560,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        margin-left: .5rem;"
+      },
+      {
+        "lineNumber": 561,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        text-decoration: none;"
+      },
+      {
+        "lineNumber": 562,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 563,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 564,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 565,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    .segment {"
+      },
+      {
+        "lineNumber": 566,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      border-left: .25rem solid mui-color(\u0027green\u0027);"
+      },
+      {
+        "lineNumber": 567,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 568,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      .code {"
+      },
+      {
+        "lineNumber": 569,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        background-color: mui-color(\u0027green\u0027, \u002750\u0027);"
+      },
+      {
+        "lineNumber": 570,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        padding-left: 1rem;"
+      },
+      {
+        "lineNumber": 571,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 572,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 573,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      .line-number {"
+      },
+      {
+        "lineNumber": 574,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        color: mui-color(\u0027grey\u0027);"
+      },
+      {
+        "lineNumber": 575,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        float: left;"
+      },
+      {
+        "lineNumber": 576,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        // Not allowing user to select text"
+      },
+      {
+        "lineNumber": 577,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        -webkit-touch-callout: none; /* iOS Safari */"
+      },
+      {
+        "lineNumber": 578,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        -webkit-user-select: none; /* Safari */"
+      },
+      {
+        "lineNumber": 579,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        -khtml-user-select: none; /* Konqueror HTML */"
+      },
+      {
+        "lineNumber": 580,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        -moz-user-select: none; /* Firefox */"
+      },
+      {
+        "lineNumber": 581,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        -ms-user-select: none; /* Internet Explorer/Edge */"
+      },
+      {
+        "lineNumber": 582,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */"
+      },
+      {
+        "lineNumber": 583,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        width: 2rem;"
+      },
+      {
+        "lineNumber": 584,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 585,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        // overwrite all hljs colours"
+      },
+      {
+        "lineNumber": 586,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        [class^\u003d\u0027hljs\u0027] {"
+      },
+      {
+        "lineNumber": 587,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          color: mui-color(\u0027grey\u0027);"
+      },
+      {
+        "lineNumber": 588,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 589,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 590,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 591,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      .line-content {"
+      },
+      {
+        "lineNumber": 592,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        padding-left: 2rem;"
+      },
+      {
+        "lineNumber": 593,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 594,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 595,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      \u0026.untouched {"
+      },
+      {
+        "lineNumber": 596,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        $grey: mui-color(\u0027grey\u0027, \u0027400\u0027);"
+      },
+      {
+        "lineNumber": 597,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        border-left: .25rem solid $grey;"
+      },
+      {
+        "lineNumber": 598,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        height: 20px; /* height of a single line of code */"
+      },
+      {
+        "lineNumber": 599,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        position: relative;"
+      },
+      {
+        "lineNumber": 600,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 601,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u0026.active {"
+      },
+      {
+        "lineNumber": 602,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          height: 100%;"
+      },
+      {
+        "lineNumber": 603,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 604,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          .code {"
+      },
+      {
+        "lineNumber": 605,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            background-color: mui-color(\u0027white\u0027);"
+      },
+      {
+        "lineNumber": 606,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            display: inherit;"
+      },
+      {
+        "lineNumber": 607,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          }"
+      },
+      {
+        "lineNumber": 608,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 609,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          .closer {"
+      },
+      {
+        "lineNumber": 610,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            .icon {"
+      },
+      {
+        "lineNumber": 611,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "              \u0026.open {"
+      },
+      {
+        "lineNumber": 612,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "                display: none;"
+      },
+      {
+        "lineNumber": 613,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "              }"
+      },
+      {
+        "lineNumber": 614,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 615,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "              \u0026.hide {"
+      },
+      {
+        "lineNumber": 616,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "                display: inherit;"
+      },
+      {
+        "lineNumber": 617,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "              }"
+      },
+      {
+        "lineNumber": 618,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 619,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          }"
+      },
+      {
+        "lineNumber": 620,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 621,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 622,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .code {"
+      },
+      {
+        "lineNumber": 623,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          display: none;"
+      },
+      {
+        "lineNumber": 624,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 625,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 626,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        .closer {"
+      },
+      {
+        "lineNumber": 627,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          cursor: pointer;"
+      },
+      {
+        "lineNumber": 628,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          // custom margin for position of toggle icon"
+      },
+      {
+        "lineNumber": 629,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          margin: .2rem 0 0 -.45rem;"
+      },
+      {
+        "lineNumber": 630,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          position: absolute;"
+      },
+      {
+        "lineNumber": 631,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 632,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          \u0026.bottom {"
+      },
+      {
+        "lineNumber": 633,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            //custom margin for position of toggle icon at the bottom of segment"
+      },
+      {
+        "lineNumber": 634,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            margin: -1.05rem 0 0 -.45rem;"
+      },
+      {
+        "lineNumber": 635,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          }"
+      },
+      {
+        "lineNumber": 636,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 637,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          .icon {"
+      },
+      {
+        "lineNumber": 638,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            background-color: mui-color(\u0027white\u0027);"
+      },
+      {
+        "lineNumber": 639,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            color: mui-color(\u0027grey\u0027);"
+      },
+      {
+        "lineNumber": 640,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            width: .75em;"
+      },
+      {
+        "lineNumber": 641,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 642,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            \u0026.open {"
+      },
+      {
+        "lineNumber": 643,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "              display: inherit;"
+      },
+      {
+        "lineNumber": 644,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 645,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 646,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            \u0026.hide {"
+      },
+      {
+        "lineNumber": 647,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "              display: none;"
+      },
+      {
+        "lineNumber": 648,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 649,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          }"
+      },
+      {
+        "lineNumber": 650,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 651,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 652,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 653,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 654,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 655,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  .empty {"
+      },
+      {
+        "lineNumber": 656,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    text-align: center;"
+      },
+      {
+        "lineNumber": 657,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 658,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "}"
+      },
+      {
+        "lineNumber": 659,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 660,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ".zoom {"
+      },
+      {
+        "lineNumber": 661,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  \u0026__title {"
+      },
+      {
+        "lineNumber": 662,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--chart {"
+      },
+      {
+        "lineNumber": 663,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      margin-left: .3rem;"
+      },
+      {
+        "lineNumber": 664,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 667,
+        "lineNumber": 665,
         "author": {
           "gitId": "-"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 666,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    \u0026--period {"
+      },
+      {
+        "lineNumber": 667,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "      margin-left: 2rem;"
       },
       {
         "lineNumber": 668,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    \u0026--granularity {"
+        "content": "    }"
       },
       {
         "lineNumber": 669,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "      margin-top: .5rem;"
+        "content": ""
       },
       {
         "lineNumber": 670,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "    }"
+        "content": "    \u0026--granularity {"
       },
       {
         "lineNumber": 671,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "  }"
+        "content": "      margin-top: .5rem;"
       },
       {
         "lineNumber": 672,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 673,
         "author": {
-          "gitId": "jylee-git"
+          "gitId": "jamessspanggg"
         },
-        "content": "  \u0026__toggle-commit-message-body {"
+        "content": "  }"
       },
       {
         "lineNumber": 674,
         "author": {
-          "gitId": "jylee-git"
+          "gitId": "-"
         },
-        "content": "    padding-top: 10px;"
+        "content": ""
       },
       {
         "lineNumber": 675,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "  }"
+        "content": "  \u0026__toggle-commit-message-body {"
       },
       {
         "lineNumber": 676,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "}"
+        "content": "    padding-top: 10px;"
       },
       {
         "lineNumber": 677,
         "author": {
-          "gitId": "-"
+          "gitId": "jylee-git"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 678,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "/* Commit Message Body in Zoom Tab */"
+        "content": "}"
       },
       {
         "lineNumber": 679,
         "author": {
-          "gitId": "jylee-git"
+          "gitId": "-"
         },
-        "content": ".commit-message {"
+        "content": ""
       },
       {
         "lineNumber": 680,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "  \u0026.active {"
+        "content": "/* Commit Message Body in Zoom Tab */"
       },
       {
         "lineNumber": 681,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "    .body {"
+        "content": ".commit-message {"
       },
       {
         "lineNumber": 682,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      background-color: mui-color(\u0027white\u0027);"
+        "content": "  \u0026.active {"
       },
       {
         "lineNumber": 683,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      border: 1px solid mui-color(\u0027grey\u0027, \u0027700\u0027);"
+        "content": "    .body {"
       },
       {
         "lineNumber": 684,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      display: inherit;"
+        "content": "      background-color: mui-color(\u0027white\u0027);"
       },
       {
         "lineNumber": 685,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      margin-bottom: 1rem;"
+        "content": "      border: 1px solid mui-color(\u0027grey\u0027, \u0027700\u0027);"
       },
       {
         "lineNumber": 686,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      overflow-x: auto;"
+        "content": "      display: inherit;"
       },
       {
         "lineNumber": 687,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      padding: .4rem;"
+        "content": "      margin-bottom: 1rem;"
       },
       {
         "lineNumber": 688,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      resize: none;"
+        "content": "      overflow-x: auto;"
       },
       {
         "lineNumber": 689,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "      width: 100%;"
+        "content": "      padding: .4rem;"
       },
       {
         "lineNumber": 690,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "    }"
+        "content": "      resize: none;"
       },
       {
         "lineNumber": 691,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "  }"
+        "content": "      width: 100%;"
       },
       {
         "lineNumber": 692,
         "author": {
-          "gitId": "-"
+          "gitId": "jylee-git"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 693,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "  .body {"
+        "content": "  }"
       },
       {
         "lineNumber": 694,
         "author": {
-          "gitId": "jylee-git"
+          "gitId": "-"
         },
-        "content": "    display: none;"
+        "content": ""
       },
       {
         "lineNumber": 695,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "  }"
+        "content": "  .body {"
       },
       {
         "lineNumber": 696,
         "author": {
-          "gitId": "-"
+          "gitId": "jylee-git"
         },
-        "content": ""
+        "content": "    display: none;"
       },
       {
         "lineNumber": 697,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "  \u0026--button {"
+        "content": "  }"
       },
       {
         "lineNumber": 698,
         "author": {
-          "gitId": "jylee-git"
+          "gitId": "-"
         },
-        "content": "    color: mui-color(\u0027grey\u0027, \u0027700\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 699,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "    padding-left: .5rem;"
+        "content": "  \u0026--button {"
       },
       {
         "lineNumber": 700,
         "author": {
-          "gitId": "-"
+          "gitId": "jylee-git"
         },
-        "content": ""
+        "content": "    color: mui-color(\u0027grey\u0027, \u0027700\u0027);"
       },
       {
         "lineNumber": 701,
         "author": {
           "gitId": "jylee-git"
         },
-        "content": "    \u0026:hover {"
+        "content": "    padding-left: .5rem;"
       },
       {
         "lineNumber": 702,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "      cursor: pointer;"
-      },
-      {
-        "lineNumber": 703,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 704,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "  }"
-      },
-      {
-        "lineNumber": 705,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
+        "lineNumber": 703,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    \u0026:hover {"
+      },
+      {
+        "lineNumber": 704,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "      cursor: pointer;"
+      },
+      {
+        "lineNumber": 705,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
         "lineNumber": 706,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "  pre {"
-      },
-      {
-        "lineNumber": 707,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "    margin: 0;"
-      },
-      {
-        "lineNumber": 708,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  }"
       },
       {
+        "lineNumber": 707,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 708,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "  pre {"
+      },
+      {
         "lineNumber": 709,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "    margin: 0;"
+      },
+      {
+        "lineNumber": 710,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 711,
         "author": {
           "gitId": "-"
         },
@@ -17929,8 +17943,8 @@
     "authorContributionMap": {
       "jylee-git": 77,
       "bluein-green": 6,
-      "jamessspanggg": 207,
-      "-": 419
+      "jamessspanggg": 206,
+      "-": 422
     }
   },
   {
