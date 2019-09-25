@@ -23190,7 +23190,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        if (!isSessionAvailable) {"
+        "content": "        if (!isSessionAvailable \u0026\u0026 this.currentPhase \u003d\u003d\u003d Phase.phaseBugReporting) {"
       },
       {
         "lineNumber": 179,
@@ -23551,7 +23551,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  \u003cbutton mat-button mat-raised-button color\u003d\"primary\" [mat-dialog-close]\u003d\"true\" cdkFocusInitial\u003eOk\u003c/button\u003e"
+        "content": "  \u003cbutton mat-button mat-raised-button color\u003d\"primary\" [mat-dialog-close]\u003d\"true\" cdkFocusInitial\u003eYes\u003c/button\u003e"
       },
       {
         "lineNumber": 9,
