@@ -667,8 +667,8 @@
         ]
       },
       {
-        "insertions": 2,
-        "deletions": 2,
+        "insertions": 655,
+        "deletions": 41,
         "date": "2019-09-25",
         "commitResults": [
           {
@@ -677,6 +677,13 @@
             "messageBody": "- Previously confirmation would be used for any phase where the\r\nrepository was detected to be unavailable but it has now been narrowed\r\nto the BugReportingPhase\r\n- Instead of No Thanks | Ok, changed to No Thanks | Yes to the \"Would\r\nyou like ... \" question.",
             "insertions": 2,
             "deletions": 2
+          },
+          {
+            "hash": "36f68d405e1558894a2fc82e503113cd3255dad0",
+            "messageTitle": "Refactor issue model (#201)",
+            "messageBody": "* Create templating classes for issue model\r\n\r\n* Add string representation of sections\r\n\r\n* Add return types to base issue\r\n\r\n* Migrate bug reporting phase to use the new model\r\n\r\n* Remove unused import\r\n\r\n* Fix typo\r\n\r\n* Update import style\r\n\r\n* Rank Labels\r\n\r\n* Rename methods\r\n\r\n* Lint Fix: const instead of let\r\n\r\n* Migrated TeamResponsePhase to use BaseIssue\r\n\r\ncreateIssueModel has been modified to work with baseIssue for the\r\nTeamResponsePhase.\r\n\r\n* Empty commit\r\n\r\n* Fix Team Response Parsing\r\n\r\n* TeamResp. Mostly working, left comment error\r\n\r\n* Refactor of Issue Model Creation for TeamResponse\r\n\r\nIssueModel Creation for TeamResponse has been refactored to follow the\r\nnew mode. The description reading bug has also been fixed as of this\r\ncommit.\r\n\r\n* Fixed Duplicate Info Display\r\n\r\nDuplicate information was not being correctly displayed on toggle. Issue\r\nhas now been fixed.\r\n\r\n* Fixed Severity Toggling\r\n\r\nSeverity Toggle Used to reset the issue in some cases. That issue has\r\nbeen resolved.\r\n\r\n* Fix Issue Duplicate Removing Description\r\n\r\n* Fix same issue with Assignees\r\n\r\n* Lint Fix\r\n",
+            "insertions": 653,
+            "deletions": 39
           }
         ]
       }
@@ -1854,8 +1861,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 2571,
-    "KevinCJH": 1682
+    "ptvrajsk": 3208,
+    "KevinCJH": 1675
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -1866,7 +1873,7 @@
       "py": 0,
       "tag": 0,
       "html": 314,
-      "ts": 2229
+      "ts": 2866
     },
     "KevinCJH": {
       "java": 0,
@@ -1876,11 +1883,11 @@
       "py": 0,
       "tag": 0,
       "html": 270,
-      "ts": 1412
+      "ts": 1405
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 16290.971,
+    "ptvrajsk": 19439.457,
     "KevinCJH": 13876.817
   },
   "authorDisplayNameMap": {
