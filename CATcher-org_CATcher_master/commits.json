@@ -686,6 +686,62 @@
             "deletions": 39
           }
         ]
+      },
+      {
+        "insertions": 52,
+        "deletions": 23,
+        "date": "2019-10-01",
+        "commitResults": [
+          {
+            "hash": "d8dbf6954d3de6d00ccd31f4259e47b16054816f",
+            "messageTitle": "UI Fix (#207)",
+            "messageBody": "* UI Fix\r\n\r\n* Shift Label Before Checkbox\r\n",
+            "insertions": 4,
+            "deletions": 4
+          },
+          {
+            "hash": "2f66739be81cab3ebb12641ef1a4fc32f586146c",
+            "messageTitle": "Enter Key Triggers Login + Spinner for UI (#208)",
+            "messageBody": "* Enter Key Triggers Login + Spinner for UI\r\n\r\nEnter key now triggers a login and a spinner appears to signal to the\r\nuser that the authentication process is underway.\r\n\r\n* Authentication Check Abstraction\r\n",
+            "insertions": 22,
+            "deletions": 10
+          },
+          {
+            "hash": "2b102b64345714d7279cb0031e07edbbdcb09b7a",
+            "messageTitle": "Fix Image Format Recognition (#212)",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          },
+          {
+            "hash": "d4fa3c97e81927ff73754add108d00401a3dc655",
+            "messageTitle": "Add Newline after Input (#215)",
+            "messageBody": "",
+            "insertions": 9,
+            "deletions": 1
+          },
+          {
+            "hash": "ac68b6606230e2ce16f800c8ad967579e81567af",
+            "messageTitle": "Icon to Amber and Changed Prompt (#214)",
+            "messageBody": "",
+            "insertions": 2,
+            "deletions": 1
+          },
+          {
+            "hash": "a660188193954242d9c99177e7b35d11ff6dd50a",
+            "messageTitle": "Dynamic Application Title (#213)",
+            "messageBody": "* Dynamic Application Title\r\n\r\nThe application now reads the title data from the package.json (which we\r\nwill update with each release) to reduce the need for a more manual\r\nsystem of updates.\r\n\r\n* App Version Update\r\n\r\n* Changed || to -\r\n",
+            "insertions": 13,
+            "deletions": 5
+          },
+          {
+            "hash": "9257ae5fda9eb0ddc30815b6303e07459495d0ba",
+            "messageTitle": "Compiler Requires Method to not be Private (#217)",
+            "messageBody": "",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1861,8 +1917,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 3208,
-    "KevinCJH": 1675
+    "ptvrajsk": 3250,
+    "KevinCJH": 1672
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -1872,8 +1928,8 @@
       "md": 28,
       "py": 0,
       "tag": 0,
-      "html": 314,
-      "ts": 2866
+      "html": 327,
+      "ts": 2895
     },
     "KevinCJH": {
       "java": 0,
@@ -1882,13 +1938,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 270,
-      "ts": 1405
+      "html": 269,
+      "ts": 1403
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 19439.457,
-    "KevinCJH": 13876.817
+    "ptvrajsk": 18689.168,
+    "KevinCJH": 13359.108
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
