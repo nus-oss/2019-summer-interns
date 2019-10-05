@@ -5228,7 +5228,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  animationActivated \u003d false;"
+        "content": "  animationActivated \u003d false; // Assists color change animations."
       },
       {
         "lineNumber": 50,
@@ -5242,780 +5242,1060 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  private readonly fs \u003d require(\u0027fs\u0027);"
+        "content": "  // To be set to undefined array if not used."
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  readonly defaultProfiles: Profile[] \u003d ["
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  private readonly APPLICATION_AND_SUBDIRECTORIES: RegExp \u003d /[\\/\\\\]+[^\\/\\\\]+\\.(exe|app|AppImage|asar).*/g;"
+        "content": "    \u003cProfile\u003e{"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  private readonly PROFILES_FILE_NAME \u003d \u0027profiles.json\u0027;"
+        "content": "      profileName: \u0027CS2103/T Alpha Test\u0027,"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  private filePath: string;"
+        "content": "      encodedText: \u0027nus-cs2103-AY1920S1/alpha\u0027"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    },"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  selectedProfile: Profile \u003d undefined;"
+        "content": "    \u003cProfile\u003e{"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  @Output() selectedProfileEmitter: EventEmitter\u003cProfile\u003e \u003d new EventEmitter\u003cProfile\u003e();"
+        "content": "      profileName: \u0027CS2103/T PE Dry run\u0027,"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  @Output() profileDataEmitter: EventEmitter\u003c{}\u003e \u003d new EventEmitter\u003c{}\u003e();"
+        "content": "      encodedText: \u0027nus-cs2103-AY1920S1/PED\u0027"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    },"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  profilesData \u003d {"
+        "content": "    \u003cProfile\u003e{"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    isDirectoryMessageVisible: false,"
+        "content": "      profileName: \u0027CS2103/T PE\u0027,"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    fileName: null,"
+        "content": "      encodedText: \u0027nus-cs2103-AY1920S1/PE\u0027"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    fileDirectory: null"
+        "content": "    },"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  };"
+        "content": "    \u003cProfile\u003e{"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      profileName: \u0027CS2113/T Alpha Test\u0027,"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  constructor(public errorDialog: MatDialog) { }"
+        "content": "      encodedText: \u0027nusCs2113-AY1920S1/alpha\u0027"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    },"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  ngOnInit() {"
+        "content": "    \u003cProfile\u003e{"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const path \u003d require(\u0027path\u0027);"
+        "content": "      profileName: \u0027CS2113/T PE Dry run\u0027,"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const temp \u003d ipcRenderer.sendSync(\u0027synchronous-message\u0027, \u0027getDirectory\u0027);"
+        "content": "      encodedText: \u0027nusCs2113-AY1920S1/PED\u0027"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.filePath \u003d path.join("
+        "content": "    },"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        temp.replace(this.APPLICATION_AND_SUBDIRECTORIES, \u0027\u0027),"
+        "content": "    \u003cProfile\u003e{"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        this.PROFILES_FILE_NAME);"
+        "content": "      profileName: \u0027CS2113/T PE\u0027,"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.readProfiles();"
+        "content": "      encodedText: \u0027nusCs2113-AY1920S1/PE\u0027"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    }"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  ];"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": ""
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Activates the button selection animation and opens the file selector."
+        "content": "  private readonly fs \u003d require(\u0027fs\u0027);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param fileInput - OS default file selector."
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "  private readonly APPLICATION_AND_SUBDIRECTORIES: RegExp \u003d /[\\/\\\\]+[^\\/\\\\]+\\.(exe|app|AppImage|asar).*/g;"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  fileSelectorInitiation(fileInput: HTMLInputElement): void {"
+        "content": "  private readonly PROFILES_FILE_NAME \u003d \u0027profiles.json\u0027;"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.animationActivated \u003d true;"
+        "content": "  private filePath: string;"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    setTimeout(() \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.animationActivated \u003d false;"
+        "content": "  selectedProfile: Profile \u003d undefined;"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      fileInput.click();"
+        "content": "  @Output() selectedProfileEmitter: EventEmitter\u003cProfile\u003e \u003d new EventEmitter\u003cProfile\u003e();"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }, this.ANIMATION_DURATION);"
+        "content": "  @Output() profileDataEmitter: EventEmitter\u003c{}\u003e \u003d new EventEmitter\u003c{}\u003e();"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  profilesData \u003d {"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "    isDirectoryMessageVisible: false,"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Reads the user selected file"
+        "content": "    fileName: null,"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param fileInput - OS default file selector."
+        "content": "    fileDirectory: null"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "  };"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  fileSelected(fileInput: HTMLInputElement): void {"
+        "content": ""
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.filePath \u003d (fileInput.files[0].path);"
+        "content": "  constructor(public errorDialog: MatDialog) { }"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    fileInput.value \u003d \u0027\u0027;"
+        "content": ""
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.readProfiles();"
+        "content": "  ngOnInit() {"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    const path \u003d require(\u0027path\u0027);"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    const temp \u003d ipcRenderer.sendSync(\u0027synchronous-message\u0027, \u0027getDirectory\u0027);"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "    this.filePath \u003d path.join("
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Processes the selected profiles JSON file."
+        "content": "        temp.replace(this.APPLICATION_AND_SUBDIRECTORIES, \u0027\u0027),"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "        this.PROFILES_FILE_NAME);"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  readProfiles(): void {"
+        "content": "    this.readProfiles();"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const isFileExists: boolean \u003d this.userProfileFileExists(this.filePath);"
+        "content": "  }"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Informing Parent Component (Auth) of file selection"
+        "content": ""
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profilesData.fileName \u003d this.PROFILES_FILE_NAME;"
+        "content": "  /**"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profilesData.fileDirectory \u003d this.filePath.split(this.PROFILES_FILE_NAME)[0];"
+        "content": "   * Activates the button selection animation and opens the file selector."
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profilesData.isDirectoryMessageVisible \u003d !isFileExists;"
+        "content": "   * @param fileInput - OS default file selector."
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.profileDataEmitter.emit(this.profilesData);"
+        "content": "   */"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  fileSelectorInitiation(fileInput: HTMLInputElement): void {"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (isFileExists) {"
+        "content": "    this.animationActivated \u003d true;"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      try {"
+        "content": "    setTimeout(() \u003d\u003e {"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        this.profiles \u003d JSON.parse(this.fs.readFileSync(this.filePath))[\u0027profiles\u0027];"
+        "content": "      this.animationActivated \u003d false;"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        this.assertProfilesValidity(this.profiles);"
+        "content": "      fileInput.click();"
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      } catch (e) {"
+        "content": "    }, this.ANIMATION_DURATION);"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        console.log(e);"
+        "content": "  }"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        setTimeout(() \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "          this.profiles \u003d undefined;"
+        "content": "  /**"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "          this.openErrorDialog();"
+        "content": "   * Reads the user selected file"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        });"
+        "content": "   * @param fileInput - OS default file selector."
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      }"
+        "content": "   */"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "  fileSelected(fileInput: HTMLInputElement): void {"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.filePath \u003d (fileInput.files[0].path);"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Set default profile if exists."
+        "content": "    fileInput.value \u003d \u0027\u0027;"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.selectedProfile \u003d this.profiles \u003d\u003d\u003d undefined ? this.blankProfile : this.profiles[0];"
+        "content": "    this.readProfiles();"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.selectProfile(this.selectedProfile);"
+        "content": "  }"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  /**"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "   * Processes all available Profiles information."
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Makes Error dialog visible to the user."
+        "content": "   */"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "  readProfiles(): void {"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  openErrorDialog(): void {"
+        "content": "    const isFileExists: boolean \u003d this.userProfileFileExists(this.filePath);"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.errorDialog.open(JsonParseErrorDialogComponent);"
+        "content": "    // Informing Parent Component (Auth) of file selection"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    this.profilesData.fileName \u003d this.PROFILES_FILE_NAME;"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.profilesData.fileDirectory \u003d this.filePath.split(this.PROFILES_FILE_NAME)[0];"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "    this.profilesData.isDirectoryMessageVisible \u003d !isFileExists;"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Verifies that every profile is correctly defined in the array of profiles."
+        "content": "    this.profileDataEmitter.emit(this.profilesData);"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param profiles - Array of profiles sourced from profiles.json"
+        "content": ""
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "    if (isFileExists) {"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  assertProfilesValidity(profiles: Profile[]): void {"
+        "content": "      try {"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (profiles \u003d\u003d\u003d undefined"
+        "content": "        this.profiles \u003d JSON.parse(this.fs.readFileSync(this.filePath))[\u0027profiles\u0027];"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        || profiles.filter(profile \u003d\u003e (profile.profileName \u003d\u003d\u003d undefined || profile.encodedText \u003d\u003d\u003d undefined)).length !\u003d\u003d 0) {"
+        "content": "      } catch (e) {"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      throw new Error();"
+        "content": "        // Do nothing if there is a parsing error because this.profiles will be set to undefined on error."
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "      }"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": ""
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      // Validity Check if custom profile.json file has values in it."
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "      if (this.profiles !\u003d\u003d undefined) {"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Returns true if the file indicated by the filePath exists."
+        "content": "        try {"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param filePath - Path of file to check."
+        "content": "          this.assertProfilesValidity(this.profiles);"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "        } catch (e) {"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  userProfileFileExists(filePath: string): boolean {"
+        "content": "          console.log(e);"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return this.fs.existsSync(filePath);"
+        "content": "          setTimeout(() \u003d\u003e {"
       },
       {
         "lineNumber": 153,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  }"
+        "content": "            this.profiles \u003d undefined;"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "            this.openErrorDialog();"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  /**"
+        "content": "          });"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * Sends the selected profile information to listening component."
+        "content": "        }"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   * @param profile - Profile selected by user."
+        "content": "      }"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "   */"
+        "content": "    }"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  selectProfile(profile: Profile): void {"
+        "content": ""
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.selectedProfileEmitter.emit(profile);"
+        "content": "    // Several Layers of True False Statements to decide which values to assign to this.profiles."
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    this.profiles \u003d this.profiles \u003d\u003d\u003d undefined"
       },
       {
         "lineNumber": 162,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      ? this.defaultProfiles \u003d\u003d\u003d undefined ? undefined : this.defaultProfiles"
+      },
+      {
+        "lineNumber": 163,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      : this.defaultProfiles \u003d\u003d\u003d undefined ? this.profiles : this.profiles.concat(this.defaultProfiles);"
+      },
+      {
+        "lineNumber": 164,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 165,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    // Set default profile if exists."
+      },
+      {
+        "lineNumber": 166,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.selectedProfile \u003d this.profiles \u003d\u003d\u003d undefined ? this.blankProfile : this.profiles[0];"
+      },
+      {
+        "lineNumber": 167,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.selectProfile(this.selectedProfile);"
+      },
+      {
+        "lineNumber": 168,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 169,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 170,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 171,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Makes Error dialog visible to the user."
+      },
+      {
+        "lineNumber": 172,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 173,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  openErrorDialog(): void {"
+      },
+      {
+        "lineNumber": 174,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.errorDialog.open(JsonParseErrorDialogComponent);"
+      },
+      {
+        "lineNumber": 175,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 176,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 177,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 178,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Verifies that every profile is correctly defined in the array of profiles."
+      },
+      {
+        "lineNumber": 179,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param profiles - Array of profiles sourced from profiles.json"
+      },
+      {
+        "lineNumber": 180,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 181,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  assertProfilesValidity(profiles: Profile[]): void {"
+      },
+      {
+        "lineNumber": 182,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    if (profiles.filter(profile \u003d\u003e (profile.profileName \u003d\u003d\u003d undefined || profile.encodedText \u003d\u003d\u003d undefined)).length !\u003d\u003d 0) {"
+      },
+      {
+        "lineNumber": 183,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      throw new Error();"
+      },
+      {
+        "lineNumber": 184,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 185,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 186,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 187,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 188,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Returns true if the file indicated by the filePath exists."
+      },
+      {
+        "lineNumber": 189,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param filePath - Path of file to check."
+      },
+      {
+        "lineNumber": 190,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 191,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  userProfileFileExists(filePath: string): boolean {"
+      },
+      {
+        "lineNumber": 192,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return this.fs.existsSync(filePath);"
+      },
+      {
+        "lineNumber": 193,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 194,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 195,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  /**"
+      },
+      {
+        "lineNumber": 196,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * Sends the selected profile information to listening component."
+      },
+      {
+        "lineNumber": 197,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   * @param profile - Profile selected by user."
+      },
+      {
+        "lineNumber": 198,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "   */"
+      },
+      {
+        "lineNumber": 199,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  selectProfile(profile: Profile): void {"
+      },
+      {
+        "lineNumber": 200,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.selectedProfileEmitter.emit(profile);"
+      },
+      {
+        "lineNumber": 201,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 202,
         "author": {
           "gitId": "ptvrajsk"
         },
@@ -6023,7 +6303,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 161,
+      "ptvrajsk": 201,
       "-": 1
     }
   },
@@ -22335,1062 +22615,1069 @@
       {
         "lineNumber": 545,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "      + \u0027|Team Chose.*[\\\\r\\\\n]*)[\\\\r\\\\n]*(- \\\\[x? ?\\\\] I disagree)[\\\\r\\\\n]*\\\\*\\\\*Reason *for *disagreement:\\\\*\\\\* *([\\\\s\\\\S]*?)-{19}\u0027,"
+        "content": "      + \u0027|Team Chose.*[\\\\r\\\\n]*)[\\\\r\\\\n]*(- \\\\[x? ?\\\\] I disagree)[\\\\r\\\\n]*\\\\*\\\\*Reason *for *disagreement:\\\\*\\\\* *([\\\\s\\\\S]*?)\u0027"
       },
       {
         "lineNumber": 546,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      + \u0027[\\\\n\\\\r]-{19}[\\\\n\\\\r]{1}\u0027,"
+      },
+      {
+        "lineNumber": 547,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      \u0027gi\u0027);"
       },
       {
-        "lineNumber": 547,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    while (matches \u003d regex.exec(toParse)) {"
-      },
-      {
         "lineNumber": 548,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
+        "content": "    while (matches \u003d regex.exec(toParse)) {"
       },
       {
         "lineNumber": 549,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        const [regexString, title, description, disagreeCheckbox, reasonForDiagreement] \u003d matches;"
+        "content": "      if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
       },
       {
         "lineNumber": 550,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "        const [regexString, title, description, disagreeCheckbox, reasonForDiagreement] \u003d matches;"
+      },
+      {
+        "lineNumber": 551,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "        testerResponses.push(new TesterResponse(title, description, disagreeCheckbox, reasonForDiagreement.trim()));"
       },
       {
-        "lineNumber": 551,
+        "lineNumber": 552,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
-      },
-      {
-        "lineNumber": 552,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "    }"
       },
       {
         "lineNumber": 553,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return testerResponses;"
+        "content": "    }"
       },
       {
         "lineNumber": 554,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    return testerResponses;"
       },
       {
         "lineNumber": 555,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 556,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 557,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  // Template url: https://github.com/CATcher-org/templates#teams-response-1"
       },
       {
-        "lineNumber": 557,
+        "lineNumber": 558,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  parseTeamResponseForTesterResponsePhase(toParse: string): string {"
       },
       {
-        "lineNumber": 558,
-        "author": {
-          "gitId": "KevinCJH"
-        },
-        "content": "    let teamResponse \u003d \u0027\u0027;"
-      },
-      {
         "lineNumber": 559,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const regex \u003d /# *Team\\\u0027?s Response[\\n\\r]*([\\s\\S]*)# Items for the Tester to Verify/gi;"
+        "content": "    let teamResponse \u003d \u0027\u0027;"
       },
       {
         "lineNumber": 560,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const matches \u003d regex.exec(toParse);"
+        "content": "    const regex \u003d /# *Team\\\u0027?s Response[\\n\\r]*([\\s\\S]*)# Items for the Tester to Verify/gi;"
       },
       {
         "lineNumber": 561,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    const matches \u003d regex.exec(toParse);"
       },
       {
         "lineNumber": 562,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
+        "content": ""
       },
       {
         "lineNumber": 563,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      teamResponse \u003d matches[1].trim();"
+        "content": "    if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
       },
       {
         "lineNumber": 564,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      teamResponse \u003d matches[1].trim();"
       },
       {
         "lineNumber": 565,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return teamResponse;"
+        "content": "    }"
       },
       {
         "lineNumber": 566,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return teamResponse;"
       },
       {
         "lineNumber": 567,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 568,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "  parseTeamResponseForTeamResponsePhase(toParse: string): string {"
+        "content": ""
       },
       {
         "lineNumber": 569,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    let teamResponse \u003d \u0027\u0027;"
+        "content": "  parseTeamResponseForTeamResponsePhase(toParse: string): string {"
       },
       {
         "lineNumber": 570,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const regex \u003d /# Team\u0027s Response[\\r\\n]*([\\S\\s]*?)[\\r\\n]*## Duplicate status \\(if any\\):/gi;"
+        "content": "    let teamResponse \u003d \u0027\u0027;"
       },
       {
         "lineNumber": 571,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const matches \u003d regex.exec(toParse);"
+        "content": "    const regex \u003d /# Team\u0027s Response[\\r\\n]*([\\S\\s]*?)[\\r\\n]*## Duplicate status \\(if any\\):/gi;"
       },
       {
         "lineNumber": 572,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    const matches \u003d regex.exec(toParse);"
       },
       {
         "lineNumber": 573,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
+        "content": ""
       },
       {
         "lineNumber": 574,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      teamResponse \u003d matches[1].trim();"
+        "content": "    if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
       },
       {
         "lineNumber": 575,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "      teamResponse \u003d matches[1].trim();"
       },
       {
         "lineNumber": 576,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return teamResponse;"
+        "content": "    }"
       },
       {
         "lineNumber": 577,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    return teamResponse;"
       },
       {
         "lineNumber": 578,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 579,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  parseDuplicateOfForTeamResponsePhase(toParse: string): string {"
+        "content": ""
       },
       {
         "lineNumber": 580,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    let duplicateOf \u003d \u0027\u0027;"
+        "content": "  parseDuplicateOfForTeamResponsePhase(toParse: string): string {"
       },
       {
         "lineNumber": 581,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const regex \u003d /## Duplicate status \\(if any\\):[\\r\\n]*Duplicate of #(.*)/gi;"
+        "content": "    let duplicateOf \u003d \u0027\u0027;"
       },
       {
         "lineNumber": 582,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const matches \u003d regex.exec(toParse);"
+        "content": "    const regex \u003d /## Duplicate status \\(if any\\):[\\r\\n]*Duplicate of #(.*)/gi;"
       },
       {
         "lineNumber": 583,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    const matches \u003d regex.exec(toParse);"
       },
       {
         "lineNumber": 584,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
+        "content": ""
       },
       {
         "lineNumber": 585,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      duplicateOf \u003d matches[1].trim();"
+        "content": "    if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
       },
       {
         "lineNumber": 586,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "      duplicateOf \u003d matches[1].trim();"
       },
       {
         "lineNumber": 587,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return duplicateOf;"
+        "content": "    }"
       },
       {
         "lineNumber": 588,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    return duplicateOf;"
       },
       {
         "lineNumber": 589,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 590,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "  // Template url: https://github.com/CATcher-org/templates#disputes"
+        "content": ""
       },
       {
         "lineNumber": 591,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  parseIssueDisputes(toParse: string): IssueDispute[] {"
+        "content": "  // Template url: https://github.com/CATcher-org/templates#disputes"
       },
       {
         "lineNumber": 592,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    let matches;"
+        "content": "  parseIssueDisputes(toParse: string): IssueDispute[] {"
       },
       {
         "lineNumber": 593,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const issueDisputes: IssueDispute[] \u003d [];"
+        "content": "    let matches;"
       },
       {
         "lineNumber": 594,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const regex \u003d /#{2} *:question: *(.*)[\\r\\n]*([\\s\\S]*?(?\u003d-{19}))/gi;"
+        "content": "    const issueDisputes: IssueDispute[] \u003d [];"
       },
       {
         "lineNumber": 595,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    while (matches \u003d regex.exec(toParse)) {"
+        "content": "    const regex \u003d /#{2} *:question: *(.*)[\\r\\n]*([\\s\\S]*?(?\u003d-{19}))/gi;"
       },
       {
         "lineNumber": 596,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
+        "content": "    while (matches \u003d regex.exec(toParse)) {"
       },
       {
         "lineNumber": 597,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        const [regexString, title, description] \u003d matches;"
+        "content": "      if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
       },
       {
         "lineNumber": 598,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        issueDisputes.push(new IssueDispute(title, description.trim()));"
+        "content": "        const [regexString, title, description] \u003d matches;"
       },
       {
         "lineNumber": 599,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      }"
+        "content": "        issueDisputes.push(new IssueDispute(title, description.trim()));"
       },
       {
         "lineNumber": 600,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      }"
       },
       {
         "lineNumber": 601,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return issueDisputes;"
+        "content": "    }"
       },
       {
         "lineNumber": 602,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return issueDisputes;"
       },
       {
         "lineNumber": 603,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 604,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  // Template url: https://github.com/CATcher-org/templates#tutor-moderations"
+        "content": ""
       },
       {
         "lineNumber": 605,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  parseTutorResponseInComment(toParse: string, issueDispute: IssueDispute[]): IssueDispute[] {"
+        "content": "  // Template url: https://github.com/CATcher-org/templates#tutor-moderations"
       },
       {
         "lineNumber": 606,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    let matches, i \u003d 0;"
+        "content": "  parseTutorResponseInComment(toParse: string, issueDispute: IssueDispute[]): IssueDispute[] {"
       },
       {
         "lineNumber": 607,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const regex \u003d /#{2} *:question: *.*[\\n\\r]*(.*)[\\n\\r]*([\\s\\S]*?(?\u003d-{19}))/gi;"
+        "content": "    let matches, i \u003d 0;"
       },
       {
         "lineNumber": 608,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    while (matches \u003d regex.exec(toParse)) {"
+        "content": "    const regex \u003d /#{2} *:question: *.*[\\n\\r]*(.*)[\\n\\r]*([\\s\\S]*?(?\u003d-{19}))/gi;"
       },
       {
         "lineNumber": 609,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
+        "content": "    while (matches \u003d regex.exec(toParse)) {"
       },
       {
         "lineNumber": 610,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        const [regexString, todo, tutorResponse] \u003d matches;"
+        "content": "      if (matches \u0026\u0026 matches.length \u003e this.MINIMUM_MATCHES) {"
       },
       {
         "lineNumber": 611,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        issueDispute[i].todo \u003d todo;"
+        "content": "        const [regexString, todo, tutorResponse] \u003d matches;"
       },
       {
         "lineNumber": 612,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        issueDispute[i].tutorResponse \u003d tutorResponse.trim();"
+        "content": "        issueDispute[i].todo \u003d todo;"
       },
       {
         "lineNumber": 613,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        i++;"
+        "content": "        issueDispute[i].tutorResponse \u003d tutorResponse.trim();"
       },
       {
         "lineNumber": 614,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      }"
+        "content": "        i++;"
       },
       {
         "lineNumber": 615,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      }"
       },
       {
         "lineNumber": 616,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return issueDispute;"
+        "content": "    }"
       },
       {
         "lineNumber": 617,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return issueDispute;"
       },
       {
         "lineNumber": 618,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 619,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  // Template url: https://github.com/CATcher-org/templates#tutor-moderations"
+        "content": ""
       },
       {
         "lineNumber": 620,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  getToDoList(issueComment: IssueComment, issueDisputes: IssueDispute[]): string[] {"
+        "content": "  // Template url: https://github.com/CATcher-org/templates#tutor-moderations"
       },
       {
         "lineNumber": 621,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    let matches;"
+        "content": "  getToDoList(issueComment: IssueComment, issueDisputes: IssueDispute[]): string[] {"
       },
       {
         "lineNumber": 622,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const toDoList: string[] \u003d [];"
+        "content": "    let matches;"
       },
       {
         "lineNumber": 623,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    const regex \u003d /- .* Done/gi;"
+        "content": "    const toDoList: string[] \u003d [];"
       },
       {
         "lineNumber": 624,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    const regex \u003d /- .* Done/gi;"
       },
       {
         "lineNumber": 625,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    if (this.userService.currentUser.role !\u003d\u003d this.userRole.Tutor) {"
+        "content": ""
       },
       {
         "lineNumber": 626,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      return toDoList;"
+        "content": "    if (this.userService.currentUser.role !\u003d\u003d this.userRole.Tutor) {"
       },
       {
         "lineNumber": 627,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      return toDoList;"
       },
       {
         "lineNumber": 628,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 629,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    if (!issueComment \u0026\u0026 issueDisputes) {"
+        "content": ""
       },
       {
         "lineNumber": 630,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      for (const dispute of issueDisputes) {"
+        "content": "    if (!issueComment \u0026\u0026 issueDisputes) {"
       },
       {
         "lineNumber": 631,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        toDoList.push(dispute.todo);"
+        "content": "      for (const dispute of issueDisputes) {"
       },
       {
         "lineNumber": 632,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      }"
+        "content": "        toDoList.push(dispute.todo);"
       },
       {
         "lineNumber": 633,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      return toDoList;"
+        "content": "      }"
       },
       {
         "lineNumber": 634,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      return toDoList;"
       },
       {
         "lineNumber": 635,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 636,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    while (matches \u003d regex.exec(issueComment.description)) {"
+        "content": ""
       },
       {
         "lineNumber": 637,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      if (matches) {"
+        "content": "    while (matches \u003d regex.exec(issueComment.description)) {"
       },
       {
         "lineNumber": 638,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        toDoList.push(matches[0]);"
+        "content": "      if (matches) {"
       },
       {
         "lineNumber": 639,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      }"
+        "content": "        toDoList.push(matches[0]);"
       },
       {
         "lineNumber": 640,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      }"
       },
       {
         "lineNumber": 641,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return toDoList;"
+        "content": "    }"
       },
       {
         "lineNumber": 642,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return toDoList;"
       },
       {
         "lineNumber": 643,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 644,
         "author": {
           "gitId": "-"
         },
-        "content": "  /**"
+        "content": ""
       },
       {
         "lineNumber": 645,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Based on the kind labels specified in `desiredLabels` field, this function will produce a neatly formatted JSON object."
+        "content": "  /**"
       },
       {
         "lineNumber": 646,
         "author": {
           "gitId": "-"
         },
-        "content": "   *"
+        "content": "   * Based on the kind labels specified in `desiredLabels` field, this function will produce a neatly formatted JSON object."
       },
       {
         "lineNumber": 647,
         "author": {
           "gitId": "-"
         },
-        "content": "   * For example:"
+        "content": "   *"
       },
       {
         "lineNumber": 648,
         "author": {
           "gitId": "-"
         },
-        "content": "   * desiredLabels \u003d [\u0027severity\u0027, \u0027type\u0027]"
+        "content": "   * For example:"
       },
       {
         "lineNumber": 649,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Output \u003d {severity: High, type: FunctionalityBug}"
+        "content": "   * desiredLabels \u003d [\u0027severity\u0027, \u0027type\u0027]"
       },
       {
         "lineNumber": 650,
         "author": {
           "gitId": "-"
         },
-        "content": "   *"
+        "content": "   * Output \u003d {severity: High, type: FunctionalityBug}"
       },
       {
         "lineNumber": 651,
         "author": {
           "gitId": "-"
         },
-        "content": "   * TODO: Add error handling for these assumptions."
+        "content": "   *"
       },
       {
         "lineNumber": 652,
         "author": {
           "gitId": "-"
         },
-        "content": "   * Assumptions:"
+        "content": "   * TODO: Add error handling for these assumptions."
       },
       {
         "lineNumber": 653,
         "author": {
           "gitId": "-"
         },
-        "content": "   * 1) The `labels` which were received from github has all the `desiredLabels` type we want."
+        "content": "   * Assumptions:"
       },
       {
         "lineNumber": 654,
         "author": {
           "gitId": "-"
         },
-        "content": "   * 2) There are no duplicates for example labels will not contain `severity.High` and `severity.Low` at the same time."
+        "content": "   * 1) The `labels` which were received from github has all the `desiredLabels` type we want."
       },
       {
         "lineNumber": 655,
         "author": {
           "gitId": "-"
         },
-        "content": "   *"
+        "content": "   * 2) There are no duplicates for example labels will not contain `severity.High` and `severity.Low` at the same time."
       },
       {
         "lineNumber": 656,
         "author": {
           "gitId": "-"
         },
-        "content": "   * @param labels defines the raw label array from which is obtained from github."
+        "content": "   *"
       },
       {
         "lineNumber": 657,
         "author": {
           "gitId": "-"
         },
-        "content": "   * @param desiredLabels defines the type of labels you want to be parsed out."
+        "content": "   * @param labels defines the raw label array from which is obtained from github."
       },
       {
         "lineNumber": 658,
         "author": {
           "gitId": "-"
         },
-        "content": "   */"
+        "content": "   * @param desiredLabels defines the type of labels you want to be parsed out."
       },
       {
         "lineNumber": 659,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "   */"
       },
       {
         "lineNumber": 660,
         "author": {
           "gitId": "-"
         },
-        "content": "  private getFormattedLabels(labels: Array\u003c{}\u003e, desiredLabels: Array\u003cstring\u003e): {} {"
+        "content": ""
       },
       {
         "lineNumber": 661,
         "author": {
           "gitId": "-"
         },
-        "content": "    let result \u003d {};"
+        "content": "  private getFormattedLabels(labels: Array\u003c{}\u003e, desiredLabels: Array\u003cstring\u003e): {} {"
       },
       {
         "lineNumber": 662,
         "author": {
           "gitId": "-"
         },
-        "content": "    for (const label of labels) {"
+        "content": "    let result \u003d {};"
       },
       {
         "lineNumber": 663,
         "author": {
           "gitId": "-"
         },
-        "content": "      const labelName \u003d String(label[\u0027name\u0027]).split(\u0027.\u0027);"
+        "content": "    for (const label of labels) {"
       },
       {
         "lineNumber": 664,
         "author": {
           "gitId": "-"
         },
-        "content": "      const labelType \u003d labelName[0];"
+        "content": "      const labelName \u003d String(label[\u0027name\u0027]).split(\u0027.\u0027);"
       },
       {
         "lineNumber": 665,
         "author": {
           "gitId": "-"
         },
-        "content": "      const labelValue \u003d labelName[1];"
+        "content": "      const labelType \u003d labelName[0];"
       },
       {
         "lineNumber": 666,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      const labelValue \u003d labelName[1];"
       },
       {
         "lineNumber": 667,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (label[\u0027name\u0027] \u003d\u003d\u003d \u0027duplicate\u0027) {"
+        "content": ""
       },
       {
         "lineNumber": 668,
         "author": {
           "gitId": "-"
         },
-        "content": "        result \u003d {"
+        "content": "      if (label[\u0027name\u0027] \u003d\u003d\u003d \u0027duplicate\u0027) {"
       },
       {
         "lineNumber": 669,
         "author": {
           "gitId": "-"
         },
-        "content": "          ...result,"
+        "content": "        result \u003d {"
       },
       {
         "lineNumber": 670,
         "author": {
           "gitId": "-"
         },
-        "content": "          duplicated: true,"
+        "content": "          ...result,"
       },
       {
         "lineNumber": 671,
         "author": {
           "gitId": "-"
         },
-        "content": "        };"
+        "content": "          duplicated: true,"
       },
       {
         "lineNumber": 672,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": "      } else if (label[\u0027name\u0027] \u003d\u003d\u003d \u0027unsure\u0027) {"
+        "content": "        };"
       },
       {
         "lineNumber": 673,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        result \u003d {"
+        "content": "      } else if (label[\u0027name\u0027] \u003d\u003d\u003d \u0027unsure\u0027) {"
       },
       {
         "lineNumber": 674,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          ...result,"
+        "content": "        result \u003d {"
       },
       {
         "lineNumber": 675,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "          unsure: true,"
+        "content": "          ...result,"
       },
       {
         "lineNumber": 676,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "        };"
+        "content": "          unsure: true,"
       },
       {
         "lineNumber": 677,
         "author": {
-          "gitId": "-"
+          "gitId": "KevinCJH"
         },
-        "content": "      } else if (desiredLabels.includes(labelType)) {"
+        "content": "        };"
       },
       {
         "lineNumber": 678,
         "author": {
           "gitId": "-"
         },
-        "content": "        result \u003d {"
+        "content": "      } else if (desiredLabels.includes(labelType)) {"
       },
       {
         "lineNumber": 679,
         "author": {
           "gitId": "-"
         },
-        "content": "          ...result,"
+        "content": "        result \u003d {"
       },
       {
         "lineNumber": 680,
         "author": {
           "gitId": "-"
         },
-        "content": "          [labelsToAttributeMapping[labelType]]: labelValue,"
+        "content": "          ...result,"
       },
       {
         "lineNumber": 681,
         "author": {
           "gitId": "-"
         },
-        "content": "        };"
+        "content": "          [labelsToAttributeMapping[labelType]]: labelValue,"
       },
       {
         "lineNumber": 682,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "        };"
       },
       {
         "lineNumber": 683,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      }"
       },
       {
         "lineNumber": 684,
         "author": {
           "gitId": "-"
         },
-        "content": "    return result;"
+        "content": "    }"
       },
       {
         "lineNumber": 685,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    return result;"
       },
       {
         "lineNumber": 686,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 687,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  setIssueTeamFilter(filterValue: string) {"
+        "content": ""
       },
       {
         "lineNumber": 688,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    if (filterValue) {"
+        "content": "  setIssueTeamFilter(filterValue: string) {"
       },
       {
         "lineNumber": 689,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "      this.issueTeamFilter \u003d filterValue;"
+        "content": "    if (filterValue) {"
       },
       {
         "lineNumber": 690,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    }"
+        "content": "      this.issueTeamFilter \u003d filterValue;"
       },
       {
         "lineNumber": 691,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    }"
       },
       {
         "lineNumber": 692,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 693,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  getIssueTeamFilter(): string {"
+        "content": ""
       },
       {
         "lineNumber": 694,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "    return this.issueTeamFilter;"
+        "content": "  getIssueTeamFilter(): string {"
       },
       {
         "lineNumber": 695,
         "author": {
           "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return this.issueTeamFilter;"
       },
       {
         "lineNumber": 696,
+        "author": {
+          "gitId": "KevinCJH"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 697,
         "author": {
           "gitId": "-"
         },
@@ -23398,8 +23685,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 117,
-      "KevinCJH": 194,
+      "ptvrajsk": 119,
+      "KevinCJH": 193,
       "-": 385
     }
   },
@@ -54790,563 +55077,542 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.issue.status \u003d STATUS.Done;"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (this.isNewResponse()) {"
+        "content": ""
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.issue.status \u003d STATUS.Done;"
+        "content": "    this.issueService.updateIssue(this.issue).pipe(finalize(() \u003d\u003e {"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "      this.isFormPending \u003d false;"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      this.isEditing \u003d false;"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.issueService.updateIssue(this.issue).pipe(finalize(() \u003d\u003e {"
-      },
-      {
-        "lineNumber": 61,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "      this.isFormPending \u003d false;"
-      },
-      {
-        "lineNumber": 62,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
-        "content": "      this.isEditing \u003d false;"
-      },
-      {
-        "lineNumber": 63,
-        "author": {
-          "gitId": "ptvrajsk"
-        },
         "content": "    })).subscribe((updatedIssue) \u003d\u003e {"
       },
       {
-        "lineNumber": 64,
+        "lineNumber": 61,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      updatedIssue.teamResponse \u003d this.issue.teamResponse;"
       },
       {
-        "lineNumber": 65,
+        "lineNumber": 62,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      updatedIssue.testerResponses \u003d this.issue.testerResponses;"
       },
       {
-        "lineNumber": 66,
+        "lineNumber": 63,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "      this.issueUpdated.emit(updatedIssue);"
       },
       {
-        "lineNumber": 67,
+        "lineNumber": 64,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    }, (error) \u003d\u003e {"
       },
       {
-        "lineNumber": 68,
+        "lineNumber": 65,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "      this.errorHandlingService.handleHttpError(error);"
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 66,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    });"
       },
       {
-        "lineNumber": 70,
+        "lineNumber": 67,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 71,
+        "lineNumber": 68,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    // For Tester Response phase, where the items are in the issue\u0027s comment"
       },
       {
-        "lineNumber": 72,
+        "lineNumber": 69,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    if (this.issue.issueComment) {"
       },
       {
-        "lineNumber": 73,
+        "lineNumber": 70,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      this.issue.issueComment.description \u003d this.issueCommentService."
       },
       {
-        "lineNumber": 74,
+        "lineNumber": 71,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "        createGithubTesterResponse(this.issue.teamResponse, this.issue.testerResponses);"
       },
       {
-        "lineNumber": 75,
+        "lineNumber": 72,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 76,
+        "lineNumber": 73,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      this.issueCommentService.updateIssueComment(this.issue.issueComment).subscribe("
       },
       {
-        "lineNumber": 77,
+        "lineNumber": 74,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "        (updatedComment) \u003d\u003e {"
       },
       {
-        "lineNumber": 78,
+        "lineNumber": 75,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "          this.commentUpdated.emit(updatedComment);"
       },
       {
-        "lineNumber": 79,
+        "lineNumber": 76,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "        }, (error) \u003d\u003e {"
       },
       {
-        "lineNumber": 80,
+        "lineNumber": 77,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "          this.errorHandlingService.handleHttpError(error);"
       },
       {
-        "lineNumber": 81,
+        "lineNumber": 78,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "      });"
       },
       {
-        "lineNumber": 82,
+        "lineNumber": 79,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 83,
+        "lineNumber": 80,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 84,
+        "lineNumber": 81,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 85,
+        "lineNumber": 82,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 86,
+        "lineNumber": 83,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  changeToEditMode() {"
       },
       {
-        "lineNumber": 87,
+        "lineNumber": 84,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    this.isEditing \u003d true;"
       },
       {
-        "lineNumber": 88,
+        "lineNumber": 85,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 89,
+        "lineNumber": 86,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 90,
+        "lineNumber": 87,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  cancelEditMode() {"
       },
       {
-        "lineNumber": 91,
+        "lineNumber": 88,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    this.isEditing \u003d false;"
       },
       {
-        "lineNumber": 92,
+        "lineNumber": 89,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 93,
+        "lineNumber": 90,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 94,
+        "lineNumber": 91,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  handleChangeOfDisagreeCheckbox(event, disagree, index) {"
       },
       {
-        "lineNumber": 95,
+        "lineNumber": 92,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    this.issue.testerResponses[index].disagreeCheckbox \u003d (\u0027- [\u0027).concat((event.checked ? \u0027x\u0027 : \u0027 \u0027), \u0027] \u0027, disagree.substring(6));"
       },
       {
-        "lineNumber": 96,
+        "lineNumber": 93,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    this.toggleCommentEditor(index, event.checked);"
       },
       {
-        "lineNumber": 97,
+        "lineNumber": 94,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 98,
+        "lineNumber": 95,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 99,
+        "lineNumber": 96,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  toggleCommentEditor(index: number, isCommentEditorEnabled: boolean) {"
       },
       {
-        "lineNumber": 100,
+        "lineNumber": 97,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    const control: AbstractControl \u003d this.testerResponseForm.controls[index];"
       },
       {
-        "lineNumber": 101,
+        "lineNumber": 98,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    if (isCommentEditorEnabled) {"
       },
       {
-        "lineNumber": 102,
+        "lineNumber": 99,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "      control.enable({onlySelf: true});"
       },
       {
-        "lineNumber": 103,
+        "lineNumber": 100,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    } else {"
       },
       {
-        "lineNumber": 104,
+        "lineNumber": 101,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "      control.disable({onlySelf: false});"
       },
       {
-        "lineNumber": 105,
+        "lineNumber": 102,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "      this.issue.testerResponses[index].reasonForDiagreement \u003d \u0027\u0027;"
       },
       {
-        "lineNumber": 106,
+        "lineNumber": 103,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 107,
+        "lineNumber": 104,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 108,
+        "lineNumber": 105,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 109,
+        "lineNumber": 106,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  handleChangeOfText(event, disagree, index) {"
       },
       {
-        "lineNumber": 110,
+        "lineNumber": 107,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    if (event.target.value !\u003d\u003d disagree) {"
       },
       {
-        "lineNumber": 111,
+        "lineNumber": 108,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "      this.issue.testerResponses[index].reasonForDiagreement \u003d event.target.value;"
       },
       {
-        "lineNumber": 112,
+        "lineNumber": 109,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 113,
+        "lineNumber": 110,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 114,
+        "lineNumber": 111,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 115,
+        "lineNumber": 112,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  trackDisagreeList(index: number, item: string[]): string {"
       },
       {
-        "lineNumber": 116,
+        "lineNumber": 113,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    return item[index];"
       },
       {
-        "lineNumber": 117,
+        "lineNumber": 114,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 118,
+        "lineNumber": 115,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 119,
+        "lineNumber": 116,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  isDisagreeChecked(disagree): boolean {"
       },
       {
-        "lineNumber": 120,
+        "lineNumber": 117,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    return disagree.charAt(3) \u003d\u003d\u003d \u0027x\u0027;"
       },
       {
-        "lineNumber": 121,
+        "lineNumber": 118,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 122,
+        "lineNumber": 119,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 123,
+        "lineNumber": 120,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  isNewResponse(): boolean {"
       },
       {
-        "lineNumber": 124,
+        "lineNumber": 121,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    return !this.issue.status \u0026\u0026 this.userService.currentUser.role \u003d\u003d\u003d UserRole.Student;"
       },
       {
-        "lineNumber": 125,
+        "lineNumber": 122,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 126,
+        "lineNumber": 123,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 127,
+        "lineNumber": 124,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  getSubmitButtonText(): string {"
       },
       {
-        "lineNumber": 128,
+        "lineNumber": 125,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "    return this.isNewResponse() ? \u0027Submit\u0027 : \u0027Save\u0027;"
       },
       {
-        "lineNumber": 129,
+        "lineNumber": 126,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 130,
+        "lineNumber": 127,
         "author": {
           "gitId": "ptvrajsk"
         },
         "content": ""
       },
       {
-        "lineNumber": 131,
+        "lineNumber": 128,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  getItemTitleText(title: string): string {"
       },
       {
-        "lineNumber": 132,
+        "lineNumber": 129,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    return \u0027## \u0027 + title;"
       },
       {
-        "lineNumber": 133,
+        "lineNumber": 130,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 134,
+        "lineNumber": 131,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": ""
       },
       {
-        "lineNumber": 135,
+        "lineNumber": 132,
         "author": {
           "gitId": "ptvrajsk"
         },
@@ -55354,7 +55620,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 111,
+      "ptvrajsk": 108,
       "KevinCJH": 24
     }
   },

@@ -742,6 +742,34 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 53,
+        "deletions": 15,
+        "date": "2019-10-04",
+        "commitResults": [
+          {
+            "hash": "dd8284036268f3733b0862bcb3852831e188fe96",
+            "messageTitle": "Default profiles (#225)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Add Capability for Coded Default Profiles\r\n",
+            "insertions": 50,
+            "deletions": 10
+          },
+          {
+            "hash": "6bed81b36f44f1f58659d8a6dfb84ee68b99ba8a",
+            "messageTitle": "Tester Re-responded fix (#224)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Force Status Done when submit is clicked\r\n",
+            "insertions": 1,
+            "deletions": 4
+          },
+          {
+            "hash": "dac411b69d65727e106af0ff2e779914b8cf5851",
+            "messageTitle": "Fixed Dashed Line Break Issue (#222)",
+            "messageBody": "Initially if the user keys in a set of dashes (for a line break) that is\r\n\u003e 19 the app will not parse the tester response properly but now the app\r\ncan parse the response as long as the number of dashes is not exactly 19",
+            "insertions": 2,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1917,8 +1945,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 3250,
-    "KevinCJH": 1672
+    "ptvrajsk": 3289,
+    "KevinCJH": 1671
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -1929,7 +1957,7 @@
       "py": 0,
       "tag": 0,
       "html": 327,
-      "ts": 2895
+      "ts": 2934
     },
     "KevinCJH": {
       "java": 0,
@@ -1939,12 +1967,12 @@
       "py": 0,
       "tag": 0,
       "html": 269,
-      "ts": 1403
+      "ts": 1402
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 18689.168,
-    "KevinCJH": 13359.108
+    "ptvrajsk": 18331.15,
+    "KevinCJH": 13114.165
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
