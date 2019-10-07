@@ -54591,7 +54591,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "            (change)\u003d\"handleChangeOfText($event, response.reasonForDiagreement, i)\" [id]\u003d\"i.toString()\"\u003e\u003c/app-comment-editor\u003e"
+        "content": "            (change)\u003d\"handleChangeOfText($event, response.reasonForDiagreement, i)\" [id]\u003d\"i.toString()\" (focusout)\u003d\"handleChangeOfText($event, response.reasonForDiagreement, i)\"\u003e\u003c/app-comment-editor\u003e"
       },
       {
         "lineNumber": 34,

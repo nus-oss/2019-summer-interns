@@ -770,6 +770,20 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 1,
+        "deletions": 1,
+        "date": "2019-10-06",
+        "commitResults": [
+          {
+            "hash": "dca3162b35d9b0493fee38c9400f3b07b2fc1606",
+            "messageTitle": "Image upload detection fix (#223)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Fixed Text Change Detection\r\n",
+            "insertions": 1,
+            "deletions": 1
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1971,8 +1985,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 18331.15,
-    "KevinCJH": 13114.165
+    "ptvrajsk": 18103.764,
+    "KevinCJH": 12955.782
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
