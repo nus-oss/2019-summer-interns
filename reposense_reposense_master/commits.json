@@ -864,7 +864,7 @@
   "authorFinalContributionMap": {
     "jylee-git": 2208,
     "bluein-green": 179,
-    "jamessspanggg": 1233
+    "jamessspanggg": 1232
   },
   "authorFileTypeContributionMap": {
     "jylee-git": {
@@ -892,13 +892,13 @@
     "jamessspanggg": {
       "java": 171,
       "js": 375,
-      "scss": 490,
+      "scss": 491,
       "json": 34,
       "md": 37,
       "py": 0,
       "jade": 0,
       "gradle": 0,
-      "pug": 126
+      "pug": 124
     }
   },
   "authorContributionVariance": {
