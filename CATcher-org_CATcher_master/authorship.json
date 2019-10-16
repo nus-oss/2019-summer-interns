@@ -9348,9 +9348,9 @@
       {
         "lineNumber": 49,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "export const SEVERITY_ORDER \u003d { Low: 0, Medium: 1, High: 2 };"
+        "content": "export const SEVERITY_ORDER \u003d { \u0027-\u0027: 0 , Low: 1, Medium: 2, High: 3 };"
       },
       {
         "lineNumber": 50,
@@ -9362,9 +9362,9 @@
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "export const ISSUE_TYPE_ORDER \u003d { DocumentationBug: 0, FunctionalityBug: 1 };"
+        "content": "export const ISSUE_TYPE_ORDER \u003d { \u0027-\u0027: 0 , DocTypo: 1, DocumentationBug: 2, FeatureFlaw: 3, FunctionalityBug: 4  };"
       },
       {
         "lineNumber": 52,
@@ -9460,390 +9460,404 @@
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  DocumentationBug \u003d \u0027DocumentationBug\u0027,"
+        "content": "  DocTypo \u003d \u0027DocTypo\u0027,"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "  FunctionalityBug \u003d \u0027FunctionalityBug\u0027,"
+        "content": "  DocumentationBug \u003d \u0027DocumentationBug\u0027,"
       },
       {
         "lineNumber": 67,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "}"
+        "content": "  FeatureFlaw \u003d \u0027FeatureFlaw\u0027,"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  FunctionalityBug \u003d \u0027FunctionalityBug\u0027,"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "export enum RESPONSE {"
+        "content": "}"
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": "  Accepted \u003d \u0027Accepted\u0027,"
+        "content": ""
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "  Rejected \u003d \u0027Rejected\u0027,"
+        "content": "export enum RESPONSE {"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "  IssueUnclear \u003d \u0027IssueUnclear\u0027,"
+        "content": "  Accepted \u003d \u0027Accepted\u0027,"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "  CannotReproduce \u003d \u0027CannotReproduce\u0027,"
+        "content": "  Rejected \u003d \u0027Rejected\u0027,"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "  IssueUnclear \u003d \u0027IssueUnclear\u0027,"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  CannotReproduce \u003d \u0027CannotReproduce\u0027,"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "export const ISSUE_LABELS \u003d {"
+        "content": "}"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "  severity: Object.keys(SEVERITY),"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "  type: Object.keys(TYPE),"
+        "content": "export const ISSUE_LABELS \u003d {"
       },
       {
         "lineNumber": 79,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  response: Object.keys(RESPONSE),"
+        "content": "  severity: Object.keys(SEVERITY),"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "  type: Object.keys(TYPE),"
       },
       {
         "lineNumber": 81,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  response: Object.keys(RESPONSE),"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "export const IssuesFilter \u003d {"
+        "content": "};"
       },
       {
         "lineNumber": 83,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  phaseBugReporting: {"
+        "content": ""
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "    Student: \u0027FILTER_BY_CREATOR\u0027,"
+        "content": "export const IssuesFilter \u003d {"
       },
       {
         "lineNumber": 85,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    Tutor: \u0027NO_FILTER\u0027,"
+        "content": "  phaseBugReporting: {"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "    Admin: \u0027NO_FILTER\u0027,"
+        "content": "    Student: \u0027FILTER_BY_CREATOR\u0027,"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "  },"
+        "content": "    Tutor: \u0027NO_FILTER\u0027,"
       },
       {
         "lineNumber": 88,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  phaseTeamResponse: {"
+        "content": "    Admin: \u0027NO_FILTER\u0027,"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "    Student: \u0027FILTER_BY_TEAM\u0027,"
+        "content": "  },"
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    Tutor: \u0027FILTER_BY_TEAM_ASSIGNED\u0027,"
+        "content": "  phaseTeamResponse: {"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "    Admin: \u0027NO_FILTER\u0027,"
+        "content": "    Student: \u0027FILTER_BY_TEAM\u0027,"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "  },"
+        "content": "    Tutor: \u0027FILTER_BY_TEAM_ASSIGNED\u0027,"
       },
       {
         "lineNumber": 93,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "  phaseTesterResponse: {"
+        "content": "    Admin: \u0027NO_FILTER\u0027,"
       },
       {
         "lineNumber": 94,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    Student: \u0027NO_FILTER\u0027,"
+        "content": "  },"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    Tutor: \u0027NO_ACCESS\u0027,"
+        "content": "  phaseTesterResponse: {"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    Admin: \u0027NO_FILTER\u0027,"
+        "content": "    Student: \u0027NO_FILTER\u0027,"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  },"
+        "content": "    Tutor: \u0027NO_ACCESS\u0027,"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  phaseModeration: {"
+        "content": "    Admin: \u0027NO_FILTER\u0027,"
       },
       {
         "lineNumber": 99,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    Student: \u0027NO_ACCESS\u0027,"
+        "content": "  },"
       },
       {
         "lineNumber": 100,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    Tutor: \u0027FILTER_BY_TEAM_ASSIGNED\u0027,"
+        "content": "  phaseModeration: {"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "    Admin: \u0027NO_FILTER\u0027,"
+        "content": "    Student: \u0027NO_ACCESS\u0027,"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    Tutor: \u0027FILTER_BY_TEAM_ASSIGNED\u0027,"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "};"
+        "content": "    Admin: \u0027NO_FILTER\u0027,"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "export enum RespondType {"
+        "content": "};"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "  teamResponse \u003d \u0027teamResponse\u0027,"
+        "content": ""
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": "  tutorResponse \u003d \u0027tutorResponse\u0027,"
+        "content": "export enum RespondType {"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "}"
+        "content": "  teamResponse \u003d \u0027teamResponse\u0027,"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  tutorResponse \u003d \u0027tutorResponse\u0027,"
       },
       {
         "lineNumber": 110,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "export const phaseTeamResponseDescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State the duplicated issue \u0027 +"
+        "content": "}"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u0027here, if any)\\\\s+(?\u003cdescription\u003e[\\\\s\\\\S]*?)(?\u003d# Team\\\u0027s Response|## State the duplicated issue here, if any|$)\u0027, \u0027gi\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "export const phaseTeamResponseDescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State the duplicated issue \u0027 +"
       },
       {
         "lineNumber": 113,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "export const phaseTesterResponseDescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State \u0027 +"
+        "content": "  \u0027here, if any)\\\\s+(?\u003cdescription\u003e[\\\\s\\\\S]*?)(?\u003d# Team\\\u0027s Response|## State the duplicated issue here, if any|$)\u0027, \u0027gi\u0027);"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  \u0027the duplicated issue here, if any|# Items for the Tester to Verify)\\\\s+(?\u003cdescription\u003e[\\\\s\\\\S]*?)(?\u003d# Team\\\u0027s Response\u0027 +"
+        "content": ""
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  \u0027|## State the duplicated issue here, if any|# Items for the Tester to Verify|$)\u0027, \u0027gi\u0027);"
+        "content": "export const phaseTesterResponseDescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State \u0027 +"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  \u0027the duplicated issue here, if any|# Items for the Tester to Verify)\\\\s+(?\u003cdescription\u003e[\\\\s\\\\S]*?)(?\u003d# Team\\\u0027s Response\u0027 +"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "export const phaseModerationDescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State the duplicated issue \u0027 +"
+        "content": "  \u0027|## State the duplicated issue here, if any|# Items for the Tester to Verify|$)\u0027, \u0027gi\u0027);"
       },
       {
         "lineNumber": 118,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "export const phaseModerationDescriptionTemplate \u003d new RegExp(\u0027(?\u003cheader\u003e# Description|# Team\\\u0027s Response|## State the duplicated issue \u0027 +"
+      },
+      {
+        "lineNumber": 120,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  \u0027here, if any|# Disputes)\\\\s+\u0027 +"
       },
       {
-        "lineNumber": 119,
+        "lineNumber": 121,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "  \u0027(?\u003cdescription\u003e[\\\\s\\\\S]*?)(?\u003d# Team\\\u0027s Response|## State the duplicated issue here, if any|\u0027 +"
       },
       {
-        "lineNumber": 120,
+        "lineNumber": 122,
         "author": {
           "gitId": "KevinCJH"
         },
@@ -9851,9 +9865,9 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 19,
+      "ptvrajsk": 23,
       "KevinCJH": 11,
-      "-": 90
+      "-": 88
     }
   },
   {
@@ -38725,70 +38739,70 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.commentField.setValue(this.commentTextArea.nativeElement.value + \u0027\\n\\r\u0027);"
+        "content": "    const newLinesRegex \u003d /[\\n\\r]/gi;"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    if (this.commentTextArea.nativeElement.value.split(newLinesRegex).filter(split \u003d\u003e split.trim() !\u003d\u003d \u0027\u0027).length \u003e 0) {"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      this.commentField.setValue(this.commentTextArea.nativeElement.value + \u0027\\n\\r\u0027);"
       },
       {
         "lineNumber": 125,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "  onPaste() {"
+        "content": "    } else {"
       },
       {
         "lineNumber": 126,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    this.uploadErrorMessage \u003d null;"
+        "content": "      this.commentField.setValue(\u0027\u0027);"
       },
       {
         "lineNumber": 127,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 128,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    const imageFileType \u003d clipboard.availableFormats().filter(type \u003d\u003e type.includes(\u0027image\u0027));"
+        "content": "  }"
       },
       {
         "lineNumber": 129,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    if (imageFileType.length \u003d\u003d\u003d 0) {"
+        "content": ""
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "      return;"
+        "content": "  onPaste() {"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    this.uploadErrorMessage \u003d null;"
       },
       {
         "lineNumber": 132,
@@ -38802,549 +38816,584 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    const filename \u003d `image.${imageFileType[0].split(\u0027/\u0027)[1]}`;"
+        "content": "    const imageFileType \u003d clipboard.availableFormats().filter(type \u003d\u003e type.includes(\u0027image\u0027));"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "    const insertedText \u003d this.insertUploadingText(filename);"
+        "content": "    if (imageFileType.length \u003d\u003d\u003d 0) {"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      return;"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.uploadService.uploadFile(clipboard.readImage().toDataURL(), filename).subscribe((response) \u003d\u003e {"
+        "content": "    }"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.insertUploadUrl(filename, response.data.content.download_url);"
+        "content": ""
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "    }, (error) \u003d\u003e {"
+        "content": "    const filename \u003d `image.${imageFileType[0].split(\u0027/\u0027)[1]}`;"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.handleUploadError(error, insertedText);"
+        "content": "    const insertedText \u003d this.insertUploadingText(filename);"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": ""
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    this.uploadService.uploadFile(clipboard.readImage().toDataURL(), filename).subscribe((response) \u003d\u003e {"
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      this.insertUploadUrl(filename, response.data.content.download_url);"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "-"
         },
-        "content": "  get isInErrorState(): boolean {"
+        "content": "    }, (error) \u003d\u003e {"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
-        "content": "    return !!this.uploadErrorMessage;"
+        "content": "      this.handleUploadError(error, insertedText);"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    });"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "  private handleUploadError(error, insertedText: string) {"
+        "content": ""
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (error.constructor.name \u003d\u003d\u003d \u0027HttpError\u0027) {"
+        "content": "  get isInErrorState(): boolean {"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.errorHandlingService.handleHttpError(error);"
+        "content": "    return !!this.uploadErrorMessage;"
       },
       {
         "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.uploadErrorMessage \u003d \u0027Something went wrong while uploading your file. Please try again.\u0027;"
+        "content": "  }"
       },
       {
         "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
-        "content": "    } else {"
+        "content": ""
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.uploadErrorMessage \u003d error;"
+        "content": "  private handleUploadError(error, insertedText: string) {"
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    if (error.constructor.name \u003d\u003d\u003d \u0027HttpError\u0027) {"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.commentField.setValue(this.commentField.value.replace(insertedText, \u0027\u0027));"
+        "content": "      this.errorHandlingService.handleHttpError(error);"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      this.uploadErrorMessage \u003d \u0027Something went wrong while uploading your file. Please try again.\u0027;"
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    } else {"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "  private insertUploadingText(filename: string): string {"
+        "content": "      this.uploadErrorMessage \u003d error;"
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": "    const originalDescription \u003d this.commentField.value;"
+        "content": "    }"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    this.commentField.setValue(this.commentField.value.replace(insertedText, \u0027\u0027));"
       },
       {
         "lineNumber": 160,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    const fileType \u003d filename.split(\u0027.\u0027).pop();"
+        "content": "  }"
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "    let toInsert: string;"
+        "content": ""
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (DISPLAYABLE_CONTENT.includes(fileType)) {"
+        "content": "  private insertUploadingText(filename: string): string {"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": "      toInsert \u003d `![Uploading ${filename}...]()\\n`;"
+        "content": "    const originalDescription \u003d this.commentField.value;"
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": "    } else {"
+        "content": ""
       },
       {
         "lineNumber": 165,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      toInsert \u003d `[Uploading ${filename}...]()\\n`;"
+        "content": "    const fileType \u003d filename.split(\u0027.\u0027).pop();"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    let toInsert: string;"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    if (DISPLAYABLE_CONTENT.includes(fileType)) {"
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
-        "content": "    const cursorPosition \u003d this.commentTextArea.nativeElement.selectionEnd;"
+        "content": "      toInsert \u003d `![Uploading ${filename}...]()\\n`;"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": "    const endOfLineIndex \u003d originalDescription.indexOf(\u0027\\n\u0027, cursorPosition);"
+        "content": "    } else {"
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": "    const nextCursorPosition \u003d cursorPosition + toInsert.length;"
+        "content": "      toInsert \u003d `[Uploading ${filename}...]()\\n`;"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (endOfLineIndex \u003d\u003d\u003d -1) {"
+        "content": ""
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": "      if (this.commentField.value \u003d\u003d\u003d \u0027\u0027) {"
+        "content": "    const cursorPosition \u003d this.commentTextArea.nativeElement.selectionEnd;"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
-        "content": "        this.commentField.setValue(toInsert);"
+        "content": "    const endOfLineIndex \u003d originalDescription.indexOf(\u0027\\n\u0027, cursorPosition);"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "      } else {"
+        "content": "    const nextCursorPosition \u003d cursorPosition + toInsert.length;"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": "        this.commentField.setValue(`${this.commentField.value}\\n${toInsert}`);"
+        "content": ""
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "    if (endOfLineIndex \u003d\u003d\u003d -1) {"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "-"
         },
-        "content": "    } else {"
+        "content": "      if (this.commentField.value \u003d\u003d\u003d \u0027\u0027) {"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "      const startTillNewline \u003d originalDescription.slice(0, endOfLineIndex + 1);"
+        "content": "        this.commentField.setValue(toInsert);"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": "      const newlineTillEnd \u003d originalDescription.slice(endOfLineIndex);"
+        "content": "      } else {"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.commentField.setValue(`${startTillNewline + toInsert + newlineTillEnd}`);"
+        "content": "        this.commentField.setValue(`${this.commentField.value}\\n${toInsert}`);"
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      }"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    } else {"
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.commentTextArea.nativeElement.setSelectionRange(nextCursorPosition, nextCursorPosition);"
+        "content": "      const startTillNewline \u003d originalDescription.slice(0, endOfLineIndex + 1);"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": "    return toInsert;"
+        "content": "      const newlineTillEnd \u003d originalDescription.slice(endOfLineIndex);"
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      this.commentField.setValue(`${startTillNewline + toInsert + newlineTillEnd}`);"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "-"
         },
-        "content": "  private insertUploadUrl(filename: string, uploadUrl: string) {"
+        "content": ""
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "-"
         },
-        "content": "    const cursorPosition \u003d this.commentTextArea.nativeElement.selectionEnd;"
+        "content": "    this.commentTextArea.nativeElement.setSelectionRange(nextCursorPosition, nextCursorPosition);"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "-"
         },
-        "content": "    const startIndexOfString \u003d this.commentField.value.indexOf(`[Uploading ${filename}...]()`);"
+        "content": "    return toInsert;"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "-"
         },
-        "content": "    const endIndexOfString \u003d startIndexOfString + `[Uploading ${filename}...]()`.length;"
+        "content": "  }"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": "    const endOfInsertedString \u003d startIndexOfString + `[${filename}](${uploadUrl})`.length;"
+        "content": ""
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  private insertUploadUrl(filename: string, uploadUrl: string) {"
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.commentField.setValue("
+        "content": "    const cursorPosition \u003d this.commentTextArea.nativeElement.selectionEnd;"
       },
       {
         "lineNumber": 195,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.commentField.value.replace(`[Uploading ${filename}...]()`, `[${filename}](${uploadUrl})`));"
+        "content": "    const startIndexOfString \u003d this.commentField.value.indexOf(`[Uploading ${filename}...]()`);"
       },
       {
         "lineNumber": 196,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    const endIndexOfString \u003d startIndexOfString + `[Uploading ${filename}...]()`.length;"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (cursorPosition \u003e startIndexOfString - 1 \u0026\u0026 cursorPosition \u003c\u003d endIndexOfString) { // within the range of uploading text"
+        "content": "    const endOfInsertedString \u003d startIndexOfString + `[${filename}](${uploadUrl})`.length;"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.commentTextArea.nativeElement.setSelectionRange(endOfInsertedString, endOfInsertedString);"
+        "content": ""
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "-"
         },
-        "content": "    } else {"
+        "content": "    this.commentField.setValue("
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.commentTextArea.nativeElement.setSelectionRange(cursorPosition, cursorPosition);"
+        "content": "      this.commentField.value.replace(`[Uploading ${filename}...]()`, `[${filename}](${uploadUrl})`));"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": ""
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    if (cursorPosition \u003e startIndexOfString - 1 \u0026\u0026 cursorPosition \u003c\u003d endIndexOfString) { // within the range of uploading text"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "      this.commentTextArea.nativeElement.setSelectionRange(endOfInsertedString, endOfInsertedString);"
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "-"
         },
-        "content": "  private removeHighlightBorderStyle() {"
+        "content": "    } else {"
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.dragActiveCounter--;"
+        "content": "      this.commentTextArea.nativeElement.setSelectionRange(cursorPosition, cursorPosition);"
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (this.dragActiveCounter \u003d\u003d\u003d 0) { // To make sure when dragging over a child element, drop area is still highlight."
+        "content": "    }"
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.dropArea.nativeElement.classList.remove(\u0027highlight-drag-box\u0027);"
+        "content": "  }"
       },
       {
         "lineNumber": 208,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "      this.dropArea.nativeElement.classList.remove(\u0027highlight-drag-box-disabled\u0027);"
+        "content": ""
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "  private removeHighlightBorderStyle() {"
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    this.dragActiveCounter--;"
       },
       {
         "lineNumber": 211,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    if (this.dragActiveCounter \u003d\u003d\u003d 0) { // To make sure when dragging over a child element, drop area is still highlight."
+      },
+      {
+        "lineNumber": 212,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      this.dropArea.nativeElement.classList.remove(\u0027highlight-drag-box\u0027);"
+      },
+      {
+        "lineNumber": 213,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      this.dropArea.nativeElement.classList.remove(\u0027highlight-drag-box-disabled\u0027);"
+      },
+      {
+        "lineNumber": 214,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 215,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 216,
         "author": {
           "gitId": "-"
         },
@@ -39352,7 +39401,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 31,
+      "ptvrajsk": 36,
       "-": 180
     }
   },
@@ -42112,7 +42161,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      \u003ca class\u003d\"no-underline link-grey-dark\" [routerLink]\u003d\"\u0027issues/\u0027 + issue.id\"\u003e {{issue.title}} \u003c/a\u003e"
+        "content": "      \u003ca class\u003d\"no-underline link-grey-dark\" [routerLink]\u003d\"\u0027issues/\u0027 + issue.id\"\u003e {{this.fitTitleText(issue.title)}} \u003c/a\u003e"
       },
       {
         "lineNumber": 16,
@@ -43700,441 +43749,441 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  isActionVisible(action: ACTION_BUTTONS): boolean {"
+        "content": "  /**"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return this.actions.includes(action);"
+        "content": "   * Formats the title text to account for those that contain long words."
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "   * @param title - Title of Issue that is to be displayed in the Table Row."
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "   */"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  markAsResponded(issue: Issue) {"
+        "content": "  fitTitleText(title: string): string {"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.issueService.updateIssue({"
+        "content": ""
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      ...issue,"
+        "content": "    // Arbitrary Length of Characters beyond which an overflow occurs."
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      status: STATUS.Done"
+        "content": "    const MAX_WORD_LENGTH \u003d 43;"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }).subscribe((updatedIssue) \u003d\u003e {"
+        "content": "    const SPLITTER_TEXT \u003d \u0027 \u0027;"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.issueService.updateLocalStore(updatedIssue);"
+        "content": "    const ELLIPSES \u003d \u0027...\u0027;"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }, error \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.errorHandlingService.handleHttpError(error);"
+        "content": "    return title.split(SPLITTER_TEXT).map(word \u003d\u003e {"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    });"
+        "content": "      if (word.length \u003e MAX_WORD_LENGTH) {"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    event.stopPropagation();"
+        "content": "        return word.substring(0, MAX_WORD_LENGTH - 5).concat(ELLIPSES);"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      }"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      return word;"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  markAsPending(issue: Issue) {"
+        "content": "    }).join(SPLITTER_TEXT);"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.issueService.updateIssue({"
+        "content": "  }"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      ...issue,"
+        "content": ""
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      status: STATUS.Incomplete"
+        "content": "  isActionVisible(action: ACTION_BUTTONS): boolean {"
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }).subscribe((updatedIssue) \u003d\u003e {"
+        "content": "    return this.actions.includes(action);"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.issueService.updateLocalStore(updatedIssue);"
+        "content": "  }"
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }, error \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.errorHandlingService.handleHttpError(error);"
+        "content": "  markAsResponded(issue: Issue) {"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    });"
+        "content": "    this.issueService.updateIssue({"
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    event.stopPropagation();"
+        "content": "      ...issue,"
       },
       {
         "lineNumber": 93,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      status: STATUS.Done"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    }).subscribe((updatedIssue) \u003d\u003e {"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  isTodoListExists(issue): boolean {"
+        "content": "      this.issueService.updateLocalStore(updatedIssue);"
       },
       {
         "lineNumber": 96,
         "author": {
-          "gitId": "KevinCJH"
+          "gitId": "ptvrajsk"
         },
-        "content": "    return issue.todoList;"
+        "content": "    }, error \u003d\u003e {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "      this.errorHandlingService.handleHttpError(error);"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    });"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  todoFinished(issue): number {"
+        "content": "    event.stopPropagation();"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    let count \u003d 0;"
+        "content": "  }"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (!this.isTodoListExists(issue)) {"
+        "content": ""
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      return count;"
+        "content": "  markAsPending(issue: Issue) {"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "    this.issueService.updateIssue({"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "      ...issue,"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    for (const todo of issue.todoList) {"
+        "content": "      status: STATUS.Incomplete"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      if (todo.charAt(3) \u003d\u003d\u003d \u0027x\u0027) {"
+        "content": "    }).subscribe((updatedIssue) \u003d\u003e {"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        count +\u003d 1;"
+        "content": "      this.issueService.updateLocalStore(updatedIssue);"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      }"
+        "content": "    }, error \u003d\u003e {"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }"
+        "content": "      this.errorHandlingService.handleHttpError(error);"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return count;"
+        "content": "    });"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "    event.stopPropagation();"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  isTodoListChecked(issue): boolean {"
+        "content": ""
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return (!this.isTodoListExists(issue) || this.todoFinished(issue) \u003d\u003d\u003d issue.todoList.length);"
+        "content": "  isTodoListExists(issue): boolean {"
       },
       {
         "lineNumber": 115,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "KevinCJH"
         },
-        "content": "  }"
+        "content": "    return issue.todoList;"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  deleteIssue(id: number) {"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.issuesPendingDeletion \u003d {"
+        "content": "  todoFinished(issue): number {"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      ...this.issuesPendingDeletion,"
+        "content": "    let count \u003d 0;"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      [id]: true,"
+        "content": "    if (!this.isTodoListExists(issue)) {"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    };"
+        "content": "      return count;"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.issueService.deleteIssue(id).pipe(finalize(() \u003d\u003e {"
+        "content": "    }"
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      const { [id]: issueRemoved, ...theRest } \u003d this.issuesPendingDeletion;"
+        "content": ""
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.issuesPendingDeletion \u003d theRest;"
+        "content": "    for (const todo of issue.todoList) {"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    })).subscribe((removedIssue) \u003d\u003e {"
+        "content": "      if (todo.charAt(3) \u003d\u003d\u003d \u0027x\u0027) {"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    }, (error) \u003d\u003e {"
+        "content": "        count +\u003d 1;"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.errorHandlingService.handleHttpError(error);"
+        "content": "      }"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    });"
+        "content": "    }"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    event.stopPropagation();"
+        "content": "    return count;"
       },
       {
         "lineNumber": 130,
@@ -44148,11 +44197,144 @@
         "author": {
           "gitId": "ptvrajsk"
         },
+        "content": ""
+      },
+      {
+        "lineNumber": 132,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  isTodoListChecked(issue): boolean {"
+      },
+      {
+        "lineNumber": 133,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    return (!this.isTodoListExists(issue) || this.todoFinished(issue) \u003d\u003d\u003d issue.todoList.length);"
+      },
+      {
+        "lineNumber": 134,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 135,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 136,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  deleteIssue(id: number) {"
+      },
+      {
+        "lineNumber": 137,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.issuesPendingDeletion \u003d {"
+      },
+      {
+        "lineNumber": 138,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      ...this.issuesPendingDeletion,"
+      },
+      {
+        "lineNumber": 139,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      [id]: true,"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    };"
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    this.issueService.deleteIssue(id).pipe(finalize(() \u003d\u003e {"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      const { [id]: issueRemoved, ...theRest } \u003d this.issuesPendingDeletion;"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      this.issuesPendingDeletion \u003d theRest;"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    })).subscribe((removedIssue) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    }, (error) \u003d\u003e {"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "      this.errorHandlingService.handleHttpError(error);"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "    event.stopPropagation();"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "ptvrajsk"
+        },
         "content": "}"
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 130,
+      "ptvrajsk": 149,
       "KevinCJH": 1
     }
   },
@@ -44368,75 +44550,82 @@
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "              [value]\u003d\"issue.assignees\" (selectionChange)\u003d\"updateAssignee($event)\"\u003e"
+        "content": "              (closed)\u003d\"updateAssignee()\""
       },
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    \u003cmat-select-trigger\u003e"
+        "content": "              [(ngModel)]\u003d\"this.assignees\"\u003e"
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003c/mat-select-trigger\u003e"
+        "content": "    \u003cmat-select-trigger\u003e"
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003cmat-option *ngFor\u003d\"let assignee of teamMembers\" [value]\u003d\"assignee\"\u003e{{assignee}}\u003c/mat-option\u003e"
+        "content": "    \u003c/mat-select-trigger\u003e"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/mat-select\u003e"
+        "content": "    \u003cmat-option *ngFor\u003d\"let assignee of teamMembers\" [value]\u003d\"assignee\"\u003e{{assignee}}\u003c/mat-option\u003e"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  \u003c/mat-select\u003e"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cp *ngIf\u003d\"issue.assignees.length \u003d\u003d\u003d 0\" style\u003d\"margin-top: 5px\"\u003e - \u003c/p\u003e"
+        "content": ""
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cmat-list style\u003d\"padding-top: 0\" dense *ngIf\u003d\"issue.assignees.length \u003e 0\"\u003e"
+        "content": "  \u003cp *ngIf\u003d\"issue.assignees.length \u003d\u003d\u003d 0\" style\u003d\"margin-top: 5px\"\u003e - \u003c/p\u003e"
       },
       {
         "lineNumber": 17,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cmat-list style\u003d\"padding-top: 0\" dense *ngIf\u003d\"issue.assignees.length \u003e 0\"\u003e"
+      },
+      {
+        "lineNumber": 18,
         "author": {
           "gitId": "KevinCJH"
         },
         "content": "    \u003cmat-list-item style\u003d\"font-size: 1em;\" *ngFor\u003d\"let assignee of issue.assignees\"\u003e{{assignee}}\u003c/mat-list-item\u003e"
       },
       {
-        "lineNumber": 18,
+        "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
         "content": "  \u003c/mat-list\u003e"
       },
       {
-        "lineNumber": 19,
+        "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
@@ -44444,8 +44633,9 @@
       }
     ],
     "authorContributionMap": {
+      "ptvrajsk": 2,
       "KevinCJH": 2,
-      "-": 17
+      "-": 16
     }
   },
   {
@@ -44581,271 +44771,285 @@
       {
         "lineNumber": 19,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "  assignees: string[];"
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "  @Input() issue: Issue;"
+        "content": ""
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": "  @Input() team: Team;"
+        "content": "  @Input() issue: Issue;"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  @Input() team: Team;"
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "  @ViewChild(MatSelect) assigneeSelection: MatSelect;"
+        "content": ""
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  @ViewChild(MatSelect) assigneeSelection: MatSelect;"
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "  @Output() issueUpdated \u003d new EventEmitter\u003cIssue\u003e();"
+        "content": ""
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  @Output() issueUpdated \u003d new EventEmitter\u003cIssue\u003e();"
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "  constructor(private issueService: IssueService, private errorHandlingService: ErrorHandlingService,"
+        "content": ""
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "              public permissions: PermissionService) {"
+        "content": "  constructor(private issueService: IssueService, private errorHandlingService: ErrorHandlingService,"
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "              public permissions: PermissionService) {"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  }"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "  ngOnInit(): void {"
+        "content": ""
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.teamMembers \u003d this.team.teamMembers.map((user) \u003d\u003e user.loginId);"
+        "content": "  ngOnInit(): void {"
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    this.teamMembers \u003d this.team.teamMembers.map((user) \u003d\u003e user.loginId);"
       },
       {
         "lineNumber": 34,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    this.assignees \u003d this.issue.assignees;"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "  openSelector() {"
+        "content": "  }"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.isInEditMode \u003d true;"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "    this.assigneeSelection.open();"
+        "content": "  openSelector() {"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "    this.isInEditMode \u003d true;"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    this.assigneeSelection.open();"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "  handleEditMode(isOpen) {"
+        "content": "  }"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (!isOpen) {"
+        "content": ""
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "      this.isInEditMode \u003d false;"
+        "content": "  handleEditMode(isOpen) {"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "    if (!isOpen) {"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      this.isInEditMode \u003d false;"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "  updateAssignee(event): void {"
+        "content": "  }"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    const latestIssue \u003d \u003cBaseIssue\u003e{"
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      ...this.issue,"
+        "content": "  updateAssignee(): void {"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      assignees: event.value"
+        "content": "    const latestIssue \u003d \u003cBaseIssue\u003e{"
       },
       {
         "lineNumber": 50,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": "    };"
+        "content": "      ...this.issue,"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    this.issueService.updateIssue(latestIssue).subscribe((updatedIssue: Issue) \u003d\u003e {"
+        "content": "      assignees: this.assignees"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      this.issueUpdated.emit(latestIssue);"
+        "content": "    };"
       },
       {
         "lineNumber": 53,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    }, (error) \u003d\u003e {"
+        "content": "    this.issueService.updateIssue(latestIssue).subscribe((updatedIssue: Issue) \u003d\u003e {"
       },
       {
         "lineNumber": 54,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "      this.errorHandlingService.handleHttpError(error);"
+        "content": "      this.issueUpdated.emit(latestIssue);"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "    });"
+        "content": "    }, (error) \u003d\u003e {"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "  }"
+        "content": "      this.errorHandlingService.handleHttpError(error);"
       },
       {
         "lineNumber": 57,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    });"
+      },
+      {
+        "lineNumber": 58,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  }"
+      },
+      {
+        "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
@@ -44853,8 +45057,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 6,
-      "-": 51
+      "ptvrajsk": 9,
+      "-": 50
     }
   },
   {

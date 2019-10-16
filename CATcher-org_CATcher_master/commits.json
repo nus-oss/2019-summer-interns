@@ -784,6 +784,41 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 36,
+        "deletions": 7,
+        "date": "2019-10-16",
+        "commitResults": [
+          {
+            "hash": "d4d9289617ab590214af41346192595010685fc1",
+            "messageTitle": "Table title text overflow (#248)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Fix for Table Title Overflow\r\n\r\n* Added a function that will optimize the title\r\n",
+            "insertions": 20,
+            "deletions": 1
+          },
+          {
+            "hash": "a430e42136d839a9b106ad152daa84ba171d9ee3",
+            "messageTitle": "Data table sorting fix (#250)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Added Sorting Support for more Issue Types\r\n\r\n* Added Support for Undefined Type / Severity Sorting\r\n",
+            "insertions": 4,
+            "deletions": 2
+          },
+          {
+            "hash": "00715596aa10fcf9e3eb6906b60bd7ef68989168",
+            "messageTitle": "Prevent Empty Submissions (#252)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* New Lines will not be added if text is empty\r\n\r\nPrevents the addition of new lines if the text in the comment editor is\r\nalready empty. This will prevent the new lines from being automatically\r\nadded and thus not enabling the submit button when there are empty\r\nlines.\r\n\r\n* Removes Text if only Blank Lines / New Lines are Detected\r\n",
+            "insertions": 6,
+            "deletions": 1
+          },
+          {
+            "hash": "547aeb0d56505c748297c711840e48330f452c25",
+            "messageTitle": "Assignee flicker fix (#251)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Fix for Checkbox Flicker Issue\r\n\r\nEnsured that updating of assignees happens after the select box is\r\nclosed instead of when the selection is made itself.\r\n\r\n* Prevent Issue Mutation Prior to Backend Update\r\n",
+            "insertions": 6,
+            "deletions": 3
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -1959,7 +1994,7 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 3289,
+    "ptvrajsk": 3322,
     "KevinCJH": 1671
   },
   "authorFileTypeContributionMap": {
@@ -1970,8 +2005,8 @@
       "md": 28,
       "py": 0,
       "tag": 0,
-      "html": 327,
-      "ts": 2934
+      "html": 329,
+      "ts": 2965
     },
     "KevinCJH": {
       "java": 0,
@@ -1985,8 +2020,8 @@
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 18103.764,
-    "KevinCJH": 12955.782
+    "ptvrajsk": 17041.242,
+    "KevinCJH": 12217.043
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
