@@ -1,6 +1,6 @@
 {
   "repoSenseVersion": "a98ec7e5c0",
-  "reportGeneratedTime": "Wed Oct 16 12:18:56 2019 UTC+08:00",
+  "reportGeneratedTime": "Thu Oct 17 12:19:13 2019 UTC+08:00",
   "repos": [
     {
       "location": {
@@ -115,7 +115,7 @@
   ],
   "errorList": [],
   "sinceDate": "2019-05-13",
-  "untilDate": "2019-10-16",
+  "untilDate": "2019-10-17",
   "isSinceDateProvided": true,
   "isUntilDateProvided": false
 }

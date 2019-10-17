@@ -1,200 +1,200 @@
-Oct 16, 2019 4:18:56 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:19:13 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/markbind/markbind.git...
-Oct 16, 2019 4:18:56 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:19:13 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/markbind/markbind.git to complete...
-Oct 16, 2019 4:18:57 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:19:14 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/markbind/markbind.git completed!
-Oct 16, 2019 4:18:57 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:19:14 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/TEAMMATES/teammates.git...
-Oct 16, 2019 4:18:57 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:19:14 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [1/11] Analyzing https://github.com/markbind/markbind.git (master)...
-Oct 16, 2019 4:18:57 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:19:14 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/markbind/markbind.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:18:57 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:19:14 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/markbind/markbind.git (master)...
-Oct 16, 2019 4:18:58 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:19:15 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/markbind/markbind.git (master)...
-Oct 16, 2019 4:18:58 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:19:15 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/markbind/markbind.git (master)...
-Oct 16, 2019 4:19:07 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:19:22 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/markbind/markbind.git (master) completed!
-Oct 16, 2019 4:19:07 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:19:22 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/TEAMMATES/teammates.git to complete...
-Oct 16, 2019 4:19:25 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:19:42 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/TEAMMATES/teammates.git completed!
-Oct 16, 2019 4:19:25 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:19:42 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/reposense/reposense.git...
-Oct 16, 2019 4:19:25 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:19:42 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [2/11] Analyzing https://github.com/TEAMMATES/teammates.git (master)...
-Oct 16, 2019 4:19:26 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:19:43 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/TEAMMATES/teammates.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:19:26 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:19:43 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/TEAMMATES/teammates.git (master)...
-Oct 16, 2019 4:19:27 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:19:43 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/TEAMMATES/teammates.git (master)...
-Oct 16, 2019 4:19:27 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:19:43 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/TEAMMATES/teammates.git (master)...
-Oct 16, 2019 4:19:45 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:20:00 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/TEAMMATES/teammates.git (master) completed!
-Oct 16, 2019 4:19:45 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:00 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/reposense/reposense.git to complete...
-Oct 16, 2019 4:19:45 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:00 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/reposense/reposense.git completed!
-Oct 16, 2019 4:19:45 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:20:00 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/powerpointlabs/powerpointlabs.git...
-Oct 16, 2019 4:19:45 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:20:00 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [3/11] Analyzing https://github.com/reposense/reposense.git (master)...
-Oct 16, 2019 4:19:46 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:20:00 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: Ignoring standalone config file in https://github.com/reposense/reposense.git (master).
-Oct 16, 2019 4:19:46 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:20:00 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/reposense/reposense.git (master)...
-Oct 16, 2019 4:19:46 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:20:01 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/reposense/reposense.git (master)...
-Oct 16, 2019 4:19:46 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:20:01 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/reposense/reposense.git (master)...
-Oct 16, 2019 4:20:33 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:20:46 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/reposense/reposense.git (master) completed!
-Oct 16, 2019 4:20:33 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:46 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/powerpointlabs/powerpointlabs.git to complete...
-Oct 16, 2019 4:20:33 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:46 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/powerpointlabs/powerpointlabs.git completed!
-Oct 16, 2019 4:20:33 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:20:46 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/se-edu/addressbook-level35.git...
-Oct 16, 2019 4:20:33 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:20:46 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [4/11] Analyzing https://github.com/powerpointlabs/powerpointlabs.git (dev-release)...
-Oct 16, 2019 4:20:34 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:20:47 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/powerpointlabs/powerpointlabs.git (dev-release) does not contain a standalone config file.
-Oct 16, 2019 4:20:34 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:20:47 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/powerpointlabs/powerpointlabs.git (dev-release)...
-Oct 16, 2019 4:20:36 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:20:48 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/powerpointlabs/powerpointlabs.git (dev-release)...
-Oct 16, 2019 4:20:36 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:20:48 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/powerpointlabs/powerpointlabs.git (dev-release)...
-Oct 16, 2019 4:20:45 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:20:57 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/powerpointlabs/powerpointlabs.git (dev-release) completed!
-Oct 16, 2019 4:20:45 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:57 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/se-edu/addressbook-level35.git to complete...
-Oct 16, 2019 4:20:45 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:57 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/se-edu/addressbook-level35.git completed!
-Oct 16, 2019 4:20:45 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:20:57 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/se-edu/addressbook-level2.git...
-Oct 16, 2019 4:20:45 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:20:57 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [5/11] Analyzing https://github.com/se-edu/addressbook-level35.git (master)...
-Oct 16, 2019 4:20:45 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:20:57 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/se-edu/addressbook-level35.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:20:45 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:20:57 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/se-edu/addressbook-level35.git (master)...
-Oct 16, 2019 4:20:45 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:20:57 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/se-edu/addressbook-level35.git (master)...
-Oct 16, 2019 4:20:45 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:20:57 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/se-edu/addressbook-level35.git (master)...
-Oct 16, 2019 4:20:46 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:20:58 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/se-edu/addressbook-level35.git (master) completed!
-Oct 16, 2019 4:20:46 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:58 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/se-edu/addressbook-level2.git to complete...
-Oct 16, 2019 4:20:46 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:58 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/se-edu/addressbook-level2.git completed!
-Oct 16, 2019 4:20:46 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:20:58 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/markbind/vue-strap.git...
-Oct 16, 2019 4:20:46 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:20:58 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [6/11] Analyzing https://github.com/se-edu/addressbook-level2.git (master)...
-Oct 16, 2019 4:20:46 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:20:58 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/se-edu/addressbook-level2.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:20:46 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:20:58 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/se-edu/addressbook-level2.git (master)...
-Oct 16, 2019 4:20:46 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:20:58 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/se-edu/addressbook-level2.git (master)...
-Oct 16, 2019 4:20:46 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:20:58 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/se-edu/addressbook-level2.git (master)...
-Oct 16, 2019 4:20:47 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:20:59 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/se-edu/addressbook-level2.git (master) completed!
-Oct 16, 2019 4:20:47 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:20:59 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/markbind/vue-strap.git to complete...
-Oct 16, 2019 4:20:51 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:03 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/markbind/vue-strap.git completed!
-Oct 16, 2019 4:20:51 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:21:03 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/powerpointlabs/PowerPointLabs-Website.git...
-Oct 16, 2019 4:20:51 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:21:03 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [7/11] Analyzing https://github.com/markbind/vue-strap.git (master)...
-Oct 16, 2019 4:20:51 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:21:03 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/markbind/vue-strap.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:20:51 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:21:03 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/markbind/vue-strap.git (master)...
-Oct 16, 2019 4:20:51 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:21:03 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/markbind/vue-strap.git (master)...
-Oct 16, 2019 4:20:51 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:21:03 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/markbind/vue-strap.git (master)...
-Oct 16, 2019 4:20:57 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:21:08 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/markbind/vue-strap.git (master) completed!
-Oct 16, 2019 4:20:57 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:08 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/powerpointlabs/PowerPointLabs-Website.git to complete...
-Oct 16, 2019 4:20:57 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:08 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/powerpointlabs/PowerPointLabs-Website.git completed!
-Oct 16, 2019 4:20:57 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:21:08 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/se-edu/addressbook-level1.git...
-Oct 16, 2019 4:20:57 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:21:08 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [8/11] Analyzing https://github.com/powerpointlabs/PowerPointLabs-Website.git (master)...
-Oct 16, 2019 4:20:58 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:21:09 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/powerpointlabs/PowerPointLabs-Website.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:20:58 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:21:09 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/powerpointlabs/PowerPointLabs-Website.git (master)...
-Oct 16, 2019 4:20:58 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:21:09 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/powerpointlabs/PowerPointLabs-Website.git (master)...
-Oct 16, 2019 4:20:58 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:21:09 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/powerpointlabs/PowerPointLabs-Website.git (master)...
-Oct 16, 2019 4:20:58 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:21:10 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/powerpointlabs/PowerPointLabs-Website.git (master) completed!
-Oct 16, 2019 4:20:58 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:10 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/se-edu/addressbook-level1.git to complete...
-Oct 16, 2019 4:20:58 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:10 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/se-edu/addressbook-level1.git completed!
-Oct 16, 2019 4:20:59 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:21:10 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/CATcher-org/CATcher.git...
-Oct 16, 2019 4:20:59 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:21:10 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [9/11] Analyzing https://github.com/se-edu/addressbook-level1.git (master)...
-Oct 16, 2019 4:20:59 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:21:10 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/se-edu/addressbook-level1.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:20:59 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:21:10 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/se-edu/addressbook-level1.git (master)...
-Oct 16, 2019 4:20:59 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:21:10 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/se-edu/addressbook-level1.git (master)...
-Oct 16, 2019 4:20:59 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:21:10 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/se-edu/addressbook-level1.git (master)...
-Oct 16, 2019 4:20:59 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:21:11 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/se-edu/addressbook-level1.git (master) completed!
-Oct 16, 2019 4:20:59 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:11 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/CATcher-org/CATcher.git to complete...
-Oct 16, 2019 4:20:59 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:11 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/CATcher-org/CATcher.git completed!
-Oct 16, 2019 4:20:59 AM reposense.report.RepoCloner spawnCloneProcess
+Oct 17, 2019 4:21:11 AM reposense.report.RepoCloner spawnCloneProcess
 INFO: Cloning in parallel from https://github.com/se-edu/addressbook-level4.git...
-Oct 16, 2019 4:20:59 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:21:11 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [10/11] Analyzing https://github.com/CATcher-org/CATcher.git (master)...
-Oct 16, 2019 4:20:59 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:21:11 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/CATcher-org/CATcher.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:20:59 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:21:11 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/CATcher-org/CATcher.git (master)...
-Oct 16, 2019 4:20:59 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:21:11 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/CATcher-org/CATcher.git (master)...
-Oct 16, 2019 4:20:59 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:21:11 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/CATcher-org/CATcher.git (master)...
-Oct 16, 2019 4:21:01 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:21:13 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/CATcher-org/CATcher.git (master) completed!
-Oct 16, 2019 4:21:01 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:13 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Waiting for cloning of https://github.com/se-edu/addressbook-level4.git to complete...
-Oct 16, 2019 4:21:01 AM reposense.report.RepoCloner waitForCloneProcess
+Oct 17, 2019 4:21:13 AM reposense.report.RepoCloner waitForCloneProcess
 INFO: Cloning of https://github.com/se-edu/addressbook-level4.git completed!
-Oct 16, 2019 4:21:02 AM reposense.report.ReportGenerator analyzeRepos
+Oct 17, 2019 4:21:13 AM reposense.report.ReportGenerator analyzeRepos
 INFO: [11/11] Analyzing https://github.com/se-edu/addressbook-level4.git (master)...
-Oct 16, 2019 4:21:02 AM reposense.report.ReportGenerator updateRepoConfig
+Oct 17, 2019 4:21:13 AM reposense.report.ReportGenerator updateRepoConfig
 INFO: https://github.com/se-edu/addressbook-level4.git (master) does not contain a standalone config file.
-Oct 16, 2019 4:21:02 AM reposense.commits.CommitInfoExtractor extractCommitInfos
+Oct 17, 2019 4:21:13 AM reposense.commits.CommitInfoExtractor extractCommitInfos
 INFO: Extracting commits info for https://github.com/se-edu/addressbook-level4.git (master)...
-Oct 16, 2019 4:21:02 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
+Oct 17, 2019 4:21:13 AM reposense.commits.CommitInfoAnalyzer analyzeCommits
 INFO: Analyzing commits info for https://github.com/se-edu/addressbook-level4.git (master)...
-Oct 16, 2019 4:21:02 AM reposense.authorship.FileInfoExtractor extractFileInfos
+Oct 17, 2019 4:21:13 AM reposense.authorship.FileInfoExtractor extractFileInfos
 INFO: Extracting relevant file info from https://github.com/se-edu/addressbook-level4.git (master)...
-Oct 16, 2019 4:21:02 AM reposense.report.ReportGenerator analyzeRepo
+Oct 17, 2019 4:21:13 AM reposense.report.ReportGenerator analyzeRepo
 INFO: Analysis of https://github.com/se-edu/addressbook-level4.git (master) completed!
-Oct 16, 2019 4:21:02 AM reposense.report.ReportGenerator generateReposReport
+Oct 17, 2019 4:21:14 AM reposense.report.ReportGenerator generateReposReport
 INFO: The report is generated at /home/travis/build/nus-oss/2019-summer-interns/reposense-report
