@@ -1614,388 +1614,395 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  },"
+        "content": "  }"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  {"
+        "content": "  // ,"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    role: \u0027help\u0027,"
+        "content": "  // {"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    submenu: ["
+        "content": "  //   role: \u0027help\u0027,"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      {"
+        "content": "  //   submenu: ["
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        label: \u0027User Guide\u0027,"
+        "content": "  //     {"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "        click () { require(\u0027electron\u0027).shell.openExternal(\u0027https://catcher-org.github.io/\u0027); }"
+        "content": "  //       label: \u0027User Guide\u0027,"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "      }"
+        "content": "  //       click () { require(\u0027electron\u0027).shell.openExternal(\u0027https://catcher-org.github.io/\u0027); }"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    ]"
+        "content": "  //     }"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  }"
+        "content": "  //   ]"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "];"
+        "content": "  // }"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "];"
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "if (isDevMode()) {"
+        "content": ""
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  let viewSubMenu: MenuItemConstructorOptions[];"
+        "content": "if (isDevMode()) {"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  viewSubMenu \u003d mainMenuTemplate[2].submenu as MenuItemConstructorOptions[];"
+        "content": "  let viewSubMenu: MenuItemConstructorOptions[];"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  viewSubMenu.push("
+        "content": "  viewSubMenu \u003d mainMenuTemplate[2].submenu as MenuItemConstructorOptions[];"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    { type: \u0027separator\u0027 },"
+        "content": "  viewSubMenu.push("
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    { role: \u0027toggledevtools\u0027}"
+        "content": "    { type: \u0027separator\u0027 },"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "  );"
+        "content": "    { role: \u0027toggledevtools\u0027}"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "}"
+        "content": "  );"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "}"
       },
       {
         "lineNumber": 115,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "try {"
+        "content": ""
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "try {"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "  // This method will be called when Electron has finished"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": "  // initialization and is ready to create browser windows."
+        "content": "  // This method will be called when Electron has finished"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Some APIs can only be used after this event occurs."
+        "content": "  // initialization and is ready to create browser windows."
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "  app.on(\u0027ready\u0027, () \u003d\u003e {"
+        "content": "  // Some APIs can only be used after this event occurs."
       },
       {
         "lineNumber": 121,
         "author": {
-          "gitId": "ptvrajsk"
+          "gitId": "-"
         },
-        "content": ""
+        "content": "  app.on(\u0027ready\u0027, () \u003d\u003e {"
       },
       {
         "lineNumber": 122,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    // Build and Attach Menu-bar template to application."
+        "content": ""
       },
       {
         "lineNumber": 123,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    const mainMenu \u003d Menu.buildFromTemplate(mainMenuTemplate);"
+        "content": "    // Build and Attach Menu-bar template to application."
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    Menu.setApplicationMenu(mainMenu);"
+        "content": "    const mainMenu \u003d Menu.buildFromTemplate(mainMenuTemplate);"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": ""
+        "content": "    Menu.setApplicationMenu(mainMenu);"
       },
       {
         "lineNumber": 126,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    createWindow();"
+        "content": ""
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    createWindow();"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Quit when all windows are closed."
+        "content": ""
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "  app.on(\u0027window-all-closed\u0027, () \u003d\u003e {"
+        "content": "  // Quit when all windows are closed."
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "    // On OS X it is common for applications and their menu bar"
+        "content": "  app.on(\u0027window-all-closed\u0027, () \u003d\u003e {"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "    // to stay active until the user quits explicitly with Cmd + Q"
+        "content": "    // On OS X it is common for applications and their menu bar"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (process.platform !\u003d\u003d \u0027darwin\u0027) {"
+        "content": "    // to stay active until the user quits explicitly with Cmd + Q"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "      app.quit();"
+        "content": "    if (process.platform !\u003d\u003d \u0027darwin\u0027) {"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      app.quit();"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    }"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "  app.on(\u0027activate\u0027, () \u003d\u003e {"
+        "content": ""
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "    // On OS X it\u0027s common to re-create a window in the app when the"
+        "content": "  app.on(\u0027activate\u0027, () \u003d\u003e {"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "    // dock icon is clicked and there are no other windows open."
+        "content": "    // On OS X it\u0027s common to re-create a window in the app when the"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "    if (win \u003d\u003d\u003d null) {"
+        "content": "    // dock icon is clicked and there are no other windows open."
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": "      createWindow();"
+        "content": "    if (win \u003d\u003d\u003d null) {"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      createWindow();"
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
-        "content": "  });"
+        "content": "    }"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  });"
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": "} catch (e) {"
+        "content": ""
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "  // Catch Error"
+        "content": "} catch (e) {"
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": "  // throw e;"
+        "content": "  // Catch Error"
       },
       {
         "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  // throw e;"
+      },
+      {
+        "lineNumber": 150,
         "author": {
           "gitId": "-"
         },
@@ -2003,7 +2010,7 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 71,
+      "ptvrajsk": 72,
       "-": 78
     }
   },
@@ -55645,7 +55652,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    if (event.target.value !\u003d\u003d disagree) {"
+        "content": "    if (event.target.value !\u003d\u003d disagree \u0026\u0026 event.target.value !\u003d\u003d undefined) {"
       },
       {
         "lineNumber": 108,
