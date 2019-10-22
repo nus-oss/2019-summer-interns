@@ -9777,577 +9777,66 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      #authorship"
+        "content": "      include tabs/authorship.pug"
       },
       {
         "lineNumber": 262,
         "author": {
           "gitId": "-"
         },
-        "content": "        .toolbar(v-if\u003d\"hasCommits(info)\")"
+        "content": ""
       },
       {
         "lineNumber": 263,
         "author": {
           "gitId": "-"
         },
-        "content": "            a(v-if\u003d\"activeFilesCount \u003d\u003d\u003d 0\", v-on:click\u003d\"expandAll(true)\") Expand all"
-      },
-      {
-        "lineNumber": 264,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            a(v-else, v-on:click\u003d\"expandAll(false)\") Collapse all"
-      },
-      {
-        "lineNumber": 265,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        .title"
-      },
-      {
-        "lineNumber": 266,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          a.repoName.large-font("
-      },
-      {
-        "lineNumber": 267,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            v-bind:href\u003d\"info.location\", target\u003d\"_blank\","
-      },
-      {
-        "lineNumber": 268,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            v-bind:title\u003d\"\u0027Click to open the repo\u0027\""
-      },
-      {
-        "lineNumber": 269,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          ) {{ info.repo }}"
-      },
-      {
-        "lineNumber": 270,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          .author.medium-font"
-      },
-      {
-        "lineNumber": 271,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            span \u0026#8627; \u0026nbsp;"
-      },
-      {
-        "lineNumber": 272,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            span {{ info.name }} ({{ info.author }})"
-      },
-      {
-        "lineNumber": 273,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "          .period.medium-font"
-      },
-      {
-        "lineNumber": 274,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            span \u0026#8627; \u0026nbsp;"
-      },
-      {
-        "lineNumber": 275,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            span {{ info.minDate }} to {{ info.maxDate }}"
-      },
-      {
-        "lineNumber": 276,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          .contribution(v-if\u003d\"isLoaded \u0026\u0026 files.length!\u003d0\")"
-      },
-      {
-        "lineNumber": 277,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            .sorting.mui-form--inline"
-      },
-      {
-        "lineNumber": 278,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "              .mui-select"
-      },
-      {
-        "lineNumber": 279,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                select.medium-font(v-model\u003d\"filesSortType\")"
-      },
-      {
-        "lineNumber": 280,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                  option(value\u003d\"lineOfCode\") LoC"
-      },
-      {
-        "lineNumber": 281,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                  option(value\u003d\"path\") Path"
-      },
-      {
-        "lineNumber": 282,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                  option(value\u003d\"fileName\") File Name"
-      },
-      {
-        "lineNumber": 283,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                  option(value\u003d\"fileType\") File Type"
-      },
-      {
-        "lineNumber": 284,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                label.medium-font sort by"
-      },
-      {
-        "lineNumber": 285,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "              label"
-      },
-      {
-        "lineNumber": 286,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                input(type\u003d\"checkbox\", v-model\u003d\"toReverseSortFiles\").mui-checkbox"
-      },
-      {
-        "lineNumber": 287,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                span.medium-font.reverse reverse"
-      },
-      {
-        "lineNumber": 288,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            .searchbox"
-      },
-      {
-        "lineNumber": 289,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              input.radio-button--search(type\u003d\"radio\", name\u003d\"filter\", value\u003d\"search\", v-bind:checked\u003d\"isSearchBar\","
-      },
-      {
-        "lineNumber": 290,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  v-on:click\u003d\"indicateSearchBar\")"
-      },
-      {
-        "lineNumber": 291,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              form.file-picker.mui-form--inline(onsubmit\u003d\"return false\")"
-      },
-      {
-        "lineNumber": 292,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                input#search.medium-font(type\u003d\"search\", placeholder\u003d\"Filter by glob\", v-on:change\u003d\"updateFilterSearch\","
-      },
-      {
-        "lineNumber": 293,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                    v-on:click\u003d\"indicateSearchBar\")"
-      },
-      {
-        "lineNumber": 294,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                button#submit-button.medium-font(type\u003d\"submit\", v-on:click\u003d\"indicateSearchBar\") Filter"
-      },
-      {
-        "lineNumber": 295,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "            .fileType"
-      },
-      {
-        "lineNumber": 296,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              input.radio-button--checkbox(type\u003d\"radio\", name\u003d\"filter\", value\u003d\"checkboxes\", v-bind:checked\u003d\"isCheckBoxes\","
-      },
-      {
-        "lineNumber": 297,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  v-on:click\u003d\"indicateCheckBoxes\")"
-      },
-      {
-        "lineNumber": 298,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              div.checkboxes.mui-form--inline(v-if\u003d\"files.length \u003e 0\")"
-      },
-      {
-        "lineNumber": 299,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                label"
-      },
-      {
-        "lineNumber": 300,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                  input.mui-checkbox--fileType(type\u003d\"checkbox\" v-on:click\u003d\"selectAll\" v-model\u003d\"isSelectAllChecked\")"
-      },
-      {
-        "lineNumber": 301,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  span(v-bind:title\u003d\"getTotalFileBlankLineInfo()\")"
-      },
-      {
-        "lineNumber": 302,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                    span.select.medium-font All:\u0026nbsp;"
-      },
-      {
-        "lineNumber": 303,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                    span.loc.medium-font {{ totalLineCount }}\u0026nbsp;"
-      },
-      {
-        "lineNumber": 304,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                    span.bloc.medium-font ({{ totalBlankLineCount }})"
-      },
-      {
-        "lineNumber": 305,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                template(v-for\u003d\"fileType in Object.keys(getFileTypeExistingLinesObj)\")"
-      },
-      {
-        "lineNumber": 306,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                  label(v-bind:key\u003d\"fileType\")"
-      },
-      {
-        "lineNumber": 307,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                    input.mui-checkbox--fileType(type\u003d\"checkbox\" v-bind:checked\u003d\"selectedFileTypes.includes(fileType)\""
-      },
-      {
-        "lineNumber": 308,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                        v-on:change\u003d\"selectFileType(fileType)\")"
-      },
-      {
-        "lineNumber": 309,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                    span(v-bind:title\u003d\"getFileTypeBlankLineInfo(fileType)\")"
-      },
-      {
-        "lineNumber": 310,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                      span {{ fileType }}: {{ getFileTypeExistingLinesObj[fileType] }}\u0026nbsp;"
-      },
-      {
-        "lineNumber": 311,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "                      span.bloc ({{ fileTypeBlankLinesObj[fileType] }})"
-      },
-      {
-        "lineNumber": 312,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 313,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        .files(v-if\u003d\"isLoaded\")"
-      },
-      {
-        "lineNumber": 314,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          .empty(v-if\u003d\"files.length \u003d\u003d\u003d 0\") nothing to see here :("
-      },
-      {
-        "lineNumber": 315,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          template(v-for\u003d\"file in selectedFiles\")"
-      },
-      {
-        "lineNumber": 316,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            .file.active(v-bind:key\u003d\"file.path\")"
-      },
-      {
-        "lineNumber": 317,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              .title"
-      },
-      {
-        "lineNumber": 318,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                span.path(onclick\u003d\"toggleNext(this.parentNode)\", v-on:click\u003d\"updateCount\") {{ file.path }}\u0026nbsp;"
-      },
-      {
-        "lineNumber": 319,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                span.loc ({{ file.lineCount }} lines)"
-      },
-      {
-        "lineNumber": 320,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                a("
-      },
-      {
-        "lineNumber": 321,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  v-bind:href\u003d\"getFileLink(file, \u0027commits\u0027)\", target\u003d\"_blank\","
-      },
-      {
-        "lineNumber": 322,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  title\u003d\"click to view the history view of file\""
-      },
-      {
-        "lineNumber": 323,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                )"
-      },
-      {
-        "lineNumber": 324,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  i.button.fas.fa-history"
-      },
-      {
-        "lineNumber": 325,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                a("
-      },
-      {
-        "lineNumber": 326,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  v-bind:href\u003d\"getFileLink(file, \u0027blame\u0027)\", target\u003d\"_blank\","
-      },
-      {
-        "lineNumber": 327,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  title\u003d\"click to view the blame view of file\""
-      },
-      {
-        "lineNumber": 328,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                )"
-      },
-      {
-        "lineNumber": 329,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                  i.button.fas.fa-user-edit"
-      },
-      {
-        "lineNumber": 330,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "              pre.hljs"
-      },
-      {
-        "lineNumber": 331,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                div(v-for\u003d\"segment in file.segments\")"
-      },
-      {
-        "lineNumber": 332,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "                  v_segment(v-bind:segment\u003d\"segment\", v-bind:path\u003d\"file.path\")"
-      },
-      {
-        "lineNumber": 333,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 334,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        .empty(v-else) loading..."
-      },
-      {
-        "lineNumber": 335,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 336,
-        "author": {
-          "gitId": "-"
-        },
         "content": "    script(src\u003d\"static/js/api.js\")"
       },
       {
-        "lineNumber": 337,
+        "lineNumber": 264,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    script(src\u003d\"static/js/safari_date.js\")"
       },
       {
-        "lineNumber": 338,
+        "lineNumber": 265,
         "author": {
           "gitId": "-"
         },
         "content": "    script(src\u003d\"static/js/v_ramp.js\")"
       },
       {
-        "lineNumber": 339,
+        "lineNumber": 266,
         "author": {
           "gitId": "-"
         },
         "content": "    script(src\u003d\"static/js/v_zoom.js\")"
       },
       {
-        "lineNumber": 340,
+        "lineNumber": 267,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    script(src\u003d\"static/js/v_segment.js\")"
       },
       {
-        "lineNumber": 341,
+        "lineNumber": 268,
         "author": {
           "gitId": "-"
         },
         "content": "    script(src\u003d\"static/js/v_summary.js\")"
       },
       {
-        "lineNumber": 342,
+        "lineNumber": 269,
         "author": {
           "gitId": "-"
         },
         "content": "    script(src\u003d\"static/js/v_authorship.js\")"
       },
       {
-        "lineNumber": 343,
+        "lineNumber": 270,
         "author": {
           "gitId": "-"
         },
@@ -10355,10 +9844,10 @@
       }
     ],
     "authorContributionMap": {
-      "jylee-git": 35,
+      "jylee-git": 25,
       "bluein-green": 5,
-      "jamessspanggg": 84,
-      "-": 219
+      "jamessspanggg": 59,
+      "-": 181
     }
   },
   {
