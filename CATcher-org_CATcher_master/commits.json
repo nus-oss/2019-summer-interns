@@ -840,6 +840,27 @@
             "deletions": 1
           }
         ]
+      },
+      {
+        "insertions": 139,
+        "deletions": 52,
+        "date": "2019-10-22",
+        "commitResults": [
+          {
+            "hash": "625f198c65431ea07649b5a300e48dfbe7212488",
+            "messageTitle": "Comment editor enhancements (#263)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Save Button disabled on Upload\r\n\r\nSave Button will be disabled when an upload is initiated and re-enabled\r\nwhen upload is complete. This is currently only working in the\r\nTester-Response phase.\r\n\r\n* Submit Button Disabled During File Upload for all Phases\r\n\r\n* Button Text Modification on Upload\r\n\r\nWhen a file is uploaded, the button text is changed to reflect that the\r\nbutton is disabled to allow for the uploading of a file.\r\n\r\n* Change Uploading Button Text\r\n\r\n* Fix App Break Mid Upload\r\n\r\nPreviously when a file (not image) is in mid-upload stage, changing to\r\npreview and clicking the makdown-hyperlink causes the app to break / log\r\nthe user out in some cases. This has been fixed by simply letting the\r\nmid upload text exclude the parenthesis at the end.\r\n",
+            "insertions": 134,
+            "deletions": 47
+          },
+          {
+            "hash": "6f5c6bc0c27377fe19b723f8ccdc978ad5207f03",
+            "messageTitle": "Added dash in data csv (#264)",
+            "messageBody": "* TypeScript Fix\r\n\r\n* Added support for Additional Dash in data.csv team\r\n",
+            "insertions": 5,
+            "deletions": 5
+          }
+        ]
       }
     ],
     "KevinCJH": [
@@ -2015,8 +2036,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 3323,
-    "KevinCJH": 1671
+    "ptvrajsk": 3438,
+    "KevinCJH": 1653
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -2026,8 +2047,8 @@
       "md": 28,
       "py": 0,
       "tag": 0,
-      "html": 329,
-      "ts": 2966
+      "html": 380,
+      "ts": 3030
     },
     "KevinCJH": {
       "java": 0,
@@ -2036,13 +2057,13 @@
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 269,
-      "ts": 1402
+      "html": 260,
+      "ts": 1393
     }
   },
   "authorContributionVariance": {
-    "ptvrajsk": 16552.812,
-    "KevinCJH": 11878.039
+    "ptvrajsk": 16594.875,
+    "KevinCJH": 11812.441
   },
   "authorDisplayNameMap": {
     "ptvrajsk": "Prithiviraj",
