@@ -862,9 +862,9 @@
     ]
   },
   "authorFinalContributionMap": {
-    "jylee-git": 2197,
+    "jylee-git": 2196,
     "bluein-green": 179,
-    "jamessspanggg": 1207
+    "jamessspanggg": 1205
   },
   "authorFileTypeContributionMap": {
     "jylee-git": {
@@ -876,7 +876,7 @@
       "py": 0,
       "jade": 0,
       "gradle": 5,
-      "pug": 42
+      "pug": 41
     },
     "bluein-green": {
       "java": 98,
@@ -891,10 +891,10 @@
     },
     "jamessspanggg": {
       "java": 171,
-      "js": 375,
+      "js": 374,
       "scss": 491,
       "json": 34,
-      "md": 37,
+      "md": 36,
       "py": 0,
       "jade": 0,
       "gradle": 0,
