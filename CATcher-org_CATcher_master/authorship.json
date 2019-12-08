@@ -28971,9 +28971,9 @@
       {
         "lineNumber": 26,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    if (SUPPORTED_FILE_TYPES.includes(fileType)) {"
+        "content": "    if (SUPPORTED_FILE_TYPES.includes(fileType.toLowerCase())) {"
       },
       {
         "lineNumber": 27,
@@ -29050,7 +29050,7 @@
         "author": {
           "gitId": "ptvrajsk"
         },
-        "content": "    return SUPPORTED_FILE_TYPES.includes(fileType);"
+        "content": "    return SUPPORTED_FILE_TYPES.includes(fileType.toLowerCase());"
       },
       {
         "lineNumber": 38,
@@ -29068,8 +29068,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 7,
-      "-": 32
+      "ptvrajsk": 8,
+      "-": 31
     }
   },
   {
@@ -39881,9 +39881,9 @@
       {
         "lineNumber": 232,
         "author": {
-          "gitId": "-"
+          "gitId": "ptvrajsk"
         },
-        "content": "    if (DISPLAYABLE_CONTENT.includes(fileType)) {"
+        "content": "    if (DISPLAYABLE_CONTENT.includes(fileType.toLowerCase())) {"
       },
       {
         "lineNumber": 233,
@@ -40230,8 +40230,8 @@
       }
     ],
     "authorContributionMap": {
-      "ptvrajsk": 108,
-      "-": 173
+      "ptvrajsk": 109,
+      "-": 172
     }
   },
   {
