@@ -2600,7 +2600,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "* Node.js (LTS or higher) [with npm version of 5.8.0]"
+        "content": "* Node.js (LTS or higher) [with npm version of 6.12.1 or higher]"
       },
       {
         "lineNumber": 13,
@@ -3314,7 +3314,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "A: If your npm version is v6.0.0 or higher, there is a change in behaviour on how npm install dependencies (see https://github.com/MarkBind/markbind/issues/582). To resolve this issue, discard the changes made by npm in `package-lock.json`, and redo `npm install`."
+        "content": "A: Please report this in a [new issue](https://github.com/MarkBind/markbind/issues/new), since this should already be fixed by [MarkBind/markbind#948](https://github.com/MarkBind/markbind/pull/948)."
       },
       {
         "lineNumber": 115,
@@ -11566,7 +11566,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  \"version\": \"2.6.0\","
+        "content": "  \"version\": \"2.7.0\","
       },
       {
         "lineNumber": 4,
@@ -11692,28 +11692,28 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"@sindresorhus/slugify\": \"^0.8.0\","
+        "content": "    \"@sindresorhus/slugify\": \"^0.9.1\","
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"bluebird\": \"^3.4.7\","
+        "content": "    \"bluebird\": \"^3.7.2\","
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"bootswatch\": \"^4.3.1\","
+        "content": "    \"bootswatch\": \"^4.4.1\","
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"chalk\": \"^1.1.3\","
+        "content": "    \"chalk\": \"^3.0.0\","
       },
       {
         "lineNumber": 25,
@@ -11727,21 +11727,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"chokidar\": \"^2.1.5\","
+        "content": "    \"chokidar\": \"^3.3.0\","
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"commander\": \"^2.9.0\","
+        "content": "    \"commander\": \"^3.0.2\","
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"ejs\": \"^2.5.5\","
+        "content": "    \"ejs\": \"^3.0.1\","
       },
       {
         "lineNumber": 29,
@@ -11755,56 +11755,56 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"figlet\": \"^1.2.0\","
+        "content": "    \"figlet\": \"^1.2.4\","
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"find-up\": \"^2.1.0\","
+        "content": "    \"find-up\": \"^4.1.0\","
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"fs-extra-promise\": \"^0.4.1\","
+        "content": "    \"fs-extra-promise\": \"^1.0.1\","
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"gh-pages\": \"^2.0.1\","
+        "content": "    \"gh-pages\": \"^2.1.1\","
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"highlight.js\": \"^9.10.0\","
+        "content": "    \"highlight.js\": \"^9.14.2\","
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"htmlparser2\": \"MarkBind/htmlparser2#v3.10.0-markbind.1\","
+        "content": "    \"htmlparser2\": \"^3.10.1\","
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"ignore\": \"^3.2.0\","
+        "content": "    \"ignore\": \"^5.1.4\","
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"js-beautify\": \"^1.6.12\","
+        "content": "    \"js-beautify\": \"~1.7.5\","
       },
       {
         "lineNumber": 38,
@@ -11818,35 +11818,35 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"lodash\": \"^4.17.11\","
+        "content": "    \"lodash\": \"^4.17.15\","
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"markdown-it\": \"^8.3.0\","
+        "content": "    \"markdown-it\": \"^8.4.2\","
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"markdown-it-anchor\": \"^5.0.2\","
+        "content": "    \"markdown-it-anchor\": \"^5.2.5\","
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"markdown-it-attrs\": \"^2.3.2\","
+        "content": "    \"markdown-it-attrs\": \"^2.4.1\","
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"markdown-it-emoji\": \"^1.3.0\","
+        "content": "    \"markdown-it-emoji\": \"^1.4.0\","
       },
       {
         "lineNumber": 44,
@@ -11867,7 +11867,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"markdown-it-linkify-images\": \"^1.1.0\","
+        "content": "    \"markdown-it-linkify-images\": \"^1.1.1\","
       },
       {
         "lineNumber": 47,
@@ -11888,7 +11888,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"markdown-it-table-of-contents\": \"^0.4.3\","
+        "content": "    \"markdown-it-table-of-contents\": \"^0.4.4\","
       },
       {
         "lineNumber": 50,
@@ -11902,7 +11902,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"markdown-it-video\": \"^0.4.0\","
+        "content": "    \"markdown-it-video\": \"^0.6.3\","
       },
       {
         "lineNumber": 52,
@@ -11923,14 +11923,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"progress\": \"^2.0.0\","
+        "content": "    \"progress\": \"^2.0.3\","
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"walk-sync\": \"^0.3.1\","
+        "content": "    \"walk-sync\": \"^2.0.2\","
       },
       {
         "lineNumber": 56,
@@ -11944,7 +11944,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"winston-daily-rotate-file\": \"^3.6.0\""
+        "content": "    \"winston-daily-rotate-file\": \"^3.10.0\""
       },
       {
         "lineNumber": 58,
@@ -12133,63 +12133,63 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    \"diff\": \"^3.5.0\","
+        "content": "    \"diff\": \"^4.0.1\","
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"eslint\": \"^5.16.0\","
+        "content": "    \"eslint\": \"^6.7.2\","
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"eslint-config-airbnb-base\": \"^13.1.0\","
+        "content": "    \"eslint-config-airbnb-base\": \"^14.0.0\","
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"eslint-plugin-import\": \"^2.16.0\","
+        "content": "    \"eslint-plugin-import\": \"^2.18.2\","
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"eslint-plugin-lodash\": \"^5.1.0\","
+        "content": "    \"eslint-plugin-lodash\": \"^6.0.0\","
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"jest\": \"^24.8.0\","
+        "content": "    \"jest\": \"^24.9.0\","
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"memfs\": \"^2.8.0\","
+        "content": "    \"memfs\": \"^3.0.1\","
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"stylelint\": \"^10.0.1\","
+        "content": "    \"stylelint\": \"^12.0.0\","
       },
       {
         "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "    \"stylelint-config-standard\": \"^18.3.0\""
+        "content": "    \"stylelint-config-standard\": \"^19.0.0\""
       },
       {
         "lineNumber": 93,
@@ -25867,7 +25867,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        .map(page \u003d\u003e Object.assign({ headings: page.headings }, page.frontMatter)),"
+        "content": "        .map(page \u003d\u003e ({ headings: page.headings, ...page.frontMatter })),"
       },
       {
         "lineNumber": 932,
@@ -29683,7 +29683,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "const htmlparser \u003d require(\u0027htmlparser2\u0027);"
+        "content": "const htmlparser \u003d require(\u0027htmlparser2\u0027); require(\u0027./patches/htmlparser2\u0027);"
       },
       {
         "lineNumber": 4,
@@ -35619,7 +35619,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "    const combinedBases \u003d Object.assign({}, childrenBase, foundBase);"
+        "content": "    const combinedBases \u003d { ...childrenBase, ...foundBase };"
       },
       {
         "lineNumber": 852,
