@@ -377,13 +377,13 @@
     ]
   },
   "authorFinalContributionMap": {
-    "openorclose": 1269,
-    "alyip98": 660
+    "openorclose": 1264,
+    "alyip98": 656
   },
   "authorFileTypeContributionMap": {
     "openorclose": {
       "java": 0,
-      "js": 595,
+      "js": 590,
       "css": 400,
       "json": 31,
       "md": 87,
@@ -395,7 +395,7 @@
     },
     "alyip98": {
       "java": 0,
-      "js": 145,
+      "js": 141,
       "css": 0,
       "json": 105,
       "md": 317,
