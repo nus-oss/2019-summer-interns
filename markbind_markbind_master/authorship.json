@@ -6675,364 +6675,364 @@
         "author": {
           "gitId": "-"
         },
-        "content": "```"
+        "content": "\u003cbox type\u003d\"success\" heading\u003d\"Tip box heading\"\u003e"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/span\u003e"
+        "content": "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan id\u003d\"output\"\u003e"
+        "content": "\u003cbox type\u003d\"warning\" heading\u003d\"Tip box heading\" dismissible\u003e"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox\u003e"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "    default"
+        "content": "```"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"info\"\u003e"
+        "content": "\u003cspan id\u003d\"output\"\u003e"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "    info"
+        "content": ""
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox\u003e"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"warning\"\u003e"
+        "content": "    default"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "    warning"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox type\u003d\"info\"\u003e"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"success\"\u003e"
+        "content": "    info"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "    success"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox type\u003d\"warning\"\u003e"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"important\"\u003e"
+        "content": "    warning"
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "    important"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox type\u003d\"success\"\u003e"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"wrong\"\u003e"
+        "content": "    success"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "    wrong"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox type\u003d\"important\"\u003e"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"tip\"\u003e"
+        "content": "    important"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "    tip"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox type\u003d\"wrong\"\u003e"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"definition\"\u003e"
+        "content": "    wrong"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "    definition"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox type\u003d\"tip\"\u003e"
       },
       {
         "lineNumber": 64,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"info\" dismissible\u003e"
+        "content": "    tip"
       },
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "    dismissible info"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 66,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cbox type\u003d\"definition\"\u003e"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    definition"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/span\u003e"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 69,
         "author": {
-          "gitId": "-"
+          "gitId": "alyip98"
         },
-        "content": "\u003c/include\u003e"
+        "content": "\u003cbox type\u003d\"info\" dismissible\u003e"
       },
       {
         "lineNumber": 70,
         "author": {
-          "gitId": "-"
+          "gitId": "alyip98"
         },
-        "content": ""
+        "content": "    dismissible info"
       },
       {
         "lineNumber": 71,
         "author": {
-          "gitId": "-"
+          "gitId": "alyip98"
         },
-        "content": ""
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "**You can customize the TipBox\u0027s appearance.**"
+        "content": "\u003cbox type\u003d\"success\" heading\u003d\"Tip box heading\"\u003e"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"outputBox.md\" boilerplate \u003e"
+        "content": "\u003cbox type\u003d\"warning\" heading\u003d\"Tip box heading\" dismissible\u003e"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan id\u003d\"code\"\u003e"
+        "content": "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "```html"
+        "content": ""
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox background-color\u003d\"white\" border-color\u003d\"grey\" border-left-color\u003d\"blue\"\u003e"
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "    default, styled as empty box with blue left border"
+        "content": "\u003c/include\u003e"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"info\" icon\u003d\":rocket:\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": "    info, with rocket icon"
+        "content": "**You can customize the TipBox\u0027s appearance.**"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": ""
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "```"
+        "content": "\u003cinclude src\u003d\"outputBox.md\" boilerplate \u003e"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/span\u003e"
+        "content": "\u003cspan id\u003d\"code\"\u003e"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan id\u003d\"output\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "```html"
       },
       {
         "lineNumber": 88,
@@ -7081,196 +7081,196 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/span\u003e"
+        "content": "```"
       },
       {
         "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/include\u003e"
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cspan id\u003d\"output\"\u003e"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "****Options****"
+        "content": ""
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "Name | Type | Default | Description"
+        "content": "\u003cbox background-color\u003d\"white\" border-color\u003d\"grey\" border-left-color\u003d\"blue\"\u003e"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "--- | --- | --- | ---"
+        "content": "    default, styled as empty box with blue left border"
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "background-color | `String` | `null` |"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "border-color | `String` | `null` |"
+        "content": "\u003cbox type\u003d\"info\" icon\u003d\":rocket:\"\u003e"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "border-left-color | `String` | `null` | Overrides border-color for the left border."
+        "content": "    info, with rocket icon"
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "color | `String` | `null` | Color of the text."
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "dismissible | `Boolean` | `false` | Adds a button to close the box to the top right corner."
-      },
-      {
-        "lineNumber": 105,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "icon | `String` | `null` |"
-      },
-      {
-        "lineNumber": 106,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "type | `String` | `\u0027none\u0027` | Supports: `info`, `warning`, `success`, `important`, `wrong`, `tip`, `definition`, or empty for default."
-      },
-      {
-        "lineNumber": 107,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 108,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "\u003cspan id\u003d\"short\" class\u003d\"d-none\"\u003e"
-      },
-      {
-        "lineNumber": 109,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "```html"
-      },
-      {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "\u003cbox type\u003d\"warning\"\u003e"
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "  warning"
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "-"
-        },
         "content": "\u003c/box\u003e"
       },
       {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "```"
-      },
-      {
-        "lineNumber": 114,
+        "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
         "content": "\u003c/span\u003e"
       },
       {
-        "lineNumber": 115,
+        "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan id\u003d\"examples\" class\u003d\"d-none\"\u003e"
+        "content": "\u003c/include\u003e"
       },
       {
-        "lineNumber": 116,
+        "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "****Options****"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "Name | Type | Default | Description"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "--- | --- | --- | ---"
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "background-color | `String` | `null` |"
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "border-color | `String` | `null` |"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "border-left-color | `String` | `null` | Overrides border-color for the left border."
+      },
+      {
+        "lineNumber": 113,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "color | `String` | `null` | Color of the text."
+      },
+      {
+        "lineNumber": 114,
+        "author": {
+          "gitId": "alyip98"
+        },
+        "content": "dismissible | `Boolean` | `false` | Adds a button to close the box to the top right corner."
+      },
+      {
+        "lineNumber": 115,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "icon | `String` | `null` |"
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "type | `String` | `\u0027none\u0027` | Supports: `info`, `warning`, `success`, `important`, `wrong`, `tip`, `definition`, or empty for default."
+      },
+      {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox\u003e"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": "    default"
+        "content": "\u003cspan id\u003d\"short\" class\u003d\"d-none\"\u003e"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "```html"
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"info\"\u003e"
+        "content": "\u003cbox type\u003d\"warning\"\u003e"
       },
       {
         "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
-        "content": "    info"
+        "content": "  warning"
       },
       {
         "lineNumber": 122,
@@ -7284,129 +7284,199 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"warning\"\u003e"
+        "content": "```"
       },
       {
         "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
-        "content": "    warning"
+        "content": "\u003c/span\u003e"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "\u003cspan id\u003d\"examples\" class\u003d\"d-none\"\u003e"
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"success\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": "    success"
+        "content": "\u003cbox\u003e"
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "    default"
       },
       {
         "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"important\"\u003e"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "    important"
+        "content": "\u003cbox type\u003d\"info\"\u003e"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "    info"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"wrong\"\u003e"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "    wrong"
+        "content": "\u003cbox type\u003d\"warning\"\u003e"
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "    warning"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"tip\"\u003e"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "    tip"
+        "content": "\u003cbox type\u003d\"success\"\u003e"
       },
       {
         "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "    success"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cbox type\u003d\"definition\"\u003e"
+        "content": "\u003c/box\u003e"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "    definition"
+        "content": "\u003cbox type\u003d\"important\"\u003e"
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/box\u003e"
+        "content": "    important"
       },
       {
         "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/box\u003e"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cbox type\u003d\"wrong\"\u003e"
+      },
+      {
+        "lineNumber": 143,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    wrong"
+      },
+      {
+        "lineNumber": 144,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/box\u003e"
+      },
+      {
+        "lineNumber": 145,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cbox type\u003d\"tip\"\u003e"
+      },
+      {
+        "lineNumber": 146,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    tip"
+      },
+      {
+        "lineNumber": 147,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/box\u003e"
+      },
+      {
+        "lineNumber": 148,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cbox type\u003d\"definition\"\u003e"
+      },
+      {
+        "lineNumber": 149,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    definition"
+      },
+      {
+        "lineNumber": 150,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/box\u003e"
+      },
+      {
+        "lineNumber": 151,
         "author": {
           "gitId": "-"
         },
@@ -7415,7 +7485,7 @@
     ],
     "authorContributionMap": {
       "alyip98": 7,
-      "-": 134
+      "-": 144
     }
   },
   {
