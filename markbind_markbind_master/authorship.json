@@ -39393,2250 +39393,1466 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
         "lineNumber": 6,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"popover-initiated-by-trigger-honor-trigger-attribute\": \"popover initiated by trigger: honor trigger attribute\","
+        "content": "      \"title\": \"Open Bugs\","
       },
       {
         "lineNumber": 7,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"support-multiple-inclusions-of-a-modal\": \"Support multiple inclusions of a modal\","
+        "content": "      \"header\": \"header.md\","
       },
       {
         "lineNumber": 8,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"remove-extra-space-in-links\": \"Remove extra space in links\""
+        "content": "      \"src\": \"bugs/index.md\","
       },
       {
         "lineNumber": 9,
         "author": {
           "gitId": "-"
         },
-        "content": "      },"
+        "content": "      \"layout\": \"default\","
       },
       {
         "lineNumber": 10,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"title\": \"Open Bugs\","
+        "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
         "lineNumber": 11,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"header\": \"header.md\","
+        "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
         "lineNumber": 12,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"src\": \"bugs/index.md\","
+        "content": "    },"
       },
       {
         "lineNumber": 13,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"layout\": \"default\","
+        "content": "    {"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
+        "content": "      \"headings\": {"
       },
       {
         "lineNumber": 15,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
+        "content": "        \"panel-with-heading\": \"Panel with heading | panel keyword\","
       },
       {
         "lineNumber": 16,
         "author": {
           "gitId": "-"
         },
-        "content": "    },"
+        "content": "        \"panel-without-heading-with-keyword\": \"Panel without heading with keyword\","
       },
       {
         "lineNumber": 17,
         "author": {
           "gitId": "-"
         },
-        "content": "    {"
+        "content": "        \"panel-with-heading-with-keyword\": \"Panel with heading with keyword\","
       },
       {
         "lineNumber": 18,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "        \"panel-without-src-header\": \"Panel without src header\","
       },
       {
         "lineNumber": 19,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-heading\": \"Panel with heading | panel keyword\","
+        "content": "        \"panel-with-normal-src-header\": \"Panel with normal src header\","
       },
       {
         "lineNumber": 20,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-without-heading-with-keyword\": \"Panel without heading with keyword\","
+        "content": "        \"panel-with-src-from-a-page-segment-header\": \"Panel with src from a page segment header\","
       },
       {
         "lineNumber": 21,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-heading-with-keyword\": \"Panel with heading with keyword | panel keyword\","
+        "content": "        \"boilerplate-referencing\": \"Boilerplate referencing\","
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-without-src-header\": \"Panel without src header\","
+        "content": "        \"referencing-specified-path-in-boilerplate\": \"Referencing specified path in boilerplate\","
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-normal-src-header\": \"Panel with normal src header\","
+        "content": "        \"outer-nested-panel\": \"Outer nested panel\","
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-src-from-a-page-segment-header\": \"Panel with src from a page segment header\","
+        "content": "        \"outer-nested-panel-without-src\": \"Outer nested panel without src\","
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"boilerplate-referencing\": \"Boilerplate referencing\","
+        "content": "        \"panel-with-src-from-another-markbind-site-header\": \"Panel with src from another Markbind site header\","
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"referencing-specified-path-in-boilerplate\": \"Referencing specified path in boilerplate\","
+        "content": "        \"unexpanded-panel-header\": \"Unexpanded panel header\","
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"outer-nested-panel\": \"Outer nested panel\","
+        "content": "        \"keyword-should-be-tagged-to-this-heading-not-the-panel-heading\": \"Keyword should be tagged to this heading, not the panel heading | panel keyword\","
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"outer-nested-panel-without-src\": \"Outer nested panel without src\","
+        "content": "        \"panel-normal-source-content-headings\": \"Panel normal source content headings\","
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-with-src-from-another-markbind-site-header\": \"Panel with src from another Markbind site header\","
+        "content": "        \"panel-source-segment-content-headings\": \"Panel source segment content headings\","
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"unexpanded-panel-header\": \"Unexpanded panel header\","
+        "content": "        \"boilerplate-test-for-panel-heading\": \"boilerplate test for panel heading\","
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"keyword-should-be-tagged-to-this-heading-not-the-panel-heading\": \"Keyword should be tagged to this heading, not the panel heading | panel keyword\","
+        "content": "        \"heading-in-panel-boilerplate\": \"heading in panel boilerplate\","
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-without-src-content-heading\": \"Panel without src content heading\","
+        "content": "        \"nested-panel\": \"Nested Panel\","
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-normal-source-content-headings\": \"Panel normal source content headings\","
+        "content": "        \"normal-panel-content-heading\": \"Normal panel content heading\","
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-source-segment-content-headings\": \"Panel source segment content headings\","
+        "content": "        \"inner-panel-header-without-src\": \"Inner panel header without src\","
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"boilerplate-test-for-panel-heading\": \"boilerplate test for panel heading\","
+        "content": "        \"feature-list\": \"Feature list\","
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"heading-in-panel-boilerplate\": \"heading in panel boilerplate\","
+        "content": "        \"heading-with-multiple-keywords\": \"Heading with multiple keywords | keyword 1, keyword 2\","
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"nested-panel\": \"Nested panel\","
+        "content": "        \"heading-with-keyword-in-panel\": \"Heading with keyword in panel | panel keyword\","
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"normal-panel-content-heading\": \"Normal panel content heading\","
+        "content": "        \"keyword-should-be-tagged-to-the-panel-heading-not-this-heading\": \"Keyword should be tagged to the panel heading, not this heading | panel keyword\","
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"inner-panel-header-without-src\": \"Inner panel header without src\","
+        "content": "        \"heading-with-included-keyword\": \"Heading with included keyword | included keyword\","
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-content-of-inner-nested-panel\": \"Panel content of inner nested panel\","
+        "content": "        \"included-heading\": \"Included Heading | Keyword with included heading\","
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"panel-content-of-outer-nested-panel\": \"Panel content of outer nested panel\","
+        "content": "        \"heading-with-nested-keyword\": \"Heading with nested keyword | nested keyword\","
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "        \"feature-list\": \"Feature list\","
-      },
-      {
-        "lineNumber": 43,
-        "author": {
-          "gitId": "openorclose"
-        },
-        "content": "        \"test-footnotes\": \"Test footnotes\","
-      },
-      {
-        "lineNumber": 44,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"variables-that-reference-another-variable\": \"Variables that reference another variable\","
-      },
-      {
-        "lineNumber": 45,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"page-variable\": \"Page Variable\","
-      },
-      {
-        "lineNumber": 46,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"page-variable-with-html-and-md\": \"Page Variable with HTML and MD\","
-      },
-      {
-        "lineNumber": 47,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"nested-page-variable\": \"Nested Page Variable\","
-      },
-      {
-        "lineNumber": 48,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"page-variable-with-global-variable\": \"Page Variable with Global Variable\","
-      },
-      {
-        "lineNumber": 49,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"page-variable-referencing-page-variable\": \"Page Variable referencing Page Variable\","
-      },
-      {
-        "lineNumber": 50,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"global-variable-overriding-page-variable\": \"Global Variable overriding Page Variable\","
-      },
-      {
-        "lineNumber": 51,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-page-variable-and-included-variable-integrations\": \"Test Page Variable and Included Variable Integrations\","
-      },
-      {
-        "lineNumber": 52,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"explicitly-included-page-variable\": \"Explicitly Included Page Variable\","
-      },
-      {
-        "lineNumber": 53,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"inner-page-variable-should-not-be-overridden-by-outer-page-variable\": \"Inner Page Variable Should Not Be Overridden by Outer Page Variable\","
-      },
-      {
-        "lineNumber": 54,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"outer-page-variable-should-not-leak-into-inner-pages\": \"Outer Page Variable Should Not Leak Into Inner Pages\","
-      },
-      {
-        "lineNumber": 55,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"included-variable-overriding-page-variable\": \"Included Variable Overriding Page Variable\","
-      },
-      {
-        "lineNumber": 56,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"page-variable-referencing-included-variable\": \"Page Variable Referencing Included Variable\","
-      },
-      {
-        "lineNumber": 57,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"heading-with-multiple-keywords\": \"Heading with multiple keywords | keyword 1, keyword 2\","
-      },
-      {
-        "lineNumber": 58,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"heading-with-keyword-in-panel\": \"Heading with keyword in panel | panel keyword\","
-      },
-      {
-        "lineNumber": 59,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"expanded-panel-without-heading-with-keyword\": \"Expanded panel without heading with keyword\","
-      },
-      {
-        "lineNumber": 60,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"unexpanded-panel-with-heading-with-keyword\": \"Unexpanded panel with heading with keyword\","
-      },
-      {
-        "lineNumber": 61,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"heading-with-included-keyword\": \"Heading with included keyword | included keyword\","
-      },
-      {
-        "lineNumber": 62,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"included-heading\": \"Included Heading | Keyword with included heading\","
-      },
-      {
-        "lineNumber": 63,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"heading-with-nested-keyword\": \"Heading with nested keyword | nested keyword\","
-      },
-      {
-        "lineNumber": 64,
-        "author": {
-          "gitId": "-"
-        },
         "content": "        \"heading-with-hidden-keyword\": \"Heading with hidden keyword | invisible keyword\","
       },
       {
-        "lineNumber": 65,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-frontmatter-shown-tag\": \"Div with frontmatter shown tag\","
-      },
-      {
-        "lineNumber": 66,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-site-shown-tag\": \"Div with site shown tag\","
-      },
-      {
-        "lineNumber": 67,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-multiple-tags\": \"Div with multiple tags\","
-      },
-      {
-        "lineNumber": 68,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-hidden-tag-hidden\": \"Div with hidden tag (Hidden)\","
-      },
-      {
-        "lineNumber": 69,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-tag-in-included-file\": \"Div with tag in included file\","
-      },
-      {
-        "lineNumber": 70,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-tag-matching-general-tag\": \"Div with tag matching general tag\","
-      },
-      {
-        "lineNumber": 71,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-tag-matching-general-tag-and-specific-tag-hidden\": \"Div with tag matching general tag and specific tag (Hidden)\","
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-tag-matching-front-matter-tag-overridden-by-matching-site-tag\": \"Div with tag matching front matter tag overridden by matching site tag\","
-      },
-      {
-        "lineNumber": 73,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-tag-matching-general-front-matter-tag-not-overridden-by-matching-specific-site-tag-hidden\": \"Div with tag matching general front matter tag not overridden by matching specific site tag (Hidden)\","
-      },
-      {
-        "lineNumber": 74,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"div-with-tag-matching-general-front-matter-tag-overridden-by-matching-specific-site-tag\": \"Div with tag matching general front matter tag overridden by matching specific site tag\","
-      },
-      {
-        "lineNumber": 75,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"normal-include\": \"Normal include\","
-      },
-      {
-        "lineNumber": 76,
+        "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
         "content": "        \"establishing-requirements\": \"Establishing Requirements\","
       },
       {
-        "lineNumber": 77,
+        "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
         "content": "        \"brainstorming\": \"Brainstorming\","
       },
       {
-        "lineNumber": 78,
+        "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
         "content": "        \"user-surveys\": \"User surveys\","
       },
       {
-        "lineNumber": 79,
+        "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
         "content": "        \"focus-groups\": \"Focus groups\","
       },
       {
-        "lineNumber": 80,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"include-segment\": \"Include segment\","
-      },
-      {
-        "lineNumber": 81,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"dynamic-include\": \"Dynamic include\","
-      },
-      {
-        "lineNumber": 82,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"boilerplate-include\": \"Boilerplate include\","
-      },
-      {
-        "lineNumber": 83,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"nested-include\": \"Nested include\","
-      },
-      {
-        "lineNumber": 84,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"html-include\": \"HTML include\","
-      },
-      {
-        "lineNumber": 85,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"mbd-mbdf-include\": \"Mbd, Mbdf include\","
-      },
-      {
-        "lineNumber": 86,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"include-from-another-markbind-site\": \"Include from another Markbind site\","
-      },
-      {
-        "lineNumber": 87,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"include-segment-from-another-markbind-site\": \"Include segment from another Markbind site\","
-      },
-      {
-        "lineNumber": 88,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"trimmed-include\": \"Trimmed include\","
-      },
-      {
-        "lineNumber": 89,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"fragment-with-leading-spaces-and-newline\": \"Fragment with leading spaces and newline\","
-      },
-      {
-        "lineNumber": 90,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"trimmed-include-fragment\": \"Trimmed include fragment\","
-      },
-      {
-        "lineNumber": 91,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"before-fragment-with-leading-spaces-and-newline-after\": \"Before | Fragment with leading spaces and newline | After\","
-      },
-      {
-        "lineNumber": 92,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"include-with-custom-variables\": \"Include with custom variables\","
-      },
-      {
-        "lineNumber": 93,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable-as-include-attribute\": \"Test included variable as include attribute\","
-      },
-      {
-        "lineNumber": 94,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable\": \"Test included variable\","
-      },
-      {
-        "lineNumber": 95,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable-with-markdown\": \"Test included variable with markdown\","
-      },
-      {
-        "lineNumber": 96,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable-as-attribute\": \"Test included variable as attribute\","
-      },
-      {
-        "lineNumber": 97,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable-as-html-element\": \"Test included variable as html element\","
-      },
-      {
-        "lineNumber": 98,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable-overridden-by-variables-md\": \"Test included variable overridden by variables.md\","
-      },
-      {
-        "lineNumber": 99,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variables-in-included-file\": \"Test included variables in included file\","
-      },
-      {
-        "lineNumber": 100,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"inner-included-variables-should-not-leak-into-other-files\": \"Inner included variables should not leak into other files\","
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable-with-global-variable\": \"Test included variable with global variable\","
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-included-variable-overridden-by-set\": \"Test included variable overridden by set\","
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-missing-variable-with-default\": \"Test missing variable with default\","
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"included-variables-should-not-leak-into-other-files\": \"Included variables should not leak into other files\","
-      },
-      {
-        "lineNumber": 105,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"panel-with-shorthand-heading-syntax\": \"Panel with shorthand heading syntax\","
-      },
-      {
-        "lineNumber": 106,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"panel-without-src\": \"Panel without src\","
-      },
-      {
-        "lineNumber": 107,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"panel-with-normal-src\": \"Panel with normal src\","
-      },
-      {
-        "lineNumber": 108,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"panel-with-src-from-a-page-segment\": \"Panel with src from a page segment\","
-      },
-      {
-        "lineNumber": 109,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"panel-with-boilerplate\": \"Panel with boilerplate\","
-      },
-      {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"nested-panel-without-src\": \"Nested panel without src\","
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"panel-with-src-from-another-markbind-site\": \"Panel with src from another Markbind site\","
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"modal-with-panel-inside\": \"Modal with panel inside\","
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"unexpanded-panel\": \"Unexpanded panel\","
-      },
-      {
-        "lineNumber": 114,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-plugin-in-markbind-plugins\": \"Test plugin in markbind/plugins\","
-      },
-      {
-        "lineNumber": 115,
+        "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
         "content": "        \"markbind-plugin-pre-render\": \"Markbind Plugin Pre-render\","
       },
       {
-        "lineNumber": 116,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-search-indexing\": \"Test search indexing\","
-      },
-      {
-        "lineNumber": 117,
+        "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
         "content": "        \"level-6-header-outside-headingsearchindex-with-always-index-attribute-should-be-indexed\": \"Level 6 header (outside headingSearchIndex) with always-index attribute should be indexed\""
       },
       {
-        "lineNumber": 118,
+        "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
         "content": "      },"
       },
       {
-        "lineNumber": 119,
+        "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
-        "lineNumber": 120,
+        "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
         "content": "      \"header\": \"header.md\","
       },
       {
-        "lineNumber": 121,
+        "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
         "content": "      \"footer\": \"footer.md\","
       },
       {
-        "lineNumber": 122,
+        "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
         "content": "      \"siteNav\": \"site-nav.md\","
       },
       {
-        "lineNumber": 123,
+        "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
         "content": "      \"pageNav\": \"default\","
       },
       {
-        "lineNumber": 124,
+        "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
         "content": "      \"pageNavTitle\": \"Testing Page Navigation\","
       },
       {
-        "lineNumber": 125,
+        "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 126,
+        "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
         "content": "      \"frontMatterOverrideProperty\": \"Overridden by front matter override\","
       },
       {
-        "lineNumber": 127,
+        "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by front matter override\","
       },
       {
-        "lineNumber": 128,
+        "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
         "content": "      \"head\": \"myCustomHead.md, myCustomHead2.md\","
       },
       {
-        "lineNumber": 129,
+        "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
         "content": "      \"tags\": ["
       },
       {
-        "lineNumber": 130,
+        "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
         "content": "        \"tag-frontmatter-shown\","
       },
       {
-        "lineNumber": 131,
+        "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
         "content": "        \"tag-included-file\","
       },
       {
-        "lineNumber": 132,
+        "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
         "content": "        \"+tag-exp*\","
       },
       {
-        "lineNumber": 133,
+        "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
         "content": "        \"-tag-exp-hidden\","
       },
       {
-        "lineNumber": 134,
+        "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
         "content": "        \"-tag-site-override-shown\","
       },
       {
-        "lineNumber": 135,
+        "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
         "content": "        \"-tag-site-override-specific*\""
       },
       {
-        "lineNumber": 136,
+        "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
         "content": "      ],"
       },
       {
-        "lineNumber": 137,
+        "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"index.md\","
       },
       {
-        "lineNumber": 138,
+        "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"default\""
       },
       {
-        "lineNumber": 139,
+        "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 140,
+        "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 141,
+        "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
         "content": "      \"headings\": {"
       },
       {
-        "lineNumber": 142,
+        "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
         "content": "        \"feature-list\": \"Feature list\""
       },
       {
-        "lineNumber": 143,
+        "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
         "content": "      },"
       },
       {
-        "lineNumber": 144,
+        "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"sub_site/index.md\","
       },
       {
-        "lineNumber": 145,
+        "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"\","
       },
       {
-        "lineNumber": 146,
+        "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 147,
+        "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 148,
+        "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 149,
+        "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 150,
+        "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 151,
+        "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
         "content": "      \"headings\": {"
       },
       {
-        "lineNumber": 152,
+        "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
         "content": "        \"some-heading\": \"Some heading\""
       },
       {
-        "lineNumber": 153,
+        "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
         "content": "      },"
       },
       {
-        "lineNumber": 154,
+        "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"test_md_fragment.md\","
       },
       {
-        "lineNumber": 155,
+        "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"\","
       },
       {
-        "lineNumber": 156,
+        "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 157,
+        "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 158,
+        "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 159,
+        "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 160,
+        "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 161,
+        "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
         "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 162,
+        "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"testAfterSetup\","
       },
       {
-        "lineNumber": 163,
+        "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"testAfterSetup.md\","
       },
       {
-        "lineNumber": 164,
+        "lineNumber": 95,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
-        "lineNumber": 165,
+        "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 166,
+        "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 167,
+        "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 168,
+        "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 169,
+        "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
         "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 170,
+        "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"testEmptyFrontmatter.md\","
       },
       {
-        "lineNumber": 171,
+        "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
-        "lineNumber": 172,
+        "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 173,
+        "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 174,
+        "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 175,
+        "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 176,
+        "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 177,
+        "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
         "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 178,
+        "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"testExternalScripts.md\","
       },
       {
-        "lineNumber": 179,
+        "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
-        "lineNumber": 180,
+        "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 181,
+        "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 182,
+        "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 183,
+        "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 184,
+        "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 185,
+        "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 186,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"uses-a-front-matter-layout\": \"Uses a front matter layout\""
-      },
-      {
-        "lineNumber": 187,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      },"
-      },
-      {
-        "lineNumber": 188,
+        "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
-        "lineNumber": 189,
+        "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
         "content": "      \"head\": \"overwriteLayoutHead.md\","
       },
       {
-        "lineNumber": 190,
+        "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"testLayout\","
       },
       {
-        "lineNumber": 191,
+        "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"testLayouts.md\","
       },
       {
-        "lineNumber": 192,
+        "lineNumber": 121,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 193,
+        "lineNumber": 122,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 194,
+        "lineNumber": 123,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 195,
+        "lineNumber": 124,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 196,
+        "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 197,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"uses-a-site-json-layout-overriding-front-matter\": \"Uses a site.json layout, overriding front matter\""
-      },
-      {
-        "lineNumber": 198,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      },"
-      },
-      {
-        "lineNumber": 199,
+        "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
-        "lineNumber": 200,
+        "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
         "content": "      \"head\": \"overwriteLayoutHead.md\","
       },
       {
-        "lineNumber": 201,
+        "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"testLayout\","
       },
       {
-        "lineNumber": 202,
+        "lineNumber": 129,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"testLayoutsOverride.md\","
       },
       {
-        "lineNumber": 203,
+        "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 204,
+        "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 205,
+        "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 206,
+        "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 207,
+        "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 208,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-dropdown-in-body-with-text-and-class-attributes\": \"Test dropdown in body with text and class attributes\","
-      },
-      {
-        "lineNumber": 209,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"test-dropdown-in-body-without-text-and-class-attributes\": \"Test dropdown in body without text and class attributes\","
-      },
-      {
-        "lineNumber": 210,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        \"filler-text\": \"Filler text\""
-      },
-      {
-        "lineNumber": 211,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      },"
-      },
-      {
-        "lineNumber": 212,
+        "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
         "content": "      \"src\": \"testAntiFOUCStyles.md\","
       },
       {
-        "lineNumber": 213,
+        "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
         "content": "      \"title\": \"Hello World\","
       },
       {
-        "lineNumber": 214,
+        "lineNumber": 137,
         "author": {
           "gitId": "-"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 215,
+        "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 216,
+        "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 217,
+        "lineNumber": 140,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 218,
+        "lineNumber": 141,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 219,
+        "lineNumber": 142,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"headings\": {"
       },
       {
-        "lineNumber": 220,
+        "lineNumber": 143,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor\": \"should have anchor\","
       },
       {
-        "lineNumber": 221,
+        "lineNumber": 144,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-7\": \"should have anchor\","
       },
       {
-        "lineNumber": 222,
+        "lineNumber": 145,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-8\": \"should have anchor\","
       },
       {
-        "lineNumber": 223,
+        "lineNumber": 146,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-9\": \"should have anchor\","
       },
       {
-        "lineNumber": 224,
+        "lineNumber": 147,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-10\": \"should have anchor\","
       },
       {
-        "lineNumber": 225,
+        "lineNumber": 148,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-19\": \"should have anchor\","
       },
       {
-        "lineNumber": 226,
+        "lineNumber": 149,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-20\": \"should have anchor\","
       },
       {
-        "lineNumber": 227,
+        "lineNumber": 150,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-21\": \"should have anchor\","
       },
       {
-        "lineNumber": 228,
+        "lineNumber": 151,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-22\": \"should have anchor\","
       },
       {
-        "lineNumber": 229,
+        "lineNumber": 152,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"root-file\": \"Root file\","
       },
       {
-        "lineNumber": 230,
+        "lineNumber": 153,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-2\": \"should have anchor\","
       },
       {
-        "lineNumber": 231,
+        "lineNumber": 154,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-3\": \"should have anchor\","
       },
       {
-        "lineNumber": 232,
+        "lineNumber": 155,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-4\": \"should have anchor\","
       },
       {
-        "lineNumber": 233,
+        "lineNumber": 156,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"included-file\": \"Included File\","
       },
       {
-        "lineNumber": 234,
+        "lineNumber": 157,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-13\": \"should have anchor\","
       },
       {
-        "lineNumber": 235,
+        "lineNumber": 158,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-14\": \"should have anchor\","
       },
       {
-        "lineNumber": 236,
+        "lineNumber": 159,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-15\": \"should have anchor\","
       },
       {
-        "lineNumber": 237,
+        "lineNumber": 160,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"should-have-anchor-16\": \"should have anchor\""
       },
       {
-        "lineNumber": 238,
+        "lineNumber": 161,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
-        "lineNumber": 239,
+        "lineNumber": 162,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"title\": \"Anchor Generation Test\","
       },
       {
-        "lineNumber": 240,
+        "lineNumber": 163,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"src\": \"testAnchorGeneration.md\","
       },
       {
-        "lineNumber": 241,
+        "lineNumber": 164,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 242,
+        "lineNumber": 165,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 243,
+        "lineNumber": 166,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 244,
+        "lineNumber": 167,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 245,
+        "lineNumber": 168,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 246,
+        "lineNumber": 169,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"headings\": {"
       },
       {
-        "lineNumber": 247,
+        "lineNumber": 170,
         "author": {
           "gitId": "alyip98"
         },
         "content": "        \"569-stray-space-after-tooltip\": \"569: Stray space after tooltip\""
       },
       {
-        "lineNumber": 248,
+        "lineNumber": 171,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      },"
       },
       {
-        "lineNumber": 249,
+        "lineNumber": 172,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"src\": \"testTooltipSpacing.mbd\","
       },
       {
-        "lineNumber": 250,
+        "lineNumber": 173,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"title\": \"Tooltip Spacing Test\","
       },
       {
-        "lineNumber": 251,
+        "lineNumber": 174,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 252,
+        "lineNumber": 175,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 253,
+        "lineNumber": 176,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 254,
+        "lineNumber": 177,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 255,
+        "lineNumber": 178,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 256,
+        "lineNumber": 179,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 257,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"thumbnail-test\": \"Thumbnail test\","
-      },
-      {
-        "lineNumber": 258,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"images\": \"Images\","
-      },
-      {
-        "lineNumber": 259,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"square-thumb-size-100-default\": \"Square thumb, size \u003d 100 (default)\","
-      },
-      {
-        "lineNumber": 260,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"square-thumb-with-alt-test\": \"Square thumb with alt\u003d\u0026quot;Test\u0026quot;\","
-      },
-      {
-        "lineNumber": 261,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"square-thumb-size-200\": \"Square thumb, size \u003d 200\","
-      },
-      {
-        "lineNumber": 262,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"circle-thumbs-size-100\": \"Circle thumbs, size \u003d 100\","
-      },
-      {
-        "lineNumber": 263,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"an-actual-image\": \"An actual image\","
-      },
-      {
-        "lineNumber": 264,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"broken-link-still-takes-up-the-space-it-s-supposed-to\": \"Broken link, still takes up the space it\u0027s supposed to\","
-      },
-      {
-        "lineNumber": 265,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"borders\": \"Borders\","
-      },
-      {
-        "lineNumber": 266,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"background\": \"Background\","
-      },
-      {
-        "lineNumber": 267,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"valid-css-properties\": \"Valid CSS properties\","
-      },
-      {
-        "lineNumber": 268,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"invalid-css-properties\": \"Invalid CSS properties\","
-      },
-      {
-        "lineNumber": 269,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"empty\": \"Empty\","
-      },
-      {
-        "lineNumber": 270,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"text-emojis-icons\": \"Text/Emojis/Icons\","
-      },
-      {
-        "lineNumber": 271,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"text\": \"Text\","
-      },
-      {
-        "lineNumber": 272,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"markdown\": \"Markdown\","
-      },
-      {
-        "lineNumber": 273,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"emojis\": \"Emojis\","
-      },
-      {
-        "lineNumber": 274,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"icons\": \"Icons\","
-      },
-      {
-        "lineNumber": 275,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"font-size-font-color\": \"font-size/font-color\","
-      },
-      {
-        "lineNumber": 276,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"20px-font-size\": \"20px font-size\","
-      },
-      {
-        "lineNumber": 277,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"40px-font-size\": \"40px font-size\","
-      },
-      {
-        "lineNumber": 278,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"font-color\": \"font-color\""
-      },
-      {
-        "lineNumber": 279,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "      },"
-      },
-      {
-        "lineNumber": 280,
+        "lineNumber": 180,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"src\": \"testThumbnails.md\","
       },
       {
-        "lineNumber": 281,
+        "lineNumber": 181,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"title\": \"Thumbnails Test\","
       },
       {
-        "lineNumber": 282,
+        "lineNumber": 182,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 283,
+        "lineNumber": 183,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 284,
+        "lineNumber": 184,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 285,
+        "lineNumber": 185,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 286,
+        "lineNumber": 186,
         "author": {
           "gitId": "alyip98"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 287,
+        "lineNumber": 187,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 288,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"plantuml-test\": \"PlantUML Test\","
-      },
-      {
-        "lineNumber": 289,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"sequence-diagram\": \"Sequence Diagram\","
-      },
-      {
-        "lineNumber": 290,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"use-case-diagram\": \"Use Case Diagram\","
-      },
-      {
-        "lineNumber": 291,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"class-diagram\": \"Class Diagram\","
-      },
-      {
-        "lineNumber": 292,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"activity-diagram\": \"Activity Diagram\","
-      },
-      {
-        "lineNumber": 293,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"component-diagram\": \"Component Diagram\","
-      },
-      {
-        "lineNumber": 294,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"state-diagram\": \"State Diagram\","
-      },
-      {
-        "lineNumber": 295,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "        \"object-diagram\": \"Object Diagram\""
-      },
-      {
-        "lineNumber": 296,
-        "author": {
-          "gitId": "alyip98"
-        },
-        "content": "      },"
-      },
-      {
-        "lineNumber": 297,
+        "lineNumber": 188,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"src\": \"testPlantUML.md\","
       },
       {
-        "lineNumber": 298,
+        "lineNumber": 189,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"title\": \"PlantUML Test\","
       },
       {
-        "lineNumber": 299,
+        "lineNumber": 190,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 300,
+        "lineNumber": 191,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 301,
+        "lineNumber": 192,
         "author": {
           "gitId": "alyip98"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 302,
+        "lineNumber": 193,
         "author": {
           "gitId": "openorclose"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 303,
+        "lineNumber": 194,
         "author": {
           "gitId": "openorclose"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 304,
+        "lineNumber": 195,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"headings\": {"
       },
       {
-        "lineNumber": 305,
+        "lineNumber": 196,
         "author": {
           "gitId": "openorclose"
         },
         "content": "        \"trying-to-access-a-page-variable\": \"Trying to access a page variable:\","
       },
       {
-        "lineNumber": 306,
+        "lineNumber": 197,
         "author": {
           "gitId": "openorclose"
         },
         "content": "        \"trying-to-access-an-imported-variable-via-namespace\": \"Trying to access an imported variable via namespace:\""
       },
       {
-        "lineNumber": 307,
+        "lineNumber": 198,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      },"
       },
       {
-        "lineNumber": 308,
+        "lineNumber": 199,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"src\": \"testImportVariables.md\","
       },
       {
-        "lineNumber": 309,
+        "lineNumber": 200,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"title\": \"Imported Variables Test\","
       },
       {
-        "lineNumber": 310,
+        "lineNumber": 201,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 311,
+        "lineNumber": 202,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 312,
+        "lineNumber": 203,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 313,
+        "lineNumber": 204,
         "author": {
           "gitId": "openorclose"
         },
         "content": "    },"
       },
       {
-        "lineNumber": 314,
+        "lineNumber": 205,
         "author": {
           "gitId": "openorclose"
         },
         "content": "    {"
       },
       {
-        "lineNumber": 315,
+        "lineNumber": 206,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "      \"headings\": {"
+        "content": "      \"headings\": {},"
       },
       {
-        "lineNumber": 316,
-        "author": {
-          "gitId": "openorclose"
-        },
-        "content": "        \"below-panel-is-working\": \"Below panel is working\","
-      },
-      {
-        "lineNumber": 317,
-        "author": {
-          "gitId": "openorclose"
-        },
-        "content": "        \"below-should-be-a-panel-but-is-now-an-error-uncomment-it-to-see-the-error\": \"Below should be a panel, but is now an error. Uncomment it to see the error.\""
-      },
-      {
-        "lineNumber": 318,
-        "author": {
-          "gitId": "openorclose"
-        },
-        "content": "      },"
-      },
-      {
-        "lineNumber": 319,
+        "lineNumber": 207,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"src\": \"testPanelsWithImportedVariables.md\","
       },
       {
-        "lineNumber": 320,
+        "lineNumber": 208,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"title\": \"Panels with Imported Variables Test\","
       },
       {
-        "lineNumber": 321,
+        "lineNumber": 209,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"layout\": \"default\","
       },
       {
-        "lineNumber": 322,
+        "lineNumber": 210,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"globalOverrideProperty\": \"Overridden by global override\","
       },
       {
-        "lineNumber": 323,
+        "lineNumber": 211,
         "author": {
           "gitId": "openorclose"
         },
         "content": "      \"globalAndFrontMatterOverrideProperty\": \"Overridden by global override\""
       },
       {
-        "lineNumber": 324,
+        "lineNumber": 212,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 325,
+        "lineNumber": 213,
         "author": {
           "gitId": "-"
         },
         "content": "  ]"
       },
       {
-        "lineNumber": 326,
+        "lineNumber": 214,
         "author": {
           "gitId": "-"
         },
@@ -41644,9 +40860,9 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 23,
-      "alyip98": 85,
-      "-": 218
+      "openorclose": 18,
+      "alyip98": 51,
+      "-": 145
     }
   },
   {
@@ -41861,9 +41077,9 @@
       {
         "lineNumber": 17,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "# Test footnotes"
+        "content": "**Test footnotes**"
       },
       {
         "lineNumber": 18,
@@ -41891,84 +41107,84 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Variables that reference another variable"
+        "content": "**Variables that reference another variable**"
       },
       {
         "lineNumber": 22,
         "author": {
           "gitId": "-"
         },
-        "content": "{{finalized_value}}"
+        "content": ""
       },
       {
         "lineNumber": 23,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "{{finalized_value}}"
       },
       {
         "lineNumber": 24,
         "author": {
           "gitId": "-"
         },
-        "content": "{{reference_level_4}}"
+        "content": ""
       },
       {
         "lineNumber": 25,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "{{reference_level_4}}"
       },
       {
         "lineNumber": 26,
         "author": {
           "gitId": "-"
         },
-        "content": "# Page Variable"
+        "content": ""
       },
       {
         "lineNumber": 27,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cvariable name\u003d\"page_variable\"\u003ePage Variable\u003c/variable\u003e"
+        "content": "**Page Variable**"
       },
       {
         "lineNumber": 28,
         "author": {
           "gitId": "-"
         },
-        "content": "{{ page_variable }}"
+        "content": ""
       },
       {
         "lineNumber": 29,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cvariable name\u003d\"page_variable\"\u003ePage Variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 30,
         "author": {
           "gitId": "-"
         },
-        "content": "# Page Variable with HTML and MD"
+        "content": "{{ page_variable }}"
       },
       {
         "lineNumber": 31,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cvariable name\u003d\"page_variable_with_HTML_and_MD\"\u003ePage Variable with \u003cspan style\u003d\"color: blue;\"\u003eHTML\u003c/span\u003e and **Markdown**\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "{{ page_variable_with_HTML_and_MD }}"
+        "content": "**Page Variable with HTML and MD**"
       },
       {
         "lineNumber": 33,
@@ -41982,77 +41198,77 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Nested Page Variable"
+        "content": "\u003cvariable name\u003d\"page_variable_with_HTML_and_MD\"\u003ePage Variable with \u003cspan style\u003d\"color: blue;\"\u003eHTML\u003c/span\u003e and **Markdown**\u003c/variable\u003e"
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cdiv\u003e"
+        "content": "{{ page_variable_with_HTML_and_MD }}"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cspan\u003e"
+        "content": ""
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003cvariable name\u003d\"nested_page_variable\"\u003eNested Page Variable\u003c/variable\u003e"
+        "content": "**Nested Page Variable**"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/span\u003e"
+        "content": ""
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/div\u003e"
+        "content": "\u003cdiv\u003e"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": "{{ nested_page_variable }}"
+        "content": "  \u003cspan\u003e"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    \u003cvariable name\u003d\"nested_page_variable\"\u003eNested Page Variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "# Page Variable with Global Variable"
+        "content": "  \u003c/span\u003e"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cvariable name\u003d\"page_variable_with_global_variable\"\u003ePage Variable with {{ global_variable }}\u003c/variable\u003e"
+        "content": "\u003c/div\u003e"
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "{{ page_variable_with_global_variable }}"
+        "content": "{{ nested_page_variable }}"
       },
       {
         "lineNumber": 45,
@@ -42066,224 +41282,224 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Page Variable referencing Page Variable"
+        "content": "**Page Variable with Global Variable**"
       },
       {
         "lineNumber": 47,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cvariable name\u003d\"page_variable_referencing_page_variable\"\u003ePage Variable referencing {{ page_variable }}\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": "{{ page_variable_referencing_page_variable }}"
+        "content": "\u003cvariable name\u003d\"page_variable_with_global_variable\"\u003ePage Variable with {{ global_variable }}\u003c/variable\u003e"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "{{ page_variable_with_global_variable }}"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "# Global Variable overriding Page Variable"
+        "content": ""
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cvariable name\u003d\"page_global_variable_overriding_page_variable\"\u003e**Should not appear**: Page Variable overridden by Global Variable\u003c/variable\u003e"
+        "content": "**Page Variable referencing Page Variable**"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "{{ page_global_variable_overriding_page_variable }}"
+        "content": ""
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cvariable name\u003d\"page_variable_referencing_page_variable\"\u003ePage Variable referencing {{ page_variable }}\u003c/variable\u003e"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "# Test Page Variable and Included Variable Integrations"
+        "content": "{{ page_variable_referencing_page_variable }}"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cvariable name\u003d\"explicitly_included_page_variable\"\u003eExplicitly Included Page Variable\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testPageVariablesInInclude.md\"\u003e"
+        "content": "**Global Variable overriding Page Variable**"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"explicitly_included_page_variable\"\u003e{{ explicitly_included_page_variable }}\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable\"\u003eIncluded Variable\u003c/variable\u003e"
+        "content": "\u003cvariable name\u003d\"page_global_variable_overriding_page_variable\"\u003e**Should not appear**: Page Variable overridden by Global Variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_overriding_page_variable\"\u003eIncluded Variable Overriding Page Variable\u003c/variable\u003e"
+        "content": "{{ page_global_variable_overriding_page_variable }}"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/include\u003e"
+        "content": ""
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Test Page Variable and Included Variable Integrations**"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "# Heading with multiple keywords"
+        "content": ""
       },
       {
         "lineNumber": 63,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan class\u003d\"keyword\"\u003ekeyword 1\u003c/span\u003e"
+        "content": "\u003cvariable name\u003d\"explicitly_included_page_variable\"\u003eExplicitly Included Page Variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 64,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan class\u003d\"keyword\"\u003ekeyword 2\u003c/span\u003e"
+        "content": "\u003cinclude src\u003d\"testPageVariablesInInclude.md\"\u003e"
       },
       {
         "lineNumber": 65,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  \u003cvariable name\u003d\"explicitly_included_page_variable\"\u003e{{ explicitly_included_page_variable }}\u003c/variable\u003e"
       },
       {
         "lineNumber": 66,
         "author": {
           "gitId": "-"
         },
-        "content": "# Heading with keyword in panel"
+        "content": "  \u003cvariable name\u003d\"included_variable\"\u003eIncluded Variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"Panel with keyword\" expanded\u003e"
+        "content": "  \u003cvariable name\u003d\"included_variable_overriding_page_variable\"\u003eIncluded Variable Overriding Page Variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 68,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
+        "content": "\u003c/include\u003e"
       },
       {
         "lineNumber": 69,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": ""
       },
       {
         "lineNumber": 70,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "# Heading with multiple keywords"
       },
       {
         "lineNumber": 71,
         "author": {
           "gitId": "-"
         },
-        "content": "# Panel with heading with keyword"
+        "content": "\u003cspan class\u003d\"keyword\"\u003ekeyword 1\u003c/span\u003e"
       },
       {
         "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"# Panel with heading\" expanded\u003e"
+        "content": "\u003cspan class\u003d\"keyword\"\u003ekeyword 2\u003c/span\u003e"
       },
       {
         "lineNumber": 73,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
+        "content": ""
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "# Heading with keyword in panel"
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cpanel header\u003d\"Panel with keyword\" expanded\u003e"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "# Expanded panel without heading with keyword"
+        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"# Panel without heading with keyword\" expanded\u003e"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 78,
@@ -42297,91 +41513,91 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  # Keyword should be tagged to this heading, not the panel heading"
+        "content": "**Panel with heading with keyword**"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
+        "content": ""
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "\u003cpanel header\u003d\"# Panel with heading\" expanded\u003e"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "# Unexpanded panel with heading with keyword"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"# Panel with heading with keyword\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Expanded panel without heading with keyword**"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "  # Keyword should be tagged to the panel heading, not this heading"
+        "content": ""
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
+        "content": "\u003cpanel header\u003d\"# Panel without heading with keyword\" expanded\u003e"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": ""
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  # Keyword should be tagged to this heading, not the panel heading"
       },
       {
         "lineNumber": 90,
         "author": {
           "gitId": "-"
         },
-        "content": "# Heading with included keyword"
+        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
       },
       {
         "lineNumber": 91,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testKeyword.md\" /\u003e"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 92,
@@ -42395,14 +41611,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testKeywordHeading.md\" /\u003e"
+        "content": "**Unexpanded panel with heading with keyword**"
       },
       {
         "lineNumber": 94,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan class\u003d\"keyword\"\u003eKeyword with included heading\u003c/span\u003e"
+        "content": "\u003cpanel header\u003d\"# Panel with heading with keyword\"\u003e"
       },
       {
         "lineNumber": 95,
@@ -42416,175 +41632,175 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Heading with nested keyword"
+        "content": "  # Keyword should be tagged to the panel heading, not this heading"
       },
       {
         "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cdiv\u003e"
+        "content": "  \u003cspan class\u003d\"keyword\"\u003epanel keyword\u003c/span\u003e"
       },
       {
         "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cdiv\u003e"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003cdiv\u003e"
+        "content": ""
       },
       {
         "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u003cspan class\u003d\"keyword\"\u003enested keyword\u003c/span\u003e"
+        "content": "# Heading with included keyword"
       },
       {
         "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003c/div\u003e"
+        "content": "\u003cinclude src\u003d\"testKeyword.md\" /\u003e"
       },
       {
         "lineNumber": 102,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/div\u003e"
+        "content": ""
       },
       {
         "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/div\u003e"
+        "content": "\u003cinclude src\u003d\"testKeywordHeading.md\" /\u003e"
       },
       {
         "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cspan class\u003d\"keyword\"\u003eKeyword with included heading\u003c/span\u003e"
       },
       {
         "lineNumber": 105,
         "author": {
           "gitId": "-"
         },
-        "content": "# Heading with hidden keyword"
+        "content": ""
       },
       {
         "lineNumber": 106,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cspan class\u003d\"keyword d-none\"\u003einvisible keyword\u003c/span\u003e"
+        "content": "# Heading with nested keyword"
       },
       {
         "lineNumber": 107,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cdiv\u003e"
       },
       {
         "lineNumber": 108,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testTags.md\" /\u003e"
+        "content": "  \u003cdiv\u003e"
       },
       {
         "lineNumber": 109,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    \u003cdiv\u003e"
       },
       {
         "lineNumber": 110,
         "author": {
           "gitId": "-"
         },
-        "content": "# Normal include"
+        "content": "      \u003cspan class\u003d\"keyword\"\u003enested keyword\u003c/span\u003e"
       },
       {
         "lineNumber": 111,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"requirements/EstablishingRequirements.md\" /\u003e"
+        "content": "    \u003c/div\u003e"
       },
       {
         "lineNumber": 112,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  \u003c/div\u003e"
       },
       {
         "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "# Include segment"
+        "content": "\u003c/div\u003e"
       },
       {
         "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"requirements/EstablishingRequirements.md#preview\" /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "# Heading with hidden keyword"
       },
       {
         "lineNumber": 116,
         "author": {
           "gitId": "-"
         },
-        "content": "# Dynamic include"
+        "content": "\u003cspan class\u003d\"keyword d-none\"\u003einvisible keyword\u003c/span\u003e"
       },
       {
         "lineNumber": 117,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"requirements/SpecifyingRequirements.md\" name\u003d\"Dynamic Include\" dynamic /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 118,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cinclude src\u003d\"testTags.md\" /\u003e"
       },
       {
         "lineNumber": 119,
         "author": {
           "gitId": "-"
         },
-        "content": "# Boilerplate include"
+        "content": ""
       },
       {
         "lineNumber": 120,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"requirements/boilerTest.md\" name\u003d\"Boilerplate Referencing\" boilerplate /\u003e"
+        "content": "**Normal include**"
       },
       {
         "lineNumber": 121,
@@ -42598,7 +41814,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"requirements/notInside.md\" name\u003d\"Referencing specified path in boilerplate\" boilerplate\u003d\"folder/inside.md\" dynamic/\u003e"
+        "content": "\u003cinclude src\u003d\"requirements/EstablishingRequirements.md\" /\u003e"
       },
       {
         "lineNumber": 123,
@@ -42612,35 +41828,35 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Nested include"
+        "content": "**Include segment**"
       },
       {
         "lineNumber": 125,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"requirements/nestedInclude.md\" /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 126,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cinclude src\u003d\"requirements/EstablishingRequirements.md#preview\" /\u003e"
       },
       {
         "lineNumber": 127,
         "author": {
           "gitId": "-"
         },
-        "content": "# HTML include"
+        "content": ""
       },
       {
         "lineNumber": 128,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testInclude.html\" /\u003e"
+        "content": "**Dynamic include**"
       },
       {
         "lineNumber": 129,
@@ -42654,21 +41870,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Mbd, Mbdf include"
+        "content": "\u003cinclude src\u003d\"requirements/SpecifyingRequirements.md\" name\u003d\"Dynamic Include\" dynamic /\u003e"
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testIncludeMbd.mbd\" /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testIncludeMbdf.mbdf\" /\u003e"
+        "content": "**Boilerplate include**"
       },
       {
         "lineNumber": 133,
@@ -42682,21 +41898,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Include from another Markbind site"
+        "content": "\u003cinclude src\u003d\"requirements/boilerTest.md\" name\u003d\"Boilerplate Referencing\" boilerplate /\u003e"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"sub_site/index.md\" /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 136,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"sub_site/testReuse.md\" /\u003e"
+        "content": "\u003cinclude src\u003d\"requirements/notInside.md\" name\u003d\"Referencing specified path in boilerplate\" boilerplate\u003d\"folder/inside.md\" dynamic/\u003e"
       },
       {
         "lineNumber": 137,
@@ -42710,84 +41926,84 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Include segment from another Markbind site"
+        "content": "**Nested include**"
       },
       {
         "lineNumber": 139,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"sub_site/testReuse.md#imageTest\" /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 140,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cinclude src\u003d\"requirements/nestedInclude.md\" /\u003e"
       },
       {
         "lineNumber": 141,
         "author": {
           "gitId": "-"
         },
-        "content": "# Trimmed include"
+        "content": ""
       },
       {
         "lineNumber": 142,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**HTML include**"
       },
       {
         "lineNumber": 143,
         "author": {
           "gitId": "-"
         },
-        "content": "## \u003cinclude src\u003d\"testTrimInclude.md\" trim inline /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 144,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cinclude src\u003d\"testInclude.html\" /\u003e"
       },
       {
         "lineNumber": 145,
         "author": {
           "gitId": "-"
         },
-        "content": "# Trimmed include fragment"
+        "content": ""
       },
       {
         "lineNumber": 146,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Mbd, Mbdf include**"
       },
       {
         "lineNumber": 147,
         "author": {
           "gitId": "-"
         },
-        "content": "## Before | \u003cinclude src\u003d\"testTrimIncludeFragment.mbdf#fragment\" trim inline /\u003e | After"
+        "content": ""
       },
       {
         "lineNumber": 148,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cinclude src\u003d\"testIncludeMbd.mbd\" /\u003e"
       },
       {
         "lineNumber": 149,
         "author": {
           "gitId": "-"
         },
-        "content": "# Include with custom variables"
+        "content": "\u003cinclude src\u003d\"testIncludeMbdf.mbdf\" /\u003e"
       },
       {
         "lineNumber": 150,
@@ -42801,308 +42017,308 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testIncludeVariables.md\" var-included_variable_as_include_attribute\u003d\"Included variable as include attribute\"\u003e"
+        "content": "**Include from another Markbind site**"
       },
       {
         "lineNumber": 152,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable\"\u003eIncluded variable\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 153,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_with_markdown\"\u003e__**Included variable with markdown**__\u003c/variable\u003e"
+        "content": "\u003cinclude src\u003d\"sub_site/index.md\" /\u003e"
       },
       {
         "lineNumber": 154,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_as_attribute\"\u003ecolor: blue\u003c/variable\u003e"
+        "content": "\u003cinclude src\u003d\"sub_site/testReuse.md\" /\u003e"
       },
       {
         "lineNumber": 155,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_as_html_element\"\u003e\u003cspan\u003eIncluded variable within html element\u003c/span\u003e\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 156,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"global_variable_overriding_included_variable\"\u003e**Should not appear**: Included variable overridden by global variable\u003c/variable\u003e"
+        "content": "**Include segment from another Markbind site**"
       },
       {
         "lineNumber": 157,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_inner_overridden\"\u003eIncluded variable overriding inner variable\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 158,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_in_outer_included_file\"\u003eIncluded variable in outer included file\u003c/variable\u003e"
+        "content": "\u003cinclude src\u003d\"sub_site/testReuse.md#imageTest\" /\u003e"
       },
       {
         "lineNumber": 159,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_should_not_leak\"\u003e**Should not appear**: Included variable should not leak into other files\u003c/variable\u003e"
+        "content": ""
       },
       {
         "lineNumber": 160,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cvariable name\u003d\"included_variable_with_global_variable\"\u003eIncluded variable with {{ global_variable }}\u003c/variable\u003e"
+        "content": "**Trimmed include** "
       },
       {
         "lineNumber": 161,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/include\u003e"
+        "content": ""
       },
       {
         "lineNumber": 162,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**\u003cinclude src\u003d\"testTrimInclude.md\" trim inline /\u003e**"
       },
       {
         "lineNumber": 163,
         "author": {
           "gitId": "-"
         },
-        "content": "# Included variables should not leak into other files"
+        "content": ""
       },
       {
         "lineNumber": 164,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Trimmed include fragment**"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cinclude src\u003d\"testIncludeVariableLeak.md\" /\u003e"
+        "content": ""
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Before | \u003cinclude src\u003d\"testTrimIncludeFragment.mbdf#fragment\" trim inline /\u003e | After**"
       },
       {
         "lineNumber": 167,
         "author": {
           "gitId": "-"
         },
-        "content": "# Panel with shorthand heading syntax"
+        "content": ""
       },
       {
         "lineNumber": 168,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel\u003e"
+        "content": "**Include with custom variables**"
       },
       {
         "lineNumber": 169,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003cspan heading\u003e"
+        "content": ""
       },
       {
         "lineNumber": 170,
         "author": {
           "gitId": "-"
         },
-        "content": "        Heading"
+        "content": "\u003cinclude src\u003d\"testIncludeVariables.md\" var-included_variable_as_include_attribute\u003d\"Included variable as include attribute\"\u003e"
       },
       {
         "lineNumber": 171,
         "author": {
           "gitId": "-"
         },
-        "content": "    \u003c/span\u003e"
+        "content": "  \u003cvariable name\u003d\"included_variable\"\u003eIncluded variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 172,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "  \u003cvariable name\u003d\"included_variable_with_markdown\"\u003e__**Included variable with markdown**__\u003c/variable\u003e"
       },
       {
         "lineNumber": 173,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  \u003cvariable name\u003d\"included_variable_as_attribute\"\u003ecolor: blue\u003c/variable\u003e"
       },
       {
         "lineNumber": 174,
         "author": {
           "gitId": "-"
         },
-        "content": "# Panel without src"
+        "content": "  \u003cvariable name\u003d\"included_variable_as_html_element\"\u003e\u003cspan\u003eIncluded variable within html element\u003c/span\u003e\u003c/variable\u003e"
       },
       {
         "lineNumber": 175,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Panel without src header\" expanded\u003e"
+        "content": "  \u003cvariable name\u003d\"global_variable_overriding_included_variable\"\u003e**Should not appear**: Included variable overridden by global variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 176,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cmarkdown\u003e"
+        "content": "  \u003cvariable name\u003d\"included_variable_inner_overridden\"\u003eIncluded variable overriding inner variable\u003c/variable\u003e"
       },
       {
         "lineNumber": 177,
         "author": {
           "gitId": "-"
         },
-        "content": "### Panel without src content heading"
+        "content": "  \u003cvariable name\u003d\"included_variable_in_outer_included_file\"\u003eIncluded variable in outer included file\u003c/variable\u003e"
       },
       {
         "lineNumber": 178,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/markdown\u003e "
+        "content": "  \u003cvariable name\u003d\"included_variable_should_not_leak\"\u003e**Should not appear**: Included variable should not leak into other files\u003c/variable\u003e"
       },
       {
         "lineNumber": 179,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "  \u003cvariable name\u003d\"included_variable_with_global_variable\"\u003eIncluded variable with {{ global_variable }}\u003c/variable\u003e"
       },
       {
         "lineNumber": 180,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003c/include\u003e"
       },
       {
         "lineNumber": 181,
         "author": {
           "gitId": "-"
         },
-        "content": "# Panel with normal src"
+        "content": ""
       },
       {
         "lineNumber": 182,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Panel with normal src header\" src\u003d\"testPanels/PanelNormalSource.md\" expanded\u003e"
+        "content": "**Included variables should not leak into other files**"
       },
       {
         "lineNumber": 183,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e    "
+        "content": ""
       },
       {
         "lineNumber": 184,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cinclude src\u003d\"testIncludeVariableLeak.md\" /\u003e"
       },
       {
         "lineNumber": 185,
         "author": {
           "gitId": "-"
         },
-        "content": "# Panel with src from a page segment"
+        "content": ""
       },
       {
         "lineNumber": 186,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Panel with src from a page segment header\" src\u003d\"testPanels/PanelSourceContainsSegment.md#segment\" expanded\u003e"
+        "content": "**Panel with shorthand heading syntax**"
       },
       {
         "lineNumber": 187,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": ""
       },
       {
         "lineNumber": 188,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cpanel\u003e"
       },
       {
         "lineNumber": 189,
         "author": {
           "gitId": "-"
         },
-        "content": "# Panel with boilerplate "
+        "content": "    \u003cspan heading\u003e"
       },
       {
         "lineNumber": 190,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Boilerplate referencing\" src\u003d\"testPanels/boilerTestPanel.md\"  boilerplate expanded\u003e"
+        "content": "        Heading"
       },
       {
         "lineNumber": 191,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "    \u003c/span\u003e"
       },
       {
         "lineNumber": 192,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 193,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Referencing specified path in boilerplate\" src\u003d\"testPanels/notInside.md\" boilerplate\u003d\"folder/panelBoilerplate.md\" expanded\u003e"
+        "content": ""
       },
       {
         "lineNumber": 194,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "**Panel without src**"
       },
       {
         "lineNumber": 195,
@@ -43116,140 +42332,140 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Nested panel"
+        "content": "\u003cpanel header\u003d\"## Panel without src header\" expanded\u003e"
       },
       {
         "lineNumber": 197,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Outer nested panel\" src\u003d\"testPanels/NestedPanel.md\" expanded\u003e"
+        "content": "\u003cmarkdown\u003e"
       },
       {
         "lineNumber": 198,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "**Panel without src content heading**"
       },
       {
         "lineNumber": 199,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003c/markdown\u003e "
       },
       {
         "lineNumber": 200,
         "author": {
           "gitId": "-"
         },
-        "content": "# Nested panel without src"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 201,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Outer nested panel without src\" expanded\u003e"
+        "content": ""
       },
       {
         "lineNumber": 202,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Panel with normal src**"
       },
       {
         "lineNumber": 203,
         "author": {
           "gitId": "-"
         },
-        "content": "  ## Panel content of outer nested panel"
+        "content": ""
       },
       {
         "lineNumber": 204,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cpanel header\u003d\"## Inner panel header without src\" expanded\u003e"
+        "content": "\u003cpanel header\u003d\"## Panel with normal src header\" src\u003d\"testPanels/PanelNormalSource.md\" expanded\u003e"
       },
       {
         "lineNumber": 205,
         "author": {
           "gitId": "-"
         },
-        "content": "  "
+        "content": "\u003c/panel\u003e    "
       },
       {
         "lineNumber": 206,
         "author": {
           "gitId": "-"
         },
-        "content": "  ## Panel content of inner nested panel"
+        "content": ""
       },
       {
         "lineNumber": 207,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/panel\u003e"
+        "content": "**Panel with src from a page segment**"
       },
       {
         "lineNumber": 208,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": ""
       },
       {
         "lineNumber": 209,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cpanel header\u003d\"## Panel with src from a page segment header\" src\u003d\"testPanels/PanelSourceContainsSegment.md#segment\" expanded\u003e"
       },
       {
         "lineNumber": 210,
         "author": {
           "gitId": "-"
         },
-        "content": "# Panel with src from another Markbind site"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 211,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Panel with src from another Markbind site header\" src\u003d\"sub_site/index.md\" expanded\u003e"
+        "content": ""
       },
       {
         "lineNumber": 212,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "**Panel with boilerplate**"
       },
       {
         "lineNumber": 213,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Panel with src from another Markbind site header\" src\u003d\"sub_site/testReuse.md\" expanded\u003e"
+        "content": ""
       },
       {
         "lineNumber": 214,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "\u003cpanel header\u003d\"## Boilerplate referencing\" src\u003d\"testPanels/boilerTestPanel.md\"  boilerplate expanded\u003e"
       },
       {
         "lineNumber": 215,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/div\u003e"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 216,
@@ -43263,14 +42479,14 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Modal with panel inside"
+        "content": "\u003cpanel header\u003d\"## Referencing specified path in boilerplate\" src\u003d\"testPanels/notInside.md\" boilerplate\u003d\"folder/panelBoilerplate.md\" expanded\u003e"
       },
       {
         "lineNumber": 218,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003ctrigger for\u003d\"modal-with-panel\"\u003etrigger\u003c/trigger\u003e"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 219,
@@ -43284,42 +42500,42 @@
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cmodal title\u003d\"modal title with panel inside\" id\u003d\"modal-with-panel\"\u003e"
+        "content": "**Nested panel**"
       },
       {
         "lineNumber": 221,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cpanel header\u003d\"## Panel inside modal\" expanded\u003e"
+        "content": ""
       },
       {
         "lineNumber": 222,
         "author": {
           "gitId": "-"
         },
-        "content": "  "
+        "content": "\u003cpanel header\u003d\"## Outer nested panel\" src\u003d\"testPanels/NestedPanel.md\" expanded\u003e"
       },
       {
         "lineNumber": 223,
         "author": {
           "gitId": "-"
         },
-        "content": "  ## Panel content inside modal"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 224,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/panel\u003e"
+        "content": ""
       },
       {
         "lineNumber": 225,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/modal\u003e"
+        "content": "**Nested panel without src**"
       },
       {
         "lineNumber": 226,
@@ -43333,35 +42549,35 @@
         "author": {
           "gitId": "-"
         },
-        "content": "# Unexpanded panel"
+        "content": "\u003cpanel header\u003d\"## Outer nested panel without src\" expanded\u003e"
       },
       {
         "lineNumber": 228,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cpanel header\u003d\"## Unexpanded panel header\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 229,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "  **Panel content of outer nested panel**"
       },
       {
         "lineNumber": 230,
         "author": {
           "gitId": "-"
         },
-        "content": "  ## Panel content of unexpanded panel should not appear in search data"
+        "content": ""
       },
       {
         "lineNumber": 231,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003cpanel header\u003d\"## Panel header inside unexpanded panel should not appear in search data\" expanded\u003e"
+        "content": "  \u003cpanel header\u003d\"## Inner panel header without src\" expanded\u003e"
       },
       {
         "lineNumber": 232,
@@ -43375,101 +42591,339 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  ## Panel content inside unexpanded panel should not appear in search data"
+        "content": "  **Panel content of inner nested panel**"
       },
       {
         "lineNumber": 234,
         "author": {
           "gitId": "-"
         },
-        "content": "  \u003c/panel\u003e"
+        "content": ""
       },
       {
         "lineNumber": 235,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/panel\u003e"
+        "content": "  \u003c/panel\u003e"
       },
       {
         "lineNumber": 236,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 237,
         "author": {
           "gitId": "-"
         },
-        "content": "# Test plugin in markbind/plugins"
+        "content": ""
       },
       {
         "lineNumber": 238,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Panel with src from another Markbind site**"
       },
       {
         "lineNumber": 239,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003cdiv id\u003d\"test-markbind-plugin\"\u003e"
+        "content": ""
       },
       {
         "lineNumber": 240,
         "author": {
           "gitId": "-"
         },
-        "content": "  Markbind Plugin Pre-render Placeholder"
+        "content": "\u003cpanel header\u003d\"## Panel with src from another Markbind site header\" src\u003d\"sub_site/index.md\" expanded\u003e"
       },
       {
         "lineNumber": 241,
         "author": {
           "gitId": "-"
         },
-        "content": "\u003c/div\u003e"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 242,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003cpanel header\u003d\"## Panel with src from another Markbind site header\" src\u003d\"sub_site/testReuse.md\" expanded\u003e"
       },
       {
         "lineNumber": 243,
         "author": {
           "gitId": "-"
         },
-        "content": "# Test search indexing"
+        "content": "\u003c/panel\u003e"
       },
       {
         "lineNumber": 244,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "\u003c/div\u003e"
       },
       {
         "lineNumber": 245,
         "author": {
           "gitId": "-"
         },
-        "content": "## Level 2 header (inside headingSearchIndex) with no-index attribute should not be indexed {.no-index}"
+        "content": ""
       },
       {
         "lineNumber": 246,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "**Modal with panel inside**"
       },
       {
         "lineNumber": 247,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 248,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003ctrigger for\u003d\"modal-with-panel\"\u003etrigger\u003c/trigger\u003e"
+      },
+      {
+        "lineNumber": 249,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 250,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cmodal title\u003d\"modal title with panel inside\" id\u003d\"modal-with-panel\"\u003e"
+      },
+      {
+        "lineNumber": 251,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cpanel header\u003d\"## Panel inside modal\" expanded\u003e"
+      },
+      {
+        "lineNumber": 252,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  "
+      },
+      {
+        "lineNumber": 253,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  **Panel content inside modal**"
+      },
+      {
+        "lineNumber": 254,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 255,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/panel\u003e"
+      },
+      {
+        "lineNumber": 256,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/modal\u003e"
+      },
+      {
+        "lineNumber": 257,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 258,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**Unexpanded panel**"
+      },
+      {
+        "lineNumber": 259,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 260,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cpanel header\u003d\"## Unexpanded panel header\"\u003e"
+      },
+      {
+        "lineNumber": 261,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 262,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  **Panel content of unexpanded panel should not appear in search data**"
+      },
+      {
+        "lineNumber": 263,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 264,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003cpanel header\u003d\"## Panel header inside unexpanded panel should not appear in search data\" expanded\u003e"
+      },
+      {
+        "lineNumber": 265,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  "
+      },
+      {
+        "lineNumber": 266,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  **Panel content inside unexpanded panel should not appear in search data**"
+      },
+      {
+        "lineNumber": 267,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 268,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  \u003c/panel\u003e"
+      },
+      {
+        "lineNumber": 269,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/panel\u003e"
+      },
+      {
+        "lineNumber": 270,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 271,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**Test plugin in markbind/plugins**"
+      },
+      {
+        "lineNumber": 272,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 273,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003cdiv id\u003d\"test-markbind-plugin\"\u003e"
+      },
+      {
+        "lineNumber": 274,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  Markbind Plugin Pre-render Placeholder"
+      },
+      {
+        "lineNumber": 275,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "\u003c/div\u003e"
+      },
+      {
+        "lineNumber": 276,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 277,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "**Test search indexing**"
+      },
+      {
+        "lineNumber": 278,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 279,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "## Level 2 header (inside headingSearchIndex) with no-index attribute should not be indexed {.no-index}"
+      },
+      {
+        "lineNumber": 280,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 281,
         "author": {
           "gitId": "-"
         },
@@ -43477,8 +42931,8 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 4,
-      "-": 243
+      "openorclose": 3,
+      "-": 278
     }
   },
   {
@@ -45261,9 +44715,9 @@
       {
         "lineNumber": 7,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "## Below panel is working"
+        "content": "**Below panel is working**"
       },
       {
         "lineNumber": 8,
@@ -45282,9 +44736,9 @@
       {
         "lineNumber": 10,
         "author": {
-          "gitId": "openorclose"
+          "gitId": "-"
         },
-        "content": "## Below should be a panel, but is now an error. Uncomment it to see the error."
+        "content": "**Below should be a panel, but is now an error. Uncomment it to see the error.**"
       },
       {
         "lineNumber": 11,
@@ -45295,7 +44749,8 @@
       }
     ],
     "authorContributionMap": {
-      "openorclose": 11
+      "openorclose": 9,
+      "-": 2
     }
   },
   {
@@ -45305,9 +44760,9 @@
       {
         "lineNumber": 1,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "## PlantUML Test"
+        "content": "**PlantUML Test**"
       },
       {
         "lineNumber": 2,
@@ -45319,9 +44774,9 @@
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Sequence Diagram"
+        "content": "**Sequence Diagram**"
       },
       {
         "lineNumber": 4,
@@ -45340,9 +44795,9 @@
       {
         "lineNumber": 6,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Use Case Diagram"
+        "content": "**Use Case Diagram**"
       },
       {
         "lineNumber": 7,
@@ -45361,9 +44816,9 @@
       {
         "lineNumber": 9,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Class Diagram"
+        "content": "**Class Diagram**"
       },
       {
         "lineNumber": 10,
@@ -45382,9 +44837,9 @@
       {
         "lineNumber": 12,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Activity Diagram"
+        "content": "**Activity Diagram**"
       },
       {
         "lineNumber": 13,
@@ -45403,9 +44858,9 @@
       {
         "lineNumber": 15,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Component Diagram"
+        "content": "**Component Diagram**"
       },
       {
         "lineNumber": 16,
@@ -45424,9 +44879,9 @@
       {
         "lineNumber": 18,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### State Diagram"
+        "content": "**State Diagram**"
       },
       {
         "lineNumber": 19,
@@ -45445,9 +44900,9 @@
       {
         "lineNumber": 21,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Object Diagram"
+        "content": "**Object Diagram**"
       },
       {
         "lineNumber": 22,
@@ -45458,7 +44913,8 @@
       }
     ],
     "authorContributionMap": {
-      "alyip98": 22
+      "alyip98": 14,
+      "-": 8
     }
   },
   {
@@ -45468,9 +44924,9 @@
       {
         "lineNumber": 1,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "# Thumbnail test"
+        "content": "**Thumbnail test**"
       },
       {
         "lineNumber": 2,
@@ -45482,9 +44938,9 @@
       {
         "lineNumber": 3,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "## Images"
+        "content": "**Images**"
       },
       {
         "lineNumber": 4,
@@ -45496,9 +44952,9 @@
       {
         "lineNumber": 5,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Square thumb, size \u003d 100 (default)"
+        "content": "**Square thumb, size \u003d 100 (default)**"
       },
       {
         "lineNumber": 6,
@@ -45517,9 +44973,9 @@
       {
         "lineNumber": 8,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Square thumb with alt\u003d\"Test\""
+        "content": "**Square thumb with alt\u003d\"Test\"**"
       },
       {
         "lineNumber": 9,
@@ -45538,9 +44994,9 @@
       {
         "lineNumber": 11,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Square thumb, size \u003d 200"
+        "content": "**Square thumb, size \u003d 200**"
       },
       {
         "lineNumber": 12,
@@ -45559,9 +45015,9 @@
       {
         "lineNumber": 14,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Circle thumbs, size \u003d 100"
+        "content": "**Circle thumbs, size \u003d 100**"
       },
       {
         "lineNumber": 15,
@@ -45587,9 +45043,9 @@
       {
         "lineNumber": 18,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### An actual image"
+        "content": "**An actual image**"
       },
       {
         "lineNumber": 19,
@@ -45629,9 +45085,9 @@
       {
         "lineNumber": 24,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Broken link, still takes up the space it\u0027s supposed to"
+        "content": "**Broken link, still takes up the space it\u0027s supposed to**"
       },
       {
         "lineNumber": 25,
@@ -45678,9 +45134,9 @@
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "## Borders"
+        "content": "**Borders**"
       },
       {
         "lineNumber": 32,
@@ -45748,9 +45204,9 @@
       {
         "lineNumber": 41,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "## Background"
+        "content": "**Background**"
       },
       {
         "lineNumber": 42,
@@ -45762,9 +45218,9 @@
       {
         "lineNumber": 43,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Valid CSS properties"
+        "content": "**Valid CSS properties**"
       },
       {
         "lineNumber": 44,
@@ -45797,9 +45253,9 @@
       {
         "lineNumber": 48,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Invalid CSS properties"
+        "content": "**Invalid CSS properties**"
       },
       {
         "lineNumber": 49,
@@ -45818,9 +45274,9 @@
       {
         "lineNumber": 51,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Empty"
+        "content": "**Empty**"
       },
       {
         "lineNumber": 52,
@@ -45853,9 +45309,9 @@
       {
         "lineNumber": 56,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "## Text/Emojis/Icons"
+        "content": "**Text/Emojis/Icons**"
       },
       {
         "lineNumber": 57,
@@ -45867,9 +45323,9 @@
       {
         "lineNumber": 58,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Text"
+        "content": "**Text**"
       },
       {
         "lineNumber": 59,
@@ -45888,9 +45344,9 @@
       {
         "lineNumber": 61,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Markdown"
+        "content": "**Markdown**"
       },
       {
         "lineNumber": 62,
@@ -45916,9 +45372,9 @@
       {
         "lineNumber": 65,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Emojis"
+        "content": "**Emojis**"
       },
       {
         "lineNumber": 66,
@@ -45944,9 +45400,9 @@
       {
         "lineNumber": 69,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### Icons"
+        "content": "**Icons**"
       },
       {
         "lineNumber": 70,
@@ -45986,9 +45442,9 @@
       {
         "lineNumber": 75,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "## font-size/font-color"
+        "content": "**font-size/font-color**"
       },
       {
         "lineNumber": 76,
@@ -46000,9 +45456,9 @@
       {
         "lineNumber": 77,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### 20px font-size"
+        "content": "**20px font-size**"
       },
       {
         "lineNumber": 78,
@@ -46021,9 +45477,9 @@
       {
         "lineNumber": 80,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### 40px font-size"
+        "content": "**40px font-size**"
       },
       {
         "lineNumber": 81,
@@ -46042,9 +45498,9 @@
       {
         "lineNumber": 83,
         "author": {
-          "gitId": "alyip98"
+          "gitId": "-"
         },
-        "content": "### font-color"
+        "content": "**font-color**"
       },
       {
         "lineNumber": 84,
@@ -46062,7 +45518,8 @@
       }
     ],
     "authorContributionMap": {
-      "alyip98": 85
+      "alyip98": 63,
+      "-": 22
     }
   },
   {
