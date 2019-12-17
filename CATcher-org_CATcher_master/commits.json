@@ -2092,8 +2092,8 @@
     ]
   },
   "authorFinalContributionMap": {
-    "ptvrajsk": 3491,
-    "KevinCJH": 1653
+    "ptvrajsk": 3281,
+    "KevinCJH": 1500
   },
   "authorFileTypeContributionMap": {
     "ptvrajsk": {
@@ -2104,7 +2104,7 @@
       "py": 0,
       "tag": 0,
       "html": 379,
-      "ts": 3084
+      "ts": 2874
     },
     "KevinCJH": {
       "java": 0,
@@ -2114,7 +2114,7 @@
       "py": 0,
       "tag": 0,
       "html": 260,
-      "ts": 1393
+      "ts": 1240
     }
   },
   "authorContributionVariance": {
