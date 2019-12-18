@@ -582,20 +582,20 @@
     ]
   },
   "authorFinalContributionMap": {
-    "erjillsison": 1531,
+    "erjillsison": 1520,
     "Pengyuz": 723,
     "crizyli": 1593
   },
   "authorFileTypeContributionMap": {
     "erjillsison": {
-      "java": 607,
+      "java": 602,
       "js": 0,
       "scss": 36,
       "md": 0,
       "py": 0,
       "tag": 0,
-      "html": 132,
-      "ts": 756
+      "html": 128,
+      "ts": 754
     },
     "Pengyuz": {
       "java": 444,
