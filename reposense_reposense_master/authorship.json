@@ -16250,140 +16250,140 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "          padding-right: 15px;"
       },
       {
         "lineNumber": 519,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 520,
         "author": {
           "gitId": "-"
         },
-        "content": "        label {"
+        "content": ""
       },
       {
         "lineNumber": 521,
         "author": {
           "gitId": "-"
         },
-        "content": "          overflow-y: hidden;"
+        "content": "        label {"
       },
       {
         "lineNumber": 522,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "          overflow-y: hidden;"
       },
       {
         "lineNumber": 523,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 524,
         "author": {
           "gitId": "-"
         },
-        "content": "        \u0026 \u003e label {"
+        "content": ""
       },
       {
         "lineNumber": 525,
         "author": {
           "gitId": "-"
         },
-        "content": "          margin-left: 10px;"
+        "content": "        \u0026 \u003e label {"
       },
       {
         "lineNumber": 526,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "          margin-left: 10px;"
       },
       {
         "lineNumber": 527,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 528,
         "author": {
           "gitId": "-"
         },
-        "content": "        span {"
+        "content": ""
       },
       {
         "lineNumber": 529,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        span {"
+      },
+      {
+        "lineNumber": 530,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          margin-left: .25rem;"
       },
       {
-        "lineNumber": 530,
+        "lineNumber": 531,
         "author": {
           "gitId": "-"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 531,
+        "lineNumber": 532,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 532,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": ""
-      },
-      {
         "lineNumber": 533,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      .reverse {"
-      },
-      {
-        "lineNumber": 534,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "        color: mui-color(\u0027black\u0027);"
-      },
-      {
-        "lineNumber": 535,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "      }"
-      },
-      {
-        "lineNumber": 536,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 537,
+        "lineNumber": 534,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
+      },
+      {
+        "lineNumber": 535,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 536,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "  .files {"
+      },
+      {
+        "lineNumber": 537,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    clear: left;"
       },
       {
         "lineNumber": 538,
@@ -16397,544 +16397,544 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  .files {"
+        "content": "    .file {"
       },
       {
         "lineNumber": 540,
         "author": {
           "gitId": "-"
         },
-        "content": "    clear: left;"
+        "content": "      pre {"
       },
       {
         "lineNumber": 541,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        display: none;"
       },
       {
         "lineNumber": 542,
         "author": {
           "gitId": "-"
         },
-        "content": "    .file {"
+        "content": "      }"
       },
       {
         "lineNumber": 543,
         "author": {
           "gitId": "-"
         },
-        "content": "      pre {"
+        "content": ""
       },
       {
         "lineNumber": 544,
         "author": {
           "gitId": "-"
         },
-        "content": "        display: none;"
+        "content": "      \u0026.active {"
       },
       {
         "lineNumber": 545,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "        pre {"
       },
       {
         "lineNumber": 546,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "          display: grid;"
       },
       {
         "lineNumber": 547,
         "author": {
           "gitId": "-"
         },
-        "content": "      \u0026.active {"
+        "content": ""
       },
       {
         "lineNumber": 548,
         "author": {
           "gitId": "-"
         },
-        "content": "        pre {"
+        "content": "          .hljs {"
       },
       {
         "lineNumber": 549,
         "author": {
           "gitId": "-"
         },
-        "content": "          display: grid;"
+        "content": "            // overwrite hljs library"
       },
       {
         "lineNumber": 550,
         "author": {
           "gitId": "-"
         },
-        "content": ""
-      },
-      {
-        "lineNumber": 551,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          .hljs {"
-      },
-      {
-        "lineNumber": 552,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            // overwrite hljs library"
-      },
-      {
-        "lineNumber": 553,
-        "author": {
-          "gitId": "-"
-        },
         "content": "            display: inherit;"
       },
       {
-        "lineNumber": 554,
+        "lineNumber": 551,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            padding: 0;"
       },
       {
-        "lineNumber": 555,
+        "lineNumber": 552,
         "author": {
           "gitId": "-"
         },
         "content": "          }"
       },
       {
-        "lineNumber": 556,
+        "lineNumber": 553,
         "author": {
           "gitId": "-"
         },
         "content": "        }"
+      },
+      {
+        "lineNumber": 554,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      }"
+      },
+      {
+        "lineNumber": 555,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 556,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
       },
       {
         "lineNumber": 557,
         "author": {
           "gitId": "-"
         },
-        "content": "      }"
+        "content": "    .title {"
       },
       {
         "lineNumber": 558,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "      font-size: 1.25rem;"
       },
       {
         "lineNumber": 559,
         "author": {
           "gitId": "-"
         },
-        "content": ""
-      },
-      {
-        "lineNumber": 560,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    .title {"
-      },
-      {
-        "lineNumber": 561,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "      font-size: 1.25rem;"
-      },
-      {
-        "lineNumber": 562,
-        "author": {
-          "gitId": "-"
-        },
         "content": "      font-weight: bold;"
       },
       {
-        "lineNumber": 563,
+        "lineNumber": 560,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      margin-top: 1rem;"
       },
       {
-        "lineNumber": 564,
+        "lineNumber": 561,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 565,
+        "lineNumber": 562,
         "author": {
           "gitId": "-"
         },
         "content": "      .path {"
       },
       {
-        "lineNumber": 566,
+        "lineNumber": 563,
         "author": {
           "gitId": "-"
         },
         "content": "        cursor: pointer;"
       },
       {
-        "lineNumber": 567,
+        "lineNumber": 564,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 568,
+        "lineNumber": 565,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 569,
+        "lineNumber": 566,
         "author": {
           "gitId": "-"
         },
         "content": "      .loc {"
       },
       {
-        "lineNumber": 570,
+        "lineNumber": 567,
         "author": {
           "gitId": "-"
         },
         "content": "        color: mui-color(\u0027grey\u0027);"
       },
       {
-        "lineNumber": 571,
+        "lineNumber": 568,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 572,
+        "lineNumber": 569,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 573,
+        "lineNumber": 570,
         "author": {
           "gitId": "-"
         },
         "content": "      .button {"
       },
       {
-        "lineNumber": 574,
+        "lineNumber": 571,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        color: mui-color(\u0027grey\u0027);"
       },
       {
-        "lineNumber": 575,
+        "lineNumber": 572,
         "author": {
           "gitId": "-"
         },
         "content": "        font-size: 1.15rem;"
       },
       {
-        "lineNumber": 576,
+        "lineNumber": 573,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        margin-left: .5rem;"
       },
       {
-        "lineNumber": 577,
+        "lineNumber": 574,
         "author": {
           "gitId": "-"
         },
         "content": "        text-decoration: none;"
       },
       {
-        "lineNumber": 578,
+        "lineNumber": 575,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 579,
+        "lineNumber": 576,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 580,
+        "lineNumber": 577,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 581,
+        "lineNumber": 578,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    .segment {"
       },
       {
-        "lineNumber": 582,
+        "lineNumber": 579,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      border-left: .25rem solid mui-color(\u0027green\u0027);"
       },
       {
-        "lineNumber": 583,
+        "lineNumber": 580,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": ""
       },
       {
-        "lineNumber": 584,
+        "lineNumber": 581,
         "author": {
           "gitId": "-"
         },
         "content": "      .code {"
       },
       {
-        "lineNumber": 585,
+        "lineNumber": 582,
         "author": {
           "gitId": "-"
         },
         "content": "        background-color: mui-color(\u0027green\u0027, \u002750\u0027);"
       },
       {
-        "lineNumber": 586,
+        "lineNumber": 583,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        padding-left: 1rem;"
       },
       {
-        "lineNumber": 587,
+        "lineNumber": 584,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 588,
+        "lineNumber": 585,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 589,
+        "lineNumber": 586,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      .line-number {"
       },
       {
-        "lineNumber": 590,
+        "lineNumber": 587,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        color: mui-color(\u0027grey\u0027);"
       },
       {
-        "lineNumber": 591,
+        "lineNumber": 588,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        float: left;"
       },
       {
-        "lineNumber": 592,
+        "lineNumber": 589,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        // Not allowing user to select text"
       },
       {
-        "lineNumber": 593,
+        "lineNumber": 590,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        -webkit-touch-callout: none; /* iOS Safari */"
       },
       {
-        "lineNumber": 594,
+        "lineNumber": 591,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        -webkit-user-select: none; /* Safari */"
       },
       {
-        "lineNumber": 595,
+        "lineNumber": 592,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        -khtml-user-select: none; /* Konqueror HTML */"
       },
       {
-        "lineNumber": 596,
+        "lineNumber": 593,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        -moz-user-select: none; /* Firefox */"
       },
       {
-        "lineNumber": 597,
+        "lineNumber": 594,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        -ms-user-select: none; /* Internet Explorer/Edge */"
       },
       {
-        "lineNumber": 598,
+        "lineNumber": 595,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */"
       },
       {
-        "lineNumber": 599,
+        "lineNumber": 596,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        width: 2rem;"
       },
       {
-        "lineNumber": 600,
+        "lineNumber": 597,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": ""
       },
       {
-        "lineNumber": 601,
+        "lineNumber": 598,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        // overwrite all hljs colours"
       },
       {
-        "lineNumber": 602,
+        "lineNumber": 599,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        [class^\u003d\u0027hljs\u0027] {"
       },
       {
-        "lineNumber": 603,
+        "lineNumber": 600,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          color: mui-color(\u0027grey\u0027);"
       },
       {
-        "lineNumber": 604,
+        "lineNumber": 601,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 605,
+        "lineNumber": 602,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 606,
+        "lineNumber": 603,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": ""
       },
       {
-        "lineNumber": 607,
+        "lineNumber": 604,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      .line-content {"
       },
       {
-        "lineNumber": 608,
+        "lineNumber": 605,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        padding-left: 2rem;"
       },
       {
-        "lineNumber": 609,
+        "lineNumber": 606,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 610,
+        "lineNumber": 607,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": ""
       },
       {
-        "lineNumber": 611,
+        "lineNumber": 608,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      \u0026.untouched {"
       },
       {
-        "lineNumber": 612,
+        "lineNumber": 609,
         "author": {
           "gitId": "-"
         },
         "content": "        $grey: mui-color(\u0027grey\u0027, \u0027400\u0027);"
       },
       {
-        "lineNumber": 613,
+        "lineNumber": 610,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        border-left: .25rem solid $grey;"
       },
       {
-        "lineNumber": 614,
+        "lineNumber": 611,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        height: 20px; /* height of a single line of code */"
       },
       {
-        "lineNumber": 615,
+        "lineNumber": 612,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "        position: relative;"
       },
       {
-        "lineNumber": 616,
+        "lineNumber": 613,
         "author": {
           "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 614,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        \u0026.active {"
+      },
+      {
+        "lineNumber": 615,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "          height: 100%;"
+      },
+      {
+        "lineNumber": 616,
+        "author": {
+          "gitId": "jamessspanggg"
         },
         "content": ""
       },
@@ -16943,773 +16943,752 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        \u0026.active {"
+        "content": "          .code {"
       },
       {
         "lineNumber": 618,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "          height: 100%;"
+        "content": "            background-color: mui-color(\u0027white\u0027);"
       },
       {
         "lineNumber": 619,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "            display: inherit;"
       },
       {
         "lineNumber": 620,
         "author": {
           "gitId": "-"
         },
-        "content": "          .code {"
+        "content": "          }"
       },
       {
         "lineNumber": 621,
         "author": {
           "gitId": "-"
         },
-        "content": "            background-color: mui-color(\u0027white\u0027);"
-      },
-      {
-        "lineNumber": 622,
-        "author": {
-          "gitId": "jamessspanggg"
-        },
-        "content": "            display: inherit;"
-      },
-      {
-        "lineNumber": 623,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "          }"
-      },
-      {
-        "lineNumber": 624,
-        "author": {
-          "gitId": "-"
-        },
         "content": ""
       },
       {
-        "lineNumber": 625,
+        "lineNumber": 622,
         "author": {
           "gitId": "-"
         },
         "content": "          .closer {"
       },
       {
-        "lineNumber": 626,
+        "lineNumber": 623,
         "author": {
           "gitId": "-"
         },
         "content": "            .icon {"
       },
       {
-        "lineNumber": 627,
+        "lineNumber": 624,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "              \u0026.open {"
       },
       {
-        "lineNumber": 628,
+        "lineNumber": 625,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "                display: none;"
       },
       {
-        "lineNumber": 629,
+        "lineNumber": 626,
         "author": {
           "gitId": "-"
         },
         "content": "              }"
       },
       {
-        "lineNumber": 630,
+        "lineNumber": 627,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 631,
+        "lineNumber": 628,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "              \u0026.hide {"
       },
       {
-        "lineNumber": 632,
+        "lineNumber": 629,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "                display: inherit;"
       },
       {
-        "lineNumber": 633,
+        "lineNumber": 630,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "              }"
       },
       {
-        "lineNumber": 634,
+        "lineNumber": 631,
         "author": {
           "gitId": "-"
         },
         "content": "            }"
+      },
+      {
+        "lineNumber": 632,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "          }"
+      },
+      {
+        "lineNumber": 633,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 634,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
       },
       {
         "lineNumber": 635,
         "author": {
           "gitId": "-"
         },
-        "content": "          }"
+        "content": "        .code {"
       },
       {
         "lineNumber": 636,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "          display: none;"
       },
       {
         "lineNumber": 637,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        }"
       },
       {
         "lineNumber": 638,
         "author": {
           "gitId": "-"
         },
-        "content": "        .code {"
+        "content": ""
       },
       {
         "lineNumber": 639,
         "author": {
           "gitId": "-"
         },
-        "content": "          display: none;"
+        "content": "        .closer {"
       },
       {
         "lineNumber": 640,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 641,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 642,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        .closer {"
-      },
-      {
-        "lineNumber": 643,
-        "author": {
-          "gitId": "-"
-        },
         "content": "          cursor: pointer;"
       },
       {
-        "lineNumber": 644,
+        "lineNumber": 641,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          // custom margin for position of toggle icon"
       },
       {
-        "lineNumber": 645,
+        "lineNumber": 642,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          margin: .2rem 0 0 -.45rem;"
       },
       {
-        "lineNumber": 646,
+        "lineNumber": 643,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          position: absolute;"
       },
       {
-        "lineNumber": 647,
+        "lineNumber": 644,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 648,
+        "lineNumber": 645,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          \u0026.bottom {"
       },
       {
-        "lineNumber": 649,
+        "lineNumber": 646,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            //custom margin for position of toggle icon at the bottom of segment"
       },
       {
-        "lineNumber": 650,
+        "lineNumber": 647,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            margin: -1.05rem 0 0 -.45rem;"
       },
       {
-        "lineNumber": 651,
+        "lineNumber": 648,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          }"
       },
       {
-        "lineNumber": 652,
+        "lineNumber": 649,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 653,
+        "lineNumber": 650,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "          .icon {"
       },
       {
-        "lineNumber": 654,
+        "lineNumber": 651,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            background-color: mui-color(\u0027white\u0027);"
       },
       {
-        "lineNumber": 655,
+        "lineNumber": 652,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            color: mui-color(\u0027grey\u0027);"
       },
       {
-        "lineNumber": 656,
+        "lineNumber": 653,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            width: .75em;"
       },
       {
-        "lineNumber": 657,
+        "lineNumber": 654,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 658,
+        "lineNumber": 655,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            \u0026.open {"
       },
       {
-        "lineNumber": 659,
+        "lineNumber": 656,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "              display: inherit;"
       },
       {
-        "lineNumber": 660,
+        "lineNumber": 657,
         "author": {
           "gitId": "-"
         },
         "content": "            }"
       },
       {
-        "lineNumber": 661,
+        "lineNumber": 658,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 662,
+        "lineNumber": 659,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "            \u0026.hide {"
       },
       {
-        "lineNumber": 663,
+        "lineNumber": 660,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "              display: none;"
       },
       {
-        "lineNumber": 664,
+        "lineNumber": 661,
         "author": {
           "gitId": "-"
         },
         "content": "            }"
       },
       {
-        "lineNumber": 665,
+        "lineNumber": 662,
         "author": {
           "gitId": "-"
         },
         "content": "          }"
       },
       {
-        "lineNumber": 666,
+        "lineNumber": 663,
         "author": {
           "gitId": "-"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 667,
+        "lineNumber": 664,
         "author": {
           "gitId": "-"
         },
         "content": "      }"
       },
       {
-        "lineNumber": 668,
+        "lineNumber": 665,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 669,
+        "lineNumber": 666,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 670,
+        "lineNumber": 667,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 671,
+        "lineNumber": 668,
         "author": {
           "gitId": "-"
         },
         "content": "  .empty {"
       },
       {
-        "lineNumber": 672,
+        "lineNumber": 669,
         "author": {
           "gitId": "-"
         },
         "content": "    text-align: center;"
       },
       {
-        "lineNumber": 673,
+        "lineNumber": 670,
         "author": {
           "gitId": "-"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 674,
+        "lineNumber": 671,
         "author": {
           "gitId": "-"
         },
         "content": "}"
       },
       {
-        "lineNumber": 675,
+        "lineNumber": 672,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 676,
+        "lineNumber": 673,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": ".zoom {"
       },
       {
-        "lineNumber": 677,
+        "lineNumber": 674,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "  \u0026__title {"
       },
       {
-        "lineNumber": 678,
+        "lineNumber": 675,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    \u0026--chart {"
       },
       {
-        "lineNumber": 679,
+        "lineNumber": 676,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      margin-left: .3rem;"
       },
       {
-        "lineNumber": 680,
+        "lineNumber": 677,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 681,
+        "lineNumber": 678,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 682,
+        "lineNumber": 679,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    \u0026--period {"
       },
       {
-        "lineNumber": 683,
+        "lineNumber": 680,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      margin-left: 2rem;"
       },
       {
-        "lineNumber": 684,
+        "lineNumber": 681,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 685,
+        "lineNumber": 682,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 686,
+        "lineNumber": 683,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    \u0026--granularity {"
       },
       {
-        "lineNumber": 687,
+        "lineNumber": 684,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "      margin-top: .5rem;"
       },
       {
-        "lineNumber": 688,
+        "lineNumber": 685,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 689,
+        "lineNumber": 686,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 690,
+        "lineNumber": 687,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 691,
+        "lineNumber": 688,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  \u0026__toggle-commit-message-body {"
       },
       {
-        "lineNumber": 692,
+        "lineNumber": 689,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    padding-top: 10px;"
       },
       {
-        "lineNumber": 693,
+        "lineNumber": 690,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 694,
+        "lineNumber": 691,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "}"
       },
       {
-        "lineNumber": 695,
+        "lineNumber": 692,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 696,
+        "lineNumber": 693,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "/* Commit Message Body in Zoom Tab */"
       },
       {
-        "lineNumber": 697,
+        "lineNumber": 694,
         "author": {
           "gitId": "jylee-git"
         },
         "content": ".commit-message {"
       },
       {
-        "lineNumber": 698,
+        "lineNumber": 695,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  \u0026.active {"
       },
       {
-        "lineNumber": 699,
+        "lineNumber": 696,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    .body {"
       },
       {
-        "lineNumber": 700,
+        "lineNumber": 697,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      background-color: mui-color(\u0027white\u0027);"
       },
       {
-        "lineNumber": 701,
+        "lineNumber": 698,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      border: 1px solid mui-color(\u0027grey\u0027, \u0027700\u0027);"
       },
       {
-        "lineNumber": 702,
+        "lineNumber": 699,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      display: inherit;"
       },
       {
-        "lineNumber": 703,
+        "lineNumber": 700,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      margin-bottom: 1rem;"
       },
       {
-        "lineNumber": 704,
+        "lineNumber": 701,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      overflow-x: auto;"
       },
       {
-        "lineNumber": 705,
+        "lineNumber": 702,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      padding: .4rem;"
       },
       {
-        "lineNumber": 706,
+        "lineNumber": 703,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      resize: none;"
       },
       {
-        "lineNumber": 707,
+        "lineNumber": 704,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      width: 100%;"
       },
       {
-        "lineNumber": 708,
+        "lineNumber": 705,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 709,
+        "lineNumber": 706,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 710,
+        "lineNumber": 707,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 711,
+        "lineNumber": 708,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  .body {"
       },
       {
-        "lineNumber": 712,
+        "lineNumber": 709,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    display: none;"
       },
       {
-        "lineNumber": 713,
+        "lineNumber": 710,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 714,
+        "lineNumber": 711,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 715,
+        "lineNumber": 712,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  \u0026--button {"
       },
       {
-        "lineNumber": 716,
+        "lineNumber": 713,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    color: mui-color(\u0027grey\u0027, \u0027700\u0027);"
       },
       {
-        "lineNumber": 717,
+        "lineNumber": 714,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    padding-left: .5rem;"
       },
       {
-        "lineNumber": 718,
+        "lineNumber": 715,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 719,
+        "lineNumber": 716,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    \u0026:hover {"
       },
       {
-        "lineNumber": 720,
+        "lineNumber": 717,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "      cursor: pointer;"
       },
       {
-        "lineNumber": 721,
+        "lineNumber": 718,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 722,
+        "lineNumber": 719,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 723,
+        "lineNumber": 720,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 724,
+        "lineNumber": 721,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  pre {"
       },
       {
-        "lineNumber": 725,
+        "lineNumber": 722,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "    margin: 0;"
       },
       {
-        "lineNumber": 726,
+        "lineNumber": 723,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "  }"
       },
       {
-        "lineNumber": 727,
+        "lineNumber": 724,
         "author": {
           "gitId": "-"
         },
@@ -17719,8 +17698,8 @@
     "authorContributionMap": {
       "jylee-git": 77,
       "bluein-green": 6,
-      "jamessspanggg": 207,
-      "-": 437
+      "jamessspanggg": 203,
+      "-": 438
     }
   },
   {
@@ -21145,7 +21124,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      toReverseSortFiles: false,"
+        "content": "      toReverseSortFiles: true,"
       },
       {
         "lineNumber": 43,
@@ -21166,7 +21145,7 @@
         "author": {
           "gitId": "-"
         },
-        "content": "      sortingFunction: window.comparator(filesSortDict.lineOfCode),"
+        "content": "      sortingFunction: (a, b) \u003d\u003e -1 * window.comparator(filesSortDict.lineOfCode)(a, b),"
       },
       {
         "lineNumber": 46,
@@ -30865,737 +30844,737 @@
       {
         "lineNumber": 31,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": ""
+        "content": "import reposense.util.TimeUtil;"
       },
       {
         "lineNumber": 32,
         "author": {
           "gitId": "-"
         },
-        "content": "/**"
+        "content": ""
       },
       {
         "lineNumber": 33,
         "author": {
           "gitId": "-"
         },
-        "content": " * The main RepoSense class."
+        "content": "/**"
       },
       {
         "lineNumber": 34,
         "author": {
           "gitId": "-"
         },
-        "content": " */"
+        "content": " * The main RepoSense class."
       },
       {
         "lineNumber": 35,
         "author": {
           "gitId": "-"
         },
-        "content": "public class RepoSense {"
+        "content": " */"
       },
       {
         "lineNumber": 36,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final Logger logger \u003d LogsManager.getLogger(RepoSense.class);"
+        "content": "public class RepoSense {"
       },
       {
         "lineNumber": 37,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final int SERVER_PORT_NUMBER \u003d 9000;"
+        "content": "    private static final Logger logger \u003d LogsManager.getLogger(RepoSense.class);"
       },
       {
         "lineNumber": 38,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"E MMM d HH:mm:ss yyyy z\");"
+        "content": "    private static final int SERVER_PORT_NUMBER \u003d 9000;"
       },
       {
         "lineNumber": 39,
         "author": {
           "gitId": "-"
         },
-        "content": "    private static final String VERSION_UNSPECIFIED \u003d \"unspecified\";"
+        "content": "    private static final DateTimeFormatter formatter \u003d DateTimeFormatter.ofPattern(\"E MMM d HH:mm:ss yyyy z\");"
       },
       {
         "lineNumber": 40,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    private static final String VERSION_UNSPECIFIED \u003d \"unspecified\";"
       },
       {
         "lineNumber": 41,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": ""
       },
       {
         "lineNumber": 42,
         "author": {
           "gitId": "-"
         },
-        "content": "     * The entry point of the program."
+        "content": "    /**"
       },
       {
         "lineNumber": 43,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "     * The entry point of the program."
       },
       {
         "lineNumber": 44,
         "author": {
           "gitId": "-"
         },
-        "content": "    public static void main(String[] args) {"
+        "content": "     */"
       },
       {
         "lineNumber": 45,
         "author": {
           "gitId": "-"
         },
-        "content": "        try {"
+        "content": "    public static void main(String[] args) {"
       },
       {
         "lineNumber": 46,
         "author": {
           "gitId": "-"
         },
-        "content": "            CliArguments cliArguments \u003d ArgsParser.parse(args);"
+        "content": "        try {"
       },
       {
         "lineNumber": 47,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "            List\u003cRepoConfiguration\u003e configs \u003d null;"
+        "content": "            TimeUtil.startTimer();"
       },
       {
         "lineNumber": 48,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "            CliArguments cliArguments \u003d ArgsParser.parse(args);"
       },
       {
         "lineNumber": 49,
         "author": {
           "gitId": "-"
         },
-        "content": "            if (cliArguments instanceof ViewCliArguments) {"
+        "content": "            List\u003cRepoConfiguration\u003e configs \u003d null;"
       },
       {
         "lineNumber": 50,
         "author": {
           "gitId": "-"
         },
-        "content": "                ReportServer.startServer(SERVER_PORT_NUMBER, (("
+        "content": ""
       },
       {
         "lineNumber": 51,
         "author": {
           "gitId": "-"
         },
-        "content": "                        ViewCliArguments) cliArguments).getReportDirectoryPath().toAbsolutePath());"
+        "content": "            if (cliArguments instanceof ViewCliArguments) {"
       },
       {
         "lineNumber": 52,
         "author": {
           "gitId": "-"
         },
-        "content": "                return;"
+        "content": "                ReportServer.startServer(SERVER_PORT_NUMBER, (("
       },
       {
         "lineNumber": 53,
         "author": {
           "gitId": "-"
         },
-        "content": "            } else if (cliArguments instanceof ConfigCliArguments) {"
+        "content": "                        ViewCliArguments) cliArguments).getReportDirectoryPath().toAbsolutePath());"
       },
       {
         "lineNumber": 54,
         "author": {
           "gitId": "-"
         },
-        "content": "                configs \u003d getRepoConfigurations((ConfigCliArguments) cliArguments);"
+        "content": "                return;"
       },
       {
         "lineNumber": 55,
         "author": {
           "gitId": "-"
         },
-        "content": "            } else if (cliArguments instanceof LocationsCliArguments) {"
+        "content": "            } else if (cliArguments instanceof ConfigCliArguments) {"
       },
       {
         "lineNumber": 56,
         "author": {
           "gitId": "-"
         },
-        "content": "                configs \u003d getRepoConfigurations((LocationsCliArguments) cliArguments);"
+        "content": "                configs \u003d getRepoConfigurations((ConfigCliArguments) cliArguments);"
       },
       {
         "lineNumber": 57,
         "author": {
           "gitId": "-"
         },
-        "content": "            } else {"
+        "content": "            } else if (cliArguments instanceof LocationsCliArguments) {"
       },
       {
         "lineNumber": 58,
         "author": {
           "gitId": "-"
         },
-        "content": "                throw new AssertionError(\"CliArguments\u0027s subclass type is unhandled.\");"
+        "content": "                configs \u003d getRepoConfigurations((LocationsCliArguments) cliArguments);"
       },
       {
         "lineNumber": 59,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            } else {"
       },
       {
         "lineNumber": 60,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "                throw new AssertionError(\"CliArguments\u0027s subclass type is unhandled.\");"
       },
       {
         "lineNumber": 61,
         "author": {
           "gitId": "-"
         },
-        "content": "            RepoConfiguration.setFormatsToRepoConfigs(configs, cliArguments.getFormats());"
+        "content": "            }"
       },
       {
         "lineNumber": 62,
         "author": {
           "gitId": "-"
         },
-        "content": "            RepoConfiguration.setDatesToRepoConfigs(configs, cliArguments.getSinceDate(), cliArguments.getUntilDate());"
+        "content": ""
       },
       {
         "lineNumber": 63,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            RepoConfiguration.setFormatsToRepoConfigs(configs, cliArguments.getFormats());"
+      },
+      {
+        "lineNumber": 64,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            RepoConfiguration.setDatesToRepoConfigs(configs, cliArguments.getSinceDate(), cliArguments.getUntilDate());"
+      },
+      {
+        "lineNumber": 65,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "            List\u003cPath\u003e reportFoldersAndFiles \u003d ReportGenerator.generateReposReport(configs,"
       },
       {
-        "lineNumber": 64,
+        "lineNumber": 66,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "                    cliArguments.getOutputFilePath().toAbsolutePath().toString(),"
       },
       {
-        "lineNumber": 65,
+        "lineNumber": 67,
         "author": {
           "gitId": "-"
         },
         "content": "                    formatter.format(ZonedDateTime.now(cliArguments.getZoneId())),"
       },
       {
-        "lineNumber": 66,
+        "lineNumber": 68,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "                    cliArguments.getSinceDate(), cliArguments.getUntilDate(),"
       },
       {
-        "lineNumber": 67,
+        "lineNumber": 69,
         "author": {
           "gitId": "jamessspanggg"
         },
         "content": "                    cliArguments.isSinceDateProvided(), cliArguments.isUntilDateProvided());"
       },
       {
-        "lineNumber": 68,
+        "lineNumber": 70,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "            FileUtil.zipFoldersAndFiles(reportFoldersAndFiles, cliArguments.getOutputFilePath().toAbsolutePath(),"
       },
       {
-        "lineNumber": 69,
+        "lineNumber": 71,
         "author": {
           "gitId": "jylee-git"
         },
         "content": "                    \".json\");"
       },
       {
-        "lineNumber": 70,
+        "lineNumber": 72,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 71,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            if (cliArguments.isAutomaticallyLaunching()) {"
-      },
-      {
-        "lineNumber": 72,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "                ReportServer.startServer(SERVER_PORT_NUMBER, cliArguments.getOutputFilePath().toAbsolutePath());"
-      },
-      {
         "lineNumber": 73,
         "author": {
-          "gitId": "-"
+          "gitId": "jamessspanggg"
         },
-        "content": "            }"
+        "content": "            logger.info(TimeUtil.getElapsedTimeMessage());"
       },
       {
         "lineNumber": 74,
         "author": {
           "gitId": "-"
         },
-        "content": "        } catch (IOException ioe) {"
+        "content": ""
       },
       {
         "lineNumber": 75,
         "author": {
           "gitId": "-"
         },
-        "content": "            logger.log(Level.WARNING, ioe.getMessage(), ioe);"
+        "content": "            if (cliArguments.isAutomaticallyLaunching()) {"
       },
       {
         "lineNumber": 76,
         "author": {
           "gitId": "-"
         },
-        "content": "        } catch (ParseException pe) {"
+        "content": "                ReportServer.startServer(SERVER_PORT_NUMBER, cliArguments.getOutputFilePath().toAbsolutePath());"
       },
       {
         "lineNumber": 77,
         "author": {
           "gitId": "-"
         },
-        "content": "            logger.log(Level.WARNING, pe.getMessage(), pe);"
+        "content": "            }"
       },
       {
         "lineNumber": 78,
         "author": {
           "gitId": "-"
         },
-        "content": "        } catch (HelpScreenException e) {"
+        "content": "        } catch (IOException ioe) {"
       },
       {
         "lineNumber": 79,
         "author": {
           "gitId": "-"
         },
-        "content": "            // help message was printed by the ArgumentParser; it is safe to exit."
+        "content": "            logger.log(Level.WARNING, ioe.getMessage(), ioe);"
       },
       {
         "lineNumber": 80,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        } catch (ParseException pe) {"
       },
       {
         "lineNumber": 81,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            logger.log(Level.WARNING, pe.getMessage(), pe);"
       },
       {
         "lineNumber": 82,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "        } catch (HelpScreenException e) {"
       },
       {
         "lineNumber": 83,
         "author": {
           "gitId": "-"
         },
-        "content": "    /**"
+        "content": "            // help message was printed by the ArgumentParser; it is safe to exit."
       },
       {
         "lineNumber": 84,
         "author": {
           "gitId": "-"
         },
-        "content": "     * Constructs a list of {@code RepoConfiguration} if {@code cliArguments} is a {@code ConfigCliArguments}."
+        "content": "        }"
       },
       {
         "lineNumber": 85,
         "author": {
           "gitId": "-"
         },
-        "content": "     *"
+        "content": "    }"
       },
       {
         "lineNumber": 86,
         "author": {
           "gitId": "-"
         },
-        "content": "     * @throws IOException if user-supplied csv file does not exists or is not readable."
+        "content": ""
       },
       {
         "lineNumber": 87,
         "author": {
           "gitId": "-"
         },
-        "content": "     */"
+        "content": "    /**"
       },
       {
         "lineNumber": 88,
         "author": {
           "gitId": "-"
         },
-        "content": "    public static List\u003cRepoConfiguration\u003e getRepoConfigurations(ConfigCliArguments cliArguments) throws IOException {"
+        "content": "     * Constructs a list of {@code RepoConfiguration} if {@code cliArguments} is a {@code ConfigCliArguments}."
       },
       {
         "lineNumber": 89,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cRepoConfiguration\u003e repoConfigs \u003d new RepoConfigCsvParser(cliArguments.getRepoConfigFilePath()).parse();"
+        "content": "     *"
       },
       {
         "lineNumber": 90,
         "author": {
-          "gitId": "jylee-git"
+          "gitId": "-"
         },
-        "content": "        List\u003cAuthorConfiguration\u003e authorConfigs;"
+        "content": "     * @throws IOException if user-supplied csv file does not exists or is not readable."
       },
       {
         "lineNumber": 91,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        List\u003cGroupConfiguration\u003e groupConfigs;"
-      },
-      {
-        "lineNumber": 92,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 93,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        try {"
-      },
-      {
-        "lineNumber": 94,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            authorConfigs \u003d new AuthorConfigCsvParser(cliArguments.getAuthorConfigFilePath()).parse();"
-      },
-      {
-        "lineNumber": 95,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            RepoConfiguration.merge(repoConfigs, authorConfigs);"
-      },
-      {
-        "lineNumber": 96,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        } catch (IOException ioe) {"
-      },
-      {
-        "lineNumber": 97,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            // IOException thrown as author-config.csv is not found."
-      },
-      {
-        "lineNumber": 98,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "            // Ignore exception as the file is optional."
-      },
-      {
-        "lineNumber": 99,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 100,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 101,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        try {"
-      },
-      {
-        "lineNumber": 102,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "            groupConfigs \u003d new GroupConfigCsvParser(cliArguments.getGroupConfigFilePath()).parse();"
-      },
-      {
-        "lineNumber": 103,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "            RepoConfiguration.setGroupConfigsToRepos(repoConfigs, groupConfigs);"
-      },
-      {
-        "lineNumber": 104,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        } catch (IOException ioe) {"
-      },
-      {
-        "lineNumber": 105,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "            // IOException thrown as groups-config.csv is not found."
-      },
-      {
-        "lineNumber": 106,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "            // Ignore exception as the file is optional."
-      },
-      {
-        "lineNumber": 107,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": "        }"
-      },
-      {
-        "lineNumber": 108,
-        "author": {
-          "gitId": "jylee-git"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 109,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "        return repoConfigs;"
-      },
-      {
-        "lineNumber": 110,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    }"
-      },
-      {
-        "lineNumber": 111,
-        "author": {
-          "gitId": "-"
-        },
-        "content": ""
-      },
-      {
-        "lineNumber": 112,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "    /**"
-      },
-      {
-        "lineNumber": 113,
-        "author": {
-          "gitId": "-"
-        },
-        "content": "     * Constructs a list of {@code RepoConfiguration} if {@code cliArguments} is a {@code LocationsCliArguments}."
-      },
-      {
-        "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
         "content": "     */"
       },
       {
-        "lineNumber": 115,
+        "lineNumber": 92,
         "author": {
           "gitId": "-"
         },
-        "content": "    public static List\u003cRepoConfiguration\u003e getRepoConfigurations(LocationsCliArguments cliArguments) {"
+        "content": "    public static List\u003cRepoConfiguration\u003e getRepoConfigurations(ConfigCliArguments cliArguments) throws IOException {"
       },
       {
-        "lineNumber": 116,
+        "lineNumber": 93,
         "author": {
           "gitId": "-"
         },
-        "content": "        List\u003cRepoConfiguration\u003e configs \u003d new ArrayList\u003c\u003e();"
+        "content": "        List\u003cRepoConfiguration\u003e repoConfigs \u003d new RepoConfigCsvParser(cliArguments.getRepoConfigFilePath()).parse();"
       },
       {
-        "lineNumber": 117,
+        "lineNumber": 94,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        List\u003cAuthorConfiguration\u003e authorConfigs;"
+      },
+      {
+        "lineNumber": 95,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        List\u003cGroupConfiguration\u003e groupConfigs;"
+      },
+      {
+        "lineNumber": 96,
         "author": {
           "gitId": "-"
         },
-        "content": "        for (String locationString : cliArguments.getLocations()) {"
+        "content": ""
       },
       {
-        "lineNumber": 118,
+        "lineNumber": 97,
         "author": {
           "gitId": "-"
         },
-        "content": "            try {"
+        "content": "        try {"
       },
       {
-        "lineNumber": 119,
+        "lineNumber": 98,
         "author": {
           "gitId": "-"
         },
-        "content": "                configs.add(new RepoConfiguration(new RepoLocation(locationString)));"
+        "content": "            authorConfigs \u003d new AuthorConfigCsvParser(cliArguments.getAuthorConfigFilePath()).parse();"
       },
       {
-        "lineNumber": 120,
+        "lineNumber": 99,
         "author": {
           "gitId": "-"
         },
-        "content": "            } catch (InvalidLocationException ile) {"
+        "content": "            RepoConfiguration.merge(repoConfigs, authorConfigs);"
       },
       {
-        "lineNumber": 121,
+        "lineNumber": 100,
         "author": {
           "gitId": "-"
         },
-        "content": "                logger.log(Level.WARNING, ile.getMessage(), ile);"
+        "content": "        } catch (IOException ioe) {"
       },
       {
-        "lineNumber": 122,
+        "lineNumber": 101,
         "author": {
           "gitId": "-"
         },
-        "content": "            }"
+        "content": "            // IOException thrown as author-config.csv is not found."
       },
       {
-        "lineNumber": 123,
+        "lineNumber": 102,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            // Ignore exception as the file is optional."
+      },
+      {
+        "lineNumber": 103,
         "author": {
           "gitId": "-"
         },
         "content": "        }"
       },
       {
-        "lineNumber": 124,
+        "lineNumber": 104,
         "author": {
           "gitId": "-"
         },
         "content": ""
       },
       {
-        "lineNumber": 125,
+        "lineNumber": 105,
         "author": {
-          "gitId": "-"
+          "gitId": "jylee-git"
         },
-        "content": "        RepoConfiguration.setStandaloneConfigIgnoredToRepoConfigs(configs, cliArguments.isStandaloneConfigIgnored());"
+        "content": "        try {"
       },
       {
-        "lineNumber": 126,
+        "lineNumber": 106,
         "author": {
-          "gitId": "-"
+          "gitId": "jylee-git"
+        },
+        "content": "            groupConfigs \u003d new GroupConfigCsvParser(cliArguments.getGroupConfigFilePath()).parse();"
+      },
+      {
+        "lineNumber": 107,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            RepoConfiguration.setGroupConfigsToRepos(repoConfigs, groupConfigs);"
+      },
+      {
+        "lineNumber": 108,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        } catch (IOException ioe) {"
+      },
+      {
+        "lineNumber": 109,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            // IOException thrown as groups-config.csv is not found."
+      },
+      {
+        "lineNumber": 110,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "            // Ignore exception as the file is optional."
+      },
+      {
+        "lineNumber": 111,
+        "author": {
+          "gitId": "jylee-git"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 112,
+        "author": {
+          "gitId": "jylee-git"
         },
         "content": ""
       },
       {
-        "lineNumber": 127,
+        "lineNumber": 113,
         "author": {
           "gitId": "-"
         },
-        "content": "        return configs;"
+        "content": "        return repoConfigs;"
       },
       {
-        "lineNumber": 128,
+        "lineNumber": 114,
         "author": {
           "gitId": "-"
         },
         "content": "    }"
       },
       {
-        "lineNumber": 129,
+        "lineNumber": 115,
         "author": {
           "gitId": "-"
         },
         "content": ""
+      },
+      {
+        "lineNumber": 116,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 117,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     * Constructs a list of {@code RepoConfiguration} if {@code cliArguments} is a {@code LocationsCliArguments}."
+      },
+      {
+        "lineNumber": 118,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 119,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    public static List\u003cRepoConfiguration\u003e getRepoConfigurations(LocationsCliArguments cliArguments) {"
+      },
+      {
+        "lineNumber": 120,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        List\u003cRepoConfiguration\u003e configs \u003d new ArrayList\u003c\u003e();"
+      },
+      {
+        "lineNumber": 121,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        for (String locationString : cliArguments.getLocations()) {"
+      },
+      {
+        "lineNumber": 122,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            try {"
+      },
+      {
+        "lineNumber": 123,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                configs.add(new RepoConfiguration(new RepoLocation(locationString)));"
+      },
+      {
+        "lineNumber": 124,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            } catch (InvalidLocationException ile) {"
+      },
+      {
+        "lineNumber": 125,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "                logger.log(Level.WARNING, ile.getMessage(), ile);"
+      },
+      {
+        "lineNumber": 126,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "            }"
+      },
+      {
+        "lineNumber": 127,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 128,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 129,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        RepoConfiguration.setStandaloneConfigIgnoredToRepoConfigs(configs, cliArguments.isStandaloneConfigIgnored());"
       },
       {
         "lineNumber": 130,
         "author": {
           "gitId": "-"
         },
-        "content": "    public static String getVersion() {"
+        "content": ""
       },
       {
         "lineNumber": 131,
         "author": {
           "gitId": "-"
         },
-        "content": "        String version \u003d RepoSense.class.getPackage().getImplementationVersion();"
+        "content": "        return configs;"
       },
       {
         "lineNumber": 132,
         "author": {
           "gitId": "-"
         },
-        "content": ""
+        "content": "    }"
       },
       {
         "lineNumber": 133,
         "author": {
           "gitId": "-"
         },
-        "content": "        if (version \u003d\u003d null || version.equals(VERSION_UNSPECIFIED)) {"
+        "content": ""
       },
       {
         "lineNumber": 134,
         "author": {
           "gitId": "-"
         },
-        "content": "            version \u003d System.getProperty(\"version\");"
+        "content": "    public static String getVersion() {"
       },
       {
         "lineNumber": 135,
         "author": {
           "gitId": "-"
         },
-        "content": "        }"
+        "content": "        String version \u003d RepoSense.class.getPackage().getImplementationVersion();"
       },
       {
         "lineNumber": 136,
@@ -31609,17 +31588,45 @@
         "author": {
           "gitId": "-"
         },
-        "content": "        return version;"
+        "content": "        if (version \u003d\u003d null || version.equals(VERSION_UNSPECIFIED)) {"
       },
       {
         "lineNumber": 138,
         "author": {
           "gitId": "-"
         },
-        "content": "    }"
+        "content": "            version \u003d System.getProperty(\"version\");"
       },
       {
         "lineNumber": 139,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 140,
+        "author": {
+          "gitId": "-"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 141,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "        return version;"
+      },
+      {
+        "lineNumber": 142,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 143,
         "author": {
           "gitId": "-"
         },
@@ -31628,8 +31635,8 @@
     ],
     "authorContributionMap": {
       "jylee-git": 17,
-      "jamessspanggg": 2,
-      "-": 120
+      "jamessspanggg": 5,
+      "-": 121
     }
   },
   {
@@ -63694,6 +63701,288 @@
     ],
     "authorContributionMap": {
       "bluein-green": 25
+    }
+  },
+  {
+    "path": "src/main/java/reposense/util/TimeUtil.java",
+    "fileType": "java",
+    "lines": [
+      {
+        "lineNumber": 1,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "package reposense.util;"
+      },
+      {
+        "lineNumber": 2,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 3,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "/**"
+      },
+      {
+        "lineNumber": 4,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": " * Contains time related functionalities."
+      },
+      {
+        "lineNumber": 5,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": " */"
+      },
+      {
+        "lineNumber": 6,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "public class TimeUtil {"
+      },
+      {
+        "lineNumber": 7,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    private static String elapsedTimeMessage \u003d \"Elapsed processing time:\";"
+      },
+      {
+        "lineNumber": 8,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    private static Long startTime;"
+      },
+      {
+        "lineNumber": 9,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 10,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 11,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "     * Sets the {@code startTime} to be the current time"
+      },
+      {
+        "lineNumber": 12,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 13,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    public static void startTimer() {"
+      },
+      {
+        "lineNumber": 14,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        startTime \u003d System.nanoTime();"
+      },
+      {
+        "lineNumber": 15,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    /**"
+      },
+      {
+        "lineNumber": 18,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "     * Returns the formatted elapsed time from {@code startTime} until current time"
+      },
+      {
+        "lineNumber": 19,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "     */"
+      },
+      {
+        "lineNumber": 20,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    public static String getElapsedTimeMessage() {"
+      },
+      {
+        "lineNumber": 21,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        long endTime \u003d System.nanoTime();"
+      },
+      {
+        "lineNumber": 22,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        double elapsedTime \u003d (double) (endTime - startTime) / 1_000_000_000.0;"
+      },
+      {
+        "lineNumber": 23,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        int elapsedHours \u003d (int) elapsedTime / 3600;"
+      },
+      {
+        "lineNumber": 24,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        int elapsedMinutes \u003d (int) (elapsedTime % 3600) / 60;"
+      },
+      {
+        "lineNumber": 25,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        double elapsedSeconds \u003d elapsedTime % 60;"
+      },
+      {
+        "lineNumber": 26,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 27,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        if (elapsedHours \u003e 0) {"
+      },
+      {
+        "lineNumber": 28,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            elapsedTimeMessage +\u003d String.format(\" %d hour(s)\", elapsedHours);"
+      },
+      {
+        "lineNumber": 29,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 30,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 31,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        if (elapsedMinutes \u003e 0) {"
+      },
+      {
+        "lineNumber": 32,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "            elapsedTimeMessage +\u003d String.format(\" %d minute(s)\", elapsedMinutes);"
+      },
+      {
+        "lineNumber": 33,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        }"
+      },
+      {
+        "lineNumber": 34,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 35,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        elapsedTimeMessage +\u003d String.format(\" %.2f seconds(s)\", elapsedSeconds);"
+      },
+      {
+        "lineNumber": 36,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": ""
+      },
+      {
+        "lineNumber": 37,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "        return elapsedTimeMessage;"
+      },
+      {
+        "lineNumber": 38,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    }"
+      },
+      {
+        "lineNumber": 39,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "}"
+      }
+    ],
+    "authorContributionMap": {
+      "jamessspanggg": 39
     }
   },
   {

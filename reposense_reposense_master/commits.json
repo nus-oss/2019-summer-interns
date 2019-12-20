@@ -858,13 +858,27 @@
             "deletions": 14
           }
         ]
+      },
+      {
+        "insertions": 43,
+        "deletions": 0,
+        "date": "2019-12-20",
+        "commitResults": [
+          {
+            "hash": "008f48fc20af630d857cd65bf11e96d05e19559a",
+            "messageTitle": "[#46] Show total time after batch processing (#758)",
+            "messageBody": "After running the CLI command, the total time taken to process and \r\ngenerate the report is not shown in the console output.\r\n\r\nUsers might find it useful to keep track of the time taken to \r\ngenerate the report.\r\n\r\nLet\u0027s use the logger to output the total time taken from running the \r\nCLI command until the report is generated.\r\n",
+            "insertions": 43,
+            "deletions": 0
+          }
+        ]
       }
     ]
   },
   "authorFinalContributionMap": {
     "jylee-git": 2163,
     "bluein-green": 179,
-    "jamessspanggg": 1203
+    "jamessspanggg": 1241
   },
   "authorFileTypeContributionMap": {
     "jylee-git": {
@@ -890,9 +904,9 @@
       "pug": 5
     },
     "jamessspanggg": {
-      "java": 169,
+      "java": 211,
       "js": 374,
-      "scss": 491,
+      "scss": 487,
       "json": 34,
       "md": 36,
       "py": 0,
@@ -902,9 +916,9 @@
     }
   },
   "authorContributionVariance": {
-    "jylee-git": 14166.914,
-    "bluein-green": 65.198456,
-    "jamessspanggg": 21063.734
+    "jylee-git": 8142.3545,
+    "bluein-green": 37.458897,
+    "jamessspanggg": 12007.333
   },
   "authorDisplayNameMap": {
     "jylee-git": "Jin Yao",
