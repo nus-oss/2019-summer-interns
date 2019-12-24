@@ -40487,21 +40487,21 @@
         "author": {
           "gitId": "-"
         },
-        "content": "  private compareValue(valueA, valueB): number {"
+        "content": "  private compareValue(valueA: string | number, valueB: string | number): number {"
       },
       {
         "lineNumber": 165,
         "author": {
           "gitId": "-"
         },
-        "content": "    const a \u003d valueA || \u0027\u0027;"
+        "content": "    const a \u003d String(valueA || \u0027\u0027).toUpperCase();"
       },
       {
         "lineNumber": 166,
         "author": {
           "gitId": "-"
         },
-        "content": "    const b \u003d valueB || \u0027\u0027;"
+        "content": "    const b \u003d String(valueB || \u0027\u0027).toUpperCase();"
       },
       {
         "lineNumber": 167,
