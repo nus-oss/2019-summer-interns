@@ -23803,26 +23803,47 @@
       {
         "lineNumber": 12,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "      window.toggleNext(this.$el.childNodes[0]);"
+        "content": "      // Update button and code css only once code has loaded into DOM"
       },
       {
         "lineNumber": 13,
         "author": {
-          "gitId": "jamessspanggg"
+          "gitId": "-"
         },
-        "content": "    },"
+        "content": "      this.$nextTick(() \u003d\u003e {"
       },
       {
         "lineNumber": 14,
         "author": {
           "gitId": "jamessspanggg"
         },
-        "content": "  },"
+        "content": "        window.toggleNext(this.$el.childNodes[0]);"
       },
       {
         "lineNumber": 15,
+        "author": {
+          "gitId": "-"
+        },
+        "content": "      });"
+      },
+      {
+        "lineNumber": 16,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "    },"
+      },
+      {
+        "lineNumber": 17,
+        "author": {
+          "gitId": "jamessspanggg"
+        },
+        "content": "  },"
+      },
+      {
+        "lineNumber": 18,
         "author": {
           "gitId": "jamessspanggg"
         },
@@ -23830,7 +23851,8 @@
       }
     ],
     "authorContributionMap": {
-      "jamessspanggg": 15
+      "jamessspanggg": 15,
+      "-": 3
     }
   },
   {
